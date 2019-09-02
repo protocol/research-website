@@ -1,60 +1,58 @@
 ---
 # Display name
-name: Admin
+name: David Dias
 
 # Username (this should match the folder name)
 authors:
-- admin
+- david-dias
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Research Scientist
+role: Research Engineer
 
 # Organizations/Affiliations
 organizations:
-- name:
+- name: IPFS
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio:
 
 interests:
--
+- Distributed Systems
+- Networking
 
 education:
   courses:
-  - course:
-    institution:
-    year:
+  - course: MSc in Communication Networks Engineering
+    institution: Universidade de Lisboa - Instituto Superior Técnico
+    year: 2014  
+  - course: BSc in Communication Networks Engineering
+    institution: Universidade de Lisboa - Instituto Superior Técnico
+    year: 2012
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-# - icon: envelope
-#  icon_pack: fas
-#  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
-  link:
+  link: https://twitter.com/daviddias
 - icon: google-scholar
   icon_pack: ai
-  link:
+  link: https://scholar.google.com/citations?hl=es&user=L0Ybwt4AAAAJ
 - icon: github
   icon_pack: fab
-  link:
+  link: http://github.com/daviddias/
 - icon: linkedin
   icon_pack: fab
-  link:
-- icon: researchgate
-  icon_pack: ai
-  link:
+  link: https://www.linkedin.com/in/diasdavid/
 - icon: link
   icon_pack: fas
-  link:  
+  link: https://daviddias.me/
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""

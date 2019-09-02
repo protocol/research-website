@@ -9,21 +9,31 @@
   weight = 10
 
 [[main]]
-  name = "Projects"
-  url = "project"
+  name = "People"
+  url = "people"
   weight = 20
 
 [[main]]
-  name = "People"
-  url = "people"
-  weight = 21
+  name = "Research areas"
+  url = "project"
+  weight = 30
 
 [[main]]
   name = "Publications"
   url = "publication"
-  weight = 30
+  weight = 40
+
+[[main]]
+  name = "Media"
+  url = "media"
+  weight = 50
+
+[[main]]
+  name = "Outreach"
+  url = "outreach"
+  weight = 60
 
 [[main]]
   name = "News"
   url = "post"
-  weight = 40
+  weight = 70
