@@ -13,12 +13,12 @@ superuser: false
 role: Research Administrator
 
 # Organizations/Affiliations
-organizations: PL Research
-- name:
+organizations:
+- name: PL Research
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio:
 
 interests:
 -
