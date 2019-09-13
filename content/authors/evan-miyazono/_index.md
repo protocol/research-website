@@ -1,24 +1,26 @@
 ---
 # Display name
-name: Admin
+name: Evan Miyazono
 
 # Username (this should match the folder name)
 authors:
-- admin
+- evan-miyazono
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Research Scientist
+role: Research Manager
 
 # Organizations/Affiliations
-organizations:
+organizations: PL Research
 - name:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio:
+bio: Evan is the team lead for Research at Protocol Labs.  He has lived in California his whole life, bouncing between NorCal and SoCal. He spent enough of his childhood at beaches that a sandy shore always feels familiar; the rest was spent sitting at a computer, reading books, or disassembling things. He eventually majored in Materials Science and Engineering at Stanford after unintentionally picking up minors in math and CS. He was then driven by his curiosity to a Ph.D. in Applied Physics at Caltech and, upon completion, was lead to Protocol Labs by a desire to build systems that affect real people.
+
+Evan still loves beaches, reading, and disassembly. Figuring out how things do, should, or could work is a passion, and sharing that knowledge is a favorite hobby. He'll go on for hours if you tell him you're interested in his thesis, so set a time limit before starting on that particular odyssey of quantum optics and nanofabrication.
 
 interests:
 -
@@ -63,6 +65,9 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
 - Researchers
+- Management
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, neque a suscipit tempor, lectus nulla pharetra lectus, sed malesuada lacus orci nec turpis. Fusce in hendrerit erat, ut luctus ipsum. Suspendisse placerat et nisl at finibus. In ut sodales quam, nec fermentum est. Vestibulum molestie consectetur pulvinar. Nam condimentum nunc eu pulvinar viverra. Praesent magna ipsum, laoreet quis consectetur nec, ullamcorper sit amet magna. Fusce elementum efficitur pharetra. Curabitur sed tellus ac massa sodales lobortis. Vivamus sed ligula sed libero rhoncus vulputate. Vivamus quis odio non lectus porttitor sodales ut et ligula. Phasellus a ligula sed lorem fringilla condimentum. Vivamus ullamcorper laoreet sem a semper. Donec tortor urna, rutrum nec viverra pulvinar, gravida vel dolor. Suspendisse neque sapien, varius a ante id, tempor pulvinar neque. Etiam tincidunt auctor felis, id congue nibh efficitur eget.
+Evan is the team lead for Research at Protocol Labs.  He has lived in California his whole life, bouncing between NorCal and SoCal. He spent enough of his childhood at beaches that a sandy shore always feels familiar; the rest was spent sitting at a computer, reading books, or disassembling things. He eventually majored in Materials Science and Engineering at Stanford after unintentionally picking up minors in math and CS. He was then driven by his curiosity to a Ph.D. in Applied Physics at Caltech and, upon completion, was lead to Protocol Labs by a desire to build systems that affect real people.
+
+Evan still loves beaches, reading, and disassembly. Figuring out how things do, should, or could work is a passion, and sharing that knowledge is a favorite hobby. He'll go on for hours if you tell him you're interested in his thesis, so set a time limit before starting on that particular odyssey of quantum optics and nanofabrication.
