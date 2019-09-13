@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Henri Switzerland
+name: Henri Stern
 
 # Username (this should match the folder name)
 authors:
