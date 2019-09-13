@@ -18,9 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Jorge holds BSc and MSc degrees in communication networks engineering, with training in computer science and electrical engineering. He completed a joint PhD in robotics, control, and intelligent systems at École polytechnique fédérale de Lausanne (Lausanne, Switzerland) and in electrical and computer engineering at Instituto Superior Técnico – Universidade de Lisboa (Lisbon, Portugal), having done research in distributed and underwater robotics.
-
-His technical interests cover a wide range of topics, from software engineering and communication protocols to sensor networks and marine technology. While in academia, he worked in multiple national and European research projects and published in international conferences and journals in communications and robotics. Following his doctoral studies, he was a patent examiner with the European Patent Office (The Hague, The Netherlands), where he mainly worked in the fields of human-computer interaction and construction of computers.
+bio: 
 
 interests:
 -
