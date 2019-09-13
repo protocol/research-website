@@ -63,7 +63,7 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
 - Researchers
-- Management
+- Management and support
 ---
 
 Evan is the team lead for Research at Protocol Labs.  He has lived in California his whole life, bouncing between NorCal and SoCal. He spent enough of his childhood at beaches that a sandy shore always feels familiar; the rest was spent sitting at a computer, reading books, or disassembling things. He eventually majored in Materials Science and Engineering at Stanford after unintentionally picking up minors in math and CS. He was then driven by his curiosity to a Ph.D. in Applied Physics at Caltech and, upon completion, was lead to Protocol Labs by a desire to build systems that affect real people.

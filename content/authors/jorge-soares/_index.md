@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio:
 
 interests:
 -
@@ -62,7 +62,7 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-- Management
+- Management and support
 ---
 
 Jorge holds BSc and MSc degrees in communication networks engineering, with training in computer science and electrical engineering. He completed a joint PhD in robotics, control, and intelligent systems at École polytechnique fédérale de Lausanne (Lausanne, Switzerland) and in electrical and computer engineering at Instituto Superior Técnico – Universidade de Lisboa (Lisbon, Portugal), having done research in distributed and underwater robotics.

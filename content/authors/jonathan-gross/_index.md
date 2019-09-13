@@ -50,7 +50,7 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-- Management
+- Management and support
 ---
 
 Jonathan joined Protocol Labs in August 2019 after eight years of administrative work at the California Institute of Technology. He is interested in philosophical discourse around scientific ethics, as well as the ways in which attention to diversity, identity, and emotional health can support successful, sustainable and healthy scientific communities.
