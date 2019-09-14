@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Research Manager
+role: Head of Research
 
 # Organizations/Affiliations
 organizations:
