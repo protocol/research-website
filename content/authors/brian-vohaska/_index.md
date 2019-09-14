@@ -63,7 +63,7 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-- Researchers
+- Alumni
 ---
 
 Brian is a cryptographer and engineer with a focus on building better protocols and exploring the science behind those protocols.
