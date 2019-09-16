@@ -1,10 +1,10 @@
 ---
 # Display name
-name: David A. Dalrymple ("davidad")
+name: David A. Dalrymple
 
 # Username (this should match the folder name)
 authors:
-- davidad
+- david-dalrymple
 
 # Is this the primary user of the site?
 superuser: false
