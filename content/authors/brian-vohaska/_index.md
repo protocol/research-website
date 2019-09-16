@@ -22,7 +22,7 @@ bio:
 
 interests:
 - Cryptography
-- Distributed systems
+- Distributed Systems
 
 education:
   courses:
@@ -38,24 +38,12 @@ social:
 # - icon: envelope
 #  icon_pack: fas
 #  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link:
-- icon: google-scholar
-  icon_pack: ai
-  link:
 - icon: github
   icon_pack: fab
   link: https://github.com/bvohaska
 - icon: linkedin
   icon_pack: fab
-  link:
-- icon: researchgate
-  icon_pack: ai
-  link:
-- icon: link
-  icon_pack: fas
-  link:  
+  link: https://www.linkedin.com/in/brian-vohaska-02618b130/
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
