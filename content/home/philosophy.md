@@ -48,3 +48,5 @@ subtitle = ""
 +++
 
 # We address important questions about distributed systems and other topics, share our contributions, provide a direct conduit for collaborators, and fund external research endeavors.
+
+[Our research philosophy](about)
