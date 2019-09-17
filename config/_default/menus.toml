@@ -25,7 +25,7 @@
 
 [[main]]
   name = "Media"
-  url = "media"
+  url = "talk"
   weight = 50
 
 [[main]]

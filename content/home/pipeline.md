@@ -47,6 +47,6 @@ subtitle = ""
  css_class = ""
 +++
 
-Frequent incremental contributions build up until we break through and leap forward.
+# Frequent incremental contributions build up until we break through and leap forward.
 
-Research is where our "ideas-to-superpowers pipeline" begins.
+# Research is where our "ideas-to-superpowers pipeline" begins.
