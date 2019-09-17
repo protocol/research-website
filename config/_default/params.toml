@@ -166,6 +166,9 @@ sharing = false
 plugins_css = ["protocol"]
 plugins_js  = []
 
+# Defines mainSections for update widget
+mainSections = ["post", "talk", "publication"]
+
 # Configuration of publication pages.
 [publications]
   # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
