@@ -14,7 +14,7 @@
 {{ $items_sort := $st.Params.content.order | default "desc" }}
 
 {{/* Query */}}
-{{/* This returns pages of any main type */}}
+{{/* MOD: This returns pages of any main type */}}
 {{ $query := where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{ $archive_page := site.GetPage "Section" $items_type }}
 

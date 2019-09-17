@@ -53,7 +53,7 @@
 {{end}}
 
 <div class="article-container pt-3">
-  {{/* Hide title on section pages. */}}
+  {{/* MOD: Hide title on section pages. */}}
   {{ if not .IsNode }} //
   <h1>{{ $title }}</h1>
   {{end}}
@@ -82,7 +82,7 @@
     {{ $ctnr = "universal-wrapper" }}
   {{end}}
 <div class="{{$ctnr}} pt-3">
-  {{/* Hide title on section pages. */}}
+  {{/* MOD: Hide title on section pages. */}}
   {{ if not .IsNode }}
   <h1>{{ $title }}</h1>
   {{end}}

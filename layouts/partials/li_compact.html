@@ -39,6 +39,7 @@
 
     {{ with $summary }}
     <div class="article-style">
+      {{/* MOD: This changes preview size. */}}
       {{ . | truncate 500 }}
     </div>
     {{ end }}
