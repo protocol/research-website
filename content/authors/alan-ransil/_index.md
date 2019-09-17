@@ -21,7 +21,7 @@ organizations:
 bio:
 
 interests:
-- Distributed systems
+- Distributed Systems
 - Economics
 - Energy
 
@@ -50,7 +50,7 @@ social:
   link: https://github.com/redransil
 - icon: linkedin
   icon_pack: fab
-  link:
+  link: https://www.linkedin.com/in/alan-ransil-53573873/
 - icon: researchgate
   icon_pack: ai
   link:

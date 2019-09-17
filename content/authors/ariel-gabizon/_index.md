@@ -37,21 +37,12 @@ social:
 # - icon: envelope
 #  icon_pack: fas
 #  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link:
-- icon: google-scholar
-  icon_pack: ai
-  link:
 - icon: github
   icon_pack: fab
   link: https://github.com/arielgabizon/
 - icon: linkedin
   icon_pack: fab
-  link:
-- icon: researchgate
-  icon_pack: ai
-  link:
+  link: https://www.linkedin.com/in/ariel-gabizon-6b423a8/
 - icon: link
   icon_pack: fas
   link: https://sites.google.com/site/arielgabizon1/

@@ -25,9 +25,17 @@ interests:
 
 education:
   courses:
-  - course:
-    institution:
-    year:
+  - course: Phd in Applied Physics
+    institution: California Institute of Technology
+    year: 2017
+  courses:
+  - course: MS in Materials Science and Engineering
+    institution: Stanford University
+    year: 2011
+  courses:
+  - course: BS in Materials Science and Engineering
+    institution: Stanford University
+    year: 2010
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -37,24 +45,15 @@ social:
 # - icon: envelope
 #  icon_pack: fas
 #  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link:
 - icon: google-scholar
   icon_pack: ai
-  link:
+  link: https://scholar.google.com/citations?user=3JFKiuAAAAAJ
 - icon: github
   icon_pack: fab
-  link:
+  link: http://github.com/miyazono/
 - icon: linkedin
   icon_pack: fab
-  link:
-- icon: researchgate
-  icon_pack: ai
-  link:
-- icon: link
-  icon_pack: fas
-  link:  
+  link: https://www.linkedin.com/in/evan-miyazono/
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""

@@ -21,7 +21,7 @@ organizations:
 bio:
 
 interests:
-- Distributed systems
+- Distributed Systems
 - Marketplaces
 
 education:
@@ -38,21 +38,12 @@ social:
 # - icon: envelope
 #  icon_pack: fas
 #  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link:
-- icon: google-scholar
-  icon_pack: ai
-  link:
 - icon: github
   icon_pack: fab
   link: https://github.com/sternhenri
 - icon: linkedin
   icon_pack: fab
-  link:
-- icon: researchgate
-  icon_pack: ai
-  link:
+  link: https://www.linkedin.com/in/henri-stern/
 - icon: link
   icon_pack: fas
   link: https://sternhenri.com
