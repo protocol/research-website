@@ -14,14 +14,14 @@ role: Research Scientist
 
 # Organizations/Affiliations
 organizations:
-- name:
+- name: Filecoin Research
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio:
 
 interests:
--
+- Cryptography
 
 education:
   courses:
@@ -37,24 +37,18 @@ social:
 # - icon: envelope
 #  icon_pack: fas
 #  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link:
 - icon: google-scholar
   icon_pack: ai
-  link:
+  link: https://scholar.google.com/citations?user=BE9TbDwAAAAJ&hl=en
 - icon: github
   icon_pack: fab
-  link:
+  link: https://github.com/irenegia
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/igiacomelli/
-- icon: researchgate
-  icon_pack: ai
-  link:
 - icon: link
   icon_pack: fas
-  link:  
+  link: https://irenegiacomelli.weebly.com
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -65,4 +59,4 @@ user_groups:
 - Researchers
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, neque a suscipit tempor, lectus nulla pharetra lectus, sed malesuada lacus orci nec turpis. Fusce in hendrerit erat, ut luctus ipsum. Suspendisse placerat et nisl at finibus. In ut sodales quam, nec fermentum est. Vestibulum molestie consectetur pulvinar. Nam condimentum nunc eu pulvinar viverra. Praesent magna ipsum, laoreet quis consectetur nec, ullamcorper sit amet magna. Fusce elementum efficitur pharetra. Curabitur sed tellus ac massa sodales lobortis. Vivamus sed ligula sed libero rhoncus vulputate. Vivamus quis odio non lectus porttitor sodales ut et ligula. Phasellus a ligula sed lorem fringilla condimentum. Vivamus ullamcorper laoreet sem a semper. Donec tortor urna, rutrum nec viverra pulvinar, gravida vel dolor. Suspendisse neque sapien, varius a ante id, tempor pulvinar neque. Etiam tincidunt auctor felis, id congue nibh efficitur eget.
+Irene is an Italian cryptographer based in Switzerland. She completed her Ph.D. at Aarhus University (Denmark) in 2016 after her undergraduate studies in Mathematics at Pisa University (Italy). After completing her Ph.D., she was a research assistant (postdoc), first in the USA (Madison, WI) and then in Italy (ISI Foundation, Turin). Her postdoctoral work focused on privacy-preserving machine-learning. Her research interests lie in the area of cryptographic protocol design and in the intersections between cryptography and other fields such machine-learning and blockchain technology.

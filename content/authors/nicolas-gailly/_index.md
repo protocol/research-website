@@ -14,14 +14,15 @@ role: Research Scientist
 
 # Organizations/Affiliations
 organizations:
-- name:
+- name: Research
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio:
 
 interests:
--
+- Cryptography
+- Distributed Systems
 
 education:
   courses:
@@ -37,24 +38,15 @@ social:
 # - icon: envelope
 #  icon_pack: fas
 #  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link:
-- icon: google-scholar
-  icon_pack: ai
-  link:
 - icon: github
   icon_pack: fab
-  link:
+  link: https://github.com/nikkolasg/
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/nicolas-gailly-3353688a/
-- icon: researchgate
-  icon_pack: ai
-  link:
 - icon: link
   icon_pack: fas
-  link:  
+  link: https://nikkolasg.xyz
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -65,4 +57,4 @@ user_groups: Researchers
 -
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, neque a suscipit tempor, lectus nulla pharetra lectus, sed malesuada lacus orci nec turpis. Fusce in hendrerit erat, ut luctus ipsum. Suspendisse placerat et nisl at finibus. In ut sodales quam, nec fermentum est. Vestibulum molestie consectetur pulvinar. Nam condimentum nunc eu pulvinar viverra. Praesent magna ipsum, laoreet quis consectetur nec, ullamcorper sit amet magna. Fusce elementum efficitur pharetra. Curabitur sed tellus ac massa sodales lobortis. Vivamus sed ligula sed libero rhoncus vulputate. Vivamus quis odio non lectus porttitor sodales ut et ligula. Phasellus a ligula sed lorem fringilla condimentum. Vivamus ullamcorper laoreet sem a semper. Donec tortor urna, rutrum nec viverra pulvinar, gravida vel dolor. Suspendisse neque sapien, varius a ante id, tempor pulvinar neque. Etiam tincidunt auctor felis, id congue nibh efficitur eget.
+Nicolas does research and development on applied cryptography, and decentralized systems.
