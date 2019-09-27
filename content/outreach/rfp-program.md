@@ -47,8 +47,6 @@ subtitle = ""
  css_class = ""
 +++
 
-Info on RFP program.
+Initially [announced in 2018](https://protocol.ai/blog/ann-research-rfp/), the Request for Proposals (RFP) increases our impact by supporting the community in pursuing solutions to important problems. It works on the basis of discrete calls directed to specific open problems, for which we solicit short applications. Applications are welcome from anyone, regardless of location or affiliation. Grant allocation is competitive but agile.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit porttitor justo, vitae tristique lorem mollis at. Mauris luctus tincidunt lacus id euismod. Fusce nec blandit metus. In odio urna, malesuada vel semper vitae, maximus nec ipsum. In tristique arcu varius elit sodales rhoncus. Nam sem odio, tincidunt eu hendrerit eget, posuere eget nisl. Nullam placerat lobortis lectus sed varius. Donec arcu quam, ullamcorper vel dapibus sed, egestas nec magna. Pellentesque dapibus arcu ut arcu gravida dignissim. Ut erat mauris, ornare quis dolor in, cursus ornare odio. Phasellus velit orci, tempor eget metus et, venenatis lacinia dolor. In rutrum commodo orci a vulputate.
-
-Suspendisse id ullamcorper lacus. Aliquam non vulputate ex, in suscipit tortor. Morbi aliquam dui sed tempor finibus. Vestibulum tempus pulvinar magna sed laoreet. Vestibulum gravida nulla et molestie hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque laoreet efficitur enim in suscipit. Etiam a quam lectus. In suscipit, justo sit amet ultrices congue, quam elit suscipit lorem, eu fermentum enim ex ut libero. Duis mi velit, faucibus quis tristique nec, pellentesque id ex. In at tortor ac ex condimentum porta. Vivamus convallis molestie tempor. Etiam id justo non purus lobortis consequat. Aenean nec interdum nunc, ut pulvinar felis. Vivamus non commodo eros. In in orci aliquam, efficitur lectus in, consequat leo.
+You can find our current and past RFPs in the corresponding [Github repository](https://github.com/protocol/research-RFPs).

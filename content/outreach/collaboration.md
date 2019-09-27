@@ -47,8 +47,5 @@ subtitle = ""
  css_class = ""
 +++
 
-Info on current and past collaborations.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit porttitor justo, vitae tristique lorem mollis at. Mauris luctus tincidunt lacus id euismod. Fusce nec blandit metus. In odio urna, malesuada vel semper vitae, maximus nec ipsum. In tristique arcu varius elit sodales rhoncus. Nam sem odio, tincidunt eu hendrerit eget, posuere eget nisl. Nullam placerat lobortis lectus sed varius. Donec arcu quam, ullamcorper vel dapibus sed, egestas nec magna. Pellentesque dapibus arcu ut arcu gravida dignissim. Ut erat mauris, ornare quis dolor in, cursus ornare odio. Phasellus velit orci, tempor eget metus et, venenatis lacinia dolor. In rutrum commodo orci a vulputate.
-
-Suspendisse id ullamcorper lacus. Aliquam non vulputate ex, in suscipit tortor. Morbi aliquam dui sed tempor finibus. Vestibulum tempus pulvinar magna sed laoreet. Vestibulum gravida nulla et molestie hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque laoreet efficitur enim in suscipit. Etiam a quam lectus. In suscipit, justo sit amet ultrices congue, quam elit suscipit lorem, eu fermentum enim ex ut libero. Duis mi velit, faucibus quis tristique nec, pellentesque id ex. In at tortor ac ex condimentum porta. Vivamus convallis molestie tempor. Etiam id justo non purus lobortis consequat. Aenean nec interdum nunc, ut pulvinar felis. Vivamus non commodo eros. In in orci aliquam, efficitur lectus in, consequat leo.
+# We could/should add logos here but need to get legal approval from each entity...
+Building on our open source culture, Protocol Labs Research works collaboratively with individuals and teams in industry, academia, and society at large. These collaborations vary significantly in format and range from co-authoring solutions and publications to sponsoring worthwhile events and initiatives.
