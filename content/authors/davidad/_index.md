@@ -30,9 +30,13 @@ interests:
 
 education:
   courses:
-  - course:
-    institution:
-    year:
+  - course: MSc in Media Technology
+    institution: Massachusetts Institute of Technology
+    year: 2008
+  - course: BS in Computer Science and Mathematics
+    institution: University of Maryland Baltimore County
+    year: 2005
+
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons

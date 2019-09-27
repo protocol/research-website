@@ -25,9 +25,9 @@ interests:
 
 education:
   courses:
-  - course:
-    institution:
-    year:
+  - course: BS in Computer Science
+    institution: Washington State University
+    year: 2015
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons

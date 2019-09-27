@@ -28,11 +28,9 @@ education:
   - course: Phd in Applied Physics
     institution: California Institute of Technology
     year: 2017
-  courses:
   - course: MS in Materials Science and Engineering
     institution: Stanford University
     year: 2011
-  courses:
   - course: BS in Materials Science and Engineering
     institution: Stanford University
     year: 2010

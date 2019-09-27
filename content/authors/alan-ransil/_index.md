@@ -27,9 +27,15 @@ interests:
 
 education:
   courses:
-  - course:
-    institution:
-    year:
+  - course: PhD
+    institution: Massachusetts Institute of Technology
+    year: 2018
+  - course: MSc
+    institution: Massachusetts Institute of Technology
+    year: 2013
+  - course: BS in Materials Science and Engineering
+    institution: Stanford University
+    year: 2010
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons

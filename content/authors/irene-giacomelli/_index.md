@@ -25,9 +25,15 @@ interests:
 
 education:
   courses:
-  - course:
-    institution:
-    year:
+  - course: PhD in Cryptography
+    institution: Aarhus University
+    year: 2016
+  - course: MSc in Mathematics
+    institution: University of Pisa
+    year: 2012
+  - course: BS in Mathematics
+    institution: University of Pisa
+    year: 2009
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons

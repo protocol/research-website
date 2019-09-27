@@ -21,13 +21,13 @@ organizations:
 bio:
 
 interests:
--
+
 
 education:
   courses:
-  - course:
-    institution:
-    year:
+  - course: MA in Comparative Religion and Ethics
+    institution: Claremont School of Theology
+    year: 2009
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons

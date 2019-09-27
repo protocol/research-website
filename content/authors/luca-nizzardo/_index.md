@@ -28,10 +28,10 @@ education:
   - course: PhD in Software, Systems, and Computing
     institution: Universidad Politécnica de Madrid
     year: 2018
-  - course: Master's degree in Mathematics
+  - course: MS in Mathematics
     institution: Università degli Studi di Milano-Bicocca
     year: 2013
-  - course: Bachelor's degree in Mathematics
+  - course: BS in Mathematics
     institution: Università degli Studi di Milano-Bicocca
     year: 2011
 

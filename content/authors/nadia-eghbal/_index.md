@@ -26,9 +26,12 @@ interests:
 
 education:
   courses:
-  - course:
-    institution:
+  - course: BS in Political Science, Environmental Sciences
+    institution: Tufts University
     year:
+  - course: BS in Political Science, Environmental Sciences
+    institution: University of Tuebingen
+    year: 
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons

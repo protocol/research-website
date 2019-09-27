@@ -25,9 +25,9 @@ interests:
 
 education:
   courses:
-  - course:
-    institution:
-    year:
+  - course: PhD in Computer Science
+    institution: Weizmann Institute of Science
+    year: 2008
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons

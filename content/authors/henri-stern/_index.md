@@ -26,9 +26,12 @@ interests:
 
 education:
   courses:
-  - course:
-    institution:
-    year:
+  - course: MSc in Computer Science
+    institution: Stanford University
+    year: 2017
+  - course: BA in Computer and Information Sciences, Intellectual History
+    institution: Columbia University
+    year: 2013
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
