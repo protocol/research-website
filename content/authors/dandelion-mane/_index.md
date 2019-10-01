@@ -46,7 +46,7 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/decentralion/
--
+
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
 
