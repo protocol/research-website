@@ -14,8 +14,8 @@ role: Research Engineer
 
 # Organizations/Affiliations
 organizations:
-- name: IPFS
-  url: ""
+- name: ResNetLab
+  url: ""  
 
 # Short bio (displayed in user profile at end of posts)
 bio:
