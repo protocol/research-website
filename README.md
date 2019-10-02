@@ -17,7 +17,7 @@ git clone https://github.com/protocol/research-website
 
 # Procedures below not yet implemented
 
-The website is currently (during the development phase) deploying to netlify, and will be configured to deploy to IPFS when ready.
+The website is currently (during the development phase) deploying to netlify (https://pl-research.netlify.com/), and will be configured to deploy to IPFS when ready to launch.
 
 ## Usage 
 
