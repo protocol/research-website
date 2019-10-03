@@ -10,11 +10,11 @@ authors:
 superuser: false
 
 # Role/position
-role: Independent Researcher
+role: Research Scientist
 
 # Organizations/Affiliations
 organizations:
-- name:
+- name: Independent Research
   url: ""
 
 # Short bio (displayed in user profile at end of posts)

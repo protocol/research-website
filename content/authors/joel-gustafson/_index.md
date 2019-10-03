@@ -10,11 +10,13 @@ authors:
 superuser: false
 
 # Role/position
-role: Independent Researcher
+role: Research Scientist
 
 # Organizations/Affiliations
 organizations:
 - name: The Underlay
+  url: ""
+- name: Independent Research
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
@@ -27,9 +29,9 @@ interests:
 
 education:
   courses:
-  - course:
-    institution:
-    year:
+  - course: BS in Mathematics with Computer Science
+    institution: Massachusetts Institute of Technology
+    year: 2018
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -55,4 +57,4 @@ user_groups:
 - Researchers
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, neque a suscipit tempor, lectus nulla pharetra lectus, sed malesuada lacus orci nec turpis. Fusce in hendrerit erat, ut luctus ipsum. Suspendisse placerat et nisl at finibus. In ut sodales quam, nec fermentum est. Vestibulum molestie consectetur pulvinar. Nam condimentum nunc eu pulvinar viverra. Praesent magna ipsum, laoreet quis consectetur nec, ullamcorper sit amet magna. Fusce elementum efficitur pharetra. Curabitur sed tellus ac massa sodales lobortis. Vivamus sed ligula sed libero rhoncus vulputate. Vivamus quis odio non lectus porttitor sodales ut et ligula. Phasellus a ligula sed lorem fringilla condimentum. Vivamus ullamcorper laoreet sem a semper. Donec tortor urna, rutrum nec viverra pulvinar, gravida vel dolor. Suspendisse neque sapien, varius a ante id, tempor pulvinar neque. Etiam tincidunt auctor felis, id congue nibh efficitur eget.
+Joel's research is in knowledge representation and distributed systems. At Protocol Labs, he is working to create a decentralized semantic web to enable more open and equal access to information. His other interests span interface design, media theory, human-computer interaction, and programming language theory. Joel has previously worked at the Media Lab, CSAIL, and Notion Labs, and holds a degree in Mathematics with Computer Science from MIT.

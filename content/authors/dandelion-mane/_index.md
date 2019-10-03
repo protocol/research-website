@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Software Engineer
+role: Research Engineer
 
 # Organizations/Affiliations
 organizations:
@@ -56,4 +56,4 @@ user_groups:
 - Researchers
 ---
 
-Dandelion (they/them) is a creature of unusual intersections. Born in America to an Israeli father and a Korean mother, they went on to study a mixture of philosophy, economics, finance, and computer science at the University of Chicago. When they joined Google Brain, it as a software engineer focused on the intersection of data visualization and machine learning. Now, at Protocol Labs, they are building SourceCred, which will create sustainable economies around open-source projects.
+Dandelion (they/them) is a creature of unusual intersections. Born in America to an Israeli father and a Korean mother, Dandelion went on to study a mixture of philosophy, economics, finance, and computer science at the University of Chicago. When they joined Google Brain, it was as a software engineer focused on the intersection of data visualization and machine learning. Now, at Protocol Labs, they are building SourceCred, which will create sustainable economies around open-source projects.
