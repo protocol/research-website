@@ -47,6 +47,6 @@ subtitle = ""
  css_class = ""
 +++
 
-Initially [announced in 2018](https://protocol.ai/blog/ann-research-rfp/), the Request for Proposals (RFP) increases our impact by supporting the community in pursuing solutions to important problems. It works on the basis of discrete calls directed to specific open problems, for which we solicit short applications. Applications are welcome from anyone, regardless of location or affiliation. Grant allocation is competitive but agile.
+Initially [announced in 2018](https://protocol.ai/blog/ann-research-rfp/), the Request for Proposals (RFP) increases our impact by supporting community pursuit of solutions to important problems. It works on the basis of discrete calls directed to specific open problems, for which we solicit short applications. Applications are welcome from anyone, regardless of location or affiliation. Grant allocation is competitive but agile.
 
 You can find our current and past RFPs in the corresponding [Github repository](https://github.com/protocol/research-RFPs).

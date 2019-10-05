@@ -49,10 +49,9 @@ subtitle = ""
 
 After considering the endeavors to which we have or might contribute resources, the most succinct framing we have of the mission of Protocol Labs is:
 
-To ensure broad intellectual freedom for all sapient beings across space and time.
+> To ensure broad intellectual freedom for all sapient beings across space and time.
 
 In our pursuit of this mission, we question how technology could work better and what we wish it would do.
+Thus far, we have worked to support the generation and spread of knowledge with IPFS. We see our work in peer-to-peer transports as an effort to safeguard freedom of speech and assembly in a digital age. We hope that [SourceCred](https://sourcecred.io/) and our work on open-source sustainability can help support the adaptation and growth of the software on which the Internet relies. We hope that [The Underlay](https://underlay.mit.edu/), IPLD, and Muiltiformats improve the ability to find, verify, and compute on knowledge.
 
-So far we have worked to support the generation and spread of knowledge with IPFS.  We see our work in peer-to-peer transports as an effort to safeguard freedom of speech and assembly in a digital age.  We hope that SourceCred and our work on open-source sustainability can help support the adaptation and growth of the software on which the Internet relies.  We hope that The Underlay, IPLD, and Muiltiformats improve the ability to find, verify, and compute on knowledge.
-
-We hope to do these things in a way that makes technology easy to upgrade and hard to turn against the users.  We work towards this ideal by building open-source software with users and contributors as vital components in the development process and a licensing stack that ensures that these tools will always remain free to obtain and use.
+We hope to do these things in ways that make technology easy to upgrade and hard to turn against the users. We work toward this ideal by building open-source software, with users and contributors as vital components in the development process, and a licensing stack that ensures that these tools will remain free to obtain and use.

@@ -47,7 +47,6 @@ subtitle = ""
  css_class = ""
 +++
 
-Our vision for Protocol Labs Research is one of an open organisation with no borders. We are open about what we perceive as problems and engage with the community in order to better detail them and, eventually, solve them. We are open about our results and strive to publish [results]( {{< relref "publication" >}})
- in a manner such that anyone anywhere can access them. We are open about our implementations, which we release under a [permissive license stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/).
+Protocol Labs Research aims to be an open organization with no borders. We are transparent about what we perceive as problems, and we engage with the community in order to better define and, eventually, solve them. We are open about our [results]( {{< relref "publication" >}}) and strive to publish them in ways such that anyone anywhere can access them. Lastly, we are open about our implementations, which we release under a [permissive license stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/).
 
 Most of our research discussions take place in our projects' Github repos, which are listed [here](https://github.com/protocol/research).

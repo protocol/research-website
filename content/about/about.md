@@ -47,6 +47,8 @@ subtitle = ""
  css_class = ""
 +++
 
-Our research and development efforts are driven by beliefs about how technology should serve humanity.   Of course, substantial engineering efforts are necessary to turn any idea into a real and useful tool that people can use.  While those engineering efforts take place in our individual projects, our longest-term vision-driven innovation now takes place in Protocol Labs Research.  
+Our research and development efforts are driven by beliefs about how technology should serve humanity. Of course, substantial engineering efforts are necessary to turn ideas into real and useful tools that people can use. While those engineering efforts take place in our individual projects, our longest-term vision-driven innovation now takes place in Protocol Labs Research.
 
-We pursue diverse project directions covering different timescales in multiple fields related to computation, communication, and knowledge.  We work on pure applied research and use-inspired basic research, with an interest in expanding to pure basic research in the future.  A clear perspective of our active research projects and future directions begins with a better understanding of where we’ve been.
+We pursue diverse projects covering different timescales in multiple fields related to computation, communication, and knowledge. We work on pure applied research and use-inspired basic research, with an interest in expanding to pure basic research in the future. A clear perspective of our active research projects and future directions begins with a better understanding of where we’ve been.
+
+![Pasteur's Quadrant](/img/quadrant.svg)
