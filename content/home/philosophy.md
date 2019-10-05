@@ -47,6 +47,7 @@ subtitle = ""
  css_class = ""
 +++
 
-# We address important questions about distributed systems and other topics, share our contributions, provide a direct conduit for collaborators, and fund external research endeavors.
+# We explore the future of decentralization and examine the infrastructure limiting what you can do with technology.
+
 
 [Our research philosophy](about)
