@@ -49,5 +49,4 @@ subtitle = ""
 
 # We explore the future of decentralization and examine the infrastructure limiting what you can do with technology.
 
-
 [Our research philosophy](about)
