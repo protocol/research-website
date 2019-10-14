@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Dioptics : A Common Generalization of Open Games and Gradient-Based Learners"
+title: "Dioptics: A Common Generalization of Open Games and Gradient-Based Learners"
 authors: ["David Dalrymple"]
 date: 2019-09-06
 doi: ""
