@@ -40,4 +40,4 @@ url_video: ""
 slides: ""
 ---
 
-We aim to use learnings from previous efforts, growth in available data, and ambitions of qualitatively novel capabilities to facilitate the discovery, linking, and processing of knowledge.  Our work in this are primarily consists of support for The Underlay, a project intending to build a global, distributed graph of public knowledge.
+We aim to use learnings from previous efforts, growth in available data, and ambitions of qualitatively novel capabilities to facilitate the discovery, linking, and processing of knowledge.  Our work in this are primarily consists of support for [The Underlay](https://underlay.mit.edu/), a project intending to build a global, distributed graph of public knowledge.
