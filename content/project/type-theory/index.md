@@ -1,12 +1,12 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Knowledge Engineering"
+title: "Type Theory"
 summary: ""
 authors: []
 tags: []
 categories: []
-date: 2019-09-02T14:20:51+01:00
+date: 2019-09-02T14:20:47+01:00
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -40,4 +40,4 @@ url_video: ""
 slides: ""
 ---
 
-We aim to use learnings from previous efforts, growth in available data, and ambitions of qualitatively novel capabilities to facilitate the discovery, linking, and processing of knowledge.  Our work in this are primarily consists of support for The Underlay, a project intending to build a global, distributed graph of public knowledge.
+A long-term goal for the IPFS ecosystem is to merge distributed apps and local apps into a single paradigm: fundamentally rethinking the UNIX programming model for a content-addressable platform. As a component of this, we aspire to make the best use of state-of-the-art advances in programming language design and implementation, e.g. substructural types, modal types, and algebraic effects. In the near term, we’re particularly interested in composable concurrent data structures, such as conflict-free replicated data types, and their interplay with trustless systems and distributed computation.

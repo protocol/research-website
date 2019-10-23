@@ -1,12 +1,13 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Knowledge Engineering"
+title: "Applied Category Theory"
 summary: ""
 authors: []
+profile: false
 tags: []
 categories: []
-date: 2019-09-02T14:20:51+01:00
+date: 2019-09-02T14:20:06+01:00
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -17,7 +18,7 @@ external_link: ""
 image:
   caption: ""
   focal_point: ""
-  preview_only: false
+  preview_only: true
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
@@ -40,4 +41,4 @@ url_video: ""
 slides: ""
 ---
 
-We aim to use learnings from previous efforts, growth in available data, and ambitions of qualitatively novel capabilities to facilitate the discovery, linking, and processing of knowledge.  Our work in this are primarily consists of support for The Underlay, a project intending to build a global, distributed graph of public knowledge.
+Category theory (CT) originated as a subdiscipline of pure mathematics, with a historical strength in unifying disparate mathematical areas to transport proofs and constructions between them. CT can also be viewed as an upgraded foundation for all of math, taking the place traditionally occupied by first-order logic and set theory, and is commonly used in theoretical computer science (especially type theory), and as a foundation for computational theorem-proving. Recent developments have expanded CT’s applicability to areas such as economics, engineering, linguistics, knowledge representation, database theory, and machine learning. We view CT as a high-leverage way to level up research in these areas as well as to facilitate interdisciplinary discourse.
