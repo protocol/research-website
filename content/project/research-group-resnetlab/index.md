@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Research Group: Filecoin"
+title: "Research Group: ResNetLab"
 summary: ""
 authors: []
 profile: false
@@ -41,9 +41,4 @@ url_video: ""
 slides: ""
 ---
 
-The purpose of Filecoin Research is to design the building blocks enabling Filecoin: a decentralized storage network. The group works on four main topics:
-
--Consensus: The Filecoin consensus layer and precise constructions Filecoin uses or could use.
--Protocol improvements: The transaction layer of the Filecoin protocol and cross-layer interactions.
--Blockchain infrastructure: State of the art of generic blockchain constructions.
--Cryptographic primitives: Performance and security of cryptographic primitives.
+A resilient system or network is fundamentally uncompromised by an isolated failure or network split. The system is malleable, adaptable to different conditions and capable of evolving to meet new requirements over time. That said, resilience here identifies as a characteristic against changing system or network conditions, i.e., the system's core operating principles adjust so that performance remains when the system scales up to serve increasing demand from more users. Building resilience into foundational infrastructure is the key in building a computing and networking fabric for human knowledge.
