@@ -6,9 +6,9 @@
 widget = "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 4  # Order that this section will appear.
+weight = 5  # Order that this section will appear.
 
-title = "Sponsorship"
+title = "Public Talks"
 subtitle = ""
 
 [design]
@@ -47,4 +47,6 @@ subtitle = ""
  css_class = ""
 +++
 
-We support conferences, workshops and events that are directly aligned with the mission and values of PL research. These sponsorships support open source collaboration and innovation, further the visibility and impact of PL research, and strengthen relationships between PL and other open source communities. Our current sponsorship process is undergoing revision, at the completion of which, we will begin taking open requests for sponsorship.
+We believe knowledge should be shared freely, and whenever possible, we include video recording as part of our event sponsorship. The recordings produced are and will remain free to view on our public video channels.
+
+You can find a playlist on our YouTube channel, here.
