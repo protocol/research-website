@@ -49,4 +49,4 @@ subtitle = ""
 
 We believe knowledge should be shared freely, and whenever possible, we include video recording as part of our event sponsorship. The recordings produced are and will remain free to view on our public video channels.
 
-You can find a playlist on our YouTube channel, here.
+You can find a playlist on our YouTube channel, [here](https://www.youtube.com/channel/UCJvMzILpV3b4AWXTEeQjcng/videos).
