@@ -1,10 +1,10 @@
 ---
 # Display name
-name: Nadia Eghbal
+name: Nicola Greco
 
 # Username (this should match the folder name)
 authors:
-- nadia-eghbal
+- nicola-greco
 
 # Is this the primary user of the site?
 superuser: false
@@ -14,24 +14,23 @@ role: Research Scientist
 
 # Organizations/Affiliations
 organizations:
-- name: Independent Research
+- name: Research
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio:
 
 interests:
-- Economics
-- Open source
+- Distributed Systems
 
 education:
   courses:
-  - course: BS in Political Science, Environmental Sciences
-    institution: Tufts University
-    year:
-  - course: BS in Political Science, Environmental Sciences
-    institution: University of Tuebingen
-    year:
+  - course: MS/PhD in Computer Science
+    institution: Massachusetts Institute of Technology
+    year: 2015
+  - course: BSc in iComputer Science
+    institution: University College London
+    year: 2012
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -41,15 +40,18 @@ social:
 # - icon: envelope
 #  icon_pack: fas
 #  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/nicolagreco
 - icon: github
   icon_pack: fab
-  link: https://github.com/nayafia
+  link: https://github.com/nicola
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/nadiaeghbal/
+  link: https://www.linkedin.com/in/nicolagreco/
 - icon: link
   icon_pack: fas
-  link: https://nadiaeghbal.com/
+  link: https://nicola.io/
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -57,7 +59,7 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-- Alumni
+- Researchers
 ---
 
-Nadia Eghbal looks at how open source software is produced: both the people and economics involved. Previously, she worked at GitHub to improve the open source developer experience, and she is the author of Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure.
+Nicola is working to re-decentralize the web. He is a researcher at Protocol Labs, a PhD student (on leave) at MIT advised by Tim Berners-Lee, and friend at Berkman Center. He writes and advances research on ways to re-decentralize the web, focusing on technical, political, and social aspects of decentralized systems.
