@@ -27,10 +27,10 @@ education:
   courses:
   - course: MS/PhD in Computer Science
     institution: Massachusetts Institute of Technology
-    year: 2015
+    year: on leave
   - course: BSc in iComputer Science
     institution: University College London
-    year: 2012
+    year: 2015
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
