@@ -1,10 +1,10 @@
 ---
 # Display name
-name: Chhi’med Kunzang
+name: @schomatis
 
 # Username (this should match the folder name)
 authors:
-- chhimed-kunzang
+- schomatis
 
 # Is this the primary user of the site?
 superuser: false
@@ -25,9 +25,9 @@ interests:
 
 education:
   courses:
-  - course: BA in English and Computer Science
-    institution: Stanford University
-    year: 1996
+  - course:
+    institution:
+    year:
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -48,7 +48,7 @@ social:
   link:
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/chhimed-kunzang/
+  link:
 - icon: researchgate
   icon_pack: ai
   link:
