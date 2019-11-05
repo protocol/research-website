@@ -1,6 +1,6 @@
 ---
 # Display name
-name: schomatis
+name: "@schomatis"
 
 # Username (this should match the folder name)
 authors:
