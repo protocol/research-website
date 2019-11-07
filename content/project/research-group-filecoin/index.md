@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Applied Category Theory"
+title: "Research Group: Filecoin"
 summary: ""
 authors: []
 profile: false
@@ -41,4 +41,9 @@ url_video: ""
 slides: ""
 ---
 
-Category theory (CT) originated as a subdiscipline of pure mathematics, with a historical strength in unifying disparate mathematical areas to transport proofs and constructions between them. CT can also be viewed as an upgraded foundation for all of math, taking the place traditionally occupied by first-order logic and set theory, and is commonly used in theoretical computer science (especially type theory), and as a foundation for computational theorem-proving. Recent developments have expanded CT’s applicability to areas such as economics, engineering, linguistics, knowledge representation, database theory, and machine learning. We view CT as a high-leverage way to level up research in these areas as well as to facilitate interdisciplinary discourse.
+The purpose of Filecoin Research is to design the building blocks enabling Filecoin: a decentralized storage network. The group works on four main topics:
+
+ - Consensus: The Filecoin consensus layer and precise constructions Filecoin uses or could use.
+ - Protocol improvements: The transaction layer of the Filecoin protocol and cross-layer interactions.
+ - Blockchain infrastructure: State of the art of generic blockchain constructions.
+ - Cryptographic primitives: Performance and security of cryptographic primitives.
