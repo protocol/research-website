@@ -25,7 +25,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: [research-group-filecoin, type-theory]
 ---
 
 Last year, we announced the launch of our [grant program](https://protocol.ai/blog/ann-research-rfp/) through which we fund cutting-edge research endeavors relevant to our mission.  The first few Requests for Proposals (RFPs) focused on problems we discovered and formulated while designing and building Filecoin and IPFS.  
