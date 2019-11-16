@@ -5,8 +5,8 @@ title: "Announcing Protocol Labs Grants"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: [crdt, filecoin, post, porep]
+categories: [rfp, news]
 date: 2019-04-16T01:15:02+01:00
 lastmod: 2019-04-16T01:15:02+01:00
 featured: false
