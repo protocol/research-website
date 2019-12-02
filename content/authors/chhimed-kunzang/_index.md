@@ -25,7 +25,7 @@ interests:
 
 education:
   courses:
-  - course: BA in English (creative writing/poetry) | Computer Science (core programming and theory)
+  - course: BA in English (creative writing/poetry) and Computer Science (core programming and theory)
     institution: Stanford University
     year: 1996
 
