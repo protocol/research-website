@@ -14,7 +14,7 @@ else
 	APPEND=1>/dev/null
 endif
 
-build: clean install lint js css minify
+build: clean install minify
 	$(PREPEND)$(NPMBIN)/hugo && \
 	echo "" && \
 	echo "Site built out to ./public dir"
