@@ -19,7 +19,7 @@
   "devDependencies": {
     "browserify": "^14.4.0",
     "dnslink-deploy": "^1.0.7",
-    "hugo-bin": "^0.60.1",
+    "hugo-bin": "^0.49.0",
     "factor-bundle": "^2.5.0",
     "imagemin-cli": "^3.0.0",
     "imagemin-jpegtran": "^5.0.2",
