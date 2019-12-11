@@ -90,4 +90,4 @@ clean:
 	[ ! -d static/js ] || rm -rf static/js/*.js && \
 	[ ! -d static/css ] || rm -rf static/css/*.css
 
-.PHONY: build help install lint js css minify minify-js minify-img dev deploy publish-to-domain clean
+.PHONY: build help install minify minify-js minify-img dev deploy publish-to-domain clean
