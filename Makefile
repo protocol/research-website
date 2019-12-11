@@ -14,7 +14,7 @@ else
 	APPEND=1>/dev/null
 endif
 
-build: clean install minify
+build: clean install
 	$(PREPEND)$(NPMBIN)/hugo && \
 	echo "" && \
 	echo "Site built out to ./public dir"
@@ -90,4 +90,4 @@ clean:
 	[ ! -d static/js ] || rm -rf static/js/*.js && \
 	[ ! -d static/css ] || rm -rf static/css/*.css
 
-.PHONY: build help install minify minify-js minify-img dev deploy publish-to-domain clean
+.PHONY: build help install dev deploy publish-to-domain clean
