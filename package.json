@@ -1,0 +1,42 @@
+{
+  "name": "research-website",
+  "version": "1.0.0",
+  "description": "Making Protocol Labs Protocol Labs.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "make serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/protocol/research-website.git"
+  },
+  "author": "Protocol Labs",
+  "bugs": {
+    "url": "https://github.com/protocol/research-website/issues"
+  },
+  "homepage": "https://github.com/protocol/research-website#readme",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "dnslink-deploy": "^1.0.7",
+    "hugo-bin": "^0.60.1",
+    "factor-bundle": "^2.5.0",
+    "imagemin-cli": "^3.0.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-svgo": "^5.2.2",
+    "jquery": "^3.2.1",
+    "less": "^2.7.2",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "nodemon": "^1.11.0",
+    "standard": "^10.0.2",
+    "uglify-js": "^3.0.23",
+    "watchify": "^3.9.0"
+  },
+  "standard": {
+    "ignore": [
+      "/static/js"
+    ]
+  }
+}
