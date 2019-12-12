@@ -29,11 +29,11 @@ jobs:
           name: "Run Hugo"
           command: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
 
-      - run:
-          name: "Test website"
-          command: |
-            htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html \
-            --empty-alt-ignore --disable-external
+      #- run:
+      #    name: "Test website"
+      #    command: |
+      #      htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html \
+      #      --empty-alt-ignore --disable-external
 
       # persist for deploy
       - persist_to_workspace:
