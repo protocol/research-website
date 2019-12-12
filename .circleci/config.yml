@@ -37,7 +37,7 @@ jobs:
 
       # persist for deploy
       - persist_to_workspace:
-          root: ~/hugo
+          root: /root/hugo/~/hugo/
           paths:
             - public
 
