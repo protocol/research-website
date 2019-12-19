@@ -7,10 +7,10 @@ authors:
   - evan-miyazono
 
 # Role/position
-role: Head of Research
+role: Research Team Lead
 
 research-groups:
-  - "PL Research"
+  - 
 
 resources:
   - name: avatar
@@ -20,7 +20,7 @@ interests:
 
 education:
   courses:
-    - course: Phd in Applied Physics
+    - course: PhD in Applied Physics
       institution: California Institute of Technology
       year: 2017
     - course: MS in Materials Science and Engineering

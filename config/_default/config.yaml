@@ -11,7 +11,7 @@ taxonomies:
   research-area: research-areas
   research-group: research-groups
 params:
-  DateForm: 2006.2.1
+  DateForm: 2006.1.2
 permalinks:
   talks: /research/talks/:title/
   publications: /research/publications/:title/

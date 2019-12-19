@@ -8,4 +8,4 @@ menu:
     weight: 6
 hasSquigglyLines: true
 ---
-Science accumulates knowledge idea by idea, across various fields and efforts. Frequent incremental contributions build up until we break through. Research is where our “ideas-to-superpowers pipeline” begins.
+Our research takes place in the open as a combined effort with external researchers and the academic community.  These connections take many forms, depending on the field and the research direction.
