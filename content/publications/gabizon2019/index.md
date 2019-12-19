@@ -20,8 +20,8 @@ research-areas:
 
 url_source: https://eprint.iacr.org/2019/601
 
-venue: Fifth Symposium on Compositional Structures (SYCO 5)
-venue_location: Birmingham, UK.
+venue:
+venue_location: 
 
 resources:
   - src: gabizon2019.pdf
