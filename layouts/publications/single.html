@@ -1,0 +1,96 @@
+{{define "main"}}
+  <div class="max-w-screen mx-auto pt-4 px-4 md:px-10">
+    <div class="mb-12">
+      {{ partial "breadcrumbs" . }}
+    </div>
+
+    <div class="flex flex-col md:flex-row md:justify-between">
+      <div class="w-full md:w-3/5 mb-12">
+
+        <div class="mb-4">
+          {{partial "publication-data-strip" . }}
+        </div>
+
+        <div class="font-bold text-lg md:text-larger mb-4 leading-tight">
+          {{ .Title }}
+        </div>
+
+        {{ if (index .Params "research-areas") }}
+          <div class="block">
+            <img class="inline-block mr-2" src="/images/icon/tag.svg">
+
+            {{ range $index, $value := (index .Params "research-areas") }}
+              {{ if gt $index 0 }}
+                <span class="text-gray-600">,</span>
+              {{ end }}
+
+              {{ with $.Site.GetPage "taxonomyTerm" (printf "research/areas/%s" (urlize $value )) }}
+                <a href="{{ .Permalink }}" class="inline-block text-sm text-gray-600 mb-6">
+                  <span class="underline capitalize">{{ humanize .Title }}</span>
+                </a>
+              {{ end }}
+            {{ end }}
+          </div>
+        {{ end }}
+
+        {{ partial "authors-row-large" . }}
+
+        <div class="flex flex-row items-start justify-start md:-mx-4">
+          {{ if .Params.venue }}
+            <div class="text-sm text-gray-600 w-1/2 md:px-4">
+              <div class="">Venue</div>
+              <div class="font-bold">{{ .Params.venue }}</div>
+            </div>
+          {{ end }}
+
+          {{ if .Params.venue_location }}
+            <div class="text-sm text-gray-600 w-1/2 md:px-4">
+              <div class="">Location</div>
+              <div class="font-bold">{{ .Params.venue_location }}</div>
+            </div>
+          {{ end }}
+        </div>
+
+        <div class="page-content pt-8">
+          <h2>Abstract</h2>
+
+          {{ .Content }}
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/4 mb-12">
+        <div class="bg-gray-100 p-8 mb-12 border-t-2 border-black">
+          <div class="text-sm mb-4 text-gray-500">
+            For you:
+          </div>
+
+          {{ range .Params.links }}
+            <a class="block text-sm text-blue mb-4" href="{{ .url }}">
+              <img class="inline-block mr-2" src="/icons/{{ .icon }}.svg">
+              <span>{{ .name }}</span>
+            </a>
+          {{ end }}
+
+          {{ $currentPublication := . }}
+          {{ range .Resources.Match "*.pdf" }}
+            <a class="block text-sm text-blue mb-4" href="{{ .Permalink }}">
+              <img class="inline-block mr-2" src="/icons/download.svg">
+              <span>Download PDF</span>
+            </a>
+          {{ end }}
+
+          {{ range .Resources.Match "cite.bib" }}
+            <button class="block text-sm text-blue mb-4" on-click="copyContentsToClipboard" data-to-copy="{{ .Content }}">
+              <img class="inline-block mr-2" src="/icons/paperclip.svg">
+              <span data-swap-on-copy>Cite this publication</span>
+            </button>
+          {{ end }}
+        </div>
+
+        <div class="p-4">
+          {{ partial "share-links" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

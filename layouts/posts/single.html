@@ -1,0 +1,92 @@
+{{ define "main" }}
+  <div class="max-w-screen mx-auto px-4 md:px-10 pt-8">
+    <div class="max-w-md truncate text-gray text-sm mb-12">
+      {{ if .IsHome }}
+      {{ else }}
+        <a class="inline capitalize hover:text-blue hover:underline" href="/blog">Blog</a>
+
+        <span class="inline">/</span>
+
+        <a class="inline capitalize hover:text-blue hover:underline" href="{{ .Permalink }}">{{humanize (or .Params.name .Title )}}</a>
+      {{ end }}
+    </div>
+
+    <div class="flex flex-col items-center lg:items-start lg:flex-row lg:justify-between">
+
+      <div class="w-full mb-12 lg:w-3/5">
+
+        {{ partial "post-data-strip" . }}
+
+        <h1 class="text-xl font-bold pt-2 mb-4 leading-tight">{{ .Title }}</h1>
+
+        {{$researchAreas := (index .Params "research-areas")}}
+        {{$researchGroups := (index .Params "research-groups")}}
+
+        {{ if (or $researchAreas $researchGroups)}}
+          <div class="pt-4">
+            <img class="inline-block mr-2" src="/images/icon/tag.svg">
+
+            {{ range $index, $value := $researchAreas }}
+              {{ if gt $index 0 }}
+                <span class="text-gray-600">,</span>
+              {{ end }}
+
+              {{ with $.Site.GetPage "taxonomyTerm" (printf "research/areas/%s" (urlize $value )) }}
+                <a href="{{ .Permalink }}" class="inline-block text-sm text-gray-600 mb-6 hover:text-blue">
+                  <span class="underline capitalize">{{ humanize .Title }}</span>
+                </a>
+              {{ end }}
+            {{ end }}
+
+            {{ range $index, $value := $researchGroups }}
+              {{ if (or (gt $index 0) $researchAreas) }}
+                <span class="text-gray-600">,</span>
+              {{ end }}
+
+              {{ with $.Site.GetPage "taxonomyTerm" (printf "research/groups/%s" (urlize $value )) }}
+                <a href="{{ .Permalink }}" class="inline-block text-sm text-gray-600 mb-6 hover:text-blue">
+                  <span class="underline capitalize">{{ humanize .Title }}</span>
+                </a>
+              {{ end }}
+            {{ end }}
+          </div>
+        {{ end }}
+
+        {{ partial "authors-row-large" . }}
+
+        <div class="page-content font-light pt-8 mb-20">
+          {{ .Content }}
+        </div>
+
+        <div class="flex flex-row justify-between">
+
+          {{ if .NextInSection }}
+            <a class="block mb-8 md:w-1/3 group" href="{{ .NextInSection.Permalink }}">
+              <div class="font-bold group-hover:text-pink">
+                <img class="inline-block align-middle rotate-180 mr-2" src="/icons/chevron-pink.svg">
+                <span class="align-middle">Newer</span>
+              </div>
+
+              <div class="pl-5 text-blue group-hover:underline">{{ .NextInSection.Title }}</div>
+            </a>
+          {{ end }}
+
+          {{ if .PrevInSection }}
+            <a class="block pl-4 md:w-1/3 text-right ml-auto group" href="{{ .PrevInSection.RelPermalink }}">
+              <span class="w-1/2 font-bold ml-auto order-2 group-hover:text-pink">
+                <span class="align-middle">Older</span>
+                <img class="inline-block align-middle ml-2" src="/icons/chevron-pink.svg">
+              </span>
+
+              <div class="pr-5 text-blue group-hover:underline">{{ .PrevInSection.Title }}</div>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="w-full bg-gray-300 border-black border-solid border-t-2 pb-8 lg:w-1/4">
+        {{ partial "share-box" . }}
+      </div>
+    </div>
+  </div>
+{{ end }}

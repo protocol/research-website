@@ -1,0 +1,13 @@
+ <div class="text-sm text-gray-600 mb-1">
+  <span>{{ .Date.Format .Site.Params.DateForm }}</span>
+
+  {{ range .Params.categories }}
+    <span class="mx-1 text-blue-200">/</span>
+    <span>{{humanize . }}</span>
+  {{ end }}
+
+  {{ if .Params.readTime }}
+    <span class="mx-1 text-blue-200">/</span>
+    <span>{{ .Params.readTime }} read</span>
+  {{ end }}
+</div>

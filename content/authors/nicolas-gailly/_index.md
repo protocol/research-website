@@ -4,57 +4,43 @@ name: Nicolas Gailly
 
 # Username (this should match the folder name)
 authors:
-- nicolas-gailly
-
-# Is this the primary user of the site?
-superuser: false
+  - nicolas-gailly
 
 # Role/position
 role: Research Scientist
 
-# Organizations/Affiliations
-organizations:
-- name: Research
-  url: ""
+research-groups:
+  - research
 
-# Short bio (displayed in user profile at end of posts)
-bio:
+resources:
+  - name: avatar
+    src: avatar.jpg
 
 interests:
-- Cryptography
-- Distributed Systems
+  - Cryptography
+  - Distributed Systems
 
 education:
   courses:
-  - course: BS/MSc in Computer Science
-    institution: École polytechnique fédérale de Lausanne (EPFL)
-    year: 2015
-    
-# Social/Academic Networking
-# For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+    - course: BS/MSc in Computer Science
+      institution: École polytechnique fédérale de Lausanne (EPFL)
+      year: 2015
+
 social:
-# - icon: envelope
-#  icon_pack: fas
-#  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: github
-  icon_pack: fab
-  link: https://github.com/nikkolasg/
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/in/nicolas-gailly-3353688a/
-- icon: link
-  icon_pack: fas
-  link: https://nikkolasg.xyz
+  - icon: github
+    link: https://github.com/nikkolasg/
+  - icon: linkedin
+    link: https://www.linkedin.com/in/nicolas-gailly-3353688a/
+  - icon: link
+    link: https://nikkolasg.xyz
 
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+email:
 
-# Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
 - Researchers
+
+# For display at the top of the author details page
+quote:
 ---
 
 Nicolas does research and development on applied cryptography, and decentralized systems.

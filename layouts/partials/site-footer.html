@@ -1,0 +1,80 @@
+<footer class="w-full relative bg-black text-white">
+  <div class="max-w-screen mx-auto pt-24 px-4 md:px-10 pb-8 flex items-start flex-col">
+
+    <div class="w-full flex flex-col pb-48 md:flex-row md:items-end">
+      <div class="flex flex-col items-start md:pr-4 flex-grow">
+        <div class="text-md leading-cavernous font-bold">Stay Informed</div>
+
+        <p class="pb-8 md:pb-0 w-4/5">This is where you explain the benefits of signing up for the amazing Protocol Labs Research Newsletter!</p>
+      </div>
+
+      <form
+        class="outline-none relative w-full md:pl-4 max-w-sm flex-shrink-0 md:pb-2"
+        action="https://protocol.us4.list-manage.com/subscribe/post?u=09d704b0125b11d44d67d4617&amp;id=7aa0f1150b"
+        method="post"
+        name="mc-embedded-subscribe-form"
+        target="_blank"
+        novalidate
+      >
+        <input
+          class="outline-none leading-cavernous appearance-none bg-transparent border-b-2 border-white w-full pr-12 placeholder-gray focus:placeholder-gray-400 leading-tight h-12"
+          autocomplete="email"
+          placeholder="youremailaddress@email.com"
+          type="email"
+          name="EMAIL"
+          required
+        >
+
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_a1dfb670c4f1fb042e82a1f1d_d72d6318b0" tabindex="-1" value="">
+        </div>
+
+        <button
+          class="flex items-center justify-center absolute right-0 inset-y-0 bg-white rounded h-10 w-10 rounded-full focus:outline-none focus:shadow-outline"
+          type="submit"
+          name="subscribe"
+        >
+          {{ partial "icons/arrow-right.svg" (dict "class" "fill-current")}}
+        </button>
+      </form>
+    </div>
+
+    <div class="w-full pb-12 lg:flex lg:flex-row lg:items-center lg:justify-between">
+      <div class="tracking-tight leading-none pb-12 lg:pb-0">
+        <div>Protocol Labs</div>
+        <div class="font-semibold">Research</div>
+      </div>
+
+      <div class="column-count-2 md:flex">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.footer }}
+          <div class="w-auto pb-12 md:pb-0 break-inside-avoid">
+            <a href="{{ .URL }}" class="relative text-sm inline-block mr-8 align-middle hover:text-blue">
+              <span>{{ .Name }}</span>
+
+              {{if ($currentPage.IsMenuCurrent "footer" .) }}
+                <div class="bg-white absolute inset-x-0 bottom-0 h-px-2"></div>
+              {{end}}
+            </a>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="w-full flex flex-col lg:flex-row lg:justify-between lg:items-center lg:flex-row-reverse">
+      <div class="w-full flex flex-row items-center pb-8 lg:pb-0 lg:w-auto">
+        <a href="https://protocol.ai/" class="block">
+          <img srcset="/images/footer/logo@2x.png 2x, /images/footer/logo.png" alt="Protocol Labs">
+        </a>
+
+        <img class="h-12 mx-4" src="/icons/vertical-divider-line.svg">
+
+        <a href="https://github.com/protocol">
+          <img class="block" src="/icons/github-footer.svg">
+        </a>
+      </div>
+
+      <div class="w-full text-sm text-gray md:w-auto md:mr-auto">© Protocol Labs, Inc. | Except as <a href="/terms-of-service" class="inline-block underline">noted</a>, content licensed <a href="https://creativecommons.org/licenses/by/3.0/" class="inline-block underline">CC-BY 3.0.</a> | <a href="/terms-of-service" class="inline-block underline">Terms of service</a> | <a href="/privacy-policy" class="inline-block underline">Privacy policy</a></div>
+    </div>
+  </div>
+</footer>

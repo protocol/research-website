@@ -1,0 +1,105 @@
+<div class="max-w-screen mx-auto pt-4 px-4 md:px-10">
+  <div class="">
+    {{ partial "breadcrumbs" . }}
+  </div>
+
+  <div class="-mx-4 md:mx-0">
+    {{ partial "page-top" . }}
+  </div>
+
+  <div class="flex flex-col md:flex-row md:-mx-4">
+    {{ range .Params.topics }}
+      <div class="lg:w-1/4 p-4">
+        <div class="bg-gray-100 p-4 h-40 pt-8">
+          <h4 class="font-bold mb-2">{{ .title }}</h4>
+
+          <div class="text-sm text-almost-black">
+            {{ .summary }}
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+
+  <div class="page-content mb-12 lg:w-1/2">
+    {{ .Content }}
+  </div>
+
+  {{ $recentTalks := where (index (index .Site.Taxonomies .Type) .Params.taxonomyName) "Type" "talks"}}
+
+  {{ if $recentTalks }}
+    <div class="mb-12">
+      <div class="flex flex-row items-end justify-between mb-4">
+        <div class="block">
+          <h2 class="text-md font-bold">Talks about {{ .Title }}</h2>
+          <img class="block" src="/icons/mini-graphic-line.svg">
+        </div>
+
+        <a class="pb-4 flex-shrink-0 block text-sm hover:text-blue" href="/research/talks">
+          <span>View all talks</span>
+          <img class="inline-block pl-2" src="/icons/chevron-pink.svg">
+        </a>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:flex-wrap -mx-4">
+        {{ range $recentTalks }}
+          <div class="w-full md:w-1/2">
+            {{ partial "talk-card" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ $recentPublications := where (index (index .Site.Taxonomies .Type) .Params.taxonomyName) "Type" "publications"}}
+
+  {{ if $recentPublications }}
+    <div class="mb-12">
+      <div class="flex flex-row items-end justify-between mb-4">
+        <div class="block">
+          <h2 class="text-md font-bold">Publications about {{ .Title }}</h2>
+          <img class="block" src="/icons/mini-graphic-line.svg">
+        </div>
+
+        <a class="pb-4 flex-shrink-0 block text-sm hover:text-blue" href="/research/publications">
+          <span>View all publications</span>
+          <img class="inline-block pl-2" src="/icons/chevron-pink.svg">
+        </a>
+      </div>
+
+      <div class="flex flex-col flex-wrap md:flex-row -mx-4">
+        {{ range $recentPublications }}
+          <div class="w-full md:w-1/2">
+            {{ partial "publication-card" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ $recentPosts := where (index (index .Site.Taxonomies .Type) .Params.taxonomyName) "Type" "posts"}}
+
+  {{ if $recentPosts }}
+    <div class="mb-12">
+      <div class="flex flex-row items-end justify-between mb-4">
+        <div class="block">
+          <h2 class="text-md font-bold">Posts about {{ .Title }}</h2>
+          <img class="block" src="/icons/mini-graphic-line.svg">
+        </div>
+
+        <a class="pb-4 flex-shrink-0 block text-sm hover:text-blue" href="/posts">
+          <span>View all posts</span>
+          <img class="inline-block pl-2" src="/icons/chevron-pink.svg">
+        </a>
+      </div>
+
+      <div class="flex flex-col flex-wrap md:flex-row -mx-4">
+        {{ range $recentPosts }}
+          <div class="w-full md:w-1/2">
+            {{ partial "post-card" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</div>

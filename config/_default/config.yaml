@@ -1,0 +1,33 @@
+languageCode: en-us
+title: Protocol Labs Research
+summaryLength: 30
+googleAnalytics: UA-96910779-16
+taxonomies:
+  author: authors
+  category: categories
+  publication_type: publication_types
+  tag: tags
+  research-area: research-areas
+  research-group: research-groups
+params:
+  DateForm: 2006.2.1
+permalinks:
+  talks: /research/talks/:title/
+  publications: /research/publications/:title/
+deployment:
+  targets:
+    - name: staging
+      URL: 's3://staging.122111222.com?region=us-east-1'
+      cloudFrontDistributionID: E2CQGV8BP87PQT
+    - name: production-preview
+      URL: 's3://production-preview.122111222.com?region=us-east-1'
+      cloudFrontDistributionID: E3QOXNRLEIUKB8
+  matchers:
+    - pattern: ^.+\.(js|css|svg|ttf)$
+      cacheControl: 'max-age=630720000, no-transform, public'
+      gzip: true
+    - pattern: ^.+\.(png|jpg)$
+      cacheControl: 'max-age=630720000, no-transform, public'
+      gzip: false
+    - pattern: ^.+\.(html|xml|json)$
+      gzip: true

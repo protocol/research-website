@@ -1,0 +1,126 @@
+{{ define "main" }}
+  <div class="max-w-screen mx-auto pt-4 lg:pt-12 relative">
+    <h1 class="font-bold text-xl px-4 mb-8 md:px-12 lg:mb-0">About</h1>
+
+    <img class="w-full -mb-56 lg:w-3/5 lg:absolute lg:mb-0 lg:right-0 lg:-mr-12 lg:top-0 lg:mt-12" src="/images/about-page/about-header@2x.jpg">
+
+    <div class="px-4 relative mb-16 md:px-12 pt-24 lg:mb-12 lg:pt-12">
+      <div class="bg-gray-100 p-4 mb-8 md:mb-4 lg:mb-24 lg:w-3/5 lg:p-10">
+        <h2 class="font-bold text-md leading-relaxed lg:mb-4">Our research and development efforts are driven by beliefs about how technology should serve humanity.</h2>
+        <p class="leading-loose">Of course, substantial engineering efforts are necessary to turn ideas into real and useful tools that people can use. While those engineering efforts take place in our individual projects, our longest-term vision-driven innovation now takes place in Protocol Labs Research.</p>
+      </div>
+
+      <div class="lg:flex">
+        <div class="mb-12 lg:w-1/2 lg:mb-8">
+          <p class="font-light text-md leading-relaxed mb-8">We pursue diverse projects covering different timescales in multiple fields related to computation, communication, and knowledge. We work on pure applied research and use-inspired basic research, with an interest in expanding to pure basic research in the future. A clear perspective of our active research projects and future directions begins with a better understanding of where we’ve been.</p>
+          <a href="/research" class="hover:text-pink">Our research <img class="inline pl-2" src="/icons/chevron-pink.svg" alt=""></a>
+        </div>
+
+        <div class="max-w-sm md:mx-auto lg:w-1/2 lg:mt-40">
+          <p class="leading-relaxed mb-8">“Frequent incremental contributions build up until we break through and leap forward. Research is where our ‘ideas-to-superpowers pipeline’ begins."</p>
+
+          {{ with $.Site.GetPage "taxonomyTerm" "authors/evan-miyazono" }}
+            {{ $author := . }}
+            {{ range $author.Resources.Match "avatar" }}
+              {{ $image := .Fill "56x56" }}
+              <a href="{{ $author.Permalink }}" class="flex items-center">
+                <img class="mr-4 rounded rounded-full" src="{{ $image.Permalink }}">
+                <div class="">
+                  <p class="leading-none pb-2">{{ $author.Params.name }}</p>
+                  <p class="text-gray-600 text-sm">Research Scientists</p>
+                </div>
+              </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full bg-gray-100 mb-32 ">
+    <img class="p-4 lg:px-8 max-w-screen mx-auto w-full" src="/images/about-page/chart@2x.png" alt="">
+  </div>
+
+  <div class="relative">
+    <img class="absolute right-0 -mt-32 xl:hidden" src="/images/about-page/about-page-bg-image.svg" alt="">
+    <img class="hidden absolute right-0 xl:block h-screen top-0 mt-28" src="/images/side-graphic@2x.png" alt="">
+
+    <div class="relative max-w-screen mx-auto mb-16 z-10 lg:mb-24 px-4 md:px-12">
+      <p class="pb-2 text-pink text-sm">OUR HISTORY</p>
+
+      <h2 class="font-bold text-md leading-relaxed lg:mr-56 md:w-3/4">Protocol Labs itself began with the desire to make it easy to name, organize, and share data in a scalable way.</h2>
+
+      <img class="mt-4 mb-8" src="/icons/mini-graphic-line.svg">
+
+      <div class="lg:column-count-2 lg:column-gap-4 leading-relaxed mb-12">
+        <p class="pb-4">Those efforts became IPFS, a free and open-source software project to allow users and applications to directly share information without needing a central server. Within IPFS, expertise in programming language theory led to Multiformats, an effort to make our technologies adaptable and upgradable in a future-proof way, and IPLD, our data model for content-addressed data. Together, these projects have an ambition for developing self describing data and programs, making different pieces of software dynamically compatible. The network and transport capabilities of IPFS were eventually separated into libp2p, a modular networking stack, which has been implemented in multiple languages. Protocol Labs Research continues to support and advance these efforts.</p>
+        <p class="pb-4">In contrast to IPFS, where users voluntarily store data they find interesting, we proposed and are developing Filecoin, a new protocol that to allows users to pay others to store data they find interesting. Originally proposed in 2014, the Filecoin concept was further detailed in our 2017 whitepaper, with Filecoin Research efforts supporting both the network launch and future improvements.</p>
+        <p class="pb-4">In addition, we’re actively pursuing or supporting some smaller, independent research directions and experimental projects. These efforts focus on issues separate from but deeply related to our current projects and the fields of distributed systems, cryptography, and networking. You can read more here.</p>
+      </div>
+    </div>
+
+    <div class="max-w-screen mx-auto mb-16 lg:mb-16 px-4 md:px-12">
+      <p class="pb-2 text-pink text-sm">COLLABORATIONS AND SUPPORT</p>
+
+      <h2 class="font-bold text-md leading-relaxed md:w-3/4">In addition to driving internal projects directly, we also support external research.</h2>
+
+      <img class="mt-4 mb-8" src="/icons/mini-graphic-line.svg">
+
+      <p class="leading-relaxed pb-4 md:w-4/5">Some of this support takes the form of our grant program, which supports academic research efforts related to the central mission and goals of Protocol Labs. Other support includes conference and event sponsorships, which usually involves representation from PL researchers. If you’re attending a conference we are sponsoring, you have a great chance of catching one of us in person. Alternatively, our conference sponsorships often take the form of sponsoring free, high-quality recordings of the talks to educate (or entertain) those unable to attend.</p>
+    </div>
+
+    <div class="relative overflow-hidden lg:mb-16">
+      <div class="absolute max-w-none min-w-full inset-y-0">
+        <img class="mx-auto min-h-full max-w-none translate-left-30 md:translate-left-17 lg:translate-left-0" src="/images/about-page/quote-bg.svg" alt="">
+      </div>
+
+      <div class="max-w-screen mx-auto relative px-4 pt-32 pb-32 md:px-12">
+        <img class="m-auto" src="/images/about-page/quote-icon.svg" alt="">
+
+        <h3 class="my-8 text-center font-semibold leading-relaxed text-md md:px-24">We believe the internet is humanity’s most important technology. Our mission is to improve the internet and computing, generally.</h3>
+
+        <p class="text-center text-dark-blue">Juan Benet</p>
+
+        <p class="text-center text-blue-gray">Founder and CEO</p>
+      </div>
+    </div>
+
+    <div class="max-w-screen mx-auto mb-16 px-4 md:px-12">
+      <p class="pb-2 text-pink text-sm">THE FUTURE</p>
+
+      <h2 class="font-bold text-md leading-relaxed md:w-3/4">In our pursuit of this mission, we question how technology could work better and what we wish it would do.</h2>
+
+      <img class="mt-4 mb-8" src="/icons/mini-graphic-line.svg">
+
+      <div class="lg:column-count-2 lg:column-gap-4">
+        <p class="leading-relaxed pb-4">Thus far, we have worked to support the generation and spread of knowledge with IPFS. We see our work in peer-to-peer transports as an effort to safeguard freedom of speech and assembly in a digital age. We hope that SourceCred and our work on open-source sustainability can help support the adaptation and growth of the software on which the Internet relies. We hope that The Underlay, IPLD, and Muiltiformats improve the ability to find, verify, and compute on knowledge.</p>
+        <p class="leading-relaxed pb-4">We hope to do these things in ways that make technology easy to upgrade and hard to turn against the users. We work toward this ideal by building open-source software, with users and contributors as vital components in the development process, and a licensing stack that ensures that these tools will remain free to obtain and use.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-screen mx-auto md:px-12 lg:flex">
+    <div class="mb-12 lg:w-1/2 lg:mb-8">
+      <p class="font-light text-md leading-relaxed mb-8">We pursue diverse projects covering different timescales in multiple fields related to computation, communication, and knowledge. We work on pure applied research and use-inspired basic research, with an interest in expanding to pure basic research in the future. A clear perspective of our active research projects and future directions begins with a better understanding of where we’ve been.</p>
+      <a href="/research" class="hover:text-pink">Explore our research areas<img class="inline pl-2" src="/icons/chevron-pink.svg" alt=""></a>
+    </div>
+
+    <div class="max-w-sm md:mx-auto lg:w-1/2 lg:mt-40">
+      <p class="leading-relaxed mb-8">“Frequent incremental contributions build up until we break through and leap forward. Research is where our ‘ideas-to-superpowers pipeline’ begins."</p>
+
+      {{ with $.Site.GetPage "taxonomyTerm" "authors/evan-miyazono" }}
+        {{ $author := . }}
+        {{ range $author.Resources.Match "avatar" }}
+          {{ $image := .Fill "56x56" }}
+          <a href="{{ $author.Permalink }}" class="flex items-center">
+            <img class="mr-4 rounded rounded-full" src="{{ $image.Permalink }}">
+            <div class="">
+              <p class="leading-none pb-2">{{ $author.Params.name }}</p>
+              <p class="text-gray-600 text-sm">Research Scientists</p>
+            </div>
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

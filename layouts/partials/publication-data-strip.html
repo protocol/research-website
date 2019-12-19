@@ -1,0 +1,15 @@
+<div class="text-sm text-gray-600">
+  <span>{{ dateFormat .Site.Params.DateForm .Params.publishDate }}</span>
+
+  {{ range .Params.publication_types }}
+    <span class="text-blue-200">/</span>
+    <span class="capitalize">{{ humanize . }}</span>
+  {{end}}
+
+  {{ range (index .Params "research-areas") }}
+    {{ with $.Site.GetPage "taxonomyTerm" (printf "research/areas/%s" (urlize .)) }}
+      <span class="text-blue-200">/</span>
+      <a class="capitalize hover:text-blue" href="{{ .Permalink }}">{{ humanize .Title }}</a>
+    {{ end }}
+  {{end}}
+</div>

@@ -1,0 +1,148 @@
+@import '/assets/css/tooltip.css';
+
+@tailwind base;
+
+@font-face {
+  font-family: SourceSansPro;
+  font-weight: 100;
+  src: url("../fonts/SourceSansPro-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  font-weight: 400;
+  src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  font-weight: 600;
+  src: url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  font-weight: 700;
+  src: url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
+}
+
+@tailwind components;
+
+.image-set {
+  @apply object-cover object-center inline-block;
+}
+
+@responsive {
+  .column-count-auto {
+    column-count: auto;
+  }
+
+  @for $i from 1 to 8 {
+    .column-count-$i { column-count: $(i); }
+  }
+
+  @for $i from 1 to 8 {
+    .column-gap-$i { column-gap: $(i)rem; }
+  }
+
+  @for $i from 0 to 100 {
+    .translate-left-$i { transform: translateX(-$(i)%); }
+  }
+
+  .break-inside-avoid {
+    break-inside: avoid;
+  }
+
+  .break-inside-auto {
+    break-inside: auto;
+  }
+
+  @for $i from 1 to 100 {
+    .multiline-ellipsis-$i {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: $i;
+      /*! autoprefixer: ignore next */
+      display: -webkit-box;
+      white-space: normal;
+    }
+  }
+
+  .fade-in {
+    transition: opacity .4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    will-change: opacity;
+  }
+}
+
+@variants group-hover {
+  .do-the-twist {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+.fade-in-twist {
+  transform: rotate(-20deg);
+  opacity: 0;
+  transition: opacity .4s cubic-bezier(0.785, 0.135, 0.15, 0.86), transform 1s;
+}
+
+/*! Setting what 1rem is, Most tailwind sizing is specified in rems. */
+html {
+  font-size: 16px;
+}
+
+@tailwind utilities;
+
+/* purgecss ignore */
+#off-canvas-nav {
+  transform: translate3d(100%, 0, 0);
+  transition: transform 300ms ease-in-out;
+}
+
+/* purgecss ignore */
+body.off-canvas-open #off-canvas-nav {
+  transform: translate3d(0, 0, 0);
+}
+
+[data-selector="nav"] [data-selector="nav-contents"] {
+  transition: padding-top .4s ease-in-out, padding-bottom .4s ease-in-out;
+}
+
+/* purgecss ignore */
+[data-selector="nav"].stuck [data-selector="nav-contents"] {
+  @apply pt-4 pb-4 !important;
+}
+
+/* purgecss ignore */
+[data-selector="nav"].stuck [data-selector="nav-border-bottom"] {
+  @apply opacity-100;
+}
+
+.page-content {
+  @apply text-black leading-relaxed;
+}
+
+.page-content h2 {
+  @apply font-bold my-4 text-md;
+}
+
+.page-content a:not(.no-underline) {
+  @apply text-blue-500 underline;
+}
+
+.page-content a:hover {
+  @apply text-blue no-underline;
+}
+
+.page-content p {
+  @apply pb-4;
+}
+
+.question {
+  color: lime !important;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}

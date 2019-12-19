@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <div class="max-w-screen mx-auto md:px-10">
+    {{ partial "page-top" . }}
+
+    <div class="page-content mb-12 lg:w-1/2">
+      {{ .Content }}
+    </div>
+  </div>
+{{ end }}

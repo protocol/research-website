@@ -1,0 +1,348 @@
+/*
+TOOLTIPS
+-----------------
+Use a data-tooltip attribute on the element. The content of the attribute will be inside the tooltip.
+
+For example:
+<div data-tooltip="Tooltip Contents"></div>
+
+You can modify the position of the tooltip, we support the following:
+  * data-position='top center'
+  * data-position='bottom center'
+  * data-position='left center'
+  * data-position='right center'
+  * data-position='top left'
+  * data-position='top right'
+  * data-position='bottom left'
+  * data-position='bottom right'
+If you want to invert the styles:
+ * data-inverted
+*/
+
+/* Content */
+[data-tooltip] {
+  position: relative;
+}
+
+/* Arrow */
+[data-tooltip]::before {
+  background: white;
+  box-shadow: 1px 1px 0 0 #bfc5cd;
+  content: '';
+  font-size: 1rem;
+  height: .71428571em;
+  pointer-events: none;
+  position: absolute;
+  width: .71428571em;
+  z-index: 30;
+  opacity: 0;
+  transform: rotate(45deg) scale(0) !important;
+  transform-origin: center top;
+  transition: all .1s ease;
+}
+
+/* Popup */
+[data-tooltip]::after {
+  background-color: white;
+  border: 1px solid #bfc5cd;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(34, 36, 38, .12), 0 2px 10px 0 rgba(34, 36, 38, .15);
+  color: #131316;
+  content: attr(data-tooltip);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2em;
+  max-width: none;
+  padding: .5rem;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: nowrap;
+  z-index: 31;
+  opacity: 1;
+  transform-origin: center bottom;
+  transition: all .1s ease;
+}
+
+/* Default Position (Top Center) */
+[data-tooltip]:not([data-position])::before {
+  background-color: white;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: .14285714rem;
+  margin-left: -.07142857rem;
+  right: auto;
+  top: auto;
+}
+
+[data-tooltip]:not([data-position])::after {
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: .5rem;
+  transform: translateX(-50%);
+}
+
+/* Animation */
+[data-tooltip]::before,
+[data-tooltip]::after {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+[data-tooltip]:hover::before,
+[data-tooltip]:hover::after {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+[data-tooltip]:hover::before {
+  opacity: 1;
+  transform: rotate(45deg) scale(1) !important;
+}
+
+/* Animation Position */
+[data-tooltip]::after,
+[data-tooltip][data-position='top center']::after,
+[data-tooltip][data-position='bottom center']::after {
+  transform: translateX(-50%) scale(0) !important;
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip][data-position='bottom center']:hover::after {
+  transform: translateX(-50%) scale(1) !important;
+}
+
+[data-tooltip][data-position='left center']::after,
+[data-tooltip][data-position='right center']::after {
+  transform: translateY(-50%) scale(0) !important;
+}
+
+[data-tooltip][data-position='left center']:hover::after,
+[data-tooltip][data-position='right center']:hover::after {
+  transform: translateY(-50%) scale(1) !important;
+}
+
+[data-tooltip][data-position='top left']::after,
+[data-tooltip][data-position='top right']::after,
+[data-tooltip][data-position='bottom left']::after,
+[data-tooltip][data-position='bottom right']::after {
+  transform: scale(0) !important;
+}
+
+[data-tooltip][data-position='top left']:hover::after,
+[data-tooltip][data-position='top right']:hover::after,
+[data-tooltip][data-position='bottom left']:hover::after,
+[data-tooltip][data-position='bottom right']:hover::after {
+  transform: scale(1) !important;
+}
+
+/*
+--------------
+      Inverted
+---------------
+*/
+
+/* Arrow  */
+[data-tooltip][data-inverted]::before {
+  box-shadow: none !important;
+  background: #131316;
+}
+
+/* Popup */
+[data-tooltip][data-inverted]::after {
+  background: #131316;
+  border: 0;
+  box-shadow: none;
+  color: white;
+}
+
+[data-tooltip][data-inverted]::after .header {
+  background-color: none;
+  color: white;
+}
+
+/*
+--------------
+      Positions
+---------------
+*/
+
+[data-position='top center'][data-tooltip]::after {
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: .5rem;
+  right: auto;
+  top: auto;
+  transform: translateX(-50%);
+}
+
+[data-position='top center'][data-tooltip]::before {
+  background: white;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: .14285714rem;
+  margin-left: -.07142857rem;
+  right: auto;
+  top: auto;
+}
+
+[data-position='top left'][data-tooltip]::after {
+  bottom: 100%;
+  left: 0;
+  margin-bottom: .5rem;
+  right: auto;
+  top: auto;
+}
+
+[data-position='top left'][data-tooltip]::before {
+  bottom: 100%;
+  left: 1em;
+  margin-bottom: .14285714rem;
+  margin-left: -.07142857rem;
+  right: auto;
+  top: auto;
+}
+
+[data-position='top right'][data-tooltip]::after {
+  bottom: 100%;
+  left: auto;
+  margin-bottom: .5rem;
+  right: 0;
+  top: auto;
+}
+
+[data-position='top right'][data-tooltip]::before {
+  bottom: 100%;
+  left: auto;
+  margin-bottom: .14285714rem;
+  margin-left: -.07142857rem;
+  right: 1em;
+  top: auto;
+}
+
+[data-position='bottom center'][data-tooltip]::after {
+  bottom: auto;
+  left: 50%;
+  margin-top: .5em;
+  right: auto;
+  top: 100%;
+  transform: translateX(-50%);
+}
+
+[data-position='bottom center'][data-tooltip]::before {
+  bottom: auto;
+  left: 50%;
+  margin-left: -.07142857rem;
+  margin-top: .14285714rem;
+  right: auto;
+  top: 100%;
+}
+
+[data-position='bottom left'][data-tooltip]::after {
+  left: 0;
+  margin-top: .5em;
+  top: 100%;
+}
+
+[data-position='bottom left'][data-tooltip]::before {
+  bottom: auto;
+  left: 1em;
+  margin-left: -.07142857rem;
+  margin-top: .14285714rem;
+  right: auto;
+  top: 100%;
+}
+
+[data-position='bottom right'][data-tooltip]::after {
+  margin-top: .5em;
+  right: 0;
+  top: 100%;
+}
+
+[data-position='bottom right'][data-tooltip]::before {
+  bottom: auto;
+  left: auto;
+  margin-left: -.14285714rem;
+  margin-top: .07142857rem;
+  right: 1em;
+  top: 100%;
+}
+
+[data-position='left center'][data-tooltip]::after {
+  margin-right: .5em;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: right center;
+}
+
+[data-position='left center'][data-tooltip]::before {
+  margin-right: -.07142857rem;
+  margin-top: -.14285714rem;
+  right: 100%;
+  top: 50%;
+  transform-origin: top center;
+  background: white;
+  box-shadow: 1px -1px 0 0 #bfc5cd;
+}
+
+[data-position='right center'][data-tooltip]::after {
+  left: 100%;
+  margin-left: .5em;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+[data-position='right center'][data-tooltip]::before {
+  left: 100%;
+  margin-left: .14285714rem;
+  margin-top: -.07142857rem;
+  top: 50%;
+  transform-origin: right center;
+  background: white;
+  box-shadow: -1px 1px 0 0 #bfc5cd;
+}
+
+[data-position~='bottom'][data-tooltip]::before {
+  background: white;
+  box-shadow: -1px -1px 0 0 #bfc5cd;
+  transform-origin: center bottom;
+}
+
+[data-position~='top'][data-tooltip]::before {
+  background: white;
+}
+
+/*
+--------------
+      Inverted
+---------------
+*/
+
+[data-inverted][data-position~='bottom'][data-tooltip]::before {
+  background: #131316;
+  box-shadow: -1px -1px 0 0 #bfc5cd;
+}
+
+[data-inverted][data-position='left center'][data-tooltip]::before {
+  background: #131316;
+  box-shadow: 1px -1px 0 0 #bfc5cd;
+}
+
+[data-inverted][data-position='right center'][data-tooltip]::before {
+  background: #131316;
+  box-shadow: -1px 1px 0 0 #bfc5cd;
+}
+
+[data-inverted][data-position~='top'][data-tooltip]::before {
+  background: #131316;
+}
+
+[data-position~='bottom'][data-tooltip]::after {
+  transform-origin: center top;
+}

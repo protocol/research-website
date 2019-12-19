@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+  <div class="max-w-screen mx-auto md:px-10 mb-12">
+
+    {{ partial "page-top" . }}
+
+    <div class="md:flex">
+      <div class="py-12 md:pb-20 flex flex-col md:w-4/5 md:flex-row md:justify-between">
+        <div class="text-left pt-8 mb-8">
+          <p>General Inquiries</p>
+          <a href="mailto:rfp@protocol.ai" class="font-light text-blue text-lg">rfp@protocol.ai</a>
+        </div>
+        <div class="text-left pt-8 mb-8">
+          <p>RFP program & proposals</p>
+          <a href="mailto:rfp@protocol.ai" class="font-light text-blue text-lg">rfp@protocol.ai</a>
+        </div>
+        <div class="text-left pt-8 mb-8">
+          <p>Career Inquiries</p>
+          <a href="mailto:jobs@protocol.ai" class="font-light text-blue text-lg">jobs@protocol.ai</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-300 mx-auto">
+      <form class="py-12 px-4 w-full max-w-md mx-auto md:mb-40">
+        <legend class="text-md font-bold pb-4 mx-auto">Shoot us a message</legend>
+
+        <div class="mb-12 focus-within:text-blue-500">
+          <label class="text-sm block" for="">Name</label>
+          <input class="placeholder-gray bg-gray-300 w-full border-gray-dark border-b-2 leading-loose focus:border-blue-500" type="text" name="name" placeholder="Full name">
+        </div>
+
+        <div class="mb-12 focus-within:text-blue-500">
+          <label class="text-sm block mb-4" for="">Email</label>
+          <input class="placeholder-gray bg-gray-300 w-full border-gray-dark border-b-2 leading-loose focus:border-blue-500" type="email" name="email" placeholder="johnnyappleseed@email.com">
+        </div>
+
+        <div class="mb-12 focus-within:text-blue-500">
+          <label class="text-sm block mb-4" for="">Message</label>
+          <textarea class="placeholder-gray bg-gray-300 w-full border-gray-dark border-b-2 resize-y focus:border-blue-500" name="message" rows="2" cols="80" placeholder="Tell us a little bit about what you are interested in talking with us about."></textarea>
+        </div>
+
+        <button class="font-bold bg-blue text-white text-bigger w-full py-4 my-8" type="submit" name="button">Send your message</button>
+      </form>
+    </div>
+  </div>
+
+{{ end }}

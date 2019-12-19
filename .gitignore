@@ -1,4 +1,4 @@
-public/
-.idea/
-resources/
-protocol.bib
+**/*/.DS_Store
+node_modules
+resources
+public

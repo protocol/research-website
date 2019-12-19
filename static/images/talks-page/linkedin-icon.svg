@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>logo-linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Research-&gt;-Talks-&gt;-Details" transform="translate(-996.000000, -1188.000000)">
+            <g id="Aside-(for-you)" transform="translate(964.000000, 1038.000000)">
+                <g id="Group-3-Copy" transform="translate(32.000000, 148.000000)">
+                    <g id="logo-linkedin" transform="translate(0.000000, 2.000000)">
+                        <g id="Outline_Icons" transform="translate(0.750000, 0.750000)" stroke="#1982F4" stroke-linejoin="round">
+                            <path d="M4.125,15.375 L0.375,15.375 L0.375,5.625 L4.125,5.625 L4.125,15.375 Z M2.2425,4.125 L2.22075,4.125 C1.0875,4.125 0.35475,3.2385 0.35475,2.26425 C0.35475,1.2675 1.11075,0.45525 2.265,0.45525 C3.42075,0.45525 4.131,1.29375 4.15425,2.2905 C4.1535,3.2655 3.42075,4.125 2.2425,4.125 Z M10.875,8.625 C10.04625,8.625 9.375,9.297 9.375,10.125 L9.375,15.375 L5.625,15.375 C5.625,15.375 5.66925,6.375 5.625,5.625 L9.375,5.625 L9.375,6.73875 C9.375,6.73875 10.536,5.6565 12.3285,5.6565 C14.55,5.6565 16.125,7.2645 16.125,10.3845 L16.125,15.375 L12.375,15.375 L12.375,10.125 C12.375,9.297 11.703,8.625 10.875,8.625 Z" id="Shape"></path>
+                        </g>
+                        <g id="Frames-24px">
+                            <rect id="Rectangle" x="0" y="0" width="18" height="18"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,50 @@
+<div on-viewport-intersect="onSiteHeaderStuck" class="block"></div>
+
+<nav class="w-full fixed top-0 z-30 bg-white opacity-100" data-selector="nav" on-swipe-left="toggleOffCanvasNav">
+  <div class="z-50 max-w-screen mx-auto px-4 md:px-10 pt-4 pb-4 md:pt-8 md:pb-8 flex justify-between items-center {{if (eq .Kind "home")}}md:pt-16 md:pb-16{{end}}" data-selector="nav-contents">
+    <a href="/" class="flex items-center">
+      <img src="/images/pl_research_logo.png" class="h-20 md:h-24">
+    </a>
+
+    <div class="h-8 flex items-center md:hidden" on-click="toggleOffCanvasNav">
+      {{ partial "icons/nav-icon.svg" (dict "class" "block fill-current")}}
+    </div>
+
+    <div class="hidden md:flex items-center w-auto -mr-4">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        <div class="group relative inline-block align-middle mt-0 hover:text-blue">
+          <a href="{{ .URL }}" class="relative inline-block mx-4 align-middle">
+            <span>{{ .Name }}</span>
+
+            {{ if .HasChildren }}
+              {{partial "icons/triangle-down.svg" (dict "class" "inline-block fill-current ml-1")}}
+            {{end}}
+
+            {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (in $currentPage.RelPermalink .URL) }}
+              <div class="absolute inset-x-0 bottom-0 border border-black"></div>
+            {{end}}
+          </a>
+
+          {{ if .HasChildren }}
+            <div class="hidden group-hover:block absolute top-100 bg-black w-40 p-4 z-30">
+              {{ range .Children }}
+                <a href="{{ .URL }}" class="relative inline-block mt-0 hover:text-blue align-middle text-white mb-4">
+                  <span>{{ .Name }}</span>
+
+                  {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (in $currentPage.RelPermalink .URL) }}
+                    <div class="absolute inset-x-0 bottom-0 border border-white"></div>
+                  {{end}}
+                </a>
+              {{ end }}
+            </div>
+          {{end}}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="absolute inset-x-0 bottom-0 -mb-4 w-full bg-cover h-8 md:opacity-0 md:fade-in" data-selector="nav-border-bottom">
+    {{ partial "icons/graphic-line.svg" }}
+  </div>
+</nav>

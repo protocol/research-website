@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <div class="max-w-screen mx-auto md:px-10">
+    {{ partial "page-top" . }}
+
+    <div class="page-content mb-12 lg:w-4/5">
+      {{ .Content }}
+    </div>
+
+    {{ range .Pages }}
+      <a class="block text-blue capitalize" href="{{ .Permalink }}">{{ .Title }}</a>
+    {{ end }}
+  </div>
+{{ end }}

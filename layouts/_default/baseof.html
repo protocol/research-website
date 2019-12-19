@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+{{/* <html lang="{{ .Site.Params.LanguageCode }}"> */}}
+  <head>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+
+    <base href="{{ .Site.BaseURL }}">
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    {{/* <meta name="author" content="{{ .Site.Params.Author }}"> */}}
+    {{/* <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}"> */}}
+
+    <!-- RSS -->
+    {{/* {{ with .OutputFormats.Get "RSS" }}
+      <link rel="alternate" href="{{ .RelPermalink | absURL }}" type="application/rss+xml" title="{{ $.Site.Title }}">
+    {{ end }} */}}
+
+    <!-- Twitter Card -->
+    {{/* <meta name="twitter:card" content="summary"> */}}
+    {{/* <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}"> */}}
+    {{/* <meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}"> */}}
+    {{/* <meta name="twitter:site" content="{{ .Site.BaseURL }}"> */}}
+    {{/* <meta name="twitter:creator" content="{{ .Params.Author }}"> */}}
+    {{/* <meta name="twitter:image" content="{{ .Site.Params.Avatar | absURL }}"> */}}
+
+    <!-- Open-Graph Data -->
+    {{/* <meta property="og:locale" content="{{ .Site.Params.LanguageCode }}"> */}}
+    {{/* <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}"> */}}
+    {{/* <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}"> */}}
+    {{/* <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}"> */}}
+    {{/* <meta property="og:url" content="{{ .Permalink }}"> */}}
+    {{/* <meta property="og:site_name" content="{{ .Site.Title }}"> */}}
+    {{/* <meta property="og:image" content="{{ .Site.Params.Avatar | absURL }}"> */}}
+
+    <meta charset="utf-8">
+    {{ hugo.Generator }}
+
+    {{ $style := resources.Get "css/main.css" | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="screen, print">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body class="font-body min-w-site text-base text-black leading-normal subpixel-antialiased antialiased">
+    {{ partial "site-header" . }}
+    {{ partial "off-canvas-nav" . }}
+
+    <div class="w-full pt-32 md:pt-40 pb-32 md:pb-40 {{if (eq .Kind "home")}}md:pt-56{{end}}">
+      {{ block "main" . }}{{ end }}
+    </div>
+
+    {{ partial "site-footer" . }}
+
+    {{ $js := resources.Get "js/bundle.js" | minify | fingerprint }}
+    <script type="text/javascript" src={{ $js.RelPermalink }} integrity={{ $js.Data.Integrity }}></script>
+
+    {{ template "_internal/google_analytics.html" . }}
+  </body>
+</html>

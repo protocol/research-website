@@ -1,0 +1,14 @@
+{{/* DO NOT USE THIS DIRECTLY, USE THE {{ BREADCRUMBS PARTIAL AS IT HAS A MAX_WIDTH}} */}}
+
+{{ if .IsHome }}
+{{ else }}
+  {{ if .Parent }}
+    {{ partial "breadcrumbs-inner" .Parent }}
+  {{ end }}
+
+  <a class="inline capitalize hover:text-blue hover:underline" href="{{ .Permalink }}">{{humanize (or .Params.name .Title )}}</a>
+
+  {{ if .Pages }}
+    <span class="inline">/</span>
+  {{ end }}
+{{ end }}

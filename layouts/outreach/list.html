@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <div class="max-w-screen mx-auto md:px-10">
+    <div class="mb-4 lg:flex lg:pt-10">
+      <div class="pt-8 px-4 md:px-0 lg:w-2/3">
+        <h1 class="font-bold text-xl mb-4 leading-tight">{{ .Title }}</h1>
+        <div class="font-light text-almost-black text-md">{{ .Content }}</div>
+      </div>
+
+      <img class="absolute right-0 hidden lg:block w-1/5" src="/images/small-squiggly-lines.svg">
+    </div>
+
+    <div class="flex flex-col flex-wrap pt-16 mb-16 md:flex-row md:-mx-8">
+      {{ range .RegularPages }}
+        <div class="w-full px-4 py-8 md:px-8 md:w-1/2">
+          <h2 class="font-bold text-md">{{ .Title }}</h2>
+          <img class="my-3" src="/icons/mini-graphic-line.svg">
+
+          <div class="page-content mb-4">{{ .Content }}</div>
+
+          <a href="{{ .Params.LinkUrl }}">{{ .Params.LinkText }} <img class="inline-block pl-2" src="/icons/chevron-pink.svg"></a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{end}}

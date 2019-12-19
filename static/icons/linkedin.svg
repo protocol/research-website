@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="32px" viewBox="0 0 34 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Archive,-sketches,-bits-and-pcs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="scratch" transform="translate(-547.000000, -2319.000000)">
+            <g id="icon/logo-linkedin" transform="translate(546.000000, 2318.000000)">
+                <path d="M9.75,32.25 L2.25,32.25 L2.25,12.75 L9.75,12.75 L9.75,32.25 Z M5.985,9.75 L5.9415,9.75 C3.675,9.75 2.2095,7.977 2.2095,6.0285 C2.2095,4.035 3.7215,2.4105 6.03,2.4105 C8.3415,2.4105 9.762,4.0875 9.8085,6.081 C9.807,8.031 8.3415,9.75 5.985,9.75 Z M23.25,18.75 C21.5925,18.75 20.25,20.094 20.25,21.75 L20.25,32.25 L12.75,32.25 C12.75,32.25 12.8385,14.25 12.75,12.75 L20.25,12.75 L20.25,14.9775 C20.25,14.9775 22.572,12.813 26.157,12.813 C30.6,12.813 33.75,16.029 33.75,22.269 L33.75,32.25 L26.25,32.25 L26.25,21.75 C26.25,20.094 24.906,18.75 23.25,18.75 Z" id="Shape" stroke="#105EF7" stroke-width="1.5" stroke-linejoin="round"></path>
+                <polygon id="Path" points="0 0 36 0 36 36 0 36"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

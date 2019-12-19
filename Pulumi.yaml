@@ -1,0 +1,4 @@
+name: protocol-labs-research
+runtime: nodejs
+description: A minimal AWS JavaScript Pulumi program
+main: infrastructure.js

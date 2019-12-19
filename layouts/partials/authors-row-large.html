@@ -1,0 +1,16 @@
+{{/* NOTE THE ONLY DIFF BETWEEN THIS AND THE AUTHORS ROW LARGE IS THE IMAGE SIZE... LETS FIX THIS. */}}
+{{ if .Params.authors }}
+  <div class="flex flex-row items-center justify-start mb-4">
+    {{ range .Params.authors }}
+      {{ with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+        {{ $author := . }}
+        {{ range $author.Resources.Match "avatar" }}
+          {{ $image := .Fill "40x40" }}
+          <a class="mr-2" href="{{ $author.Permalink }}" data-tooltip="{{ $author.Params.name }}" data-inverted>
+            <img class="rounded rounded-full" src="{{ $image.Permalink }}" alt="{{ .Params.alt }}">
+          </a>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

@@ -1,0 +1,57 @@
+{{define "main"}}
+  <div class="max-w-screen mx-auto pt-4 px-4 md:px-10">
+    <div class="max-w-md truncate text-gray text-sm">
+      <a class="inline capitalize hover:text-blue hover:underline" href="/research">Research</a>
+      <span class="inline">/</span>
+      <a class="inline capitalize hover:text-blue hover:underline" href="/research/talks">Talks</a>
+      <span class="inline">/</span>
+      <a class="inline capitalize" href="{{ .Permalink }}">{{humanize (or .Params.name .Title )}}</a>
+    </div>
+
+    <div class="-mx-4 md:mx-0">
+      {{ partial "page-top" . }}
+    </div>
+
+    <div class="page-content mb-8">
+      {{ .Content }}
+    </div>
+
+    {{ range .Params.authors }}
+      {{ with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+        {{ $author := . }}
+        {{ range $author.Resources.Match "avatar" }}
+          {{ $image := .Fit "40x40" }}
+          <a class="inline-flex flex-row items-center mb-8" href="{{ $author.Permalink }}" data-tooltip="{{ $author.Params.name }}" data-inverted>
+            <img class="block rounded rounded-full mr-2" src="{{ $image.Permalink }}" alt="{{ .Params.alt }}">
+
+            <div class="block">
+              <div class="text-blue">{{ $author.Params.name}}</div>
+              <div class="text-gray-600 text-sm">{{ $author.Params.role }}</div>
+            </div>
+          </a>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    <div class="md:flex">
+      <div class="md:w-2/3">
+        <div class="flex max-w-md">
+          <p class="w-1/3 text-sm text-gray-600">Date</p>
+          <p class="w-1/3 text-sm text-gray-600">Event</p>
+          <p class="w-1/3 text-sm text-gray-600">Location</p>
+        </div>
+        <div class="flex max-w-md mb-8">
+          <p class="w-1/3 text-sm text-gray-600 font-bold">{{ .Date.Format "2006.01.02" }}</p>
+          <p class="w-1/3 text-sm text-gray-600 font-bold">{{ .Params.event }}</p>
+          <p class="w-1/3 text-sm text-gray-600 font-bold">{{ .Params.location }}</p>
+        </div>
+
+        <p class="font-light text-md leading-relaxed text-gray-dark mb-20 md:mb-32">{{ .Params.abstract }}</p>
+      </div>
+
+      <div class="bg-gray-300 border-black border-solid border-t-2 pb-8 mb-12 md:w-1/3 md:ml-16">
+        {{ partial "share-box" . }}
+      </div>
+    </div>
+  </div>
+{{ end }}

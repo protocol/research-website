@@ -1,0 +1,10 @@
+{{ define "main"}}
+  <div class="max-w-screen mx-auto pb-24 px-4 md:px-10">
+    <img class="absolute right-0 hidden md:block w-1/5" src="/images/small-squiggly-lines.svg">
+    <div class="md:w-1/2 pt-20">
+      <h1 class="font-bold text-larger mb-4">The page you’re looking for can’t be found</h1>
+      <p class="font-light text-md text-gray-dark mb-12">You may have typed the address incorrectly, or the link may be broken or outdated. If you need help feel free to <a class="underline text-blue" href="/contact">contact</a> us.</p>
+      <a class="inline-block hover:text-blue" href="{{ "/" | relURL }}">Go to homepage <img class="inline-block ml-2" src="/icons/chevron-pink.svg"></a>
+    </div>
+  </div>
+{{ end }}

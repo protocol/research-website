@@ -1,0 +1,23 @@
+{{define "main"}}
+  <div class="max-w-screen mx-auto pt-4 md:px-10">
+
+    <div class="max-w-md truncate text-gray text-sm">
+      <a class="inline capitalize hover:text-blue hover:underline" href="/research">Research</a>
+      <span class="inline">/</span>
+      <a class="inline capitalize hover:text-blue hover:underline" href="{{ .Permalink }}">{{humanize (or .Params.name .Title )}}</a>
+      <span class="inline">/</span>
+    </div>
+
+    {{ partial "page-top" . }}
+
+    <div class="flex flex-col flex-wrap md:flex-row md:items-start md:justify-start md:-mx-8">
+      {{ range .RegularPages }}
+        <div class="w-full md:w-1/2 mb-8">
+          <div class="md:px-4">
+            {{ partial "publication-card" . }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

@@ -1,0 +1,23 @@
+{{ $title := .Title }}
+{{ $url := printf "%s" .Permalink | absLangURL }}
+{{ $body := print $title ", by " .Site.Title "\n" .Params.description "\n\n" $url "\n" }}
+
+<div class="mb-2 text-sm text-gray-500">
+  Share this on:
+</div>
+
+<div class="flex flex-row items-center justify-start">
+
+  <a class="block mr-8" href="mailto:?subject=Check%20out%20{{ $title }}.&body={{ $body }}" aria-label="share on Email">
+    <img class="w-6" src="/icons/envelope.svg">
+  </a>
+
+  <a class="block mr-8" href="http://twitter.com/intent/tweet?text={{ $body }}" aria-label="share on Twitter">
+    <img class="w-6" src="/images/talks-page/twitter-icon.svg">
+  </a>
+
+  <a class="block mr-8" href="https://www.linkedin.com/shareArticle?mini=true&url={{ $url }}&title={{ $title }}&summary=&source=" aria-label="share on LinkedIn">
+    <img class="w-6" src="/images/talks-page/linkedin-icon.svg">
+  </a>
+
+</div>

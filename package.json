@@ -1,0 +1,38 @@
+{
+  "name": "protocol-labs-research",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "browserify assets/main.js -o assets/js/bundle.js",
+    "build:hugo": "rm -rf public && hugo --minify",
+    "build_and_watch:js": "watchify assets/main.js -o assets/js/bundle.js",
+    "build_and_watch:hugo": "hugo serve --templateMetrics --templateMetricsHints",
+    "serve": "run-p build_and_watch:js build_and_watch:hugo",
+    "deploy:staging": "run-s build:js build:hugo _deploy:hugo:staging",
+    "deploy:production-preview": "run-s build:js build:hugo _deploy:hugo:production-preview",
+    "_deploy:hugo:staging": "hugo deploy --target=staging --verbose --invalidateCDN",
+    "_deploy:hugo:production-preview": "hugo deploy --target=production-preview --verbose --invalidateCDN"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.soliddigital.com:protocol-labs/protocol-labs-reseearch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@pulumi/aws": "^1.0.0",
+    "@pulumi/awsx": "^0.18.10",
+    "@pulumi/pulumi": "^1.0.0",
+    "autoprefixer": "^9.5.1",
+    "browserify": "^16.5.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^12.0.1",
+    "simple-custom-attributes": "^2.6.0",
+    "tailwindcss": "^1.0",
+    "watchify": "^3.11.1"
+  }
+}

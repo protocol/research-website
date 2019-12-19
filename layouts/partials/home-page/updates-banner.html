@@ -1,0 +1,23 @@
+<div class="max-w-screen mx-auto mb-8 pt-16 md:pt-4 lg:pt-0 md:px-8 lg:mb-16">
+  <div class="p-4">
+    <h2 class="font-bold text-md">Updates</h2>
+    <img src="/icons/mini-graphic-line.svg">
+  </div>
+
+  <div class="flex flex-col md:flex-row md:flex-wrap items-start justify-start md:-mx-4">
+    {{range first 4 (where site.RegularPages "Type" "in" "publications blogs talks")}}
+      <a href="{{ .RelPermalink }}" class="block p-4 md:p-8 md:w-1/2 group">
+        <p class="text-sm text-gray-600 mb-2">
+          <span>{{ .Date.Format .Site.Params.DateForm }}</span>
+          <span class="text-blue-200">/</span>
+
+          <span>{{ humanize .Type }}</span>
+        </p>
+
+        <h1 class="text-blue text-bigger leading-tight group-hover:underline">{{ .Title }}</h1>
+
+        <div class="multiline-ellipsis-3 md:multiline-ellipsis-2">{{ .Summary | truncate 200 }}</div>
+      </a>
+    {{end}}
+  </div>
+</div>
