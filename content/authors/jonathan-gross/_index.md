@@ -41,4 +41,6 @@ user_groups:
 quote:
 ---
 
-Jonathan joined Protocol Labs in August 2019 after eight years of administrative work at the California Institute of Technology. He is interested in philosophical discourse around scientific ethics, as well as the ways in which attention to diversity, identity, and emotional health can support successful, sustainable research and healthy scientific communities.
+Jonathan joined Protocol Labs in August 2019 after eight years of administrative work at the California Institute of Technology. He is interested in scientific ethics and the role of technology in the 21st century. His professional and personal foci lie at the intersections of philosophical, spiritual, and pragmatic (social, political, scientific, technological, etc.) approaches to solving human problems, though he probably wouldn't chop these up into such discrete categories.
+
+Ultimately, he believes that people should have free and open access to the information, relationships (communication), and resources necessary to build a better world. Working at Protocol Labs is an opportunity to co-labor toward that goal. 
