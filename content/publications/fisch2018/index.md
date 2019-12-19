@@ -18,8 +18,8 @@ categories:
 research-areas:
   - cryptography
 
-venue: Fifth Symposium on Compositional Structures (SYCO 5)
-venue_location: Birmingham, UK.
+venue:
+venue_location:
 
 resources:
   - src: fisch2018.pdf

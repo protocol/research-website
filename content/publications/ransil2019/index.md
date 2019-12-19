@@ -21,8 +21,8 @@ research-areas:
 
 journal: "IEEE PES Transactive Energy Systems Conference (TESC)"
 
-venue: Fifth Symposium on Compositional Structures (SYCO 5)
-venue_location: Birmingham, UK.
+venue:
+venue_location: 
 
 resources:
   - src: ransil2019.pdf
