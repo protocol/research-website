@@ -10,7 +10,7 @@ authors:
 role: Research Program Manager
 
 research-groups:
-  - "PL Research"
+  - 
 
 resources:
   - name: avatar
