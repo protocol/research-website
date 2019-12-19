@@ -10,4 +10,4 @@ taxonomyName: distributed-systems
 resources:
   - src: icon.jpg
 ---
-A network that consists of autonomous computers that are connected using a distribution middleware. They help in sharing different resources and capabilities to provide users with a single and integrated coherent network.
+A network that consists of autonomous computers connected using a distribution middleware. They help in sharing different resources and capabilities to provide users with a single and integrated coherent network.
