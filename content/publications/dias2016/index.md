@@ -21,8 +21,8 @@ research-areas:
 
 url_source: https://link.springer.com/chapter/10.1007%2F978-3-319-38791-8_60
 
-venue: Fifth Symposium on Compositional Structures (SYCO 5)
-venue_location: Birmingham, UK.
+venue:
+venue_location:
 
 resources:
   - src: dias2016.pdf
