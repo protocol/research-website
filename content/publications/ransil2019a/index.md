@@ -19,7 +19,7 @@ research-areas:
 journal: "Metascience 2019"
 
 venue:
-venue_location: 
+venue_location:
 
 resources:
   - src: ransil2019a.pdf
