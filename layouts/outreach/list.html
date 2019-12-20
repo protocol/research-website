@@ -17,7 +17,9 @@
 
           <div class="page-content mb-4">{{ .Content }}</div>
 
-          <a href="{{ .Params.LinkUrl }}">{{ .Params.LinkText }} <img class="inline-block pl-2" src="/icons/chevron-pink.svg"></a>
+          {{ if .Params.LinkUrl }}
+            <a href="{{ .Params.LinkUrl }}">{{ .Params.LinkText }} <img class="inline-block pl-2" src="/icons/chevron-pink.svg"></a>
+          {{ end }}
         </div>
       {{ end }}
     </div>
