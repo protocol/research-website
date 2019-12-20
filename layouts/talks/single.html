@@ -5,7 +5,7 @@
       <span class="inline">/</span>
       <a class="inline capitalize hover:text-blue hover:underline" href="/research/talks">Talks</a>
       <span class="inline">/</span>
-      <a class="inline capitalize" href="{{ .Permalink }}">{{humanize (or .Params.name .Title )}}</a>
+      <a class="inline capitalize" href="{{ .Permalink }}">{{or .Params.name .Title }}</a>
     </div>
 
     <div class="-mx-4 md:mx-0">
