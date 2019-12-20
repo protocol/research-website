@@ -19,7 +19,7 @@ categories:
 
 journal:
 
-venue:
+venue: Protocol Labs Technical Report
 venue_location:
 
 doi:

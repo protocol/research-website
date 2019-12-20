@@ -7,7 +7,7 @@ research-groups:
 
 resources:
   - name: avatar
-    src: avatar.jpg
+    src: avatar.png
 
 interests:
 

@@ -7,7 +7,7 @@ role: Research Engineer
 
 resources:
   - name: avatar
-    src: avatar.jpg
+    src: avatar.png
 
 research-groups:
 

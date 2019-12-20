@@ -20,8 +20,8 @@ research-areas:
 
 url_source: https://eprint.iacr.org/2019/601
 
-venue:
-venue_location: 
+venue: International Association for Cryptologic Research
+venue_location:
 
 resources:
   - src: gabizon2019.pdf

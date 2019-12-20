@@ -21,8 +21,8 @@ research-areas:
 
 journal: "IEEE PES Transactive Energy Systems Conference (TESC)"
 
-venue:
-venue_location: 
+venue: IEEE PES Transactive Energy Systems Conference (TESC)
+venue_location:
 
 resources:
   - src: ransil2019.pdf

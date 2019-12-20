@@ -8,7 +8,9 @@
 
   <a href="{{ .RelPermalink }}" class="block text-bigger font-bold py-2 hover:text-blue">{{ .Title }}</a>
 
-  {{ partial "talk-data-strip" . }}
+  <div class="mb-4">
+    {{ partial "talk-data-strip" . }}
+  </div>
 
   {{ partial "authors-row-large-with-name" . }}
 </div>

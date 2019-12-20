@@ -24,6 +24,9 @@ research-groups:
 resources:
   - title: featured-image
     src: featured.jpg
+
+abstract: In order to decarbonize the power grid, we will make increasing use of resources at the grid edge such as wind, solar and batteries. This implies some significant changes in the structure of the power grid, which will have to transform from its current radial structure into a more distributed one. This talk briefly summarizes the way that the grid is structured now and how electricity pricing is done in transmission networks, and describes how we might extend these mechanisms to support clean energy.
+
 ---
 
 {{< youtube j0hJiPJQav4 >}}

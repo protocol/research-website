@@ -26,6 +26,9 @@ resources:
     src: featured.png
   - title: slides
     src: slides.pdf
+
+abstract: David Dalrymple (Protocol Labs Research) talks about Dioptics at SYCO 5.
+
 ---
 
 [{{< image "featured.png" >}}](https://bham.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=39acddd8-e131-4b3f-9704-aabf00bec4e7)
