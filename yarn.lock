@@ -752,6 +752,11 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
+circle-github-bot@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/circle-github-bot/-/circle-github-bot-2.0.1.tgz#feefa4c7f788ce842307e00d290d264728689f69"
+  integrity sha512-uTEX8RIjUVdvtILxEG3AXI2G9X0wZYrN/Y67IIvrosjM/nt/QBdogpDXbkVsNQmhmQYqqFguWUgt50z6UMIoXw==
+
 clamp-js@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/clamp-js/-/clamp-js-0.7.0.tgz#95c49e0e28323c8eeac8c63201dddf30dbd78fce"

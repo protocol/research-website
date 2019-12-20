@@ -45,9 +45,54 @@ jobs:
 
             echo "Website added to IPFS: https://ipfs.io/ipfs/$hash"
 
+            echo "https://ipfs.io/ipfs/$hash" > build_url.txt
+
             if [ "$CIRCLE_BRANCH" == "master" ] ; then
               dnslink-dnsimple -d $DOMAIN -r _dnslink -l /ipfs/$hash
             fi
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - build_url.txt
+
+    lighthouse-audits:
+      docker:
+        - image: kporras07/lighthouse-ci
+      steps:
+        - attach_workspace:
+            at: /tmp/workspace
+        - run:
+            name: Run lighthouse against deployment
+            command: |
+              TEST_URL=$(<build_url.txt)
+
+              lighthouse $TEST_URL \
+                --port=9222 \
+                --chrome-flags=\"--headless\" \
+                --output-path=/home/chrome/reports/anonymous-"$(echo -n $CIRCLE_SHELL_ENV | md5sum | awk '{print $1}')" \
+                --output=json \
+                --output=html
+
+        - persist_to_workspace:
+            root: /home/chrome
+            paths:
+              - reports
+    processResults:
+      docker:
+        - image: circleci/node:10.15.0
+      steps:
+        - checkout
+        - attach_workspace:
+          at: /tmp/workspace
+        - run:
+            name: "Install dependencies"
+            command: yarn
+        - store_artifacts:
+            path: reports
+            destination: reports
+        - run:
+            name: Analyze and report desired vs actual lighthouse scores
+            command: ./circleci/analyze_lighthouse_scores.js package.json reports
 
 workflows:
   version: 2
@@ -58,3 +103,6 @@ workflows:
           context: ipfs-dns-deploy
           requires:
             - build
+      - lighthouse-audits:
+          requires:
+            - deploy
