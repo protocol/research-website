@@ -13,7 +13,7 @@ authors:
   - nicola-greco
   - juan-benet
 research-groups:
-  - filecoin
+  - filecoin-research
 categories:
 research-areas:
   - cryptography
