@@ -11,10 +11,9 @@ resources:
   - name: avatar
     src: avatar.png
 
-# List each interest with a dash
 interests:
-- Interest 1
-- Interest 2
+  - Interest 1
+  - Interest 2
 
 education:
   courses:
@@ -35,6 +34,8 @@ social:
     link: https://scholar.google.com/citations?user=PERSON-ID
   - icon: github
     link: https://github.com/USERNAME
+  - icon: orcid
+    link: https://orcid.org/0000-0002-1825-0097
 
 email: ""
 
