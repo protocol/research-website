@@ -23,5 +23,8 @@ research-groups:
 resources:
   - title: featured-image
     src: featured.jpg
+
+abstract: Ben Fisch (Filecoin Research) talks about proofs of replication using DRGs at BPASE 18.
+
 ---
 {{< youtube  8_9ONpyRZEI >}}

@@ -25,6 +25,9 @@ research-groups:
 resources:
   - title: featured-image
     src: featured.jpg
+
+abstract: Jeromy Johnson (Filecoin Research) talks about VDFs and Filecoin at VDF Day.
+
 ---
 
 {{< youtube GZZ2G9bPXsM >}}

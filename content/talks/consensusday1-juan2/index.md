@@ -24,6 +24,9 @@ research-groups:
 resources:
   - title: featured-image
     src: featured.jpg
+
+abstract: Juan Benet (Protocol Labs CEO) talks about new directions in consensus at ConsensusDay 1.
+
 ---
 
 {{< youtube acxanKhQ3Ek >}}
