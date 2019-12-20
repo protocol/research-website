@@ -1,4 +1,4 @@
-{{ $url := path.Join .Site.Params.baseURL .RelPermalink }}
+{{ $url := printf "%s%s" .Site.Params.baseURL + .RelPermalink }}
 {{ $title := .Title }}
 {{ $body := print $title ", by @protocollabs \n\n" $url "\n" }}
 
