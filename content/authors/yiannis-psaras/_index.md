@@ -10,7 +10,6 @@ authors:
 role: Research Advisor
 
 research-groups:
-  - "PL Research"
   - resnetlab
 
 resources:

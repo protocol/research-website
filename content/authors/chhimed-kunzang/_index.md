@@ -4,6 +4,7 @@ name: "Chhi'mèd Künzang"
 role: Software Engineer
 
 research-groups:
+  - filecoin-research
 
 resources:
   - name: avatar

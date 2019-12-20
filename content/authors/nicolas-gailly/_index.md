@@ -10,7 +10,7 @@ authors:
 role: Research Scientist
 
 research-groups:
-  - research
+  - filecoin-research
 
 resources:
   - name: avatar

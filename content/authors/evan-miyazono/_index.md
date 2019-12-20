@@ -10,7 +10,6 @@ authors:
 role: Research Team Lead
 
 research-groups:
-  - 
 
 resources:
   - name: avatar
