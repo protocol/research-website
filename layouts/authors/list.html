@@ -28,7 +28,7 @@
             <span>/</span>
             {{ with $.Site.GetPage "taxonomyTerm" (printf "research/groups/%s" (urlize . )) }}
               <a href="{{ .Permalink }}" class="inline-block hover:text-blue hover:underline capitalize">
-                {{ humanize .Title }}
+                {{ .Title }}
               </a>
             {{ else }}
               {{- . -}}
