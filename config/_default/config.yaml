@@ -12,7 +12,7 @@ taxonomies:
   research-group: research-groups
 params:
   DateForm: 2006.1.2
-  BaseURL: "https://research.protocol.ai/"
+  BaseURL: "https://research.protocol.ai"
 permalinks:
   talks: /research/talks/:title/
   publications: /research/publications/:title/
