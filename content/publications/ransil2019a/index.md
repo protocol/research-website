@@ -18,8 +18,8 @@ research-areas:
 
 journal: "Metascience 2019"
 
-venue:
-venue_location:
+venue: Metascience 2019 Symposium
+venue_location: Stanford University
 
 resources:
   - src: ransil2019a.pdf

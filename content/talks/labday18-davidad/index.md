@@ -24,6 +24,9 @@ research-groups:
 resources:
   - title: featured-image
     src: featured.jpg
+
+abstract: David Dalrymple (Protocol Labs Research) talks about IPLD research at Lab Day 2018.
+
 ---
 
 {{< youtube PBo1lEZ_Iik >}}

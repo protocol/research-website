@@ -25,6 +25,9 @@ research-groups:
 resources:
   - title: featured-image
     src: featured.jpg
+
+abstract: Ben Fisch (Filecoin Research) talks about PoReps at Lab Day 2018. 
+
 ---
 
 {{< youtube ioesqilxeuE >}}

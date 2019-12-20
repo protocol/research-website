@@ -8,7 +8,7 @@ publishDate: 2019-09-02 14:19:14 +0100
 date: 2019-02-02 14:19:14 +0100
 
 # Event name
-event: "Consensus Day 1"
+event: "ConsensusDay 1"
 
 event_url:
 
@@ -25,6 +25,9 @@ research-groups:
 resources:
   - title: featured-image
     src: featured.jpg
+
+abstract: Henri Stern (Filecoin Research) talks about expected consensus at ConsensusDay 1.
+
 ---
 
 {{< youtube pUIVMG4ZS2E >}}

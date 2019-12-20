@@ -1,5 +1,5 @@
 ---
-title: "Good SNARKS Are Here Needed"
+title: "Good SNARKs Are Here Needed"
 
 # Hugo's publish date
 publishDate: 2019-09-02 14:19:14 +0100
@@ -24,6 +24,9 @@ research-groups:
 resources:
   - title: featured-image
     src: featured.jpg
+
+abstract: Nicola Greco (Filecoin Research) talks about SNARKs at Zcon0.
+
 ---
 
 {{< youtube QII1xq9J7NY >}}
