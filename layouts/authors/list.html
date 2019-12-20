@@ -74,14 +74,14 @@
           <h2 class="font-semibold mb-4 pt-8 hover:underline">Latest work</h2>
           <div class="">
             {{ range .Pages }}
-              <a href="{{ .RelPermalink }}" class="block mb-8">
+              <a href="{{ .RelPermalink }}" class="block mb-8 group">
                 <p class="text-sm text-gray-600 mb-2">
                   <span>{{ .Date.Format .Site.Params.DateForm }}</span>
                   <span class="text-blue-200">/</span>
                   <span>{{ humanize .Type }}</span>
                 </p>
 
-                <h1 class="text-blue text-bigger leading-tight mb-2">{{ .Title }}</h1>
+                <h1 class="text-blue text-bigger leading-tight mb-2 group-hover:underline">{{ .Title }}</h1>
 
                 <p class="multiline-ellipsis-2">{{ .Summary }}</p>
               </a>
