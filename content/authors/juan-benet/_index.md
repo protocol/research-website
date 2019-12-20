@@ -7,7 +7,7 @@ authors:
   - juan-benet
 
 # Roles/positions
-role: Research Scientist
+role: Protocol Labs CEO
 
 research-groups:
 
