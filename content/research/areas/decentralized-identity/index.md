@@ -11,4 +11,4 @@ resources:
   - src: icon.jpg
 ---
 
-Implementations of identity on the Internet either rely on a centralized authority or are limited in their portability, applicability, or usefulness.
+We believe that privacy is a basic right and that individuals are entitled to own their identity. Our work on decentralised identity intends to develop portable, secure, and usable systems built on top of open standards (including the W3C DID specification).
