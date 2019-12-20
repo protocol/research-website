@@ -2,6 +2,7 @@ languageCode: en-us
 title: Protocol Labs Research
 summaryLength: 30
 googleAnalytics: UA-96910779-16
+baseURL : research.protocol.ai
 relativeURLs: true
 taxonomies:
   author: authors
