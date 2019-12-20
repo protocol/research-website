@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.soliddigital.com:protocol-labs/protocol-labs-reseearch.git"
+    "url": "git@github.com:protocol/research-website.git"
   },
   "author": "",
   "license": "ISC",
