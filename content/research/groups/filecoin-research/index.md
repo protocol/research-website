@@ -18,3 +18,5 @@ The group works on four main topics:
  - Protocol improvements — the transaction layer of the Filecoin protocol and cross-layer interactions.
  - Blockchain infrastructure — state of the art of generic blockchain constructions.
  - Cryptographic primitives — performance and security of cryptographic primitives.
+
+Group website: https://research.filecoin.io/
