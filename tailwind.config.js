@@ -23,6 +23,9 @@ module.exports = {
       lineHeight: {
         cavernous: '3rem',
       },
+      spacing: {
+        72: '18rem',
+      },
     },
     // Do not extend these
     colors: {
