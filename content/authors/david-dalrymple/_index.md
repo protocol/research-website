@@ -10,9 +10,6 @@ authors:
 role: Research Scientist
 
 research-groups:
-  - R&D Strategy
-  - iPLD
-  - filecoin
 
 resources:
   - name: avatar

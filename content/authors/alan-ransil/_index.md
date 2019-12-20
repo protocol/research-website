@@ -10,7 +10,7 @@ authors:
 role: Research Scientist
 
 research-groups:
-  - independent-research
+  - "Independent Research"
 
 resources:
   - name: avatar

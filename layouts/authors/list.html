@@ -11,7 +11,10 @@
       <div class="md:w-1/2 lg:w-1/3 md:pr-4 lg:pr-8">
         {{ range .Resources.Match "avatar" }}
           {{ $image := .Fill "250x250" }}
-          <img class="mb-4 rounded-full mx-auto w-64 h-64 md:ml-0 lg:mb-8" src="{{ $image.Permalink }}">
+          <div class="relative mb-4 lg:mb-8 md:ml-0">
+            <img class="absolute block rounded-full mx-auto w-64 h-64 mt-4 ml-4" src="{{ $image.Permalink }}" style="left: 50%; transform: translateX(-50%);">
+            <img class="mx-auto w-72 h-72" src="/images/people-bg-mask.png">
+          </div>
         {{ end }}
 
         <h3 class="text-center md:text-left mb-2 text-grey font-bold text-md leading-none">{{ .Params.name }}</h3>
@@ -19,16 +22,16 @@
         <p class="text-center md:text-left text-sm leading-loose">{{ .Params.email }}</p>
 
         <p class="text-center md:text-left text-sm leading-tight mb-2">
-          {{- .Params.role -}}
+          <span>{{- .Params.role -}}</span>
 
           {{ range (index .Params "research-groups")}}
+            <span>/</span>
             {{ with $.Site.GetPage "taxonomyTerm" (printf "research/groups/%s" (urlize . )) }}
-              /
-              <a href="{{ .Permalink }}" class="inline-block hover:text-blue hover:underline">
+              <a href="{{ .Permalink }}" class="inline-block hover:text-blue hover:underline capitalize">
                 {{ humanize .Title }}
               </a>
             {{ else }}
-              / {{- . -}}
+              {{- . -}}
             {{ end }}
           {{ end }}
         </p>
@@ -71,14 +74,14 @@
           <h2 class="font-semibold mb-4 pt-8 hover:underline">Latest work</h2>
           <div class="">
             {{ range .Pages }}
-              <a href="{{ .RelPermalink }}" class="block mb-8">
+              <a href="{{ .RelPermalink }}" class="block mb-8 group">
                 <p class="text-sm text-gray-600 mb-2">
                   <span>{{ .Date.Format .Site.Params.DateForm }}</span>
                   <span class="text-blue-200">/</span>
                   <span>{{ humanize .Type }}</span>
                 </p>
 
-                <h1 class="text-blue text-bigger leading-tight mb-2">{{ .Title }}</h1>
+                <h1 class="text-blue text-bigger leading-tight mb-2 group-hover:underline">{{ .Title }}</h1>
 
                 <p class="multiline-ellipsis-2">{{ .Summary }}</p>
               </a>

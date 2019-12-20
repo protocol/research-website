@@ -11,7 +11,7 @@ authors:
 publication_types:
   - report
 research-groups:
-  - filecoin
+  - filecoin-research
 categories:
   - whitepaper
 research-areas:

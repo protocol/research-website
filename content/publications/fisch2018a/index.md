@@ -11,7 +11,7 @@ publication_types:
 authors:
   - ben-fisch
 research-groups:
-  - filecoin
+  - filecoin-research
 categories:
 research-areas:
   - cryptography

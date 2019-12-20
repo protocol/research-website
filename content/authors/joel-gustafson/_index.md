@@ -10,7 +10,6 @@ authors:
 role: Research Scientist
 
 research-groups:
-  - "The Underlay"
   - "Independent Research"
 
 resources:

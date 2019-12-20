@@ -10,7 +10,6 @@ authors:
 role: Research Administrator
 
 research-groups:
-  -  PL Research
 
 resources:
   - name: avatar

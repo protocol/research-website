@@ -14,7 +14,7 @@ publication_types:
 research-areas:
   - cryptography
 research-groups:
-  - filecoin
+  - filecoin-research
 categories:
 
 journal:

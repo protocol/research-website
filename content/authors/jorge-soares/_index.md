@@ -10,7 +10,6 @@ authors:
 role: Research Program Manager
 
 research-groups:
-  -
 
 resources:
   - name: avatar
@@ -32,6 +31,7 @@ education:
     - course: BSc in Communication Networks Engineering
       institution: Instituto Superior Técnico - Universidade de Lisboa (IST-UL)
       year: 2007              
+
 
 social:
   - icon: google-scholar

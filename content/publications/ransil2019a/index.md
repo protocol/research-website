@@ -7,6 +7,7 @@ publishDate: 2019-09-05
 doi: ""
 
 publication_types:
+  - poster
 authors:
   - alan-ransil
   - chhi-med-kunzang
