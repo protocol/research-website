@@ -22,16 +22,16 @@
         <p class="text-center md:text-left text-sm leading-loose">{{ .Params.email }}</p>
 
         <p class="text-center md:text-left text-sm leading-tight mb-2">
-          {{- .Params.role -}}
+          <span>{{- .Params.role -}}</span>
 
           {{ range (index .Params "research-groups")}}
+            <span>/</span>
             {{ with $.Site.GetPage "taxonomyTerm" (printf "research/groups/%s" (urlize . )) }}
-              /
-              <a href="{{ .Permalink }}" class="inline-block hover:text-blue hover:underline">
+              <a href="{{ .Permalink }}" class="inline-block hover:text-blue hover:underline capitalize">
                 {{ humanize .Title }}
               </a>
             {{ else }}
-              / {{- . -}}
+              {{- . -}}
             {{ end }}
           {{ end }}
         </p>

@@ -12,7 +12,7 @@ role: Research Scientist
 research-groups:
   - R&D Strategy
   - iPLD
-  - filecoin
+  - filecoin-research
 
 resources:
   - name: avatar
