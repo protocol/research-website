@@ -10,7 +10,7 @@ authors:
 role: Research Program Manager
 
 research-groups:
-  - 
+  -
 
 resources:
   - name: avatar
@@ -24,14 +24,14 @@ education:
       institution: École polytechnique fédérale de Lausanne (EPFL)
       year: 2016
     - course: PhD in Electrical and Computer Engineering (IST-EPFL JDI)
-      institution: Instituto Superior Técnico - Univeridade de Lisboa (IST-UL)
+      institution: Instituto Superior Técnico - Universidade de Lisboa (IST-UL)
       year: 2016
     - course: MSc in Communication Networks Engineering
-      institution: Instituto Superior Técnico - Univeridade de Lisboa (IST-UL)
-      year: 2016
+      institution: Instituto Superior Técnico - Universidade de Lisboa (IST-UL)
+      year: 2009
     - course: BSc in Communication Networks Engineering
-      institution: Instituto Superior Técnico - Univeridade de Lisboa (IST-UL)
-      year: 2016              
+      institution: Instituto Superior Técnico - Universidade de Lisboa (IST-UL)
+      year: 2007              
 
 social:
   - icon: google-scholar
