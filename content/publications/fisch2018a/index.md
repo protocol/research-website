@@ -15,6 +15,7 @@ research-groups:
 categories:
 research-areas:
   - cryptography
+  - distributed-systems
 
 journal:
 

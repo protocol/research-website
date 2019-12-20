@@ -1,12 +1,12 @@
 ---
 title:
 
-# Hugos Publish Date
+# Hugos Publish Date (not used)
 date: 2014-07-14
 # Publications Publish Date
 publishDate: 2019-09-03T11:05:30+01:00
 
-# Publication Name
+# Publication Name (not used)
 journal:
 
 # Venue Name
@@ -23,7 +23,7 @@ resources:
   - src: cite.bib
 
 # Taxonomies:
-# dont actually use multiple of these. 
+# use only one!
 publication_types:
   - conference-paper
   - journal-article
@@ -34,12 +34,21 @@ publication_types:
   - book-section
   - thesis
   - patent
+
 authors:
+  -
+
 tags:
+  -
+
 categories:
+  -
+
 research-areas:
   - distributed-systems
+
 research-groups:
+  -
 
 featured: false
 

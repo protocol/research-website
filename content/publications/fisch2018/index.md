@@ -12,11 +12,15 @@ authors:
   - joseph-bonneau
   - nicola-greco
   - juan-benet
+
 research-groups:
   - filecoin-research
+
 categories:
+
 research-areas:
   - cryptography
+  - distributed-systems
 
 venue:
 venue_location:
