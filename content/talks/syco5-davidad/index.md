@@ -18,7 +18,7 @@ location: "Birmingham, UK"
 authors:
   - david-dalrymple
 research-areas:
-  - knowledge-engineering
+  - applied-category-theory
 research-groups:
 
 resources:

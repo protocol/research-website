@@ -21,12 +21,13 @@ research-areas:
   - cryptography
   - distributed-systems
 research-groups:
-
+  - filecoin-research
+  
 resources:
   - title: featured-image
     src: featured.jpg
 
-abstract: Ben Fisch (Filecoin Research) talks about PoReps at Lab Day 2018. 
+abstract: Ben Fisch (Filecoin Research) talks about PoReps at Lab Day 2018.
 
 ---
 

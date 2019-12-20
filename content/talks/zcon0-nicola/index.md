@@ -20,6 +20,7 @@ authors:
 research-areas:
   - cryptography
 research-groups:
+  - filecoin-research
 
 resources:
   - title: featured-image

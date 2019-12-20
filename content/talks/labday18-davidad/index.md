@@ -19,6 +19,7 @@ authors:
   - david-dalrymple
 research-areas:
   - distributed-systems
+  - type-theory
 research-groups:
 
 resources:
