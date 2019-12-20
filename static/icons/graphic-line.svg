@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1444px" height="33px" viewBox="0 0 1444 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>graphic line</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1,4.9270073 C127.175,14.7810219 328.454167,5.91240876 406.5625,4.9270073 C484.670833,3.94160584 789.093056,0.98540146 857.1875,4.9270073 C925.281944,8.86861314 1235.7125,11.8248175 1281.77639,4.9270073 L1443,0 C1443,13.7956204 1443,20.6934307 1443,20.6934307 C1331.51204,25.9489051 1253.06991,27.919708 1207.67361,26.6058394 C909.927315,17.4087591 742.69537,14.1240876 705.977778,16.7518248 C650.901389,20.6934307 385.533333,20.6934307 312.431944,20.6934307 C239.330556,20.6934307 60.0819444,12.810219 1,20.6934307 C1,26.6058394 1,5.91240876 1,4.9270073 Z" id="path-1"></path>
+        <filter x="-0.0%" y="-1.9%" width="100.1%" height="103.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.764705882   0 0 0 0 0.882352941   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M1,10.9270073 C127.175,20.7810219 328.454167,11.9124088 406.5625,10.9270073 C484.670833,9.94160584 789.093056,6.98540146 857.1875,10.9270073 C925.281944,14.8686131 1235.7125,17.8248175 1281.77639,10.9270073 L1443,6 C1443,19.7956204 1443,26.6934307 1443,26.6934307 C1331.51204,31.9489051 1253.06991,33.919708 1207.67361,32.6058394 C909.927315,23.4087591 742.69537,20.1240876 705.977778,22.7518248 C650.901389,26.6934307 385.533333,26.6934307 312.431944,26.6934307 C239.330556,26.6934307 60.0819444,18.810219 1,26.6934307 C1,32.6058394 1,11.9124088 1,10.9270073 Z" id="path-3"></path>
+        <filter x="-0.0%" y="-1.9%" width="100.1%" height="103.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.764705882   0 0 0 0 0.882352941   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="components/navigation/main-nav/desktop-compact" transform="translate(1.000000, -116.000000)">
+            <g id="components/main-nav-compact" transform="translate(-1.000000, 16.000000)">
+                <g id="separator-option-2" transform="translate(0.000000, 100.000000)">
+                    <g id="graphic-line">
+                        <g id="Path-3" style="mix-blend-mode: multiply;">
+                            <use fill="#EFF7FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Path-3-Copy" style="mix-blend-mode: multiply;" transform="translate(722.000000, 19.500000) scale(-1, 1) translate(-722.000000, -19.500000) ">
+                            <use fill="#EFF7FF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        </g>
+                        <path d="M1,12.2773723 C127.175,14.8321168 328.454167,12.5328467 406.5625,12.2773723 C484.670833,12.0218978 789.093056,11.2554745 857.1875,12.2773723 C925.281944,13.2992701 1235.7125,14.0656934 1281.77639,12.2773723 L1443,11 C1443,14.5766423 1443,16.3649635 1443,16.3649635 C1331.51204,17.7274939 1253.06991,18.2384428 1207.67361,17.8978102 C909.927315,15.513382 742.69537,14.6618005 705.977778,15.3430657 C650.901389,16.3649635 385.533333,16.3649635 312.431944,16.3649635 C239.330556,16.3649635 60.0819444,14.3211679 1,16.3649635 C1,17.8978102 1,12.5328467 1,12.2773723 Z" id="Path-3-Copy-2" fill="#B7D9FF" style="mix-blend-mode: multiply;" transform="translate(722.000000, 14.500000) scale(1, -1) rotate(0.200000) translate(-722.000000, -14.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
