@@ -3,6 +3,7 @@ title: Protocol Labs Research
 summaryLength: 30
 googleAnalytics: UA-96910779-16
 relativeURLs: true
+baseURL: "https://research.protocol.ai/"
 taxonomies:
   author: authors
   category: categories
