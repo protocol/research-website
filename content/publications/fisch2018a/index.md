@@ -18,7 +18,7 @@ research-areas:
 
 journal:
 
-venue:
+venue: International Association for Cryptologic Research
 venue_location:
 
 url_source: https://eprint.iacr.org/2018/678

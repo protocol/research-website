@@ -19,8 +19,8 @@ research-areas:
 
 journal:
 
-venue:
-venue_location: 
+venue: Protocol Labs Technical Report
+venue_location:
 
 resources:
   - src: protocollabs2017a.pdf

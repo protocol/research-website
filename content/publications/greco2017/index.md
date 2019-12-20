@@ -19,8 +19,8 @@ research-areas:
 
 journal:
 
-venue:
-venue_location: 
+venue: Massachusetts Institute of Technology
+venue_location:
 
 url_source: https://dspace.mit.edu/handle/1721.1/113976
 
