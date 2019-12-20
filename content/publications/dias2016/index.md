@@ -6,7 +6,7 @@ publishDate: 2016-05-25
 
 doi: "10.1007/978-3-319-38791-8_60"
 
-journal: "International Conference on Web Engineering (ICWE)"
+journal:
 
 authors:
   - david-dias
@@ -15,7 +15,7 @@ publication_types:
   - tutorial
 
 research-groups:
-  - 
+  -
 
 categories:
   -
