@@ -19,8 +19,8 @@ categories:
 
 journal:
 
-venue: Fifth Symposium on Compositional Structures (SYCO 5)
-venue_location: Birmingham, UK.
+venue:
+venue_location:
 
 doi:
 

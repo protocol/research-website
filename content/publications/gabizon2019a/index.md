@@ -1,8 +1,8 @@
 ---
 title: "PLONK: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge"
-date: 2019-08-21
+date: 2019-08-24
 
-publishDate: 2019-08-21
+publishDate: 2019-08-24
 
 doi:
 
@@ -19,8 +19,8 @@ research-areas:
 
 journal:
 
-venue: Fifth Symposium on Compositional Structures (SYCO 5)
-venue_location: Birmingham, UK.
+venue:
+venue_location: 
 
 url_source: https://eprint.iacr.org/2019/953
 

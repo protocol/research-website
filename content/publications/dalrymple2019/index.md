@@ -1,9 +1,9 @@
 ---
 title: "Dioptics: A Common Generalization of Open Games and Gradient-Based Learners"
 
-date: 2019-09-06
+date: 2019-09-05
 
-publishDate: 2019-09-06
+publishDate: 2019-09-05
 
 publication_types:
   - conference-paper

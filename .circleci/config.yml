@@ -3,31 +3,27 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:latest
+      - image: circleci/node:latest
     working_directory: ~/hugo
     environment:
       HUGO_BUILD_DIR: ~/hugo/public
     steps:
-      # checkout the repository
       - checkout
 
-      # install git submodules for managing third-party dependencies
-      - run: git submodule sync && git submodule update --init
-
-      # build with Hugo
       - run:
-          name: "Run Hugo"
-          command: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
+          name: "Install Hugo"
+          command: curl -sL -o/tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.61.0/hugo_0.61.0_Linux-64bit.deb && sudo dpkg -i /tmp/hugo.deb
 
-      #- run:
-      #    name: "Test website"
-      #    command: |
-      #      htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html \
-      #      --empty-alt-ignore --disable-external
+      - run:
+          name: "Install dependencies"
+          command: yarn
 
-      # persist for deploy
+      - run:
+          name: "Build project"
+          command: yarn run build
+
       - persist_to_workspace:
-          root: /root/hugo/~/hugo/
+          root: ~/hugo/
           paths:
             - public
 

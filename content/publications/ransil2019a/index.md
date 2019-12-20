@@ -18,8 +18,8 @@ research-areas:
 
 journal: "Metascience 2019"
 
-venue: Fifth Symposium on Compositional Structures (SYCO 5)
-venue_location: Birmingham, UK.
+venue:
+venue_location:
 
 resources:
   - src: ransil2019a.pdf

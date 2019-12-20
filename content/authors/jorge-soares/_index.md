@@ -10,7 +10,7 @@ authors:
 role: Research Program Manager
 
 research-groups:
-  - "PL Research"
+  - 
 
 resources:
   - name: avatar
@@ -20,9 +20,18 @@ interests:
 
 education:
   courses:
-    - course: PhD in robotics, control, and intelligent systems
+    - course: PhD in Robotics, Control, and Intelligent systems (IST-EPFL JDI)
       institution: École polytechnique fédérale de Lausanne (EPFL)
       year: 2016
+    - course: PhD in Electrical and Computer Engineering (IST-EPFL JDI)
+      institution: Instituto Superior Técnico - Univeridade de Lisboa (IST-UL)
+      year: 2016
+    - course: MSc in Communication Networks Engineering
+      institution: Instituto Superior Técnico - Univeridade de Lisboa (IST-UL)
+      year: 2016
+    - course: BSc in Communication Networks Engineering
+      institution: Instituto Superior Técnico - Univeridade de Lisboa (IST-UL)
+      year: 2016              
 
 social:
   - icon: google-scholar
