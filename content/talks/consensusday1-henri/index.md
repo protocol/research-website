@@ -18,10 +18,10 @@ location: "Stanford, CA, USA"
 authors:
   - henri-stern
 research-areas:
-  - cryptography
   - distributed-systems
 research-groups:
-
+  - filecoin-research
+  
 resources:
   - title: featured-image
     src: featured.jpg

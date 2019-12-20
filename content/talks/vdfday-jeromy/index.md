@@ -10,7 +10,7 @@ date: 2018-02-03 14:19:14 +0100
 # Event name
 event: "VDF Day"
 
-event_url: "http://events.cs.bham.ac.uk/syco/strings3-syco5/"
+event_url:
 
 location: "Stanford, CA, USA"
 
@@ -21,6 +21,7 @@ research-areas:
   - cryptography
   - distributed-systems
 research-groups:
+  - filecoin-research
 
 resources:
   - title: featured-image
