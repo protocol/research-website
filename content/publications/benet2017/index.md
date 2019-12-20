@@ -13,13 +13,14 @@ publication_types:
   - report
 research-areas:
   - cryptography
+  - distributed-systems  
 research-groups:
   - filecoin-research
 categories:
 
 journal:
 
-venue: Protocol Labs Technical Report
+venue:
 venue_location:
 
 doi:

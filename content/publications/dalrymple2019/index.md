@@ -12,11 +12,11 @@ authors:
 tags:
 categories:
 research-areas:
-
+  - applied-category-theory
 journal:
 
 venue: Fifth Symposium on Compositional Structures (SYCO 5)
-venue_location: Birmingham, UK.
+venue_location: Birmingham, UK
 
 links:
 

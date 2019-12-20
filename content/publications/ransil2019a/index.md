@@ -4,20 +4,20 @@ date: 2019-09-05
 
 publishDate: 2019-09-05
 
-doi: ""
+doi:
 
 publication_types:
   - poster
 authors:
   - alan-ransil
-  - chhi-med-kunzang
+  - chhimed-kunzang
 tags:
 categories:
-  - poster
+  -
 research-areas:
   - knowledge-engineering
 
-journal: "Metascience 2019"
+journal:
 
 venue: Metascience 2019 Symposium
 venue_location: Stanford University

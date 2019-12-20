@@ -13,7 +13,7 @@ publication_types:
 research-groups:
   - filecoin-research
 categories:
-  - whitepaper
+  - 
 research-areas:
   - cryptography
   - distributed-systems

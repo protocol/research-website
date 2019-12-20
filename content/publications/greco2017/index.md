@@ -13,13 +13,14 @@ authors:
 research-groups:
   - filecoin-research
 categories:
+  - 
 research-areas:
   - cryptography
   - distributed-systems
 
 journal:
 
-venue: Massachusetts Institute of Technology
+venue:
 venue_location:
 
 url_source: https://dspace.mit.edu/handle/1721.1/113976

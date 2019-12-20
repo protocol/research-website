@@ -12,16 +12,20 @@ authors:
   - david-dias
   - juan-benet
 publication_types:
-research-groups:
-  - IPFS
-categories:
   - tutorial
+
+research-groups:
+  - 
+
+categories:
+  -
+
 research-areas:
   - distributed-systems
 
 url_source: https://link.springer.com/chapter/10.1007%2F978-3-319-38791-8_60
 
-venue: 16th International Conference on Web Engineering (ICWE) 
+venue: 16th International Conference on Web Engineering (ICWE)
 venue_location: Lugano, Switzerland
 
 resources:

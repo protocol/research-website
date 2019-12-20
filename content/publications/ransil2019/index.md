@@ -7,7 +7,7 @@ publishDate: 2019-07-09
 doi:
 
 publication_types:
-  - report
+  -
 authors:
   - alan-ransil
   - edwin-fonkwe-fongang

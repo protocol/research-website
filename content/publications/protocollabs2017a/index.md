@@ -13,6 +13,7 @@ authors:
 research-groups:
   - filecoin-research
 categories:
+  - 
 research-areas:
   - cryptography
   - distributed-systems

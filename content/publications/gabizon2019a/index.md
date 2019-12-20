@@ -13,13 +13,18 @@ authors:
 publication_types:
   - report
 tags:
+  -
 categories:
+  -
 research-areas:
   - cryptography
 
+research-groups:
+  - filecoin-research
+
 journal:
 
-venue: International Association for Cryptologic Research
+venue:
 venue_location:
 
 url_source: https://eprint.iacr.org/2019/953

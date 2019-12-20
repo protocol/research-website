@@ -14,13 +14,14 @@ authors:
   - ariel-gabizon
 tags:
 research-groups:
+  - filecoin-research
 categories:
 research-areas:
   - cryptography
 
 url_source: https://eprint.iacr.org/2019/601
 
-venue: International Association for Cryptologic Research
+venue:
 venue_location:
 
 resources:
