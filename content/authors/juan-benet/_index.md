@@ -13,7 +13,7 @@ research-groups:
 
 resources:
   - name: avatar
-    src: avatar.png
+    src: avatar.jpg
 
 interests:
 
@@ -43,4 +43,4 @@ user_groups:
 
 quote:
 ---
- Juan Benet is the inventor of the InterPlanetary File System (IPFS), a new protocol to make the web faster, safer, and more open, and Filecoin, a cryptocurrency incentivized storage network. The IPFS Project has grown into a large open source movement to re-decentralize the web, safeguard our data, and improve our applications. Juan is the founder of Protocol Labs, the internet tech R&D lab that develops IPFS and Filecoin. He studied Computer Science at Stanford University, and is obsessed with knowledge, science, and technology.
+Juan Benet is the inventor of the InterPlanetary File System (IPFS), a new protocol to make the web faster, safer, and more open, and Filecoin, a cryptocurrency incentivized storage network. The IPFS Project has grown into a large open source movement to re-decentralize the web, safeguard our data, and improve our applications. Juan is the founder of Protocol Labs, the internet tech R&D lab that develops IPFS and Filecoin. He studied Computer Science at Stanford University, and is obsessed with knowledge, science, and technology.
