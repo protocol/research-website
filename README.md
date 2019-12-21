@@ -46,3 +46,9 @@ draft = true
 ```
 
 When the `master` branch changes, typically after a PR is merged, the site will be built, pinned to cluster and the [DNSLink](https://docs.ipfs.io/guides/concepts/dnslink/) record will be updated so the live site will update **automatically**, once the dns change has propagated.
+
+## Policies
+
+- You're **encouraged** to submit blog posts! We're aiming for frequent updates and would like to publish a variety of content, ranging from the highly technical to opinion pieces. While we will edit all posts to maintaing minimum consistency standards, you have wide latitude on content.
+- All content changes require review by research-pm. We'll try to keep it quick and easy. We'll do the final proofreading for any blog posts with or without feedback to the author (as requested).
+- Anyone doing work in some way related to research can ask to be listed. We understand there are privacy constraints and so don't require profiles to be complete. However, all profiles have to use real names -- or, in other words, the same name you would use on scientific publications. This is also a technical requirement for content matching. 
