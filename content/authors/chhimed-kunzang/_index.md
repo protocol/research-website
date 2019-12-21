@@ -1,7 +1,7 @@
 ---
 name: "Chhi'mèd Künzang"
 
-role: Software Engineer
+role: Research Engineer
 
 research-groups:
   - filecoin-research
