@@ -13,14 +13,14 @@ publication_types:
 research-groups:
   - filecoin-research
 categories:
-  - 
+  -
 research-areas:
   - cryptography
   - distributed-systems
 
 journal:
 
-venue: Filecoin White Paper
+venue:
 venue_location:
 
 resources:

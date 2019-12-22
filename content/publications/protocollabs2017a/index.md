@@ -13,14 +13,14 @@ authors:
 research-groups:
   - filecoin-research
 categories:
-  - 
+  -
 research-areas:
   - cryptography
   - distributed-systems
 
 journal:
 
-venue: Protocol Labs Technical Report
+venue:
 venue_location:
 
 resources:
