@@ -28,7 +28,7 @@ That’s why we are beyond excited to share with you a new research group at Pro
 
 We’re forming this lab in response to a growing need to tackle open problems that surfaced with the wild adoption of IPFS and libp2p, taking the challenge of providing a better fabric for human knowledge to a whole new scale.
 
-IPFS & libp2p were born out of research, being the distilled result of decades of innovation in networking protocols and distributed systems. Since the projects’ nucleation, we have continued to invest in improving those same ideas and took them through [Protocol Labs’ Innovation Pipeline](https://protocol.ai/blog/protocol-labs-creating-new-networks/), deploying them to users and granting new superpowers. You can learn about the many great achievements of [IPFS & libp2p in their yearly report](https://blog.ipfs.io/weekly-72).
+IPFS & libp2p were born out of research, being the distilled result of decades of innovation in networking protocols and distributed systems. Since the projects’ nucleation, we have continued to invest in improving those same ideas and took them through [Protocol Labs’ innovation pipeline](https://protocol.ai/blog/protocol-labs-creating-new-networks/), deploying them to users and granting new superpowers. You can learn about the many great achievements of [IPFS & libp2p in their yearly report](https://blog.ipfs.io/weekly-72).
 
 Furthermore, the increasing momentum towards **decentralisation of Internet services** is calling for new features to be inherently integrated into the networking protocols stack. Despite decades of research on topics close to IPFS and libp2p, the values of **decentralisation and privacy-preserving communication** were, for the most part, either treated as an afterthought or not considered at all. At ResNetLab, those issues are at the forefront of the protocol design process.
 
@@ -40,9 +40,9 @@ The lab is designed to promote collaborative research: the output will always st
 
 Below, you can find some of the outputs produced to date. We’ve been hard at work and there’s much more to come!
 
-## Open Problems and RFPs
+## Open problems and RFPs
 
-We focus on designing protocols that will be useful for past, current and future applications and we will drive wide adoption of the protocols incubated within ResNetLab within [Protocol Labs projects](https://protocol.ai/projects/). As such, we have drafted formal descriptions of the Open Problems that are challenging projects such as IPFS, libp2p and IPLD. Today, we are publishing the first 6 Open Problems with more to follow in the coming months:
+We focus on designing protocols that will be useful for past, current and future applications and we will drive wide adoption of the protocols incubated within ResNetLab within [Protocol Labs projects](https://protocol.ai/projects/). As such, we have drafted formal descriptions of the open problems that are challenging projects such as IPFS, libp2p and IPLD. Today, we are publishing the first six open problems with more to follow in the coming months:
 
 - [PubSub at Scale](https://github.com/libp2p/notes/blob/master/OPEN_PROBLEMS/PUBSUB_AT_SCALE.md)
 - [Routing at Scale](https://github.com/libp2p/notes/blob/master/OPEN_PROBLEMS/ROUTING_AT_SCALE.md)
@@ -51,27 +51,27 @@ We focus on designing protocols that will be useful for past, current and future
 - [Mutable Data](https://github.com/ipfs/notes/blob/master/OPEN_PROBLEMS/MUTABLE_DATA.md)
 - [Preserve Users Privacy](https://github.com/ipfs/notes/blob/master/OPEN_PROBLEMS/PRESERVE_USER_PRIVACY.md)
 
-The description of the Open Problems has been intentionally left wide in terms of nature and scope in order to allow for far-reaching research and experimentation.
+The description of the open problems has been intentionally left wide in terms of nature and scope in order to allow for far-reaching research and experimentation.
 
-Out of the Open Problems above, we have carefully crafted three Requests for Proposals (RFPs). In contrast to the Open Problem statements, the scope of the RFPs is narrow and targeted. This is also intentional as an attempt to attack the Open Problems from several different angles and deliver complete solutions. We are publishing 2 RFPs:
+Out of the open problems above, we have carefully crafted three requests for proposals (RFPs). In contrast to the open problem statements, the scope of the RFPs is narrow and targeted. This is also intentional as an attempt to attack the open problems from different angles and deliver complete solutions. We are publishing two RFPs:
 
 - [RFP: Multi-Level DHT Design and Evaluation](https://github.com/protocol/research-RFPs/blob/master/RFPs/rfp-7-MLDHT.md)
 - [RFP: Scalability Bounds of P2P Pub/Sub (libp2p floodsub, gossipsub and episub)](https://github.com/protocol/research-RFPs/blob/master/RFPs/rfp-8-pubsub.md)
 
 The ResNetLab RFP scheme intends to be a low-friction, high-quality funding scheme for targeted solutions to the open problems of content-addressable networks. We want to keep the application overhead low, but will strive to keep the quality of awarded projects high. That said, individuals, university labs, or teams applying to our RFPs are encouraged to highlight the novelty of their proposed solution or approach to solve the problem in question.
 
-Last, but not least, it is worth mentioning that our RFPs are only a small subset of the identified Open Problems and those Open Problems a tiny subset of the challenges that future protocols have to address in order to become content-centric, decentralised and privacy preserving. We are, therefore, open to new ideas and proposals for collaborations, reach out to us at [resnetlab@protocol.ai](mailto:resnetlab@protocol.ai).
+Last, but not least, it is worth noting that our first RFPs only address a small subset of the identified open problems, and those open problems a tiny subset of the challenges that future protocols have to address in order to become content-centric, decentralised, and privacy preserving. We are, therefore, open to new ideas and proposals for collaborations; reach out to us at [resnetlab@protocol.ai](mailto:resnetlab@protocol.ai).
 
 ## Publications and Talks
 
 As we make progress and create contributions, we will update the [ResNetLab page at research.protocol.ai](https://research.protocol.ai/research/groups/resnetlab/). Today, we are thrilled to share with you the lastest ones:
 
 - [**Workshop: A Brief History of Information-Centric Networks (2019.07.31)**](https://github.com/protocol/research/issues/14)
-  - [recording](https://www.youtube.com/watch?v=rbLioc1h9dg)
-  - [slides](https://drive.google.com/a/protocol.ai/file/d/1IQL2S9TREjpMTwfsJO0-dYNR9LQdZCAq/view)
+  - [Recording](https://www.youtube.com/watch?v=rbLioc1h9dg)
+  - [Slides](https://drive.google.com/a/protocol.ai/file/d/1IQL2S9TREjpMTwfsJO0-dYNR9LQdZCAq/view)
 - [**ACM ICN Macau, IPFS & libp2p Tutorial (2019.09.24)**](https://conferences.sigcomm.org/acm-icn/2019/tutorial-IPFS.php)
   - Recordings will be published on the ACM ICN Macau website.
-  - [slides](https://drive.google.com/drive/u/1/folders/1PJ3oK_jLxnIRxwj-ucTmDhQObisIcIoz)
+  - [Slides](https://drive.google.com/drive/u/1/folders/1PJ3oK_jLxnIRxwj-ucTmDhQObisIcIoz)
 - [The first draft of the new GossipSub Paper](LINK HERE)
 - [The first draft of the new MerkleCRDT Paper](Link Here)
 
