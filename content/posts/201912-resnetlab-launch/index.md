@@ -66,7 +66,7 @@ Last, but not least, it is worth mentioning that our RFPs are only a small subse
 
 As we make progress and create contributions, we will update the [ResNetLab page at research.protocol.ai](https://research.protocol.ai/research/groups/resnetlab/). Today, we are thrilled to share with you the lastest ones:
 
-- [**Workshop: A Brief History of Information-Centric Networks (2019.07.31).**](https://github.com/protocol/research/issues/14)
+- [**Workshop: A Brief History of Information-Centric Networks (2019.07.31)**](https://github.com/protocol/research/issues/14)
   - [recording](https://www.youtube.com/watch?v=rbLioc1h9dg)
   - [slides](https://drive.google.com/a/protocol.ai/file/d/1IQL2S9TREjpMTwfsJO0-dYNR9LQdZCAq/view)
 - [**ACM ICN Macau, IPFS & libp2p Tutorial (2019.09.24)**](https://conferences.sigcomm.org/acm-icn/2019/tutorial-IPFS.php)
