@@ -24,7 +24,7 @@ The lab's genesis comes from a need present in the IPFS and libp2p projects to a
 ## Research Endeavours
 
 |Open Problem|Description|
-|---|---|---|
+|---|---|
 |[Preserve users' privacy when providing and fetching content](https://github.com/ipfs/notes/blob/master/OPEN_PROBLEMS/PRESERVE_USER_PRIVACY.md)|How to ensure that the user's of the IPFS network can collect and provide information while mainting their full anonymity.|
 |[Mutable Data (Naming, Real-Time, Guarantees)](https://github.com/ipfs/notes/blob/master/OPEN_PROBLEMS/MUTABLE_DATA.md)|Enabling a multitude of different patterns of interactions between users, machines and both. In other words, what are the essential primitives that must be provided for dynamic applications to exist, what are the guarantees they require (consistency, availability, persistancy, authenticity, etc) from the underlying layer in order create powerful and complete applications in the Distributed Web.|
 |[Human Readable Naming](https://github.com/ipfs/notes/blob/master/OPEN_PROBLEMS/HUMAN_READABLE_NAMING.md)|You can only have two of three properties for a name: Human-meaningful, Secure and/or Decentralized. This is Zooko's Trilemma. Can we have all 3, or even more? Can context related to some data help solve this problem?|
