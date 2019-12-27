@@ -34,7 +34,7 @@ Furthermore, the increasing momentum towards **decentralisation of Internet serv
 
 To proactively solve this, we created the ResNetLab to focus on the ideation, research, and prototyping phases of the innovation pipeline, while the IPFS & libp2p project teams will be focused on the deployment phase (i.e. implementation, adoption, and reach).
 
-![](/images/posts/research-pipeline-map.png)
+![](/images/resnetlab/research-pipeline-map.png)
 
 The lab is designed to promote collaborative research: the output will always stem from a combination of our internal resources with work done by our partners through research grants, requests for proposals, sponsored MSc, PhD and/or postdoc fellows, and more.
 

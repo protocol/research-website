@@ -13,13 +13,13 @@ A resilient system or network is fundamentally uncompromised by an isolated fail
 
 ## Mission & Vision
 
-The Resilient Networks Lab mission is to build resilient distributed systems, by creating and operating a platform where researchers can collaborate openly and asynchronously deep technical work.
+The Resilient Networks Lab mission is to build resilient distributed systems, by creating and operating a platform where researchers can collaborate openly and asynchronously on deep technical work.
 
 ## Motivation & Description
 
 The lab's genesis comes from a need present in the IPFS and libp2p projects to amp their research efforts to tackle the critical challenges of scaling up networks to planet scale and beyond. The Lab is designed to take ownership of the earlier stages on the research pipeline, from ideas to specs and to code.
 
-![](/images/posts/research-pipeline-map.png)
+![](/images/resnetlab/research-pipeline-map.png)
 
 ## Research Endeavours
 
