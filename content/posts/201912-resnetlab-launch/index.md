@@ -36,13 +36,13 @@ To proactively solve this, we created the ResNetLab to focus on the ideation, re
 
 ![](/images/resnetlab/research-pipeline-map.png)
 
-The lab is designed to promote collaborative research: the output will always stem from a combination of our internal resources with work done by our partners through research grants, requests for proposals, sponsored MSc, PhD and/or postdoc fellows, and more.
+The lab is designed to promote collaborative research: the output will always stem from a combination of our internal resources with work done by our partners through research grants, requests for proposals, sponsored MSc, PhD, and postdoc fellowships, and more.
 
 Below, you can find some of the outputs produced to date. We’ve been hard at work and there’s much more to come!
 
 ## Open problems and RFPs
 
-We focus on designing protocols that will be useful for past, current and future applications and we will drive wide adoption of the protocols incubated within ResNetLab within [Protocol Labs projects](https://protocol.ai/projects/). As such, we have drafted formal descriptions of the open problems that are challenging projects such as IPFS, libp2p and IPLD. Today, we are publishing the first six open problems with more to follow in the coming months:
+We focus on designing protocols that will be useful for past, current and future applications and we will drive wide adoption of the protocols incubated within ResNetLab within [Protocol Labs projects](https://protocol.ai/projects/). As such, we have drafted formal descriptions of the open problems that are challenging projects such as IPFS, libp2p, and IPLD. Today, we are publishing the first six open problems with more to follow in the coming months:
 
 - [PubSub at Scale](https://github.com/libp2p/notes/blob/master/OPEN_PROBLEMS/PUBSUB_AT_SCALE.md)
 - [Routing at Scale](https://github.com/libp2p/notes/blob/master/OPEN_PROBLEMS/ROUTING_AT_SCALE.md)
