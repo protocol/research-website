@@ -85,5 +85,6 @@ We are enthusiastic for the future to come and for the many collaborations with 
 
 For now, we bid you an excellent day, a joyful holiday season, and a great kick-off for 2020.
 
-The ResNetLab Team
+The ResNetLab Team,
+
 David Dias & Yiannis Psaras
