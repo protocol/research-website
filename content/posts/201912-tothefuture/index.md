@@ -1,5 +1,5 @@
 ---
-title: "To the future..."
+title: "To the Future..."
 
 date: 2019-12-19T01:15:02+01:00
 
