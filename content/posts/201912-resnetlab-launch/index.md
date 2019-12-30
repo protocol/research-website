@@ -22,7 +22,7 @@ Resiliency is at the core of systems that are capable of standing the test of ti
 
 That’s why we are beyond excited to share with you a new research group at Protocol Labs: the Resilient Networks Lab, or ResNetLab for short.
 
-**The Resilient Networks Lab mission** is to **build resilient distributed systems** by creating and operating a platform where researchers can **collaborate openly and asynchronously on deep technical work**.
+**The mission of the Resilient Networks Lab** is to **build resilient distributed systems** by creating and operating a platform where researchers can **collaborate openly and asynchronously on deep technical work**.
 
 ## The motivation for ResNetLab
 
