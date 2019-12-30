@@ -66,14 +66,14 @@ Last, but not least, it is worth noting that our first RFPs only address a small
 
 As we make progress and create contributions, we will update the [ResNetLab page at research.protocol.ai](https://research.protocol.ai/research/groups/resnetlab/). Today, we are thrilled to share with you the lastest ones:
 
-- [**Workshop: A Brief History of Information-Centric Networks (2019.07.31)**](https://github.com/protocol/research/issues/14)
+- [Workshop: A Brief History of Information-Centric Networks (2019.07.31)](https://github.com/protocol/research/issues/14)
   - [Recording](https://www.youtube.com/watch?v=rbLioc1h9dg)
   - [Slides](https://drive.google.com/a/protocol.ai/file/d/1IQL2S9TREjpMTwfsJO0-dYNR9LQdZCAq/view)
-- [**ACM ICN Macau, IPFS & libp2p Tutorial (2019.09.24)**](https://conferences.sigcomm.org/acm-icn/2019/tutorial-IPFS.php)
+- [ACM ICN Macau, IPFS & libp2p Tutorial (2019.09.24)](https://conferences.sigcomm.org/acm-icn/2019/tutorial-IPFS.php)
   - Recordings will be published on the ACM ICN Macau website.
   - [Slides](https://drive.google.com/drive/u/1/folders/1PJ3oK_jLxnIRxwj-ucTmDhQObisIcIoz)
-- [The first draft of the new GossipSub Paper](LINK HERE)
-- [The first draft of the new MerkleCRDT Paper](Link Here)
+- [A first draft of the upcoming GossipSub Paper](PL-TechRep-gossipsub-v0.1-Dec30.pdf)
+- [An augmented version of the MerkleCRDT Technical Report](PL-TechRep-merkleCRDT-v0.1-Dec30.pdf)
 
 ## We’re looking for brave research engineers!
 
