@@ -1,8 +1,8 @@
 ---
 title: "A New Lab for Resilient Networks Research"
 
-date: 2019-12-27T12:15:02+01:00
-lastmod: 2019-12-27T12:15:02+01:00
+date: 2019-12-30T08:30:00+01:00
+lastmod: 2019-12-30T08:30:02+01:00
 
 # Taxonomies
 authors:
