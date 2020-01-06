@@ -2,9 +2,9 @@
 title: "DClaims: A Censorship Resistant Web Annotations System using IPFS and Ethereum"
 
 # Hugos Publish Date (not used)
-date: 2014-07-14
+date: 2020-04-30T11:05:30+01:00
 # Publications Publish Date
-publishDate: 2020-04-30T11:05:30+01:00
+publishDate: 2020-01-06T11:05:30+01:00
 
 # Publication Name (not used)
 journal:
