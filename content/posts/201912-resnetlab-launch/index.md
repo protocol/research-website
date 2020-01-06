@@ -60,7 +60,7 @@ Out of the open problems above, we have carefully crafted three requests for pro
 
 The ResNetLab RFP scheme intends to be a low-friction, high-quality funding scheme for targeted solutions to the open problems of content-addressable networks. We want to keep the application overhead low, but will strive to keep the quality of awarded projects high. That said, individuals, university labs, or teams applying to our RFPs are encouraged to highlight the novelty of their proposed solution or approach to solve the problem in question.
 
-Last, but not least, it is worth noting that our first RFPs only address a small subset of the identified open problems, and those open problems a tiny subset of the challenges that future protocols have to address in order to become content-centric, decentralised, and privacy preserving. We are, therefore, open to new ideas and proposals for collaborations; reach out to us at [resnetlab@protocol.ai](mailto:resnetlab@protocol.ai).
+Last, but not least, it is worth noting that our first RFPs only address a small subset of the identified open problems, and those open problems a tiny subset of the challenges that future protocols have to address in order to become content-centric, decentralised, and privacy preserving. We are, therefore, open to new ideas and proposals for collaborations; reach out to us at [research@protocol.ai](mailto:research@protocol.ai).
 
 ## Publications and Talks
 
