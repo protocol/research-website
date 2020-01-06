@@ -1,5 +1,5 @@
 ---
-title: DClaims: A Censorship Resistant Web Annotations System using IPFS and Ethereum
+title: "DClaims: A Censorship Resistant Web Annotations System using IPFS and Ethereum"
 
 # Hugos Publish Date (not used)
 date: 2014-07-14
