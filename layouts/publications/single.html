@@ -36,19 +36,17 @@
         {{ partial "authors-row-large" . }}
 
         <div class="flex flex-row items-start justify-start md:-mx-4">
-          <div class="text-sm text-gray-600 w-1/4 md:px-4">
-            <div class="">Date</div>
-            {{ if .Params.venue_date }}
-              <div class="font-bold">{{ dateFormat "2006.01.02" .Params.venue_date }}</div>
-            {{ else }}
-              <div class="font-bold">{{ .Date.Format "2006.01.02" }}</div>
-            {{ end }}
-          </div>
-
           {{ if .Params.venue }}
             <div class="text-sm text-gray-600 w-1/2 md:px-4">
               <div class="">Venue</div>
               <div class="font-bold">{{ .Params.venue }}</div>
+            </div>
+          {{ end }}
+
+          {{ if .Params.venue_date }}
+            <div class="text-sm text-gray-600 w-1/4 md:px-4">
+              <div class="">Date</div>
+              <div class="font-bold">{{ dateFormat "2006.01.02" .Params.venue_date }}</div>
             </div>
           {{ end }}
 
