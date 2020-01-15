@@ -4,10 +4,10 @@
       {{ partial "breadcrumbs" . }}
     </div>
 
-    <div class="mb-4">
-      <div class="text-sm text-gray-600">{{ .Date.Format .Site.Params.DateForm }}</div>
+    <div class="mb-0">
+      <div class="text-sm text-gray-600"><span>{{ .Date.Format .Site.Params.DateForm }}</span></div>
     </div>
-    
+
     <div class="-mx-4 md:mx-0">
       {{ partial "page-top" . }}
     </div>
