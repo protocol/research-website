@@ -12,7 +12,7 @@ event: "Lab Day 2018"
 
 event_url:
 
-location: "San Francisco, CA, USA"
+event_location: "San Francisco, CA, USA"
 
 # Taxonomies
 authors:

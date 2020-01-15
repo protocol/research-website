@@ -1,4 +1,4 @@
-<div class="text-sm text-gray-600">{{ dateFormat .Site.Params.DateForm .Params.publishDate }}</div>
+<div class="text-sm text-gray-600">{{ .Date.Format .Site.Params.DateForm }}</div>
 
 {{ if (index .Params "research-areas") }}
   <div class="block">

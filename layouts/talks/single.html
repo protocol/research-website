@@ -1,11 +1,7 @@
 {{define "main"}}
   <div class="max-w-screen mx-auto pt-4 px-4 md:px-10">
-    <div class="max-w-md truncate text-gray text-sm">
-      <a class="inline capitalize hover:text-blue hover:underline" href="/research">Research</a>
-      <span class="inline">/</span>
-      <a class="inline capitalize hover:text-blue hover:underline" href="/research/talks">Talks</a>
-      <span class="inline">/</span>
-      <a class="inline capitalize" href="{{ .Permalink }}">{{or .Params.name .Title }}</a>
+    <div class="mb-12">
+      {{ partial "breadcrumbs" . }}
     </div>
 
     <div class="-mx-4 md:mx-0">
@@ -36,14 +32,18 @@
     <div class="md:flex">
       <div class="md:w-2/3">
         <div class="flex max-w-md">
-          <p class="w-1/4 text-sm text-gray-600">Date</p>
           <p class="w-1/2 text-sm text-gray-600">Event</p>
+          <p class="w-1/4 text-sm text-gray-600">Date</p>
           <p class="w-1/4 text-sm text-gray-600">Location</p>
         </div>
         <div class="flex max-w-md mb-8">
-          <p class="w-1/4 text-sm text-gray-600 font-bold">{{ .Date.Format "2006.01.02" }}</p>
           <p class="w-1/2 text-sm text-gray-600 font-bold">{{ .Params.event }}</p>
-          <p class="w-1/4 text-sm text-gray-600 font-bold">{{ .Params.location }}</p>
+          {{ if .Params.venue_date }}
+            <p class="w-1/4 text-sm text-gray-600 font-bold">{{ dateFormat "2006.01.02" .Params.event_date }}</p>
+          {{ else }}
+            <p class="w-1/4 text-sm text-gray-600 font-bold">{{ .Date.Format "2006.01.02" }}</p>
+          {{ end }}
+          <p class="w-1/4 text-sm text-gray-600 font-bold">{{ .Params.event_location }}</p>
         </div>
 
         <p class="font-light text-md leading-relaxed text-gray-dark mb-20 md:mb-32">{{ .Params.abstract }}</p>
