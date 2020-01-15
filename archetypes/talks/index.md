@@ -1,9 +1,9 @@
 ---
 title:
 
-# Conference/talk date
+# Website post date
 date: 2014-07-14
-# Website post date (defaults to date)
+# Publish from this date (defaults to date)
 # publishDate: 2019-09-03
 
 # Event name
