@@ -12,7 +12,7 @@ event: "Zcon0"
 
 event_url: "https://www.zfnd.org/zcon/0/"
 
-location: "Montréal, Canada"
+event_location: "Montréal, Canada"
 
 # Taxonomies
 authors:

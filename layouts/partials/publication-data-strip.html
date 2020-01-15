@@ -1,5 +1,5 @@
 <div class="text-sm text-gray-600">
-  <span>{{ dateFormat .Site.Params.DateForm .Params.publishDate }}</span>
+  <span>{{ .Date.Format .Site.Params.DateForm }}</span>
 
   {{ range .Params.publication_types }}
     <span class="text-blue-200">/</span>

@@ -11,7 +11,7 @@ event: "ConsensusDay 1"
 
 event_url: ""
 
-location: "Stanford, CA, USA"
+event_location: "Stanford, CA, USA"
 
 # Taxonomies
 authors:

@@ -39,7 +39,7 @@
           <div class="text-sm text-gray-600 w-1/4 md:px-4">
             <div class="">Date</div>
             {{ if .Params.venue_date }}
-              <div class="font-bold">{{ dateFormat "2006.01.12" .Params.venue_date }}</div>
+              <div class="font-bold">{{ dateFormat "2006.01.02" .Params.venue_date }}</div>
             {{ else }}
               <div class="font-bold">{{ .Date.Format "2006.01.02" }}</div>
             {{ end }}

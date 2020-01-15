@@ -12,7 +12,7 @@ event: "SYCO 5"
 
 event_url: "http://events.cs.bham.ac.uk/syco/strings3-syco5/"
 
-location: "Birmingham, UK"
+event_location: "Birmingham, UK"
 
 # Taxonomies
 authors:

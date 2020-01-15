@@ -10,7 +10,7 @@ event: "BPASE 18"
 
 event_url: "https://cyber.stanford.edu/bpase18"
 
-location: "Stanford, CA, USA"
+event_location: "Stanford, CA, USA"
 
 # Taxonomies
 authors:

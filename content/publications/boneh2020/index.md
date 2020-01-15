@@ -3,8 +3,8 @@ title: Single Secret Leader Election
 
 # Conference date
 date: 2020-01-08
-# Website date
-publishDate: 2020-01-15
+# Website date (defaults to date)
+# publishDate: 2020-01-15
 
 # Publication Name (not used)
 journal:

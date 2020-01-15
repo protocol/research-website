@@ -41,9 +41,13 @@
           <p class="w-1/4 text-sm text-gray-600">Location</p>
         </div>
         <div class="flex max-w-md mb-8">
-          <p class="w-1/4 text-sm text-gray-600 font-bold">{{ .Date.Format "2006.01.02" }}</p>
+          {{ if .Params.venue_date }}
+            <p class="w-1/4 text-sm text-gray-600 font-bold">{{ dateFormat "2006.01.02" .Params.event_date }}</p>
+          {{ else }}
+            <p class="w-1/4 text-sm text-gray-600 font-bold">{{ .Date.Format "2006.01.02" }}</p>
+          {{ end }}
           <p class="w-1/2 text-sm text-gray-600 font-bold">{{ .Params.event }}</p>
-          <p class="w-1/4 text-sm text-gray-600 font-bold">{{ .Params.location }}</p>
+          <p class="w-1/4 text-sm text-gray-600 font-bold">{{ .Params.event_location }}</p>
         </div>
 
         <p class="font-light text-md leading-relaxed text-gray-dark mb-20 md:mb-32">{{ .Params.abstract }}</p>

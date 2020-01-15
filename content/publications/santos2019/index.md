@@ -4,7 +4,7 @@ title: "DClaims: A Censorship Resistant Web Annotations System using IPFS and Et
 # Conference date
 date: 2020-01-06
 # Website publication date
-publishDate: 2020-01-06
+# publishDate: 2020-01-06
 
 # Publication Name (not used)
 journal:
