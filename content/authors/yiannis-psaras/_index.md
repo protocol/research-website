@@ -38,7 +38,7 @@ social:
 email:
 
 user_groups:
-  - Advisors
+  - Researchers
 
 # For display at the top of the author details page
 quote:
