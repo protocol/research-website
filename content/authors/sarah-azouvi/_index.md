@@ -28,11 +28,9 @@ education:
 
 social:
 - icon: google-scholar
-  link: https://scholar.google.com/citations?hl=en&user=EFWF6j4AAAAJ
-- icon: github
-  link: https://github.com/redransil
+  link: https://scholar.google.com/citations?user=06C63r0AAAAJ&hl=en
 - icon: linkedin
-  link: https://www.linkedin.com/in/alan-ransil-53573873/
+  link: https://uk.linkedin.com/in/sarahazouvi
 
 email: ""
 
