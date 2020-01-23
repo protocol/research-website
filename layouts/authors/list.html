@@ -67,7 +67,7 @@
 
         {{ if .Params.interests }}
           <h2 class="font-semibold mb-2 pt-8">Areas of Expertise</h2>
-          <p>{{ delimit .Params.interests ", " ", and "}}</p>
+          <p>{{ delimit .Params.interests ", "}}</p>
         {{ end }}
 
         {{ if .Pages }}
