@@ -7,7 +7,7 @@ authors:
   - yiannis-psaras
 
 # Role/position
-role: Research Advisor
+role: Research Scientist
 
 research-groups:
   - resnetlab
