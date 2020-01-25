@@ -10,6 +10,7 @@ taxonomies:
   tag: tags
   research-area: research-areas
   research-group: research-groups
+BaseURL: "https://research.protocol.ai"  
 params:
   DateForm: 2006.1.2
   BaseURL: "https://research.protocol.ai"
