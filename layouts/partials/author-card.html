@@ -1,7 +1,7 @@
-<a class="relative block pt-4 px-4 mb-8 md:w-1/4 group" href="{{ .Permalink }}">
+<a class="relative block pt-4 px-4 mb-8 md:w-1/4 group" href="{{ .RelPermalink }}">
   {{ range .Resources.Match "avatar" }}
     {{ $image := .Fill "150x150" }}
-    <img class="absolute block rounded-full mb-6 w-56 h-56 mx-auto md:w-40 md:h-40 p-px z-10" style="left: 50%; transform: translateX(-50%);"src="{{ $image.Permalink }}">
+    <img class="absolute block rounded-full mb-6 w-56 h-56 mx-auto md:w-40 md:h-40 p-px z-10" style="left: 50%; transform: translateX(-50%);"src="{{ $image.RelPermalink }}">
 
     <img class="mx-auto -mt-4 w-64 h-64 md:w-48 md:h-48 mb-6 opacity-0 fade-in-twist group-hover:do-the-twist" src="/images/people-bg-mask.png">
   {{ end }}

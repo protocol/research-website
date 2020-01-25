@@ -3,7 +3,7 @@
     <div class="max-w-md px-4 md:px-0 truncate text-gray text-sm">
       <a class="inline capitalize hover:text-blue hover:underline" href="/research">Research</a>
       <span class="inline">/</span>
-      <a class="inline capitalize" href="{{ .Permalink }}">{{humanize (or .Params.name .Title )}}</a>
+      <a class="inline capitalize" href="{{ .RelPermalink }}">{{humanize (or .Params.name .Title )}}</a>
     </div>
 
     <div class="md:mx-0">

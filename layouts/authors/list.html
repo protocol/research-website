@@ -12,7 +12,7 @@
         {{ range .Resources.Match "avatar" }}
           {{ $image := .Fill "250x250" }}
           <div class="md:inline-block relative mb-4 lg:mb-8 md:-ml-4">
-            <img class="absolute block rounded-full mx-auto w-64 h-64 mt-4" src="{{ $image.Permalink }}" style="left: 50%; transform: translateX(-50%);">
+            <img class="absolute block rounded-full mx-auto w-64 h-64 mt-4" src="{{ $image.RelPermalink }}" style="left: 50%; transform: translateX(-50%);">
             <img class="mx-auto w-72 h-72" src="/images/people-bg-mask.png">
           </div>
         {{ end }}
@@ -27,7 +27,7 @@
           {{ range (index .Params "research-groups")}}
             <span>/</span>
             {{ with $.Site.GetPage "taxonomyTerm" (printf "research/groups/%s" (urlize . )) }}
-              <a href="{{ .Permalink }}" class="inline-block hover:text-blue hover:underline capitalize">
+              <a href="{{ .RelPermalink }}" class="inline-block hover:text-blue hover:underline capitalize">
                 {{ .Title }}
               </a>
             {{ else }}

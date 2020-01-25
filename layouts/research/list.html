@@ -10,12 +10,12 @@
       {{ range where .Site.Pages "Type" "research-area_index" }}
         {{ range .Pages }}
           <div class="p-4 md:p-8 group md:w-1/2">
-            <a href="{{ .Permalink }}" class="block">
+            <a href="{{ .RelPermalink }}" class="block">
               <div class="flex flex-row items-center justify-start mb-4">
                 <h3 class="font-bold text-md leading-relaxed group-hover:underline group-hover:text-blue">{{ .Title }}</h3>
                 {{ range .Resources.Match "icon.*" }}
                   {{ $image := .Resize "x36" }}
-                  <img class="ml-auto mr-2" src="{{ $image.Permalink }}">
+                  <img class="ml-auto mr-2" src="{{ $image.RelPermalink }}">
                 {{ end }}
               </div>
               <p class="mb-4 multiline-ellipsis-5">{{ .Summary }}</p>
@@ -34,13 +34,13 @@
       {{ range where .Site.Pages "Type" "research-group_index" }}
         {{ range .Pages }}
           <div class="p-4 md:p-8 md:w-1/2">
-            <a class="font-bold text-bigger leading-tight mb-4 hover:text-blue" href="{{ .Permalink }}">{{ .Title }}</a>
+            <a class="font-bold text-bigger leading-tight mb-4 hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
 
             <div class="mb-4 page-content">
               {{ .Summary }}
             </div>
 
-            <a class="block text-sm hover:text-blue" href="{{ .Permalink }}">See more <img class="inline-block pl-2" src="/icons/chevron-pink.svg"></a>
+            <a class="block text-sm hover:text-blue" href="{{ .RelPermalink }}">See more <img class="inline-block pl-2" src="/icons/chevron-pink.svg"></a>
           </div>
         {{ end }}
       {{ end }}

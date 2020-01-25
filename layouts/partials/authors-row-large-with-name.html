@@ -5,8 +5,8 @@
         {{ $author := . }}
         {{ range $author.Resources.Match "avatar" }}
           {{ $image := .Fit "40x40" }}
-          <a class="mr-2" href="{{ $author.Permalink }}">
-            <img class="rounded rounded-full inline mr-2" src="{{ $image.Permalink }}" alt="{{ .Params.alt }}">
+          <a class="mr-2" href="{{ $author.RelPermalink }}">
+            <img class="rounded rounded-full inline mr-2" src="{{ $image.RelPermalink }}" alt="{{ .Params.alt }}">
             <span class="inline text-gray-600">{{ $author.Params.name}}</span>
           </a>
         {{ end }}
