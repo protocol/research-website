@@ -6,36 +6,36 @@
 
     <link rel="canonical" href="{{ .Permalink }}">
 
-    {{/* <meta name="author" content="{{ .Site.Params.Author }}"> */}}
-    {{/* <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}"> */}}
+    <meta name="author" content="{{ .Site.Params.Author }}">
+    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}">
 
     <!-- RSS -->
-    {{/* {{ with .OutputFormats.Get "RSS" }}
+    {{ with .OutputFormats.Get "RSS" }}
       <link rel="alternate" href="{{ .RelPermalink | absURL }}" type="application/rss+xml" title="{{ $.Site.Title }}">
-    {{ end }} */}}
+    {{ end }}
 
     <!-- Twitter Card -->
-    {{/* <meta name="twitter:card" content="summary"> */}}
-    {{/* <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}"> */}}
-    {{/* <meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}"> */}}
-    {{/* <meta name="twitter:site" content="{{ .Site.BaseURL }}"> */}}
-    {{/* <meta name="twitter:creator" content="{{ .Params.Author }}"> */}}
-    {{/* <meta name="twitter:image" content="{{ .Site.Params.Avatar | absURL }}"> */}}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
+    <meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}">
+    <meta name="twitter:site" content="{{ .Site.BaseURL }}">
+    <meta name="twitter:creator" content="{{ .Params.Author }}">
+    <meta name="twitter:image" content="{{ .Site.Params.Avatar | absURL }}">
 
     <!-- Open-Graph Data -->
-    {{/* <meta property="og:locale" content="{{ .Site.Params.LanguageCode }}"> */}}
-    {{/* <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}"> */}}
-    {{/* <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}"> */}}
-    {{/* <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}"> */}}
-    {{/* <meta property="og:url" content="{{ .Permalink }}"> */}}
-    {{/* <meta property="og:site_name" content="{{ .Site.Title }}"> */}}
-    {{/* <meta property="og:image" content="{{ .Site.Params.Avatar | absURL }}"> */}}
+    <meta property="og:locale" content="{{ .Site.Params.LanguageCode }}">
+    <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
+    <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:image" content="{{ .Site.Params.Avatar | absURL }}">
 
     <meta charset="utf-8">
     {{ hugo.Generator }}
 
     {{ $style := resources.Get "css/main.css" | postCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="screen, print">
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen, print">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
