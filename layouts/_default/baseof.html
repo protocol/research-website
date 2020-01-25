@@ -2,7 +2,8 @@
 <html>
 {{/* <html lang="{{ .Site.Params.LanguageCode }}"> */}}
   <head>
-    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    <title>{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}</title>
+
 
     <link rel="canonical" href="{{ .Permalink | absURL}}">
 
