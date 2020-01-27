@@ -1,21 +1,31 @@
 ---
 title:
 
-# Hugo publish date
-date:
-
+# Website post date
+date: 2001-01-01
+# Publish from this date (defaults to date)
+# publishDate: 2019-09-03
 # Last modified by author date
-lastmod:
+#lastmod:
 
 # Estimated read time
-readTime:
+#readTime:
 
 # Taxonomies
 authors:
+  -
+
 tags:
+  -
+
 categories:
+  -
+
 research-areas:
+  -
+
 research-groups:
+  -
 
 draft: false
 
