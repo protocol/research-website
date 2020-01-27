@@ -1,5 +1,5 @@
 ---
-title: Luca Nizzardo’s thesis: "Cryptographic Techniques for the Security of Cloud and Blockchain Systems" wins UPM Extraordinary Award
+title: "Luca Nizzardo’s thesis wins UPM Extraordinary Award"
 
 # Hugo publish date
 date: 20200117
