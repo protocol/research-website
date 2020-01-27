@@ -29,6 +29,4 @@ research-groups:
 
 draft: false
 
-resources:
-  - src:
 ---
