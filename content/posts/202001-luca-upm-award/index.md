@@ -2,7 +2,7 @@
 title: "Luca Nizzardo’s thesis wins UPM Extraordinary Award"
 
 # Hugo publish date
-date: 2020-01-17
+date: 2020-01-27
 
 # Last modified by author date
 lastmod:
