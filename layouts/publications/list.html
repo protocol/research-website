@@ -4,7 +4,7 @@
     <div class="max-w-md truncate text-gray text-sm">
       <a class="inline capitalize hover:text-blue hover:underline" href="/research">Research</a>
       <span class="inline">/</span>
-      <a class="inline capitalize hover:text-blue hover:underline" href="{{ .Permalink }}">{{humanize (or .Params.name .Title )}}</a>
+      <a class="inline capitalize hover:text-blue hover:underline" href="{{ .RelPermalink }}">{{humanize (or .Params.name .Title )}}</a>
       <span class="inline">/</span>
     </div>
 

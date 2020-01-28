@@ -1,4 +1,4 @@
-{{ $url := printf "%s%s" .Site.Params.baseURL .RelPermalink }}
+{{ $url := .Permalink }}
 {{ $title := .Title }}
 {{ $body := print $title ", by @protocollabs \n\n" $url "\n" }}
 
@@ -16,5 +16,5 @@
 
 <div class="pl-4 md:pl-8">
   <img class="inline-block pr-2 inline-middle" src="/images/talks-page/linkedin-icon.svg">
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ $url }}&title={{ $title }}&summary={{ $body }}&source={{ .Site.Params.baseURL }}" class="text-blue inline-block inline-middle text-sm" aria-label="share on LinkedIn">Share on LinkedIn</a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ $url }}&title={{ $title }}&summary={{ $body }}&source={{ .Site.BaseURL }}" class="text-blue inline-block inline-middle text-sm" aria-label="share on LinkedIn">Share on LinkedIn</a>
 </div>

@@ -23,8 +23,8 @@
             {{ $author := . }}
             {{ range $author.Resources.Match "avatar" }}
               {{ $image := .Fill "56x56" }}
-              <a href="{{ $author.Permalink }}" class="flex items-center">
-                <img class="mr-4 rounded rounded-full" src="{{ $image.Permalink }}">
+              <a href="{{ $author.RelPermalink }}" class="flex items-center">
+                <img class="mr-4 rounded rounded-full" src="{{ $image.RelPermalink }}">
                 <div class="">
                   <p class="leading-none pb-2">{{ $author.Params.name }}</p>
                   <p class="text-gray-600 text-sm">Research Team Lead</p>
@@ -120,8 +120,8 @@
         {{ $author := . }}
         {{ range $author.Resources.Match "avatar" }}
           {{ $image := .Fill "56x56" }}
-          <a href="{{ $author.Permalink }}" class="flex items-center">
-            <img class="mr-4 rounded rounded-full" src="{{ $image.Permalink }}">
+          <a href="{{ $author.RelPermalink }}" class="flex items-center">
+            <img class="mr-4 rounded rounded-full" src="{{ $image.RelPermalink }}">
             <div class="">
               <p class="leading-none pb-2">{{ $author.Params.name }}</p>
               <p class="text-gray-600 text-sm">Research Scientist</p>

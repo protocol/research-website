@@ -6,8 +6,8 @@
         {{ $author := . }}
         {{ range $author.Resources.Match "avatar" }}
           {{ $image := .Fill "40x40" }}
-          <a class="mr-2" href="{{ $author.Permalink }}" data-tooltip="{{ $author.Params.name }}" data-inverted>
-            <img class="rounded rounded-full" src="{{ $image.Permalink }}" alt="{{ .Params.alt }}">
+          <a class="mr-2" href="{{ $author.RelPermalink }}" data-tooltip="{{ $author.Params.name }}" data-inverted>
+            <img class="rounded rounded-full" src="{{ $image.RelPermalink }}" alt="{{ .Params.alt }}">
           </a>
         {{ end }}
       {{ end }}

@@ -7,7 +7,7 @@
 
         <span class="inline">/</span>
 
-        <a class="inline capitalize hover:text-blue hover:underline" href="{{ .Permalink }}">{{humanize (or .Params.name .Title )}}</a>
+        <a class="inline capitalize hover:text-blue hover:underline" href="{{ .RelPermalink }}">{{humanize (or .Params.name .Title )}}</a>
       {{ end }}
     </div>
 
@@ -32,7 +32,7 @@
               {{ end }}
 
               {{ with $.Site.GetPage "taxonomyTerm" (printf "research/areas/%s" (urlize $value )) }}
-                <a href="{{ .Permalink }}" class="inline-block text-sm text-gray-600 mb-6 hover:text-blue">
+                <a href="{{ .RelPermalink }}" class="inline-block text-sm text-gray-600 mb-6 hover:text-blue">
                   <span class="underline capitalize">{{ humanize .Title }}</span>
                 </a>
               {{ end }}
@@ -44,7 +44,7 @@
               {{ end }}
 
               {{ with $.Site.GetPage "taxonomyTerm" (printf "research/groups/%s" (urlize $value )) }}
-                <a href="{{ .Permalink }}" class="inline-block text-sm text-gray-600 mb-6 hover:text-blue">
+                <a href="{{ .RelPermalink }}" class="inline-block text-sm text-gray-600 mb-6 hover:text-blue">
                   <span class="underline capitalize">{{ humanize .Title }}</span>
                 </a>
               {{ end }}
@@ -61,7 +61,7 @@
         <div class="flex flex-row justify-between">
 
           {{ if .NextInSection }}
-            <a class="block mb-8 md:w-1/3 group" href="{{ .NextInSection.Permalink }}">
+            <a class="block mb-8 md:w-1/3 group" href="{{ .NextInSection.RelPermalink }}">
               <div class="font-bold group-hover:text-pink">
                 <img class="inline-block align-middle rotate-180 mr-2" src="/icons/chevron-pink.svg">
                 <span class="align-middle">Newer</span>

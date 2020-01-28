@@ -2,7 +2,7 @@
   <a href="{{ .RelPermalink }}">
     {{ range .Resources.Match "featured.*" }}
       {{ $image := .Fit "600x600" }}
-      <img class="max-w-sms block w-full" src="{{ $image.Permalink }}">
+      <img class="max-w-sms block w-full" src="{{ $image.RelPermalink }}">
     {{ end }}
   </a>
 
