@@ -2,7 +2,9 @@ languageCode: en-us
 title: Protocol Labs Research
 summaryLength: 30
 googleAnalytics: UA-96910779-16
+BaseURL: "https://research.protocol.ai"
 relativeURLs: true
+copyright: "© Protocol Labs, Inc. Except as noted, content licensed CC-BY 3.0."
 taxonomies:
   author: authors
   category: categories
@@ -10,10 +12,13 @@ taxonomies:
   tag: tags
   research-area: research-areas
   research-group: research-groups
-BaseURL: "https://research.protocol.ai"
 params:
   DateForm: 2006.1.2
   Avatar: /images/pl_research_card.png
+  Logo: /images/pl_research_logo.png
+  Author: "Protocol Labs Research"
+  Description: "Protocol Labs Research explores the future of decentralization and examines the infrastructure limiting what you can do with technology."
+  LanguageCode: "en"
 permalinks:
   talks: /research/talks/:title/
   publications: /research/publications/:title/
