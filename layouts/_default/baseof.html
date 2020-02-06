@@ -11,24 +11,26 @@
     {{ end }}
 
     <!-- Meta properties -->
+    <meta name="title" content="{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}">
+    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | htmlEscape }}{{ end }}">
+    <meta name="image" content="{{ .Site.Params.Avatar | absURL }}">
     <meta name="author" content="{{ .Site.Params.Author }}">
-    <meta name="description" property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | htmlEscape }}{{ end }}">
-    <meta name="title" property="og:title" content="{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}">
-    <meta name="image" property="og:image" content="{{ .Site.Params.Avatar | absURL }}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
+    <meta name="twitter:title" content="{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}">
     <meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | htmlEscape }}{{ end }}">
-    <meta name="twitter:site" content="{{ .Site.Params.TwitterUser }}">
     <meta name="twitter:image" content="{{ .Site.Params.Avatar | absURL }}">
+    <meta name="twitter:site" content="{{ .Site.Params.TwitterUser }}">
 
     <!-- Open-Graph Data -->
-    <meta property="og:locale" content="{{ .Site.Params.LanguageCode }}">
     <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+    <meta property="og:title" content="{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}">
     <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | htmlEscape }}{{ end }}">
-    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ .Site.Params.Avatar | absURL }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:locale" content="{{ .Site.Params.LanguageCode }}">
 
     <!-- JSON-LD -->
     {{ if .IsHome }}
