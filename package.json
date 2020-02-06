@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:js": "browserify assets/main.js -o assets/js/bundle.js",
-    "build:hugo": "rm -rf public && hugo --minify",
+    "build:hugo": "rm -rf public && hugo",
     "build": "run-s build:js build:hugo",
     "build_and_watch:js": "watchify assets/main.js -o assets/js/bundle.js",
     "build_and_watch:hugo": "hugo serve --templateMetrics --templateMetricsHints",
