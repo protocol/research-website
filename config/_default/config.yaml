@@ -1,4 +1,4 @@
-languageCode: en-us
+languageCode: en
 title: Protocol Labs Research
 summaryLength: 30
 googleAnalytics: UA-96910779-16
@@ -18,7 +18,6 @@ params:
   Logo: /images/pl_research_logo.png
   Author: "Protocol Labs Research"
   Description: "Protocol Labs Research explores the future of decentralization and examines the infrastructure limiting what you can do with technology."
-  LanguageCode: "en"
   Locale: "en_US"
   TwitterUser: "@protocollabs"
 permalinks:
