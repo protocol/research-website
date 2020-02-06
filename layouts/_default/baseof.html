@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
-{{/* <html lang="{{ .Site.Params.LanguageCode }}"> */}}
+<html lang="{{ .Site.Params.LanguageCode }}">
   <head>
     <title>{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}</title>
 
-
     <link rel="canonical" href="{{ .Permalink | absURL}}">
 
+    <meta charset="utf-8">
     <meta name="author" content="{{ .Site.Params.Author }}">
     <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}">
 
@@ -32,7 +31,26 @@
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:image" content="{{ .Site.Params.Avatar | absURL }}">
 
-    <meta charset="utf-8">
+    <!-- JSON-LD -->
+    {{ if .IsHome }}
+    <script type="application/ld+json">
+      {
+       "@context": "http://schema.org",
+       "@type": "WebSite",
+       "url": "{{ .Permalink }}",
+       "name": "{{ .Site.Title }}",
+        "author": {
+           "@type": "Organization",
+           "name": "{{ .Site.Params.Author }}"
+         },
+       "description": "{{ .Site.Params.Description }}",
+       "image": "{{ .Site.Params.Avatar | absURL }}",
+       "thumbnailUrl": "{{ .Site.Params.Logo | absURL }}",
+       "license": "{{ .Site.Copyright }}",
+      }
+      </script>
+    {{ end }}
+
     {{ hugo.Generator }}
 
     {{ $style := resources.Get "css/main.css" | postCSS | minify | fingerprint }}
