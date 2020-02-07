@@ -30,6 +30,11 @@
     <meta property="og:title" content="{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}">
     <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | htmlEscape }}{{ end }}">
     <meta property="og:image" content="{{ .Site.Params.Avatar | absURL }}">
+    <meta property="og:image:secure_url" content="{{ .Site.Params.Avatar | absURL }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="{{ .Site.Title }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:locale" content="{{ .Site.Params.Locale }}">
