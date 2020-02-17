@@ -2,7 +2,7 @@
 title: Vector Commitment Techniques and Applications to Verifiable Decentralized Storage
 
 # Website post date
-date: 2014-07-14
+date: 2020-02-17
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
 
