@@ -2,16 +2,16 @@
 title: "PLONK: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge"
 date: 2019-08-24
 
-publishDate: 2019-08-24
-
 doi:
 
 authors:
   - ariel-gabizon
   - zachary-j-williamson
   - oana-ciobotaru
+
 publication_types:
-  - report
+  - conference-paper
+
 tags:
   -
 categories:
@@ -22,10 +22,9 @@ research-areas:
 research-groups:
   - filecoin-research
 
-journal:
-
-venue:
-venue_location:
+venue: Stanford Blockchain Conference
+venue_location: Stanford, CA, USA
+venue_date: 2020-02-19
 
 url_source: https://eprint.iacr.org/2019/953
 
