@@ -5,11 +5,6 @@ title: "Sarah Azouvi joins Protocol Labs Research"
 date: 2020-02-18
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
-# Last modified by author date
-#lastmod:
-
-# Estimated read time
-#readTime:
 
 # Taxonomies
 authors:
@@ -30,9 +25,7 @@ draft: false
 
 ---
 
-Sarah joins us from the [Information Security Group](http://sec.cs.ucl.ac.uk/home/) at [University College London](http://www.cs.ucl.ac.uk/), where she did [research on consensus](https://scholar.google.co.uk/citations?user=06C63r0AAAAJ&hl=en) and worked towards her forthcoming PhD in Computer Science. During her studies, she collaborated with Protocol Labs and was also an intern at [Calibra](https://www.calibra.com/). Sarah is now part of the Filecoin Research team.
-
-Here's what Sarah had to say:
+Sarah joins us from the [Information Security Group](http://sec.cs.ucl.ac.uk/home/) at [University College London](http://www.cs.ucl.ac.uk/), where she did [research on consensus](https://scholar.google.co.uk/citations?user=06C63r0AAAAJ&hl=en) and worked towards her forthcoming PhD in Computer Science. During her studies, she collaborated with Protocol Labs and was also an intern at [Calibra](https://www.calibra.com/). Sarah is now part of the Filecoin Research team. Here's what Sarah had to say:
 
 **What path brought you to PL?**
 

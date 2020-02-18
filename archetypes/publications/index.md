@@ -3,11 +3,9 @@ title:
 
 # Website post date
 date: 2014-07-14
+
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
-
-# Publication Name (not used)
-# journal:
 
 # Venue Name
 venue:
@@ -18,14 +16,13 @@ venue_location:
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 venue_date:
 
-# Digital Object Identifier
 doi:
 
 resources:
   - src: publication-source.pdf
   - src: cite.bib
 
-# Taxonomies:
+# Taxonomies
 # delete all but one
 publication_types:
   - conference-paper
@@ -37,9 +34,6 @@ publication_types:
   - patent
 
 authors:
-  -
-
-tags:
   -
 
 categories:
