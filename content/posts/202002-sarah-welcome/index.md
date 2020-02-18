@@ -15,11 +15,9 @@ date: 2020-02-18
 authors:
   - jorge-soares
 
-tags:
-  - team
-
 categories:
   - news
+  - team
 
 research-areas:
   - distributed-systems
