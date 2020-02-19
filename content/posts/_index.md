@@ -7,5 +7,6 @@ menu:
   footer:
     weight: 7
 hasSquigglyLines: true    
-aliases: [/blog]
+url: /blog
+aliases: [/posts]
 ---
