@@ -9,7 +9,7 @@
           <div class="p-4 md:p-8 group md:w-1/2">
             <a href="{{ .RelPermalink }}" class="block">
               <div class="flex flex-row items-center justify-start mb-4">
-                <h3 class="font-bold text-md leading-relaxed group-hover:text-blue">{{ .Title }}</h3>
+                <h3 class="text-md leading-relaxed group-hover:text-blue">{{ .Title }}</h3>
                 {{ range .Resources.Match "icon.*" }}
                   {{ $image := .Resize "x36" }}
                   <img class="ml-auto mr-2" src="{{ $image.RelPermalink }}">
@@ -31,9 +31,9 @@
       {{ range where .Site.Pages "Type" "research_group_index" }}
         {{ range .Pages }}
           <div class="p-4 md:p-8 md:w-1/2">
-            <a class="font-bold text-bigger leading-tight mb-4 hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <a class="text-md leading-relaxed hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
 
-            <div class="mb-4 page-content">
+            <div class="mb-4 multiline-ellipsis-5">
               {{ .Summary }}
             </div>
 
