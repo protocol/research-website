@@ -1,0 +1,16 @@
+<div class="flex flex-row items-center justify-start mt-4">
+  {{ range .Params.links }}
+    <a class="text-sm underline mr-4 text-almost-black hover:text-blue" href="{{ .url }}">{{ .name }}</a>
+  {{ end }}
+
+  {{ $currentPublication := . }}
+  {{ range .Resources.Match "*.pdf" }}
+    <a class="text-sm underline mr-4 text-almost-black hover:text-blue" href="{{ .RelPermalink }}">Download PDF</a>
+  {{ end }}
+
+  {{ range .Resources.Match "cite.bib" }}
+    <button class="text-sm underline mr-4 text-almost-black hover:text-blue" on-click="copyContentsToClipboard" data-to-copy="{{ .Content }}">
+      <span data-swap-on-copy>Cite</span>
+    </button>
+  {{ end }}
+</div>
