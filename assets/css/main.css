@@ -26,6 +26,11 @@
   src: url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
 }
 
+/* purgecss ignore */
+p + ul, p + blockquote  {
+  margin-block-start: -0.5em;
+}
+
 @tailwind components;
 
 .image-set {

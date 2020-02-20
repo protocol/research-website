@@ -4,21 +4,13 @@ title: "Luca Nizzardo’s thesis wins UPM Extraordinary Award"
 # Hugo publish date
 date: 2020-01-27
 
-# Last modified by author date
-lastmod:
-
-# Estimated read time
-readTime:
-
 # Taxonomies
 authors:
   - jorge-soares
 
-tags:
-  - award
-
 categories:
   - news
+  - team
 
 research-areas:
   - distributed-systems
