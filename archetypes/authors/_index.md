@@ -5,7 +5,7 @@ name: "{{ replace .Name "-" " " | title }}"
 # Role/position (e.g., Professor of Artificial Intelligence)
 role:
 
-research-groups:
+research_groups:
 
 resources:
   - name: avatar

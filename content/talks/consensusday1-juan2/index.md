@@ -17,9 +17,9 @@ venue_location: "Stanford, CA, USA"
 # Taxonomies
 authors:
   - juan-benet
-research-areas:
+research_areas:
   - distributed-systems
-research-groups:
+research_groups:
 
 resources:
   - title: featured-image

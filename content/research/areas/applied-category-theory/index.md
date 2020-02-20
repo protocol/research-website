@@ -4,7 +4,7 @@ date: 2019-09-02T14:20:06+01:00
 
 weight: 4
 
-type: research-areas
+type: research_areas
 taxonomyName: applied-category-theory
 
 resources:

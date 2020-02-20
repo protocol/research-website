@@ -13,8 +13,8 @@ authors:
 tags:
 categories:
   - news
-research-areas:
-research-groups:
+research_areas:
+research_groups:
 ---
 
 Protocol Labs is a remarkably ambitious and ideological company.  For example, our team’s dedication to abstraction has left us with an unusually modular corporate structure, and our belief in future-proof solutions has us biting off so much that we’re often left chewing for a long time.  However, more than any other company I’ve come across, we consistently bet, not only that the future could be a fantastic and wonderful place, but that it’s worthwhile for us, as an organization, to work toward that future.  We do this not only to secure a bright future for ourselves but also as a token of gratitude for the circumstances that have given us the privilege to solve problems to get us there.

@@ -3,7 +3,7 @@ name: "Saba Eskandarian"
 
 role:
 
-research-groups:
+research_groups:
 
 resources:
   - name: avatar

@@ -23,10 +23,10 @@ venue_location:
 authors:
   -
 
-research-areas:
+research_areas:
   -
 
-research-groups:
+research_groups:
   -
 
 resources:

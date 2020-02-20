@@ -6,7 +6,7 @@ name: Luca Nizzardo
 # Role/position
 role: Research Scientist
 
-research-groups:
+research_groups:
   - filecoin-research
 
 resources:

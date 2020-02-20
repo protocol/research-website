@@ -41,10 +41,10 @@ tags:
 categories:
   -
 
-research-areas:
+research_areas:
   - distributed-systems
 
-research-groups:
+research_groups:
   - resnetlab
 
 featured: false

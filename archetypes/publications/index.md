@@ -39,10 +39,10 @@ authors:
 categories:
   -
 
-research-areas:
+research_areas:
   -
 
-research-groups:
+research_groups:
   -
 
 featured: false

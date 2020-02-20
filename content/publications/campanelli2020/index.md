@@ -43,11 +43,11 @@ tags:
 categories:
   -
 
-research-areas:
+research_areas:
   - cryptography
   - distributed-systems
 
-research-groups:
+research_groups:
   - filecoin-research
 
 featured: false

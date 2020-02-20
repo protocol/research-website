@@ -16,9 +16,9 @@ venue_location: "Stanford, CA, USA"
 # Taxonomies
 authors:
   - evan-miyazono
-research-areas:
+research_areas:
   - distributed-systems
-research-groups:
+research_groups:
 
 resources:
   - title: featured-image

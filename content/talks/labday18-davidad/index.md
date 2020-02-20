@@ -17,10 +17,10 @@ venue_location: "San Francisco, CA, USA"
 # Taxonomies
 authors:
   - david-dalrymple
-research-areas:
+research_areas:
   - distributed-systems
   - type-theory
-research-groups:
+research_groups:
 
 resources:
   - title: featured-image

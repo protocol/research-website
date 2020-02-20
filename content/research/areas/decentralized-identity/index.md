@@ -4,7 +4,7 @@ date: 2019-09-02T14:20:27+01:00
 
 weight: 3
 
-type: research-areas
+type: research_areas
 taxonomyName: decentralized-identity
 
 resources:

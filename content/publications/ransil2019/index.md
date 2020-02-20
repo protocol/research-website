@@ -16,7 +16,7 @@ authors:
   - francis-o-sullivan
 tags:
 categories:
-research-areas:
+research_areas:
   - distributed-systems
 
 

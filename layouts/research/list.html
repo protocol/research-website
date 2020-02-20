@@ -4,7 +4,7 @@
     {{ partial "page-top" . }}
 
     <div class="flex flex-col md:flex-row md:flex-wrap md:-mx-8 pt-12">
-      {{ range where .Site.Pages "Type" "research-area_index" }}
+      {{ range where .Site.Pages "Type" "research_area_index" }}
         {{ range .Pages }}
           <div class="p-4 md:p-8 group md:w-1/2">
             <a href="{{ .RelPermalink }}" class="block">
@@ -28,7 +28,7 @@
     <img class="block px-4 md:px-0" src="/icons/mini-graphic-line.svg">
 
     <div class="flex flex-col md:flex-row md:flex-wrap md:-mx-8">
-      {{ range where .Site.Pages "Type" "research-group_index" }}
+      {{ range where .Site.Pages "Type" "research_group_index" }}
         {{ range .Pages }}
           <div class="p-4 md:p-8 md:w-1/2">
             <a class="font-bold text-bigger leading-tight mb-4 hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>

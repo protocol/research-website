@@ -17,9 +17,9 @@ venue_location: "San Francisco, CA, USA"
 # Taxonomies
 authors:
   - joel-gustafson
-research-areas:
+research_areas:
   - knowledge-engineering
-research-groups:
+research_groups:
 
 resources:
   - title: featured-image

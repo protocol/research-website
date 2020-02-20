@@ -17,10 +17,10 @@ venue_location: "Stanford, CA, USA"
 # Taxonomies
 authors:
   - jeromy-johnson
-research-areas:
+research_areas:
   - cryptography
   - distributed-systems
-research-groups:
+research_groups:
   - filecoin-research
 
 resources:

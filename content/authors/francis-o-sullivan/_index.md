@@ -3,7 +3,7 @@ name: "Francis O'Sullivan"
 
 role:
 
-research-groups:
+research_groups:
 
 resources:
   - name: avatar

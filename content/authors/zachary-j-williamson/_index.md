@@ -3,7 +3,7 @@ name: "Zachary J Williamson"
 
 role:
 
-research-groups:
+research_groups:
 
 resources:
   - name: avatar

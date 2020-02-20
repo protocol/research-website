@@ -2,7 +2,7 @@
 title: Filecoin Research
 date: 2019-09-02T14:20:06+01:00
 
-type: research-groups
+type: research_groups
 taxonomyName: filecoin-research
 
 resources:

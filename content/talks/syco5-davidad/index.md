@@ -17,9 +17,9 @@ venue_location: "Birmingham, UK"
 # Taxonomies
 authors:
   - david-dalrymple
-research-areas:
+research_areas:
   - applied-category-theory
-research-groups:
+research_groups:
 
 resources:
   - title: featured-image
