@@ -9,7 +9,7 @@
           <div class="p-4 md:p-8 group md:w-1/2">
             <a href="{{ .RelPermalink }}" class="block">
               <div class="flex flex-row items-center justify-start mb-4">
-                <h3 class="font-bold text-md leading-relaxed group-hover:underline group-hover:text-blue">{{ .Title }}</h3>
+                <h3 class="font-bold text-md leading-relaxed group-hover:text-blue">{{ .Title }}</h3>
                 {{ range .Resources.Match "icon.*" }}
                   {{ $image := .Resize "x36" }}
                   <img class="ml-auto mr-2" src="{{ $image.RelPermalink }}">

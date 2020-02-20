@@ -1,28 +1,12 @@
 <div class="p-4">
   {{partial "publication-data-strip" . }}
 
-  <a class="block text-bigger text-blue leading-tight mb-2 pt-2 hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a>
+  <a class="block text-bigger text-blue leading-tight mb-2 pt-2" href="{{ .RelPermalink }}">{{ .Title }}</a>
 
-  <div class="mb-2 multiline-ellipsis-2">
+  <div class="mb-2 multiline-ellipsis-4">
     {{ .Summary }}
   </div>
 
   {{ partial "page-metadata" . }}
 
-  <div class="flex flex-row items-center justify-start mt-4">
-    {{ range .Params.links }}
-      <a class="text-sm underline mr-4 text-almost-black hover:text-blue" href="{{ .url }}">{{ .name }}</a>
-    {{ end }}
-
-    {{ $currentPublication := . }}
-    {{ range .Resources.Match "*.pdf" }}
-      <a class="text-sm underline mr-4 text-almost-black hover:text-blue" href="{{ .RelPermalink }}">Download PDF</a>
-    {{ end }}
-
-    {{ range .Resources.Match "cite.bib" }}
-      <button class="text-sm underline mr-4 text-almost-black hover:text-blue" on-click="copyContentsToClipboard" data-to-copy="{{ .Content }}">
-        <span data-swap-on-copy>Cite</span>
-      </button>
-    {{ end }}
-  </div>
 </div>
