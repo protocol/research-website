@@ -1,20 +1,21 @@
- <div class="text-sm text-gray-600 mb-1">
-  <span>{{ .Date.Format .Site.Params.DateForm }}</span>
+<div class="text-sm text-gray-600 mb-1">
+<span>{{ .Date.Format .Site.Params.DateForm }}</span>
 
-  <span class="mx-1">/</span>
+{{ if (and .Params.categories (partial "func/has-values" .Params.categories)) }}
+<span class="mx-0 text-blue">/</span>
 
-  <span>
-  {{ $taxonomy := "categories" }}
-  {{ with .Param $taxonomy }}
-    {{ range $index, $value := . }}
-      {{- $category_page := site.GetPage (printf "/%s/%s" $taxonomy (. | urlize)) -}}
-
-      {{- if gt $index 0 }}, {{ end -}}
+<span>
+{{- $taxonomy := "categories" -}}
+  {{- with .Param $taxonomy -}}
+  {{- range $index, $value := . -}}
+  {{- $category_page := site.GetPage (printf "/%s/%s" $taxonomy (. | urlize)) -}}
+    {{- if gt $index 0 }}, {{ end -}}
       {{- with $category_page -}}
-        <a class="underline" href="{{.RelPermalink}}">{{$value | humanize}}</a>
-      {{ end }}
+      <a class="hover:text-blue" href="{{.RelPermalink}}">{{$value | humanize}}</a>
+      {{- end -}}
     {{- end -}}
-  {{ end }}
-  </span>
+  {{- end -}}
+</span>
+{{ end }}
 
 </div>
