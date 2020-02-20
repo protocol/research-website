@@ -19,10 +19,10 @@ categories:
 research-areas:
   - distributed-systems
 
-journal: "IEEE PES Transactive Energy Systems Conference (TESC)"
 
 venue: IEEE PES Transactive Energy Systems Conference (TESC)
-venue_location:
+
+venue_location: Minneapolis, MN
 
 resources:
   - src: ransil2019.pdf

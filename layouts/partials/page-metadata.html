@@ -1,0 +1,48 @@
+{{$researchAreas := (index .Params "research-areas")}}
+{{$researchGroups := (index .Params "research-groups")}}
+
+{{ if .Params.venue }}
+  <div class="text-sm text-gray-600">
+    <img class="inline-block mr-2" src="/images/icon/location.svg">
+    {{ .Params.venue }} / {{ dateFormat "2006.01.02" (.Params.venue_date | default .Date) }}
+    {{ if .Params.venue_location }}/ {{ .Params.venue_location }}{{ end }}
+  </div>
+{{ end }}
+
+{{ if (and $researchAreas (partial "func/has-values" $researchAreas)) }}
+<div>
+  <img class="inline-block mr-2" src="/images/icon/tag.svg">
+
+  {{ range $index, $value := $researchAreas }}
+    {{ if gt $index 0 }}
+    <span class="text-gray-600">,</span>
+    {{ end }}
+
+    {{ with $.Site.GetPage "taxonomyTerm" (printf "research/areas/%s" (urlize $value )) }}
+    <a href="{{ .RelPermalink }}" class="inline-block text-sm text-gray-600 mb-0 hover:text-blue">
+      <span class="underline capitalize">{{ .Title }}</span>
+    </a>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}
+
+{{ if (and $researchGroups (partial "func/has-values" $researchGroups)) }}
+<div>
+  <img class="inline-block mr-2" src="/images/icon/group.png">
+
+  {{ range $index, $value := $researchGroups }}
+    {{ if gt $index 0 }}
+    <span class="text-gray-600">,</span>
+    {{ end }}
+
+    {{ with $.Site.GetPage "taxonomyTerm" (printf "research/groups/%s" (urlize $value )) }}
+    <a href="{{ .RelPermalink }}" class="inline-block text-sm text-gray-600 mb-0 hover:text-blue">
+      <span class="underline capitalize">{{ .Title }}</span>
+    </a>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}
+
+{{ partial "authors-row" . }}

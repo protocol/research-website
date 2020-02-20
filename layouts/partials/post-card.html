@@ -6,40 +6,5 @@
     <p class="">{{ .Summary }}</p>
   </a>
 
-  {{$researchAreas := (index .Params "research-areas")}}
-  {{$researchGroups := (index .Params "research-groups")}}
-
-  {{ if (or $researchAreas $researchGroups)}}
-    <div class="pt-4">
-      <img class="inline-block mr-2" src="/images/icon/tag.svg">
-
-      {{ range $index, $value := $researchAreas }}
-        {{ if gt $index 0 }}
-          <span class="text-gray-600">,</span>
-        {{ end }}
-
-        {{ with $.Site.GetPage "taxonomyTerm" (printf "research/areas/%s" (urlize $value )) }}
-          <a href="{{ .RelPermalink }}" class="inline-block text-sm text-gray-600 mb-6 hover:text-blue">
-            <span class="underline capitalize">{{ humanize .Title }}</span>
-          </a>
-        {{ end }}
-      {{ end }}
-
-      {{ range $index, $value := $researchGroups }}
-        {{ if (or (gt $index 0) $researchAreas) }}
-          <span class="text-gray-600">,</span>
-        {{ end }}
-
-        {{ with $.Site.GetPage "taxonomyTerm" (printf "research/groups/%s" (urlize $value )) }}
-          <a href="{{ .RelPermalink }}" class="inline-block text-sm text-gray-600 mb-6 hover:text-blue">
-            <span class="underline capitalize">{{ humanize .Title }}</span>
-          </a>
-        {{ end }}
-      {{ end }}
-    </div>
-  {{ end }}
-
-  <div class="pt-4">
-    {{ partial "authors-row-small" . }}
-  </div>
+  {{ partial "page-metadata" . }}
 </div>

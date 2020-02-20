@@ -10,7 +10,7 @@ authors:
 publication_types:
   - report
 research-groups:
-  - IPFS
+  - 
 categories:
 research-areas:
   - distributed-systems

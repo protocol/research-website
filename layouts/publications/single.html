@@ -1,8 +1,5 @@
 {{define "main"}}
   <div class="max-w-screen mx-auto pt-4 px-4 md:px-10">
-    <div class="mb-12">
-      {{ partial "breadcrumbs" . }}
-    </div>
 
     <div class="flex flex-col md:flex-row md:justify-between">
       <div class="w-full md:w-3/5 mb-12">
@@ -11,52 +8,11 @@
           {{partial "publication-data-strip" . }}
         </div>
 
-        <div class="font-bold text-lg md:text-larger mb-4 leading-tight">
+        <div class="text-lg md:text-larger mb-4 leading-tight">
           {{ .Title }}
         </div>
 
-        {{ if (index .Params "research-areas") }}
-          <div class="block">
-            <img class="inline-block mr-2" src="/images/icon/tag.svg">
-
-            {{ range $index, $value := (index .Params "research-areas") }}
-              {{ if gt $index 0 }}
-                <span class="text-gray-600">,</span>
-              {{ end }}
-
-              {{ with $.Site.GetPage "taxonomyTerm" (printf "research/areas/%s" (urlize $value )) }}
-                <a href="{{ .RelPermalink }}" class="inline-block text-sm text-gray-600 mb-6">
-                  <span class="underline capitalize">{{ humanize .Title }}</span>
-                </a>
-              {{ end }}
-            {{ end }}
-          </div>
-        {{ end }}
-
-        {{ partial "authors-row-large" . }}
-
-        <div class="flex flex-row items-start justify-start md:-mx-4">
-          {{ if .Params.venue }}
-            <div class="text-sm text-gray-600 w-1/2 md:px-4">
-              <div class="">Venue</div>
-              <div class="font-bold">{{ .Params.venue }}</div>
-            </div>
-          {{ end }}
-
-          {{ if .Params.venue_date }}
-            <div class="text-sm text-gray-600 w-1/4 md:px-4">
-              <div class="">Date</div>
-              <div class="font-bold">{{ dateFormat "2006.01.02" .Params.venue_date }}</div>
-            </div>
-          {{ end }}
-
-          {{ if .Params.venue_location }}
-            <div class="text-sm text-gray-600 w-1/4 md:px-4">
-              <div class="">Location</div>
-              <div class="font-bold">{{ .Params.venue_location }}</div>
-            </div>
-          {{ end }}
-        </div>
+        {{ partial "page-metadata" . }}
 
         <div class="page-content pt-8">
           <h2>Abstract</h2>

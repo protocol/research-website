@@ -8,11 +8,11 @@ publishDate: 2019-09-02 14:19:14 +0100
 date: 2018-10-23 14:19:14 +0100
 
 # Event name
-event: "Lab Day 2018"
+venue: "Lab Day 2018"
 
-event_url:
+venue_url:
 
-event_location: "San Francisco, CA, USA"
+venue_location: "San Francisco, CA, USA"
 
 # Taxonomies
 authors:

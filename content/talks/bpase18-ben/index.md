@@ -6,11 +6,11 @@ publishDate: 2019-09-02 14:19:14 +0100
 # Talk Date
 date: 2018-01-26 14:19:14 +0100
 
-event: "BPASE 18"
+venue: "BPASE 18"
 
-event_url: "https://cyber.stanford.edu/bpase18"
+venue_url: "https://cyber.stanford.edu/bpase18"
 
-event_location: "Stanford, CA, USA"
+venue_location: "Stanford, CA, USA"
 
 # Taxonomies
 authors:

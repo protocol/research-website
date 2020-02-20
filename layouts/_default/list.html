@@ -1,13 +1,11 @@
 {{ define "main" }}
-  <div class="max-w-screen mx-auto md:px-10">
+  <div class="max-w-screen mx-auto pt-4 md:px-10">
     {{ partial "page-top" . }}
 
-    <div class="page-content mb-12 lg:w-4/5">
-      {{ .Content }}
+    <div class="md:-mx-4 md:w-2/3">
+      {{ range .RegularPages }}
+        {{ partial "post-card" . }}
+      {{ end }}
     </div>
-
-    {{ range .Pages }}
-      <a class="block text-blue capitalize" href="{{ .RelPermalink }}">{{ .Title }}</a>
-    {{ end }}
   </div>
 {{ end }}

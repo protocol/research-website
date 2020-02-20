@@ -8,11 +8,11 @@ publishDate: 2019-09-02 14:19:14 +0100
 date: 2018-06-28 14:19:14 +0100
 
 # Event name
-event: "Zcon0"
+venue: "Zcon0"
 
-event_url: "https://www.zfnd.org/zcon/0/"
+venue_url: "https://www.zfnd.org/zcon/0/"
 
-event_location: "Montréal, Canada"
+venue_location: "Montréal, Canada"
 
 # Taxonomies
 authors:
