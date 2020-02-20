@@ -1,16 +1,16 @@
 {{ if .Params.authors }}
-  <div>
+  <div class="text-sm text-gray-600">
     <img class="inline-block mr-2" src="/images/icon/user.png">
     {{ $taxonomy := "authors" }}
     {{ with .Param $taxonomy }}
       {{ range $index, $value := . }}
         {{- $profile_page := site.GetPage (printf "/%s/%s" $taxonomy (. | urlize)) -}}
         {{- $name := $profile_page.Params.name | default ($value|markdownify) -}}
-        <span class="text-gray-600 capitalize inline-block text-sm text-gray-600 mb-0">
         {{- if gt $index 0 }}, {{ end -}}
+        <span class="inline-block mb-0">
           {{ if $profile_page.Params.name }}
             {{- with $profile_page -}}
-              <a class="underline" href="{{.RelPermalink}}">{{$name}}</a>
+              <a class="hover:text-blue" href="{{.RelPermalink}}">{{$name}}</a>
             {{ end }}
           {{- else -}}
             {{$name}}
@@ -18,6 +18,5 @@
         </span>
       {{- end -}}
     {{ end }}
-
   </div>
 {{ end }}
