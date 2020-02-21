@@ -10,10 +10,10 @@ publication_types:
   -
 authors:
   - alan-ransil
-  - edwin-fonkwe-fongang
+  - "Edwin Fonkwe Fongang"
   - michael-hammersley
-  - ivan-celanovic
-  - francis-o-sullivan
+  - "Ivan Celanovic"
+  - "Francis O'Sullivan"
 tags:
 categories:
 research_areas:

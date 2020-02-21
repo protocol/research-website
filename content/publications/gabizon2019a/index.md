@@ -6,8 +6,8 @@ doi:
 
 authors:
   - ariel-gabizon
-  - zachary-j-williamson
-  - oana-ciobotaru
+  - "Zachary J Williamson"
+  - "Oana Ciobotaru"
 
 publication_types:
   - conference-paper

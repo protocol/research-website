@@ -31,10 +31,10 @@ publication_types:
   - report
 
 authors:
-  - matteo-campanelli
-  - dario-fiore
+  - "Matteo Campanelli"
+  - "Dario Fiore"
   - nicola-greco
-  - dimitris-kolonelos
+  - "Dimitris Kolonelos"
   - luca-nizzardo
 
 tags:

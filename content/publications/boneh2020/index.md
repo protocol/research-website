@@ -28,9 +28,9 @@ publication_types:
   - report
 
 authors:
-  - dan-boneh
-  - saba-eskandarian
-  - lucjan-hanzlik
+  - "Dan Boneh"
+  - "Saba Eskandarian"
+  - "Lucjan Hanzlik"
   - nicola-greco
 
 tags:

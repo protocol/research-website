@@ -31,8 +31,8 @@ publication_types:
   - conference-paper
 
 authors:
-  - joao-santos
-  - nuno-santos
+  - "João Santos"
+  - "Nuno Santos"
   - david-dias
 
 tags:
