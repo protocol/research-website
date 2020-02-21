@@ -45,15 +45,15 @@
       {
        "@context": "http://schema.org",
        "@type": "WebSite",
-       "url": "{{ .Permalink }}",
+       "url": {{ .Permalink }},
        "name": "{{ .Site.Title }}",
         "author": {
            "@type": "Organization",
            "name": "{{ .Site.Params.Author }}"
          },
        "description": "{{ .Site.Params.Description }}",
-       "image": "{{ .Site.Params.Avatar | absURL }}",
-       "thumbnailUrl": "{{ .Site.Params.Logo | absURL }}",
+       "image": {{ .Site.Params.Avatar | absURL }},
+       "thumbnailUrl": {{ .Site.Params.Logo | absURL }},
        "license": "{{ .Site.Copyright }}"
       }
       </script>
