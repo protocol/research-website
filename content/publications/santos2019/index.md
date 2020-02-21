@@ -31,8 +31,8 @@ publication_types:
   - conference-paper
 
 authors:
-  - joao-santos
-  - nuno-santos
+  - "João Santos"
+  - "Nuno Santos"
   - david-dias
 
 tags:
@@ -41,10 +41,10 @@ tags:
 categories:
   -
 
-research-areas:
+research_areas:
   - distributed-systems
 
-research-groups:
+research_groups:
   - resnetlab
 
 featured: false

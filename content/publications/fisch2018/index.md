@@ -13,12 +13,12 @@ authors:
   - nicola-greco
   - juan-benet
 
-research-groups:
+research_groups:
   - filecoin-research
 
 categories:
 
-research-areas:
+research_areas:
   - cryptography
   - distributed-systems
 

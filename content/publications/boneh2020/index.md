@@ -28,9 +28,9 @@ publication_types:
   - report
 
 authors:
-  - dan-boneh
-  - saba-eskandarian
-  - lucjan-hanzlik
+  - "Dan Boneh"
+  - "Saba Eskandarian"
+  - "Lucjan Hanzlik"
   - nicola-greco
 
 tags:
@@ -39,10 +39,10 @@ tags:
 categories:
   -
 
-research-areas:
+research_areas:
   - cryptography
 
-research-groups:
+research_groups:
   - filecoin-research
 
 featured: false

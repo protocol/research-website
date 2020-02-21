@@ -1,62 +1,12 @@
 <div class="p-4">
   {{partial "publication-data-strip" . }}
 
-  <a class="block text-bigger text-blue leading-tight mb-2 pt-2 hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a>
+  <a class="block text-bigger text-blue leading-tight mb-2 pt-2" href="{{ .RelPermalink }}">{{ .Title }}</a>
 
-  <div class="mb-2 multiline-ellipsis-2">
+  <div class="mb-2 multiline-ellipsis-4">
     {{ .Summary }}
   </div>
 
-  {{ if (index .Params "research-areas") }}
-    <div class="block">
-      <img class="inline-block mr-2" src="/images/icon/tag.svg">
-      {{ range $index, $value := (index .Params "research-areas") }}
-        {{ if gt $index 0 }}
-          <span class="text-gray-600">,</span>
-        {{ end }}
-        {{ with $.Site.GetPage "taxonomyTerm" (printf "research/areas/%s" (urlize $value )) }}
-          <a href="{{ .RelPermalink }}" class="inline-block text-sm text-gray-600 hover:text-blue">
-            <span class="underline capitalize">{{ humanize .Title }}</span>
-          </a>
-        {{ end }}
-      {{ end }}
-    </div>
-  {{ end }}
+  {{ partial "page-metadata" . }}
 
-  {{ if .Params.venue }}
-    <div class="text-sm text-gray-600">
-      <img class="inline-block mr-2" src="/images/icon/location.svg">
-      {{ .Params.venue }}
-    </div>
-  {{ end }}
-
-  <!-- {{ if .Params.journal }}
-    <div class="text-sm text-gray-600">
-      <img class="inline-block mr-2" src="/images/icon/location.svg">
-      {{ .Params.journal }}
-    </div>
-  {{ end }} -->
-
-  {{ if .Params.authors }}
-    <div class="pt-6 mb-4">
-      {{ partial "authors-row-small" . }}
-    </div>
-  {{ end }}
-
-  <div class="flex flex-row items-center justify-start">
-    {{ range .Params.links }}
-      <a class="text-sm underline mr-4 text-almost-black hover:text-blue" href="{{ .url }}">{{ .name }}</a>
-    {{ end }}
-
-    {{ $currentPublication := . }}
-    {{ range .Resources.Match "*.pdf" }}
-      <a class="text-sm underline mr-4 text-almost-black hover:text-blue" href="{{ .RelPermalink }}">Download PDF</a>
-    {{ end }}
-
-    {{ range .Resources.Match "cite.bib" }}
-      <button class="text-sm underline mr-4 text-almost-black hover:text-blue" on-click="copyContentsToClipboard" data-to-copy="{{ .Content }}">
-        <span data-swap-on-copy>Cite</span>
-      </button>
-    {{ end }}
-  </div>
 </div>

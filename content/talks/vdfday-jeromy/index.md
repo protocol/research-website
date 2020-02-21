@@ -8,19 +8,19 @@ publishDate: 2019-09-02 14:19:14 +0100
 date: 2018-02-03 14:19:14 +0100
 
 # Event name
-event: "VDF Day"
+venue: "VDF Day"
 
-event_url:
+venue_url:
 
-event_location: "Stanford, CA, USA"
+venue_location: "Stanford, CA, USA"
 
 # Taxonomies
 authors:
   - jeromy-johnson
-research-areas:
+research_areas:
   - cryptography
   - distributed-systems
-research-groups:
+research_groups:
   - filecoin-research
 
 resources:

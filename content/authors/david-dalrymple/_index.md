@@ -9,7 +9,7 @@ authors:
 # Role/position
 role: Research Scientist
 
-research-groups:
+research_groups:
 
 resources:
   - name: avatar

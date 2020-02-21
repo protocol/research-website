@@ -7,19 +7,19 @@ publishDate: 2019-09-02 14:19:14 +0100
 # Talk date
 date: 2019-02-02 14:19:14 +0100
 
-event: "ConsensusDay 1"
+venue: "ConsensusDay 1"
 
-event_url: ""
+venue_url: ""
 
-event_location: "Stanford, CA, USA"
+venue_location: "Stanford, CA, USA"
 
 # Taxonomies
 authors:
   - brian-vohaska
-research-areas:
+research_areas:
   - cryptography
   - distributed-systems
-research-groups:
+research_groups:
 
 resources:
   - title: featured-image

@@ -6,8 +6,8 @@ doi:
 
 authors:
   - ariel-gabizon
-  - zachary-j-williamson
-  - oana-ciobotaru
+  - "Zachary J Williamson"
+  - "Oana Ciobotaru"
 
 publication_types:
   - conference-paper
@@ -16,10 +16,10 @@ tags:
   -
 categories:
   -
-research-areas:
+research_areas:
   - cryptography
 
-research-groups:
+research_groups:
   - filecoin-research
 
 venue: Stanford Blockchain Conference

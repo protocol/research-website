@@ -9,7 +9,7 @@ authors:
 # Roles/positions
 role: Research Scientist
 
-research-groups:
+research_groups:
   - filecoin-research
 
 resources:

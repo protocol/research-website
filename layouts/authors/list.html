@@ -2,9 +2,6 @@
 
 {{define "main"}}
   <div class="max-w-screen mx-auto pt-4 px-4 md:px-10">
-    <div class="mb-8 lg:mb-20">
-      {{ partial "breadcrumbs" . }}
-    </div>
 
     <div class="flex flex-col md:flex-row">
 
@@ -24,7 +21,7 @@
         <p class="text-center md:text-left text-sm leading-tight mb-2">
           <span>{{- .Params.role -}}</span>
 
-          {{ range (index .Params "research-groups")}}
+          {{ range (index .Params "research_groups")}}
             <span>/</span>
             {{ with $.Site.GetPage "taxonomyTerm" (printf "research/groups/%s" (urlize . )) }}
               <a href="{{ .RelPermalink }}" class="inline-block hover:text-blue hover:underline capitalize">

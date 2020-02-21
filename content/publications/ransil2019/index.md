@@ -10,19 +10,19 @@ publication_types:
   -
 authors:
   - alan-ransil
-  - edwin-fonkwe-fongang
+  - "Edwin Fonkwe Fongang"
   - michael-hammersley
-  - ivan-celanovic
-  - francis-o-sullivan
+  - "Ivan Celanovic"
+  - "Francis O'Sullivan"
 tags:
 categories:
-research-areas:
+research_areas:
   - distributed-systems
 
-journal: "IEEE PES Transactive Energy Systems Conference (TESC)"
 
 venue: IEEE PES Transactive Energy Systems Conference (TESC)
-venue_location:
+
+venue_location: Minneapolis, MN
 
 resources:
   - src: ransil2019.pdf

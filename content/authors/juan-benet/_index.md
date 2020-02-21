@@ -9,7 +9,7 @@ authors:
 # Roles/positions
 role: Founder and CEO
 
-research-groups:
+research_groups:
 
 resources:
   - name: avatar

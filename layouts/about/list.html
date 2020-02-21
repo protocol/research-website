@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="max-w-screen mx-auto pt-4 lg:pt-12 relative">
-    <h1 class="font-bold text-xl px-4 mb-8 md:px-12 lg:mb-0">About</h1>
+    <h1 class="text-xl px-4 mb-8 md:px-12 lg:mb-0">About</h1>
 
     <img class="w-full -mb-56 lg:w-3/5 lg:absolute lg:mb-0 lg:right-0 lg:-mr-12 lg:top-0 lg:mt-12" src="/images/about-page/about-header@2x.jpg">
 
@@ -107,28 +107,4 @@
     </div>
   </div>
 
-  <div class="max-w-screen mx-auto md:px-12 lg:flex">
-    <div class="mb-12 lg:w-1/2 lg:mb-8">
-      <p class="font-light text-md leading-relaxed mb-8">We pursue diverse projects covering different timescales in multiple fields related to computation, communication, and knowledge. We work on pure applied research and use-inspired basic research, with an interest in expanding to pure basic research in the future. A clear perspective of our active research projects and future directions begins with a better understanding of where we’ve been.</p>
-      <a href="/research" class="hover:text-pink">Explore our research areas<img class="inline pl-2" src="/icons/chevron-pink.svg" alt=""></a>
-    </div>
-
-    <div class="max-w-sm md:mx-auto lg:w-1/2 lg:mt-40">
-      <p class="leading-relaxed mb-8">“Frequent incremental contributions build up until we break through and leap forward. Research is where our ‘ideas-to-superpowers pipeline’ begins."</p>
-
-      {{ with $.Site.GetPage "taxonomyTerm" "authors/juan-benet" }}
-        {{ $author := . }}
-        {{ range $author.Resources.Match "avatar" }}
-          {{ $image := .Fill "56x56" }}
-          <a href="{{ $author.RelPermalink }}" class="flex items-center">
-            <img class="mr-4 rounded rounded-full" src="{{ $image.RelPermalink }}">
-            <div class="">
-              <p class="leading-none pb-2">{{ $author.Params.name }}</p>
-              <p class="text-gray-600 text-sm">Research Scientist</p>
-            </div>
-          </a>
-        {{ end }}
-      {{ end }}
-    </div>
-  </div>
 {{ end }}

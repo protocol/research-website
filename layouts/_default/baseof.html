@@ -45,15 +45,15 @@
       {
        "@context": "http://schema.org",
        "@type": "WebSite",
-       "url": "{{ .Permalink }}",
+       "url": {{ .Permalink }},
        "name": "{{ .Site.Title }}",
         "author": {
            "@type": "Organization",
            "name": "{{ .Site.Params.Author }}"
          },
        "description": "{{ .Site.Params.Description }}",
-       "image": "{{ .Site.Params.Avatar | absURL }}",
-       "thumbnailUrl": "{{ .Site.Params.Logo | absURL }}",
+       "image": {{ .Site.Params.Avatar | absURL }},
+       "thumbnailUrl": {{ .Site.Params.Logo | absURL }},
        "license": "{{ .Site.Copyright }}"
       }
       </script>
@@ -71,7 +71,7 @@
     {{ partial "site-header" . }}
     {{ partial "off-canvas-nav" . }}
 
-    <div class="w-full pt-32 md:pt-40 pb-32 md:pb-40 {{if (eq .Kind "home")}}md:pt-56{{end}}">
+    <div class="w-full pt-32 md:pt-40 pb-24 md:pb-30 {{if (eq .Kind "home")}}md:pt-56{{end}}">
       {{ block "main" . }}{{ end }}
     </div>
 

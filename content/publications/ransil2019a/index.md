@@ -14,13 +14,12 @@ authors:
 tags:
 categories:
   -
-research-areas:
+research_areas:
   - knowledge-engineering
 
-journal:
-
 venue: Metascience 2019 Symposium
-venue_location: Stanford University
+
+venue_location: Stanford, CA, USA
 
 resources:
   - src: ransil2019a.pdf

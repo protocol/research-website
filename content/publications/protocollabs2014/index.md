@@ -10,11 +10,11 @@ authors:
   - protocol-labs
 publication_types:
   - report
-research-groups:
+research_groups:
   - filecoin-research
 categories:
   -
-research-areas:
+research_areas:
   - cryptography
   - distributed-systems
 

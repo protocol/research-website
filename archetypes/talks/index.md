@@ -8,25 +8,25 @@ date: 2014-07-14
 # publishDate: 2019-09-03
 
 # Event name
-event:
+venue:
 
 # Event link
-event_url:
+venue_url:
 
 # Event date (defaults to date)
-event_date:
+venue_date:
 
 # Event location
-event_location:
+venue_location:
 
 # Taxonomies
 authors:
   -
 
-research-areas:
+research_areas:
   -
 
-research-groups:
+research_groups:
   -
 
 resources:

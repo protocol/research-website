@@ -1,26 +1,9 @@
 {{ define "main" }}
   <div class="max-w-screen mx-auto pt-4 md:px-10">
-    <div class="max-w-md px-4 md:px-0 truncate text-gray text-sm">
-      <a class="inline capitalize hover:text-blue hover:underline" href="/research">Research</a>
-      <span class="inline">/</span>
-      <a class="inline capitalize" href="{{ .RelPermalink }}">{{humanize (or .Params.name .Title )}}</a>
-    </div>
 
     <div class="md:mx-0">
       {{ partial "page-top" . }}
     </div>
-
-      {{/* <div class="text-gray pt-4 mr-8 md:inline-block md:float-right group">
-        <a href="">Category
-          <span class="text-black md:float-right">{{partial "icons/triangle-down.svg" (dict "class" "inline-block fill-current")}}</span>
-        </a>
-
-        {{ range .Site.Taxonomies.research-areas }}
-          <a class="hidden group-hover:block hover:text-black" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
-        {{ end }}
-
-        <img class="pt-4" src="/images/talks-page/dropdown-underline.svg">
-      </div> */}}
 
     <div class="flex flex-col md:flex-row md:flex-wrap items-start justify-start mt-10 mb-12 md:-mx-4">
       {{range where site.RegularPages "Type" "in" "talks"}}

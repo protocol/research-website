@@ -31,10 +31,10 @@ publication_types:
   - report
 
 authors:
-  - matteo-campanelli
-  - dario-fiore
+  - "Matteo Campanelli"
+  - "Dario Fiore"
   - nicola-greco
-  - dimitris-kolonelos
+  - "Dimitris Kolonelos"
   - luca-nizzardo
 
 tags:
@@ -43,11 +43,11 @@ tags:
 categories:
   -
 
-research-areas:
+research_areas:
   - cryptography
   - distributed-systems
 
-research-groups:
+research_groups:
   - filecoin-research
 
 featured: false

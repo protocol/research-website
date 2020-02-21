@@ -1,16 +1,17 @@
 <div class="block p-4">
-  <a href="{{ .RelPermalink }}">
-    {{ range .Resources.Match "featured.*" }}
-      {{ $image := .Fit "600x600" }}
-      <img class="max-w-sms block w-full" src="{{ $image.RelPermalink }}">
-    {{ end }}
-  </a>
-
-  <a href="{{ .RelPermalink }}" class="block text-bigger font-bold py-2 hover:text-blue">{{ .Title }}</a>
 
   <div class="mb-4">
     {{ partial "talk-data-strip" . }}
   </div>
 
-  {{ partial "authors-row-large-with-name" . }}
+  <a href="{{ .RelPermalink }}">
+    {{ range .Resources.Match "featured.*" }}
+      {{ $image := (.Fit "600x600").Fill "600x337" }}
+      <img class="block w-full" src="{{ $image.RelPermalink }}">
+    {{ end }}
+  </a>
+
+  <a class="block text-bigger text-blue leading-tight mb-2 pt-2" href="{{ .RelPermalink }}">{{ .Title }}</a>
+
+  {{ partial "page-metadata" . }}
 </div>

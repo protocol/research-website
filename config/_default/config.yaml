@@ -10,8 +10,8 @@ taxonomies:
   category: categories
   publication_type: publication_types
   tag: tags
-  research-area: research-areas
-  research-group: research-groups
+  research_area: research_areas
+  research_group: research_groups
 params:
   DateForm: 2006.1.2
   Avatar: /images/pl_research_card.png

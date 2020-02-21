@@ -1,7 +1,7 @@
 ---
 name: Protocol Labs
 role:
-research-groups:
+research_groups:
 resources:
   - name: avatar
     src: avatar.png

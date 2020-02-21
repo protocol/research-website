@@ -8,18 +8,18 @@ publishDate: 2019-10-14 14:19:14 +0100
 date: 2019-09-06 14:19:14 +0100
 
 # Event name
-event: "SYCO 5"
+venue: "SYCO 5"
 
-event_url: "http://events.cs.bham.ac.uk/syco/strings3-syco5/"
+venue_url: "http://events.cs.bham.ac.uk/syco/strings3-syco5/"
 
-event_location: "Birmingham, UK"
+venue_location: "Birmingham, UK"
 
 # Taxonomies
 authors:
   - david-dalrymple
-research-areas:
+research_areas:
   - applied-category-theory
-research-groups:
+research_groups:
 
 resources:
   - title: featured-image
