@@ -16,7 +16,7 @@
 
         <h1 class="text-blue text-bigger leading-tight group-hover:underline">{{ .Title }}</h1>
 
-        <div class="multiline-ellipsis-3 md:multiline-ellipsis-2">{{ .Summary | truncate 200 }}</div>
+        <div class="multiline-ellipsis-3 md:multiline-ellipsis-3">{{ .Params.abstract | default .Summary }}</div>
       </a>
     {{end}}
   </div>

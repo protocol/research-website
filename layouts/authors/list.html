@@ -80,7 +80,7 @@
 
                 <h1 class="text-blue text-bigger leading-tight mb-2 group-hover:underline">{{ .Title }}</h1>
 
-                <p class="multiline-ellipsis-2">{{ .Summary }}</p>
+                <p class="multiline-ellipsis-3">{{.Params.abstract | default .Summary }}</p>
               </a>
             {{ end }}
           </div>
