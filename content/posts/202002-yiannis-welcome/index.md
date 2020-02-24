@@ -32,7 +32,7 @@ draft: false
 
 **What are you working on?**
 
-> I'm glad to be part of the PL Research team and more specifically the Resilient Networks Lab (ResNetLab). I often like to define research as the task of identifying and quantifying problems that do not exist yet and finding solutions to those problems. The work I'm looking forward to do is to support the engineering teams with the challenges they are facing, as well as the challenges that they will face in the future, both from the research standpoint. Some of the areas I will be contributing to are: content resolution and routing, DHT performance improvements, non-DHT routing optimisations, techniques to speed up content delivery and security for decentralised, unstructured peer-to-peer network protocols.
+> I'm glad to be part of the PL Research team and more specifically the Resilient Networks Lab (ResNetLab). I often like to define research as the task of _finding solutions to problems that do not exist yet_. The work I'm looking forward to do is to support the engineering teams with the challenges they are facing, as well as the challenges that they will face in the future, both from the research standpoint. Some of the areas I will be contributing to are: content resolution and routing, DHT performance improvements, non-DHT routing optimisations, techniques to speed up content delivery and security for decentralised, unstructured peer-to-peer network protocols.
 
 **What future technology are you most excited about?**
 
