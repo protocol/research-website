@@ -24,7 +24,7 @@ draft: false
 
 ---
 
-Yiannis (Ioannis) is joining the ResNetLab team, which he helped get off the ground as an advisor to PL since July 2019. Yiannis is currently a fellow of the United Kingdom's Engineering and Physical Sciences Research Council and a Lecturer at [University College London](https://www.ucl.ac.uk/), where he has [worked on a number of topics](https://scholar.google.com/citations?user=uudC-YUAAAAJ&hl=en&oi=ao) within the broad field of networking, with a significant focus on [Information-Centric Networking](https://en.wikipedia.org/wiki/Information-centric_networking) (ICN). Here's more from Yiannis:
+[Yiannis](/authors/yiannis-psaras/) (Ioannis) is joining the [Resilient Networks Lab](/research/groups/resnetlab/), which he helped get off the ground as an advisor to PL since July 2019. Yiannis is currently a fellow of the United Kingdom's Engineering and Physical Sciences Research Council and a Lecturer at [University College London](https://www.ucl.ac.uk/), where he has [worked on a number of topics](https://scholar.google.com/citations?user=uudC-YUAAAAJ&hl=en&oi=ao) within the broad field of networking, with a significant focus on [Information-Centric Networking](https://en.wikipedia.org/wiki/Information-centric_networking) (ICN). Here's more from Yiannis:
 
 **What path brought you to PL?**
 
