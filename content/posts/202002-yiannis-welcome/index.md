@@ -2,7 +2,7 @@
 title: "Yiannis Psaras joins Protocol Labs Research"
 
 # Website post date
-date: 2020-02-24
+date: 2020-02-25
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
 
