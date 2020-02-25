@@ -42,12 +42,6 @@
             </a>
           {{ end }}
 
-          {{ range .Resources.Match "cite.bib" }}
-            <button class="block text-sm text-blue mb-4" on-click="copyContentsToClipboard" data-to-copy="{{ .Content }}">
-              <img class="inline-block mr-2" src="/icons/paperclip.svg">
-              <span data-swap-on-copy>Cite this publication</span>
-            </button>
-          {{ end }}
         </div>
 
         <div class="p-4">
