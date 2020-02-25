@@ -20,7 +20,6 @@ doi:
 
 resources:
   - src: publication-source.pdf
-  - src: cite.bib
 
 # Taxonomies
 # delete all but one
