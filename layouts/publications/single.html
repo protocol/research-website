@@ -22,32 +22,15 @@
       </div>
 
       <div class="w-full md:w-1/4 mb-12">
-        <div class="bg-gray-100 p-8 mb-12 border-t-2 border-black">
-          <div class="text-sm mb-4 text-gray-500">
-            For you:
-          </div>
 
-          {{ range .Params.links }}
-            <a class="block text-sm text-blue mb-4" href="{{ .url }}">
-              <img class="inline-block mr-2" src="/icons/{{ .icon }}.svg">
-              <span>{{ .name }}</span>
-            </a>
-          {{ end }}
+        {{ partial "resources-box" . }}
 
-          {{ $currentPublication := . }}
-          {{ range .Resources.Match "*.pdf" }}
-            <a class="block text-sm text-blue mb-4" href="{{ .RelPermalink }}">
-              <img class="inline-block mr-2" src="/icons/download.svg">
-              <span>Download PDF</span>
-            </a>
-          {{ end }}
+        <span>&nbsp</span>
 
-        </div>
+        {{ partial "share-box" . }}
 
-        <div class="p-4">
-          {{ partial "share-links" . }}
-        </div>
       </div>
+
     </div>
   </div>
 {{ end }}
