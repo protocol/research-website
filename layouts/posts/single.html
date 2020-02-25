@@ -7,7 +7,9 @@
 
         {{ partial "post-data-strip" . }}
 
-        <h1 class="text-xl pt-2 mb-4 leading-tight">{{ .Title }}</h1>
+        <div class="text-lg md:text-larger mb-4 leading-tight">
+          {{ .Title }}
+        </div>
 
         {{ partial "page-metadata" . }}
 
