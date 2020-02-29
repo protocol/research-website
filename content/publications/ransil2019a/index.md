@@ -17,7 +17,7 @@ categories:
 research_areas:
   - knowledge-engineering
 
-venue: Metascience 2019 Symposium
+venue: Metascience Symposium
 
 venue_location: Stanford, CA, USA
 
