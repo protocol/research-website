@@ -8,7 +8,7 @@ date: 2020-02-29
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: Cryptoeconomic Systems
+venue: Cryptoeconomic Systems (to appear)
 
 # Venue Location
 venue_location: Cambridge, MA, USA
