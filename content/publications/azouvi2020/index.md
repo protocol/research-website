@@ -2,7 +2,7 @@
 title: "SoK: Tools for Game Theoretic Models of Security for Cryptocurrencies"
 
 # Website post date
-date: 2020-02-29
+date: 2020-03-03
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
