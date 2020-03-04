@@ -7,7 +7,9 @@
 
         {{ partial "post-data-strip" . }}
 
-        <h1 class="text-xl pt-2 mb-4 leading-tight">{{ .Title }}</h1>
+        <div class="text-lg md:text-larger mb-4 leading-tight">
+          {{ .Title }}
+        </div>
 
         {{ partial "page-metadata" . }}
 
@@ -41,7 +43,7 @@
         </div>
       </div>
 
-      <div class="w-full bg-gray-300 border-black border-solid border-t-2 pb-8 lg:w-1/4">
+      <div class="w-full md:w-1/4 mb-12 pt-12">
         {{ partial "share-box" . }}
       </div>
     </div>

@@ -2,19 +2,23 @@
 {{ $title := .Title }}
 {{ $body := print $title ", by @protocollabs \n\n" $url "\n" }}
 
-<p class="text-gray-500 px-4 md:px-8 pt-4 md:pt-8 mb-4 inline-block font-semibold">Share:</p>
+<div class="w-full bg-gray-300 border-black border-solid border-t-2 pb-8">
 
-<div class="mb-4 pl-4 md:pl-8">
-  <img class="inline-block pr-2 inline-middle" src="/images/talks-page/mail-icon.svg">
-  <a href="mailto:?subject=Check%20out%20{{ $title }}.&body={{ $body }}" class="text-blue inline-block inline-middle text-sm" aria-label="share on Email">Share via Email</a>
-</div>
+  <p class="text-gray-500 px-4 md:px-8 pt-4 md:pt-8 mb-4 inline-block font-semibold">Share</p>
 
-<div class="mb-4 pl-4 md:pl-8">
-  <img class="inline-block pr-2 inline-middle" src="/images/talks-page/twitter-icon.svg">
-  <a href="http://twitter.com/intent/tweet?text={{ $body }}" class="text-blue inline-block inline-middle text-sm" aria-label="share on Twitter">Share on Twitter</a>
-</div>
+  <div class="mb-4 pl-4 md:pl-8">
+    <img class="inline-block pr-2 inline-middle" src="/images/talks-page/mail-icon.svg">
+    <a href="mailto:?subject=Check%20out%20{{ $title }}.&body={{ $body }}" class="text-blue inline-block inline-middle text-sm" aria-label="share on Email">Share via Email</a>
+  </div>
 
-<div class="pl-4 md:pl-8">
-  <img class="inline-block pr-2 inline-middle" src="/images/talks-page/linkedin-icon.svg">
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ $url }}&title={{ $title }}&summary={{ $body }}&source={{ .Site.BaseURL }}" class="text-blue inline-block inline-middle text-sm" aria-label="share on LinkedIn">Share on LinkedIn</a>
+  <div class="mb-4 pl-4 md:pl-8">
+    <img class="inline-block pr-2 inline-middle" src="/images/talks-page/twitter-icon.svg">
+    <a href="http://twitter.com/intent/tweet?text={{ $body }}" class="text-blue inline-block inline-middle text-sm" aria-label="share on Twitter">Share on Twitter</a>
+  </div>
+
+  <div class="pl-4 md:pl-8">
+    <img class="inline-block pr-2 inline-middle" src="/images/talks-page/linkedin-icon.svg">
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ $url }}&title={{ $title }}&summary={{ $body }}&source={{ .Site.BaseURL }}" class="text-blue inline-block inline-middle text-sm" aria-label="share on LinkedIn">Share on LinkedIn</a>
+  </div>
+
 </div>
