@@ -39,7 +39,7 @@ research_areas:
 research_groups:
   - filecoin-research
 
-featured: false
+featured: true
 
 # Icon must match a known icon in /static/icons
 # links:
