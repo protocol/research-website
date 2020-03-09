@@ -48,8 +48,8 @@
       <div class="column-count-2 md:flex">
         {{ $currentPage := . }}
         {{ range .Site.Menus.footer }}
-          <div class="w-auto pb-12 md:pb-0 break-inside-avoid">
-            <a href="{{ .URL }}" class="relative text-sm inline-block mr-8 align-middle hover:text-blue">
+          <div class="w-auto pb-12 pl-8 md:pb-0 break-inside-avoid">
+            <a href="{{ .URL }}" class="relative text-sm inline-block align-middle hover:text-blue">
               <span>{{ .Name }}</span>
 
               {{if ($currentPage.IsMenuCurrent "footer" .) }}
