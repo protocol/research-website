@@ -1,20 +1,25 @@
 ---
 # Display name
-name: "{{ replace .Name "-" " " | title }}"
+name:
 
-# Role/position (e.g., Professor of Artificial Intelligence)
+# Role/position (e.g. Research Scientist)
 role:
 
+# Existing research group (use folder name) or free text
 research_groups:
+  -
 
+# Avatar (no need to edit)
 resources:
   - name: avatar
     src: avatar.png
 
+# Research interests
 interests:
   - Interest 1
   - Interest 2
 
+# Degrees
 education:
   courses:
   - course: Title course 1
@@ -25,9 +30,8 @@ education:
     year: 2012
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
+# Delete what doesn't apply
 social:
-  - icon: envelope
-    link: '#contact'  # For a direct email link, use "mailto:test@example.org".
   - icon: twitter
     link: https://twitter.com/USERNAME
   - icon: google-scholar
@@ -36,10 +40,15 @@ social:
     link: https://github.com/USERNAME
   - icon: orcid
     link: https://orcid.org/0000-0002-1825-0097
-
-email: ""
+  - icon: linkedin
+    link: https://www.linkedin.com/in/USERNAME
+  - icon: researchgate
+    link: https://www.researchgate.net/profile/USERNAME
+  - icon: link
+    link: https://example.org/    
 
 # Organizational groups that you belong to (for author list route)
+# Delete what doesn't apply
 user_groups:
   - Researchers
   - Management and support
@@ -47,5 +56,8 @@ user_groups:
   - Advisors
 
 # For display at the top of the author details page
-quote:
+# Not currently used
+# quote:
 ---
+
+Write bio here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

@@ -1,39 +1,46 @@
 ---
+# Talk title
 title:
 
 # Website post date
+# format YYYY-MM-DD
 date: 2014-07-14
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
 
-# Event name
+# Venue name
 venue:
 
-# Event link
+# Venue link
 venue_url:
 
-# Event date (defaults to date)
+# Venue date (defaults to date)
+# format YYYY-MM-DD
 venue_date:
 
-# Event location
+# Venue location
 venue_location:
 
-# Taxonomies
+# For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
   -
 
+# Zero or more of the areas in content/research/areas
 research_areas:
   -
 
+# Zero or more of the groups in content/research/groups (should match author membership)
 research_groups:
   -
 
+# Name the cover image featured.jpg
 resources:
   - title: featured-image
     src: featured.jpg
 
 # Short abstract
+# Describe talk here
 abstract:    
 ---
 
