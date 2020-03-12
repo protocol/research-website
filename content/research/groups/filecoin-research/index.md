@@ -20,4 +20,5 @@ The group works on four main topics:
  - Cryptographic primitives: Filecoin relies on the performance and security of cryptographic primitives. Our endeavours include Proof of Replication (PoRep), Proof of SpaceTime (PoST), SEALSTACK, SNARKs, and VDFs.
 
 Group website: https://research.filecoin.io/
-GitHub repo: https://github.com/filecoin-project/research/blob/master/README.md
+
+Group GitHub repo: https://github.com/filecoin-project/research/blob/master/README.md
