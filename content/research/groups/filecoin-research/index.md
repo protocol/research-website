@@ -21,4 +21,4 @@ The group works on four main topics:
 
 Group website: https://research.filecoin.io/
 
-Group GitHub repo: https://github.com/filecoin-project/research/blob/master/README.md
+Group GitHub repo: https://github.com/filecoin-project/research/
