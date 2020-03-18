@@ -9,6 +9,10 @@ resources:
   - src: icon.jpg
 ---
 
+<center>{{< figure src="resnetlab_logo_blue.svg" width="200px" >}}</center>
+
+&nbsp;  
+
 A resilient system or network is fundamentally uncompromised by an isolated failure or network split. The system is malleable, adaptable to different conditions and capable of evolving to meet new requirements over time. That said, resilience here identifies also as a characteristic against changing system or network conditions, i.e., the system's core operating principles adjust so that *performance* remains when the system scales up to serve increasing demand from more users. Building resilience into foundational infrastructure is the key in building a computing and networking fabric for human knowledge.
 
 ## Mission & Vision
@@ -20,6 +24,7 @@ The Resilient Networks Lab mission is to build resilient distributed systems, by
 The lab's genesis comes from a need present in the IPFS and libp2p projects to amp their research efforts to tackle the critical challenges of scaling up networks to planet scale and beyond. The Lab is designed to take ownership of the earlier stages on the research pipeline, from ideas to specs and to code.
 
 ![](/images/resnetlab/research-pipeline-map.png)
+
 
 ## Research Endeavours
 
