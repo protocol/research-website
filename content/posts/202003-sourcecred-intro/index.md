@@ -23,17 +23,17 @@ draft: false
 
 ---
 
-_You may not know that Protocol Labs is a supporter of an open-source governance and sustainability project called [SourceCred](https://sourcecred.io/).  As a participant in a small SourceCred meetup last month, I learned enough about the underlying algorithm that I wrote up an explainer for their [documentation repo](https://www.github.com/sourcecred/docs/) and thought it might interest this audience enough that I'm sharing it here as well.  Everyone at PL is incredibly excited by the potential of SourceCred, and if you are too after reading this, I'd strongly recommend visiting their [Discourse](https://discourse.sourcecred.io/) or their [Discord](https://discord.gg/cefmuPH).  You'll get some cred just for stopping by the weekly community call in Discord on Tuesdays.  If that's got your curiosity, by all means, please read on._
+_You may not know that Protocol Labs is a supporter of an open-source governance and sustainability project called [SourceCred](https://sourcecred.io/).  As a participant in a small SourceCred meetup last month, I learned enough about the underlying algorithm that I wrote up an explainer for their [documentation repo](https://www.github.com/sourcecred/docs/) and thought it might be interesting to share it here as well.  Everyone at PL is incredibly excited by the potential of SourceCred; if you are too after reading this, I'd strongly recommend visiting their [Discourse](https://discourse.sourcecred.io/) or their [Discord](https://discord.gg/cefmuPH).  You'll get some cred just for stopping by the weekly community call in Discord on Tuesdays.  If that's got your curiosity, by all means, please read on._
 
 &nbsp;
 
-I’m starting from the assumption that you have some familiarity with the SourceCred project. If you don’t, then I’d suggest you check out Dandelion's [20-minute talk (+Qs) from SustainWeb3](https://www.youtube.com/watch?v=yVTqRLekRl4) and some of the other documents in this repo.
+I’m starting from the assumption that you have some familiarity with the SourceCred project. If you don’t, then I’d suggest you check out Dandelion's [20-minute talk (+Qs) from SustainWeb3](https://www.youtube.com/watch?v=yVTqRLekRl4).
 
-Overall, I’m going to throw around a little math, but you should be able to get solid intuition on this if you’re comfortable talking about a [graph](https://en.wikipedia.org/wiki/Graph_theory) as a set of nodes and edges, where the edges connect nodes, can be directed, and can have weights. I’ll also explain [the PageRank algorithm](https://en.wikipedia.org/wiki/PageRank), which computes “importance” of nodes in a graph based on the “importance” of nodes connected to it, and I’ll motivate the intuition behind it as well when I cover it. Still, if you like having a strong formal background, Brilliant.com’s explanation of [Markov Chains](https://brilliant.org/wiki/markov-chains/#transition-matrices), [Stationary Distributions](https://brilliant.org/wiki/stationary-distributions/) and [their quiz](https://brilliant.org/practice/basic-markov-chains) are more than sufficient. If you just want to get to the explanation, I'll also define terms as they come up.
+I’m going to throw around a little math, but you should be able to get a solid intuition on this if you’re comfortable talking about a [graph](https://en.wikipedia.org/wiki/Graph_theory) as a set of nodes and edges, where the edges connect nodes, can be directed, and can have weights. I’ll also explain [the PageRank algorithm](https://en.wikipedia.org/wiki/PageRank), which computes “importance” of nodes in a graph based on the “importance” of nodes connected to it, and I’ll motivate the intuition behind it as well when I cover it. Still, if you like having a strong formal background, Brilliant.com’s explanation of [Markov Chains](https://brilliant.org/wiki/markov-chains/#transition-matrices), [Stationary Distributions](https://brilliant.org/wiki/stationary-distributions/) and [their quiz](https://brilliant.org/practice/basic-markov-chains) are more than sufficient. If you just want to get to the explanation, I'll also define terms as they come up.
 
 ## The high-level overview
 
-SourceCred takes information about contributions and generates what we call a contribution graph, and this post will first explain what that graph is and where it comes from. We then discuss how, from this contribution graph, SourceCred runs the CredRank algorithm to generate cred scores. This graph of cred is then used to distribute grain. The grain can then be kept or traded, and soon will be able to be used to influence the contribution graph in the future. This overall process is diagrammed in the figure below.
+SourceCred takes information about contributions and generates what we call a contribution graph, and this post will first explain what that graph is and where it comes from. We then discuss how, from this contribution graph, SourceCred runs the CredRank algorithm to generate cred scores. This graph of cred is then used to distribute grain. The grain can then be kept or traded, and soon will be able to be used to influence the contribution graph. This overall process is diagrammed in the figure below.
 
 ![SourceCred overview](sourcecred_overview1.svg)
 
@@ -43,25 +43,25 @@ The rest of this document first outlines how collaboration data is gathered and 
 
 ## Components of contributing in SourceCred
 
-SourceCred first generates a contribution graph from the input data. In this graph, a node is a contributor or contribution, and edges represent some sort of connection between the nodes. These connections are intended to include all possible ways that a contribution or contributor on a platform can express dependencies, thanks, or flows of value. Examples would look like anything from a mention on a forum post to liking or merging a PR on GitHub.
+SourceCred first generates a contribution graph from the input data. In this graph, a node is a contributor or contribution, and an edge represents some sort of connection between nodes. These connections are intended to include all possible ways in which a contribution or contributor on a platform can express dependencies, thanks, or flows of value. Examples would look like anything from a mention on a forum post to liking or merging a PR on GitHub.
 
-It's worth pausing for a moment to make a distinction.  In graph theory, a **weighted graph** has weights on the edges, whereas the SourceCred **contribution graph** has weights on both edges and nodes and a few other features.  I'll probably manage not to talk about weighted graphs unless I'm talking about an example from graph theory.
+It's worth pausing for a moment to make a distinction.  In graph theory, a **weighted graph** has weights on the edges, whereas the SourceCred **contribution graph** has weights on both edges and nodes and a few extra features.  I'll probably manage not to talk about weighted graphs unless I'm talking about an example from graph theory.
 
 #### Nodes
 
 Contributions are represented as nodes in the graph and are given addresses to identify them uniquely. These addresses include a prefix, which takes the form: `[organization making the plugin that generates the node] + [name of the plugin] + [type of contribution]` (e.g. topic/post/user/like).
 
-Contributors are also represented as nodes in the graph. These nodes are similarly prefixed, and connected to contributions with directed edges, as illustrated in the figure below. For example, if an author node creates an issue, the author node gets an incoming edge from the issue node. Or if an author of a Discourse post mentions another contributor in the post, the post creates an outbound edge coming from the author.
+Contributors are also represented as nodes in the graph. These nodes are similarly prefixed and connected to contributions with directed edges, as illustrated in the figure below. For example, if an author node creates an issue, the author node gets an incoming edge from the issue node. Or if an author of a Discourse post mentions another contributor in the post, the post creates an outbound edge coming from the author.
 
-Lastly, initiatives are another type of node that serve as a high-level place to connect relevant nodes and discuss governance. It's similar to a tracking issue but generalized across the contribution graph, providing a way to organize planned work for a well-scoped task.
+Lastly, initiatives are another type of node that serve as a high-level place to connect relevant nodes and discuss governance. An initiative is similar to a tracking issue but generalized across the contribution graph, providing a way to organize planned work for a well-scoped task.
 
 #### Weights
 
-Both nodes and edges have weights, and an edge object in the SourceCred implementation can have forward and backward weight. We’ll get into what these weights mean shortly, but for now, it’s worth noting that these weights can easily be set by address prefix. Setting by prefix is implemented as a multiplicative update; for example, setting issue comments to be worth twice an issue emoji reaction creates a 2:1 ratio that is preserved by decreasing GitHub’s edge weights by a factor of 2 relative to those of Discourse. Additionally, an edge can start and end on the same node (loops), which could be relevant when a piece of content is edited or a contribution references itself.
+Both nodes and edges have weights, and an edge object in the SourceCred implementation can have forward and backward weight. We’ll get into what these weights mean shortly, but, for now, it’s worth noting that these weights can easily be set by address prefix. Setting by prefix is implemented as a multiplicative update; for example, setting issue comments to be worth twice an issue emoji reaction creates a 2:1 ratio that is preserved by decreasing GitHub’s edge weights by a factor of 2 relative to those of Discourse. Additionally, an edge can start and end on the same node (loops), which could be relevant when a piece of content is edited or a contribution references itself.
 
 ![SourceCred contribution graph](sourcecred_contribution_graph.svg)
 
-> Figure 2: An example of a contribution graph, where the nodes include three different contributors, each making a contribution.  The directed, weighted edges are connections between the contributions. It’s a [directed graph](https://en.wikipedia.org/wiki/Graph_theory#Directed_graph) with weights on nodes and edges.  How weights (violet) are assigned will be covered in the section on Generating the contribution graph.
+> Figure 2: An example of a contribution graph, where the nodes include three different contributors, each making a contribution.  The directed, weighted edges are connections between the contributions. It’s a [directed graph](https://en.wikipedia.org/wiki/Graph_theory#Directed_graph) with weights on nodes and edges.  How weights (in violet) are assigned will be covered in the section on generating the contribution graph.
 
 #### Timestamps
 
@@ -69,7 +69,7 @@ Additionally, because edges are associated with actions or events, they will alw
 
 #### Summary up to this point
 
-Now that we know about components of the contribution graph, their properties, and how they fit together, let’s cover how they’re generated.
+We know about the components of the contribution graph, their properties, and how they fit together. Now let’s cover how they’re generated.
 
 
 
@@ -77,7 +77,7 @@ Now that we know about components of the contribution graph, their properties, a
 
 #### Plugins
 
-SourceCred uses APIs of collaboration platforms to gather information about contributions. There are currently plugins for GitHub and Discourse ([code](https://github.com/sourcecred/sourcecred/tree/master/src/plugins)), and we’re enthusiastic about having more so that we can account for contributions in different venues. This includes Discord (in progress) and could extend to Twitter, Reddit, or citations on the [arXiv](https://arxiv.org/) or [eprint](https://eprint.iacr.org/).
+SourceCred uses APIs of collaboration platforms to gather information about contributions. There are currently plugins for GitHub and Discourse ([code](https://github.com/sourcecred/sourcecred/tree/master/src/plugins)), and we’re enthusiastic about having more so that we can account for contributions in different venues. This includes Discord (in progress) and could extend to Twitter, Reddit, or citations on the [arXiv](https://arxiv.org/) or [ePrint](https://eprint.iacr.org/).
 
 #### Weight parameters
 
@@ -87,11 +87,11 @@ Because these plugins incorporate data from all sorts of contributions and outpu
 
 > Figure 3. A set of weight sliders to set parameters controlling the relative weights of different contributions.
 
-Additionally, parameters, cred, and grain are all scoped to a community. This means that the community that supports a project sets and controls the parameters. For that matter, it’s worth reiterating that (lowercase) cred and grain generated for a project are specific to that project. SourceCred is about providing community control, keeping humans in the loop, both for gaming mitigation and general adaptability. At the bottom line, it’s important to keep the humans in control, because good governance technology only works with the consent of the governed.
+Additionally, parameters, cred, and grain are all scoped to a community. This means that the community that supports a project sets and controls the parameters. For that matter, it’s worth reiterating that (lowercase) cred and grain generated for a project are specific to that project. SourceCred is about providing community control, keeping humans in the loop, both for gaming mitigation and general adaptability. At the bottom line, it’s important to keep the humans in control because good governance technology only works with the consent of the governed.
 
 #### Manual input
 
-It’s also worth noting that not all contributions occur on platforms with automated data fetching, thus the capability exists to individually add them to the contribution graph directly at this stage. There will always be data that has to be incorporated manually, and how to account for those contributions, especially those not easily quantified, remains an active area of discussion.
+It’s also worth noting that not all contributions occur on platforms with automated data fetching; thus, the capability exists to individually add them to the contribution graph directly at this stage. There will always be data that has to be incorporated manually, and how to account for those contributions, especially those not easily quantified, remains an active area of discussion.
 
 #### Merging graphs
 
@@ -134,7 +134,7 @@ As a matter of design philosophy, we believe cred should be minted at moments wh
 This reduces the danger of spam and reinforces the idea that contributors dictate what is valuable. For other projects adopting SourceCred, contributions that mint cred could also be actions performed by a moderator or maintainer.
 
 #### Motivating time-based cred
-We believe that contributions should be valued based on their current impact, regardless of when the contribution was made.  As a result, a past action that was recently found to be valuable in the present should cause new cred to flow to that action. In contrast, a buggy feature that was replaced for being not easily maintained can cause their cred to decrease after the substitution has been made.
+We believe that contributions should be valued based on their current impact, regardless of when the contribution was made.  As a result, a past action that was recently found to be valuable in the present should cause new cred to flow to that action. In contrast, a buggy feature that was replaced for being not easily maintained can cause related cred to decrease after the substitution has been made.
 
 In order to accommodate these properties over time, we have adopted a model that creates "epoch nodes" that, in effect, act like time-bounded identities for each contributor for each time period.  The evolution of a user's cred over time can then be quickly evaluated by summing over epoch nodes without having to recalculate a stationary state.
 
@@ -163,7 +163,7 @@ Each node now has a mix of transition probabilities and edge weights.  After che
 At this point we can easily generate a pure Markov process from our modified contribution graph; all we have left to do is collapse any edges linking the same two nodes into one edge by summing the probabilities (i.e., two interactions that both flow cred from one node to another)
 
 #### Solving for the stationary distribution
-It should be reasonably clear that our goal is to calculate the equilibrium amount for each of the __n__ nodes.  We have __n__ potential flows to all other nodes, all known.  Since the total flow is conserved (flow in = flow out for each node), we can write __n__ equations with __n__ unknowns, which we could solve for the equilibrium cred.†
+It should be reasonably clear that our goal is to calculate the equilibrium amount for each of the $n$ nodes.  We have $n$ potential flows to all other nodes, all known.  Since the total flow is conserved (flow in = flow out for each node), we can write $n$ equations with $n$ unknowns, which we could solve for the equilibrium cred.**†**
 
 #### Stationary distribution as an eigenvector
 If you’ve spent time in linear algebra land, you’ll be pleased to hear that common way to compute this (in algebraic graph theory) is to convert the graph to a matrix _P_ where each entry $P\_{uv}$ is the transition probability from node $u$ to node $v$. Each dimension corresponds to a node, and the matrix maps from all nodes to all nodes. Finding the stationary distribution is the same as finding [the eigenvector](https://www.youtube.com/watch?v=PFDu9oVAE-g) of the transition matrix that corresponds to eigenvalue $1$; this eigenvector is the distribution of value to each node such that, if value flowed down each edge in proportion to its weight, the resulting value distribution would remain the same.
@@ -183,24 +183,24 @@ We now discuss how grain, SourceCred's "proof-of-support" token, is calculated f
 Once SourceCred calculates the cred for individual contributors, that cred is linked to an identity that is an amalgamation of their identities across the platforms (e.g., GitHub handle or Discord username). A constant amount of SourceCred grain (**¤**) is produced per unit time, currently 15000¤ per week. This amount is distributed according to two different mechanisms.
 
 -   20% of the grain is “fast” and is disbursed in proportion to the cred each node earned in the past week. This is intended to provide fast feedback.
--   80% of the grain is “slow” and is disbursed in proportion to the difference between the total grain a node has received and what that node’s proportional fair cred would be over all history.  This is intended to ensure that everyone is rewarded in proportion to their lifetime contribution.
+-   80% of the grain is “slow” and is disbursed in proportion to the difference between the total grain a node has received and what that node’s proportional fair cred would be over the entire history.  This is intended to ensure that everyone is rewarded in proportion to their lifetime contribution.
 
 For example, if your past work was unrecognized until recently, your slow payment should reflect the recently recognized value of the contribution. Alternatively, if you joined this week, you’ll only have fast grain.  A change in the algorithm or weights may imply that a contributor was over-paid in the past and thus won't receive any slow payments for a while. The fast component can potentially over-distribute grain, but it will get diluted by other contributions.
 
 There are some interesting second-order dynamics here relating the rate of "cred inflation" vs. "grain inflation":
  - If grain is minted faster than cred, then the slow payment will pay all contributors (even inactive contributors) because the lifetime grain-per-cred value is increasing.
- - If cred is inflated faster than grain, then the slow payment will only pay recipients of "new" cred, i.e., an inactive contributor whose cred stays constant would stop receiving slow payments (because they already reached target grain-per-cred for their amount of cred).
+ - If cred is inflated faster than grain, then the slow payment will only pay recipients of "new" cred, i.e., an inactive contributor whose cred stays constant will stop receiving slow payments (because they already reached target grain-per-cred for their amount of cred).
 
 
 #### How grain is traded
 
-Grain payouts are currently tracked by Dandelion in an observable notebook linked in [this Discourse thread](https://discourse.sourcecred.io/t/sourcecred-contributor-payouts/298).  We currently consider grain a "preview" or experimental balance, though we plan to honor it going forward.  As a result, actually receiving grain is an opt-in process.  If you opt in, there may be financial or tax liabilities; if you don't, it currently seems like grain is just a number in a list.  Additionally, grain distributions will vest over time in order to smooth out the peakiness of grain distribution, as described in [this Discourse thread](https://discourse.sourcecred.io/t/grain-vesting/636). Even now, grain can be sold or given. In fact, [Protocol Labs](https://protocol.ai/) supports SourceCred by purchasing grain directly from contributors. At present, the transfer of grain is executed by recording changes to the observable notebook on GitHub [here](https://github.com/sourcecred/cred).
+Grain payouts are currently tracked in an observable notebook linked in [this Discourse thread](https://discourse.sourcecred.io/t/sourcecred-contributor-payouts/298).  We currently consider grain a "preview" or experimental balance, though we plan to honor it going forward.  As a result, actually receiving grain is an opt-in process.  If you opt in, there may be financial or tax liabilities; if you don't, it currently seems like grain is just a number in a list.  Additionally, grain distributions will vest over time in order to smooth out the peakiness of grain distribution, as described in [this Discourse thread](https://discourse.sourcecred.io/t/grain-vesting/636). Even now, grain can be sold or given. In fact, [Protocol Labs](https://protocol.ai/) supports SourceCred by purchasing grain directly from contributors. At present, the transfer of grain is executed by recording changes to the observable notebook on GitHub [here](https://github.com/sourcecred/cred).
 
 ## Future roadmap features
 
 #### Boosting
 
-The next big feature on [the SourceCred roadmap](https://discourse.sourcecred.io/t/sourcecred-beta-roadmap/422) is boosting, outlined in [this discourse post](https://discourse.sourcecred.io/t/cred-boosting/257). The expectation is that anyone would be able to spend their grain by permanently staking it on a node. This action would increase that node’s weight and add an edge in the graph from the node back to the individual who boosted it. Boosting issues, PRs, or initiatives has the effect of increasing the visibility and importance of those nodes and can work to speculate on the future importance of fixing those bugs or adding those features.  Boosting users, alternatively, has the effect of sponsoring someone to work on the project.
+The next big feature on [the SourceCred roadmap](https://discourse.sourcecred.io/t/sourcecred-beta-roadmap/422) is boosting, outlined in [this discourse post](https://discourse.sourcecred.io/t/cred-boosting/257). The expectation is that anyone will be able to spend their grain by permanently staking it on a node. This action would increase that node’s weight and add an edge in the graph from the node back to the individual who boosted it. Boosting issues, PRs, or initiatives has the effect of increasing the visibility and importance of those nodes and can work to speculate on the future importance of fixing those bugs or adding those features.  Boosting users, alternatively, has the effect of sponsoring someone to work on the project.
 
 #### ERC20 grain
 
@@ -217,4 +217,4 @@ Using cred or grain for governance is not on the current roadmap, but it’s pre
 Additionally, it’s worth looking at GitHub for [the current project status](https://github.com/sourcecred/sourcecred/blob/master/README.md).
 
 
-† It's worth noting that a Markov process is guaranteed a stationary distribution only if the process is ergodic and irreducible. Other than stating that our seed node makes our Markov process satisfy these, it's not worth considering at this depth. I would encourage a curious reader to continue their exploration of ergodicity on [Wikipedia](https://en.wikipedia.org/wiki/Ergodicity#Markov_chains), [Brilliant](https://brilliant.org/wiki/ergodic-markov-chains/), or your favorite reference.
+**†** It's worth noting that a Markov process is guaranteed a stationary distribution only if the process is ergodic and irreducible. Other than stating that our seed node makes our Markov process satisfy these, it's not worth considering at this depth. I would encourage a curious reader to continue their exploration of ergodicity on [Wikipedia](https://en.wikipedia.org/wiki/Ergodicity#Markov_chains), [Brilliant](https://brilliant.org/wiki/ergodic-markov-chains/), or your favorite reference.
