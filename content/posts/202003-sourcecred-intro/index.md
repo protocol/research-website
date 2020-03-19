@@ -134,7 +134,7 @@ As a matter of design philosophy, we believe cred should be minted at moments wh
 This reduces the danger of spam and reinforces the idea that contributors dictate what is valuable. For other projects adopting SourceCred, contributions that mint cred could also be actions performed by a moderator or maintainer.
 
 #### Motivating time-based cred
-We believe that contributions should be valued based on their current impact, regardless of when the contribution was made.  As a result, a past action that was recently found to be valuable in the present should cause new cred to flow to that action. In contrast, a buggy feature that was replaced for being not easily maintained can cause related cred to decrease after the substitution has been made.
+We believe that contributions should be valued based on their current impact, regardless of when the contribution was made.  As a result, a past action that was recently found to be valuable in the present should have new cred flow to it. In contrast, a buggy feature that was replaced for not being easily maintained should have its cred decrease.
 
 In order to accommodate these properties over time, we have adopted a model that creates "epoch nodes" that, in effect, act like time-bounded identities for each contributor for each time period.  The evolution of a user's cred over time can then be quickly evaluated by summing over epoch nodes without having to recalculate a stationary state.
 
