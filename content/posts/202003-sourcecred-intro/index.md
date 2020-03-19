@@ -2,7 +2,7 @@
 title: "SourceCred: an introduction to calculating cred and grain"
 
 # Website post date
-date: 2020-03-17
+date: 2020-03-19
 # Publish from this date (defaults to date)
 # publishDate: 2019-06-03
 
