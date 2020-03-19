@@ -23,6 +23,10 @@ draft: false
 
 ---
 
+_You may not know that Protocol Labs is a supporter of an open-source governance and sustainability project called [SourceCred](https://sourcecred.io/).  (If you've never heard of the project, this is a fine place to start.)  As a participant in a small SourceCred meetup last month, I learned enough about the underlying algorithm that I wrote up this explainer for their [documentation repo](https://www.github.com/sourcecred/docs/), and thought it might interest this audience enough that I'm sharing it here as well.  Everyone at PL is incredibly excited by the potential of SourceCred, and if you are too after reading this, I'd strongly recommend visiting their [Discourse](https://discourse.sourcecred.io/) or their [Discord](https://discord.gg/cefmuPH).  You'll get some cred just for stopping by the weekly community call in Discord on Tuesdays.  If that's got your curiosity, by all means, please read on._
+
+---
+
 I’m starting from the assumption that you have some familiarity with the SourceCred project. If you don’t, then I’d suggest you check out Dandelion's [20 minute talk (+Qs) from SustainWeb3](https://www.youtube.com/watch?v=yVTqRLekRl4) and some of the other documents in this repo.
 
 Overall, I’m going to throw around a little math, but you should be able to get solid intuition on this if you’re comfortable talking about a [graph](https://en.wikipedia.org/wiki/Graph_theory) as a set of nodes and edges, where the edges connect nodes, can be directed, and can have weights. I’ll also explain [the PageRank algorithm](https://en.wikipedia.org/wiki/PageRank), which computes “importance” of nodes in a graph based on the “importance” of nodes connected to it, and I’ll motivate the intuition behind it as well when I cover it, but if you like having a strong formal background, Brilliant.com’s explanation of [Markov Chains](https://brilliant.org/wiki/markov-chains/#transition-matrices), [Stationary Distributions](https://brilliant.org/wiki/stationary-distributions/) and [their quiz](https://brilliant.org/practice/basic-markov-chains) are more than sufficient. If you just want to get to the explanation, I'll also define terms as they come up.
@@ -138,7 +142,7 @@ In order to accommodate these properties over time, we have adopted a model that
 Let's now describe this process in the concrete steps.
 
 #### The seed node
-First we add our flow from every node to replenish the groundwater.  We create a "seed node" to which all nodes transfer cred at rate α.  Note that, other than α, the contribution graph only has weights at this point.  At the end of the next step, we'll convert all the weights to probabilities as well.  Because the groundwater supplies the springs, we create edges from the seed node to the various nodes in the contribution graph, where the weight of the new edge is the weight of the node.
+First we add our flow from every node to replenish the groundwater.  We create a "seed node" to which all nodes transfer cred at rate $\\alpha$.  Note that, other than $\\alpha$, the contribution graph only has weights at this point.  At the end of the next step, we'll convert all the weights to probabilities as well.  Because the groundwater supplies the springs, we create edges from the seed node to the various nodes in the contribution graph, where the weight of the new edge is the weight of the node.
 
 #### Time epochs and fibration
 Then we add epoch nodes to facilitate our calculation of cred over time.
