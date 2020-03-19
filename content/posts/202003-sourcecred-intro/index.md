@@ -178,9 +178,9 @@ We now discuss how grain, SourceCred's "proof-of-support" token, is calculated f
 
 ## Grain dynamics
 
-#### How much grain is generated
+#### How grain is generated
 
-Once SourceCred calculates the cred for individual contributors, that cred is linked to an identity that is an amalgamation of their identities across the platforms (e.g., GitHub handle or Discord username). A constant amount of SourceCred grain (**¤**) is produced per unit time, currently 15000¤ per week. This amount is distributed according to two different mechanisms.
+Once SourceCred calculates the cred for individual contributors, each contributor's cred is linked to an identity that is an amalgamation of their different identities across the platforms (e.g., GitHub handle or Discord username). A constant amount of SourceCred grain (**¤**) is produced per unit time, currently 15000¤ per week, and distributed according to two different mechanisms.
 
 -   20% of the grain is “fast” and is disbursed in proportion to the cred each node earned in the past week. This is intended to provide fast feedback.
 -   80% of the grain is “slow” and is disbursed in proportion to the difference between the total grain a node has received and what that node’s proportional fair cred would be over the entire history.  This is intended to ensure that everyone is rewarded in proportion to their lifetime contribution.
