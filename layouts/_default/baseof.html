@@ -75,8 +75,14 @@
 
     {{ partial "site-footer" . }}
 
+
+    {{ $mathjax_config := resources.Get "js/mathjax-config.js" | minify | fingerprint }}
+    <script type="text/javascript" src={{ $mathjax_config.RelPermalink }} integrity={{ $mathjax_config.Data.Integrity }}></script>
+    {{ $mathjax := resources.Get "js/mathjax.js" | minify | fingerprint }}
+    <script type="text/javascript" src={{ $mathjax.RelPermalink }} integrity={{ $mathjax.Data.Integrity }}></script>
     {{ $js := resources.Get "js/bundle.js" | minify | fingerprint }}
     <script type="text/javascript" src={{ $js.RelPermalink }} integrity={{ $js.Data.Integrity }}></script>
+
 
     {{ template "_internal/google_analytics.html" . }}
   </body>
