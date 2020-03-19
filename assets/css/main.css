@@ -124,13 +124,31 @@ body.off-canvas-open #off-canvas-nav {
   @apply opacity-100;
 }
 
+/* purgecss ignore */
+code {
+  font-size: 90%;
+}
+
 .page-content {
   @apply text-black leading-relaxed;
 }
 
-.page-content h2 {
-  @apply font-bold my-4 text-md;
+.page-content h1 {
+  @apply font-semibold my-4 text-md;
 }
+
+.page-content h2 {
+  @apply font-semibold my-4 text-md;
+}
+
+.page-content h3 {
+  @apply font-semibold my-4 text-bigger;
+}
+
+.page-content h4 {
+  @apply font-semibold my-4 text-base;
+}
+
 
 .page-content a:not(.no-underline) {
   @apply text-blue;
