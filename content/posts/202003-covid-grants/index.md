@@ -12,7 +12,7 @@ authors:
 
 categories:
   - news
-  - rfp
+  - grants
 
 research_areas:
   -
