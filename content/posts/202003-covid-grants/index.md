@@ -25,7 +25,7 @@ draft: false
 ---
 
 
-In 2018, Protocol Labs launched a [Request for Proposals program](https://github.com/protocol/research-rfps) to support research in distributed systems, cryptography, and other areas of interest to our projects and company. To date, this program has given over $500,000, with the results being made available to the public under open-source licenses. Other programs we fund have provided grants towards development efforts related to the [libp2p](https://github.com/libp2p/devgrants), [IPFS](https://github.com/ipfs/devgrants), and [Filecoin](https://filecoin.io/grants/) ecosystems.
+In 2018, Protocol Labs launched a [Request for Proposals program](https://github.com/protocol/research-rfps) to support research in distributed systems, cryptography, and other areas of interest to our projects and company. To date, we have given over $500,000, with results made available to the public under open-source licenses. Other programs we fund have provided grants towards development efforts related to the [libp2p](https://github.com/libp2p/devgrants), [IPFS](https://github.com/ipfs/devgrants), and [Filecoin](https://filecoin.io/grants/) ecosystems.
 
 It is now 2020, and we have witnessed [COVID-19](https://www.who.int/emergencies/diseases/novel-coronavirus-2019) sweep the globe, resulting in over 372,000 confirmed cases and claiming 16,381 lives to date. It has quickly reached 190 countries and caused disruption on an unprecedented scale.
 
