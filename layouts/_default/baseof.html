@@ -4,7 +4,7 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}</title>
+    <title>{{ if not .IsHome }}{{ .Params.name | default .Title | title }} | {{ end }}{{ site.Title }}</title>
 
     <link rel="canonical" href="{{ .Permalink }}">
     <!-- RSS -->
@@ -13,21 +13,21 @@
     {{ end }}
 
     <!-- Meta properties -->
-    <meta name="title" content="{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}">
+    <meta name="title" content="{{ if not .IsHome }}{{ .Params.name | default .Title | title }} | {{ end }}{{ site.Title }}">
     <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | htmlEscape }}{{ end }}">
     <meta name="image" property="og:image" content="{{ .Site.Params.Avatar | absURL }}">
     <meta name="author" content="{{ .Site.Params.Author }}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}">
+    <meta name="twitter:title" content="{{ if not .IsHome }}{{ .Params.name | default .Title | title }} | {{ end }}{{ site.Title }}">
     <meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | htmlEscape }}{{ end }}">
     <meta name="twitter:image" content="{{ .Site.Params.Avatar | absURL }}">
     <meta name="twitter:site" content="{{ .Site.Params.TwitterUser }}">
 
     <!-- Open-Graph Data -->
     <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
-    <meta property="og:title" content="{{ if not .IsHome }}{{ .Params.name | default .Title }} | {{ end }}{{ site.Title }}">
+    <meta property="og:title" content="{{ if not .IsHome }}{{ .Params.name | default .Title | title }} | {{ end }}{{ site.Title }}">
     <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | htmlEscape }}{{ end }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
