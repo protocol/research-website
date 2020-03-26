@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <div class="max-w-screen mx-auto px-4 md:px-10 pt-8">
+
+    <div class="flex flex-col items-center lg:items-start lg:flex-row lg:justify-between">
+
+      <div class="w-full mb-12 lg:w-3/5">
+
+        <div class="text-lg md:text-larger mb-4 leading-tight">
+          {{ .Title }}
+        </div>
+
+        {{ partial "page-metadata" . }}
+
+        <div class="page-content font-light pt-8 mb-20">
+          {{ .Content }}
+        </div>
+    </div>
+  </div>
+{{ end }}
