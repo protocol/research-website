@@ -6,11 +6,13 @@ summary: "We support conferences, workshops and events that are directly aligned
 linkText: Read our sponsorship policy
 linkUrl: "/outreach/sponsorship"
 ---
-
+ 
 # What kind of support does Protocol Labs Research provide for events?
 
 Protocol Labs (PL) Research reviews requests for speakers, branding, and sponsorship at research-focused events.
 In addition to financial support, we seek to support these events by providing speakers, sending attendees, and promoting them on our website when appropriate.
+
+**Note: In response to the COVID-19 pandemic, we have suspended sponsoring and attending in-person events until further notice. You may still request sponsorship and speakers for remote events.**
 
 # How can I request support for my event?
 
