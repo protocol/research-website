@@ -1,5 +1,5 @@
 {{ if .Params.venue }}
-  <div class="text-sm text-gray-600">
+  <div class="text-sm text-gray-700">
     <img class="inline-block mr-2" src="/images/icon/location.svg">
     {{ .Params.venue }} / {{ dateFormat "2006.01.02" (.Params.venue_date | default .Date) }}
     {{ if .Params.venue_location }}/ {{ .Params.venue_location }}{{ end }}
@@ -7,7 +7,7 @@
 {{ end }}
 
 {{ if (and .Params.authors (partial "func/has-values" .Params.authors)) }}
-  <div class="text-sm text-gray-600">
+  <div class="text-sm text-gray-700">
     <img class="inline-block mr-2" src="/images/icon/user.png">
     {{ $taxonomy := "authors" }}
     {{ with .Param $taxonomy }}
@@ -31,7 +31,7 @@
 
 
 {{ if (and .Params.research_groups (partial "func/has-values" .Params.research_groups)) }}
-  <div class="text-sm text-gray-600">
+  <div class="text-sm text-gray-700">
     <img class="inline-block mr-2" src="/images/icon/group.png">
     {{ $taxonomy := "research_groups" }}
     {{ with .Param $taxonomy }}
@@ -55,7 +55,7 @@
 
 
 {{ if (and .Params.research_areas (partial "func/has-values" .Params.research_areas)) }}
-  <div class="text-sm text-gray-600">
+  <div class="text-sm text-gray-700">
     <img class="inline-block mr-2" src="/images/icon/tag.svg">
     {{ $taxonomy := "research_areas" }}
     {{ with .Param $taxonomy }}
