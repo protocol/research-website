@@ -17,7 +17,7 @@
           <h2 class="text-md leading-relaxed">{{ .Title }}</h2>
           <img class="my-3" src="/icons/mini-graphic-line.svg">
 
-          <div class="page-content mb-4">{{ .Content }}</div>
+          <div class="page-content mb-4">{{ .Summary }}</div>
 
           {{ if .Params.LinkUrl }}
             <a class="hover:text-blue" href="{{ .Params.LinkUrl }}">{{ .Params.LinkText }} <img class="inline-block pl-2" src="/icons/chevron-pink.svg"></a>
