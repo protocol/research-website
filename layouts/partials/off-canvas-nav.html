@@ -24,7 +24,7 @@
       {{ if .HasChildren }}
         <div class="flex flex-col items-start justify-start mb-4 pl-8 pt-4">
           {{ range .Children }}
-            <a href="{{ .URL }}" class="inline-block font-light relative mb-4 text-gray-600">
+            <a href="{{ .URL }}" class="inline-block font-light relative mb-4 text-gray-700">
               <span>{{ .Name }}</span>
 
               {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
