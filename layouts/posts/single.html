@@ -13,14 +13,14 @@
 
         {{ partial "page-metadata" . }}
 
-        <div class="page-content font-light pt-8 mb-20">
+        <div class="page-content pt-8 mb-20">
           {{ .Content }}
         </div>
 
         <div class="flex flex-row justify-between">
 
           {{ if .NextInSection }}
-            <a class="block mb-8 md:w-1/3 group" href="{{ .NextInSection.RelPermalink }}">
+            <a class="block mb-8 md:w-1/2 group" href="{{ .NextInSection.RelPermalink }}">
               <div class="font-bold group-hover:text-pink">
                 <img class="inline-block align-middle rotate-180 mr-2" src="/icons/chevron-pink.svg">
                 <span class="align-middle">Newer</span>
@@ -31,7 +31,7 @@
           {{ end }}
 
           {{ if .PrevInSection }}
-            <a class="block pl-4 md:w-1/3 text-right ml-auto group" href="{{ .PrevInSection.RelPermalink }}">
+            <a class="block pl-4 md:w-1/2 text-right ml-auto group" href="{{ .PrevInSection.RelPermalink }}">
               <span class="w-1/2 font-bold ml-auto order-2 group-hover:text-pink">
                 <span class="align-middle">Older</span>
                 <img class="inline-block align-middle ml-2" src="/icons/chevron-pink.svg">
