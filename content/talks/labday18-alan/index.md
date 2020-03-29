@@ -18,7 +18,7 @@ venue_location: "San Francisco, CA, USA"
 authors:
   - alan-ransil
 research_areas:
-  - distributed-systems
+  - distributed-power-systems
 research_groups:
 
 resources:
