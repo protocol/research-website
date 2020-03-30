@@ -17,7 +17,7 @@ authors:
 tags:
 categories:
 research_areas:
-  - distributed-systems
+  - distributed-power-systems
 
 
 venue: IEEE PES Transactive Energy Systems Conference (TESC)
