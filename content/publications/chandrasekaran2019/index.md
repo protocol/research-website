@@ -4,7 +4,7 @@ title: "Exploring Connections Between Active Learning and Model Extraction"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-04-08
+date: 2019-11-20
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
