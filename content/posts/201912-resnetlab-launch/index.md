@@ -77,9 +77,7 @@ As we make progress and create contributions, we will update the [ResNetLab page
 
 ## We’re looking for brave research engineers!
 
-The lab has a growing team. We are looking for research engineers with a strong passion for building future-proof systems. Current open positions are:
-- [Research Engineer](https://jobs.lever.co/protocol/f39f7fe0-1805-40d2-9453-90fd25c72bc3)
-- [Research Scientist](https://jobs.lever.co/protocol/4335ddb3-a5dd-42be-b12f-b9dccf255c1d)
+The lab has a growing team. We are looking for a [Research Engineer](https://jobs.lever.co/protocol/f39f7fe0-1805-40d2-9453-90fd25c72bc3) with a strong passion for building future-proof systems.
 
 We are enthusiastic for the future to come and for the many collaborations with the research community.
 
