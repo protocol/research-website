@@ -68,3 +68,5 @@ Thank you and looking forward to the next one!
 
 I bid you all a great day,
 David Dias
+
+![](https://ipfs.io/ipfs/QmUNABVXdzKdcHD4b9qFoS1SQr58bsz3zvUeP7hg2sbLgW)
