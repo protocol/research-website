@@ -41,21 +41,26 @@ You can find:
 You can watch the questions and answers at https://youtu.be/APVp-20ATLk?t=5427 or read below if you prefer a summary
 
 **Q: If one uses two different libp2p implementations, will they share the same network.**
+
 A: By default, yes. We call the default network, the Main Network and this network is shared between libp2p and IPFS and other protocols that started relying on it. If you desire to have a disjoint network, you achieve it in a few ways:
 Isolate your nodes by firewall/iptables to not allow the nodes to connect to the outside world (the traditional way)
 Change the config of your libp2p/IPFS node to not use the default Bootstrapper nodes. If you don’t connect to the Bootstrappers or any of the other nodes in the Mainnetwork, your node will be unable to find the network by itself
 Use a libp2p-pnet. Essentially, with libp2p-pnet, you share a PSK (pre-shared key) with the nodes that you want on your disjoint network and once they find other nodes, they will always run a special handshake that only the nodes that have that PSK can complete. You can watch Jacob Heun’s talk at the IPFS Dev Meetings demoing this feature https://www.youtube.com/watch?v=fObld4alGag&feature=youtu.be&t=51
 
 **Q: How much work is it to use Gossipsub / libp2p PubSub in an application?**
+
 A: Virtually almost nothing! You can start a libp2p node with PubSub and from that you get two primitives: .Publish & .Subscribe. .Publish lets you publish a message on a topic of your choice, .Subscribe enables you to subscribe to any topic. Pedro Teixeira recorded a 10 min demo that shows how to build an app with PubSub from scratch using JavaScript https://www.youtube.com/watch?v=Nv_Teb--1zg
 
 **Q: How do the rules for the Message Validators get expressed?**
+
 A: Today, these are simply expressed programmatically using a message handler pattern. We actually went a bit on mad science / sci-fi direction on this one, watch the conversation at https://youtu.be/APVp-20ATLk?t=5679
 
 **Q: How do you reconcile the initial goal of a real-time protocol vs. the eventual consistency of Gossip?**
+
 A: Instead of making a decision for the user, what we do is provide as much power to the user as possible, providing recommendations on how to set the right parameters for the different types of interaction patterns and network scales.
 
 **Q: Does Gossipsub have presence support?**
+
 A: By default no, this would require to have been built by the application on top, establishing a link between the keys that identify the user to the keys that identify the nodes that the user uses.
 
 We also recommend watching the other two talks and learn about:
