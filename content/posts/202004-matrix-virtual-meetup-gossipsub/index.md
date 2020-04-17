@@ -45,7 +45,7 @@ Back to the meetup. I delivered a talk on the recent updates on the Gossipsub pr
 - Gossipsub v1.1 and the new security-hardening features
 - The Gossipsub testing infrastructure
 
-For those who couldn't be present, we are making available the [recording](https://www.youtube.com/watch?v=APVp-20ATLk&feature=youtu.be&t=3612) and the [slide deck](https://www.slideshare.net/DavidDias11/enter-gossipsub-a-scalable-extensible-hardened-p2p-pubsub-router-protocol).
+For those who couldn't be present, the Matrix team made the [recording available](https://www.youtube.com/watch?v=APVp-20ATLk&feature=youtu.be&t=3612). We've also made the [slide deck available](https://www.slideshare.net/DavidDias11/enter-gossipsub-a-scalable-extensible-hardened-p2p-pubsub-router-protocol).
 
 ## Q&A
 
