@@ -33,7 +33,7 @@ draft: false
 
 ![](open-tech-banner.jpg)
 
-ResNetLab was present at [Open Tech Will Save Us](https://matrix.org/open-tech-meetup) virtual meetup, an event organized by the Matrix.org team during which participants could watch a live stream provided by [Jitsi](https://jitsi.org) and ask questions using the [Matrix protocol](https://matrix.org) (often through a client like [Riot](https://about.riot.im)).
+[ResNetLab](https://research.protocol.ai/research/groups/resnetlab) was present at [Open Tech Will Save Us](https://matrix.org/open-tech-meetup) virtual meetup, an event organized by the Matrix.org team during which participants could watch a live stream provided by [Jitsi](https://jitsi.org) and ask questions using the [Matrix protocol](https://matrix.org) (often through a client like [Riot](https://about.riot.im)).
 
 Matrix is both a project and an ecosystem that focuses on providing secure and federated platform for all types of communication. We are big fans of Matrix at Protocol Labs, both taking inspiration from their innovations (e.g. the [Olm](https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/olm.md) and [MegaOlm](https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md) cryptographic ratchets) and bridging the [IPFS](https://riot.im/app/#/group/+ipfs:matrix.org) and [libp2p](https://riot.im/app/#/group/+libp2p:matrix.org) IRC channels with Matrix.
 
@@ -80,4 +80,9 @@ I recommend watching the other two talks in this event! You can learn more about
 - [How Jitsi scaled from 10s to 1000s of Servers](https://youtu.be/APVp-20ATLk?t=852) to provide an invaluable communication service during the COVID-19 pandemic
 - [How Matrix.org figured out the UX to deploy full end-to-end encryption](https://youtu.be/APVp-20ATLk?t=6122) for all of its users
 
-We really appreciate the invitation. It was a fun way to catch up and learn about some of the projects that inspire us, while also getting to see the people that we'd normally be meeting in in-person events. Thank you and looking forward to the next one!
+We really appreciate the invitation. It was a fun way to catch up and learn about some of the projects that inspire us, while also getting to see the people that we'd normally be meeting in in-person events. 
+
+Thank you and looking forward to the next one!
+David Dias
+
+[![](https://ipfs.io/ipfs/QmUNABVXdzKdcHD4b9qFoS1SQr58bsz3zvUeP7hg2sbLgW)](https://research.protocol.ai/research/groups/resnetlab/)
