@@ -30,7 +30,7 @@ David Dias delivered a talk on the recent updates on the Gossipsub protocol, one
 - Gossipsub v1.1, the new released packed with security hardening features
 - Gossipsub testing infrastructure
 
-![](http://ipfs.io/ipfs/QmdbMNihqbUEfA1UktgkThQmY2m5DKqsFxDjmrMvhUr1bC)
+![](https://ipfs.io/ipfs/QmdbMNihqbUEfA1UktgkThQmY2m5DKqsFxDjmrMvhUr1bC)
 
 You can find:
 - the **recording** at https://www.youtube.com/watch?v=APVp-20ATLk&feature=youtu.be&t=3612
