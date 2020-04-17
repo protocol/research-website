@@ -44,7 +44,7 @@ You can watch the questions and answers at https://youtu.be/APVp-20ATLk?t=5427 o
 
 A: By default, yes. We call the default network, the Main Network and this network is shared between libp2p and IPFS and other protocols that started relying on it. If you desire to have a disjoint network, you achieve it in a few ways:
 Isolate your nodes by firewall/iptables to not allow the nodes to connect to the outside world (the traditional way)
-Change the config of your libp2p/IPFS node to not use the default Bootstrapper nodes. If you don’t connect to the Bootstrappers or any of the other nodes in the Mainnetwork, your node will be unable to find the network by itself
+Change the config of your libp2p/IPFS node to not use the default Bootstrapper nodes. If you don’t connect to the Bootstrappers or any of the other nodes in the Main network, your node will be unable to find the network by itself
 Use a libp2p-pnet. Essentially, with libp2p-pnet, you share a PSK (pre-shared key) with the nodes that you want on your disjoint network and once they find other nodes, they will always run a special handshake that only the nodes that have that PSK can complete. You can watch Jacob Heun’s talk at the IPFS Dev Meetings demoing this feature https://www.youtube.com/watch?v=fObld4alGag&feature=youtu.be&t=51
 
 **Q: How much work is it to use Gossipsub / libp2p PubSub in an application?**
