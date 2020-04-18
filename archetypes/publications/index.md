@@ -22,11 +22,6 @@ venue_date:
 # DOI, if available
 doi:
 
-# Publication pdf, should be in the same folder
-# Name it the same as the folder
-resources:
-  - src: publication-source.pdf
-
 # Type of publication
 # delete all but one
 publication_types:
@@ -49,6 +44,11 @@ research_areas:
 # Zero or more of the groups in content/research/groups (should match author membership)
 research_groups:
   -
+
+# Publication pdf, should be in the same folder
+# No need to fill this out; just name the file the same as the folder
+#resources:
+#  - src: publication-source.pdf
 
 # Not generally used
 # featured: false
