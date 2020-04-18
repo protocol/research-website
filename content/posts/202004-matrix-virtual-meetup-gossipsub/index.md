@@ -80,10 +80,6 @@ I recommend watching the other two talks in this event! You can learn more about
 - [How Jitsi scaled from 10s to 1000s of Servers](https://youtu.be/APVp-20ATLk?t=852) to provide an invaluable communication service during the COVID-19 pandemic
 - [How Matrix.org figured out the UX to deploy full end-to-end encryption](https://youtu.be/APVp-20ATLk?t=6122) for all of its users
 
-We really appreciate the invitation. It was a fun way to catch up and learn about some of the projects that inspire us, while also getting to see the people that we'd normally be meeting in in-person events. 
+We really appreciate the invitation. It was a fun way to catch up and learn about some of the projects that inspire us, while also getting to see the people that we'd normally be meeting in in-person events. Thank you and looking forward to the next one!
 
-Thank you and looking forward to the next one!
-
-David Dias
-
-[![](https://ipfs.io/ipfs/QmUNABVXdzKdcHD4b9qFoS1SQr58bsz3zvUeP7hg2sbLgW)](https://research.protocol.ai/research/groups/resnetlab/)
+<center>{{< figure src="/images/resnetlab/resnetlab_logo_green.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
