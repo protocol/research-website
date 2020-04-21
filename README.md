@@ -8,22 +8,23 @@ This repository contains the source code for the Protocol Labs Research website,
 
 ## Architecture
 
-Static website built with the Hugo framework.
-Uses tailwindcss for function css.
-Uses the [CommonMark spec](https://spec.commonmark.org/0.29/) for Markdown syntax.
-That's it!
+- Static website built with the Hugo framework.
+- Uses tailwindcss for function css.
+- Uses the [CommonMark spec](https://spec.commonmark.org/0.29/) for Markdown syntax.
+- Uses [MathJax v3](https://www.mathjax.org/#gettingstarted) for embedded LaTeX.
+- That's it!
 
 ## Setup
 
-- You will need [HUGO](https://gohugo.io/) installed
-- You will need [YARN](https://yarnpkg.com/lang/en/).
+- You will need [Hugo](https://gohugo.io/) v0.60+ installed
+- You will need [Yarn](https://yarnpkg.com/lang/en/)
 - Run `yarn` to install deps. 
 
-(Note for installing on Ubuntu 18.04: the standard apt-get repos for yarn and hugo are no good; follow [these instructions](https://stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install) for yarn and the hugo-recommended instructions on its website using homebrew.)
+Note for installing on Ubuntu 18.04: the standard APT packages for yarn and hugo are out of date and will not allow you to execute these instructions. The easiest way to a working set-up is to follow the instalation instructions for [Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable), then follow the instalation instruction for [Homebrew](https://brew.sh/), and then run `brew install hugo`.
 
 ## Development
 
-- `yarn run serve`
+- `yarn serve`
 - To use our CSS build chain (postcss + tailwindcss + autoprefixer + css treeshaking)
   you will need to have `postcss-cli` and `autoprefixer` installed globally. (```sudo npm install -g postcss-cli autoprefixer```)
 
