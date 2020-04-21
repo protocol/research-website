@@ -1,5 +1,5 @@
 ---
-title: "Protocol Labs announces COVID-19 Open Innovation Grants"
+title: "Protocol Labs launches a COVID-19 Open Innovation Grants program"
 
 # Website post date
 date: 2020-03-26
