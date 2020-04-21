@@ -10,19 +10,22 @@ This repository contains the source code for the Protocol Labs Research website,
 
 Static website built with the Hugo framework.
 Uses tailwindcss for function css.
-Thats it!
+Uses the [CommonMark spec](https://spec.commonmark.org/0.29/) for Markdown syntax.
+That's it!
 
 ## Setup
 
 - You will need [HUGO](https://gohugo.io/) installed
 - You will need [YARN](https://yarnpkg.com/lang/en/).
-- Run `yarn` to install deps.
+- Run `yarn` to install deps. 
+
+(Note for installing on Ubuntu 18.04: the standard apt-get repos for yarn and hugo are no good; follow [these instructions](https://stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install) for yarn and the hugo-recommended instructions on its website using homebrew.)
 
 ## Development
 
 - `yarn run serve`
 - To use our CSS build chain (postcss + tailwindcss + autoprefixer + css treeshaking)
-  you will need to have `postcss-cli` and `autoprefixer` installed globally.
+  you will need to have `postcss-cli` and `autoprefixer` installed globally. (```sudo npm install -g postcss-cli autoprefixer```)
 
 ## Deployment
 
