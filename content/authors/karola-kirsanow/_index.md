@@ -16,36 +16,30 @@ resources:
 
 # Research interests
 interests:
-  - Interest 1
-  - Interest 2
+  - Biological networks
+  - Human genetics
 
 # Degrees
 education:
   courses:
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
+  - course: B.A., Archaeology
+    institution: Cornell University
+    year: 2002
+  - course: PhD, Human Evolutionary Biology
+    institution: Harvard University
+    year: 2009
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 social:
-  - icon: twitter
-    link: https://twitter.com/USERNAME
   - icon: google-scholar
-    link: https://scholar.google.com/citations?user=PERSON-ID
+    link: https://scholar.google.com/citations?user=zJ-1PckAAAAJ
   - icon: github
-    link: https://github.com/USERNAME
-  - icon: orcid
-    link: https://orcid.org/0000-0002-1825-0097
+    link: https://github.com/KarolaKirsanow
   - icon: linkedin
-    link: https://www.linkedin.com/in/USERNAME
-  - icon: researchgate
-    link: https://www.researchgate.net/profile/USERNAME
+    link: https://www.linkedin.com/in/karola-kirsanow
   - icon: link
-    link: https://example.org/    
+    link: https://wutbot.com/    
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
