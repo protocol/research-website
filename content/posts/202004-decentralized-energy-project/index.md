@@ -75,9 +75,9 @@ Good question! In theory, there’s no reason why a utility couldn’t control m
 
 **Net metering** is the idea that, if I have a solar panel on my roof, I can sell any excess electricity back to my electricity provider *for the same price they charge me*. Seems reasonable enough, at first blush -- until you consider that I don’t have any staff, I don’t pay for any distribution wires, and the utility doesn’t need (or really even want!) my power at all. But hang on, you might say -- it’s not fair to judge net metering that way, since it’s effectively a subsidy to get the cost of solar down. But that’s exactly my point -- it’s a clever way to subsidize solar panels and solar power, but it’s a terrible way to run a market, especially once you've reached the point where you have a lot of solar panels producing electricity all at the same time in the middle of the day.
 
-**Demand response** is the idea that lowered electricity demand is identical to increased electricity generation -- and should be paid accordingly. That is, if I’m a utility, and my grid is short 10 MW of power, I can either turn *on* a 10 MW power plant or turn *off* a 10 MW factory (either by asking nicely or by paying them. In both cases, the grid ends up with exactly as much power as it needs. Demand response, as it’s been formalized by FERC, is the idea that the 10 MW factory is legally entitled to receive the same amount of money I would have paid to turn on that 10 MW power plant. Again, this is a very clever subsidy for what usually ends up being load shifting or load shedding; but it still seems oddly close to protection money: “Hey, nice grid you got there -- shame if it were to break because I wanted to *use my normal amount of electricity*…!”
+**Demand response** is the idea that lowered electricity demand is identical to increased electricity generation -- and should be paid accordingly. That is, if I’m a utility, and my grid is short 10 MW of power, I can either turn on a 10 MW power plant or turn off a 10 MW factory (either by asking nicely or by paying them. In both cases, the grid ends up with exactly as much power as it needs. Demand response, as it’s been formalized by FERC, is the idea that the 10 MW factory is legally entitled to receive the same amount of money I would have paid to turn on that 10 MW power plant. Again, this is a very clever subsidy for what usually ends up being load shifting or load shedding; but it still seems oddly close to protection money: “Hey, nice grid you got there -- shame if it were to break because I wanted to *use my normal amount of electricity*…!”
 
-There are other disadvantages to centralized grids, of course; the Wall Street Journal reported in 2014 that disabling 9 carefully selected substations could create a nationwide blackout [4]. Many readers will recall the California wildfires that PG&E tranmission lines started in 2019; they may not know that their high-voltage transmission lines were starting an average of *one fire per day over six years* [5]. At the same time, though, decentralized grids have problems of their own, too; so we’ll hold off on discussing those for now.
+There are other disadvantages to centralized grids, of course; the Wall Street Journal reported in 2014 that disabling 9 carefully selected substations could create a nationwide blackout [4]. Many readers will recall the California wildfires that PG&E tranmission lines started in 2019; they may not know that their high-voltage transmission lines were starting an average of one fire per day over six years [5]. At the same time, though, decentralized grids have problems of their own, too; so we’ll hold off on discussing those for now.
 
 # So how do you optimize a grid with distributed generation?
 
@@ -89,7 +89,7 @@ The other dimension of the square is the type of communication present: you can 
 
 For example: let’s say I’m PG&E during the California electricity crisis, and all of a sudden there’s more electricity demand than I can supply. If I can use a **price signal** to tell everybody that the price of electricity has increased, then people can choose how much electricity they want to buy; and I can keep increasing the price until demand has dropped, and the grid remains stable, even if people are grumbling about it.
 
-But if I’m PG&E and I *can’t* raise the price -- either because state regulators have disallowed it, or because customers don’t have the ability or desire to quickly and carefully modulate their electricity usage based on price signals (or both, as was actually the case) -- then I’m stuck with **top-down switching**, which, in this case, means rolling black-outs.
+But if I’m PG&E and I can’t raise the price -- either because state regulators have disallowed it, or because customers don’t have the ability or desire to quickly and carefully modulate their electricity usage based on price signals (or both, as was actually the case) -- then I’m stuck with **top-down switching**, which, in this case, means rolling black-outs.
 
 But let’s say that hardware’s gotten cheaper, and suddenly I can send messages to all of the devices on my grid *and* those devices can send messages back. I can then run an auction based on how much power I have available, and give out power according to its rules. This format is **centralized optimization**; it will typically get you much closer to a globally optimal solution for power usage and/or cost, but it will also remove a fair amount of local decision-making power.
 
@@ -103,7 +103,7 @@ A key difference is that the ISO is optimizing for something called *security-co
 
 # So why aren't we using transactive energy?
 
-Good question! There are two answers: firstly, because the current system still mostly works (and if it ain’t broke, don’t fix it); and secondly, because finding the globally optimal solution for millions of buildings and power plants, all trying to talk to each other all at once, hundreds of times per day, is a computationally intractable nightmare of the highest order for a single entity to run. But that doesn’t mean we can’t get clever about it by *splitting the problem up*.
+Good question! There are two answers: firstly, because the current system still mostly works (and if it ain’t broke, don’t fix it); and secondly, because finding the globally optimal solution for millions of buildings and power plants, all trying to talk to each other all at once, hundreds of times per day, is a computationally intractable nightmare of the highest order for a single entity to run. But that doesn’t mean we can’t get clever about it by splitting the problem up.
 
 <center>{{< figure src="network-topologies.png" alt="Centralized, decentralized, and distributed networks." caption="Here's how we get clever. Adapted from [7]." >}}</center>
 
@@ -120,7 +120,7 @@ The “one buffet line” is, of course, the non-decomposed problem; and the mul
 
 # Splitting the problem up *better*
 
-But there’s another way to handle the problem, called **dual decomposition**. In dual decomposition, the master problem sets the cost for a resource and allows each sub-problem to decide how much of the resource it wants at that cost. That is, instead of allocating resources directly as in primal decomposition, the master problem sets the *pricing strategy* for the sub-problems.
+But there’s another way to handle the problem, called **dual decomposition**. In dual decomposition, the master problem sets the cost for a resource and allows each sub-problem to decide how much of the resource it wants at that cost. That is, instead of allocating resources directly as in primal decomposition, the master problem sets the pricing strategy for the sub-problems.
 
 Let's see how that would play out at the buffet lines at our picnic.
 
@@ -146,7 +146,7 @@ It’s not too far from where things are today. Houses control how much electric
 
 And if that top generation/transmission node decomposes its optimization problem into subproblems, one for each substation; and if each substation decomposes its optimization problem into subproblems, one for each house, or microgrid, or factory; and each of those -- well, suddenly, we've optimized the grid.
 
-I’d like to point out that we’re far from the first people to talk about splitting the grid up this way; Taft pointed out in 2016 that laminar hierarchical coordination lends itself particularly well to the electricity grid [9], and has done a lot of work on it since. Nevertheless, we haven’t found a lot of people *implementing* it, which is why we think it’s promising to do ourselves.
+I’d like to point out that we’re far from the first people to talk about splitting the grid up this way; Taft pointed out in 2016 that laminar hierarchical coordination lends itself particularly well to the electricity grid [9], and has done a lot of work on it since. Nevertheless, we haven’t found a lot of people implementing it, which is why we think it’s promising to do ourselves.
 
 # VOLTTRON
 
