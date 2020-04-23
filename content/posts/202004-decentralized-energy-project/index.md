@@ -33,7 +33,7 @@ draft: false
 
 We’re two materials scientists here at Protocol Labs, and we’re working to improve the electricity grid.
 
-Why, you may be thinking, does a distributed file storage company have a project related to the energy grid? Part of Protocol Labs’s mission is to “explore the future of decentralization and examine the infrastructure limiting what you can do with technology”. The grid is definitely decentralizing, and it’s definitely limited by technology -- so we want to bring some of Protocol Labs’ expertise in distributed systems to bear both on the grid as it exists now as well as how it will develop in the future.
+Why, you may be thinking, does a distributed file storage company have a project related to the energy grid? Part of Protocol Labs’ mission is to “explore the future of decentralization and examine the infrastructure limiting what you can do with technology”. The grid is definitely decentralizing, and it’s definitely limited by technology -- so we want to bring some of Protocol Labs’ expertise in distributed systems to bear both on the grid as it exists now as well as how it will develop in the future.
 
 Before we get into the nitty-gritty of how we’re doing that, though, let's explore a few things:
 
