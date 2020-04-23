@@ -36,8 +36,6 @@ social:
     link: https://scholar.google.com/citations?user=zJ-1PckAAAAJ
   - icon: github
     link: https://github.com/KarolaKirsanow
-  - icon: gitlab
-    link: https://gitlab.com/OKKir
   - icon: linkedin
     link: https://www.linkedin.com/in/karola-kirsanow
   - icon: link
