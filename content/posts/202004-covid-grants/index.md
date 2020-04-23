@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "Announcing our 2020 COVID-19 Open Innovation Grant awardees"
+title: "Announcing COVID-19 Open Innovation Grant awardees"
 
 # Website post date
 # format YYYY-MM-DD
