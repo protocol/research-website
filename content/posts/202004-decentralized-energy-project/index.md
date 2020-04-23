@@ -44,13 +44,13 @@ Before we get into the nitty-gritty of how we’re doing that, though, let's exp
 
 # The physical grid
 
-The U.S. electricity grid -- and we’ll be focusing on just the U.S. grid for now -- is a behemoth. There are about 10,000 utility-scale power plants in the United States<sup>*1*</sup> (and that doesn’t count any behind-the-meter power generation, such as solar panels on individual homes).  Together, these power plants produce about 4 petawatt hours -- that’s 4 trillion kilowatt-hours (kWh) -- of electricity every year, which is enough energy to power a normal kitchen microwave for 500 million years. (The curious may enjoy a number of [interactive](http://physics.weber.edu/schroeder/energy/PowerPlantsMap.html) [maps](https://www.washingtonpost.com/graphics/national/power-plants/?utm_term=.e218610cdd5b) illustrating where these plants are located, what type of fuel they use, and how much power each produces.)
+The U.S. electricity grid -- and we’ll be focusing on just the U.S. grid for now -- is a behemoth. There are about 10,000 utility-scale power plants in the United States [1] (and that doesn’t count any behind-the-meter power generation, such as solar panels on individual homes).  Together, these power plants produce about 4 petawatt hours -- that’s 4 trillion kilowatt-hours (kWh) -- of electricity every year, which is enough energy to power a normal kitchen microwave for 500 million years. (The curious may enjoy a number of [interactive](http://physics.weber.edu/schroeder/energy/PowerPlantsMap.html) [maps](https://www.washingtonpost.com/graphics/national/power-plants/?utm_term=.e218610cdd5b) illustrating where these plants are located, what type of fuel they use, and how much power each produces.)
 
-Those 10,000 power plants transport power over 160,000 miles of high-voltage transmission lines to about 60,000 substations.<sup>*2*</sup> Power is stepped-down to a lower voltage and transported along an additional 6 million miles of distribution lines to power the approximately 150 million buildings in the United States -- at a constant, stable 110 V and 60 Hz for our everyday needs.
+Those 10,000 power plants transport power over 160,000 miles of high-voltage transmission lines to about 60,000 substations [2]. Power is stepped-down to a lower voltage and transported along an additional 6 million miles of distribution lines to power the approximately 150 million buildings in the United States -- at a constant, stable 110 V and 60 Hz for our everyday needs.
 
 # The regulated grid
 
-Electricity lines are the classic example of a natural monopoly -- because space is limited, we don’t want multiple companies all putting down their own electricity lines. But because we rely so heavily on constant access to low-cost and high-reliability electricity, a number of different levels of government regulate not only that natural monopoly, but all aspects of electricity production and distribution. Local, state, and federal government all have a hand in what technical standards must be followed, what given proportion of energy must be renewable, who’s allowed to produce electricity and how much they’re allowed to charge for it, and how to make sure that we’ll still have enough electricity ten, twenty, and thirty years from now. <sup>*3*</sup>
+Electricity lines are the classic example of a natural monopoly -- because space is limited, we don’t want multiple companies all putting down their own electricity lines. But because we rely so heavily on constant access to low-cost and high-reliability electricity, a number of different levels of government regulate not only that natural monopoly, but all aspects of electricity production and distribution. Local, state, and federal government all have a hand in what technical standards must be followed, what given proportion of energy must be renewable, who’s allowed to produce electricity and how much they’re allowed to charge for it, and how to make sure that we’ll still have enough electricity ten, twenty, and thirty years from now [3].
 
 # A functionally-defined, invariant architecture for the grid
 
@@ -67,11 +67,7 @@ The idea is that though any given module may have different specific goals, its 
 
 (We've made this sound much simpler than it actually is; don't worry, this is going to be the topic of its own blog post soon.)
 
-<div align="center">
-<img src="2020-04-09-16-07-03-image.png" alt="The Functionally-Defined Invariant Grid">
-<em>Not your average box of chocolates.</em>
-<br>
-</div>
+<center>{{< figure src="invariant-grid.png" alt="The Functionally-Defined Invariant Grid" caption="Not your average box of chocolates" >}}</center>
 
 # Why does the grid need to decentralize with distributed generation?
 
@@ -81,17 +77,14 @@ Good question! In theory, there’s no reason why a utility couldn’t control m
 
 **Demand response** is the idea that lowered electricity demand is identical to increased electricity generation -- and should be paid accordingly. That is, if I’m a utility, and my grid is short 10 MW of power, I can either turn *on* a 10 MW power plant or turn *off* a 10 MW factory (either by asking nicely or by paying them. In both cases, the grid ends up with exactly as much power as it needs. Demand response, as it’s been formalized by FERC, is the idea that the 10 MW factory is legally entitled to receive the same amount of money I would have paid to turn on that 10 MW power plant. Again, this is a very clever subsidy for what usually ends up being load shifting or load shedding; but it still seems oddly close to protection money: “Hey, nice grid you got there -- shame if it were to break because I wanted to *use my normal amount of electricity*…!”
 
-There are other disadvantages to centralized grids, of course; the Wall Street Journal reported in 2014, for example, that disabling 9 carefully selected substations could create a nationwide blackout<sup>*4*</sup>. Many readers will recall the California wildfires that PG&E tranmission lines started in 2019; they may not know that their high-voltage transmission lines were starting an average of *one fire per day over six years*^5^. At the same time, though, decentralized grids have problems of their own, too; so we’ll hold off on discussing those for now.
+There are other disadvantages to centralized grids, of course; the Wall Street Journal reported in 2014 that disabling 9 carefully selected substations could create a nationwide blackout [4]. Many readers will recall the California wildfires that PG&E tranmission lines started in 2019; they may not know that their high-voltage transmission lines were starting an average of *one fire per day over six years* [5]. At the same time, though, decentralized grids have problems of their own, too; so we’ll hold off on discussing those for now.
 
 # So how do you optimize a grid with distributed generation?
 
 There are a few ways to optimize a grid with distributed generation, depending on what you’re looking to optimize. Take a look at the chart below: if you value everybody being able to completely control their own electricity usage, you’ll probably prefer that local decisions are made locally. If you value finding the absolute most-efficient global solution (i.e., minimize the amount of electricity used, or the amount of money spent), you’ll probably prefer that local decisions get made centrally -- that is, a utility decides who gets exactly how much electricity.
 
-<div align="center">
-<em>Punnett squares: not just for Mendelian genetics. Adapted from Kok et al <sup>6</sup>.</em>
-<img src="table.PNG" alt="one-way comms + decisions made locally = price reaction; one-way comms + decisions made centrally = top-down switching; two-way comms + decisions made locally = transactive control; two-way comms + decisions made centrally = centralized optimization">
-</div>
-<br>
+<center>{{< figure src="punnett-squares.png" alt="one-way comms + decisions made locally = price reaction; one-way comms + decisions made centrally = top-down switching; two-way comms + decisions made locally = transactive control; two-way comms + decisions made centrally = centralized optimization" caption="Punnett squares: not just for Mendelian genetics. Adapted from [6]." >}}</center>
+
 The other dimension of the square is the type of communication present: you can have one-way communication from the utility to end users of electricity, or you can also flow information back to the utility (and have two-way communications). There are a few easy ways to understand these scenarios.
 
 For example: let’s say I’m PG&E during the California electricity crisis, and all of a sudden there’s more electricity demand than I can supply. If I can use a **price signal** to tell everybody that the price of electricity has increased, then people can choose how much electricity they want to buy; and I can keep increasing the price until demand has dropped, and the grid remains stable, even if people are grumbling about it.
@@ -112,11 +105,7 @@ A key difference is that the ISO is optimizing for something called *security-co
 
 Good question! There are two answers: firstly, because the current system still mostly works (and if it ain’t broke, don’t fix it); and secondly, because finding the globally optimal solution for millions of buildings and power plants, all trying to talk to each other all at once, hundreds of times per day, is a computationally intractable nightmare of the highest order for a single entity to run. But that doesn’t mean we can’t get clever about it by *splitting the problem up*.
 
-<div align="center">
-<img src="2020-04-06-12-32-20-image.png" alt="Centralized, decentralized, and distributed networks.">
-<em>Here's how we get clever. (Adapted from Baran<sup>7</sup>)</em>
-<br>
-</div>
+<center>{{< figure src="network-topologies.png" alt="Centralized, decentralized, and distributed networks." caption="Here's how we get clever. Adapted from [7]." >}}</center>
 
 # Splitting the problem up
 
@@ -143,7 +132,7 @@ In both the primal and dual decompositions of the picnic, the goal is to minimiz
 
 Right now, the energy grid is mostly communicating in one direction, and the optimization it's doing, insofar as we can call it that, is done centrally; locational marginal prices (LMPs) are a sort-of dual-decomposition solution at the transmission level. But as hardware becomes cheaper, as microgrids proliferate, and as smart meters get smarter, there will be more and more two-way communication on both the transmission and distribution aspects of the grid. That means -- with a little luck and a lot of elbow grease -- the grid will be able to use some of these more powerful ways of splitting up problems.
 
-(For a more formal description of primal and dual decomposition, and how layers themselves can be used for decomposition, we highly recommend the excellent paper by Chiang et al<sup>*8*</sup>.)
+(For a more formal description of primal and dual decomposition, and how layers themselves can be used for decomposition, we highly recommend the excellent paper by Chiang et al [8].)
 
 # Laminar hierarchical coordination
 
@@ -151,17 +140,13 @@ Note that we’ve so far avoided the discussion of how we chose our sub-problems
 
 In an electricity grid, the nature of the distribution grid itself maps very closely to the dual decomposition solution we’d like to employ.
 
-<div align="center">
-<img src="2020-04-09-16-57-04-image.png" alt="transmission points to multiple substations, each of which points to multiple end users, each of which points to multiple loads...">
-<em>If you turn your head and squint, the power grid looks almost exactly like the "decentralized" network in the graphic above.</em>
-<br>
-</div>
+<center>{{< figure src="grid-structure.png" alt="transmission points to multiple substations, each of which points to multiple end users, each of which points to multiple loads" caption="If you turn your head and squint, the power grid looks almost exactly like the 'decentralized' network in the graphic above." >}}</center>
 
 It’s not too far from where things are today. Houses control how much electricity their devices use; and substations deliver (but do not price) electricity to houses. Generators sort-of already price electricity for substations (intermediated through utilities); that’s the whole idea behind locational marginal pricing.
 
 And if that top generation/transmission node decomposes its optimization problem into subproblems, one for each substation; and if each substation decomposes its optimization problem into subproblems, one for each house, or microgrid, or factory; and each of those -- well, suddenly, we've optimized the grid.
 
-I’d like to point out that we’re far from the first people to talk about splitting the grid up this way; Taft et al in 2016 pointed out specifically that laminar hierarchical coordination lends itself particularly well to the electricity grid<sup>*9*</sup>, and has done a lot of work on it since. Nevertheless, we haven’t found a lot of people *implementing* it, which is why we think it’s promising to do ourselves.
+I’d like to point out that we’re far from the first people to talk about splitting the grid up this way; Taft pointed out in 2016 that laminar hierarchical coordination lends itself particularly well to the electricity grid [9], and has done a lot of work on it since. Nevertheless, we haven’t found a lot of people *implementing* it, which is why we think it’s promising to do ourselves.
 
 # VOLTTRON
 
@@ -173,7 +158,7 @@ All of these features make it ideal for us to prove out our functionally-defined
 
 # So what are you actually doing with everything?
 
-First, we're simulating a bunch of individual loads using a standard [IEEE feeder](https://site.ieee.org/pes-testfeeders/resources/) on a single VOLTTRON instance. We're implementing time-of-use pricing and demand response as an example of capabilities that can be easily defined with a regulatory agent. Next, we'll be connecting several VOLTTRON instances together and pretending we're a small ISO, controlling how much power is flowing between each VOLTTRON instance, using dual decomposition and laminar hierarchical coordination to control the whole setup. We're hoping to demonstrate that each instance is using the same FDIA with only small changes to the modules each is using. We'll be publishing our results and taking it to regulators and utilities, as we refine our model and make the grid as robust as we can make it. 
+First, we're simulating a bunch of individual loads using a standard [IEEE feeder](https://site.ieee.org/pes-testfeeders/resources/) on a single VOLTTRON instance. We're implementing time-of-use pricing and demand response as an example of capabilities that can be easily defined with a regulatory agent. Next, we'll be connecting several VOLTTRON instances together and pretending we're a small ISO, controlling how much power is flowing between each VOLTTRON instance, using dual decomposition and laminar hierarchical coordination to control the whole setup. We're hoping to demonstrate that each instance is using the same FDIA with only small changes to the modules each is using. We'll be publishing our results and taking it to regulators and utilities, as we refine our model and make the grid as robust as we can make it.
 
 Thanks for reading -- and keep an eye out for future posts!
 
@@ -188,4 +173,3 @@ Thanks for reading -- and keep an eye out for future posts!
 8. Chiang, M., Low, S. H., Calderbank, A. R. & Doyle, J. C. Layering as optimization decomposition: A mathematical theory of network architectures. *Proceedings of the IEEE* **95**, 255--312 (2007), doi:
 [10.1109/JPROC.2006.887322](https://doi.org/10.1109/JPROC.2006.887322)
 9. Taft, J. D. *Architectural Basis for Highly Distributed Transactive Power Grids: Frameworks, Networks, and Grid Codes*. PNNL--25480, 1523381 (2016) doi:[10.2172/1523381](https://doi.org/10.2172/1523381).
-
