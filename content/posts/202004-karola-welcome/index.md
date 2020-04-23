@@ -31,7 +31,7 @@ draft: false
 
 ---
 
-[Karola](/authors/karola-kirsanow/) is an experienced paleogeneticist, having studied and done research at [Cornell](https://www.cornell.edu/), [Oxford](http://www.ox.ac.uk/), and [Harvard](https://www.harvard.edu/). While at [Johannes Gutenberg University Mainz](https://www.uni-mainz.de/eng/), Karola led a project looking at the genetic adaptation of modern humans to an agriculturalist diet. In 2016, she founded a consultancy specialising on academic grants applications, scientific editing, and data analysis. Starting today, she joins our team as a Research Program Manager. Here is a little more about Karola:
+[Karola](/authors/karola-kirsanow/) is an experienced paleogeneticist, having studied and done research at [Cornell](https://www.cornell.edu/), [Oxford](http://www.ox.ac.uk/), and [Harvard](https://www.harvard.edu/). While at [Johannes Gutenberg University Mainz](https://www.uni-mainz.de/eng/), Karola led a project looking at the genetic adaptation of modern humans to an agriculturalist diet. In 2016, she founded a consultancy specialising in academic grants applications, scientific editing, and data analysis. Starting today, she joins our team as a Research Program Manager. Here is a little more about Karola:
 
 **What path brought you to PL?**
 
