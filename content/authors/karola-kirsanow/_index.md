@@ -22,15 +22,15 @@ interests:
 # Degrees
 education:
   courses:
-  - course: B.A., Archaeology
-    institution: Cornell University
-    year: 2002
-  - course: M.Sc., Archaeological Science
-    institution: Oxford University
-    year: 2004  
-  - course: PhD, Human Evolutionary Biology
+  - course: PhD in Human Evolutionary Biology
     institution: Harvard University
     year: 2009
+  - course: MSc in Archaeological Science
+    institution: Oxford University
+    year: 2004  
+  - course: BA in Archaeology
+    institution: Cornell University
+    year: 2002
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
