@@ -163,12 +163,12 @@ First, we're simulating a bunch of individual loads using a standard [IEEE feede
 Thanks for reading -- and keep an eye out for future posts!
 
 # Sources
-1. "How many power plants are there in the United States? - FAQ - U.S. Energy Information Administration (EIA)." https://www.eia.gov/tools/faqs/faq.php?id=65&t=2, Oct. 2019.
-2. W. Warwick, T. Hardy, M. Hoffman, and J. Homer, "Electricity Distribution System Baseline Report," PNNL, PNNL-25178, Jul. 2016.
-3. Chernyakhovskiy, I. *et al.* "U.S. Laws and Regulations for Renewable Energy Grid Interconnections." (2016). NREL/TP-6A20-66724, 2016.
-4. R. Smith, "U.S. Risks National Blackout From Small-Scale Attack," *Wall Street Journal*, Mar. 2014.
-5. M. McFall-Johnsen, "Over 1,500 California fires in the past 6 years including the deadliest ever were caused by one company: PG&E. Here's what it could have done but didn't." *Business Insider*. https://www.businessinsider.com/pge-caused-california-wildfires-safety-measures-2019-10.
+1. "[How many power plants are there in the United States? - FAQ - U.S. Energy Information Administration (EIA)](https://www.eia.gov/tools/faqs/faq.php?id=65&t=2)," 2019.
+2. W. Warwick, T. Hardy, M. Hoffman, and J. Homer, "[Electricity Distribution System Baseline Report](https://www.energy.gov/sites/prod/files/2017/01/f34/Electricity%20Distribution%20System%20Baseline%20Report.pdf)," PNNL-25178, 2016.
+3. I. Chernyakhovskiy, T. Tian, J. McLaren, M. Miller, and N. Geller, “U.S. Laws and Regulations for Renewable Energy Grid Interconnections,” NREL/TP-6A20-66724, 2016. doi:[10.2172/1326721](https://doi.org/10.2172/1326721).
+4. R. Smith, "[U.S. Risks National Blackout From Small-Scale Attack](https://www.wsj.com/articles/u-s-risks-national-blackout-from-small-scale-attack-1394664965)," *Wall Street Journal*, 2014.
+5. M. McFall-Johnsen, "[Over 1,500 California fires in the past 6 years including the deadliest ever were caused by one company: PG&E. Here's what it could have done but didn't](https://www.businessinsider.com/pge-caused-california-wildfires-safety-measures-2019-10.)," *Business Insider*, 2019.
 6. K. Kok and S. Widergren, "A Society of Devices: Integrating Intelligent Distributed Resources with Transactive Energy," *IEEE Power and Energy Magazine*, vol. 14, no. 3, pp. 34--45, 2016, doi:[10.1109/MPE.2016.2524962](https://doi.org/10.1109/MPE.2016.2524962).
-7. P. Baran, "On Distributed Communications," The RAND Corporation,RM-3420-PR, 1964.
+7. P. Baran, "[On Distributed Communications](https://www.rand.org/pubs/research_memoranda/RM3420.html)," The RAND Corporation, RM-3420-PR, 1964.
 8. M. Chiang, S. H. Low, A. R. Calderbank, and J. C. Doyle, "Layering as optimization decomposition: A mathematical theory of network architectures," *Proceedings of the IEEE*, vol. 95, no. 1, pp. 255--312, 2007, doi:[10.1109/JPROC.2006.887322](https://doi.org/10.1109/JPROC.2006.887322).
 9. J. D. Taft, "Architectural Basis for Highly Distributed Transactive Power Grids: Frameworks, Networks, and Grid Codes," PNNL-25480, Jun. 2016. doi:[10.2172/1523381](https://doi.org/10.2172/1523381).
