@@ -7,6 +7,7 @@ assignees: ''
 
 ---
 
-####Blog post topic: 
-####Author: 
-####Link to draft text:
+#### Blog post topic: 
+#### Author(s): 
+#### Link to draft text:
+#### Desired publication date (approximate):
