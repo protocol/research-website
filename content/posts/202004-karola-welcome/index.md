@@ -35,7 +35,7 @@ draft: false
 
 **What path brought you to PL?**
 
-I took a rather circuitous path to Protocol Labs: from a background in stable isotope mass spectrometry, where I researched prehistoric ecological networks, I moved to human palaeogenetics, where I worked on understanding the role genetic networks play in human evolution. I was in a network state of mind, thinking about resilience and controllability in biological networks, when I discovered Protocol Labs' work on building the decentralized web.
+I took a rather circuitous path to Protocol Labs: from a background in stable isotope mass spectrometry, where I researched prehistoric ecological networks, I moved to human palaeogenetics, where I worked on understanding the role genetic networks play in human evolution. I was in a network state of mind, thinking about resilience and controllability in biological networks, when I discovered Protocol Labs' work building the distributed web.
 
 **What are you working on?**
 
