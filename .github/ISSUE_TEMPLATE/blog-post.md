@@ -1,6 +1,6 @@
 ---
 name: Blog Post
-about: pending blog post (ideas or work in progress)
+about: tracking for blog ideas or works in progress
 title: 'Blog Post: [topic or title]'
 labels: blog post
 assignees: ''
