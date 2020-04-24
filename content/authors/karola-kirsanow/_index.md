@@ -7,7 +7,6 @@ role: Research Program Manager
 
 # Existing research group (use folder name) or free text
 research_groups:
-  -
 
 # Avatar (no need to edit)
 resources:
