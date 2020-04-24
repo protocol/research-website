@@ -25,6 +25,9 @@ education:
   - course: B.A., Archaeology
     institution: Cornell University
     year: 2002
+  - course: M.Sc., Archaeological Science
+    institution: Oxford University
+    year: 2004  
   - course: PhD, Human Evolutionary Biology
     institution: Harvard University
     year: 2009
@@ -51,4 +54,4 @@ user_groups:
 # quote:
 ---
 
-Write bio here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Karola holds a Ph.D. in Human Evolutionary Biology from Harvard, where she worked on reconstructing palaeoenvironmental conditions relevant to hominid evolution. She has also conducted palaeogenetic research into modern human adaptations to diet and climate. She is broadly interested in complex networks of interaction in both natural and artificial contexts, and she is excited to support research into building resilient distributed systems at Protocol Labs.
