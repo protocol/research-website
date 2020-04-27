@@ -4,7 +4,7 @@ title: "Announcing COVID-19 Open Innovation Grant awardees"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-04-23
+date: 2020-04-27
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -31,15 +31,17 @@ draft: false
 
 ---
 
-After a marathon review, followed by necessary legal and financial procedures, we are happy to announce the 10 projects we are supporting with [PL's COVID-19-specific Open Innovation Grant program](https://research.protocol.ai/posts/202003-covid-grants/).
+After a marathon review, followed by necessary legal and financial procedures, we are happy to announce the projects we are supporting with [Protocol Labs' COVID-19 Open Innovation Grant program](https://research.protocol.ai/posts/202003-covid-grants/).
 
 This program was created to surface and support open-source projects working on tools to help humanity through present and future pandemics. Over the last three weeks we received 55 applications — an outstanding response from our global community.
 
-The winning submissions cover software, hardware, data, and research, include specialised communities that will use our funds to support other efforts, and span timescales from the immediate to the long(er) term:
+The winning submissions cover software, hardware, data, and research, include specialised communities that will use our funds to support other efforts, and span timescales from the immediate to the long(er) term.
+
+Here are the selected projects, in the awardees' own words:
 
 *  [Affordable high-quality electronic stethoscope designed to assist healthcare providers](https://github.com/zipzit/Covid-Bluetooth-Stethoscope) ($20,000) \
 This project started with a request on [HelpWithCovid.com](https://helpwithcovid.com/projects/252-bluetooth-stethoscope-pulse-oximeter), from a frontline physician in San Diego, for a very affordable wireless stethoscope that could be made readily available during this pandemic. Requested features included Bluetooth capabilities to reduce close proximity exposure of providers to patients with COVID-19, wide availability of the design, and higher-quality construction and sound quality than the low-cost stethoscopes currently in use.
-*  [BEAT19.org - behaviour, environment and treatments for COVID19](https://beat19.org/) ($10,000) \
+*  [BEAT19.org - Behaviour, Environment and Treatments for COVID-19](https://beat19.org/) ($10,000) \
 Beat19 is a research study designed to help us learn about what happens before, during and after people have symptoms of infection by SARS-CoV-2, the virus that causes COVID-19. Participants provide data to an IRB-approved registry, using a short daily survey about symptoms and medications. Beat19 will provide ongoing analysis of data updated daily and displayed at our website and access to curated information about the development of new treatments for COVID-19.
 *   [Digital observatory for socially produced online COVID-19 information](https://covid19.communitydata.science/) ($20,000) \
 As people struggle to make sense of the COVID-19 pandemic, many turn to social media and social computing systems to share information, understand what's happening, and find support. We are building a digital observatory to understand where and how people are talking about COVID-19-related information. The observatory collects open-access social media data related to COVID-19 in formats that will be usable by researchers with less technical skills. The public datasets and freely licensed tools will allow researchers, practitioners, and public health officials to more efficiently understand and act to improve these sources of information during crises.
@@ -58,9 +60,9 @@ UBORA is an e-platform for co-developing and sharing open-source medical devices
 *   [VentMon - Inline Ventilator Test Fixture and Monitor](https://github.com/PubInv/ventmon-ventilator-inline-test-monitor) ($20,000) \
 VentMon addresses an urgent need to improve testing of open-source ventilator designs. The same machine and software will provide monitoring and alarms for critical care specialists using life-critical ventilators. It is a simple inline device plugged into the airway of a ventilator that measures flow and pressure (and thereby volume), making sure the ventilator is performing to specification (such as the UK RVMS spec). In case a ventilator fails, VentMon raises an audio and internet alarm. It can be used for testing before deployment as well as for ICU patient monitoring.
 
-We are grateful to every single one of our applicants. While we were unable to fund every application, we thoroughly reviewed all of them and were amazed by the breadth and quality of the work being done.
+We thank every one of our applicants for their submissions. While we were unable to fund every application, we thoroughly reviewed all of them and were amazed by the breadth and quality of the work being done.
 
-It has been amazing to witness the world come together over these past weeks to try to find solutions to this crisis. A number of companies have decided to make their intellectual property available, as part of the [Open COVID Pledge](https://opencovidpledge.org/) ([we have long extolled the virtues of open IP](https://protocol.ai/blog/announcing-the-permissive-license-stack/)). Other fast-track grant programs have been launched by [philanthropists](https://fastgrants.org/), [companies](https://blog.mozilla.org/blog/2020/03/31/moss-launches-covid-19-solutions-fund/), and [governments](https://www.fct.pt/apoios/research4covid19/index.phtml.en). But most of all, the sheer number of open-source projects springing up around the world has been incredible.
+It has been inspiring to witness the world come together over these past weeks to try to find solutions to this crisis. A number of companies have decided to make their intellectual property available, as part of the [Open COVID Pledge](https://opencovidpledge.org/) ([we have long extolled the virtues of open IP](https://protocol.ai/blog/announcing-the-permissive-license-stack/)). Other fast-track grant programs have been launched by [philanthropists](https://fastgrants.org/), [companies](https://blog.mozilla.org/blog/2020/03/31/moss-launches-covid-19-solutions-fund/), and [governments](https://www.fct.pt/apoios/research4covid19/index.phtml.en). But most of all, the sheer number of open-source projects springing up around the world has been incredible.
 
 If you’re looking to donate your time or money to a project, and the ones above aren’t a good match to your interests or skills, we encourage you to browse platforms like [HelpWithCovid](https://helpwithcovid.com/projects), where you’ll find hundreds of efforts at every level of complexity and maturity.
 
