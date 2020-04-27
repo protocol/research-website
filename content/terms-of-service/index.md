@@ -10,7 +10,7 @@ You will find the following notice at the bottom of many pages on the Google Dev
 
 Except as noted, content licensed CC-BY 3.0, code licensed MIT.
 
-When you see a page with this notice you are free to use nearly everything on the page in your own creations. That's what open content licenses are all about. We just ask that you give us attribution when you reuse our work.t
+When you see a page with this notice you are free to use nearly everything on the page in your own creations. That's what open content licenses are all about. We just ask that you give us attribution when you reuse our work.
 
 ## WHAT IS NOT LICENSED?
 
