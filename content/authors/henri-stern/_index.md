@@ -46,10 +46,4 @@ user_groups:
 quote:
 ---
 
-Henri was born in Switzerland and grew up in Paris, France and New York, NY. Started his undergrad at Stanford (where he made unsavory encounters with people responsible for his current employment), finished at Columbia studying CS and History.
-
-After working for a few years on a marketplaces startup (Shout, YC S14), he returned to Stanford to earn an M.S. in Computer Science with a focus in Security and Distributed Systems.
-
-There, he undertook research on an array of topics like the security of wireless bike speed-shifters, router OS tooling, bft multicast, etc. with amazing professors such as Dan Boneh or David Mazières.
-
-He now works on consensus systems as part of the Filecoin research team, notably on Filecoin's Expected Consensus protocol.
+Henri works on consensus systems as part of the Filecoin research team, notably on Filecoin's Expected Consensus protocol.
