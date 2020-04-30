@@ -7,7 +7,7 @@ authors:
   - ariel-gabizon
 
 # Role/position
-role: Research Scientist
+role: Research Advisor
 
 research_groups:
   - filecoin-research
