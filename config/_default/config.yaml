@@ -23,6 +23,8 @@ params:
 permalinks:
   talks: /research/talks/:title/
   publications: /research/publications/:title/
+  research_areas: /research/areas/:title/
+  research_groups: /research/groups/:title/
 markup:
   goldmark:
     renderer:
