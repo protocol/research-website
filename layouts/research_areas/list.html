@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+<div class="max-w-screen mx-auto pt-4 md:px-10">
+  {{ partial "page-top" . }}
+
+  <div class="max-w-screen mx-auto mb-6 pt-12">
+    <div class="flex flex-row items-center justify-between mb-0 px-4 md:px-0">
+      <div class="block">
+        <h2 class="text-md font-bold">Research Groups</h2>
+        <img class="block" src="/icons/mini-graphic-line.svg">
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row md:flex-wrap md:-mx-8 mb:12">
+    {{ range where (where .Site.Pages "Type" "research_groups") ".Kind" "==" "taxonomyTerm"}}
+      {{ range .Pages }}
+        <div class="p-4 md:p-8 md:w-1/2">
+          <div class="flex flex-row items-center justify-start mb-4">
+            <a class="text-md leading-relaxed hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ range .Resources.Match "icon.*" }}
+              {{ $image := .Resize "x36" }}
+              <img class="ml-auto mr-2" src="{{ $image.RelPermalink }}">
+            {{ end }}
+          </div>
+          <p class="mb-4 multiline-ellipsis-5">{{ .Summary }}</p>
+        </div>
+      {{ end }}
+    {{ end }}
+    </div>
+  </div>
+
+  <div class="max-w-screen mx-auto mb-6">
+    <div class="flex flex-row items-center justify-between mb-0 px-4 md:px-0">
+      <div class="block">
+        <h2 class="text-md font-bold">Research Areas</h2>
+        <img class="block" src="/icons/mini-graphic-line.svg">
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row md:flex-wrap md:-mx-8">
+    {{ range where (where .Site.Pages "Type" "research_areas") ".Kind" "==" "taxonomyTerm"}}
+      {{ range .Pages }}
+        <div class="p-4 md:p-8 md:w-1/2">
+            <div class="flex flex-row items-center justify-start mb-4">
+              <a class="text-md leading-relaxed hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ range .Resources.Match "icon.*" }}
+                {{ $image := .Resize "x36" }}
+                <img class="ml-auto mr-2" src="{{ $image.RelPermalink }}">
+              {{ end }}
+            </div>
+            <p class="mb-4 multiline-ellipsis-5">{{ .Summary }}</p>
+        </div>
+      {{ end }}
+    {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ end }}
