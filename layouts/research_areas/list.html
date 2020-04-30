@@ -12,7 +12,7 @@
     </div>
     <div class="flex flex-col md:flex-row md:flex-wrap md:-mx-8 mb:12">
     {{ range where (where .Site.Pages "Type" "research_groups") ".Kind" "==" "taxonomyTerm"}}
-      {{ range .Pages }}
+      {{ range sort .Pages ".Title" "asc"}}
         <div class="p-4 md:p-8 md:w-1/2">
           <div class="flex flex-row items-center justify-start mb-4">
             <a class="text-md leading-relaxed hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -37,7 +37,7 @@
     </div>
     <div class="flex flex-col md:flex-row md:flex-wrap md:-mx-8">
     {{ range where (where .Site.Pages "Type" "research_areas") ".Kind" "==" "taxonomyTerm"}}
-      {{ range .Pages }}
+      {{ range sort .Pages ".Title" "asc"}}
         <div class="p-4 md:p-8 md:w-1/2">
             <div class="flex flex-row items-center justify-start mb-4">
               <a class="text-md leading-relaxed hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
