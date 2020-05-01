@@ -6,7 +6,5 @@ menu:
     parent: "research"
     identifier: "talks"
     weight: 3
-  footer:
-    weight: 5
 url: /research/talks    
 ---

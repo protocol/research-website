@@ -5,8 +5,6 @@ menu:
   main:
     parent: research
     identifier: areas
-    weight: 1
-  footer:
-    weight: 3
+    weight: 2
 url: /research/areas
 ---
