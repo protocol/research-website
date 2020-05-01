@@ -13,16 +13,7 @@
     <div class="flex flex-col md:flex-row md:flex-wrap md:-mx-8 mb:12">
     {{ range where (where .Site.Pages "Type" "research_groups") ".Kind" "==" "taxonomyTerm"}}
       {{ range .Pages }}
-        <div class="p-4 md:p-8 md:w-1/2">
-          <div class="flex flex-row items-center justify-start mb-4">
-            <a class="text-md leading-relaxed hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ range .Resources.Match "icon.*" }}
-              {{ $image := .Resize "x36" }}
-              <img class="ml-auto mr-2" src="{{ $image.RelPermalink }}">
-            {{ end }}
-          </div>
-          <p class="mb-4 multiline-ellipsis-5">{{ .Summary }}</p>
-        </div>
+        {{ partial "research-taxonomy-card-half" .}}
       {{ end }}
     {{ end }}
     </div>
@@ -38,16 +29,7 @@
     <div class="flex flex-col md:flex-row md:flex-wrap md:-mx-8">
     {{ range where (where .Site.Pages "Type" "research_areas") ".Kind" "==" "taxonomyTerm"}}
       {{ range .Pages }}
-        <div class="p-4 md:p-8 md:w-1/2">
-            <div class="flex flex-row items-center justify-start mb-4">
-              <a class="text-md leading-relaxed hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
-              {{ range .Resources.Match "icon.*" }}
-                {{ $image := .Resize "x36" }}
-                <img class="ml-auto mr-2" src="{{ $image.RelPermalink }}">
-              {{ end }}
-            </div>
-            <p class="mb-4 multiline-ellipsis-5">{{ .Summary }}</p>
-        </div>
+        {{ partial "research-taxonomy-card-half" .}}
       {{ end }}
     {{ end }}
     </div>

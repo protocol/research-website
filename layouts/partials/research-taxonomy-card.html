@@ -1,8 +1,7 @@
 <div class="p-4">
     <div class="flex flex-row items-center justify-start mb-4">
       {{ range .Resources.Match "icon.*" }}
-        {{ $image := .Resize "x36" }}
-        <img class="pr-4" src="{{ $image.RelPermalink }}">
+        <img class="mr-4" width="36px" src="{{ .RelPermalink }}">
       {{ end }}
       <a class="text-md leading-relaxed hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
     </div>
