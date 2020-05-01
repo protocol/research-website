@@ -6,17 +6,19 @@
   </div>
 
   <div class="lg:w-2/3 md:flex md:flex-row md:flex-wrap">
-    {{range (where site.RegularPages "Type" "in" "research_areas")}}
-      <div class="pb-8 md:w-1/2 md:odd:pr-4 md:even:pl-4 md:self-stretch group">
-        <a href="{{ .RelPermalink }}" class="block relative bg-white p-4 border-black border-t md:p-8 md:h-full">
-          {{ range .Resources.Match "icon.*" }}
-            {{ $image := .Resize "36x" }}
-            <img class="absolute right-0 top-0 mt-3 mr-4 md:-mt-2 md:-mr-2 md:relative md:inline-block md:float-right" src="{{ $image.RelPermalink }}">
-          {{ end }}
-          <h3 class="text-blue mb-4 text-bigger group-hover:underline">{{ .Title }}</h3>
-          <p class="text-sm text-gray-700 multiline-ellipsis-6 overflow-hidden leading-relaxed">{{ .Summary }}</p>
-        </a>
-      </div>
+    {{ range where (where .Site.Pages "Type" "research_areas") ".Kind" "==" "taxonomyTerm"}}
+      {{ range .Pages }}
+        <div class="pb-8 md:w-1/2 md:odd:pr-4 md:even:pl-4 md:self-stretch group">
+          <a href="{{ .RelPermalink }}" class="block relative bg-white p-4 border-black border-t md:p-8 md:h-full">
+            {{ range .Resources.Match "icon.*" }}
+              {{ $image := .Resize "36x" }}
+              <img class="absolute right-0 top-0 mt-3 mr-4 md:-mt-2 md:-mr-2 md:relative md:inline-block md:float-right" src="{{ $image.RelPermalink }}">
+            {{ end }}
+            <h3 class="text-blue mb-4 text-bigger group-hover:underline">{{ .Title }}</h3>
+            <p class="text-sm text-gray-700 multiline-ellipsis-6 overflow-hidden leading-relaxed">{{ .Summary }}</p>
+          </a>
+        </div>
+      {{end}}
     {{end}}
   </div>
 </div>
