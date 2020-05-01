@@ -16,11 +16,12 @@ This repository contains the source code for the Protocol Labs Research website,
 
 ## Setup
 
-- You will need [Hugo](https://gohugo.io/) v0.60+ installed
+- You will need [Hugo](https://gohugo.io/) (CI version: 0.69.2)
+- You will need [NodeJS](https://nodejs.org/en/) (CI version: latest v10 release)
 - You will need [Yarn](https://yarnpkg.com/lang/en/)
 - Run `yarn` to install deps. 
 
-Note for installing on Ubuntu 18.04: the standard APT packages for yarn and hugo are out of date and will not allow you to execute these instructions. The easiest way to a working set-up is to follow the instalation instructions for [Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable), then follow the instalation instruction for [Homebrew](https://brew.sh/), and then run `brew install hugo`.
+Note for installing on Ubuntu 18.04: the standard APT packages for yarn, node, and hugo are out of date and will not allow you to execute these instructions. The easiest way to a working set-up is to follow the instalation instructions for [NodeJS](https://joshtronic.com/2018/05/08/how-to-install-nodejs-10-on-ubuntu-1804-lts/), [Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable), and [Homebrew](https://brew.sh/), and then run `brew install hugo`.
 
 ## Development
 
