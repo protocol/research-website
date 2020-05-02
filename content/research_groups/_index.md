@@ -6,5 +6,6 @@ menu:
     parent: research
     identifier: groups
     weight: 1
+    name: Groups
 url: /research/groups
 ---
