@@ -4,8 +4,8 @@ date: 2019-09-02T14:20:27+01:00
 
 weight: 3
 
-type: research_areas
 taxonomyName: decentralized-identity
+draft: true
 
 resources:
   - src: icon.jpg

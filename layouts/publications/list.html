@@ -3,14 +3,11 @@
 
     {{ partial "page-top" . }}
 
-    <div class="flex flex-col flex-wrap md:flex-row md:items-start md:justify-start md:-mx-8">
+    <div class="md:-mx-4 md:w-2/3">
       {{ range .RegularPages }}
-        <div class="w-full md:w-1/2 mb-8">
-          <div class="md:px-4">
-            {{ partial "publication-card" . }}
-          </div>
-        </div>
+        {{ partial "publication-card" . }}
       {{ end }}
     </div>
+    
   </div>
 {{ end }}

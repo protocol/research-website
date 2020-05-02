@@ -1,0 +1,9 @@
+<div class="p-4">
+    <div class="flex flex-row items-center justify-start mb-4">
+      {{ range .Resources.Match "icon.*" }}
+        <img class="mr-4" width="36px" src="{{ .RelPermalink }}">
+      {{ end }}
+      <a class="text-md leading-relaxed hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </div>
+    <p class="mb-4">{{ .Summary }}</p>
+</div>

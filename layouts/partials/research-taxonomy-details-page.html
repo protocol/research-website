@@ -21,7 +21,7 @@
     {{ .Content }}
   </div>
 
-  {{ $recentTalks := where (index (index .Site.Taxonomies .Type) .Params.taxonomyName) "Type" "talks"}}
+  {{ $recentTalks := where .Pages "Type" "talks"}}
 
   {{ if $recentTalks }}
     <div class="mb-12">
@@ -47,7 +47,7 @@
     </div>
   {{ end }}
 
-  {{ $recentPublications := where (index (index .Site.Taxonomies .Type) .Params.taxonomyName) "Type" "publications"}}
+  {{ $recentPublications := where .Pages "Type" "publications"}}
 
   {{ if $recentPublications }}
     <div class="mb-12">
@@ -73,7 +73,7 @@
     </div>
   {{ end }}
 
-  {{ $recentPosts := where (index (index .Site.Taxonomies .Type) .Params.taxonomyName) "Type" "posts"}}
+  {{ $recentPosts := where .Pages "Type" "posts"}}
 
   {{ if $recentPosts }}
     <div class="mb-12">

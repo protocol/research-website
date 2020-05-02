@@ -12,7 +12,7 @@ jobs:
 
       - run:
           name: "Install Hugo"
-          command: curl -sL -o/tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.61.0/hugo_0.61.0_Linux-64bit.deb && sudo dpkg -i /tmp/hugo.deb
+          command: curl -sL -o/tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.69.2_Linux-64bit.deb && sudo dpkg -i /tmp/hugo.deb
 
       - run:
           name: "Install dependencies"

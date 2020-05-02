@@ -2,9 +2,11 @@
 title: ResNetLab
 date: 2019-09-02T14:20:06+01:00
 
-type: research_groups
 taxonomyName: resnetlab
 summary: "The mission of the Resilient Networks Lab is to build resilient distributed systems, by creating and operating a platform where researchers can collaborate openly and asynchronously on deep technical work."
+
+resources:
+  - src: icon.png
 ---
 
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" width="250px" >}}</center>

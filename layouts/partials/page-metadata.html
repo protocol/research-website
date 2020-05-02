@@ -36,7 +36,7 @@
     {{ $taxonomy := "research_groups" }}
     {{ with .Param $taxonomy }}
       {{ range $index, $value := . }}
-        {{- $profile_page := site.GetPage "taxonomyTerm" (printf "/research/groups/%s" ($value | urlize)) -}}
+        {{- $profile_page := site.GetPage (printf "/research_groups/%s" (. | urlize)) -}}
         {{- $name := $profile_page.Title | default ($value|markdownify) -}}
         {{- if gt $index 0 }}, {{ end -}}
         <span class="inline-block mb-0">
@@ -60,7 +60,7 @@
     {{ $taxonomy := "research_areas" }}
     {{ with .Param $taxonomy }}
       {{ range $index, $value := . }}
-        {{- $profile_page := site.GetPage "taxonomyTerm" (printf "/research/areas/%s" ($value | urlize)) -}}
+        {{- $profile_page := site.GetPage (printf "/research_areas/%s" (. | urlize)) -}}
         {{- $name := $profile_page.Title | default ($value|markdownify) -}}
         {{- if gt $index 0 }}, {{ end -}}
         <span class="inline-block mb-0">
