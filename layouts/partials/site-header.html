@@ -29,7 +29,7 @@
           {{ if .HasChildren }}
             <div class="hidden group-hover:block absolute top-100 bg-black w-40 p-4 z-30">
               {{ range .Children }}
-                <a href="{{ .URL }}" class="relative inline-block mt-0 hover:text-blue align-middle text-white mb-4">
+                <a href="{{ .URL }}" class="relative block mt-0 hover:text-blue align-middle text-white mb-4">
                   <span>{{ .Name }}</span>
 
                   {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (in $currentPage.RelPermalink .URL) }}
