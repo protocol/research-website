@@ -31,7 +31,7 @@ draft: false
 
 aliases:
   - /blog/announcing-our-covid-19-open-innovation-grant-awardees
-  - /posts/202004-covid-grant
+  - /posts/202004-covid-grants
 
 ---
 
