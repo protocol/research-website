@@ -4,7 +4,7 @@ title: Hello from the Decentralized Energy Project!
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-04-21
+date: 2020-05-04
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
