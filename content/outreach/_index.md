@@ -7,5 +7,5 @@ menu:
   footer:
     weight: 6
 hasSquigglyLines: true
+description: "Our research takes place in the open as a combined effort with external researchers and the academic community.  These connections take many forms, depending on the field and the research direction."
 ---
-Our research takes place in the open as a combined effort with external researchers and the academic community.  These connections take many forms, depending on the field and the research direction.
