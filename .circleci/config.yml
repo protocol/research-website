@@ -63,7 +63,7 @@ jobs:
       - run:
           name: Deploy website to IPFS
           command: |
-            pin_name="$DOMAIN build $CIRCLE_BUILD_NUMBER"
+            pin_name="$DOMAIN build $CIRCLE_BUILD_NUMBER-2"
 
             hash=$(pin-to-cluster.sh "$pin_name" /tmp/workspace/$BUILD_DIR)
 
@@ -84,5 +84,8 @@ workflows:
             - build
       - redeploy:
           context: ipfs-dns-deploy
+          filters:
+            branches:
+              only: master    
           requires:
             - deploy
