@@ -61,17 +61,11 @@ jobs:
       - attach_workspace:
           at: /tmp/workspace
       - run:
-          name: Deploy website to IPFS
+          name: Re-deploy website to IPFS
           command: |
             pin_name="$DOMAIN build $CIRCLE_BUILD_NUMBER-2"
-
             hash=$(pin-to-cluster.sh "$pin_name" /tmp/workspace/$BUILD_DIR)
-
-            echo "Website added to IPFS: https://ipfs.io/ipfs/$hash"
-
-            if [ "$CIRCLE_BRANCH" == "master" ] ; then
-              dnslink-dnsimple -d $DOMAIN -r _dnslink -l /ipfs/$hash
-            fi
+            dnslink-dnsimple -d $DOMAIN -r _dnslink -l /ipfs/$hash
 
 workflows:
   version: 2
