@@ -29,6 +29,9 @@ research_groups:
 # Not used
 draft: false
 
+aliases:
+  - /posts/202004-matrix-virtual-meetup-gossipsub
+
 ---
 
 ![](open-tech-banner.jpg)

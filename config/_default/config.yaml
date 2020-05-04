@@ -25,7 +25,7 @@ permalinks:
   publications: /research/publications/:title/
   research_areas: /research/areas/:title/
   research_groups: /research/groups/:title/
-  posts: /blog/:title/
+  posts: /blog/:year/:title/
 markup:
   goldmark:
     renderer:

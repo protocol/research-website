@@ -29,6 +29,10 @@ research_groups:
 # Not used
 draft: false
 
+aliases:
+  - /blog/announcing-our-covid-19-open-innovation-grant-awardees
+  - /posts/202004-covid-grant
+
 ---
 
 After a marathon review, followed by necessary legal and financial procedures, we are happy to announce the projects we are supporting with [Protocol Labs' COVID-19 Open Innovation Grant program](https://research.protocol.ai/posts/202003-covid-grants/).

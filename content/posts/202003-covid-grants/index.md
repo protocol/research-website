@@ -22,6 +22,9 @@ research_groups:
 
 draft: false
 
+aliases:
+  - /posts/202003-covid-grants
+
 ---
 
 

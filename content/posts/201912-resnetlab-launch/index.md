@@ -16,6 +16,9 @@ research_areas:
 research_groups:
   - resnetlab
 
+aliases:
+  - /posts/201912-resnetlab-launch
+
 ---
 
 Resiliency is at the core of systems that are capable of standing the test of time, providing unshakable access for the many generations to come. A resilient system or network is fundamentally uncompromised by an isolated failure or network split. The system is malleable, adaptable to different conditions, and capable of evolving to meet new requirements over time. **Building resilience into foundational infrastructure is key to building a computing and networking fabric for humanity’s information**.

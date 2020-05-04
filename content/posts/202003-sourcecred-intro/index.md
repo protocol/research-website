@@ -21,6 +21,9 @@ research_groups:
 
 draft: false
 
+aliases:
+  - /posts/202003-sourcecred-intro
+
 ---
 
 _You may not know that Protocol Labs is a supporter of an open-source governance and sustainability project called [SourceCred](https://sourcecred.io/).  As a participant in a small SourceCred meetup last month, I learned enough about the underlying algorithm that I wrote up an explainer for their [documentation repo](https://www.github.com/sourcecred/docs/) and thought it might be interesting to share it here as well.  Everyone at PL is incredibly excited by the potential of SourceCred; if you are too after reading this, I'd strongly recommend visiting their [Discourse](https://discourse.sourcecred.io/) or their [Discord](https://discord.gg/cefmuPH).  You'll get some cred just for stopping by the weekly community call in Discord on Tuesdays.  If that's got your curiosity, by all means, please read on._
