@@ -129,6 +129,12 @@ code {
   font-size: 90%;
 }
 
+/* purgecss ignore */
+figcaption {
+  font-size: 90%;
+  font-style: italic;
+}
+
 .page-content {
   @apply text-black leading-relaxed;
 }

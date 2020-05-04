@@ -8,21 +8,24 @@ This repository contains the source code for the Protocol Labs Research website,
 
 ## Architecture
 
-Static website built with the Hugo framework.
-Uses tailwindcss for function css.
-Thats it!
+- Static website built with the Hugo framework.
+- Uses tailwindcss, postcss-cli and autoprefixer for CSS generation.
+- Uses the [CommonMark spec](https://spec.commonmark.org/0.29/) for Markdown syntax.
+- Uses [MathJax v3](https://www.mathjax.org/#gettingstarted) for embedded LaTeX.
+- That's it!
 
 ## Setup
 
-- You will need [HUGO](https://gohugo.io/) installed
-- You will need [YARN](https://yarnpkg.com/lang/en/).
-- Run `yarn` to install deps.
+- You will need [Hugo](https://gohugo.io/) (CI version: 0.69.2)
+- You will need [NodeJS](https://nodejs.org/en/) (CI version: latest v10 release)
+- You will need [Yarn](https://yarnpkg.com/lang/en/)
+- Run `yarn` to install deps. 
+
+Note for installing on Ubuntu 18.04: the standard APT packages for yarn, node, and hugo are out of date and will not allow you to execute these instructions. The easiest way to a working set-up is to follow the instalation instructions for [NodeJS](https://joshtronic.com/2018/05/08/how-to-install-nodejs-10-on-ubuntu-1804-lts/), [Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable), and [Homebrew](https://brew.sh/), and then run `brew install hugo`.
 
 ## Development
 
-- `yarn run serve`
-- To use our CSS build chain (postcss + tailwindcss + autoprefixer + css treeshaking)
-  you will need to have `postcss-cli` and `autoprefixer` installed globally.
+- `yarn serve`
 
 ## Deployment
 
@@ -52,3 +55,4 @@ When the `master` branch changes, typically after a PR is merged, the site will 
 - You're **encouraged** to submit blog posts! We're aiming for frequent updates and would like to publish a variety of content, ranging from the highly technical to opinion pieces. While we will edit all posts to maintaing minimum consistency standards, you have wide latitude on content.
 - All content changes require review by research-pm. We'll try to keep it quick and easy. We'll do the final proofreading for any blog posts with or without feedback to the author (as requested).
 - Anyone doing work in some way related to research can ask to be listed. We understand there are privacy constraints and so don't require profiles to be complete. However, all profiles have to use real names -- or, in other words, the same name you would use on scientific publications. This is also a technical requirement for content matching. 
+- The [Handbook page on the Research Website](https://app.gitbook.com/@protocol-labs/s/handbook/research/website) includes more detailed policies and guides for contributing content.
