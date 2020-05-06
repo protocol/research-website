@@ -1,6 +1,2 @@
 User-agent: *
-Disallow: /research_groups
-Disallow: /research_areas
-Disallow: /research_groups
-Disallow: /publication_types
 Sitemap: https://research.protocol.ai/sitemap.xml
