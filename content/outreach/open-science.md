@@ -1,5 +1,6 @@
 ---
 headless: true
+nositemap: true
 weight: 1
 title: Open Science
 linkText: Browse our discussions (GitHub)

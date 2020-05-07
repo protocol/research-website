@@ -1,5 +1,6 @@
 ---
 headless: true
+nositemap: true
 weight: 5
 title: Public Talks
 linkText: Browse our public talks (YouTube)

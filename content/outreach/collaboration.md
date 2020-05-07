@@ -1,5 +1,6 @@
 ---
 headless: true
+nositemap: true
 weight: 4
 title: Collaboration
 #linkText: Browse collaboration news

@@ -1,5 +1,6 @@
 ---
 headless: true
+nositemap: true
 weight: 2
 title: RFP Program
 linkText: Browse our RFPs (GitHub)
