@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: NDN Seminar: a high-level overview of the InterPlanetary File System
+title: "NDN Seminar: a high-level overview of the InterPlanetary File System"
 
 # Website post date
 # format YYYY-MM-DD
