@@ -12,7 +12,7 @@ date: 2020-05-08
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
   - david-dias
-  - yannis-psaras
+  - yiannis-psaras
 
 # If applicable
 categories:
