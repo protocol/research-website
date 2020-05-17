@@ -27,7 +27,7 @@
 }
 
 /* purgecss ignore */
-p + ul, p + blockquote  {
+p + ul, p + ol, p + blockquote  {
   margin-block-start: -0.5em;
 }
 
