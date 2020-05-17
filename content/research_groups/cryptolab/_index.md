@@ -2,11 +2,14 @@
 title: CryptoLab
 date: 2019-09-02T14:20:06+01:00
 
-taxonomyName: CryptoLab
+taxonomyName: cryptolab
 summary: "The purpose of CryptoLab is to develop and apply new cryptographic tools to secure computation and communication systems.  Much of the past and current work includes designing, proving, and improving the building blocks enabling Filecoin: a decentralized storage network."
 
 resources:
   - src: icon.png
+
+aliases:
+  - /research/groups/filecoin-research
 ---
 
 The purpose of CryptoLab is to develop and apply new cryptographic tools to secure computation and communication systems.  Much of the past and current work includes designing, proving, and improving the building blocks enabling Filecoin: a decentralized storage network.
@@ -18,6 +21,4 @@ Cryptolab's current focuses are:
  - Blockchain infrastructure: We plan to improve the state of the art of generic blockchain constructions.
  - Cryptographic primitives for Filecoin: Filecoin relies on the performance and security of cryptographic primitives. Our endeavours include Proof of Replication (PoRep), Proof of SpaceTime (PoST), SEALSTACK, SNARKs, and VDFs.
 
-Much of CryptoLab's work is exhibited at: https://research.filecoin.io/
-
-GitHub repo for Filecoin Research: https://github.com/filecoin-project/research/
+Much of CryptoLab's work is exhibited in the Filecoin Research [website](https://research.filecoin.io/) and [GitHub repo](https://github.com/filecoin-project/research/).
