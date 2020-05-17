@@ -45,7 +45,7 @@ research_areas:
 
 # Zero or more of the groups in content/research/groups (should match author membership)
 research_groups:
-  - filecoin-research
+  - cryptolab
 
 # Not generally used
 # featured: false

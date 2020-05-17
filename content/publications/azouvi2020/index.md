@@ -37,7 +37,7 @@ research_areas:
   - cryptography
 
 research_groups:
-  - filecoin-research
+  - cryptolab
 
 featured: false
 

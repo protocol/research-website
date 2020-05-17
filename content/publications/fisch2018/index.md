@@ -14,7 +14,7 @@ authors:
   - juan-benet
 
 research_groups:
-  - filecoin-research
+  - cryptolab
 
 categories:
 

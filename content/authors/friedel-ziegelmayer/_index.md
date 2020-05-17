@@ -10,7 +10,7 @@ authors:
 role: Research Engineer
 
 research_groups:
-  - filecoin-research
+  - cryptolab
 
 resources:
   - name: avatar
