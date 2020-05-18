@@ -70,7 +70,7 @@ A: Yes, once the CID of a block/chunk is calculated it stays the same forever. T
 
 **Q: How can you revoke a CID from the IPFS network?**
 
-A: The CID as such is permanent and cannot be “undone” as it’s the hash of a particular piece of content (see comment on “Permanent Web” above). A user that does not want to provide access to some content anymore can simply stop “providing” that content, or in other words, stop publishing the corresponding provider record(s). This, however, does not mean that the content disappears from the network, as other peers that have retrieved the content might still have it in their cache and provide it.
+A: The CID as such is permanent and cannot be “undone” as it’s the hash of a particular piece of content (see comment on “Permanent Web” above). A user that no longer wishes to provide access to some content can simply stop “providing” that content, or in other words, stop publishing the corresponding provider record(s). This, however, does not mean that the content disappears from the network, as other peers that have retrieved the content might still have it in their cache and provide it.
 
 IPFS implements the concept of “denylists”. Every node can have its own denylist and check it before it makes its forwarding decisions. A node can also adopt the denylist of other peers or organisations - see more discussion on this below.
 
@@ -80,7 +80,7 @@ A: Yes and no. The denylist maintained by Protocol Labs is accessible through th
 
 **Q: Who maintains the revocation list/denylist? Are nodes doing routing independently of the denylist?**
 
-A:  The denylist  of the Public IPFS Gateways that are maintained by Protocol Labs  is kept by Protocol Labs. The denylist  is accessible through the IPFS Gateways, subject to the double-hashing procedure mentioned above. However, we should highlight that anyone can run their own public gateway(s) on the public IPFS network and they can have their own denylist, which can be a replica of that kept by Protocol Labs or be an entirely different one. In short, each individual or organisation running a gateway is free to choose what content they want to deny serving. Furthermore, if someone runs their own IPFS network, which is not part of the public IPFS network, then they have to maintain their own denylist.
+A:  The denylist  of the Public IPFS Gateways that are maintained by Protocol Labs  is kept by Protocol Labs. The denylist  is accessible through the IPFS Gateways, subject to the double-hashing procedure mentioned above. However, we should highlight that anyone can run their own public gateway(s) on the public IPFS network and they can have their own denylist, which can be a replica of that kept by Protocol Labs or an entirely different one. In short, each individual or organisation running a gateway is free to choose what content they want to deny serving. Furthermore, if someone runs their own IPFS network, which is not part of the public IPFS network, then they have to maintain their own denylist.
 
 With regard to routing, normal DHT nodes are not obliged to check the denylist before they route/forward requests (although they can do so if they want). IPFS Gateways (both those operated by Protocol Labs and those that are not) check their own denylist before they forward requests and will therefore, not forward requests for denied content.
 
@@ -96,15 +96,15 @@ A: IPNS is using the same infrastructure as content routing, that is, the DHT. T
 
 **Q: You have to know exactly what you’re looking for. The DHT is good, but it’s difficult to know what is in there. Where does the binding between a CID and a real-world identity take place?**
 
-A: This has to happen externally. IPFS does provide such a mechanism. IPFS is providing, storing and can fetch content of a particular CID, the rest has to be done externally to the system.
+A: This has to happen externally. IPFS does provide such a mechanism. IPFS is providing, storing, and can fetch content of a particular CID; the rest has to be done externally to the system.
 
 **Q: If you put the name into the DHT and the name can point to different things that can be changed by different guys (good, bad), then this can be a big security problem.**
 
-A: IPFS is using a technique inspired by the [Self-Certifying File System (SFS)](https://en.wikipedia.org/wiki/Self-certifying_File_System) and it is putting the CID of the public key into the DHT. Every time the  publisher publishes a new version of the content, it has to sign the record with its private key and therefore, only the original author can publish under this identity. We call this system IPNS, for InterPlanetary Name System
+A: IPFS is using a technique inspired by the [Self-Certifying File System (SFS)](https://en.wikipedia.org/wiki/Self-certifying_File_System) and it is putting the CID of the public key into the DHT. Every time the publisher publishes a new version of the content, it has to sign the record with its private key and therefore, only the original author can publish under this identity. We call this system IPNS, for InterPlanetary Name System
 
 **Q: How can other nodes know that they have the right key for a name?**
 
-A: When a node performs a look-up for an IPNS name on the DHT it retrieves records from all of the peers the DHT designates to store the data. As the records have sequence numbers the client can easily determine what the most recent value corresponding to an IPNS key is. There is also a DHT lookup shortcut whereby instead of waiting for the lookup to complete a user can decide to wait for a quorum Q of records (currently set to Q=16) to be received before deciding that it has enough information to determine the most recent record.
+A: When a node performs a look-up for an IPNS name on the DHT it retrieves records from all of the peers the DHT designates to store the data. As the records have sequence numbers, the client can easily determine what the most recent value corresponding to an IPNS key is. There is also a DHT lookup shortcut whereby instead of waiting for the lookup to complete, a user can decide to wait for a quorum Q of records (currently set to Q=16) to be received before deciding that it has enough information to determine the most recent record.
 
 **Q: If the nodes storing the  IPNS record go offline, then the IPNS record is lost and if someone does not update it within 24 hours then it cannot be served.**
 
@@ -135,15 +135,15 @@ It all comes down to having one primitive that applications can rely on (to publ
 
 **Q: IPFS relies on DNS and therefore IPFS can only always be an overlay. Can IPFS route over the link layer?**
 
-A: IPFS does not rely on DNS per se, as it has got its own content resolution protocol (see discussion on IPNS). [DNSLlink](https://dnslink.io/), which is a mechanism outside of the IPFS protocol, but that the IPFS implementation uses, uses DNS to register human-readable names and link them to CIDs - DNSLink does rely on DNS. But it is correct to say that IPFS cannot route over the link layer.
+A: IPFS does not rely on DNS per se, as it has its own content resolution protocol (see discussion on IPNS). [DNSLlink](https://dnslink.io/), which is a mechanism outside of the IPFS protocol that is used by the IPFS implementation, uses DNS to register human-readable names and link them to CIDs - DNSLink does rely on DNS. But it is correct to say that IPFS cannot route over the link layer.
 
 **Q: There is nothing that the network between those peers can do to augment the performance? Is this correct?**
 
-A: Yes, this is correct. IPFS was designed on purpose to not rely on upgrades of ISPs’ infrastructure in order to operate. This does not mean, however, that it cannot use enhancements to in-network entities,* e.g.* in-network caching.
+A: Yes, this is correct. IPFS was designed on purpose to not rely on upgrades of ISPs’ infrastructure in order to operate. This does not mean, however, that it cannot use enhancements to in-network entities,*e.g.* in-network caching.
 
 **Q: In DHT you’re routing based on the overlay. There is no notion of vicinity.**
 
-A: Yes, this is correct and it is a known disadvantage of most DHT implementations. The teams are currently investigating and evaluating alternative DHT structures, such as Coral and Canon DHT, as well as non-DHT routing and resolution components in order to integrate the notion of locality of interest in content resolution. However, this is still ongoing work and not integrated in the production systems.
+A: Yes, this is correct and it is a known disadvantage of most DHT implementations. The teams are currently investigating and evaluating alternative DHT structures, such as Coral and Canon DHT, as well as non-DHT routing and resolution components in order to integrate the notion of locality of interest in content resolution. However, this is still ongoing work and not integrated into the production systems.
 
 **Q: How does the pubsub work? Is it based on the CID? Is the topic represented by a CID? How do you express a topic?**
 
@@ -161,7 +161,7 @@ In order to achieve Signed HTTP Exchanges, a Signature is added to the original 
 
 Learn more about SXG and Web Packages with the IPFS Camp presentation on [Signed exchanges in Chrome](https://youtu.be/zYjsVe4s1JA) ([slidedeck](https://github.com/ipfs/camp/blob/master/LIGHTNING_TALKS/ipfscamp2019-lightningtalk-signedexchangeschrome.pdf))
 
-Thanks for reading! Check out our [open positions](https://jobs.lever.co/protocol?department=Research), [open RFPs](https://github.com/protocol/research-rfps), and [latest work](https://research.protocol.ai/research/groups/resnetlab/)!
+Thank you to everyone that attended the talk and to the The Named Data Networking consortium for organizing this event and inviting us! Check out our [open positions](https://jobs.lever.co/protocol?department=Research), [open RFPs](https://github.com/protocol/research-rfps), and [latest work](https://research.protocol.ai/research/groups/resnetlab/)!
 
 ## References
 
