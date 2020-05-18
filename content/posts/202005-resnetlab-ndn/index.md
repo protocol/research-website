@@ -29,13 +29,13 @@ research_groups:
 # Not used
 draft: false
 
----
+# Adds summary to prevent break on i.e.
+summary: 'ResNetLab was invited to present the “High-Level Overview of the IPFS Architecture” to the Named Data Networking consortium!'
 
+---
 [ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) was invited to present the “High-Level Overview of the IPFS Architecture” to the [Named Data Networking](https://named-data.net/) consortium!
 
 The Named Data Networking project is the flagship project in the area of Information-Centric Networks, which is building a network-layer, information-centric (*i.e.* content-addressable) protocol stack. It started almost a decade ago with the partnership of 10 US universities and funded by the NSF.
-
-<!--more-->
 
 IPFS and NDN share the same vision, that of content-addressable networks, but approach it from vastly different perspectives. NDN is a native network-layer approach, while IPFS is an application-layer approach.
 
