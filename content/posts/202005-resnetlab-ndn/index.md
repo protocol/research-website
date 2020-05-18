@@ -35,7 +35,7 @@ summary: 'ResNetLab was invited to present the “High-Level Overview of the IPF
 ---
 [ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) was invited to present the “High-Level Overview of the IPFS Architecture” to the [Named Data Networking](https://named-data.net/) consortium!
 
-The Named Data Networking project is the flagship project in the area of Information-Centric Networks, which is building a network-layer, information-centric (*i.e.* content-addressable) protocol stack. It started almost a decade ago with the partnership of 10 US universities and funded by the NSF.
+The Named Data Networking project is the flagship project in the area of Information-Centric Networks, which is building a network-layer, information-centric (i.e. content-addressable) protocol stack. It started almost a decade ago with the partnership of 10 US universities and funded by the NSF.
 
 IPFS and NDN share the same vision, that of content-addressable networks, but approach it from vastly different perspectives. NDN is a native network-layer approach, while IPFS is an application-layer approach.
 
@@ -58,11 +58,11 @@ A: The Merkle-DAG structure (named the InterPlanetary Linked Data, or [IPLD](htt
 
 A: There is no mechanism in the IPFS architecture that keeps track of the files that are published to the network. Letting the world know about a newly added content/CID has to happen “off-band”. This topic relates a lot to ongoing discussions in the IPFS community (see related discussions in the IPFS forum [1] [2]) on “Decentralised Search Engines”, but there hasn’t been any tangible outcome to date. That said, the topic is of great interest to Protocol Labs and the wider community.
 
-The InterPlanetary Naming System (IPNS, discussed in greater detail below) and its supporting PubSub protocol, which propagates naming entries to those subscribed to the corresponding IPNS topic, is another way of propagating information about newly published content. This option can be utilised by applications to propagate (*i.e.* push) information about newly published content within the realm of the application itself. IPNS can also work in a pull-based manner when it runs over the DHT.
+The InterPlanetary Naming System (IPNS, discussed in greater detail below) and its supporting PubSub protocol, which propagates naming entries to those subscribed to the corresponding IPNS topic, is another way of propagating information about newly published content. This option can be utilised by applications to propagate (i.e. push) information about newly published content within the realm of the application itself. IPNS can also work in a pull-based manner when it runs over the DHT.
 
 **Q: Do I need to have the entire structure of the merkle tree in order to retrieve a part of it? The root CID does not seem to be enough, if I want to retrieve only part of a file.**
 
-A: A user does not need to have the entire structure of the Merkle-DAG in order to retrieve a part of it. In order to retrieve only a part of the Merkle-DAG (consisting of one or more chunk CIDs), the user needs to have these specific CIDs. In addition, you can use the root CID and path notation to access a file within the Merkle-DAG, *e.g.* [Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN5/path/to/some/file.png](Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN5/path/to/some/file.png).
+A: A user does not need to have the entire structure of the Merkle-DAG in order to retrieve a part of it. In order to retrieve only a part of the Merkle-DAG (consisting of one or more chunk CIDs), the user needs to have these specific CIDs. In addition, you can use the root CID and path notation to access a file within the Merkle-DAG, e.g.  [Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN5/path/to/some/file.png](Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN5/path/to/some/file.png).
 
 **Q: Is a block immutable once it is assigned a CID?**
 
@@ -74,9 +74,9 @@ A: The CID as such is permanent and cannot be “undone” as it’s the hash of
 
 IPFS implements the concept of “denylists”. Every node can have its own denylist and check it before it makes its forwarding decisions. A node can also adopt the denylist of other peers or organisations - see more discussion on this below.
 
-**Q: Is there a way to check if a specific CID has been deleted (*i.e.* added to the denylist)?**
+**Q: Is there a way to check if a specific CID has been deleted (i.e. added to the denylist)?**
 
-A: Yes and no. The denylist maintained by Protocol Labs is accessible through the IPFS Gateway nodes. However, the denylist is structured such that users cannot see which CIDs are part of it. This is achieved by double-hashing the CIDs added to the denylist. Therefore, anyone can check if a specific CID is added to the denylist (*i.e.* if they have the CID they want to check against), but no one can actually see the list of CIDs in the denylist.
+A: Yes and no. The denylist maintained by Protocol Labs is accessible through the IPFS Gateway nodes. However, the denylist is structured such that users cannot see which CIDs are part of it. This is achieved by double-hashing the CIDs added to the denylist. Therefore, anyone can check if a specific CID is added to the denylist (i.e. if they have the CID they want to check against), but no one can actually see the list of CIDs in the denylist.
 
 **Q: Who maintains the revocation list/denylist? Are nodes doing routing independently of the denylist?**
 
@@ -108,7 +108,7 @@ A: When a node performs a look-up for an IPNS name on the DHT it retrieves recor
 
 **Q: If the nodes storing the  IPNS record go offline, then the IPNS record is lost and if someone does not update it within 24 hours then it cannot be served.**
 
-A: This is correct and the same also applies for the publisher of an IPFS record (*i.e.* an immutable CID). One of two things can happen:
+A: This is correct and the same also applies for the publisher of an IPFS record (i.e. an immutable CID). One of two things can happen:
 
 1. If the content has been requested and has been retrieved and cached by some other node then it can be served by the cache node.
 2. If one (or some) of the peers that have retrieved (and cached) the content decides that they want to keep on serving/providing this content, then they can “pin” it, which means that they become permanent providers for this content.
@@ -123,7 +123,7 @@ A: Yes, for what concerns content resolution and delivery within the next “gar
 
 **Q:  Are the gateways authenticated?**
 
-A: No. Any node can run a gateway. They are not authenticated. There is no reputation layer for gateways. Gateways are run by Protocol Labs, but also from external entities (*e.g.* [Cloudflare](https://blog.cloudflare.com/distributed-web-gateway/), [Infura](https://github.com/INFURA/tutorials/wiki/Introduction-to-IPFS), and others). If they decide to go rogue and not provide the right routing information there is nothing that the network will do.
+A: No. Any node can run a gateway. They are not authenticated. There is no reputation layer for gateways. Gateways are run by Protocol Labs, but also from external entities (e.g. [Cloudflare](https://blog.cloudflare.com/distributed-web-gateway/), [Infura](https://github.com/INFURA/tutorials/wiki/Introduction-to-IPFS), and others). If they decide to go rogue and not provide the right routing information there is nothing that the network will do.
 
 **Q: The need to keep republishing records is a single point of failure, the publisher needs to stay online and the ISP needs to provide connectivity. This is a big ask for normal content providers.  The IPNS links are not decentralised and are easy to censor - are you working on a solution?**
 
@@ -139,7 +139,7 @@ A: IPFS does not rely on DNS per se, as it has its own content resolution protoc
 
 **Q: There is nothing that the network between those peers can do to augment the performance? Is this correct?**
 
-A: Yes, this is correct. IPFS was designed on purpose to not rely on upgrades of ISPs’ infrastructure in order to operate. This does not mean, however, that it cannot use enhancements to in-network entities,*e.g.* in-network caching.
+A: Yes, this is correct. IPFS was designed on purpose to not rely on upgrades of ISPs’ infrastructure in order to operate. This does not mean, however, that it cannot use enhancements to in-network entities, e.g. in-network caching.
 
 **Q: In DHT you’re routing based on the overlay. There is no notion of vicinity.**
 
@@ -149,7 +149,7 @@ A: Yes, this is correct and it is a known disadvantage of most DHT implementatio
 
 A: No, topics are not represented by CIDs (although they could be). The pubsub protocol used currently, called [gossipsub](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub) is a topic-based pubsub system, not a content-based one.
 
-**Q: At the beginning of the talk you mentioned that the intention is to remove trust from the network (*i.e.* external entities). Can you elaborate? How do you trust that a piece of content is going to be published by some key?**
+**Q: At the beginning of the talk you mentioned that the intention is to remove trust from the network (i.e. external entities). Can you elaborate? How do you trust that a piece of content is going to be published by some key?**
 
 A: Naming content through its own hash and publishing it in a distributed P2P network inherently overcomes several of the issues related to putting trust into external entities, content hosting and content resolution entities. Content can be verified locally as it is self-certified. As long as content is signed by the private key of the publisher, then the content consumer can verify that the content is authentic without relying on external entities.
 
