@@ -76,11 +76,11 @@ IPFS implements the concept of “denylists”. Every node can have its own deny
 
 **Q: Is there a way to check if a specific CID has been deleted (i.e. added to the denylist)?**
 
-A: Yes and no. The denylist maintained by Protocol Labs is accessible through the IPFS Gateway nodes. However, the denylist is structured such that users cannot see which CIDs are part of it. This is achieved by double-hashing the CIDs added to the denylist. Therefore, anyone can check if a specific CID is added to the denylist (i.e. if they have the CID they want to check against), but no one can actually see the list of CIDs in the denylist.
+A: The denylist maintained by Protocol Labs is kept private at this point in time. However, the denylist can be structured such that users have access to the list, but cannot see which CIDs are part of it. This can be achieved by double-hashing the CIDs added to the denylist. In this case, anyone can check if a specific CID is added to the denylist (i.e. if they have the CID they want to check against), but no one can actually see the list of CIDs in the denylist.
 
 **Q: Who maintains the revocation list/denylist? Are nodes doing routing independently of the denylist?**
 
-A:  The denylist  of the Public IPFS Gateways that are maintained by Protocol Labs  is kept by Protocol Labs. The denylist  is accessible through the IPFS Gateways, subject to the double-hashing procedure mentioned above. However, we should highlight that anyone can run their own public gateway(s) on the public IPFS network and they can have their own denylist, which can be a replica of that kept by Protocol Labs or an entirely different one. In short, each individual or organisation running a gateway is free to choose what content they want to deny serving. Furthermore, if someone runs their own IPFS network, which is not part of the public IPFS network, then they have to maintain their own denylist.
+A: The denylist of the Public IPFS Gateways that are maintained by Protocol Labs is kept by Protocol Labs and is private. However, we should highlight that anyone can run their own public gateway(s) on the public IPFS network and they can have their own denylist. In short, each individual or organisation running a gateway is free to choose what content they want to deny serving.
 
 With regard to routing, normal DHT nodes are not obliged to check the denylist before they route/forward requests (although they can do so if they want). IPFS Gateways (both those operated by Protocol Labs and those that are not) check their own denylist before they forward requests and will therefore, not forward requests for denied content.
 
@@ -88,7 +88,7 @@ This is generally a complex issue with lots of non-strictly technical parameters
 
 **Q: The denylist does not seem to be part of the decentralised infrastructure.**
 
-A: Any individual or organisation can run a Public IPFS Gateway and operate their own denylist. In that sense, the (content of the) denylist is not dictated by a centralised entity. At this point, the denylist is mainly run by IPFS Gateways which can be run by anyone.
+A: Any individual or organisation can run a Public IPFS Gateway and operate their own denylist. In that sense, the (content of the) denylist is not dictated by a centralised entity.
 
 **Q: Where are IPNS records kept?**
 
