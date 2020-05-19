@@ -72,7 +72,7 @@ A: Yes, once the CID of a block/chunk is calculated it stays the same forever. T
 
 A: The CID as such is permanent and cannot be “undone” as it’s the hash of a particular piece of content (see comment on “Permanent Web” above). A user that no longer wishes to provide access to some content can simply stop “providing” that content, or in other words, stop publishing the corresponding provider record(s). This, however, does not mean that the content disappears from the network, as other peers that have retrieved the content might still have it in their cache and provide it.
 
-IPFS implements the concept of “denylists”. Every node can have its own denylist and check it before it makes its forwarding decisions. A node can also adopt the denylist of other peers or organisations - see more discussion on this below.
+As an additional note, the IPFS Gateway provided by Protocol Labs has a CID denylist. The CIDs in this list are double hashed for protection of the content and the IPFS Gateway checks if the content has been denied/blocked before serving it.
 
 **Q: Is there a way to check if a specific CID has been deleted (i.e. added to the denylist)?**
 
@@ -121,7 +121,7 @@ A: Peers that cache the content also publish provider records to the DHT to decl
 
 A: Yes, for what concerns content resolution and delivery within the next “garbage collection” period. After that, the cached content will expire, unless it is “pinned” (hence, permanently replicated until the user says otherwise) from the node. Note that at the time of writing, garbage collection is turned off by default.
 
-**Q:  Are the gateways authenticated?**
+**Q: Are the gateways authenticated?**
 
 A: No. Any node can run a gateway. They are not authenticated. There is no reputation layer for gateways. Gateways are run by Protocol Labs, but also from external entities (e.g. [Cloudflare](https://blog.cloudflare.com/distributed-web-gateway/), [Infura](https://github.com/INFURA/tutorials/wiki/Introduction-to-IPFS), and others). If they decide to go rogue and not provide the right routing information there is nothing that the network will do.
 
