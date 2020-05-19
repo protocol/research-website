@@ -84,7 +84,7 @@ SourceCred uses APIs of collaboration platforms to gather information about cont
 
 #### Weight parameters
 
-Because these plugins incorporate data from all sorts of contributions and output a single directed graph with weights (for nodes and edges), there needs to be a way to compare actions quantitatively (e.g., authoring a GitHub issue vs. responding or referencing it). To accomplish this, there’s a set of constants that determine weights for nodes and edges. For an example set of constants, see the below figure, captured from [sourcecred.io/cred/timeline/@sourcecred/](https://sourcecred.io/cred/timeline/@sourcecred/) (follow the link and click the “Show weight configuration” button).
+Because these plugins incorporate data from all sorts of contributions and output a single directed graph with weights (for nodes and edges), there needs to be a way to compare actions quantitatively (e.g., authoring a GitHub issue vs. responding or referencing it). To accomplish this, there’s a set of constants that determine weights for nodes and edges. For an example set of constants, see the below figure, captured from [sourcecred.io/cred/timeline/@sourcecred/](https://cred.sourcecred.io/timeline/@sourcecred/) (follow the link and click the “Show weight configuration” button).
 
 ![SourceCred weight sliders](sourcecred_weight_sliders.png)
 
