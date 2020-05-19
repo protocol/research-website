@@ -96,7 +96,7 @@ A: IPNS is using the same infrastructure as content routing, that is, the DHT. T
 
 **Q: You have to know exactly what you’re looking for. The DHT is good, but it’s difficult to know what is in there. Where does the binding between a CID and a real-world identity take place?**
 
-A: This has to happen externally. IPFS does provide such a mechanism. IPFS is providing, storing, and can fetch content of a particular CID; the rest has to be done externally to the system.
+A: This has to happen externally. IPFS does not provide such a mechanism. IPFS is providing, storing, and can fetch content of a particular CID; the rest has to be done externally to the system.
 
 **Q: If you put the name into the DHT and the name can point to different things that can be changed by different guys (good, bad), then this can be a big security problem.**
 
