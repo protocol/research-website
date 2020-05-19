@@ -16,7 +16,7 @@ authors:
   - "Francis O'Sullivan"
 tags:
 categories:
-research_areas:
+areas:
   - distributed-power-systems
 
 

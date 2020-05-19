@@ -32,11 +32,11 @@ authors:
   - michael-hammersley
 
 # Zero or more of the areas in content/research/areas
-research_areas:
+areas:
   - distributed-power-systems
 
 # Zero or more of the groups in content/research/groups (should match author membership)
-research_groups:
+groups:
   -
 
 # Publication pdf, should be in the same folder

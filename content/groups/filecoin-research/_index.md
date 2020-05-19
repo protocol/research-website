@@ -7,6 +7,9 @@ summary: "The purpose of Filecoin Research is to design the building blocks enab
 
 resources:
   - src: icon.png
+
+aliases:
+  - /research/groups/filecoin-research
 ---
 
 The purpose of Filecoin Research is to design the building blocks enabling Filecoin: a decentralized storage network. We work to prove Filecoin constructions correct and to improve them.

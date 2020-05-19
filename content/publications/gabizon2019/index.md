@@ -13,10 +13,10 @@ publication_types:
 authors:
   - ariel-gabizon
 tags:
-research_groups:
+groups:
   - filecoin-research
 categories:
-research_areas:
+areas:
   - cryptography
 
 url_source: https://eprint.iacr.org/2019/601

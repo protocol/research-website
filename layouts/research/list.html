@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="flex flex-col md:flex-row md:flex-wrap md:-mx-8 mb:12">
-    {{ range where (where .Site.Pages "Type" "research_groups") ".Kind" "==" "taxonomyTerm"}}
+    {{ range where (where .Site.Pages "Type" "groups") ".Kind" "==" "taxonomyTerm"}}
       {{ range .Pages }}
         {{ partial "research-taxonomy-card-half" .}}
       {{ end }}
@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="flex flex-col md:flex-row md:flex-wrap md:-mx-8">
-    {{ range where (where .Site.Pages "Type" "research_areas") ".Kind" "==" "taxonomyTerm"}}
+    {{ range where (where .Site.Pages "Type" "areas") ".Kind" "==" "taxonomyTerm"}}
       {{ range .Pages }}
         {{ partial "research-taxonomy-card-half" .}}
       {{ end }}

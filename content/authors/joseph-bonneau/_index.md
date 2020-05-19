@@ -3,7 +3,7 @@ name: "Joseph Bonneau"
 
 role:
 
-research_groups:
+groups:
 
 resources:
   - name: avatar

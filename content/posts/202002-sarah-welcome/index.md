@@ -14,11 +14,11 @@ categories:
   - news
   - team
 
-research_areas:
+areas:
   - distributed-systems
   - cryptography
 
-research_groups:
+groups:
   - filecoin-research
 
 draft: false

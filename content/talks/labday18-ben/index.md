@@ -17,10 +17,10 @@ venue_location: "San Francisco, CA, USA"
 # Taxonomies
 authors:
   - ben-fisch
-research_areas:
+areas:
   - cryptography
   - distributed-systems
-research_groups:
+groups:
   - filecoin-research
   
 resources:

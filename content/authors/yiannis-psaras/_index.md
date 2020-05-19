@@ -9,7 +9,7 @@ authors:
 # Role/position
 role: Research Scientist
 
-research_groups:
+groups:
   - resnetlab
 
 resources:

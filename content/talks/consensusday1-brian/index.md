@@ -16,10 +16,10 @@ venue_location: "Stanford, CA, USA"
 # Taxonomies
 authors:
   - brian-vohaska
-research_areas:
+areas:
   - cryptography
   - distributed-systems
-research_groups:
+groups:
 
 resources:
   - title: featured-image

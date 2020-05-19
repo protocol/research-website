@@ -10,8 +10,8 @@ taxonomies:
   category: categories
   publication_type: publication_types
   tag: tags
-  research_area: research_areas
-  research_group: research_groups
+  area: areas
+  group: groups
 params:
   DateForm: 2006.1.2
   Avatar: /images/pl_research_card.png
@@ -21,10 +21,10 @@ params:
   Locale: "en_US"
   TwitterUser: "@protocollabs"
 permalinks:
-  talks: /research/talks/:title/
-  publications: /research/publications/:title/
-  research_areas: /research/areas/:title/
-  research_groups: /research/groups/:title/
+  talks: /talks/:title/
+  publications: /publications/:title/
+  areas: /areas/:title/
+  groups: /groups/:title/
   posts: /blog/:year/:title/
 markup:
   goldmark:

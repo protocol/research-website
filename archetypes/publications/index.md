@@ -37,12 +37,12 @@ publication_types:
 authors:
   -
 
-# Zero or more of the areas in content/research/areas
-research_areas:
+# Zero or more of the areas in content/areas
+areas:
   -
 
-# Zero or more of the groups in content/research/groups (should match author membership)
-research_groups:
+# Zero or more of the groups in content/groups (should match author membership)
+groups:
   -
 
 # Publication pdf, should be in the same folder

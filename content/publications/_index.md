@@ -5,5 +5,6 @@ menu:
   main:
     parent: research
     weight: 4
-url: /research/publications       
+aliases:
+  - /research/publications
 ---

@@ -16,10 +16,10 @@ tags:
   -
 categories:
   -
-research_areas:
+areas:
   - cryptography
 
-research_groups:
+groups:
   - filecoin-research
 
 venue: Stanford Blockchain Conference

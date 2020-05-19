@@ -5,8 +5,8 @@ name:
 # Role/position (e.g. Research Scientist)
 role:
 
-# Existing research group (use folder name) or free text
-research_groups:
+# Zero or one of the groups in content/groups (or free text)
+groups:
   -
 
 # Avatar (no need to edit)

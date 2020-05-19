@@ -9,7 +9,7 @@ authors:
 # Role/position
 role: Research Advisor
 
-research_groups:
+groups:
   - filecoin-research
 
 resources:

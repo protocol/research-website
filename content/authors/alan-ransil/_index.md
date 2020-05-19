@@ -9,7 +9,7 @@ authors:
 # Roles/positions
 role: Research Scientist
 
-research_groups:
+groups:
   - "Independent Research"
 
 resources:
