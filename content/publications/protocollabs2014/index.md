@@ -11,7 +11,7 @@ authors:
 publication_types:
   - report
 groups:
-  - filecoin-research
+  - cryptolab
 categories:
   -
 areas:

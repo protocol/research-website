@@ -21,7 +21,7 @@ areas:
   - cryptography
   - distributed-systems
 groups:
-  - filecoin-research
+  - cryptolab
   
 resources:
   - title: featured-image

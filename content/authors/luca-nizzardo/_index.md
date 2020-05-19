@@ -7,7 +7,7 @@ name: Luca Nizzardo
 role: Research Scientist
 
 groups:
-  - filecoin-research
+  - cryptolab
 
 resources:
   - name: avatar
