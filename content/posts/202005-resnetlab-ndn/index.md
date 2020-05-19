@@ -131,10 +131,7 @@ Yes, publishers need to be online in order to have their content live, although 
 
 **Q: The need to keep republishing IPNS records is a single point of failure, the publisher needs to stay online and the ISP needs to provide connectivity. This is a big ask for normal content providers and make IPNS records censorable - are you working on a solution?**
 
-A: Yes, publishers need to be online in order to have their IPNS records stay alive, although this will change soon to enable peers to keep the records alive, even if the original publisher is offline. [Maybe add some comment about pinning services being useful, or add a separate Q/A that allows us to explain that pinning services are useful even in a decentralized world]
-
-A: IPNS is a modular name system. In its pure form, it is a record that is signed and that has an immutable pointer (CID). You can use IPNS over DHT, or pubsub, as discussed, but there are also other implementations (see Namecoin, or ETH.link).
-It all comes down to having one primitive that applications can rely on (to publish, get) and then have different implementations that provide different guarantees to the user. It really comes down to applications defining their own router implementations and seeing if the performance satisfies the application’s users.
+A: Yes, publishers need to be online in order to have their IPNS records stay alive, although this will change soon to enable peers to keep the records alive, even if the original publisher is offline.
 
 **Q: IPFS relies on DNS and therefore IPFS can only always be an overlay. Can IPFS route over the link layer?**
 
