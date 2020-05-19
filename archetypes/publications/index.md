@@ -37,11 +37,11 @@ publication_types:
 authors:
   -
 
-# Zero or more of the areas in content/research/areas
+# Zero or more of the areas in content/areas
 areas:
   -
 
-# Zero or more of the groups in content/research/groups (should match author membership)
+# Zero or more of the groups in content/groups (should match author membership)
 groups:
   -
 

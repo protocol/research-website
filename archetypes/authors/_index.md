@@ -5,7 +5,7 @@ name:
 # Role/position (e.g. Research Scientist)
 role:
 
-# Existing research group (use folder name) or free text
+# Zero or one of the groups in content/groups (or free text)
 groups:
   -
 
