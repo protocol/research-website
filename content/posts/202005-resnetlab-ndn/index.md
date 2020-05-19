@@ -78,14 +78,6 @@ IPFS implements the concept of “denylists”. Every node can have its own deny
 
 A: You can attempt to resolve the CID using the IPFS Gateway maintained by Protocol Labs (gateway.ipfs.io) and get the HTTP response code, which will inform you if it has been denied or not. The denylist maintained by Protocol Labs is kept private at this point in time. 
 
-**Q: Who maintains the revocation list/denylist? Are nodes doing routing independently of the denylist?**
-
-A: The denylist of the Public IPFS Gateways that are maintained by Protocol Labs is kept by Protocol Labs and is private. However, we should highlight that anyone can run their own public gateway(s) on the public IPFS network and they can have their own denylist. In short, each individual or organisation running a gateway is free to choose what content they want to deny serving.
-
-With regard to routing, normal DHT nodes are not obliged to check the denylist before they route/forward requests (although they can do so if they want). IPFS Gateways (both those operated by Protocol Labs and those that are not) check their own denylist before they forward requests and will therefore, not forward requests for denied content.
-
-This is generally a complex issue with lots of non-strictly technical parameters, which could end up breaking the system. For example, if people in specific regions were to get their deny lists from central authorities like governments then the following could happen: a user could advertise on the global network that he has some content. The advertisement, however, would be rejected if the peers that Kademlia tells the user to put them to are all in a governmental region that bans this particular content, despite the fact that the content is perfectly acceptable in the original user’s region.
-
 **Q: The denylist does not seem to be part of the decentralised infrastructure.**
 
 A: Any individual or organisation can run a Public IPFS Gateway and operate their own denylist. In that sense, the (content of the) denylist is not dictated by a centralised entity.
