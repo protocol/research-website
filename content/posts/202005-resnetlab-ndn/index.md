@@ -76,7 +76,7 @@ IPFS implements the concept of “denylists”. Every node can have its own deny
 
 **Q: Is there a way to check if a specific CID has been deleted (i.e. added to the denylist)?**
 
-A: The denylist maintained by Protocol Labs is kept private at this point in time. However, the denylist can be structured such that users have access to the list, but cannot see which CIDs are part of it. This can be achieved by double-hashing the CIDs added to the denylist. In this case, anyone can check if a specific CID is added to the denylist (i.e. if they have the CID they want to check against), but no one can actually see the list of CIDs in the denylist.
+A: You can attempt to resolve the CID using the IPFS Gateway maintained by Protocol Labs (gateway.ipfs.io) and get the HTTP response code, which will inform you if it has been denied or not. The denylist maintained by Protocol Labs is kept private at this point in time. 
 
 **Q: Who maintains the revocation list/denylist? Are nodes doing routing independently of the denylist?**
 
