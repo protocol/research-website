@@ -2,7 +2,7 @@
 title:
 date: 2019-09-02T14:20:06+01:00
 
-type: research_areas
+type: areas
 taxonomyName: applied-category-theory
 
 resources:

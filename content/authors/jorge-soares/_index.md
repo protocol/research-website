@@ -9,7 +9,7 @@ authors:
 # Role/position
 role: Research Program Manager
 
-research_groups:
+groups:
 
 resources:
   - name: avatar

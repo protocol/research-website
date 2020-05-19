@@ -11,10 +11,10 @@ authors:
   - nicola-greco
 publication_types:
   - report
-research_areas:
+areas:
   - cryptography
   - distributed-systems  
-research_groups:
+groups:
   - filecoin-research
 categories:
 

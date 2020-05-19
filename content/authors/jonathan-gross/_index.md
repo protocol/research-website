@@ -9,7 +9,7 @@ authors:
 # Role/position
 role: Research Administrator
 
-research_groups:
+groups:
 
 resources:
   - name: avatar

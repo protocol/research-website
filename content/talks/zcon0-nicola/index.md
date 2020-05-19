@@ -17,9 +17,9 @@ venue_location: "Montréal, Canada"
 # Taxonomies
 authors:
   - nicola-greco
-research_areas:
+areas:
   - cryptography
-research_groups:
+groups:
   - filecoin-research
 
 resources:

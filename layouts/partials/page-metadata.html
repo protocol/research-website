@@ -30,13 +30,13 @@
 {{ end }}
 
 
-{{ if (and .Params.research_groups (partial "func/has-values" .Params.research_groups)) }}
+{{ if (and .Params.groups (partial "func/has-values" .Params.groups)) }}
   <div class="text-sm text-gray-700">
     <img class="inline-block mr-2" src="/images/icon/group.png">
-    {{ $taxonomy := "research_groups" }}
+    {{ $taxonomy := "groups" }}
     {{ with .Param $taxonomy }}
       {{ range $index, $value := . }}
-        {{- $profile_page := site.GetPage (printf "/research_groups/%s" (. | urlize)) -}}
+        {{- $profile_page := site.GetPage (printf "/groups/%s" (. | urlize)) -}}
         {{- $name := $profile_page.Title | default ($value|markdownify) -}}
         {{- if gt $index 0 }}, {{ end -}}
         <span class="inline-block mb-0">
@@ -54,13 +54,13 @@
 {{ end }}
 
 
-{{ if (and .Params.research_areas (partial "func/has-values" .Params.research_areas)) }}
+{{ if (and .Params.areas (partial "func/has-values" .Params.areas)) }}
   <div class="text-sm text-gray-700">
     <img class="inline-block mr-2" src="/images/icon/tag.svg">
-    {{ $taxonomy := "research_areas" }}
+    {{ $taxonomy := "areas" }}
     {{ with .Param $taxonomy }}
       {{ range $index, $value := . }}
-        {{- $profile_page := site.GetPage (printf "/research_areas/%s" (. | urlize)) -}}
+        {{- $profile_page := site.GetPage (printf "/areas/%s" (. | urlize)) -}}
         {{- $name := $profile_page.Title | default ($value|markdownify) -}}
         {{- if gt $index 0 }}, {{ end -}}
         <span class="inline-block mb-0">

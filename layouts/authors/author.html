@@ -21,9 +21,9 @@
         <p class="text-center md:text-left text-sm leading-tight mb-2">
           <span>{{- .Params.role -}}</span>
 
-          {{ range (index .Params "research_groups")}}
+          {{ range (index .Params "groups")}}
             <span>/</span>
-            {{ with $.Site.GetPage "taxonomyTerm" (printf "research/groups/%s" (urlize . )) }}
+            {{ with $.Site.GetPage "taxonomyTerm" (printf "/groups/%s" (urlize . )) }}
               <a href="{{ .RelPermalink }}" class="inline-block hover:text-blue hover:underline capitalize">
                 {{ .Title }}
               </a>

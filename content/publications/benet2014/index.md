@@ -9,10 +9,10 @@ authors:
   - juan-benet
 publication_types:
   - report
-research_groups:
+groups:
   - 
 categories:
-research_areas:
+areas:
   - distributed-systems
 
 journal:

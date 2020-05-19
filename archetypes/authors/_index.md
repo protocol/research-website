@@ -6,7 +6,7 @@ name:
 role:
 
 # Existing research group (use folder name) or free text
-research_groups:
+groups:
   -
 
 # Avatar (no need to edit)

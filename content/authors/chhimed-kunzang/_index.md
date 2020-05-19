@@ -3,7 +3,7 @@ name: "Chhi'mèd Künzang"
 
 role: Research Engineer
 
-research_groups:
+groups:
   - filecoin-research
 
 resources:

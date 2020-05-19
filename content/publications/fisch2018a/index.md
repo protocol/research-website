@@ -10,10 +10,10 @@ publication_types:
   - report
 authors:
   - ben-fisch
-research_groups:
+groups:
   - filecoin-research
 categories:
-research_areas:
+areas:
   - cryptography
   - distributed-systems
 

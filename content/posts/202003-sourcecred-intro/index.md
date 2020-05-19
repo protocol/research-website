@@ -13,10 +13,10 @@ authors:
 categories:
   - blog
 
-research_areas:
+areas:
   -
 
-research_groups:
+groups:
   -
 
 draft: false
