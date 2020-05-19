@@ -62,7 +62,7 @@ The InterPlanetary Naming System (IPNS, discussed in greater detail below) and i
 
 **Q: Do I need to have the entire structure of the merkle tree in order to retrieve a part of it? The root CID does not seem to be enough, if I want to retrieve only part of a file.**
 
-A: A user does not need to have the entire structure of the Merkle-DAG in order to retrieve a part of it. In order to retrieve only a part of the Merkle-DAG (consisting of one or more chunk CIDs), the user needs to have these specific CIDs. In addition, you can use the root CID and path notation to access a file within the Merkle-DAG, e.g.  [Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN5/path/to/some/file.png](Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN5/path/to/some/file.png).
+A: A user does not need to have the entire structure of the Merkle-DAG in order to retrieve a part of it. In order to retrieve only a part of the Merkle-DAG (consisting of one or more chunk CIDs), the user needs to have these specific CIDs. In addition, you can use the root CID and path notation to access a file within the Merkle-DAG, e.g.  Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN5/path/to/some/file.png.
 
 **Q: Is a block immutable once it is assigned a CID?**
 
