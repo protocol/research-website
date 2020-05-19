@@ -125,12 +125,13 @@ A: Yes, for what concerns content resolution and delivery within the next “gar
 
 A: No. Any node can run a gateway. They are not authenticated. There is no reputation layer for gateways. Gateways are run by Protocol Labs, but also from external entities (e.g. [Cloudflare](https://blog.cloudflare.com/distributed-web-gateway/), [Infura](https://github.com/INFURA/tutorials/wiki/Introduction-to-IPFS), and others). If they decide to go rogue and not provide the right routing information there is nothing that the network will do.
 
-**Q: The need to keep republishing records is a single point of failure, the publisher needs to stay online and the ISP needs to provide connectivity. This is a big ask for normal content providers.  The IPNS links are not decentralised and are easy to censor - are you working on a solution?**
+**Q: The need to keep republishing records is a single point of failure, the publisher needs to stay online and the ISP needs to provide connectivity. This is a big ask for normal content providers.** 
 
-A: Yes, publishers need to be online in order to have their content live, although this will change soon to enable peers to keep records alive, even if the original publisher is offline. This will become different when integration with FIL happens, where data will persist for as long as the agreement lasts. In addition, it is worth noting two things:
+Yes, publishers need to be online in order to have their content live, although this will change soon to enable peers to keep records alive, even if the original publisher is offline. There are services, known as Pinning Services, that users can rely on to keep its content available on the network.
 
-1. IPFS is a stack, not a product  in itself. Others are building products on top of it in order to provide these services.
-2. IPNS is very modular. You have a record that is signed and points to an immutable record.  You can use IPNS over DHT, or pubsub, as discussed, but there are also other implementations (see Namecoin, or ETH.link).
+**Q: The IPNS links are not decentralised and are easy to censor - are you working on a solution?**
+
+A: IPNS is a modular name system. In its pure form, it is a record that is signed and that has an immutable pointer (CID). You can use IPNS over DHT, or pubsub, as discussed, but there are also other implementations (see Namecoin, or ETH.link).
 It all comes down to having one primitive that applications can rely on (to publish, get) and then have different implementations that provide different guarantees to the user. It really comes down to applications defining their own router implementations and seeing if the performance satisfies the application’s users.
 
 **Q: IPFS relies on DNS and therefore IPFS can only always be an overlay. Can IPFS route over the link layer?**
