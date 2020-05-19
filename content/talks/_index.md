@@ -6,5 +6,6 @@ menu:
     parent: "research"
     identifier: "talks"
     weight: 3
-url: /research/talks    
+aliases:
+    - /research/talks
 ---

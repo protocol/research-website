@@ -7,5 +7,6 @@ menu:
     identifier: groups
     weight: 1
     name: Groups
-url: /research/groups
+aliases:
+  - /research/groups
 ---

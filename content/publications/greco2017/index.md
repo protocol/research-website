@@ -10,11 +10,11 @@ publication_types:
   - thesis
 authors:
   - nicola-greco
-research_groups:
-  - cryptolab
+groups:
+  - filecoin-research
 categories:
   - 
-research_areas:
+areas:
   - cryptography
   - distributed-systems
 

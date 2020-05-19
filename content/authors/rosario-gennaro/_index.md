@@ -6,8 +6,8 @@ name: Rosario Gennaro
 role: Research Advisor
 
 # Existing research group (use folder name) or free text
-research_groups:
-  - cryptolab
+groups:
+  - filecoin-research
 
 # Avatar (no need to edit)
 resources:

@@ -7,6 +7,10 @@ summary: "The mission of the Resilient Networks Lab is to build resilient distri
 
 resources:
   - src: icon.png
+
+aliases:
+  - /research/groups/resnetlab
+
 ---
 
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" width="250px" >}}</center>
@@ -37,5 +41,5 @@ The lab's genesis comes from a need present in the IPFS and libp2p projects to a
 
 ## Team
 
-- [David Dias](http://daviddias.me)
-- [Yiannis Psaras](https://www.ee.ucl.ac.uk/~uceeips)
+- [David Dias](/authors/david-dias/)
+- [Yiannis Psaras](/authors/yiannis-psaras/)

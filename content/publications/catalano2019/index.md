@@ -40,12 +40,12 @@ authors:
   - irene-giacomelli
 
 # Zero or more of the areas in content/research/areas
-research_areas:
+areas:
   - cryptography
 
 # Zero or more of the groups in content/research/groups (should match author membership)
-research_groups:
-  - cryptolab
+groups:
+  - filecoin-research
 
 # Not generally used
 # featured: false

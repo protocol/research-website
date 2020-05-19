@@ -14,10 +14,10 @@ categories:
   - news
   - team
 
-research_areas:
+areas:
   - distributed-systems
 
-research_groups:
+groups:
   - resnetlab
 
 draft: false

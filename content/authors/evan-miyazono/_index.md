@@ -9,7 +9,7 @@ authors:
 # Role/position
 role: Research Team Lead
 
-research_groups:
+groups:
 
 resources:
   - name: avatar

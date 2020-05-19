@@ -17,10 +17,10 @@ venue_location: "Stanford, CA, USA"
 # Taxonomies
 authors:
   - henri-stern
-research_areas:
+areas:
   - distributed-systems
-research_groups:
-  - cryptolab
+groups:
+  - filecoin-research
   
 resources:
   - title: featured-image

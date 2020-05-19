@@ -3,7 +3,7 @@
 name: "Ben Fisch"
 role:
 
-research_groups:
+groups:
 
 resources:
   - name: avatar

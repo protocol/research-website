@@ -13,10 +13,10 @@ authors:
 categories:
   - news
 
-research_areas:
+areas:
   - knowledge-engineering
 
-research_groups:
+groups:
   -
 
 draft: false

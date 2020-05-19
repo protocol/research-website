@@ -11,7 +11,7 @@ authors:
   - david-dalrymple
 tags:
 categories:
-research_areas:
+areas:
   - applied-category-theory
 journal:
 

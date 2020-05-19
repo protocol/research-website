@@ -14,7 +14,7 @@ authors:
 tags:
 categories:
   -
-research_areas:
+areas:
   - knowledge-engineering
 
 venue: Metascience Symposium

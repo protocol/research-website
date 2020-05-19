@@ -9,8 +9,8 @@ authors:
 # Role/position
 role: Research Scientist
 
-research_groups:
-  - cryptolab
+groups:
+  - filecoin-research
 
 resources:
   - name: avatar
@@ -40,7 +40,7 @@ social:
 email:
 
 user_groups:
-  - Alumni
+  - Researchers
 
 # For display at the top of the author details page
 quote:

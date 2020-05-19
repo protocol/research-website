@@ -9,8 +9,8 @@ authors:
 # Role/position
 role: Research Engineer
 
-research_groups:
-  - cryptolab
+groups:
+  - filecoin-research
 
 resources:
   - name: avatar

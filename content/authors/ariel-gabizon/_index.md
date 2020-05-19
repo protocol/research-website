@@ -9,8 +9,8 @@ authors:
 # Role/position
 role: Research Advisor
 
-research_groups:
-  - cryptolab
+groups:
+  - filecoin-research
 
 resources:
   - name: avatar

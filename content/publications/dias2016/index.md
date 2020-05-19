@@ -14,13 +14,13 @@ authors:
 publication_types:
   - tutorial
 
-research_groups:
+groups:
   -
 
 categories:
   -
 
-research_areas:
+areas:
   - distributed-systems
 
 url_source: https://link.springer.com/chapter/10.1007%2F978-3-319-38791-8_60

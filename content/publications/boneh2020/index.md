@@ -39,11 +39,11 @@ tags:
 categories:
   -
 
-research_areas:
+areas:
   - cryptography
 
-research_groups:
-  - cryptolab
+groups:
+  - filecoin-research
 
 featured: false
 

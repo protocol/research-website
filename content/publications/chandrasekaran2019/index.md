@@ -41,12 +41,12 @@ authors:
   - "Songbai Yan"
 
 # Zero or more of the areas in content/research/areas
-research_areas:
+areas:
   -
 
 # Zero or more of the groups in content/research/groups (should match author membership)
-research_groups:
-  - cryptolab
+groups:
+  - filecoin-research
 
 # Not generally used
 # featured: false

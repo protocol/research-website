@@ -15,10 +15,10 @@ venue_location: "Stanford, CA, USA"
 # Taxonomies
 authors:
   - ben-fisch
-research_areas:
+areas:
   - cryptography
   - distributed-systems
-research_groups:
+groups:
 
 resources:
   - title: featured-image

@@ -11,9 +11,9 @@ authors:
 tags: Networks, Research
 categories:
   - news
-research_areas:
+areas:
   - distributed-systems
-research_groups:
+groups:
   - resnetlab
 
 aliases:

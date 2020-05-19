@@ -7,5 +7,6 @@ menu:
     identifier: areas
     weight: 2
     name: Areas
-url: /research/areas
+aliases:
+  - /research/areas
 ---

@@ -12,12 +12,12 @@ categories:
   - news
   - team
 
-research_areas:
+areas:
   - distributed-systems
   - cryptography
 
-research_groups:
-  - cryptolab
+groups:
+  - filecoin-research
 
 draft: false
 

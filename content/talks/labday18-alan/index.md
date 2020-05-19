@@ -17,9 +17,9 @@ venue_location: "San Francisco, CA, USA"
 # Taxonomies
 authors:
   - alan-ransil
-research_areas:
+areas:
   - distributed-power-systems
-research_groups:
+groups:
 
 resources:
   - title: featured-image

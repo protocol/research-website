@@ -14,10 +14,10 @@ categories:
   - news
   - grants
 
-research_areas:
+areas:
   -
 
-research_groups:
+groups:
   -
 
 draft: false
