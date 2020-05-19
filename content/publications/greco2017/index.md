@@ -11,7 +11,7 @@ publication_types:
 authors:
   - nicola-greco
 groups:
-  - filecoin-research
+  - cryptolab
 categories:
   - 
 areas:

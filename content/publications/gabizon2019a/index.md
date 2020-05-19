@@ -20,7 +20,7 @@ areas:
   - cryptography
 
 groups:
-  - filecoin-research
+  - cryptolab
 
 venue: Stanford Blockchain Conference
 venue_location: Stanford, CA, USA

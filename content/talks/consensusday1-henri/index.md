@@ -20,7 +20,7 @@ authors:
 areas:
   - distributed-systems
 groups:
-  - filecoin-research
+  - cryptolab
   
 resources:
   - title: featured-image

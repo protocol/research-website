@@ -17,7 +17,7 @@ areas:
   - cryptography
 
 groups:
-  - filecoin-research
+  - cryptolab
 
 draft: false
 

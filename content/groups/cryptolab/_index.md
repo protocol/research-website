@@ -9,7 +9,7 @@ resources:
   - src: icon.png
 
 aliases:
-  - /research/groups/filecoin-research
+  - /research/groups/cryptolab
 ---
 
 The purpose of CryptoLab is to develop and apply new cryptographic tools to secure computation and communication systems.  Much of the past and current work includes designing, proving, and improving the building blocks enabling Filecoin: a decentralized storage network.

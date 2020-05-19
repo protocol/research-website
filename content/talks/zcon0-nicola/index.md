@@ -20,7 +20,7 @@ authors:
 areas:
   - cryptography
 groups:
-  - filecoin-research
+  - cryptolab
 
 resources:
   - title: featured-image

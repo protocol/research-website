@@ -14,7 +14,7 @@ authors:
   - ariel-gabizon
 tags:
 groups:
-  - filecoin-research
+  - cryptolab
 categories:
 areas:
   - cryptography

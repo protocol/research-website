@@ -15,7 +15,7 @@ areas:
   - cryptography
   - distributed-systems  
 groups:
-  - filecoin-research
+  - cryptolab
 categories:
 
 journal:

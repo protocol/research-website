@@ -19,13 +19,13 @@ areas:
   - cryptography
 
 groups:
-  - filecoin-research
+  - cryptolab
 
 draft: false
 
 ---
 
-[Sarah](/authors/sarah-azouvi/) joins us from the [Information Security Group](http://sec.cs.ucl.ac.uk/home/) at [University College London](http://www.cs.ucl.ac.uk/), where she did [research on consensus](https://scholar.google.co.uk/citations?user=06C63r0AAAAJ&hl=en) and worked towards her forthcoming PhD in Computer Science. During her studies, she collaborated with Protocol Labs and was also an intern at [Calibra](https://www.calibra.com/). Sarah is now part of the [Filecoin Research](/research/groups/filecoin-research/) team. Here's what Sarah had to say:
+[Sarah](/authors/sarah-azouvi/) joins us from the [Information Security Group](http://sec.cs.ucl.ac.uk/home/) at [University College London](http://www.cs.ucl.ac.uk/), where she did [research on consensus](https://scholar.google.co.uk/citations?user=06C63r0AAAAJ&hl=en) and worked towards her forthcoming PhD in Computer Science. During her studies, she collaborated with Protocol Labs and was also an intern at [Calibra](https://www.calibra.com/). Sarah is now part of the [Filecoin Research](/research/groups/cryptolab/) team. Here's what Sarah had to say:
 
 **What path brought you to PL?**
 

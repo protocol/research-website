@@ -11,7 +11,7 @@ publication_types:
 authors:
   - protocol-labs
 groups:
-  - filecoin-research
+  - cryptolab
 categories:
   -
 areas:

@@ -48,7 +48,7 @@ areas:
   - distributed-systems
 
 groups:
-  - filecoin-research
+  - cryptolab
 
 featured: false
 

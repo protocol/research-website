@@ -7,7 +7,7 @@ role: Research Advisor
 
 # Existing research group (use folder name) or free text
 groups:
-  - filecoin-research
+  - cryptolab
 
 # Avatar (no need to edit)
 resources:
