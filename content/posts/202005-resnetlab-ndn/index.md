@@ -92,7 +92,7 @@ A: Any individual or organisation can run a Public IPFS Gateway and operate thei
 
 **Q: Where are IPNS records kept?**
 
-A: IPNS is using the same infrastructure as content routing, that is, the DHT. The multi-hash of the public key of a peer is registered on the DHT to point to mutable content. There are also other ways to distribute IPNS records: a pubsub protocol called gossipsub  ([spec](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub), [techrep](https://research.protocol.ai/posts/201912-resnetlab-launch/PL-TechRep-gossipsub-v0.1-Dec30.pdf), [recent talk](https://research.protocol.ai/posts/202004-matrix-virtual-meetup-gossipsub/)) is being used for this purpose, as a faster way to distribute IPNS records. As mentioned earlier, the difference between IPNS over PubSub vs DHT is the push (PubSub) vs pull (DHT) model.
+A: IPNS is using the same infrastructure as content routing, that is, the DHT. The multi-hash of the public key of a peer is registered on the DHT to point to mutable content. There are also other ways to distribute IPNS records: a pubsub protocol called gossipsub  ([spec](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub), [techrep](/blog/2019/a-new-lab-for-resilient-networks-research/PL-TechRep-gossipsub-v0.1-Dec30.pdf), [recent talk](https://research.protocol.ai/posts/202004-matrix-virtual-meetup-gossipsub/)) is being used for this purpose, as a faster way to distribute IPNS records. As mentioned earlier, the difference between IPNS over PubSub vs DHT is the push (PubSub) vs pull (DHT) model.
 
 **Q: You have to know exactly what you’re looking for. The DHT is good, but it’s difficult to know what is in there. Where does the binding between a CID and a real-world identity take place?**
 
