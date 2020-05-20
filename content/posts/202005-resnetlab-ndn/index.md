@@ -135,7 +135,9 @@ It all comes down to having one primitive that applications can rely on (to publ
 
 **Q: IPFS relies on DNS and therefore IPFS can only always be an overlay. Can IPFS route over the link layer?**
 
-A: IPFS does not rely on DNS per se, as it has its own content resolution protocol (see discussion on IPNS). [DNSLlink](https://dnslink.io/), which is a mechanism outside of the IPFS protocol that is used by the IPFS implementation, uses DNS to register human-readable names and link them to CIDs - DNSLink does rely on DNS. But it is correct to say that IPFS cannot route over the link layer.
+A: IPFS does not rely on DNS. Instead, we support an extension, [DNSLlink](https://dnslink.io/), which is a mechanism outside of the IPFS protocol that can used by IPFS implementations to register human-readable names and link them to CIDs, IPNS or even other DNSLinks. DNSLink does rely on DNS, but is an optional addition and users are free to use decentralized domain names like [ENS](https://ens.domains/) or [Unstoppable Domains](https://unstoppabledomains.com/) instead. 
+
+With regards to routing over the link layer, IPFS currently doesn't leverage the routing at the link layer to optimize its data transfers, but it does have plans to do so in the future.
 
 **Q: There is nothing that the network between those peers can do to augment the performance? Is this correct?**
 
