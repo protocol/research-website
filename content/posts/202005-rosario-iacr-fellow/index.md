@@ -22,8 +22,8 @@ areas:
   - cryptography
 
 # Zero or more of the groups in content/research/groups (should match author membership)
-research_groups:
-  -
+groups:
+  - cryptolab
 
 # Not used
 draft: false
