@@ -5,9 +5,6 @@ name: "Marten Seemann"
 # Role/position (e.g. Research Scientist)
 role: "Software Engineer"
 
-# Zero or one of the groups in content/groups (or free text)
-groups: "Protocol Labs"
-  -
 
 # Avatar (no need to edit)
 resources:
