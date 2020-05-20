@@ -6,7 +6,7 @@ name: "Marten Seemann"
 role: "Software Engineer"
 
 # Zero or one of the groups in content/groups (or free text)
-groups:
+groups: "Protocol Labs"
   -
 
 # Avatar (no need to edit)
