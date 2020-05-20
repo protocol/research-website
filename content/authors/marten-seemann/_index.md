@@ -3,7 +3,7 @@
 name: "Marten Seemann"
 
 # Role/position (e.g. Research Scientist)
-role: "Software Engineer"
+role: "Research Engineer"
 
 
 # Avatar (no need to edit)
