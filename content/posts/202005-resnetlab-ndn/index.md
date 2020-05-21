@@ -62,7 +62,7 @@ The InterPlanetary Naming System (IPNS, discussed in greater detail below) and i
 
 **Q: Do I need to have the entire structure of the merkle tree in order to retrieve a part of it? The root CID does not seem to be enough, if I want to retrieve only part of a file.**
 
-A: A user does not need to have the entire structure of the Merkle-DAG in order to retrieve a part of it. In order to retrieve only a part of the Merkle-DAG (consisting of one or more chunk CIDs), the user needs to have these specific CIDs. In addition, you can use the root CID and path notation to access a file within the Merkle-DAG, e.g.  [Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN5/path/to/some/file.png](Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN5/path/to/some/file.png).
+A: A user does not need to have the entire structure of the Merkle-DAG in order to retrieve a part of it. In order to retrieve only a part of the Merkle-DAG (consisting of one or more chunk CIDs), the user needs to have these specific CIDs. In addition, you can use the root CID and path notation to access a file within the Merkle-DAG, e.g.  Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN5/path/to/some/file.png.
 
 **Q: Is a block immutable once it is assigned a CID?**
 
@@ -72,23 +72,15 @@ A: Yes, once the CID of a block/chunk is calculated it stays the same forever. T
 
 A: The CID as such is permanent and cannot be “undone” as it’s the hash of a particular piece of content (see comment on “Permanent Web” above). A user that no longer wishes to provide access to some content can simply stop “providing” that content, or in other words, stop publishing the corresponding provider record(s). This, however, does not mean that the content disappears from the network, as other peers that have retrieved the content might still have it in their cache and provide it.
 
-IPFS implements the concept of “denylists”. Every node can have its own denylist and check it before it makes its forwarding decisions. A node can also adopt the denylist of other peers or organisations - see more discussion on this below.
+As an additional note, the IPFS Gateway provided by Protocol Labs has a CID denylist. The CIDs in this list are double hashed for protection of the content and the IPFS Gateway checks if the content has been denied/blocked before serving it.
 
-**Q: Is there a way to check if a specific CID has been deleted (i.e. added to the denylist)?**
+**Q: Is there a way to check if a specific CID has been deleted (i.e. added to a denylist)?**
 
-A: Yes and no. The denylist maintained by Protocol Labs is accessible through the IPFS Gateway nodes. However, the denylist is structured such that users cannot see which CIDs are part of it. This is achieved by double-hashing the CIDs added to the denylist. Therefore, anyone can check if a specific CID is added to the denylist (i.e. if they have the CID they want to check against), but no one can actually see the list of CIDs in the denylist.
-
-**Q: Who maintains the revocation list/denylist? Are nodes doing routing independently of the denylist?**
-
-A:  The denylist  of the Public IPFS Gateways that are maintained by Protocol Labs  is kept by Protocol Labs. The denylist  is accessible through the IPFS Gateways, subject to the double-hashing procedure mentioned above. However, we should highlight that anyone can run their own public gateway(s) on the public IPFS network and they can have their own denylist, which can be a replica of that kept by Protocol Labs or an entirely different one. In short, each individual or organisation running a gateway is free to choose what content they want to deny serving. Furthermore, if someone runs their own IPFS network, which is not part of the public IPFS network, then they have to maintain their own denylist.
-
-With regard to routing, normal DHT nodes are not obliged to check the denylist before they route/forward requests (although they can do so if they want). IPFS Gateways (both those operated by Protocol Labs and those that are not) check their own denylist before they forward requests and will therefore, not forward requests for denied content.
-
-This is generally a complex issue with lots of non-strictly technical parameters, which could end up breaking the system. For example, if people in specific regions were to get their deny lists from central authorities like governments then the following could happen: a user could advertise on the global network that he has some content. The advertisement, however, would be rejected if the peers that Kademlia tells the user to put them to are all in a governmental region that bans this particular content, despite the fact that the content is perfectly acceptable in the original user’s region.
+A: To check whether a CID is on a given Gateway's denylist, you can attempt to resolve the CID on the Gateway and get the HTTP response code, which will inform you if it has been denied or not. Each denylist is maintained by the operating organization separately - there is no global denylist for the whole IPFS Network.
 
 **Q: The denylist does not seem to be part of the decentralised infrastructure.**
 
-A: Any individual or organisation can run a Public IPFS Gateway and operate their own denylist. In that sense, the (content of the) denylist is not dictated by a centralised entity. At this point, the denylist is mainly run by IPFS Gateways which can be run by anyone.
+A: Any individual or organisation can run a Public IPFS Gateway and operate their own denylist. In that sense, the (content of the) denylist is not dictated by a centralised entity.
 
 **Q:  Are the gateways authenticated?**
 
@@ -129,7 +121,9 @@ In IPNS, default configuration requires the content publisher (or a delegate wit
 
 **Q: IPFS relies on DNS and therefore IPFS can only always be an overlay. Can IPFS route over the link layer?**
 
-A: IPFS does not rely on DNS per se, as it has its own content resolution protocol (see discussion on IPNS). [DNSLlink](https://dnslink.io/), which is a mechanism outside of the IPFS protocol that is used by the IPFS implementation, uses DNS to register human-readable names and link them to CIDs - DNSLink does rely on DNS. But it is correct to say that IPFS cannot route over the link layer.
+A: IPFS does not rely on DNS. Instead, we support an extension, [DNSLlink](https://dnslink.io/), which is a mechanism outside of the IPFS protocol that can used by IPFS implementations to register human-readable names and link them to CIDs, IPNS or even other DNSLinks. DNSLink does rely on DNS, but is an optional addition and users are free to use decentralized domain names like [ENS](https://ens.domains/) or [Unstoppable Domains](https://unstoppabledomains.com/) instead. 
+
+With regards to routing over the link layer, IPFS currently doesn't leverage the routing at the link layer to optimize its data transfers, but it does have plans to do so in the future.
 
 **Q: Do peers need to make any infra changes to augment network performance?**
 

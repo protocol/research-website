@@ -37,7 +37,7 @@ areas:
   - cryptography
 
 groups:
-  - filecoin-research
+  - cryptolab
 
 featured: false
 

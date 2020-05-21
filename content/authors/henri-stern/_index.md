@@ -10,7 +10,7 @@ authors:
 role: Research Scientist
 
 groups:
-  - filecoin-research
+  - cryptolab
 
 resources:
   - name: avatar
@@ -40,7 +40,7 @@ social:
 email:
 
 user_groups:
-  - Researchers
+  - Alumni
 
 # For display at the top of the author details page
 quote:

@@ -4,7 +4,7 @@ name: "Chhi'mèd Künzang"
 role: Research Engineer
 
 groups:
-  - filecoin-research
+  - cryptolab
 
 resources:
   - name: avatar
