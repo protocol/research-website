@@ -90,15 +90,15 @@ This is generally a complex issue with lots of non-strictly technical parameters
 
 A: Any individual or organisation can run a Public IPFS Gateway and operate their own denylist. In that sense, the (content of the) denylist is not dictated by a centralised entity. At this point, the denylist is mainly run by IPFS Gateways which can be run by anyone.
 
+**Q:  Are the gateways authenticated?**
+
+A: No. Any node can run a gateway. They are not authenticated. There is no built-in reputation layer for gateways. Many organizations including Protocol Labs, [Cloudflare](https://blog.cloudflare.com/distributed-web-gateway/), [Infura](https://github.com/INFURA/tutorials/wiki/Introduction-to-IPFS), and others run IPFS Gateways - you can see a list of known public gateways [here](https://ipfs.github.io/public-gateway-checker/). If a particular gateway decides to go rogue and not provide the right routing information, you should switch to another gateway provider.
+
 **Q: Where are IPNS records kept?**
 
 A: IPNS is using the same infrastructure as content routing, that is, the DHT. The multi-hash of the public key of a peer is registered on the DHT to point to mutable content. There are also other ways to distribute IPNS records: a pubsub protocol called gossipsub  ([spec](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub), [techrep](https://research.protocol.ai/posts/201912-resnetlab-launch/PL-TechRep-gossipsub-v0.1-Dec30.pdf), [recent talk](https://research.protocol.ai/posts/202004-matrix-virtual-meetup-gossipsub/)) is being used for this purpose, as a faster way to distribute IPNS records. As mentioned earlier, the difference between IPNS over PubSub vs DHT is the push (PubSub) vs pull (DHT) model.
 
-**Q: You have to know exactly what you’re looking for. The DHT is good, but it’s difficult to know what is in there. Where does the binding between a CID and a real-world identity take place?**
-
-A: This has to happen externally. IPFS does not provide such a mechanism. IPFS is providing, storing, and can fetch content of a particular CID; the rest has to be done externally to the system.
-
-**Q: If you put the name into the DHT and the name can point to different things that can be changed by different guys (good, bad), then this can be a big security problem.**
+**Q: If you put the name into the DHT and the name can point to different things that can be changed by different guys (good, bad), then can this be a big security problem?**
 
 A: IPFS is using a technique inspired by the [Self-Certifying File System (SFS)](https://en.wikipedia.org/wiki/Self-certifying_File_System) and it is putting the CID of the public key into the DHT. Every time the publisher publishes a new version of the content, it has to sign the record with its private key and therefore, only the original author can publish under this identity. We call this system IPNS, for InterPlanetary Name System
 
@@ -119,39 +119,37 @@ A: Peers that cache the content also publish provider records to the DHT to decl
 
 **Q: Is the cached content treated the same as the original copy of the content?**
 
-A: Yes, for what concerns content resolution and delivery within the next “garbage collection” period. After that, the cached content will expire, unless it is “pinned” (hence, permanently replicated until the user says otherwise) from the node. Note that at the time of writing, garbage collection is turned off by default.
+A: Cached content can be resolved and served until the next “garbage collection” period, at which point the cached content will expire unless it is “pinned” (hence, permanently replicated until the user says otherwise). Note that at the time of writing, garbage collection is turned off by default.
 
-**Q:  Are the gateways authenticated?**
+**Q: The need to keep republishing IPNS records requires more overhead - the publisher needs to stay online and the ISP needs to provide connectivity. How does this compare to other systems?** 
 
-A: No. Any node can run a gateway. They are not authenticated. There is no reputation layer for gateways. Gateways are run by Protocol Labs, but also from external entities (e.g. [Cloudflare](https://blog.cloudflare.com/distributed-web-gateway/), [Infura](https://github.com/INFURA/tutorials/wiki/Introduction-to-IPFS), and others). If they decide to go rogue and not provide the right routing information there is nothing that the network will do.
+A: Data hosts need to stay online in order to keep their content accessible. In IPFS, data is provider agnostic and anyone can rehost the data. There are services, known as Pinning Services, that users can rely on to keep content available on the network when they go offline.
 
-**Q: The need to keep republishing records is a single point of failure, the publisher needs to stay online and the ISP needs to provide connectivity. This is a big ask for normal content providers.** 
-
-Yes, publishers need to be online in order to have their content live, although this will change soon to enable peers to keep records alive, even if the original publisher is offline. There are services, known as Pinning Services, that users can rely on to keep its content available on the network.
-
-**Q: The need to keep republishing IPNS records is a single point of failure, the publisher needs to stay online and the ISP needs to provide connectivity. This is a big ask for normal content providers and make IPNS records censorable - are you working on a solution?**
-
-A: Yes, publishers need to be online in order to have their IPNS records stay alive, although this will change soon to enable peers to keep the records alive, even if the original publisher is offline.
+In IPNS, default configuration requires the content publisher (or a delegate with access to the publisher's private key) to be able to republish signed updates in order for their IPNS records to stay alive. While currently possible for third parties to keep IPNS records alive when the original publisher goes offline, making this work by default in the existing implementations still requires some work.
 
 **Q: IPFS relies on DNS and therefore IPFS can only always be an overlay. Can IPFS route over the link layer?**
 
 A: IPFS does not rely on DNS per se, as it has its own content resolution protocol (see discussion on IPNS). [DNSLlink](https://dnslink.io/), which is a mechanism outside of the IPFS protocol that is used by the IPFS implementation, uses DNS to register human-readable names and link them to CIDs - DNSLink does rely on DNS. But it is correct to say that IPFS cannot route over the link layer.
 
-**Q: There is nothing that the network between those peers can do to augment the performance? Is this correct?**
+**Q: Do peers need to make any infra changes to augment network performance?**
 
-A: Yes, this is correct. IPFS was designed on purpose to not rely on upgrades of ISPs’ infrastructure in order to operate. This does not mean, however, that it cannot use enhancements to in-network entities, e.g. in-network caching.
+A: IPFS was designed on purpose to not rely on upgrades of ISPs’ infrastructure in order to operate. This does not mean, however, that it cannot use enhancements to in-network entities, e.g. in-network caching.
 
-**Q: In DHT you’re routing based on the overlay. There is no notion of vicinity.**
+**Q: You have to know exactly what you’re looking for. The DHT is good, but it’s difficult to know what is in there. Where does the binding between a CID and a real-world identity take place?**
+
+A: IPFS is a distributed file system used to power applications a layer below the end-user-facing content discovery (ex, how HTTP is currently used to address/host sites served by Google Search). IPFS manages providing, storing, and fetching content for a particular CID; the rest (connecting users to the CIDs relevant to the application, or finding the application in the first place) has to happen a layer above IPFS itself.
+
+**Q: In the DHT you’re routing based on the overlay. There is no notion of vicinity.**
 
 A: Yes, this is correct and it is a known disadvantage of most DHT implementations. The teams are currently investigating and evaluating alternative DHT structures, such as Coral and Canon DHT, as well as non-DHT routing and resolution components in order to integrate the notion of locality of interest in content resolution. However, this is still ongoing work and not integrated into the production systems.
 
-**Q: How does the pubsub work? Is it based on the CID? Is the topic represented by a CID? How do you express a topic?**
+**Q: How does pubsub work? Is it based on the CID? Is the topic represented by a CID? How do you express a topic?**
 
 A: No, topics are not represented by CIDs (although they could be). The pubsub protocol used currently, called [gossipsub](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub) is a topic-based pubsub system, not a content-based one.
 
 **Q: At the beginning of the talk you mentioned that the intention is to remove trust from the network (i.e. external entities). Can you elaborate? How do you trust that a piece of content is going to be published by some key?**
 
-A: Naming content through its own hash and publishing it in a distributed P2P network inherently overcomes several of the issues related to putting trust into external entities, content hosting and content resolution entities. Content can be verified locally as it is self-certified. As long as content is signed by the private key of the publisher, then the content consumer can verify that the content is authentic without relying on external entities.
+A: Naming content through its own hash and publishing it in a distributed P2P network inherently overcomes several of the issues related to putting trust into external entities, like content hosting and content resolution entities. Content can be verified locally as it is self-certified. As long as content is signed by the private key of the publisher, then the content consumer can verify that the content is authentic without relying on external entities.
 
 **Q: Is it possible for me to re-publish cnn.com/news?**
 
