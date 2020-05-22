@@ -4,7 +4,7 @@ title: "Rosario Gennaro Named 2020 IACR Fellow"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-05-20
+date: 2020-05-22
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
