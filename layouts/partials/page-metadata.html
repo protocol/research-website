@@ -32,7 +32,7 @@
 
 {{ if (and .Params.groups (partial "func/has-values" .Params.groups)) }}
   <div class="text-sm text-gray-700">
-    <img class="inline-block mr-2" src="/images/icon/group.png">
+    <img class="inline-block mr-2" src="/images/icon/group.svg">
     {{ $taxonomy := "groups" }}
     {{ with .Param $taxonomy }}
       {{ range $index, $value := . }}
