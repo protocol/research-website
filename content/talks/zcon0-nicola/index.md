@@ -30,4 +30,4 @@ abstract: Nicola Greco (Filecoin Research) talks about SNARKs at Zcon0.
 
 ---
 
-{{< youtube QII1xq9J7NY >}}
+[{{< image "featured.png" >}}](https://www.youtube.com/watch?v=QII1xq9J7NY)
