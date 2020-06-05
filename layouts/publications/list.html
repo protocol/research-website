@@ -4,10 +4,10 @@
     {{ partial "page-top" . }}
 
     <div class="md:-mx-4 md:w-2/3">
-      {{ range .RegularPages }}
+      {{ range where .RegularPages ".Params.no_affiliation" "!=" true}}
         {{ partial "publication-card" . }}
       {{ end }}
     </div>
-    
+
   </div>
 {{ end }}
