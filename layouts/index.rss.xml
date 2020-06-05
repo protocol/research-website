@@ -2,7 +2,7 @@
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := slice -}}
 {{- if or $.IsHome $.IsSection -}}
-{{- $pages = (where $pctx.RegularPages "Type" "in" "publications posts talks") -}}
+{{- $pages = (where (where $pctx.RegularPages "Type" "in" "publications posts talks") ".Params.no_affiliation" "!=" true) -}}
 {{- else -}}
 {{- $pages = $pctx.Pages -}}
 {{- end -}}
