@@ -16,6 +16,7 @@ categories:
 
 areas:
   - distributed-systems
+  - networking
 
 groups:
   - resnetlab

@@ -13,6 +13,7 @@ categories:
   - news
 areas:
   - distributed-systems
+  - networking
 groups:
   - resnetlab
 
