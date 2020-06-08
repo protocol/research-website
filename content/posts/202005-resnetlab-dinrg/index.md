@@ -4,7 +4,7 @@ title: "IPFS talk at the IRTF Decentralised Internet Infrastructure Research Gro
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-05-08
+date: 2020-06-08
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
