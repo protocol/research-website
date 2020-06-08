@@ -6,7 +6,7 @@ taxonomyName: cryptolab
 summary: "The purpose of CryptoLab is to develop and apply new cryptographic tools to secure computation and communication systems.  Much of the past and current work includes designing, proving, and improving the building blocks enabling Filecoin: a decentralized storage network."
 
 resources:
-  - src: icon.png
+  - src: icon.svg
 
 aliases:
   - /research/groups/filecoin-research
