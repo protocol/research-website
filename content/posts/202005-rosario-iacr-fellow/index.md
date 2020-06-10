@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "Rosario Gennaro Named 2020 IACR Fellow"
+title: "Rosario Gennaro named 2020 IACR Fellow"
 
 # Website post date
 # format YYYY-MM-DD
