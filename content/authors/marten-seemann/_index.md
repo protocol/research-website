@@ -16,6 +16,19 @@ interests:
 
 # Degrees
 education:
+  courses:
+    - course: MSc in Physics
+      institution: Ludwig-Maximilians Universität München
+      year: 2014
+    - course: MSc in Chemistry
+      institution: Ludwig-Maximilians Universität München
+      year: 2013
+    - course: BSc in Physics
+      institution: Ludwig-Maximilians Universität München
+      year: 2013
+    - course: BSc in Chemistry and Biochemistry
+      institution: Ludwig-Maximilians Universität München
+      year: 2011
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
