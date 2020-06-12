@@ -4,7 +4,7 @@ title: "Automating QUIC Interoperability Testing"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-05-20
+date: 2020-06-12
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -34,7 +34,7 @@ authors:
 
 # Zero or more of the areas in content/areas
 areas:
-  - distributed-systems
+  - networking
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
