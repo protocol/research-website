@@ -30,3 +30,5 @@ user_groups:
 # Not currently used
 # quote:
 ---
+
+Marten is a software engineer specializing in internet transport protocols. He has worked at Protocol Labs since 2016 and has been a member of the IETF’s QUIC working group since 2017.
