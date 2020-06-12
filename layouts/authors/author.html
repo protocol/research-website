@@ -14,7 +14,7 @@
           </div>
         {{ end }}
 
-        <h3 class="block text-center md:text-left mb-2 text-grey font-bold text-md leading-none">{{ .Params.name }}</h3>
+        <h3 class="block text-center md:text-left mb-2 text-grey font-semibold text-md leading-none">{{ .Params.name }}</h3>
 
         <p class="text-center md:text-left text-sm leading-loose">{{ .Params.email }}</p>
 
@@ -57,7 +57,7 @@
 
       <div class="md:w-1/2 lg:w-2/3">
         {{ if .Params.quote }}
-          <p class="font-bold text-md leading-relaxed pt-8 mb-8">"{{ .Params.quote }}"</p>
+          <p class="font-semibold text-md leading-relaxed pt-8 mb-8">"{{ .Params.quote }}"</p>
         {{ end }}
 
         <div class="page-content leading-relaxed mb-4">{{ .Content }}</div>

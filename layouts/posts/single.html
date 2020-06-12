@@ -21,7 +21,7 @@
 
           {{ if .NextInSection }}
             <a class="block mb-8 md:w-1/2 group" href="{{ .NextInSection.RelPermalink }}">
-              <div class="font-bold group-hover:text-pink">
+              <div class="font-bold">
                 <img class="inline-block align-middle rotate-180 mr-2" src="/icons/chevron-pink.svg">
                 <span class="align-middle">Newer</span>
               </div>
@@ -32,7 +32,7 @@
 
           {{ if .PrevInSection }}
             <a class="block pl-4 md:w-1/2 text-right ml-auto group" href="{{ .PrevInSection.RelPermalink }}">
-              <span class="w-1/2 font-bold ml-auto order-2 group-hover:text-pink">
+              <span class="w-1/2 font-bold ml-auto order-2">
                 <span class="align-middle">Older</span>
                 <img class="inline-block align-middle ml-2" src="/icons/chevron-pink.svg">
               </span>
