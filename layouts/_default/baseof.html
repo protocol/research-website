@@ -69,7 +69,7 @@
     {{ partial "site-header" . }}
     {{ partial "off-canvas-nav" . }}
 
-    <div class="w-full pt-32 md:pt-40 pb-24 md:pb-30 {{if (eq .Kind "home")}}md:pt-56{{end}}">
+    <div class="w-full pb-24 md:pb-30">
       {{ block "main" . }}{{ end }}
     </div>
 
