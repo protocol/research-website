@@ -27,8 +27,8 @@ authors:
   - "Matteo Campanelli"
   - "Dario Fiore"
   - nicola-greco
+  - luca-nizzardo    
   - "Dimitris Kolonelos"
-  - luca-nizzardo  
 
 # Zero or more of the areas in content/areas
 areas:
