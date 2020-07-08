@@ -37,10 +37,6 @@ education:
 social:
   - icon: google-scholar
     link: https://scholar.google.com/citations?user=S3i6yAkAAAAJ&hl=en&oi=ao
-  - icon: github
-    link: https://github.com/USERNAME
-  - icon: orcid
-    link: https://orcid.org/0000-0002-1825-0097
   - icon: linkedin
     link: https://www.linkedin.com/in/petar-maymounkov-47a93b85/
   - icon: researchgate
@@ -58,4 +54,4 @@ user_groups:
 # quote:
 ---
 
-Petar joined Protocol Labs in March, 2020. He has contributed to a number of research areas: computer systems, distributed systems and algorithms, compilers and languages, coding and information theory, and spectral graph theory and routing. Some of Petar's notable research projects include the design of Kademlia (a distributed hash table), the first linear-time rateless erasure codes, the first universal gossiping algorithms, and the first decentralized algorithm for oblivious routing. Some of his notable engineering projects include the GoCircuit distributed programming framework (an alternative to Kubernetes) and the Ko language for high-level cluster and data-processing programming. Petar's industry experience includes work at Google (on infrastructure and search ranking) and Amazon Lab126 (on designing systems for programming intelligent robots). He was also awarded a 2-year research grant from DARPA to participate in the XDATA and MEMEX programs on massive-scale data processing.
+Petar joined Protocol Labs in March, 2020. He has contributed to a number of research areas over the course of his career: computer systems, distributed systems and algorithms, compilers and languages, coding and information theory, and spectral graph theory and routing. Some of Petar's notable research projects include the design of Kademlia (a distributed hash table), the first linear-time rateless erasure codes, the first universal gossiping algorithms, and the first decentralized algorithm for oblivious routing. Some of his notable engineering projects include the GoCircuit distributed programming framework (an alternative to Kubernetes) and the Ko language for high-level cluster and data-processing programming. Petar's industry experience includes work at Google (on infrastructure and search ranking) and Amazon Lab126 (on designing systems for programming intelligent robots). He was also awarded a 2-year research grant from DARPA to participate in the XDATA and MEMEX programs on massive-scale data processing.
