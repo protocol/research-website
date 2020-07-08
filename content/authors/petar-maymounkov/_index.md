@@ -18,6 +18,8 @@ resources:
 # Research interests
 interests:
   - Distributed Systems
+  - Languages and Compilers
+  - Spectral Methods in Computer Science
 
 # Degrees
 education:
