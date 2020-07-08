@@ -1,14 +1,14 @@
 ---
 # Display name
-name: "Petar Maymounkov"
+name: Petar Maymounkov
 
 # Role/position (e.g. Research Scientist)
-role: "Research Scientist"
+role: Research Scientist
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-  - IPFS
-  - libp2p
+  - "IPFS"
+  - "libp2p"
 
 # Avatar (no need to edit)
 resources:
@@ -46,7 +46,7 @@ social:
   - icon: researchgate
     link: https://www.researchgate.net/profile/Petar_Maymounkov
   - icon: link
-    link: http://www.maymounkov.org/ 
+    link: http://www.maymounkov.org/
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
@@ -59,4 +59,3 @@ user_groups:
 ---
 
 Petar joined Protocol Labs in March, 2020. He has contributed to a number of research areas: computer systems, distributed systems and algorithms, compilers and languages, coding and information theory, and spectral graph theory and routing. Some of Petar's notable research projects include the design of Kademlia (a distributed hash table), the first linear-time rateless erasure codes, the first universal gossiping algorithms, and the first decentralized algorithm for oblivious routing. Some of his notable engineering projects include the GoCircuit distributed programming framework (an alternative to Kubernetes) and the Ko language for high-level cluster and data-processing programming. Petar's industry experience includes work at Google (on infrastructure and search ranking) and Amazon Lab126 (on designing systems for programming intelligent robots). He was also awarded a 2-year research grant from DARPA to participate in the XDATA and MEMEX programs on massive-scale data processing.
-
