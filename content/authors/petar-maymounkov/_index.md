@@ -39,6 +39,8 @@ social:
     link: https://scholar.google.com/citations?user=S3i6yAkAAAAJ&hl=en&oi=ao
   - icon: linkedin
     link: https://www.linkedin.com/in/petar-maymounkov-47a93b85/
+  - icon: github
+    link: https://github.com/petar  
   - icon: researchgate
     link: https://www.researchgate.net/profile/Petar_Maymounkov
   - icon: link
