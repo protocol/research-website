@@ -4,7 +4,7 @@ title: "Drand: Distributed, bias resistant, unpredictable and publicly verifiabl
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-04-04
+date: 2020-03-04
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
