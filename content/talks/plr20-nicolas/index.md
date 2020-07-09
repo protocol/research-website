@@ -1,10 +1,10 @@
 ---
 # Talk title
-title: Drand: Distributed, bias resistant, unpredictable and publicly verifiable randomness
+title: "Drand: Distributed, bias resistant, unpredictable and publicly verifiable randomness"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-04-23
+date: 2020-04-04
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -41,7 +41,7 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: A talk by Nicolas Gailly, Research Scientist at Protocol Labs, March 4, 2020
+abstract: "A talk by Nicolas Gailly, Research Scientist at Protocol Labs, March 4, 2020"
 ---
 
 {{< youtube ydwW2HFFxNI >}}
