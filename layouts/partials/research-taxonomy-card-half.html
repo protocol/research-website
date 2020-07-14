@@ -1,6 +1,6 @@
 <div class="p-4 md:p-8 md:w-1/2">
     <div class="flex flex-row items-center justify-start mb-4">
-      <a class="text-md leading-relaxed hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <a class="text-md leading-relaxed text-blue hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{ range .Resources.Match "icon.*" }}
           <img class="ml-auto mr-2" width="36px" src="{{ .RelPermalink }}">
       {{ end }}

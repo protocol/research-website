@@ -6,7 +6,7 @@
     {{ partial "breadcrumbs-inner" .Parent }}
   {{ end }}
 
-  <a class="inline capitalize hover:text-blue hover:underline" href="{{ .RelPermalink }}">{{(or .Params.name .Title )}}</a>
+  <a class="inline capitalize text-blue hover:underline" href="{{ .RelPermalink }}">{{(or .Params.name .Title )}}</a>
 
   {{ if .Pages }}
     <span class="inline">/</span>

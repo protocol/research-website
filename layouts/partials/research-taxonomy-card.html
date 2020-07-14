@@ -3,7 +3,7 @@
       {{ range .Resources.Match "icon.*" }}
         <img class="mr-4" width="36px" src="{{ .RelPermalink }}">
       {{ end }}
-      <a class="text-md leading-relaxed hover:text-blue" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <a class="text-md leading-relaxed text-blue hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a>
     </div>
     <p class="mb-4">{{ .Summary }}</p>
 </div>

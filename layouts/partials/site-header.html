@@ -22,7 +22,7 @@
             {{end}}
 
             {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (in $currentPage.RelPermalink .URL) }}
-              <div class="absolute inset-x-0 bottom-0 border border-black"></div>
+              <div class="absolute inset-x-0 border border-black"></div>
             {{end}}
           </a>
 
@@ -33,7 +33,7 @@
                   <span>{{ .Name }}</span>
 
                   {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (in $currentPage.RelPermalink .URL) }}
-                    <div class="absolute inset-x-0 bottom-0 border border-white"></div>
+                    <div class="absolute inset-x-0 border border-white"></div>
                   {{end}}
                 </a>
               {{ end }}

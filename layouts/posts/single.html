@@ -20,25 +20,25 @@
         <div class="flex flex-row justify-between">
 
           {{ if .NextInSection }}
-            <a class="block mb-8 md:w-1/2 group" href="{{ .NextInSection.RelPermalink }}">
+            <div class="block mb-8 md:w-1/2 group">
               <div class="font-bold">
                 <img class="inline-block align-middle rotate-180 mr-2" src="/icons/chevron-pink.svg">
                 <span class="align-middle">Newer</span>
               </div>
 
-              <div class="pl-5 text-blue group-hover:underline">{{ .NextInSection.Title }}</div>
-            </a>
+              <div class="pl-5 text-blue hover:underline"><a href="{{ .NextInSection.RelPermalink }}">{{ .NextInSection.Title }}</a></div>
+            </div>
           {{ end }}
 
           {{ if .PrevInSection }}
-            <a class="block pl-4 md:w-1/2 text-right ml-auto group" href="{{ .PrevInSection.RelPermalink }}">
+            <div class="block pl-4 md:w-1/2 text-right ml-auto group">
               <span class="w-1/2 font-bold ml-auto order-2">
                 <span class="align-middle">Older</span>
                 <img class="inline-block align-middle ml-2" src="/icons/chevron-pink.svg">
               </span>
 
-              <div class="pr-5 text-blue group-hover:underline">{{ .PrevInSection.Title }}</div>
-            </a>
+              <div class="pr-5 text-blue hover:underline"><a href="{{ .PrevInSection.RelPermalink }}">{{ .PrevInSection.Title }}</a></div>
+            </div>
           {{ end }}
         </div>
       </div>
