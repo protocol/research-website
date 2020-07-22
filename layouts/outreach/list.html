@@ -12,7 +12,7 @@
           <div class="page-content mb-4">{{ .Summary }}</div>
 
           {{ if .Params.LinkUrl }}
-            <a class="hover:text-blue" href="{{ .Params.LinkUrl }}">{{ .Params.LinkText }} <img class="inline-block pl-2" src="/icons/chevron-pink.svg"></a>
+            <a class="text-blue hover:underline" href="{{ .Params.LinkUrl }}">{{ .Params.LinkText }} <img class="inline-block pl-2" src="/icons/chevron-pink.svg"></a>
           {{ end }}
         </div>
       {{ end }}

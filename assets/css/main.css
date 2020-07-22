@@ -162,6 +162,7 @@ figcaption {
 
 .page-content a:hover {
   @apply text-blue;
+  @apply underline;
 }
 
 .page-content p {

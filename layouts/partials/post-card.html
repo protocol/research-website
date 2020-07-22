@@ -1,7 +1,7 @@
 <div class="px-4 pt-8 mb-6">
   {{ partial "post-data-strip" . }}
 
-  <a class="block text-bigger text-blue leading-tight mb-2 pt-2" href="{{ .RelPermalink }}">{{ .Title }}</a>
+  <a class="block text-bigger text-blue leading-tight mb-2 pt-2 hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a>
 
   <div class="mb-2 multiline-ellipsis-4">
     {{ .Summary }}

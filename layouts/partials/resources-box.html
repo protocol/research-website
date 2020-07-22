@@ -13,7 +13,7 @@
   {{ range .Resources.Match "*.pdf" }}
     <div class="mb-4 pl-4 md:pl-8">
       <img class="inline-block mr-2" src="/icons/download.svg">
-      <a class="text-blue inline-block inline-middle text-sm" href="{{ .RelPermalink }}">Download PDF</a>
+      <a class="text-blue inline-block inline-middle text-sm hover:underline" href="{{ .RelPermalink }}">Download PDF</a>
     </div>
   {{ end }}
 
