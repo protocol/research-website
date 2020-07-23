@@ -1,13 +1,13 @@
 ---
 # Blog post title
-title: How Content Addressing Can Solve Streaming Challenges as Networks Are Overloaded
+title: "How Content Addressing Can Solve Streaming Challenges as Networks Are Overloaded"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-07-27
+date: 2020-07-23
 
 # Publish from this date (defaults to date)
-# publishDate: 2019-09-03
+# publishDate: 2020-07-23
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
