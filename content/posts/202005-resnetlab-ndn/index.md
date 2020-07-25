@@ -72,7 +72,8 @@ A: Yes, once the CID of a block/chunk is calculated it stays the same forever. T
 
 A: The CID as such is permanent and cannot be “undone” as it’s the hash of a particular piece of content (see comment on “Permanent Web” above). A user that no longer wishes to provide access to some content can simply stop “providing” that content, or in other words, stop publishing the corresponding provider record(s). This, however, does not mean that the content disappears from the network, as other peers that have retrieved the content might still have it in their cache and provide it.
 
-As an additional note, the IPFS Gateway provided by Protocol Labs has a CID denylist. The CIDs in this list are double hashed for protection of the content and the IPFS Gateway checks if the content has been denied/blocked before serving it.
+IPFS implements the concept of “denylists”. Every node can have its own denylist and check it before it makes its forwarding decisions. A node can also adopt the denylist of other peers or organisations - see more discussion on this below.
+
 
 **Q: Is there a way to check if a specific CID has been deleted (i.e. added to a denylist)?**
 
