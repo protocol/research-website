@@ -15,7 +15,7 @@ authors:
 
 # If applicable
 categories:
-  -
+  - blog
 
 # Zero or more of the areas in content/areas
 areas:
