@@ -33,7 +33,7 @@ Given the mass migration to remote work we’ve seen in recent months, you’d t
 
 Internet service providers took advantage of the extra network capacity that had [already been built](https://www.networkworld.com/article/3541357/why-didnt-covid-19-break-the-internet.html) into the infrastructure in case of crises like COVID-19 -- and, for the most part, the transition has gone remarkably smoothly. In fact, some companies -- such as Netflix and Equinix -- are taking this time to expand network capacity and build out infrastructure.
 
-But just because the transition has gone smoothly doesn’t necessarily mean that our current approach to internet capacity is the best or most efficient one. Currently, ISPs use a strategy known as “over-provisioning” to manage network overload. Think of over-provisioning this way: A three-lane highway can have dozens of single-lane on-ramps and off-ramps. It keeps flowing because not everyone drives at the same time or to the same place.
+But just because the transition has gone smoothly doesn’t necessarily mean that our current approach to internet capacity is the best or most efficient one. Currently, ISPs use a strategy known as “overprovisioning” to manage network overload. Think of overprovisioning this way: a three-lane highway can have dozens of single-lane on-ramps and off-ramps. It keeps flowing because not everyone drives at the same time or to the same place.
 
 If, however, there is a sudden increase in traffic volume, the road will start approaching its capacity. Congestion will set in, traffic will slow down, and drivers on access roads will face long waits to enter the highway and long delays to reach their destination.
 
