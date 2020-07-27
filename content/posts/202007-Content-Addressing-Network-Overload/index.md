@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "How Content Addressing Can Solve Streaming Challenges as Networks Are Overloaded"
+title: "How content addressing can solve streaming challenges as networks are overloaded"
 
 # Website post date
 # format YYYY-MM-DD
