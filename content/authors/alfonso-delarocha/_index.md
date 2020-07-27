@@ -3,11 +3,11 @@
 name: Alfonso de la Rocha
 
 # Role/position (e.g. Research Scientist)
-role: 
+role: Research Engineer
 
 # Existing research group (use folder name) or free text
 research_groups:
-  -
+  - resnetlab
 
 # Avatar (no need to edit)
 resources:
