@@ -22,35 +22,38 @@ interests:
 # Degrees
 education:
   courses:
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
-
+  - course: PhD in Electrical and Electronics Engineering
+    institution: Universidad Politécnica de Madrid
+    year: 2019
+  - course: MSc in Network Services and Systems
+    institution: KTH Royal Institute of Technology
+    year: 2017
+  - course: MSc in Telecommunication Engineering
+    institution: Universidad Politécnica de Madrid
+    year: 2017   
+  
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 social:
   - icon: twitter
-    link: https://twitter.com/USERNAME
+    link: https://twitter.com/adlrocha
   - icon: google-scholar
     link: https://scholar.google.com/citations?user=PERSON-ID
   - icon: github
-    link: https://github.com/USERNAME
+    link: https://github.com/adlrocha
   - icon: orcid
     link: https://orcid.org/0000-0002-1825-0097
   - icon: linkedin
-    link: https://www.linkedin.com/in/USERNAME
+    link: https://www.linkedin.com/in/adlrocha/
   - icon: researchgate
     link: https://www.researchgate.net/profile/USERNAME
   - icon: link
-    link: https://example.org/    
+    link: https://adlrocha.substack.com/  
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
 user_groups:
-  - 
+  - Researchers
 
 # For display at the top of the author details page
 # Not currently used
