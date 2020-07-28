@@ -31,18 +31,18 @@ draft: false
 
 ---
 
-[Alfonso](/authors/alfonso-delarocha/) is 
->karola-kirsanow to generate from profile. Please feel free to add anything you would like me to mention>
+[Alfonso](/authors/alfonso-delarocha/) is joining the [Resilient Networks Lab (ResNetLab)](https://research.protocol.ai/groups/resnetlab/) from Telefónica R&D, where he worked on technologies based on distributed systems— particularly blockchain—and advanced cryptography, such as [TrustOS](https://trustos.readthedocs.io/en/latest/). 
 
-Here is a little more about Alfonso:
+We asked Alfonso about his journey to PL, the projects he will be working on, and his thoughts about future technology: 
+
 
 **What path brought you to PL?**
 
-> I am one of those convinced that the the Internet as we know is broken. If we want to send a message or exchange information with someone in our same building but connected to a different network, the information still needs to travel to the backbone of the Internet and back to its destination (in our same building). This has important implications in terms of latency, efficiency and privacy. This research problem has been haunting me since my years in college, and I couldn't see any potential solution to it until I came across IPFS a few years ago. Since then I have been following all the work and projects being done within PL, and every new release of IPFS, libp2p and Filecoin seemed to bring them closer to a potential solution to the the problem I wanted to solve. I then realized that the best way to work in the problems that interested me the most was to directly join PL, and that's how I ended up here.
+> I am one of those convinced that the the Internet as we know it is broken. If we want to send a message or exchange information with someone in the same building but connected to a different network, the information still needs to travel to the backbone of the Internet and then back to its destination (in our same building). This has important implications in terms of latency, efficiency and privacy. This research problem has been haunting me since my years in college, and I couldn't see any potential solution until I came across IPFS a few years ago. Since then, I have been following all the work and projects being done within PL, and every new release of IPFS, libp2p and Filecoin seemed to bring them closer to a potential solution to the the problem I wanted to solve. I then realized that the best way to work in the problems that interested me the most was to directly join PL, and that's how I ended up here.
 
 **What are you working on?**
 
-> I'm honored to be part of the amazing team of PL Research, and specifically the [Resilient Networks Lab (ResNetLab)](https://research.protocol.ai/groups/resnetlab/). I will be supporting the engineering team proposing and shipping solutions to their most pressing challenges, as well as suggesting new lines of development and research according to the open problems in the field, and the view we all want to push together. Some of the areas I will be directly contributing to are: efficient file transfer and content-delivery in content-addressable networks, content resolution and routing, DHT performance improvements, security and privacy of peer-to-peer networks, and the development of new network protocols.
+> I'm honored to be part of the amazing PL Research team, and specifically the [Resilient Networks Lab (ResNetLab)](https://research.protocol.ai/groups/resnetlab/). I will be supporting the engineering team proposing and shipping solutions to their most pressing challenges, as well as suggesting new lines of development and research according to the open problems in the field, and the view we all want to push together. Some of the areas I will be directly contributing to are: efficient file transfer and content-delivery in content-addressable networks, content resolution and routing, DHT performance improvements, security and privacy of peer-to-peer networks, and the development of new network protocols.
 
 **What future technology are you most excited about?**
 
