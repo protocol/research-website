@@ -41,7 +41,7 @@ ISP traffic engineers can prevent this congestion by designing the road for wors
 
 This strategy makes a lot of sense, but there are two big problems with it. First, it’s expensive. To build the extra highway lane(s) for the increased traffic requires ISPs to invest a significant amount of money – and that investment is only necessary in extraordinary situations. Not every ISP in the world can afford to do that, and therefore, disruptions in some places are more severe than in others. The second problem is timing. Against the backdrop of the COVID-19 pandemic, we’re in the middle of an extraordinary crisis situation. ISPs that have taken proactive steps won’t face severe performance issues during the pandemic crisis. But those that haven’t don’t have the chance to respond, as upgrading those links is not something that is easy to do reactively.
 
-The good news is there’s an alternative model that avoids congestion but doesn’t require the kind of excessive investment from the ISP that over-provisioning does. The alternative is what’s known as a “content-addressable” model.
+The good news is there’s an alternative model that avoids congestion but doesn’t require the kind of excessive investment from the ISP that overprovisioning does. The alternative is what’s known as a “content-addressable” model.
 
 Our internet was designed to operate on location-based addressing. Essentially, what this means is that if two households on the same street are streaming the same content, the network will need to transport that same information from the original source location two times: first to one household, and then to another. This is because our requests are being forwarded to the (IP address of the) server where the content lives.
 
