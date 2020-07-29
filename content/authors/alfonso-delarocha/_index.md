@@ -63,4 +63,6 @@ user_groups:
 # Not currently used
 # quote:
 ---
-Before joining Protocol Labs, Alfonso worked as a blockchain expert at Telefónica R&D, where he was responsible for the design and development of core technology based on blockchains, distributed systems, and advanced cryptography. Alfonso's involvement in research and development began at Universidad Politécnica de Madrid, where he worked on topics related to energy efficiency in data centers. His broad R&D experience also includes research into the compression efficiency of video coding standards at Ericsson Research and projects related to securing interdomain routing protocols at KTH Royal Institute of Technology in Stockholm. Alfonso is also an avid reader and basketball lover.
+Before joining Protocol Labs, Alfonso worked as a blockchain expert at Telefónica R&D, where he was responsible for the design and development of core technology based on blockchains, distributed systems, and advanced cryptography. Alfonso's involvement in research and development began at Universidad Politécnica de Madrid, where he worked on topics related to energy efficiency in data centers. His broad R&D experience also includes research into the compression efficiency of video coding standards at Ericsson Research and projects related to securing interdomain routing protocols at KTH Royal Institute of Technology in Stockholm. 
+
+Alfonso is also an avid reader and basketball lover.
