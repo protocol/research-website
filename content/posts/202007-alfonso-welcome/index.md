@@ -43,7 +43,7 @@ We asked Alfonso about his journey to PL, the projects he will be working on in 
 
 **What are you working on?**
 
-> I'm honored to be part of the amazing PL Research team, and specifically the [Resilient Networks Lab (ResNetLab)](https://research.protocol.ai/groups/resnetlab/). I will be supporting the engineering team by proposing and shipping solutions to their most pressing challenges, as well as suggesting new lines of development and research according to the open problems in the field and the view we all want to push together. Some of the areas I will be directly contributing to are efficient file transfer and content delivery in content-addressable networks, content resolution and routing, DHT performance improvements, security and privacy of peer-to-peer networks, and the development of new network protocols.
+> I'm honored to be part of the amazing PL Research team, and specifically the [Resilient Networks Lab (ResNetLab)](/groups/resnetlab/). I will be supporting the engineering team by proposing and shipping solutions to their most pressing challenges, as well as suggesting new lines of development and research according to the open problems in the field and the view we all want to push together. Some of the areas I will be directly contributing to are efficient file transfer and content delivery in content-addressable networks, content resolution and routing, DHT performance improvements, security and privacy of peer-to-peer networks, and the development of new network protocols.
 
 **What future technology are you most excited about?**
 
