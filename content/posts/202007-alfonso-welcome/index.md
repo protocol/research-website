@@ -32,7 +32,7 @@ draft: false
 
 ---
 
-[Alfonso](/authors/alfonso-delarocha/) is joining the [Resilient Networks Lab (ResNetLab)](https://research.protocol.ai/groups/resnetlab/) as a Research Engineer. He comes to PL from Telefónica R&D, where he worked on  blockchain-based technologies such as [TrustOS](https://trustos.readthedocs.io/en/latest/). 
+[Alfonso](/authors/alfonso-delarocha/) is joining the [Resilient Networks Lab (ResNetLab)](/groups/resnetlab/) as a Research Engineer. He comes to PL from Telefónica R&D, where he worked on  blockchain-based technologies such as [TrustOS](https://trustos.readthedocs.io/en/latest/). 
 
 We asked Alfonso about his journey to PL, the projects he will be working on in the ResNetLab, and his thoughts about future technological developments: 
 
