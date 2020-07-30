@@ -70,18 +70,15 @@ A: Yes, once the CID of a block/chunk is calculated it stays the same forever. T
 
 **Q: How can you revoke a CID from the IPFS network?**
 
-A: The CID as such is permanent and cannot be “undone” as it’s the hash of a particular piece of content (see comment on “Permanent Web” above). A user that no longer wishes to provide access to some content can simply stop “providing” that content, or in other words, stop publishing the corresponding provider record(s). This, however, does not mean that the content disappears from the network, as other peers that have retrieved the content might still have it in their cache and provide it.
-
-IPFS implements the concept of “denylists”. Every node can have its own denylist and check it before it makes its forwarding decisions. A node can also adopt the denylist of other peers or organisations - see more discussion on this below.
-
+A: The CID as such is permanent and cannot be “undone” as it’s the hash of a particular piece of content (see comment on “Permanent Web” above). A user that no longer wishes to provide access to some content can simply stop “providing” that content, or in other words, stop publishing the corresponding provider record(s). This, however, does not mean that the content disappears from the network, as other peers that have retrieved the content might still have it in their cache and provide it. Some IPFS gateways implement "denylists" but this takes place outside the IPFS node.
 
 **Q: Is there a way to check if a specific CID has been deleted (i.e. added to a denylist)?**
 
-A: To check whether a CID is on a given Gateway's denylist, you can attempt to resolve the CID on the Gateway and get the HTTP response code, which will inform you if it has been denied or not. Each denylist is maintained by the operating organization separately - there is no global denylist for the whole IPFS Network.
+A: To check whether a CID is on a given gateway's denylist, you can attempt to resolve the CID on the gateway and get the HTTP response code, which should inform you if it has been denied or not. Each denylist is maintained by the operating organization separately - there is no denylist for the whole IPFS Network.
 
 **Q: The denylist does not seem to be part of the decentralised infrastructure.**
 
-A: Any individual or organisation can run a Public IPFS Gateway and operate their own denylist. In that sense, the (content of the) denylist is not dictated by a centralised entity.
+A: Any individual or organisation can run an IPFS gateway and craft their own denylist. The content of the denylists is not dictated by a single entity.
 
 **Q:  Are the gateways authenticated?**
 
