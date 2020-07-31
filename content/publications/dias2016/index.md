@@ -1,5 +1,5 @@
 ---
-title: Distributed Web Applications with IPFS
+title: Distributed web applications with IPFS
 
 date: 2016-05-25
 publishDate: 2016-05-25

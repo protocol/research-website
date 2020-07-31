@@ -1,5 +1,5 @@
 ---
-title: Power Fault Tolerance
+title: Power fault tolerance
 date: 2017-07-27
 
 publishDate: 2017-07-27
@@ -20,7 +20,7 @@ areas:
 
 journal:
 
-venue: 
+venue:
 venue_location:
 
 resources:

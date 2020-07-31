@@ -1,5 +1,5 @@
 ---
-title: "DClaims: A Censorship Resistant Web Annotations System using IPFS and Ethereum"
+title: "DClaims: A censorship resistant web annotations system using IPFS and Ethereum"
 
 # Conference date
 date: 2020-01-06

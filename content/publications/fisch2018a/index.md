@@ -1,5 +1,5 @@
 ---
-title: "PoReps: Proofs of Space on Useful Data"
+title: "PoReps: Proofs of space on useful data"
 date: 2018-07-14
 
 publishDate: 2018-07-14
@@ -19,7 +19,7 @@ areas:
 
 journal:
 
-venue: 
+venue:
 venue_location:
 
 url_source: https://eprint.iacr.org/2018/678

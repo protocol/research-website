@@ -1,5 +1,5 @@
 ---
-title: A Computable Multilayer System Stack for Future-Proof Interoperability
+title: A computable multilayer system stack for future-proof interoperability
 date: 2019-07-09
 
 publishDate: 2019-07-09

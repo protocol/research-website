@@ -1,5 +1,5 @@
 ---
-title: "IPFS - Content Addressed, Versioned, P2P File System"
+title: "IPFS - Content addressed, versioned, P2P file system"
 
 date: 2014-07-14
 
@@ -10,7 +10,7 @@ authors:
 publication_types:
   - report
 groups:
-  - 
+  -
 categories:
 areas:
   - distributed-systems

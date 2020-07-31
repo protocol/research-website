@@ -1,5 +1,5 @@
 ---
-title: "Expected Consensus"
+title: "Expected consensus"
 
 # Hugo's publish date
 publishDate: 2019-09-02 14:19:14 +0100
@@ -21,7 +21,7 @@ areas:
   - distributed-systems
 groups:
   - cryptolab
-  
+
 resources:
   - title: featured-image
     src: featured.jpg

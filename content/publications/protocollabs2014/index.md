@@ -1,5 +1,5 @@
 ---
-title: "Filecoin: A Cryptocurrency Operated File Storage Network"
+title: "Filecoin: A cryptocurrency operated file storage network"
 date: 2014-07-15
 
 publishDate: 2014-07-15

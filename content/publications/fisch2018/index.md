@@ -1,5 +1,5 @@
 ---
-title: Scaling Proof-of-Replication for Filecoin Mining
+title: Scaling proof-of-replication for Filecoin mining
 date: 2018-10-15
 publishDate: 2018-10-15
 

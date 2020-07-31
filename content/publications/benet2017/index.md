@@ -1,5 +1,5 @@
 ---
-title: Proof of Replication
+title: Proof of replication
 
 date: 2017-07-27
 

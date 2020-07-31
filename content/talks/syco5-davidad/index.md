@@ -1,5 +1,5 @@
 ---
-title: "Dioptics: A Common Generalization of Open Games and Gradient-Based Learners"
+title: "Dioptics: A common generalization of open games and gradient-based learners"
 
 # Hugo's publish date
 publishDate: 2019-10-14 14:19:14 +0100

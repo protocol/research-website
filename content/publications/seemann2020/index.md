@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Automating QUIC Interoperability Testing"
+title: "Automating QUIC interoperability testing"
 
 # Website post date
 # format YYYY-MM-DD

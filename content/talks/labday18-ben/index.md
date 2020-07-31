@@ -1,5 +1,5 @@
 ---
-title: "PoReps: Proof of Space on Real Data"
+title: "PoReps: Proof of space on real data"
 
 # Hugo's publish date
 publishDate: 2019-09-02 14:19:14 +0100
@@ -22,7 +22,7 @@ areas:
   - distributed-systems
 groups:
   - cryptolab
-  
+
 resources:
   - title: featured-image
     src: featured.jpg

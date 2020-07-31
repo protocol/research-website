@@ -1,5 +1,5 @@
 ---
-title: Decentralized Infrastructure for File Storage
+title: Decentralized infrastructure for file storage
 date: 2017-08-31
 
 publishDate: 2017-08-31
@@ -13,7 +13,7 @@ authors:
 groups:
   - cryptolab
 categories:
-  - 
+  -
 areas:
   - cryptography
   - distributed-systems

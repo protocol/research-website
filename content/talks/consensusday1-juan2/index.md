@@ -1,5 +1,5 @@
 ---
-title: "New Directions in Consensus"
+title: "New directions in consensus"
 
 # Hugo's publish date
 publishDate: 2019-09-02 14:19:14 +0100

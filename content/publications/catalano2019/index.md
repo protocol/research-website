@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "MonZa: Fast Maliciously Secure Two Party Computation on Z_{2^k}"
+title: "MonZa: Fast maliciously secure two party computation on Z_{2^k}"
 
 # Website post date
 # format YYYY-MM-DD

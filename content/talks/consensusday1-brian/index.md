@@ -1,5 +1,5 @@
 ---
-title: "Single Secret Leader Election"
+title: "Single secret leader election"
 
 # Hugo's publish date
 publishDate: 2019-09-02 14:19:14 +0100

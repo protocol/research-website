@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "GossipSub: Attack-Resilient Message Propagation in the Filecoin and ETH2.0 Networks"
+title: "GossipSub: Attack-resilient message propagation in the Filecoin and ETH2.0 networks"
 
 # Website post date
 # format YYYY-MM-DD
