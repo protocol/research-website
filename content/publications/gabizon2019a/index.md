@@ -1,5 +1,5 @@
 ---
-title: "PLONK: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge"
+title: "PLONK: Permutations over Lagrange-bases for oecumenical noninteractive arguments of knowledge"
 date: 2019-08-24
 
 doi:

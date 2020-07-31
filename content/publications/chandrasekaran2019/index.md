@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Exploring Connections Between Active Learning and Model Extraction"
+title: "Exploring connections between active learning and model extraction"
 
 # Website post date
 # format YYYY-MM-DD

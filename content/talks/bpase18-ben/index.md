@@ -1,5 +1,5 @@
 ---
-title: Proof of Replication using Depth Robust Graphs
+title: Proof of replication using depth robust graphs
 
 publishDate: 2019-09-02 14:19:14 +0100
 

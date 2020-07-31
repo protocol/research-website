@@ -1,5 +1,5 @@
 ---
-title: A Dual-Process Approach for Automated Knowledge Creation
+title: A dual-process approach for automated knowledge creation
 date: 2019-09-05
 
 publishDate: 2019-09-05

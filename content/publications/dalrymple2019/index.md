@@ -1,5 +1,5 @@
 ---
-title: "Dioptics: A Common Generalization of Open Games and Gradient-Based Learners"
+title: "Dioptics: A common generalization of open games and gradient-based learners"
 
 date: 2019-09-05
 

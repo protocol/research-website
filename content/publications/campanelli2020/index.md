@@ -1,5 +1,5 @@
 ---
-title: Vector Commitment Techniques and Applications to Verifiable Decentralized Storage
+title: Vector commitment techniques and applications to verifiable decentralized storage
 
 # Website post date
 date: 2020-02-17

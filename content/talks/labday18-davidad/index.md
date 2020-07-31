@@ -1,5 +1,5 @@
 ---
-title: "IPLD Research & Future Directions"
+title: "IPLD research and future directions"
 
 # Hugo's publish date
 publishDate: 2019-09-02 14:19:14 +0100

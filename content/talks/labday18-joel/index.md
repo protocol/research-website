@@ -1,5 +1,5 @@
 ---
-title: "The Underlay: the Inevitable Future of Knowledge"
+title: "The Underlay: The inevitable future of knowledge"
 
 # Hugo's publish date
 publishDate: 2019-09-02 14:19:14 +0100

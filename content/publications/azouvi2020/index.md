@@ -1,5 +1,5 @@
 ---
-title: "SoK: Tools for Game Theoretic Models of Security for Cryptocurrencies"
+title: "SoK: Tools for game theoretic models of security for cryptocurrencies"
 
 # Website post date
 date: 2020-03-03

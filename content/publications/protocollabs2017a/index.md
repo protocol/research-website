@@ -1,5 +1,5 @@
 ---
-title: "Filecoin: A Decentralized Storage Network"
+title: "Filecoin: A decentralized storage network"
 date: 2017-07-19
 
 publishDate: 2017-07-19

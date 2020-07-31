@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Gossipsub-v1.1 Evaluation Report"
+title: "Gossipsub-v1.1 evaluation report"
 
 # Website post date
 # format YYYY-MM-DD

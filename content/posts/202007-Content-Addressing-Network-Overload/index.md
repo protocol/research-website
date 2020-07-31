@@ -37,7 +37,7 @@ But just because the transition has gone smoothly doesn’t necessarily mean tha
 
 If, however, there is a sudden increase in traffic volume, the road will start approaching its capacity. Congestion will set in, traffic will slow down, and drivers on access roads will face long waits to enter the highway and long delays to reach their destination.
 
-ISP traffic engineers can prevent this congestion by designing the road for worse-than-expected conditions, for example, by adding extra lanes. This is essentially how overprovisioning works: ISPs intentionally build networks with more capacity than they will usually need. 
+ISP traffic engineers can prevent this congestion by designing the road for worse-than-expected conditions, for example, by adding extra lanes. This is essentially how overprovisioning works: ISPs intentionally build networks with more capacity than they will usually need.
 
 This strategy makes a lot of sense, but there are two big problems with it. First, it’s expensive. To build the extra highway lane(s) for the increased traffic requires ISPs to invest a significant amount of money – and that investment is only necessary in extraordinary situations. Not every ISP in the world can afford to do that, and therefore, disruptions in some places are more severe than in others. The second problem is timing. Against the backdrop of the COVID-19 pandemic, we’re in the middle of an extraordinary crisis situation. ISPs that have taken proactive steps won’t face severe performance issues during the pandemic crisis. But those that haven’t don’t have the chance to respond, as upgrading those links is not something that is easy to do reactively.
 

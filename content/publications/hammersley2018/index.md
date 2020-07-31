@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: U.S. Energy Policy and Market Design
+title: U.S. energy policy and market design
 
 # Website post date
 # format YYYY-MM-DD

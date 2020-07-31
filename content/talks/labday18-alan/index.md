@@ -1,5 +1,5 @@
 ---
-title: "Developing an Open Source Energy Trading Protocol"
+title: "Developing an open source energy trading protocol"
 
 # Hugo's publish date
 publishDate: 2019-09-02 14:19:14 +0100

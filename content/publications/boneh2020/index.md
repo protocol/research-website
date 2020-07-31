@@ -1,5 +1,5 @@
 ---
-title: Single Secret Leader Election
+title: Single secret leader election
 
 # Conference date
 date: 2020-01-15

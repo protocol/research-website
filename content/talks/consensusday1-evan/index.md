@@ -1,5 +1,5 @@
 ---
-title: "Mergeable Consensus"
+title: "Mergeable consensus"
 
 # Hugo's publish date
 publishDate: 2019-09-02 14:19:14 +0100

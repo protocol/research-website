@@ -1,6 +1,6 @@
 ---
 # Talk title
-title: "Decentralized Energy Grid: A Protocol Labs Independent Research project"
+title: "Decentralized energy grid: A Protocol Labs independent research project"
 
 # Website post date
 # format YYYY-MM-DD

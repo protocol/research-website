@@ -1,5 +1,5 @@
 ---
-title: "A New Lab for Resilient Networks Research"
+title: "A new lab for resilient networks research"
 
 date: 2019-12-30T08:30:00+01:00
 lastmod: 2019-12-30T08:30:00+01:00
