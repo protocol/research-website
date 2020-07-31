@@ -11,7 +11,7 @@ date: 2020-05-03
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - karola-kirsanow
+  - 
 
 # If applicable
 categories:
