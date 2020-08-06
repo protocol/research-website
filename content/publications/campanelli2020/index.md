@@ -10,13 +10,13 @@ date: 2020-02-17
 # journal:
 
 # Venue Name
-venue:
+venue: Theory and Practice of Blockchains 2020
 
 # Venue Location
 venue_location:
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
-venue_date:
+venue_date: 2020-07-01
 
 # Digital Object Identifier
 doi:
