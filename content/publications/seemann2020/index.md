@@ -10,7 +10,7 @@ date: 2020-06-12
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: ACM SIGCOMM 2020 Workshop on Evolution, Performance, and Interoperability of QUIC (to appear)
+venue: ACM SIGCOMM 2020 Workshop on Evolution, Performance, and Interoperability of QUIC
 
 # Venue Location
 venue_location:
