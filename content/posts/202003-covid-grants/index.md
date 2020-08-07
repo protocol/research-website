@@ -40,4 +40,4 @@ We hope to support a wide range of projects (software, hardware, tooling, modell
 
 For a project to be eligible, its progress and outcomes should be accessible to the broadest extent possible, e.g. by being dedicated to the public domain or released under a [permissive license](https://protocol.ai/blog/announcing-the-permissive-license-stack/). Individual grants, given as one-time gifts, are expected to top out at $20,000, but we may consider larger amounts for especially impactful efforts. We have made the application and evaluation processes fast and lightweight so you can focus on the work you're doing.
 
-Applications are now open. [Please visit our RFP portal to submit yours.](https://protocollabs.smapply.io/)
+Note: this program has closed. You can read about our grant recipients [here](https://research.protocol.ai/blog/2020/announcing-our-covid-19-open-innovation-grant-awardees/).
