@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: 
+title: "IEEE ICBC 2020, The InterPlanetary File System and the Filecoin Network"
 
 # Website post date
 # format YYYY-MM-DD
@@ -11,22 +11,47 @@ date: 2020-05-03
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - 
+  - david-dias
+  - yiannis-psaras
 
 # If applicable
 categories:
-  - news
+  - talks
 
 
 # Zero or more of the areas in content/research/areas
 research_areas:
-  -
+  - distributed-systems
 
 # Zero or more of the groups in content/research/groups (should match author membership)
 research_groups:
-  -
+  - resnetlab
 
 # Not used
 draft: false
 
 ---
+[ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) was a presenter at one of the most prominent conferences in the area of Distributed Ledger Technologies: the IEEE International Conference on Blockchain and Cryptocurrencies! IEEE ICBC 2020 took place remotely, was well-attended and had an exciting programme both in terms of tutorials during the first day and invited talks during the main conference, where Vitalik Buterin delivered the keynote speech. Although this is a young conference, still in its second edition, the papers presented were of very high quality, establishing the conference as one of the most important events in the area of Blockchains and Cryptocurrencies. 
+
+ResNetLab presented a 2 hour-long tutorial on “The InterPlanetary File System and the Filecoin Network”. Over 20 people attended the full duration of our tutorial and we were excited to establish new research collaborations with attendees. Below is just a very brief summary of some of the questions we received during the conference.
+
+## Q&A Session
+
+**Q: Are IPFS paths indexed by search engines like Google, Bing etc.?** 
+
+A: Yes, they are, thanks to the IPFS HTTP Gateways hosted by Protocol Labs, [Cloudflare](https://blog.cloudflare.com/tag/ipfs/), [Infura](https://infura.io/), [Pinata](https://pinata.cloud) and many more. You can access any content on the IPFS network by going to https://DOMAIN_OF_THE_GATEWAY/ipfs/CID_OF_THE_CONTENT
+
+**Q: Can I replace/delete files or is there a full version history of each file?**
+
+A: There are two different concepts that we would like to highlight here.
+  1. To Replace, Update and/or Unlink a file, one needs to maintain a pointer to the file to publish new revisions. This is possible through the InterPlanetary Name System (IPNS). It uses a technique common in Self-Certifying File System (SFS) in which the owners of the pointer use a Private/Public Key pair to sign records that contain the latest version of the pointer. 
+
+  IPNS gets its records propagated in the network using multiple routers. Today these are:
+    - The DHT: the multi-hash of the public key of a peer is registered on the DHT to point to mutable content. 
+    - libp2p PubSub (latest implementation is Gossipsub [spec](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub) [techrep](https://research.protocol.ai/posts/201912-resnetlab-launch/PL-TechRep-gossipsub-v0.1-Dec30.pdf) [recent talk](https://research.protocol.ai/posts/202004-matrix-virtual-meetup-gossipsub/)) is being used as a faster way to distribute IPNS records.
+    - Rendezvous/Central record stores
+
+While any user can easily delete a file from their own node, for a file to be deleted from the whole network, all hosts holding the file must delete or stop sharing their copy. IPFS doesn’t allow deleting files off another person’s node, so as long as there is a copy available in the network, users will be able to retrieve it. 
+
+
+<center>{{< figure src="ieee-icbc2020.png" alt="iee-icbc conference logos" >}}</center>
