@@ -45,7 +45,7 @@ A: Yes, they are, thanks to the IPFS HTTP Gateways hosted by Protocol Labs, [Clo
 
 A: There are two different concepts that we would like to highlight here:
  
-  1. To Replace, Update and/or Unlink a file, one needs to maintain a pointer to the file to publish new revisions. This is possible through the InterPlanetary Name System (IPNS). It uses a technique common in Self-Certifying File System (SFS) in which the owners of the pointer use a Private/Public Key pair to sign records that contain the latest version of the pointer. 
+  1. To replace, update and/or unlink a file, one needs to maintain a pointer to the file to publish new revisions. This is possible through the InterPlanetary Name System (IPNS). It uses a technique from Self-Certifying File System (SFS) in which the owners of the pointer use a private/public key pair to sign records that contain the latest version of the pointer. 
   IPNS gets its records propagated in the network using multiple routers. Today these are:
 
     - The DHT: the multi-hash of the public key of a peer is registered on the DHT to point to mutable content. 
