@@ -1,16 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="28px" height="29px" viewBox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Archive,-sketches,-bits-and-pcs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="scratch" transform="translate(-793.000000, -2321.000000)">
-            <g id="icon/external-link" transform="translate(789.000000, 2318.000000)">
-                <g id="Outline_Icons" transform="translate(4.500000, 3.500000)" stroke="#105EF7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                    <path d="M14.031,21.394 L9.2565,26.167 C7.5,27.925 4.65,27.925 2.892,26.167 L1.8315,25.1065 C0.0765,23.35 0.0765,20.5 1.833,18.745 L8.7285,11.8495 C10.4865,10.0915 13.335,10.0915 15.093,11.8495 L16.1535,12.9115" id="Path"></path>
-                    <path d="M12.9705,6.6045 L17.7435,1.833 C19.5015,0.0765 22.3485,0.0765 24.1065,1.833 L25.167,2.8935 C26.925,4.65 26.925,7.5 25.167,9.2565 L18.273,16.1505 C16.515,17.91 13.6665,17.91 11.91,16.1505" id="Path"></path>
-                </g>
-                <g id="Frames-24px">
-                    <rect id="Rectangle" x="0" y="0" width="36" height="36"></rect>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#1982f4">
+  <path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z"/>
 </svg>
