@@ -33,7 +33,7 @@ draft: false
 ---
 [ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) was a presenter at one of the most prominent conferences in the area of Distributed Ledger Technologies: the [IEEE International Conference on Blockchain and Cryptocurrencies](https://icbc2020.ieee-icbc.org/)! IEEE ICBC 2020 took place remotely, was well-attended and had an exciting programme both in terms of tutorials during the first day and invited talks during the main conference, where Vitalik Buterin delivered the keynote speech. Although this is a young conference, still in its second edition, the papers presented were of very high quality, establishing the conference as one of the most important events in the area of Blockchains and Cryptocurrencies. 
 
-ResNetLab presented a 2 hour-long [tutorial](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view?usp=sharing) on “The InterPlanetary File System and the Filecoin Network”. Over 20 people attended the full duration of our tutorial and we were excited to establish new research collaborations with attendees. Below is a very brief summary of some of the questions we received during the conference.
+ResNetLab presented a 2 hour-long [tutorial](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view?usp=sharing) on “The InterPlanetary File System and the Filecoin Network”. Over 20 people attended the full duration of our tutorial and we were excited to establish new research collaborations with attendees. Below is a very brief summary of some of the questions we received during the conference:
 
 ## Q&A Session
 
@@ -43,16 +43,19 @@ A: Yes, they are, thanks to the IPFS HTTP Gateways hosted by Protocol Labs, [Clo
 
 **Q: Can I replace/delete files or is there a full version history of each file?**
 
-A: There are two different concepts that we would like to highlight here.
+A: There are two different concepts that we would like to highlight here:
+ 
   1. To Replace, Update and/or Unlink a file, one needs to maintain a pointer to the file to publish new revisions. This is possible through the InterPlanetary Name System (IPNS). It uses a technique common in Self-Certifying File System (SFS) in which the owners of the pointer use a Private/Public Key pair to sign records that contain the latest version of the pointer. 
-
   IPNS gets its records propagated in the network using multiple routers. Today these are:
+
     - The DHT: the multi-hash of the public key of a peer is registered on the DHT to point to mutable content. 
     - libp2p PubSub (latest implementation is Gossipsub ([spec,](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub) [techrep,](https://research.protocol.ai/posts/201912-resnetlab-launch/PL-TechRep-gossipsub-v0.1-Dec30.pdf) [recent talk](https://research.protocol.ai/posts/202004-matrix-virtual-meetup-gossipsub/))) is being used as a faster way to distribute IPNS records.
     - Rendezvous/Central record stores
+<p></p> 
 
-While any user can easily delete a file from their own node, for a file to be deleted from the whole network, all hosts holding the file must delete or stop sharing their copy. IPFS doesn’t allow deleting files off another person’s node, so as long as there is a copy available in the network, users will be able to retrieve it. 
+  2. While any user can easily delete a file from their own node, for a file to be deleted from the whole network, all hosts holding the file must delete or stop sharing their copy. IPFS doesn’t allow deleting files off another person’s node, so as long as there is a copy available in the network, users will be able to retrieve it. 
 
+Thank you to everyone that attended the talk and to the IEEE for organizing this event. For more context on this Q&A session, please watch the associated [tutorial](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view?usp=sharing) video.
 
 <center>{{< figure src="ieee-icbc2020.png" alt="iee-icbc conference logos" >}}</center>
 
