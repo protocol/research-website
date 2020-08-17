@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "IEEE ICBC 2020, The InterPlanetary File System and the Filecoin Network"
+title: "IEEE ICBC 2020: The InterPlanetary File System and the Filecoin Network"
 
 # Website post date
 # format YYYY-MM-DD
@@ -31,7 +31,7 @@ research_groups:
 draft: false
 
 ---
-[ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) was a presenter at one of the most prominent conferences in the area of Distributed Ledger Technologies: the [IEEE International Conference on Blockchain and Cryptocurrencies](https://icbc2020.ieee-icbc.org/)! IEEE ICBC 2020 took place remotely, was well-attended and had an exciting programme both in terms of tutorials during the first day and invited talks during the main conference, where Vitalik Buterin delivered the keynote speech. Although this is a young conference, still in its second edition, the papers presented were of very high quality, establishing the conference as one of the most important events in the area of Blockchains and Cryptocurrencies. 
+[ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) was a presenter at one of the most prominent conferences in the area of Distributed Ledger Technologies: the [IEEE International Conference on Blockchain and Cryptocurrencies](https://icbc2020.ieee-icbc.org/)! IEEE ICBC 2020 took place remotely, was well-attended, and had an exciting programme both in terms of tutorials during the first day and invited talks during the main conference, where Vitalik Buterin delivered the keynote speech. Although this is a young conference, still in its second edition, the papers presented were of very high quality, establishing the conference as one of the most important events in the area of Blockchains and Cryptocurrencies. 
 
 ResNetLab presented a 2 hour-long [tutorial](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view?usp=sharing) on “The InterPlanetary File System and the Filecoin Network”. Over 20 people attended the full duration of our tutorial and we were excited to establish new research collaborations with attendees. Below is a very brief summary of some of the questions we received during the conference:
 
@@ -49,7 +49,7 @@ A: There are two different concepts that we would like to highlight here:
   IPNS gets its records propagated in the network using multiple routers. Today these are:
 
     - The DHT: the multi-hash of the public key of a peer is registered on the DHT to point to mutable content. 
-    - libp2p PubSub (latest implementation is Gossipsub ([spec,](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub) [techrep,](https://research.protocol.ai/posts/201912-resnetlab-launch/PL-TechRep-gossipsub-v0.1-Dec30.pdf) [recent talk](https://research.protocol.ai/posts/202004-matrix-virtual-meetup-gossipsub/))) is being used as a faster way to distribute IPNS records.
+    - libp2p PubSub — the latest implementation is Gossipsub ([spec,](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub) [techrep,](https://research.protocol.ai/posts/201912-resnetlab-launch/PL-TechRep-gossipsub-v0.1-Dec30.pdf) [recent talk](https://research.protocol.ai/posts/202004-matrix-virtual-meetup-gossipsub/)) — is being used as a faster way to distribute IPNS records.
     - Rendezvous/Central record stores
 <p></p> 
 
