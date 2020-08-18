@@ -20,11 +20,11 @@ categories:
 
 
 # Zero or more of the areas in content/research/areas
-research_areas:
+areas:
   - distributed-systems
 
 # Zero or more of the groups in content/research/groups (should match author membership)
-research_groups:
+groups:
   - resnetlab
 
 # Not used
