@@ -39,7 +39,7 @@ ResNetLab presented a 2 hour-long [tutorial](https://drive.google.com/file/d/1Oc
 
 **Q: Are IPFS paths indexed by search engines like Google, Bing etc.?** 
 
-A: Yes, they are, thanks to the IPFS HTTP Gateways hosted by Protocol Labs, [Cloudflare](https://blog.cloudflare.com/tag/ipfs/), [Pinata](https://pinata.cloud) and many more. You can access any content on the IPFS network by going to https://DOMAIN_OF_THE_GATEWAY/ipfs/CID_OF_THE_CONTENT
+A: Yes, they are, thanks to the IPFS HTTP Gateways hosted by Protocol Labs, [Cloudflare](https://blog.cloudflare.com/tag/ipfs/), [Pinata](https://pinata.cloud) and [many more](https://ipfs.github.io/public-gateway-checker/). You can access any content on the IPFS network by going to https://DOMAIN_OF_THE_GATEWAY/ipfs/CID_OF_THE_CONTENT
 
 **Q: Can I replace/delete files or is there a full version history of each file?**
 
