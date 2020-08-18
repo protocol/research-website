@@ -54,6 +54,5 @@ A: There are two different concepts that we would like to highlight here:
 
 Thank you to everyone who attended the talk and to the IEEE for organizing this event. For more context on this Q&A session, please watch the associated [tutorial](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view?usp=sharing) video.
 
-<center>{{< figure src="ieee-icbc2020.png" alt="iee-icbc conference logos" >}}</center>
 
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_red.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
