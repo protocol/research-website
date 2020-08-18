@@ -53,7 +53,7 @@ A: There are two different concepts that we would like to highlight here:
     - Rendezvous/Central record stores
 <p></p> 
 
-  2. While any user can easily delete a file from their own node, for a file to be deleted from the whole network, all hosts holding the file must delete or stop sharing their copy. IPFS doesn’t allow deleting files off another person’s node, so as long as there is a copy available in the network, users will be able to retrieve it. 
+  2. While any user can easily delete a file from their own node, for a file to be deleted from the whole network, all hosts holding the file must delete or stop sharing their copy. IPFS doesn’t provide a mechanism for deleting files from another person’s node, so users will be able to retrieve the file as long as there is a copy available somewhere. 
 
 Thank you to everyone that attended the talk and to the IEEE for organizing this event. For more context on this Q&A session, please watch the associated [tutorial](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view?usp=sharing) video.
 
