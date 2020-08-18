@@ -46,8 +46,8 @@ A: Yes, they are, thanks to the IPFS HTTP Gateways hosted by Protocol Labs, [Clo
 A: There are two different concepts that we would like to highlight here:
  
  1) To replace, update and/or unlink a file, one needs to maintain a pointer to the file to publish new revisions. This is possible through the InterPlanetary Name System (IPNS). It uses a technique from Self-Certifying File System (SFS) in which the owners of the pointer use a private/public key pair to sign records that contain the latest version of the pointer. IPNS gets its records propagated in the network using multiple routers. Today these are: 
-     * The DHT: the multi-hash of the public key of a peer is registered on the DHT to point to mutable content. 
-     * Libp2p PubSub: the latest implementation is Gossipsub ([spec,](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub) [techrep,](https://research.protocol.ai/posts/201912-resnetlab-launch/PL-TechRep-gossipsub-v0.1-Dec30.pdf) [recent talk](https://research.protocol.ai/posts/202004-matrix-virtual-meetup-gossipsub/)) is being used as a faster way to distribute IPNS records.
+     * The multi-hash of the public key of a peer is registered on the DHT to point to mutable content. 
+     * Libp2p Gossipsub ([spec](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub), [techrep](https://research.protocol.ai/posts/201912-resnetlab-launch/PL-TechRep-gossipsub-v0.1-Dec30.pdf), [recent talk](https://research.protocol.ai/posts/202004-matrix-virtual-meetup-gossipsub/)) is used as a faster way to distribute IPNS records.
      * Rendezvous/central record stores.
 
  2) While any user can easily delete a file from their own node, for a file to be deleted from the whole network, all hosts holding the file must delete or stop sharing their copy. IPFS doesn’t provide a mechanism for deleting files from another person’s node, so users will be able to retrieve the file as long as there is a copy available somewhere. 
