@@ -55,3 +55,5 @@ A: The Filecoin Network operates in block epochs of 30 seconds. This means that 
 *Q: Have you considered close-sourcing your protocols as a commercial entity/company?*
 
 A: We believe in open protocols. We’ve both committed to not close/monetize our protocols directly through licensing and made a pledge to add the [Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/) to all our tech. Protocol Labs is in the business of making significant technological breakthroughs and we believe that open collaboration is essential to achieve those aims.
+
+<center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
