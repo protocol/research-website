@@ -41,7 +41,7 @@ A: The main ideas that led to the early development of IPFS and libp2p were deri
 
 *Q: As networks evolve and you expand your network to different devices, which devices and which environments do you think present the greatest challenges?*
 
-A: Mobile and IoT offer the most interesting challenges as they—by design—offer the most adverse situation for any kind of routing protocol that benefits from stability. The challenging properties of mobile and IoT environments include intermittent connectivity, constant roaming, low computing resources, and limited power/battery that must shared with other applications. At the same time, the world is more mobile than ever and routing protocols need to accommodate these constraints in a way that is gracious towards the users of mobile technology.
+A: Mobile and IoT offer the most interesting challenges as they—by design—offer the most adverse situation for any kind of routing protocol that benefits from stability. The challenging properties of mobile and IoT environments include intermittent connectivity, constant roaming, low computing resources, and limited power/battery that must shared with other applications. At the same time, the world is more mobile than ever and routing protocols need to accommodate these constraints in a way that is gracious towards the users of mobile devices.
 
 
 *Q: You do lots of caching. Do you have any mechanisms to guarantee cache consistency?*
