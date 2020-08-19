@@ -48,7 +48,7 @@ A: Mobile and IoT offer the most interesting challenges as they—by design—of
 
 A: Caching within the IPFS network is not managed. The IPFS system does not include mechanisms to orchestrate caching. Content is not proactively replicated across other peers’ devices who don’t request the content. Instead, caching happens on devices after they request the content for the first time. These copies are maintained and verified by checking their cryptographic hash (which is also their address). 
 
-*Q: In your Gossipsub Evaluation, why do you have a 6 second deadline for block propagation in the Filecoin Network?*
+*Q: In your Gossipsub evaluation, why do you have a 6-second deadline for block propagation in the Filecoin Network?*
 
 A: The Filecoin Network operates in block epochs of 30 seconds. This means that every 30 seconds new block(s) are generated to extend the blockchain. A deadline of 6 seconds means that miners have 24 seconds to validate cryptographic signatures and carry out other validation tasks before they can add new blocks to the blockchain. Although the 6-second deadline was initially chosen experimentally, it has proven to be a successful setting that leaves miners with just about enough time to carry out all the required tasks before the end of the epoch.
 
