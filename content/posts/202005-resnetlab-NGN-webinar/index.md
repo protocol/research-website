@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title:
+title: "Next Generation Networks (NGN) Group Talk: A High-Level Overview of the InterPlanetary File System"
 
 # Website post date
 # format YYYY-MM-DD
@@ -12,7 +12,7 @@ date: 2020-05-07
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
   - yiannis-psaras
-  - david dias
+  - david-dias
 
 # If applicable
 categories:
