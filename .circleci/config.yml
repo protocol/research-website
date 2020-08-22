@@ -33,6 +33,7 @@ jobs:
         environment:
           DOMAIN: research.protocol.ai
           BUILD_DIR: public
+          CLUSTER_HOST: /dnsaddr/ipfs-websites.collab.ipfscluster.io
     steps:
       - attach_workspace:
           at: /tmp/workspace
@@ -76,10 +77,3 @@ workflows:
           context: ipfs-dns-deploy
           requires:
             - build
-      - redeploy:
-          context: ipfs-dns-deploy
-          filters:
-            branches:
-              only: master    
-          requires:
-            - deploy
