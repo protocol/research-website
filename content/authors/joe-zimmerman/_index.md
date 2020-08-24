@@ -32,10 +32,8 @@ education:
 
 social:
   - icon: github
-    icon_pack: fab
     link: https://github.com/jzimmerman
   - icon: linkedin
-    icon_pack: fab
     link: https://www.linkedin.com/in/joe-zimmerman-97679815/
 
 email:
