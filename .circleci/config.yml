@@ -37,34 +37,29 @@ jobs:
       - attach_workspace:
           at: /tmp/workspace
       - run:
-          name: Deploy website to IPFS
+          name: Deploy preview to IPFS
           command: |
-            pin_name="$DOMAIN build $CIRCLE_BUILD_NUMBER"
-
+            pin_name="$DOMAIN build $CIRCLE_BUILD_NUM"
             hash=$(pin-to-cluster.sh "$pin_name" /tmp/workspace/$BUILD_DIR)
-
             echo "Website added to IPFS: https://ipfs.io/ipfs/$hash"
 
-            if [ "$CIRCLE_BRANCH" == "master" ] ; then
-              dnslink-dnsimple -d $DOMAIN -r _dnslink -l /ipfs/$hash
-            fi
 
-  # This is a terrible hack, but since ~ May 2020 it's often necessary to deploy twice for things to work
-  # Should be properly debugged at some point but we can't have the website go offline with each commit
-  redeploy:
+  deploy-prod:
     docker:
       - image: olizilla/ipfs-dns-deploy:latest
         environment:
           DOMAIN: research.protocol.ai
           BUILD_DIR: public
+          CLUSTER_HOST: /dnsaddr/ipfs-websites.collab.ipfscluster.io
     steps:
       - attach_workspace:
           at: /tmp/workspace
       - run:
-          name: Re-deploy website to IPFS
+          name: Deploy live website to IPFS
           command: |
-            pin_name="$DOMAIN build $CIRCLE_BUILD_NUMBER-2"
+            pin_name="$DOMAIN build $CIRCLE_BUILD_NUM"
             hash=$(pin-to-cluster.sh "$pin_name" /tmp/workspace/$BUILD_DIR)
+            echo "Website added to IPFS: https://ipfs.io/ipfs/$hash"            
             dnslink-dnsimple -d $DOMAIN -r _dnslink -l /ipfs/$hash
 
 workflows:
@@ -76,10 +71,11 @@ workflows:
           context: ipfs-dns-deploy
           requires:
             - build
-      - redeploy:
+      - deploy-prod:
           context: ipfs-dns-deploy
+          requires:
+            - build
           filters:
             branches:
-              only: master    
-          requires:
-            - deploy
+              only:
+                - master
