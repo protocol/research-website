@@ -33,7 +33,6 @@ jobs:
         environment:
           DOMAIN: research.protocol.ai
           BUILD_DIR: public
-          CLUSTER_HOST: /dnsaddr/ipfs-websites.collab.ipfscluster.io
     steps:
       - attach_workspace:
           at: /tmp/workspace
@@ -41,14 +40,26 @@ jobs:
           name: Deploy website to IPFS
           command: |
             pin_name="$DOMAIN build $CIRCLE_BUILD_NUM"
-
             hash=$(pin-to-cluster.sh "$pin_name" /tmp/workspace/$BUILD_DIR)
-
             echo "Website added to IPFS: https://ipfs.io/ipfs/$hash"
 
-            if [ "$CIRCLE_BRANCH" == "master" ] ; then
-              dnslink-dnsimple -d $DOMAIN -r _dnslink -l /ipfs/$hash
-            fi
+
+  deploy-prod:
+    docker:
+      - image: olizilla/ipfs-dns-deploy:latest
+        environment:
+          DOMAIN: research.protocol.ai
+          BUILD_DIR: public
+          CLUSTER_HOST: /dnsaddr/ipfs-websites.collab.ipfscluster.io
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: Deploy live website to IPFS collab cluster
+          command: |
+            pin_name="$DOMAIN build $CIRCLE_BUILD_NUM"
+            hash=$(pin-to-cluster.sh "$pin_name" /tmp/workspace/$BUILD_DIR)
+            dnslink-dnsimple -d $DOMAIN -r _dnslink -l /ipfs/$hash
 
 workflows:
   version: 2
@@ -59,3 +70,11 @@ workflows:
           context: ipfs-dns-deploy
           requires:
             - build
+      - deploy-prod:
+          context: ipfs-dns-deploy
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
