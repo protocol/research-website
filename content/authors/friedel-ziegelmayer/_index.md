@@ -17,6 +17,7 @@ resources:
     src: avatar.jpg
 
 interests:
+  - Cryptography
 
 education:
   courses:
@@ -25,6 +26,10 @@ education:
       year: 2013
 
 social:
+  - icon: twitter
+    link: https://twitter.com/dignifiedquire
+  - icon: github
+    link: https://github.com/dignifiedquire
   - icon: linkedin
     link: https://www.linkedin.com/in/friedel-ziegelmayer-70296387/
 
