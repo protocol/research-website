@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: Vasileios Giotsas joins Protocol Labs Research
+title: Vasilis Giotsas joins Protocol Labs Research
 
 # Website post date
 # format YYYY-MM-DD
