@@ -5,6 +5,7 @@ var list = document.getElementById('searchResults'); // targets the <ul>
 var first = list.firstChild; // first child of search list
 var last = list.lastChild; // last child of search list
 var maininput = document.getElementById('searchInput'); // input box for search
+var searchpane = documents.getElementById('off-canvas-search'); // search pane
 var resultsAvailable = false; // Did we get any search results?
 
 // ==========================================
@@ -12,35 +13,9 @@ var resultsAvailable = false; // Did we get any search results?
 //
 document.addEventListener('keydown', function(event) {
 
-  // CMD-/ to show / hide Search
-  if (event.altKey && event.which === 71) {
-      // Load json search index if first time invoking search
-      // Means we don't load json unless searches are going to happen; keep user payload small unless needed
-      if(firstRun) {
-        loadSearch(); // loads our json data and builds fuse.js search index
-        firstRun = false; // let's never do this again
-      }
-
-      // Toggle visibility of search box
-      if (!searchVisible) {
-        document.getElementById("fastSearch").style.visibility = "visible"; // show search box
-        document.getElementById("searchInput").focus(); // put focus in input box so you can just start typing
-        searchVisible = true; // search visible
-      }
-      else {
-        document.getElementById("fastSearch").style.visibility = "hidden"; // hide search box
-        document.activeElement.blur(); // remove focus from search box
-        searchVisible = false; // search not visible
-      }
-  }
-
   // Allow ESC (27) to close search box
   if (event.keyCode == 27) {
-    if (searchVisible) {
-      document.getElementById("fastSearch").style.visibility = "hidden";
-      document.activeElement.blur();
-      searchVisible = false;
-    }
+    hideOffCanvasSearch();
   }
 
   // DOWN (40) arrow
@@ -69,8 +44,36 @@ document.addEventListener('keydown', function(event) {
 // ==========================================
 // execute search as each character is typed
 //
-document.getElementById("searchInput").onkeyup = function(e) {
+maininput.onkeyup = function(e) {
   executeSearch(this.value);
+}
+
+// ==========================================
+// Show search pane
+//
+function showOffCanvasSearch() {
+  if(firstRun) {
+    loadSearch(); // loads our json data and builds fuse.js search index
+    firstRun = false; // let's never do this again
+  }
+
+  // Toggle visibility of search box
+  if (!searchVisible) {
+    searchpane.style.visibility = "visible"; // show search box
+    maininput.focus(); // put focus in input box so you can just start typing
+    searchVisible = true; // search visible
+  }
+}
+
+// ==========================================
+// Hide  search pane
+//
+function hideOffCanvasSearch() {
+  if (searchVisible) {
+    searchpane.style.visibility = "hidden";
+    document.activeElement.blur();
+    searchVisible = false;
+  }
 }
 
 

@@ -73,15 +73,7 @@
       {{ block "main" . }}{{ end }}
     </div>
 
-    {{ $fuse_js := resources.Get "js/fuse.js" | fingerprint }}
-    {{ $fastsearch_js := resources.Get "js/fastsearch.js" | fingerprint }}
-    <div id="fastSearch">
-      <input id="searchInput" tabindex="0">
-      <ul id="searchResults">
-      </ul>
-    </div>
-    <script type="text/javascript" src={{ $fuse_js.RelPermalink }} integrity={{ $fuse_js.Data.Integrity }}></script>
-    <script type="text/javascript" src={{ $fastsearch_js.RelPermalink }} integrity={{ $fastsearch_js.Data.Integrity }}></script>
+    {{ partial "off-canvas-search" . }}
 
     {{ partial "site-footer" . }}
 
