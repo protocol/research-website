@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Vasileios Giotsas
+name: Vasilis Giotsas
 
 # Role/position (e.g. Research Scientist)
 role: Research Engineer
