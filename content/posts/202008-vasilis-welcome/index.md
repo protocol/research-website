@@ -4,7 +4,7 @@ title: Vasilis Giotsas joins Protocol Labs Research
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-08-14
+date: 2020-08-26
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
