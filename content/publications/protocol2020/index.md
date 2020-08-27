@@ -59,7 +59,7 @@ unaffiliated: false
 # Icon must match a known icon in /static/icons
 links:
   - name: Download PDF
-    url: TBD
+    url: https://filecoin.io/engineering-filecoins-economy.pdf
     icon: download
 ---
 
