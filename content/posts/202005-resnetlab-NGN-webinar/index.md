@@ -11,8 +11,8 @@ date: 2020-05-07
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - yiannis-psaras
   - david-dias
+  - yiannis-psaras
 
 # If applicable
 categories:
