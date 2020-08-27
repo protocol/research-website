@@ -32,6 +32,9 @@ draft: false
 
 ---
 
+> "It ain’t pretty in the sense that it’s nice and neat, and many people have tried to get rid of creative solutions that are complex, but society is complex, people are complex. And for us to have simple solutions to complex problems: not a good idea."  *– Elinor Ostrom, awarded the 2009 Nobel Memorial Prize in Economic Sciences for her "analysis of economic governance, especially the commons"*
+
+
 The datasphere will grow to 175 zettabytes by 2025, according to [IDC estimates](https://www.seagate.com/pt/pt/our-story/data-age-2025/).  A stack of enough 10-terabyte hard drives to store all that data would literally reach the moon (1 zettabyte equals 1 trillion gigabytes).
 
 Today’s cloud storage solutions provide fast, highly scalable, and relatively inexpensive access to data storage. But the price and offering for storage on these cloud storage platforms is set by the small number of companies that provide the service. And the cost of these storage solutions is bundled with the cost of using the company’s proprietary software, APIs, data infrastructure, and servers. That means storage buyers can’t access storage directly and efficiently, but instead have to pay for a host of additional services and features. By some estimates, companies waste [$62 billion](https://www.businessinsider.com/companies-waste-62-billion-on-the-cloud-by-paying-for-storage-they-dont-need-according-to-a-report-2017-11) each year paying for more storage and services than they need when transacting with big tech platforms for their proprietary cloud storage solutions. And the storage itself is mostly provided in locations where data centers exist or can be built, which may not be close to where the data is generated or used.
