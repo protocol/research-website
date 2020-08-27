@@ -24,7 +24,7 @@ research_areas:
   - networking
 
 # Zero or more of the groups in content/research/groups (should match author membership)
-research_groups:
+groups:
   - resnetlab
 
 # Not used

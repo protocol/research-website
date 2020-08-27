@@ -11,8 +11,8 @@ date: 2020-07-01
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - yiannis-psaras
   - david-dias
+  - yiannis-psaras
 
 # If applicable
 categories:
@@ -46,7 +46,7 @@ A: Mobile and IoT offer the most interesting challenges as they—by design—of
 
 *Q: You do lots of caching. Do you have any mechanisms to guarantee cache consistency?*
 
-A: Caching within the IPFS network is not managed. The IPFS system does not include mechanisms to orchestrate caching. Content is not proactively replicated across other peers’ devices who don’t request the content. Instead, caching happens on devices after they request the content for the first time. These copies are maintained and verified by checking their cryptographic hash (which is also their address). 
+A: Caching within the IPFS network is not managed. The IPFS system does not include mechanisms to orchestrate caching. Content is not proactively replicated across other peers’ devices who don’t request the content. Instead, caching happens on devices after they request the content for the first time. These copies are maintained and verified by checking their cryptographic hash (which is also their address).
 
 *Q: In your Gossipsub evaluation, why do you have a 6-second deadline for block propagation in the Filecoin Network?*
 

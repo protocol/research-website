@@ -10,6 +10,7 @@ date: 2001-01-01
 # publishDate: 2019-09-03
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
+# We sort authors alphabetically by last name
 authors:
   -
 
