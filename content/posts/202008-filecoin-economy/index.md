@@ -89,4 +89,4 @@ The report explores:
 
 Download the full report [here](/publications/engineering-filecoins-economy/).
 
-_Adapted from the [Filecoin Blog](http://filecoin.io/blog/introducing-the-filecoin-economy)._
+_Adapted from the [Filecoin Blog](https://filecoin.io/blog/introducing-the-filecoin-economy)._
