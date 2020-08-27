@@ -8,7 +8,7 @@ date: 2020-08-27
 
 # Publish from this date (defaults to date)
 # Set early for preview generation
-publishDate: 2020-08-26
+# publishDate: 2020-08-26
 
 # Venue Name
 venue:
