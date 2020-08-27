@@ -30,6 +30,9 @@ groups:
 # Not used
 draft: false
 
+# Override summary
+summary: "Filecoin provides a blockchain-based marketplace that promises to revolutionize the global storage economy. The Filecoin marketplace delivers a totally new and secure way for anyone in the world to buy and sell storage. We’re excited to share an overview of how the storage economy works on the Filecoin Network."
+
 ---
 
 > "It ain’t pretty in the sense that it’s nice and neat, and many people have tried to get rid of creative solutions that are complex, but society is complex, people are complex. And for us to have simple solutions to complex problems: not a good idea."  *– Elinor Ostrom, awarded the 2009 Nobel Memorial Prize in Economic Sciences for her "analysis of economic governance, especially the commons"*
