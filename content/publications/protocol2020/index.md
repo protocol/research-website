@@ -30,9 +30,7 @@ publication_types:
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - david-dalrymple
-  - evan-miyazono
-  - zixuan-zhang
+  - "Protocol Labs"
 
 # Zero or more of the areas in content/areas
 areas:
@@ -65,4 +63,4 @@ unaffiliated: false
 #    icon: google-scholar
 ---
 
-The mission of the Filecoin Network is to create a decentralized, efficient, and robust foundation for humanity’s information. This mission will be advanced by incentivizing consistent growth and development of the Filecoin Network’s economy.  The goal of the economic design is to align incentives and pragmatically reward useful and reliable storage with as few rules as possible. The action and interaction of each of these mechanisms must be considered during the design process. Other economic structures and product offerings can then emerge from these basic building blocks. This document explains specific incentive mechanisms and economic stimuli provided by the protocol itself. For each fee, reward, or penalty in the protocol, there will be an explanation of how it is intended to contribute to long-term utility of the network. Additionally, this document explains the importance of long-term cooperation between participants in the Filecoin Network.  The protocol’s design enables and incentivizes this collaboration and furthers the interests of all participants.
+As a novel data storage and distribution network, the Filecoin Network’s mission is to create a decentralized, efficient, and robust foundation for humanity’s information. This mission will be advanced by incentivizing consistent growth and development of the Filecoin Network’s economy.  The goal of the economic design is to align incentives and pragmatically reward useful and reliable storage with as few rules as possible. The action and interaction of each of these mechanisms must be considered during the design process. Other economic structures and product offerings can then emerge from these basic building blocks. This document explains specific incentive mechanisms and economic stimuli provided by the protocol itself. For each fee, reward, or penalty in the protocol, there will be an explanation of how it is intended to contribute to long-term utility of the network. Additionally, this document explains the importance of long-term cooperation between participants in the Filecoin Network.  The protocol’s design enables and incentivizes this collaboration and furthers the interests of all participants.
