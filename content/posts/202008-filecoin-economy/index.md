@@ -11,9 +11,9 @@ date: 2020-08-27
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - evan-miyazono
-  - zixuan-zhang
   - "Rachel Horn"
+  - evan-miyazono  
+  - zixuan-zhang
 
 # If applicable
 categories:
