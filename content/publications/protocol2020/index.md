@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Engineering Filecoin’s Economy"
+title: "Engineering Filecoin’s economy"
 
 # Website post date
 # format YYYY-MM-DD
