@@ -86,9 +86,9 @@ A: See the answer above. Additionally, there are a few different ways in which u
 
 **Q: There would have to be a general way - it's difficult to do the configuration for every user. Bittorrent has been using all those methods for years. You could use the same techniques.**
 
-A: The teams at Protocol Labs are actively working on this topic to find a stable and general-purpose solution that will work out of the box. It is worth noting, however, that Bittorrent has traditionally worked fine when *one of the two* communicating nodes has been behind a NAT. IPFS also deals with this case without problems, using dialbacks for instance (i.e., asking the NAT’ed peer to open a connection to the dialable peer). 
+A: The teams at Protocol Labs are actively working on this topic to find a stable and general-purpose solution that will work out of the box. It is worth noting, however, that BitTorrent has traditionally worked fine when *one of the two* communicating nodes has been behind a NAT. IPFS also deals with this case without problems, using dialbacks for instance (i.e., asking the NAT’ed peer to open a connection to the dialable peer). 
 
-When both of the communicating nodes are behind NATs, Bittorrent also faces severe problems. In the case of Bittorent, the increased popularity of some content items and the fact that popular content will inevitably end up being stored at a dialable node is what improves performance. Again, the same applies to IPFS.
+When both of the communicating nodes are behind NATs, BitTorrent also faces severe problems. In the case of BitTorrent, the increased popularity of some content items and the fact that popular content will inevitably end up being stored at a dialable node is what improves performance. Again, the same applies to IPFS.
 
 **Q: Apart from the Internet Archive, are there other similar big publishers that use IPFS?**
 
