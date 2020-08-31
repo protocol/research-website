@@ -30,19 +30,16 @@ groups:
 draft: false
 
 ---
-
-[ResNetLab](/groups/resnetlab/) was invited to present a tutorial on IPFS to the Next Generation Networks group. The event was great, with many interesting questions from the audience that stimulated excellent discussions. Our contribution was a talk titled: “High-Level Overview of the IPFS Architecture”, delivered by ResNetLab Research Scientist Yiannis Psaras.
-
- NGN is a vibrant group of academics, industry researchers and engineers working in the general area of — you guessed it — Next-Generation Networks. NGN started as a UK- centred group, but has expanded widely to include prominent members of the international networks & systems community. They also operate a lively [mailing list](http://www.jiscmail.ac.uk/ngn) which we highly recommend to readers wishing to participate in interesting discussions about networking-related topics.
+The Next Generation Networks (NGN) group recently invited the [Resilient Networks Lab (ResNetLab)](/groups/resnetlab/) to present a tutorial on IPFS. NGN is a vibrant group of academics, industry researchers and engineers working in the general area of — you guessed it — next-generation networks. NGN started as a UK-centred group, but has expanded widely to include prominent members of the international networks & systems community. They also operate a lively [mailing list](http://www.jiscmail.ac.uk/ngn), which we highly recommend to readers wishing to participate in interesting discussions about networking-related topics.
 
 The group has been meeting once a year in a [picturesque setting](https://coseners.net/) in rural Oxford, UK, since 1988. During the COVID-19 pandemic outbreak, NGN has been hosting a series of weekly virtual talks.
 
-We received some great questions during the talk that we wanted to record for others to find. Enjoy!
+Attendees responded to ResNetLab Research Scientist Yiannis Psaras' talk, “High-Level Overview of the IPFS Architecture”, with insightful questions that generated excellent discussions. We wanted to record some of these questions and answers as a resource for others to find. Enjoy!
 
 ## Questions that came up during the talk
 
 
-**Q: In the case where the destination node is online, but the node on the path that will point you to the destination is not there: how do you detect and bypass a failed node along the path? Does the request get stuck in-between?**
+**Q: In the case where the destination node is online, but the node on the path that will point you to the destination is not there, how do you detect and bypass a failed node along the path? Does the request get stuck in-between?**
 
 A: When nodes publish content in the IPFS network, they create a provider record and send it to the node that is closest to the content’s hash in terms of XOR distance in the hash space. For instance, the provider record of a content whose hash is <kmabc123..> will be stored at node <kLrts..> — let’s call this the “(provider record) target node”. The provider record will also be replicated to 20 nearby (in hash-space terms) nodes around the target node <kmrts..>. Replication of provider records is used in order to account for high network churn and the fact that the target node might go offline. Therefore, even if the target node is offline when a client requests content (i.e. asks for a copy of the provider record), some of the rest of the 20 nodes will be online and make the provider record available.
 
@@ -65,9 +62,9 @@ A: Each provider record has a TTL. Original publishers of content, as well as pe
 
 A:  Integrity starts being verified through cryptographic hashing from the first blocks/chunks received. If the data received is incorrect, it is discarded, and if the sending peer continues to send chunks of the wrong content the connection is dropped.
 
-**Q: How do you maintain the Kademlia mappings in case of very high degree of churn?**
+**Q: How do you maintain the Kademlia mappings in case of a very high degree of churn?**
 
-A: Frequent republishing of both original content and provider records are the techniques used to deal with high network churn. The original Kademlia protocol requires that the number of replicas in the network and the republishing interval are balanced with network churn. 
+A: High network churn is dealt with through frequent republishing of both original content and provider records. The original Kademlia protocol requires that the number of replicas in the network and the republishing interval are balanced with network churn. 
 
 **Q: Is there any new release coming to address the issue of peers being behind NATs?**
 
@@ -84,20 +81,20 @@ A: See the answer above. Additionally, there are a few different ways in which u
 2. A DHT client can dial directly (i.e., open an outbound connection) to a dialable node, e.g., one of the public IPFS Gateways and make data available to that node.
 3. There are hosting services operational today in the IPFS network. [Pinata](https://pinata.cloud/) and [Infura](https://infura.io/) provide hosting and pinning services and make content available from their publicly dialable nodes.
 
-**Q: There would have to be a general way - it's difficult to do the configuration for every user. Bittorrent has been using all those methods for years. You could use the same techniques.**
+**Q: There would have to be a general way - it's difficult to do the configuration for every user. BitTorrent has been using all those methods for years. You could use the same techniques.**
 
 A: The teams at Protocol Labs are actively working on this topic to find a stable and general-purpose solution that will work out of the box. It is worth noting, however, that BitTorrent has traditionally worked fine when *one of the two* communicating nodes has been behind a NAT. IPFS also deals with this case without problems, using dialbacks for instance (i.e., asking the NAT’ed peer to open a connection to the dialable peer). 
 
 When both of the communicating nodes are behind NATs, BitTorrent also faces severe problems. In the case of BitTorrent, the increased popularity of some content items and the fact that popular content will inevitably end up being stored at a dialable node is what improves performance. Again, the same applies to IPFS.
 
-**Q: Apart from the Internet Archive, are there other similar big publishers that use IPFS?**
+**Q: Say we have multiple peers storing the same (mutable) content. If there is an inconsistency between them, how does a user get the latest version of the content? In other words, how do you get the latest version of the IPNS record?**
+
+A: IPFS uses the InterPlanetary Naming System (IPNS) to publish mutable content. Mutable content is advertised through IPNS records. With IPNS, instead of publishing the hash of the content, users publish the hash (the multihash, in fact) of their public key. Assuming that the [multihash](https://tools.ietf.org/html/draft-snell-multihash-00) of the publisher’s public key is H(k), then in order to publish content under this IPNS key, the publisher must send a provider record to the K (with K=20 in the current setting) closest peers to SHA256(H(k)). The system then performs a lookup for those K peers and sends them the provider record.
+
+In the opposite direction, in order to retrieve content, a user asks the K closest peers to SHA256(H(k)) for the provider record that points to the peer with this key, or for peers closer to it. As the user receives responses from the K closest peers, the system retains the latest version of the provider record (the one with the highest sequence number). The default setting is for the query to terminate after it receives 16 records; this setting can be altered. Cross-checking the highest sequence number from all 16 (or more) received records ensures that the user has the most recent record. The user also sends the up-to-date record to those peers that sent outdated records.
+
+**Q: Apart from the Internet Archive, are there other big publishers that use IPFS?**
 
 A: IPFS has collaborated with several large scientific publishers and pre-print archives, such as [arXiv](https://arxiv.org/), and standardization bodies, such as the [IETF](https://www.ietf.org/); IPFS has additionally worked with [EDGI](https://envirodatagov.org/) to back up climate data.
 
 In addition to collaborating directly with publishers,  IPFS also hosts several important community-led [data preservation projects](https://awesome.ipfs.io/datasets/), including the [Distributed Wikipedia Mirror Project](https://github.com/ipfs/distributed-wikipedia-mirror), geocities-on-ipfs, and the [InterPlanetary Wayback](https://github.com/oduwsdl/ipwb) archive replay system.
-
-**Q: Say we have multiple peers storing the same (mutable) content. If there is an inconsistency between them, how does a user get the latest version of the content? In other words, how do you get the latest version of the IPNS record?**
-
-A: IPFS uses the InterPlanetary Naming System (IPNS) to publish mutable content. Mutable content is advertised through IPNS records. With IPNS, instead of publishing the hash of the content, users publish the hash (in fact the multihash) of their public key. Assuming that the [multihash](https://tools.ietf.org/html/draft-snell-multihash-00) of the publisher’s public key is H(k), then in order to publish content under this IPNS key, the publisher must send a provider record to the K (with K=20 in the current setting) closest peers to SHA256(H(k)). The system then performs a lookup for those K peers and sends them the provider record.
-
-In the opposite direction, in order to retrieve content, a user asks the K closest peers to SHA256(H(k)) for the provider record that points to the peer with this key, or for peers closer to it. As the user receives responses from the K closest peers, the system retains the latest version of the provider record (the one with the highest sequence number). The default setting is for the query to terminate after it receives 16 records; this setting can be altered. Cross-checking the highest sequence number from all 16 (or more) received records ensures that the user has the most recent record. The user also sends the up-to-date record to those peers that sent outdated records.
