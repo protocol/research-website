@@ -92,7 +92,7 @@ When both of the communicating nodes are behind NATs, BitTorrent also faces seve
 
 **Q: Apart from the Internet Archive, are there other similar big publishers that use IPFS?**
 
-A: IPFS has collaborated with several large scientific publishers and pre-print archives, such as [Arxiv](https://arxiv.org/), and standardization bodies, such as the [IETF](https://www.ietf.org/); IPFS has additionally worked with [EDGI](https://envirodatagov.org/) to back up climate data.
+A: IPFS has collaborated with several large scientific publishers and pre-print archives, such as [arXiv](https://arxiv.org/), and standardization bodies, such as the [IETF](https://www.ietf.org/); IPFS has additionally worked with [EDGI](https://envirodatagov.org/) to back up climate data.
 
 In addition to collaborating directly with publishers,  IPFS also hosts several important community-led [data preservation projects](https://awesome.ipfs.io/datasets/), including the [Distributed Wikipedia Mirror Project](https://github.com/ipfs/distributed-wikipedia-mirror), geocities-on-ipfs, and the [InterPlanetary Wayback](https://github.com/oduwsdl/ipwb) archive replay system.
 
