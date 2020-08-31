@@ -31,7 +31,7 @@ draft: false
 
 ---
 
-[ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) was invited to present a tutorial on IPFS to the Next Generation Networks group. The event was great, with many interesting questions from the audience that stimulated excellent discussions. Our contribution was a talk titled: “High-Level Overview of the IPFS Architecture”, delivered by ResNetLab Research Scientist Yiannis Psaras.
+[ResNetLab](/groups/resnetlab/) was invited to present a tutorial on IPFS to the Next Generation Networks group. The event was great, with many interesting questions from the audience that stimulated excellent discussions. Our contribution was a talk titled: “High-Level Overview of the IPFS Architecture”, delivered by ResNetLab Research Scientist Yiannis Psaras.
 
  NGN is a vibrant group of academics, industry researchers and engineers working in the general area of — you guessed it — Next-Generation Networks. NGN started as a UK- centred group, but has expanded widely to include prominent members of the international networks & systems community. They also operate a lively [mailing list](http://www.jiscmail.ac.uk/ngn) which we highly recommend to readers wishing to participate in interesting discussions about networking-related topics.
 
