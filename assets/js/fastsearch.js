@@ -1,7 +1,7 @@
 var fuse; // holds our search engine
 var searchVisible = false;
 var firstRun = true; // allow us to delay loading json data unless search activated
-var list = document.getElementById('searchResults'); // targets the <ul>
+var list = document.getElementById('searchResults'); // targets the results div
 var mainInput = document.getElementById('searchInput'); // input box for search
 var searchPane = document.getElementById('off-canvas-search'); // search pane
 var resultsAvailable = false; // Did we get any search results?
@@ -10,7 +10,7 @@ var resultsAvailable = false; // Did we get any search results?
 // The main keyboard event listener running the show
 //
 document.addEventListener('keydown', function(event) {
-  // Allow ESC (27) to close search box
+  // Allow ESC (27) to close search pane
   if (event.keyCode == 27) {
     hideOffCanvasSearch();
   }
@@ -33,7 +33,7 @@ function showOffCanvasSearch() {
     firstRun = false; // let's never do this again
   }
 
-  // Toggle visibility of search box
+  // Toggle visibility of search pane
   if (!searchVisible) {
     document.body.classList.toggle('off-canvas-search-open');
     mainInput.focus();
@@ -72,7 +72,7 @@ function fetchJSONFile(path, callback) {
 
 // ==========================================
 // load our search index, only executed once
-// on first call of search box (CMD-/)
+// on first call of search box
 //
 function loadSearch() {
   fetchJSONFile('/index.json', function(data){
@@ -98,7 +98,7 @@ function loadSearch() {
 
 
 // ==========================================
-// using the index we loaded on CMD-/, run
+// using the index we loaded on tab open, run
 // a search query (for "term") every time a letter is typed
 // in the search box
 //
