@@ -125,7 +125,7 @@ function executeSearch(term) {
 
           <h1 class="text-blue text-bigger leading-tight hover:underline mb-2"><a href="${results[item].item.relpermalink}">${results[item].item.title}</a></h1>
 
-          <div class="multiline-ellipsis-3 md:multiline-ellipsis-3">${results[item].item.summary}</div>
+          <div class="multiline-ellipsis-3">${results[item].item.summary}</div>
         </div>`
     }
     resultsAvailable = true;
