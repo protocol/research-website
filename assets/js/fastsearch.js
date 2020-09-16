@@ -2,41 +2,19 @@ var fuse; // holds our search engine
 var searchVisible = false;
 var firstRun = true; // allow us to delay loading json data unless search activated
 var list = document.getElementById('searchResults'); // targets the <ul>
-var first = list.firstChild; // first child of search list
-var last = list.lastChild; // last child of search list
+var first = null; // first child of search list
+var last = null; // last child of search list
 var maininput = document.getElementById('searchInput'); // input box for search
-var searchpane = documents.getElementById('off-canvas-search'); // search pane
+var searchpane = document.getElementById('off-canvas-search'); // search pane
 var resultsAvailable = false; // Did we get any search results?
 
 // ==========================================
 // The main keyboard event listener running the show
 //
 document.addEventListener('keydown', function(event) {
-
   // Allow ESC (27) to close search box
   if (event.keyCode == 27) {
     hideOffCanvasSearch();
-  }
-
-  // DOWN (40) arrow
-  if (event.keyCode == 40) {
-    if (searchVisible && resultsAvailable) {
-      console.log("down");
-      event.preventDefault(); // stop window from scrolling
-      if ( document.activeElement == maininput) { first.focus(); } // if the currently focused element is the main input --> focus the first <li>
-      else if ( document.activeElement == last ) { last.focus(); } // if we're at the bottom, stay there
-      else { document.activeElement.parentElement.nextSibling.firstElementChild.focus(); } // otherwise select the next search result
-    }
-  }
-
-  // UP (38) arrow
-  if (event.keyCode == 38) {
-    if (searchVisible && resultsAvailable) {
-      event.preventDefault(); // stop window from scrolling
-      if ( document.activeElement == maininput) { maininput.focus(); } // If we're in the input box, do nothing
-      else if ( document.activeElement == first) { maininput.focus(); } // If we're at the first item, go to input box
-      else { document.activeElement.parentElement.previousSibling.firstElementChild.focus(); } // Otherwise, select the search result above the current active one
-    }
   }
 });
 
@@ -59,9 +37,9 @@ function showOffCanvasSearch() {
 
   // Toggle visibility of search box
   if (!searchVisible) {
-    searchpane.style.visibility = "visible"; // show search box
-    maininput.focus(); // put focus in input box so you can just start typing
-    searchVisible = true; // search visible
+    document.body.classList.toggle('off-canvas-search-open');
+    maininput.focus();
+    searchVisible = true;
   }
 }
 
@@ -70,15 +48,14 @@ function showOffCanvasSearch() {
 //
 function hideOffCanvasSearch() {
   if (searchVisible) {
-    searchpane.style.visibility = "hidden";
-    document.activeElement.blur();
+    document.body.classList.toggle('off-canvas-search-open');
     searchVisible = false;
   }
 }
 
 
 // ==========================================
-// fetch some json without jquery
+// Fetch some json without jquery
 //
 function fetchJSONFile(path, callback) {
   var httpRequest = new XMLHttpRequest();
@@ -106,12 +83,15 @@ function loadSearch() {
       shouldSort: true,
       location: 0,
       distance: 100,
-      threshold: 0.4,
-      minMatchCharLength: 2,
+      threshold: 0.6,
+      minMatchCharLength: 3,
       keys: [
-        'title',
-        'permalink',
-        'summary'
+        {name:'title', weight:1},
+        {name:'summary', weight:0.6},
+        {name:'authors', weight:0.5},
+        {name:'content', weight:0.2},
+        {name:'tags', weight:0.5},
+        {name:'categories', weight:0.5}
         ]
     };
     fuse = new Fuse(data, options); // build the index from the json file
@@ -128,12 +108,27 @@ function executeSearch(term) {
   let results = fuse.search(term); // the actual query being run using fuse.js
   let searchitems = ''; // our results bucket
 
+  if (term.length < 3)
+    return;
+
   if (results.length === 0) { // no results based on what was typed into the input box
     resultsAvailable = false;
     searchitems = '';
   } else { // build our html
     for (let item in results.slice(0,5)) { // only show first 5 results
-      searchitems = searchitems + '<li><a href="' + results[item].item.permalink + '" tabindex="0">' + '<span class="title">' + results[item].item.title + '</span><br /> <span class="sc">'+ results[item].item.section +'</span> — ' + results[item].item.date + ' — <em>' + results[item].item.desc + '</em></a></li>';
+      searchitems = searchitems +
+      `<div class="py-4">
+          <p class="text-sm text-gray-700 mb-2">
+            <span>${results[item].item.date}</span>
+            <span class="text-blue-200">/</span>
+
+            <span>${results[item].item.type}</span>
+          </p>
+
+          <h1 class="text-blue text-bigger leading-tight hover:underline mb-2"><a href="${results[item].item.relpermalink}">${results[item].item.title}</a></h1>
+
+          <div class="multiline-ellipsis-3 md:multiline-ellipsis-3">${results[item].item.summary}</div>
+        </div>`
     }
     resultsAvailable = true;
   }

@@ -68,12 +68,11 @@
   <body class="font-body min-w-site text-base text-black leading-normal subpixel-antialiased antialiased">
     {{ partial "site-header" . }}
     {{ partial "off-canvas-nav" . }}
+    {{ partial "off-canvas-search" . }}
 
     <div class="w-full pb-24 md:pb-30">
       {{ block "main" . }}{{ end }}
     </div>
-
-    {{ partial "off-canvas-search" . }}
 
     {{ partial "site-footer" . }}
 

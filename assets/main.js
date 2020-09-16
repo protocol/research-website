@@ -21,7 +21,10 @@ simpleCustomAttributes.addAttribute('on-viewport-intersect', {
 
 simpleCustomAttributes.register({
   toggleOffCanvasNav() {
-    document.body.classList.toggle('off-canvas-open');
+    document.body.classList.toggle('off-canvas-nav-open');
+  },
+  toggleOffCanvasSearch() {
+    hideOffCanvasSearch();
   },
   copyContentsToClipboard(event) {
     let element = event.currentTarget;

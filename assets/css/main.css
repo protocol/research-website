@@ -1,5 +1,4 @@
 @import '/assets/css/tooltip.css';
-@import '/assets/css/search.css';
 
 @tailwind base;
 
@@ -101,13 +100,24 @@ html {
 @tailwind utilities;
 
 /* purgecss ignore */
-#off-canvas-nav, #off-canvas-search {
+#off-canvas-nav {
   transform: translate3d(100%, 0, 0);
   transition: transform 300ms ease-in-out;
 }
 
 /* purgecss ignore */
-body.off-canvas-open #off-canvas-nav, #off-canvas-search {
+#off-canvas-search {
+  transform: translate3d(100%, 0, 0);
+  transition: transform 300ms ease-in-out;
+}
+
+/* purgecss ignore */
+body.off-canvas-nav-open #off-canvas-nav {
+  transform: translate3d(0, 0, 0);
+}
+
+/* purgecss ignore */
+body.off-canvas-search-open #off-canvas-search {
   transform: translate3d(0, 0, 0);
 }
 
