@@ -37,7 +37,7 @@ social:
   - icon: linkedin
     link: https://www.linkedin.com/in/gdw/
   - icon: link
-    link: guywuollet.com   
+    link: https://guywuollet.com/
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
