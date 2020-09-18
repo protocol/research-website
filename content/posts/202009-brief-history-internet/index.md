@@ -83,4 +83,5 @@ We’ve talked about the failures of money routing online, but for most people, 
 However, just because the Internet is functional, doesn’t mean it can’t improve. Many flaws in our current Internet are caused by a misalignment of money and packet routing protocols. The Internet isn’t some amorphous thing, it’s a collection of cables, radios, and computers. Someone has to own those cables, radios, and computers. We call those owners Internet Service Providers. Both ISPs and Internet users want to route packets well, but ISPs and users have different goals for routing money. Aligning money routing incentives for both users and ISPs will be a huge step towards a better Internet. 
 
 
+*The views and opinions expressed in this article are those of the author and do not necessarily reflect the opinions of Protocol Labs or Protocol Labs Research.*
 
