@@ -4,7 +4,7 @@ title: "A Brief History of (Re)building the Internet"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-09-25
+date: 2020-09-18
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
