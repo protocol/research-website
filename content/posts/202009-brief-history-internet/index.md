@@ -52,7 +52,7 @@ The pre- World Wide Web phase of the Internet was characterized by academic and 
 
 >Economist: That’s what I said. 
 
-To gain a better understanding of the difference between routing money and routing packets, let’s examine two Internet features, **Quality of Service (QoS)** and **Multicast**. Both QoS and Multicast failed to reach mainstream adoption because they routed money poorly, even though they routed information well. 
+To gain a better understanding of the difference between routing money and routing packets, let’s examine two Internet features, **Quality of Service (QoS)** and **multicast**. Both QoS and multicast failed to reach mainstream adoption because they routed money poorly, even though they routed information well. 
 
 **Quality of Service** is a simple concept. It’s essentially priority mail for the Internet. Unfortunately, the model of the commercial Internet directly conflicts with a well-implemented QoS functionality. 
 
@@ -74,7 +74,7 @@ CDNs replicate content by storing multiple copies near densely populated areas. 
 
 ISPs could provide CDN functionality, but they largely don’t. For a large content provider to buy CDN functionality, they would be required to maintain a contract with each ISP that provides Internet service to the content provider’s consumer. This coordination cost is quite high. Instead, CDN services are typically provided by an independent company, like [Akamai](https://www.akamai.com), that makes a single deal with each ISP and can then provide global CDN services to each customer. These planet-scale CDN providers benefit from their size and vantage point to better predict user demand and adapt their networks. Coupled with a one-stop interface for content providers looking to offer fast global access, this allows CDNs to capture significant value.
 
-QoS and Multicast illustrate why innovation at the protocol level of the Internet is so hard. Better functionality for end users often comes with a hefty price tag for ISPs. ISPs are unable to capture new revenue due to their existing business model, so they lack the ability and willingness to invest in innovation. This reinforces the barrier to change on the Internet and prevents a leap forward in end user experience. 
+QoS and multicast illustrate why innovation at the protocol level of the Internet is so hard. Better functionality for end users often comes with a hefty price tag for ISPs. ISPs are unable to capture new revenue due to their existing business model, so they lack the ability and willingness to invest in innovation. This reinforces the barrier to change on the Internet and prevents a leap forward in end user experience. 
 
 ## Future
 
