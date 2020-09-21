@@ -1,13 +1,13 @@
 <div class="block"></div>
 
 <nav class="w-full top-0 z-30 bg-white opacity-100 text-big" data-selector="nav" on-swipe-left="toggleOffCanvasNav">
-  <div class="z-50 max-w-screen mx-auto px-4 md:px-10 pt-4 pb-4 md:pt-8 md:pb-8 flex justify-between items-center" data-selector="nav-contents">
-    <a href="/" class="flex items-center">
+  <div class="z-50 max-w-screen mx-auto px-4 md:px-10 py-4 md:py-8 flex justify-end items-center" data-selector="nav-contents">
+    <a href="/" class="flex items-center mr-auto">
       <img src="/images/pl_research_logo.svg" class="h-20 md:h-24" alt="Protocol Labs Research">
     </a>
 
-    <div class="h-8 flex items-center md:hidden" on-click="toggleOffCanvasNav">
-      {{ partial "icons/nav-icon.svg" (dict "class" "block fill-current")}}
+    <div class="h-8 flex items-center md:hidden mt-0 pt-1" on-click="toggleOffCanvasNav">
+      <img src="/icons/menu.svg" width="20px">
     </div>
 
     <div class="hidden md:flex items-center w-auto -mr-4">
@@ -42,5 +42,10 @@
         </div>
       {{ end }}
     </div>
+    <div class="h-8 flex items-center ml-8 mt-0 pt-1" id="search-button" onclick="showOffCanvasSearch()">
+      <!-- Replace png with svg -->
+      <img src="/icons/search.svg" width="20px">
+    </div>
   </div>
+
 </nav>

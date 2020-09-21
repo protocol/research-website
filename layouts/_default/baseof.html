@@ -68,6 +68,7 @@
   <body class="font-body min-w-site text-base text-black leading-normal subpixel-antialiased antialiased">
     {{ partial "site-header" . }}
     {{ partial "off-canvas-nav" . }}
+    {{ partial "off-canvas-search" . }}
 
     <div class="w-full pb-24 md:pb-30">
       {{ block "main" . }}{{ end }}
@@ -78,8 +79,8 @@
 
     {{ $mathjax_config := resources.Get "js/mathjax-config.js" | minify | fingerprint }}
     <script type="text/javascript" src={{ $mathjax_config.RelPermalink }} integrity={{ $mathjax_config.Data.Integrity }}></script>
-    {{ $mathjax := resources.Get "js/mathjax.js" | minify | fingerprint }}
-    <script type="text/javascript" src={{ $mathjax.RelPermalink }} integrity={{ $mathjax.Data.Integrity }}></script>
+    {{ $mathjax_js := resources.Get "js/mathjax.js" | minify | fingerprint }}
+    <script type="text/javascript" src={{ $mathjax_js.RelPermalink }} integrity={{ $mathjax_js.Data.Integrity }}></script>
     {{ $js := resources.Get "js/bundle.js" | minify | fingerprint }}
     <script type="text/javascript" src={{ $js.RelPermalink }} integrity={{ $js.Data.Integrity }}></script>
 
