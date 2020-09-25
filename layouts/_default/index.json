@@ -21,6 +21,7 @@
     {{- end -}}
 
     {{- $authors := .Params.authors -}}
+    {{- $groups := .Params.groups -}}
     {{- $title := .Title}}
     {{- $rel_permalink := .RelPermalink -}}
     {{- $permalink := .Permalink -}}
@@ -53,7 +54,7 @@
         {{- end -}}
     {{- end -}}
 
-    {{- $index = $index | append (dict "objectID" .File.UniqueID "date" (.Date.Format .Site.Params.DateForm) "permalink" $permalink "relpermalink" $rel_permalink "title" $title "summary" (plainify $desc) "content" .Plain "authors" $authors "kind" .Kind "type" (humanize .Type) "section" .Section "tags" .Params.Tags "categories" .Params.Categories) -}}
+    {{- $index = $index | append (dict "objectID" .File.UniqueID "date" (.Date.Format .Site.Params.DateForm) "permalink" $permalink "relpermalink" $rel_permalink "title" $title "summary" (plainify $desc) "content" .Plain "authors" $authors "groups" $groups "kind" .Kind "type" (humanize .Type) "section" .Section "tags" .Params.Tags "categories" .Params.Categories) -}}
   {{- end -}}
 {{- end -}}
 

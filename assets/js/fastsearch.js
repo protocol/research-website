@@ -87,6 +87,7 @@ function loadSearch() {
         {name:'title', weight:1},
         {name:'summary', weight:0.6},
         {name:'authors', weight:0.4},
+        {name:'groups', weight:0.4},
         {name:'content', weight:0.2},
         {name:'tags', weight:0.5},
         {name:'categories', weight:0.5}
