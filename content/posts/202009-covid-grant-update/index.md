@@ -17,8 +17,8 @@ authors:
 
 # If applicable
 categories:
-News
-grants
+- news
+- grants
 
 # Zero or more of the areas in content/areas
 areas:
@@ -37,7 +37,7 @@ In the spring, as COVID-19 swept the globe, Protocol Labs quickly retooled its [
 
 The [COVID-19 Open Innovation grant program](https://research.protocol.ai/blog/2020/announcing-our-covid-19-open-innovation-grant-awardees/) has spurred a great deal of interest from the PL community, and we’re pleased to be able to share an update on the progress of some of our funded projects:
 
-The **[Geo Backtracer**](https://github.com/aimxhaisse/geo-backtracer) project is building technology to enhance contact-tracing efforts: Geo Backtracer is a distributed backend to store users’ real-time GPS locations and provide a way to backtrace close contacts between users (close proximity lasting  >15 minutes) over a period of 15 days.
+The [**Geo Backtracer**](https://github.com/aimxhaisse/geo-backtracer) project is building technology to enhance contact-tracing efforts: Geo Backtracer is a distributed backend to store users’ real-time GPS locations and provide a way to backtrace close contacts between users (close proximity lasting  >15 minutes) over a period of 15 days.
 
 The project is one component that can be coupled with GPS datapoint aggregators to implement a complete contact-tracing app. Geo Backtracer offers automation to scale with increasing user load, and the technology is already in the testing phase: multiple simulations with up to 50 million users have confirmed that the approach scales linearly and is production-ready.
 
