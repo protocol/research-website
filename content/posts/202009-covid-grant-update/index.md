@@ -10,9 +10,10 @@ date: 2020-09-25
 # publishDate: 2019-09-25
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
+# We sort authors alphabetically by last name
 authors:
-karola-kirsanow
-jorge-soares
+- karola-kirsanow
+- jorge-soares
 
 # If applicable
 categories:
