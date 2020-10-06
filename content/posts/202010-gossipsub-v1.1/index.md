@@ -54,19 +54,20 @@ As the name suggests, GossipSub is a gossip-based pubsub protocol. Structurally,
 
 1. **Mesh links** build the GossipSub mesh. Each node connects to the mesh through a number of connections, `D`, which indicates the degree of the network.
 
-![](content/posts/202010-gossipsub-v1.1/image3.png)
+<center>{{< figure src="image3.png" alt="The Gossipsub Mesh" >}}</center>
+
 
 The degree, `D`, is accompanied by two thresholds, `D_low` and `D_high` that act as boundaries. When the number of connections increases above `D_high`, the node prunes some of the connections, while when it decreases below `D_low` the node grafts new connections. Both of these happen in order to keep the degree in the area `<D_low, D_high>`.
 
-![](content/posts/202010-gossipsub-v1.1/image6.png)
+<center>{{< figure src="image6.png" alt="the graft v prune threshhold" >}}</center>
 
 2. **Gossip links** augment the message propagation performance of the protocol. Gossiping allows the network to operate on a relatively low degree and therefore, keep traffic under certain levels. There is a clear tradeoff between gossiping levels and the degree of the network, which we depict in the following figure:
 
-![tradeoff between gossiping levels and the degree of the network](content/posts/202010-gossipsub-v1.1/image2.png)
+<center>{{< figure src="image2.png" alt="tradeoff between gossiping levels and the degree of the network" >}}</center>
 
 Gossiping is realised in three rounds, one in every _“mesh maintenance round”_, which takes place every 1 second. The rationale behind setting the number of rounds to three was to reach a certain level of network coverage. In our case, we wanted to ensure that gossip messages reach ~50% of nodes in the network – see the [paper](https://arxiv.org/abs/2007.02754) for more details.
 
-![gossip rounds](content/posts/202010-gossipsub-v1.1/image1.png)
+<center>{{< figure src="image1.png" alt="gossip rounds" >}}</center>
 
 A unique characteristic of GossipSub — compared with traditional pubsub protocols —  is that it comes with a number of techniques that make it resilient against attacks. Resilience is realised through a peer-scoring function and a number of mitigation strategies, some of which take input from the scoring function.
 
@@ -114,17 +115,18 @@ We have run hundreds of tests tweaking and playing with several parameters of th
 
 In some attacks, such as the network-wide Eclipse attack, the performance is not affected at all, as Sybils are efficiently excluded from the mesh from the onset.
 
-![performance during an Eclipse attack](content/posts/202010-gossipsub-v1.1/image5.png)
+<center>{{< figure src="image5.png" alt="performance during an Eclipse attack" >}}</center>
 
 In some other cases, where more sophisticated attacks are tested, such as the Cold Boot Attack, performance is slightly affected, but does not effectively impact the operation of the blockchain network (i.e., the 6 second deadline of Filecoin is never missed).
 
-![performance during a Cold Boot Attack](content/posts/202010-gossipsub-v1.1/image7.png)
+<center>{{< figure src="image7.png" alt="performance during a Cold Boot attack" >}}</center>
+
 
 In contrast, propagation protocols without any security measures — in our test case the Bitcoin and ETH1.0 pubsub protocols — suffer from both message loss and extensive delays in message propagation which in turn, in turn, results in missing the deadline. In an operational environment this would have severe consequences forthe blockchain network and could mean the loss of millions of dollars.
 
 We have dug deep into the behaviour of the protocol in order to cover all edge and corner cases that could present attack vectors. Among other things, we have captured the number of connections that peers maintain to honest vs. attacker peers.
 
-![connections to honest v attacker peers](content/posts/202010-gossipsub-v1.1/image4.png)
+<center>{{< figure src="image4.png" alt="connections to honest v attacker peers" >}}</center>
 
 It is impressive to see that in the worst of attacks, the Covert Flash Attack, the protocol recovers the mesh in record time – within less than 2min after the attack is launched — , without affecting message delivery performance.
 
