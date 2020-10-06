@@ -52,7 +52,7 @@ For a blockchain network, the deadline is the block and transaction message prop
 
 As the name suggests, GossipSub is a gossip-based pubsub protocol. Structurally, a GossipSub-based network is composed of: i) mesh links that carry full messages in an eager-push manner (i.e., actively propagating messages) and ii) gossip-links that carry message identifiers only and realise a lazy-pull propagation model (i.e., reactively requesting messages they’ve learned about).
 
-1. **Mesh links** build the GossipSub mesh. Each node connects to the mesh through a number of connections, `D`, which indicates the degree of the network.
+**Mesh links** build the GossipSub mesh. Each node connects to the mesh through a number of connections, `D`, which indicates the degree of the network.
 
 <center>{{< figure src="image3.png" alt="The Gossipsub Mesh" >}}</center>
 
@@ -61,7 +61,7 @@ The degree, `D`, is accompanied by two thresholds, `D_low` and `D_high` that act
 
 <center>{{< figure src="image6.png" alt="the graft v prune threshhold" >}}</center>
 
-2. **Gossip links** augment the message propagation performance of the protocol. Gossiping allows the network to operate on a relatively low degree and therefore, keep traffic under certain levels. There is a clear tradeoff between gossiping levels and the degree of the network, which we depict in the following figure:
+**Gossip links** augment the message propagation performance of the protocol. Gossiping allows the network to operate on a relatively low degree and therefore, keep traffic under certain levels. There is a clear tradeoff between gossiping levels and the degree of the network, which we depict in the following figure:
 
 <center>{{< figure src="image2.png" alt="tradeoff between gossiping levels and the degree of the network" >}}</center>
 
@@ -71,7 +71,7 @@ Gossiping is realised in three rounds, one in every _“mesh maintenance round�
 
 A unique characteristic of GossipSub — compared with traditional pubsub protocols —  is that it comes with a number of techniques that make it resilient against attacks. Resilience is realised through a peer-scoring function and a number of mitigation strategies, some of which take input from the scoring function.
 
-1. **Scoring**: every peer in a GossipSub-based network monitors the performance and behaviour of peers it knows of, i.e., both those that it is directly connected to in the mesh and those that it is interacting with through gossip. The score is not shared with other peers: it is not a reputation system, but instead it is used by the node locally to identify whether a particular peer is behaving as expected or not. Based on the scoring results, nodes make grafting and pruning decisions driven by some of the mitigation strategies discussed next.
+**Scoring**: every peer in a GossipSub-based network monitors the performance and behaviour of peers it knows of, i.e., both those that it is directly connected to in the mesh and those that it is interacting with through gossip. The score is not shared with other peers: it is not a reputation system, but instead it is used by the node locally to identify whether a particular peer is behaving as expected or not. Based on the scoring results, nodes make grafting and pruning decisions driven by some of the mitigation strategies discussed next.
 
 The score function takes six values into account and calculates the score as a weighted sum. We have chosen these values carefully to identify the most important behavioural characteristics that differentiate a malicious from an honest node. Among other behavioural characteristics, these values capture:
 
@@ -80,8 +80,7 @@ The score function takes six values into account and calculates the score as a w
 - the _number of times a peer has failed to forward messages_ that were eventually received by other peers, which is again an indicator that the node is silently dropping messages,
 - the _number of invalid messages_ that a node has attempted to propagate in the network as an attempt to cheat or overload other nodes.
 
-
-2. **Mitigation strategies**: GossipSub includes a total of five mitigation strategies. These range from simple mitigations, such as _“flood publishing”_, where a newly published message is flooded to its first-hop peers, to more complex ones, where the outcome of the scoring function is consulted in order to make grafting and pruning decisions.
+**Mitigation strategies**: GossipSub includes a total of five mitigation strategies. These range from simple mitigations, such as _“flood publishing”_, where a newly published message is flooded to its first-hop peers, to more complex ones, where the outcome of the scoring function is consulted in order to make grafting and pruning decisions.
 
 Flood publishing has been identified as an efficient way to bypass sybil-dominated mesh connections of a peer that is under attack. With flood-publishing even if `D_high - 1` connections are Sybil-controlled, the newly published message will still make it to the rest of the network through the one remaining connection.
 
@@ -128,7 +127,7 @@ We have dug deep into the behaviour of the protocol in order to cover all edge a
 
 <center>{{< figure src="image4.png" alt="connections to honest v attacker peers" >}}</center>
 
-It is impressive to see that in the worst of attacks, the Covert Flash Attack, the protocol recovers the mesh in record time – within less than 2min after the attack is launched — , without affecting message delivery performance.
+It is impressive to see that in the worst of attacks, the Covert Flash Attack, the protocol recovers the mesh in record time – within less than 2 minutes after the attack is launched —  without affecting message delivery performance.
 
 GossipSub ticks all the boxes for a secure operation under all identified attacks. The protocol is deployed and operates on the Filecoin Testnet, which currently has more than 350 operational miner nodes and 400 Petabytes in storage capacity. The protocol has been operating flawlessly, validating our design decisions in an operational environment. GossipSub has been adopted and is currently being deployed on the ETH2.0 blockchain.
 
