@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: GossipSub: An Attack-Resilient Messaging-Layer Protocol for Public Blockchains
+title: GossipSub - An Attack-Resilient Messaging-Layer Protocol for Public Blockchains
 
 # Website post date
 # format YYYY-MM-DD
@@ -12,20 +12,20 @@ date: 2020-10-06
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  - yiannis-psaras
-  - david-dias
+- yiannis-psaras
+- david-dias
 
 # If applicable
 categories:
-  - blog
+- blog
 
 # Zero or more of the areas in content/areas
 areas:
-  - distributed-systems
+- distributed-systems
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - resnetlab
+- resnetlab
 
 # Not used
 draft: false
