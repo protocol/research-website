@@ -32,7 +32,7 @@ draft: false
 
 ---
 
-Securing permissionless networks is the bane of open networks, starting with the Internet and every overlay network that operates over it. This challenge has persisted since the early days of the Internet to the current Web 3.0 generation. The crux is that in permissionless networks, anyone can choose their behaviour strategy, which creates an opportunity for malicious actors to exploit the setup for their own gain (or fame). Historically, most attempts to solve this problem tried to work around it by creating a reputation system in which well-behaved peers are rewarded and badly-behaved ones are excluded. However, these systems are difficult to engineer because creating identities is normally cheap (see the seminal [Sybil paper](https://dl.acm.org/doi/10.5555/646334.687813)), which enables malicious actors to discard identities tagged with bad behaviour and create new ones to reset their score.
+Securing permissionless networks is the bane of open networks, starting with the Internet and every overlay network that operates over it. This challenge has persisted since the early days of the Internet to the current Web 3.0 generation. The crux of the problem is that in permissionless networks, anyone can choose their behaviour strategy, which creates an opportunity for malicious actors to exploit the setup for their own gain (or fame). Historically, most attempts to solve this problem tried to work around it by creating a reputation system in which well-behaved peers are rewarded and badly-behaved ones are excluded. However, these systems are difficult to engineer because creating identities is normally cheap (see the seminal [Sybil paper](https://dl.acm.org/doi/10.5555/646334.687813)), which enables malicious actors to discard identities tagged with bad behaviour and create new ones to reset their score.
 
 In order to mitigate the attack vectors present in a permissionless network, we need a way to reward well-behaved peers while making it expensive for malicious peers to gain the power necessary to execute  a meaningful attack. To achieve this, we need a sophisticated solution that balances the benefits of  reputation systems and enhances them with features such as contribution to the network, time invested in participation, computing resources (see the seminal [Proof of Work paper](http://weis2006.econinfosec.org/docs/50.pdf)) and potentially staking (see [proof-of-stake systems](https://en.wikipedia.org/wiki/Proof-of-stake)) to build robustness into the fabric of the network.
 
@@ -65,11 +65,11 @@ The degree, `D`, is accompanied by two thresholds, `D_low` and `D_high` that act
 
 <center>{{< figure src="image2.png" alt="tradeoff between gossiping levels and the degree of the network" >}}</center>
 
-Gossiping is realised in three rounds, one in every _“mesh maintenance round”_, which takes place every 1 second. The rationale behind setting the number of rounds to three was to reach a certain level of network coverage. In our case, we wanted to ensure that gossip messages reach ~50% of nodes in the network – see the [paper](https://arxiv.org/abs/2007.02754) for more details.
+Gossiping is realised in three rounds, one in every _“mesh maintenance round”_, which takes place every 1 second. The rationale behind setting the number of rounds to three was to reach a certain level of network coverage. In our case, we wanted to ensure that gossip messages reach ~50% of nodes in the network  (see the [paper](https://arxiv.org/abs/2007.02754) for more details).
 
 <center>{{< figure src="image1.png" alt="gossip rounds" >}}</center>
 
-A unique characteristic of GossipSub — compared with traditional pubsub protocols —  is that it comes with a number of techniques that make it resilient against attacks. Resilience is realised through a peer-scoring function and a number of mitigation strategies, some of which take input from the scoring function.
+A unique characteristic of GossipSub compared with traditional pubsub protocols is that it comes with a number of techniques that make it resilient against attacks. Resilience is realised through a peer-scoring function and a number of mitigation strategies, some of which take input from the scoring function.
 
 **Scoring**: every peer in a GossipSub-based network monitors the performance and behaviour of peers it knows of, i.e., both those that it is directly connected to in the mesh and those that it is interacting with through gossip. The score is not shared with other peers: it is not a reputation system, but instead it is used by the node locally to identify whether a particular peer is behaving as expected or not. Based on the scoring results, nodes make grafting and pruning decisions driven by some of the mitigation strategies discussed next.
 
@@ -86,20 +86,20 @@ Flood publishing has been identified as an efficient way to bypass sybil-dominat
 
 A peer’s score, on the other hand, is taken into account as a mitigation strategy when peers are choosing which peers to keep in their mesh, a strategy called _“controlled mesh maintenance”_. Upon every maintenance round, every peer chooses to keep the highest-scoring peers and prunes the rest. Misbehaving peers will be progressively excluded from the mesh of all peers, rendering them largely harmless for the network.
 
-As an extra measure on top of controlled mesh maintenance, pruned peers are not allowed into the peer’s mesh for an extended period of time, set to 1 minute in our case. This strategy, which is called “backoff on prune”, is helping further with keeping misbehaving peers out of the mesh.
+As an extra measure on top of controlled mesh maintenance, pruned peers are not allowed into the peer’s mesh for an extended period of time, set to 1 minute in our case. This strategy, which is called _“backoff on prune”_, further helps to keep misbehaving peers out of the mesh.
 
-The combination of the mitigation strategies provides a bulletproof shield against the most challenging attacks as our extensive performance evaluation has shown.
+This combination of mitigation strategies provides a bulletproof shield against the most challenging attacks, as our extensive performance evaluation has shown.
 
-The ultimate target of GossipSub is to keep most of the peer’s connections in a healthy state. We have tested what is happening to the state of the mesh in several different attack scenarios.
- 
+The ultimate target of GossipSub is to maintain healthy connections between the majority of peers. We have tested what is happening to the state of the mesh in several different attack scenarios.
+
 ## Attack Vectors
 
 We began with traditionally conventional attacks in P2P networks, such as the Sybil and Eclipse attacks, and have gone further to consider several more sophisticated attacks that apply in permissionless blockchain networks in general and in GossipSub in particular. We discuss some of these more complex attacks here.
 
 **Cold Boot Attack**: In this attack, honest and Sybil nodes join concurrently when the network bootstraps; honest peers attempt to build their mesh while connecting to both Sybil and honest peers. The attack can prevent the network from launching, or prevent new nodes joining the network when the network is under attack.
- 
+
 **Flash & Covert Flash Attack**: In the Flash attack, Sybils connect and attack the network at once. In the Covert Flash Attack, Sybils connect to the network but behave properly for some time in order to build up their score. They then execute a coordinated attack wherein they stop propagating messages altogether in an attempt to completely disrupt the network. The attack is difficult to identify before the attackers turn malicious as they behave properly up to that point and build a good profile.
- 
+
 Both of these attacks are very difficult to mitigate and effectively impossible to identify in advance.
 
 ## Test Environment
@@ -116,10 +116,9 @@ In some attacks, such as the network-wide Eclipse attack, the performance is not
 
 <center>{{< figure src="image5.png" alt="performance during an Eclipse attack" >}}</center>
 
-In some other cases, where more sophisticated attacks are tested, such as the Cold Boot Attack, performance is slightly affected, but does not effectively impact the operation of the blockchain network (i.e., the 6 second deadline of Filecoin is never missed).
+In some other cases, where more sophisticated attacks such as the Cold Boot Attack are tested, performance is slightly affected, but does not effectively impact the operation of the blockchain network (i.e., the 6 second deadline of Filecoin is never missed).
 
 <center>{{< figure src="image7.png" alt="performance during a Cold Boot attack" >}}</center>
-
 
 In contrast, propagation protocols without any security measures — in our test case the Bitcoin and ETH1.0 pubsub protocols — suffer from both message loss and extensive delays in message propagation which in turn, in turn, results in missing the deadline. In an operational environment this would have severe consequences forthe blockchain network and could mean the loss of millions of dollars.
 
