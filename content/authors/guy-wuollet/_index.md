@@ -3,7 +3,7 @@
 name: "Guy Wuollet"
 
 # Role/position (e.g. Research Scientist)
-role: "Research Intern"
+role: "Research Assistant"
 
 # Avatar (no need to edit)
 resources:
