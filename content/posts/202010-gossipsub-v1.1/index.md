@@ -128,7 +128,7 @@ In some other cases, where more sophisticated attacks such as the Cold Boot Atta
   
 In contrast, propagation protocols without any security measures — in our test case, the Bitcoin and ETH1.0 pubsub protocols — suffer from both message loss and extensive delays in message propagation which in turn, in turn, results in missing the deadline. In an operational environment this would have severe consequences for the blockchain network and could mean the loss of millions of dollars.
 
-We have dug deep into the behaviour of the protocol in order to cover all edge and corner cases that could present attack vectors. Among other things, we have captured the number of connections that peers maintain to honest vs. attacker peers.
+We have dug deep into the behaviour of the protocol in order to cover all edge and corner cases that could present attack vectors. Among other things, we have captured the number of connections that peers maintain to honest peers vs. those they maintain to attacker peers.
 
 <center>{{< figure src="image4.png" alt="connections to honest v attacker peers" >}}</center>
   <p></p>
