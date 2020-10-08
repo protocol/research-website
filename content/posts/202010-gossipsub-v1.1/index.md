@@ -82,7 +82,7 @@ The score function takes six values into account and calculates the score as a w
 
 **Mitigation strategies**: GossipSub includes a total of five mitigation strategies. These range from simple mitigations, such as _“flood publishing”_, where a newly published message is flooded to its first-hop peers, to more complex ones, where the outcome of the scoring function is consulted in order to make grafting and pruning decisions.
 
-Flood publishing has been identified as an efficient way to bypass sybil-dominated mesh connections of a peer that is under attack. With flood-publishing even if `D_high - 1` connections are Sybil-controlled, the newly published message will still make it to the rest of the network through the one remaining connection.
+Flood publishing has been identified as an efficient way to bypass Sybil-dominated mesh connections of a peer that is under attack. With flood-publishing even if `D_high - 1` connections are Sybil-controlled, the newly published message will still make it to the rest of the network through the one remaining connection.
 
 A peer’s score, on the other hand, is taken into account as a mitigation strategy when peers are choosing which peers to keep in their mesh, a strategy called _“controlled mesh maintenance”_. Upon every maintenance round, every peer chooses to keep the highest-scoring peers and prunes the rest. Misbehaving peers will be progressively excluded from the mesh of all peers, rendering them largely harmless for the network.
 
