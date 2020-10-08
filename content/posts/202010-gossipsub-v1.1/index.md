@@ -126,7 +126,7 @@ We have dug deep into the behaviour of the protocol in order to cover all edge a
 
 <center>{{< figure src="image4.png" alt="connections to honest v attacker peers" >}}</center>
 
-It is impressive to see that in the worst of attacks, the Covert Flash Attack, the protocol recovers the mesh in record time – within less than 2 minutes after the attack is launched —  without affecting message delivery performance.
+It is impressive to see that in the worst of attacks, the Covert Flash Attack, the protocol recovers the mesh in record time — within 2 minutes of the attack being launched — without affecting message delivery performance.
 
 GossipSub ticks all the boxes for a secure operation under all identified attacks. The protocol is deployed and operates on the Filecoin Testnet, which currently has more than 350 operational miner nodes and 400 Petabytes in storage capacity. The protocol has been operating flawlessly, validating our design decisions in an operational environment. GossipSub has been adopted and is currently being deployed on the ETH2.0 blockchain.
 
