@@ -94,7 +94,7 @@ The ultimate target of GossipSub is to maintain healthy connections between the 
 
 ## Attack Vectors
 
-We began with traditionally conventional attacks in P2P networks, such as the Sybil and Eclipse attacks, and have gone further to consider several more sophisticated attacks that apply in permissionless blockchain networks in general and in GossipSub in particular. We discuss some of these more complex attacks here.
+We began with conventional attacks in P2P networks, such as the Sybil and Eclipse attacks, and have gone further to consider several more sophisticated attacks that apply in permissionless blockchain networks in general and in GossipSub in particular. We discuss some of these more complex attacks here.
 
 **Cold Boot Attack**: In this attack, honest and Sybil nodes join concurrently when the network bootstraps; honest peers attempt to build their mesh while connecting to both Sybil and honest peers. The attack can prevent the network from launching, or prevent new nodes joining the network when the network is under attack.
 
