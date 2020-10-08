@@ -38,7 +38,7 @@ In order to mitigate the attack vectors present in a permissionless network, we 
 
 ## Permissionless Monetary Networks
 
-There have been permissionless networks in the past (e.g. bittorrent), but those networks were not used to transfer monetary value. Blockchain permissionless networks, on the other hand, carry significant amounts of  monetary value and are also free/open to join. These properties make them a very challenging environment to operate and secure from malicious activity.
+There have been permissionless networks in the past (e.g., BitTorrent), but those networks were not used to transfer monetary value. Blockchain permissionless networks, on the other hand, carry significant amounts of monetary value and are also free/open to join. These properties make them a very challenging environment to operate and secure from malicious activity.
 
 There have been several studies that investigated attacks at the network layer of permissionless blockchain networks – we think this is only the start of a great new research area.
 
