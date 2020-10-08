@@ -61,7 +61,7 @@ The degree, `D`, is accompanied by two thresholds, `D_low` and `D_high` that act
 
 <center>{{< figure src="image6.png" alt="the graft v prune threshhold" >}}</center>
 
-**Gossip links** augment the message propagation performance of the protocol. Gossiping allows the network to operate on a relatively low degree and therefore, keep traffic under certain levels. There is a clear tradeoff between gossiping levels and the degree of the network, which we depict in the following figure:
+**Gossip links** augment the message propagation performance of the protocol. Gossiping allows the network to operate on a relatively low degree and, therefore, keep traffic under certain levels. There is a clear tradeoff between gossiping levels and the degree of the network, which we depict in the following figure:
 
 <center>{{< figure src="image2.png" alt="tradeoff between gossiping levels and the degree of the network" >}}</center>
 
