@@ -130,6 +130,7 @@ In contrast, propagation protocols without any security measures — in our test
 
 We have dug deep into the behaviour of the protocol in order to cover all edge and corner cases that could present attack vectors. Among other things, we have captured the number of connections that peers maintain to honest peers vs. those they maintain to attacker peers.
 
+<p></p> 
 <center>{{< figure src="image4.png" alt="connections to honest v attacker peers" >}}</center>
   <p></p>
   
