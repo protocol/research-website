@@ -180,6 +180,10 @@ figcaption {
   @apply pb-4;
 }
 
+.page-content figure {
+  @apply pb-4;
+}
+
 .question {
   color: lime !important;
 }
