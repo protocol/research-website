@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: GossipSub: An attack-resilient messaging-layer protocol for public blockchains
+title: "GossipSub: An attack-resilient messaging-layer protocol for public blockchains"
 
 # Website post date
 # format YYYY-MM-DD
