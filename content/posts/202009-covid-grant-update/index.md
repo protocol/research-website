@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: COVID-19 Open Innovation Grant Update
+title: COVID-19 Open Innovation Grant update
 
 # Website post date
 # format YYYY-MM-DD

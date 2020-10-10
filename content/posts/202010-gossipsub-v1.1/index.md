@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: GossipSub - An Attack-Resilient Messaging-Layer Protocol for Public Blockchains
+title: GossipSub: An attack-resilient messaging-layer protocol for public blockchains
 
 # Website post date
 # format YYYY-MM-DD
@@ -62,17 +62,17 @@ The degree, `D`, is accompanied by two thresholds, `D_low` and `D_high`, that ac
 
 <center>{{< figure src="image6.png" alt="the graft v prune threshhold" >}}</center>
   <p></p>
-  
+
 **Gossip links** augment the message propagation performance of the protocol. Gossiping allows the network to operate on a relatively low degree and, therefore, keep traffic under certain levels. There is a clear tradeoff between gossiping levels and the degree of the network, which we depict in the following figure:
 
 <center>{{< figure src="image2.png" alt="tradeoff between gossiping levels and the degree of the network" >}}</center>
   <p></p>
-  
-Gossiping is realised in three rounds, one in every _“mesh maintenance round”_, which takes place every 1 second. The rationale behind setting the number of rounds to three was to reach a certain level of network coverage. In our case, we wanted to ensure that gossip messages reach ~50% of nodes in the network (see the [paper](https://arxiv.org/abs/2007.02754) for more details).
+
+Gossiping is realised in three rounds, one in every _“mesh maintenance round”_, which takes place every 1 second. The rationale behind setting the number of rounds to three was to reach a certain level of network coverage. In our case, we wanted to ensure that gossip messages reach ~50% of nodes in the network (see the [paper](/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/) for more details).
 
 <center>{{< figure src="image1.png" alt="gossip rounds" >}}</center>
   <p></p>
-  
+
 A unique characteristic of GossipSub compared with traditional pubsub protocols is that it comes with a number of techniques that make it resilient against attacks. Resilience is realised through a peer-scoring function and a number of mitigation strategies, some of which take input from the scoring function.
 
 **Scoring**: Every peer in a GossipSub-based network monitors the performance and behaviour of peers it knows of (i.e., both those that it is directly connected to in the mesh and those that it is interacting with through gossip). The score is not shared with other peers. It is not a reputation system, but instead it is used locally by the node to identify whether a particular peer is behaving as expected or not. Based on the scoring results, nodes make grafting and pruning decisions driven by some of the mitigation strategies discussed next.
@@ -120,20 +120,20 @@ In some attacks, such as the network-wide Eclipse attack, the performance is not
 
 <center>{{< figure src="image5.png" alt="performance during an Eclipse attack" >}}</center>
   <p></p>
-  
+
 In some other cases, where more sophisticated attacks such as the Cold Boot Attack are tested, performance is slightly affected, but does not effectively impact the operation of the blockchain network (i.e., the 6 second deadline of Filecoin is never missed).
 
 <center>{{< figure src="image7.png" alt="performance during a Cold Boot attack" >}}</center>
   <p></p>
-  
+
 In contrast, propagation protocols without any security measures — in our test case, the Bitcoin and ETH1.0 pubsub protocols — suffer from both message loss and extensive delays in message propagation which in turn, in turn, results in missing the deadline. In an operational environment this would have severe consequences for the blockchain network and could mean the loss of millions of dollars.
 
 We have dug deep into the behaviour of the protocol in order to cover all edge and corner cases that could present attack vectors. Among other things, we have captured the number of connections that peers maintain to honest peers vs. those they maintain to attacker peers.
 
-<p></p> 
+<p></p>
 <center>{{< figure src="image4.png" alt="connections to honest v attacker peers" >}}</center>
   <p></p>
-  
+
 It is impressive to see that in the worst of attacks, the Covert Flash Attack, the protocol recovers the mesh in record time — within 2 minutes of the attack being launched — without affecting message delivery performance.
 
 GossipSub ticks all the boxes for a secure operation under all identified attacks. The protocol is deployed and operates on the Filecoin Testnet, which currently has more than 350 operational miner nodes and 400 Petabytes in storage capacity. The protocol has been operating flawlessly, validating our design decisions in an operational environment. GossipSub has been adopted and is currently being deployed on the ETH2.0 blockchain.
