@@ -16,7 +16,8 @@ authors:
 
 # If applicable
 categories:
-- blog
+- news
+- grants
 
 # Zero or more of the areas in content/areas
 areas:
