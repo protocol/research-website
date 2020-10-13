@@ -56,7 +56,7 @@ We received some truly exceptional proposals for this RFP, ultimately selecting 
 Our first awardees were [George Polyzos](https://www.aueb.gr/en/faculty_page/polyzos-george), 
 [Spyros Voulgaris](https://www.aueb.gr/en/faculty_page/voulgaris-spyridon), [Nikos Fotiou](http://pages.cs.aueb.gr/~fotiou/), 
 and [Yiannis Thomas](https://scholar.google.com/citations?user=sDumt0QAAAAJ&hl=en&oi=ao) from the 
-[Athens University of Economics and Business (AUEB)](https://www.aueb.gr/en). This team is part of AUEB’s 
+[Athens University of Economics and Business](https://www.aueb.gr/en) (AUEB). This team is part of AUEB’s 
 [Mobile Multimedia Laboratory](https://mm.aueb.gr/) (MMlab), which is actively involved in researching 
 networks of the future. MMlab’s expertise lies in Internet architecture and protocols, mobile and wireless 
 networks, security, authentication and authorization, business models and incentive mechanisms. Prof. 
