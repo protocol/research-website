@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Cloud Provider Connectivity in the Flat Internet"
+title: "Cloud provider connectivity in the flat Internet"
 
 # Website post date
 # format YYYY-MM-DD
