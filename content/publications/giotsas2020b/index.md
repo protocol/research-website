@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Reduce, Reuse, Recycle: Repurposing Existing Measurements to Identify Stale Traceroutes"
+title: "Reduce, reuse, recycle: Repurposing existing measurements to identify stale traceroutes"
 
 # Website post date
 # format YYYY-MM-DD
