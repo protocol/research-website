@@ -95,7 +95,7 @@ and churn resilience.
 
 ## RFP 8: Scalability Bounds of P2P PubSub
 This RFP called for approaches that explore the scalability bounds of the existing pubsub algorithms 
-within libp2p. Libp2p’s pubsub solution, acronymed GossipSub, powers IPFS, Filecoin, and Ethereum 2.0. 
+within libp2p. Libp2p’s pubsub solution—GossipSub—powers IPFS, Filecoin, and Ethereum 2.0. 
 Within IPFS, it is used to propagate name-records for the InterPlanetary Naming System (IPNS). As the 
 network grows from hundreds of thousands of daily users to multiple millions, the IPNS system and the 
 underlying pubsub protocol are expected to be stressed to their limits. Either a thorough evaluation 
