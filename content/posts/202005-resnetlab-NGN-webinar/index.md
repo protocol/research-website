@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "Next Generation Networks (NGN) Group Talk: A High-Level Overview of the InterPlanetary File System"
+title: "Next Generation Networks (NGN) group talk: A high-level overview of the InterPlanetary File System"
 
 # Website post date
 # format YYYY-MM-DD
@@ -64,7 +64,7 @@ A:  Integrity starts being verified through cryptographic hashing from the first
 
 **Q: How do you maintain the Kademlia mappings in case of a very high degree of churn?**
 
-A: High network churn is dealt with through frequent republishing of both original content and provider records. The original Kademlia protocol requires that the number of replicas in the network and the republishing interval are balanced with network churn. 
+A: High network churn is dealt with through frequent republishing of both original content and provider records. The original Kademlia protocol requires that the number of replicas in the network and the republishing interval are balanced with network churn.
 
 **Q: Is there any new release coming to address the issue of peers being behind NATs?**
 
@@ -83,7 +83,7 @@ A: See the answer above. Additionally, there are a few different ways in which u
 
 **Q: There would have to be a general way - it's difficult to do the configuration for every user. BitTorrent has been using all those methods for years. You could use the same techniques.**
 
-A: The teams at Protocol Labs are actively working on this topic to find a stable and general-purpose solution that will work out of the box. It is worth noting, however, that BitTorrent has traditionally worked fine when *one of the two* communicating nodes has been behind a NAT. IPFS also deals with this case without problems, using dialbacks for instance (i.e., asking the NAT’ed peer to open a connection to the dialable peer). 
+A: The teams at Protocol Labs are actively working on this topic to find a stable and general-purpose solution that will work out of the box. It is worth noting, however, that BitTorrent has traditionally worked fine when *one of the two* communicating nodes has been behind a NAT. IPFS also deals with this case without problems, using dialbacks for instance (i.e., asking the NAT’ed peer to open a connection to the dialable peer).
 
 When both of the communicating nodes are behind NATs, BitTorrent also faces severe problems. In the case of BitTorrent, the increased popularity of some content items and the fact that popular content will inevitably end up being stored at a dialable node is what improves performance. Again, the same applies to IPFS.
 
