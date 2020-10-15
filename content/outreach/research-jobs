@@ -1,6 +1,6 @@
 ---
 headless: true
-nositemap: true
+nositemap: false
 weight: 6
 title: Research Jobs
 linkText: Browse current openings
