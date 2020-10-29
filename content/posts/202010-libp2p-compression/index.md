@@ -91,18 +91,18 @@ This is how we ended up adding a new compression layer to the libp2p stack. We'v
 <center>{{< figure src="compression-stack.png" alt="Compression in libp2p" >}}</center>
   <p></p>
 
-So why place compression there? The data stream received from the multiplexer will potentially show larger opportunities of compression than individual protocol streams, or the output of the security channel, so this is the reason for our placement decision.
+So why place compression there? The data stream received from the multiplexer will potentially show greater potential for compression than individual protocol streams, or the output of the security channel, so this is the reason for our placement decision.
 
 The fact that compression has been implemented as a transport upgrader leads to it not being a breaking change in any way. The same way libp2p nodes currently negotiate the security protocol to use in their connection and fall back to a security protocol supported by both, or the use of an unencrypted connection, the same happens with compression. Libp2p nodes will negotiate the compression algorithm to use and if one of them doesn't support compression, they simply fall back to an uncompressed connection.
 
-Consequently, the upgrade of applications to the use of compressed connections can be seamless and it just requires an upgrade of the underlying libp2p node adding this elegant line of code:
+Consequently, the upgrade of applications to the use of compressed connections can be seamless; it simply requires an upgrade of the underlying libp2p node, adding this elegant line of code:
 
 
 <center>{{< figure src="compression-code.png" alt="" >}}</center>
   <p></p>
 
 
-This preliminary compression implementation hasn't landed yet on the go-libp2p upstream, and it currently lives in a set of forked repos we've been using to test our implementation. But if you want to start using compression in libp2p right away, have a look at the following repo which guides you through a set of examples using compression, and points to all the forked versions you need to link to start using compression in your application: <https://github.com/adlrocha/go-libp2p-compression-examples>
+This preliminary compression implementation hasn't landed yet on the go-libp2p upstream;it currently lives in a set of forked repos we've been using to test our implementation. But if you want to start using compression in libp2p right away, have a look at the following repo which guides you through a set of examples using compression, and points to all the forked versions you need to link to start using compression in your application: <https://github.com/adlrocha/go-libp2p-compression-examples>
 
 ## Performance improvements
 
@@ -210,8 +210,10 @@ So what kind of improvements can we expect from the use of compression? Let's st
 <center>{{< figure src="results-cdnjs.png" alt="Bandwidth use including cdnjs dataset" >}}</center>
   <p></p>
 
-We can see that depending on the dataset we can achieve savings of up to the 75% of the required bandwidth. From our tests we draw two interesting conclusions:
+We can see that, depending on the dataset, we can achieve savings of up to the 75% of the required bandwidth. From our tests we draw two interesting conclusions:
+
 1. large datasets benefit more from the use of compression due to the higher probability of finding redundancies in the data;
+
 2. the compressor and the nature of the underlying data exchanged matters in the compression rate achieved and consequently the potential bandwidth savings that can be leveraged. Gzip has a really good performance with text-based data, but [presents a pretty bad behavior when compressing images](https://www.quora.com/Can-gzip-file-compression-increase-the-file-size?share=1). So compression can generally achieve bandwidth savings as long as the right compression algorithm is used for the data exchanged.
 
 What do these bandwidth savings mean for the time to fetch a full dataset from IPFS? We selected a few datasets from the aforementioned list that showed bandwidth savings, and ran the same file-exchange over Testgroung emulating different bandwidth and latency configurations for the links between the nodes ([taking as a reference the average connections speed for different countries](https://en.wikipedia.org/wiki/List_of_countries_by_Internet_connection_speeds)). The results are shown in the following table:
