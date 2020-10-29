@@ -84,7 +84,7 @@ Lessons learned from the evaluation of these implementations? Applying compressi
 
 The compression strategy that led to the best results in our first prototypes of compression wasn't at a protocol-level but at a transport-level. This meant that if we implemented compression embedded in the underlying transport layer, not only could file-sharing protocols benefit from compression, but potentially any other P2P protocol leveraging that same transport layer.
 
-Bitswap uses[  libp2p](https://docs.ipfs.io/concepts/libp2p/) as its underlying P2P transport, and just like Bitswap, there are already many applications and protocols using libp2p as their transport layer which could start directly benefiting from the use of compression without any changes to their protocols and applications  (there are implementations of libp2p in Go, JavaScript, Rust, Python, JVM, C++, and even Nim).
+Bitswap uses [libp2p](https://docs.ipfs.io/concepts/libp2p/) as its underlying P2P transport, and just like Bitswap, there are already many applications and protocols using libp2p as their transport layer which could start directly benefiting from the use of compression without any changes to their protocols and applications  (there are implementations of libp2p in Go, JavaScript, Rust, Python, JVM, C++, and even Nim).
 
 This is how we ended up adding a new compression layer to the libp2p stack. We've implemented compression as a new transport upgrader between the stream multiplexer and the security layer. Thus, instead of individually compressing streams for each protocol (as we were doing in our Bitswap stream strategy) all the data coming from the multiplexer is conveniently compressed, encrypted at the security layer, and then sent through the underlying transport.
 
