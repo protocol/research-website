@@ -366,7 +366,7 @@ The compression algorithm implementation we used for our transport was Golang's 
     <p><span style="font-weight: 400;">B: 167.58MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 33 s</span></p>
     </td>
     <td>
-    <p><br /></span><span style="font-weight: 400;">B: </span><span style="font-weight: 400;">-7.79%</span> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: </span><strong>40%</strong></p>
+    <p><br /></span><span style="font-weight: 400;">B: </span><span style="font-weight: 400;">-7.8%</span> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: </span><strong>40%</strong></p>
     </td>
     <td>
         <p><span style="font-weight: 400;">B: </span><strong>27.4%</strong> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: </span><strong>10.8%</strong></p>
