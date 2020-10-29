@@ -46,7 +46,7 @@ Compression is already an important and convenient way to increase performance i
 
 -   And finally, compression can be defined at the connection level, between two nodes of an HTTP connection.
 
-We weren't currently using compression in any way in the exchange of files within IPFS, so why not mimic HTTP and use compression to drive speed-ups in IPFS file-exchange?
+To date, libp2p has not been using compression in any way in the exchange of files in IPFS, so why not mimic HTTP and use compression to drive speed-ups in IPFS file-exchange?
 
 ## Drawing inspiration from Dropbox Broccoli 
 
