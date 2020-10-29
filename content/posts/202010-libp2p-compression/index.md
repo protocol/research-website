@@ -61,7 +61,7 @@ The data exchange subsystem currently used in IPFS is Bitswap, so we chose to st
 
 Following a similar approach, we implemented three different compression strategies in Bitswap to evaluate the one that achieved better performance improvements:
 
--   Block compression: Files within Bitswap are exchanged in the form of blocks. Files are composed of several blocks organized in a DAG structure with each block having a size limit of 256KB[  (check out these ProtoSchool tutorials to learn a bit more about this)](https://proto.school/data-structures). In this compression approach, we compressed blocks before including them in a message and transmitting them through the link. This can be considered the equivalent to compressing the body in HTTP.
+-   Block compression: Files within Bitswap are exchanged in the form of blocks. Files are composed of several blocks organized in a DAG structure with each block having a size limit of 256KB[ (check out these ProtoSchool tutorials to learn a bit more about this)](https://proto.school/data-structures). In this compression approach, we compressed blocks before including them in a message and transmitting them through the link. This can be considered the equivalent to compressing the body in HTTP.
 
 -   Full message compression: In this compression strategy instead of only compressing blocks we compressed every single message before sending it, i.e. the equivalent of compressing header+body in HTTP.
 
