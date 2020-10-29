@@ -210,7 +210,7 @@ So what kind of improvements can we expect from the use of compression? Let's st
 <center>{{< figure src="results-cdnjs.png" alt="Bandwidth use including cdnjs dataset" >}}</center>
   <p></p>
 
-We can see that, depending on the dataset, we can achieve savings of up to the 75% of the required bandwidth. From our tests we draw two interesting conclusions:
+We can see that, depending on the dataset, we can achieve savings of up to 75% of the required bandwidth. From our tests we draw two interesting conclusions:
 
 1. large datasets benefit more from the use of compression due to the higher probability of finding redundancies in the data;
 
