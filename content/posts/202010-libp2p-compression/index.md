@@ -31,7 +31,6 @@ groups:
 
 # Not used
 draft: false
-
 ---
 
 Today we're excited to share the story of how we decided to explore compression in libp2p, and we ended up achieving up to 75% decrease in bandwidth use when performing an IPFS file exchange. This work is part of a broader initiative to drive speed-ups in file-sharing within IPFS and P2P networks more generally, led by [ResNetLab](https://research.protocol.ai/groups/resnetlab/).
