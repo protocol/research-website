@@ -34,7 +34,7 @@ draft: false
 
 ---
 
-Today I'm excited to share the story of how we decided to explore compression in libp2p, and we ended up achieving up to 75% decrease in bandwidth use when performing an IPFS file exchange. This work is part of a broader initiative to drive speed-ups in file-sharing within IPFS and P2P networks more generally, led by [ResNetLab](https://research.protocol.ai/groups/resnetlab/).
+Today we're excited to share the story of how we decided to explore compression in libp2p, and we ended up achieving up to 75% decrease in bandwidth use when performing an IPFS file exchange. This work is part of a broader initiative to drive speed-ups in file-sharing within IPFS and P2P networks more generally, led by [ResNetLab](https://research.protocol.ai/groups/resnetlab/).
 
 A few months ago, we challenged ourselves with a new project whose main objective is to design, prototype, measure and evaluate ways of making file-transfers in P2P networks as fast as or even faster than (why not?) a file exchange using raw TCP protocol and a point-to-point connection (hint: by benefiting from streaming from multiple endpoints). After a thorough analysis of the state of the art, we've started [designing several RFCs](https://github.com/protocol/ResNetLab/tree/master/beyond-bitswap/rfc) and implementing them with the goal of speeding up transfers at different levels of the IPFS stack. There are many ideas and prototypes in the pipeline and today, we share one of them that we are very excited about.
 
