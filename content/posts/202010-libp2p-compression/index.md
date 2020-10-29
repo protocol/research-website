@@ -2,8 +2,7 @@
 # Blog post title
 title: "Honey, I shrunk our libp2p streams"
 
-# Website post date
-# format YYYY-MM-DD
+# Website post date. Format YYYY-MM-DD
 date: 2020-10-29
 
 # Publish from this date (defaults to date)
