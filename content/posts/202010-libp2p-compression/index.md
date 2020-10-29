@@ -56,7 +56,7 @@ Dropbox's work clearly stressed the impact compression may have in file-sharing 
 
 ## Evaluating how to integrate compression (Stream vs. Message) in Bitswap, the standard block exchange for IPFS
 
-The data exchange subsystem currently used in IPFS is Bitswap, so we chose to start evaluating compression there. There are two relevant compression algorithms used within HTTP: gzip, the most common one, and br the new challenger. And there are two main compression strategies used in HTTP: body compression, and the compression of headers using algorithms such as [HPACK](https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2/).
+The data exchange subsystem currently used in IPFS is Bitswap, so we chose to start evaluating compression there. There are two relevant compression algorithms used within HTTP: gzip, the most common one, and br the new challenger. Then, there are two main compression strategies used in HTTP: body compression, and the compression of headers using algorithms such as [HPACK](https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2/).
 
 Following a similar approach, we implemented three different compression strategies in Bitswap to evaluate the one that achieved better performance improvements:
 
