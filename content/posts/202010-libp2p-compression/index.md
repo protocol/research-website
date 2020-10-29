@@ -101,7 +101,7 @@ Consequently, the upgrade of applications to the use of compressed connections c
   <p></p>
 
 
-This preliminary compression implementation hasn't landed yet on the go-libp2p upstream;it currently lives in a set of forked repos we've been using to test our implementation. But if you want to start using compression in libp2p right away, have a look at the following repo which guides you through a set of examples using compression, and points to all the forked versions you need to link to start using compression in your application: <https://github.com/adlrocha/go-libp2p-compression-examples>
+This preliminary compression implementation hasn't landed yet on the go-libp2p upstream; it currently lives in a set of forked repos we've been using to test our implementation. But if you want to start using compression in libp2p right away, have a look at the following repo which guides you through a set of examples using compression, and points to all the forked versions you need to link to start using compression in your application: <https://github.com/adlrocha/go-libp2p-compression-examples>
 
 ## Performance improvements
 
@@ -135,7 +135,7 @@ So what kind of improvements can we expect from the use of compression? Let's st
 <p><strong>230.83 MB</strong></p>
 </td>
 <td>
-<p><strong>54.71 %</strong></p>
+<p><strong>54.71%</strong></p>
 </td>
 </tr>
 <tr>
