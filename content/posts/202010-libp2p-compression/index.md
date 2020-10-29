@@ -13,8 +13,8 @@ date: 2020-10-29
 # We sort authors alphabetically by last name
 authors:
 - alfonso-delarocha
-- yiannis-psaras
 - david-dias
+- yiannis-psaras
 
 # If applicable
 categories:
