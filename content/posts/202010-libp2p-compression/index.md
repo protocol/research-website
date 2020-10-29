@@ -396,8 +396,6 @@ From the implementation of compression in libp2p we have gained a set of interes
 
 However, these bandwidth savings don't come for free. The use of compression adds a computational overhead that in some cases may end up removing all the savings achieved by reducing the amount of data exchanged. Furthermore, the underlying data exchanged can dramatically affect the compression performance (even leading to higher bandwidth and worse performance).
 
-The value of these bandwidth savings have to be considered in the overall framework under which Bitswap operates, that is in P2P network stack. In P2P networks, users "donate" their bandwidth resources to serve content to other users. That said, any contribution towards avoiding upload bandwidth saturation is of significant value. Our results have shown that even moderate file exchanges of ~1GB, which is quite common for modern applications, can be shrunk by ~50% - a significant reduction!
-
 ## Show me the demo! 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/plTBHzInro0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
