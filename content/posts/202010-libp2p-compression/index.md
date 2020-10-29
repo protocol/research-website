@@ -218,172 +218,179 @@ We can see that, depending on the dataset, we can achieve savings of up to the 7
 
 What do these bandwidth savings mean for the time to fetch a full dataset from IPFS? We selected a few datasets from the aforementioned list that showed bandwidth savings, and ran the same file-exchange over Testground emulating different bandwidth and latency configurations for the links between the nodes ([taking as a reference the average connections speed for different countries](https://en.wikipedia.org/wiki/List_of_countries_by_Internet_connection_speeds)). The results are shown in the following table:
 <table>
-<tbody>
-<tr>
-<td>
-<p><span style="font-weight: 400;">Average Connection Speed</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Time to fetch without compression</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Time to fetch with compression</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Latency Improvement</span></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="https://ipfs.io/ipfs/QmNvTjdqEPjZVWCvRWsFJA1vK7TTw1g9JP6we1WBJTRADM"><span style="font-weight: 400;">IETF RFC Archive </span></a><span style="font-weight: 400;">&nbsp;Size: 500MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Avg connection: B:50Mbps L:50ms</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">1339.47 s</span><span style="font-weight: 400;"><br /><br /></span></p>
-</td>
-<td>
-<p><strong>1338.46 s</strong></p>
-</td>
-<td>
-<p><strong>0.07%</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="https://ipfs.io/ipfs/QmNvTjdqEPjZVWCvRWsFJA1vK7TTw1g9JP6we1WBJTRADM"><span style="font-weight: 400;">IETF RFC Archive </span></a><span style="font-weight: 400;">Size: 500MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Avg connection: B:10Mbps L50ms</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">1370.5 s</span></p>
-</td>
-<td>
-<p><strong>1364.80 s</strong></p>
-</td>
-<td>
-<p><strong>0.4%</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="https://ipfs.io/ipfs/QmRTSA1UFHSx3z7taNRwUVM8AjB2EQwKvyZu3BfJg9QRtZ"><span style="font-weight: 400;">World Wide Web History Project</span></a><span style="font-weight: 400;"> Size: 92MB</span></p>
-<p><span style="font-weight: 400;">Avg connection: B:50Mbps L:50ms</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">1100.76 s</span></p>
-</td>
-<td>
-<p><strong>1100.99 s</strong></p>
-</td>
-<td>
-<p><strong>0.02%</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="https://ipfs.io/ipfs/QmRTSA1UFHSx3z7taNRwUVM8AjB2EQwKvyZu3BfJg9QRtZ"><span style="font-weight: 400;">World Wide Web History Project</span></a><span style="font-weight: 400;"> Size: 92MB</span></p>
-<p><span style="font-weight: 400;">Avg connection: B10Mbps L50ms</span></p>
-<p><a href="https://ipfs.io/ipfs/QmRTSA1UFHSx3z7taNRwUVM8AjB2EQwKvyZu3BfJg9QRtZ"><span style="font-weight: 400;">&nbsp;</span></a></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">1098.87 s&nbsp;</span></p>
-</td>
-<td>
-<p><strong> 1092.39 s</strong></p>
-</td>
-<td>
-<p><strong>0.5%</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX"><span style="font-weight: 400;">Textfiles.com</span></a><span style="font-weight: 400;"> Size: 1.6GB</span></p>
-<p><span style="font-weight: 400;">Avg connection: B50Mbps L50ms</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">15489.85 s</span></p>
-<br /><br /></td>
-<td>
-<p><strong>15334.95 s</strong></p>
-</td>
-<td>
-<p><strong>0.1%</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX"><span style="font-weight: 400;">Textfiles.com</span></a><span style="font-weight: 400;"> Size: 1.6GB</span></p>
-<p><span style="font-weight: 400;">Avg connection: B10Mbps L50ms</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">15528.32 s</span></p>
-</td>
-<td>
-<p><strong>15556.76 s</strong></p>
-</td>
-<td>
-<p><strong>0.18%</strong></p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
+    <tbody>
+    <tr>
+    <td>
+    <p><span style="font-weight: 400;">Average Connection Speed</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">Time to fetch without compression</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">Time to fetch with compression</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">Latency Improvement</span></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><a href="https://ipfs.io/ipfs/QmNvTjdqEPjZVWCvRWsFJA1vK7TTw1g9JP6we1WBJTRADM"><span style="font-weight: 400;">IETF RFC Archive </span></a><br/><span style="font-weight: 400;">Size: 500MB</span>
+        <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">B: 50Mbps</span></br><span style="font-weight: 400;"></span>L: 50ms</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">1339.47 s</span><span style="font-weight: 400;"><br /><br /></span></p>
+    </td>
+    <td>
+    <p><strong>1338.46 s</strong></p>
+    </td>
+    <td>
+    <p><strong>0.07%</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><a href="https://ipfs.io/ipfs/QmNvTjdqEPjZVWCvRWsFJA1vK7TTw1g9JP6we1WBJTRADM"><span style="font-weight: 400;">IETF RFC Archive </span></a></br><span style="font-weight: 400;">Size: 500MB</span>
+        <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">B: 10Mbps</span><br/><span style="font-weight: 400;"></span>L: 50ms</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">1370.5 s</span></p>
+    </td>
+    <td>
+    <p><strong>1364.80 s</strong></p>
+    </td>
+    <td>
+    <p><strong>0.4%</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><a href="https://ipfs.io/ipfs/QmRTSA1UFHSx3z7taNRwUVM8AjB2EQwKvyZu3BfJg9QRtZ"><span style="font-weight: 400;">World Wide Web History Project</span></a></br><span style="font-weight: 400;"> Size: 92MB</span>
+    <br/><span style="font-weight: 400;">B: 50Mbps</span></br><span style="font-weight: 400;">L: 50ms</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">1100.76 s</span></p>
+    </td>
+    <td>
+    <p><strong>1100.99 s</strong></p>
+    </td>
+    <td>
+    <p><strong>0.02%</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><a href="https://ipfs.io/ipfs/QmRTSA1UFHSx3z7taNRwUVM8AjB2EQwKvyZu3BfJg9QRtZ"><span style="font-weight: 400;">World Wide Web History Project</span></a></br><span style="font-weight: 400;"> Size: 92MB</span>
+    <br/><span style="font-weight: 400;">B: 10Mbps</span></br><span style="font-weight: 400;">L: 50ms</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">1098.87 s&nbsp;</span></p>
+    </td>
+    <td>
+    <p><strong> 1092.39 s</strong></p>
+    </td>
+    <td>
+    <p><strong>0.5%</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><a href="https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX"><span style="font-weight: 400;">Textfiles.com</span></a><br/><span style="font-weight: 400;"> Size: 1.6GB</span>
+    <br/><span style="font-weight: 400;">B: 50Mbps</span></br><span style="font-weight: 400;">L: 50ms</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">15489.85 s</span></p>
+    <br /><br /></td>
+    <td>
+    <p><strong>15334.95 s</strong></p>
+    </td>
+    <td>
+    <p><strong>0.1%</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><a href="https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX"><span style="font-weight: 400;">Textfiles.com</span></a></br><span style="font-weight: 400;"> Size: 1.6GB</span>
+    <br/><span style="font-weight: 400;">B: 10Mbps</span></br><span style="font-weight: 400;">L: 50ms</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">15528.32 s</span></p>
+    </td>
+    <td>
+    <p><strong>15556.76 s</strong></p>
+    </td>
+    <td>
+    <p><strong>0.18%</strong></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p>&nbsp;</p>
 
 Considering  the results obtained from the bandwidth savings and comparing the time to fetch with compression and without compression leads to a bit of disappointment. Compression starts showing appreciable improvements for large datasets, but they can still be considered negligible (below the 1%). What this means for IPFS users is that a user in Portugal would only save half a minute in the download of the [textfiles.com](https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX) dataset (1658MBs) through IPFS when using compression out of a total of almost 4.5hrs when transferring uncompressed. We believe we can achieve better results by continuing to fine-tune the compression levels. Furthermore, compression is cumulative: the more data transferred, the greater the opportunity for compression -- your daily usage will likely show even more interesting results.
 
 The compression algorithm implementation we used for our transport was Golang's standard implementation (compress/gzip). In light of the above results, we started wondering if the Gzip implementation we were using was not efficient enough to be used for our use case, so all the time gained from bandwidth savings was being lost in the compression process. We decided then to implement our gzip transport with a [reportedly more efficient golang implementation of gzip](https://github.com/klauspost/compress) and a [brand new go-libp2p brotli compressed transport](https://github.com/adlrocha/go-libp2p-cbrotli/), and compared the computational overhead and bandwidth savings of the two implementations:
 <table>
-<tbody>
-<tr>
-<td>
-<p><span style="font-weight: 400;">Dataset</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">compress/gzip </span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">(bandwidth / time)</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">github.com/klauspost/compress/gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">(bandwidth / time)</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Brotli C implementation (Quality: 2)</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">(bandwidth / time)</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">Improvement</span></p>
-<span style="font-weight: 400;">(bandwidth / time)</span>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="https://ipfs.io/ipfs/QmNvTjdqEPjZVWCvRWsFJA1vK7TTw1g9JP6we1WBJTRADM"><span style="font-weight: 400;">IETF RFC Archive</span><span style="font-weight: 400;"><br /></span></a><span style="font-weight: 400;">Size 500MB</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">B: 230.83MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 37 s</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">B: 248.11MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 22 s</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">B: 167.581MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 33 s</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">New Gzip:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - B: </span><span style="font-weight: 400;">-7.79%</span> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - L: </span><strong>40%</strong></p>
-<p><span style="font-weight: 400;">Brotli:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - B: </span><strong>27.4%</strong> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - L: </span><strong>10.8%</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><a href="https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX"><span style="font-weight: 400;">Textfiles.com</span><span style="font-weight: 400;"><br /></span></a><span style="font-weight: 400;">Size 1.6GB</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">B: 836.012MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 202 s</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">B: 948.79MB </span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 136 s</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">B: 593.79MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 167 s</span></p>
-</td>
-<td>
-<p><span style="font-weight: 400;">New Gzip: </span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - B: </span><span style="font-weight: 400;">-13%</span> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - L: </span><strong>32%</strong></p>
-<p><span style="font-weight: 400;">Brotli: </span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - B: </span><strong>28.97%</strong> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - L: </span><strong>17.32 %</strong></p>
-</td>
+    <tbody>
+    <tr>
+    <td>
+    <p><span style="font-weight: 400;">Dataset</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">compress/gzip </span><span style="font-weight: 400;"><br /></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">klauspost/<br />compress/gzip</span><span style="font-weight: 400;"><br /></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">Brotli C impl<br />(Quality: 2)</span><span style="font-weight: 400;"><br /></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">Improvement<br />New Gzip</span></p>
+    </td>
+    <td>
+        <p><span style="font-weight: 400;">Improvement<br />Brotli</span></p>
+        </td>
+    </tr>
+    <tr>
+    <td>
+    <p><a href="https://ipfs.io/ipfs/QmNvTjdqEPjZVWCvRWsFJA1vK7TTw1g9JP6we1WBJTRADM"><span style="font-weight: 400;">IETF RFC Archive</span><span style="font-weight: 400;"><br /></span></a><span style="font-weight: 400;">Size 500MB</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">B: 230.83MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 37 s</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">B: 248.11MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 22 s</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">B: 167.581MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 33 s</span></p>
+    </td>
+    <td>
+    <p><br /></span><span style="font-weight: 400;">B: </span><span style="font-weight: 400;">-7.79%</span> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: </span><strong>40%</strong></p>
+    </td>
+    <td>
+        <p><span style="font-weight: 400;">B: </span><strong>27.4%</strong> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: </span><strong>10.8%</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p><a href="https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX"><span style="font-weight: 400;">Textfiles.com</span><span style="font-weight: 400;"><br /></span></a><span style="font-weight: 400;">Size 1.6GB</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">B: 836.012MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 202 s</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">B: 948.79MB </span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 136 s</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">B: 593.79MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 167 s</span></p>
+    </td>
+    <td>
+    <p><span style="font-weight: 400;">&nbsp;B: </span><span style="font-weight: 400;">-13%</span> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: </span><strong>32%</strong></p>
+    </td>
+    <td>
+        <p><span style="font-weight: 400;">&nbsp;B: </span><strong>28.97%</strong> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: </span><strong>17.32 %</strong></p>
+        </td>
 </tr>
 </tbody>
 </table>
