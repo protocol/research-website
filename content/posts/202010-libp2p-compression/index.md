@@ -136,7 +136,7 @@ So what kind of improvements can we expect from the use of compression? Let's st
 <p><strong>230.83 MB</strong></p>
 </td>
 <td>
-<p><strong>54.709643748 %</strong></p>
+<p><strong>54.71 %</strong></p>
 </td>
 </tr>
 <tr>
