@@ -42,7 +42,7 @@ Compression is already an important and convenient way to increase performance i
 
 -   First, some file formats are compressed at the application level with specific optimized methods, such as specific video and image compression algorithms.
 
--   Then general encryption can happen at the HTTP level (the resource transmitted is compressed end-to-end).
+-   Then, general encryption can happen at the HTTP level (the resource transmitted is compressed end-to-end).
 
 -   And finally, compression can be defined at the connection level, between two nodes of an HTTP connection.
 
