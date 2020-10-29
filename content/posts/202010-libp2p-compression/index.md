@@ -411,5 +411,4 @@ And probably many other things that we may be missing and that you can come up w
 
 Do not hesitate to reach out or open an issue to join our quest of driving speed-ups to file-sharing in P2P networks.
 
-
-![](https://lh5.googleusercontent.com/2TEy8HTxDQMOJEseHcfmaHkxiA5UcDFDgpX5auHT3G7oZKGY2XmlcbVzbPuKd4-dvJEZjG8-MvB2VwyywhO9X0rsXUJbHeAxyw0LRtH-2Gq1gjyxP9loLjRw2wjvoTr_0YeCDZfb)
+<center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
