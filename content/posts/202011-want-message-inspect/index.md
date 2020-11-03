@@ -40,7 +40,7 @@ Every research endeavour starts with a thorough analysis of the state of the art
 
 # The contribution
 
-After a thorough analysis of the Bitswap protocol, we realized that in their regular operation, nodes were discarding a lot of useful information from its connected peers. Our hypothesis was that if we managed to collect some of this discarded information we would be able to perform faster content discoveries, and consequently faster file transfers.
+After a thorough analysis of the Bitswap protocol, we realized that in their regular operation, nodes were discarding a lot of useful information from its connected peers, such as: the blocks that those peers are looking for. Our hypothesis was that if we managed to keep some of that discarded information we would be able to leverage it to perform faster content discoveries, and consequently faster file transfers.
 
 By keeping the intel about what blocks are being requested by whom in a new data structure, the peer-block registry, we are able to guess with a high probability of success, which nodes have which content, under the assumption that if a node was looking for something, it probably found it meanwhile. We populate peer-block registry is populated with the data extracted from the WANT messages received by a peer. **With this technique, we can see faster deliveries, specially in use cases of content that gets more and more popular over time**.
 
