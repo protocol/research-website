@@ -94,7 +94,7 @@ Despite hitting a node with the content, the minimum number of RTTs required by 
 <center>{{< figure src="latency_zoom.png" alt="Time to fetch for baseline vs prototype (100 MB - 100 ms) - zoomed" >}}</center>
 
 
-### Want Inspection Results
+### Results with peer-block registry enabled on Bitswap
 
 For our modified implementation of Bitswap with the WANT message inspection mechanism, the time to fetch, and thus the time to first block for popular content, can significantly be reduced. Why is this?
 
