@@ -40,7 +40,7 @@ Every research endeavour starts with a thorough analysis of the state of the art
 
 IPFS's Bitswap protocol currently discards a lot of useful information from its connected peers, such as: the blocks that those peers are looking for. Our hypothesis was that if we used that information to inform ourselves about the state of the network, we would be able to perform faster content discoveries and, consequently, reduce transfer time.
 
-By keeping the intel about what blocks are being requested by whom in a new data structure, the peer-block registry, we are nw able to guess with a high probability of success, which nodes have which content. The assumption made is that if a node was looking for something, it probably found it meanwhile. 
+By keeping the intel about what blocks are being requested by which peer in a new data structure (which we introduce here and we call the _peer-block registry_), we are now able to guess with high accuracy which nodes have which content. The assumption is that if a node was looking for something, it probably found it.
 
 We populate peer-block registry is populated with the data extracted from the WANT messages received by a peer. **With this technique, we can see faster deliveries, specially in use cases of content that gets more and more popular over time**.
 
