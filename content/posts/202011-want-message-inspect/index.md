@@ -34,7 +34,7 @@ draft: false
 
 
 
-As part of ResNetLab's research endeavour to drive speed ups on file transfers, beyond swapping bits, we present a new contribution to IPFS Bitswap that leverages the wealth of information currently discarded by Bitswap. You can also read the last contribution [here](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/)
+As part of ResNetLab's research endeavour to drive speed ups on file transfers, beyond swapping bits, we present a **new contribution to IPFS Bitswap protocol, that leverages the wealth of information currently discarded by Bitswap, in order to improve the retrieval success and minimize the latency while retrieving**. You can also read the last contribution [here](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/)
 
 Every research endeavor starts with a thorough analysis of the state of the art. This initial effort builds the foundation for the work to come. What we are doing differently in the drive speed-ups for file-transfer in P2P networks at ResNetLab is that beyond giving you the results and how to benefit from them, we want to guide you through the process we followed to reach these improvements: from the state-of-the-art, through ideation, prototyping, and to evaluation. We want to illustrate this process by documenting how we prototyped and evaluated the first improvement that brought around 25% improvements in the time to fetch popular content, and a reduction of the number of control messages exchanged in Bitswap by 75%. In other words, come for the results, stay for the scientific methodology and the repeatability of the evaluation, so that you can learn how to implement your own variations!
 
