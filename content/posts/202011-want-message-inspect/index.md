@@ -106,7 +106,7 @@ For our modified implementation of Bitswap with the WANT message inspection mech
 
 As was the case for the baseline experiment, the first wave of leechers has no previous knowledge about where the content is, so the only thing they can do is to broadcast WANT-HAVEs, find the seeder, and request the content. For subsequent waves, though, peers have been listening to the WANT messages exchanged in the network by other peers, so before broadcasting WANT-HAVEs to every connected peer, they will send an optimistic WANT-BLOCK to peers that have previously requested that content. If they are lucky, they will hit the content in a single WANT-BLOCK and receive the block in that same interaction, reducing the time to fetch the content to a single RTT.
 
-### Number of messages exchanged
+#### Reduction in the numbers of messages exchange, saving bandwidth
 
 The use of message inspection has another interesting result apart from the time to fetch improvement for popular content. The number of control messages exchanged by Bitswap nodes is significantly reduced. Keeping in the peer-block registry a list of peers that have recently requested a specific CID allows the transmission of the optimistic WANT-BLOCK preventing the need of broadcasting a WANT-HAVE to all our connected peers.
 
