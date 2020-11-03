@@ -87,7 +87,6 @@ For the baseline implementation of Bitswap, the first retrieval is the slowest b
 Despite hitting a node with the content, the minimum number of RTTs required by the vanilla implementation of Bitswap to get the content are two: one for the WANT-HAVE broadcast, and another one to explicitly request the content with a WANT-BLOCK.
 
 <center>{{< figure src="latency_full.png" alt="Time to fetch for baseline vs prototype (100 MB - 100 ms)" >}}</center>
-  <p></p>
 
 <center>{{< figure src="latency_zoom.png" alt="Time to fetch for baseline vs prototype (100 MB - 100 ms) - zoomed" >}}</center>
 
