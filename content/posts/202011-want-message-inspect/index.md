@@ -51,7 +51,6 @@ This new scheme showed promising results, reducing in one RTT the time required 
 # The methodology
 
 ## Building the foundation
------------------------------
 
 The foundation of this specific improvement was two-fold: first, we performed a thorough analysis of what was being done around file-sharing in P2P networks in academia; we then evaluated the current bottlenecks and limitations of an existing content exchange protocol over an existing P2P network, in our case Bitswap and IPFS, respectively. Needless to say, all of this work is a recurring one and not a one-time thing, and you can follow every update [here](https://github.com/protocol/ResNetLab/tree/master/beyond-bitswap/).
 
