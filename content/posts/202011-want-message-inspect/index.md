@@ -82,11 +82,13 @@ You can read the details of architecture in the [RFC](https://github.com/protoco
 
 ## Evaluation Plan and Results
 
-This prototype was focused on trying to validate our assumption that if we use previous information from events in the network we can drive faster and more efficient searches and transmissions of content. For the evaluation of our implementation we designed an experiment where 30 different leecher IPFS nodes request the XKCD image below with a size of 149 KB from a single seeder IPFS node providing it in the network.
 
-To emulate the request of periodic content, leechers in the experiment request the content in waves of two nodes, in intervals of 5 seconds. Thus, for subsequent waves, previous leechers have already requested the content before.
+Our target use case was the transfer of datasets that grow in popularity over time. We designed an experiment where 30 different leecher IPFS nodes request over time the XKCD image below with a size of 149 KB from a single seeder IPFS node providing it in the network.
 
 <center>{{< figure src="xkcd.png" alt="xkcd image exchanged by nodes in our experiment" >}}</center>
+
+To emulate the request of periodic content, leechers request the content in waves of size 2, in intervals of 5 seconds. This creates a situation in which the next set of leechers already has received the WANT messages from previous leechers, therefore, estimating that those nodes have the file they were looking for.
+
 
 
 ### Results with standard Bitswap
