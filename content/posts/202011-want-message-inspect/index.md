@@ -67,7 +67,7 @@ The same way nodes in the aforementioned paper listen to requests to detect unde
 
 The applied RFC driven development, [RFC BBL104](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md), so that anyone can can contribute both to the design and evaluation plan of the improvement proposal.
 
-To build the prototype, we [forked the go-bitswap](https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL104) and applied the changes necessary
+To build the prototype, we [forked the go-bitswap](https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL104) and applied the necessary changes.
 
 You can read the details of architecture in the [RFC](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md). The summary is:
 - Bitswap tracks every WANT message received and updates a peer-block registry which is brand new data structure introduced in our prototype that maps each CID seen by a node to the peers that have recently requested this particular CID. 
