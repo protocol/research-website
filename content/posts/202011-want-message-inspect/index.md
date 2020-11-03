@@ -27,9 +27,6 @@ areas:
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
 - resnetlab
-
-# Not used
-draft: false
 ---
 
 
