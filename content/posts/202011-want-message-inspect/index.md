@@ -92,7 +92,6 @@ Despite hitting a node with the content, the minimum number of RTTs required by 
   <p></p>
 
 <center>{{< figure src="latency_zoom.png" alt="Time to fetch for baseline vs prototype (100 MB - 100 ms) - zoomed" >}}</center>
-  <p></p>
 
 
 ### Want Inspection Results
