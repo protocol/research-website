@@ -117,7 +117,6 @@ Thus, the average number of WANT messages exchanged is reduced by 33%, while the
   <p></p>
 
 <center>{{< figure src="total_messages.png" alt="Total number of messages exchanged in the experiments" >}}</center>
-  <p></p>
 
 This improvement doesn't come without a small trade-off. The fact that we are sending an optimistic WANT-BLOCK to n peers from the peer-block registry which potentially have the content (in the default implementation n=3), means that the number of duplicates blocks exchanged in the network is slightly increased.
 
