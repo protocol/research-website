@@ -74,7 +74,6 @@ The expected impact of this scheme is the following: the time to first block (i.
 <center>{{< figure src="architecture.png" alt="Implementation Diagram" >}}</center>
 
 ## Evaluation Plan and Results
------------------------------
 
 This prototype was focused on trying to validate our assumption that if we use previous information from events in the network we can drive faster and more efficient searches and transmissions of content. For the evaluation of our implementation we designed an experiment where 30 different leecher IPFS nodes request the XKCD image below with a size of 149 KB from a single seeder IPFS node providing it in the network.
 
