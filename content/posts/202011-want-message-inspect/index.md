@@ -42,7 +42,7 @@ IPFS's Bitswap protocol currently discards a lot of useful information from its 
 
 By keeping the intel about what blocks are being requested by which peer in a new data structure (which we introduce here and we call the _peer-block registry_), we are now able to guess with high accuracy which nodes have which content. The assumption is that if a node was looking for something, it probably found it.
 
-We populate peer-block registry is populated with the data extracted from the WANT messages received by a peer. **With this technique, we can see faster deliveries, specially in use cases of content that gets more and more popular over time**.
+The peer-block registry is populated with data extracted from the WANT messages received by a peer. **With this technique, we can see faster deliveries, especially in cases where content gets increasingly popular over time**.
 
 Additionally, **we were able to minimize the overhead of bitswap messages**. We modified the Bitswap first turn flood mechanism to only send WANT message to the peers we believe to have the CID, if we happen to have any. Given our assumption, the recipient of the WANT message will have the content and immediately transfers the corresponding block, saving precious bandwidth from all the other nodes. If, on the other hand, the node doesn't have the content anymore, Bitswap falls back to its normal operation (broadcasting WANT messages until a provider with the content is found).
 
