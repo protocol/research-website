@@ -69,7 +69,6 @@ We [forked the go-bitswap](https://github.com/adlrocha/go-bitswap/tree/feature/r
 The expected impact of this scheme is the following: the time to first block (i.e. time to first byte - TTFB) will be reduced from at least two RTTs to one, as if the WANT_BLOCK hits a peer with the content it will directly answer with the content; while the penalization from not hitting a peer with content will be of just one RTT.
 
 <center>{{< figure src="architecture.png" alt="Implementation Diagram" >}}</center>
-  <p></p>
 
 ## Evaluation Plan and Results
 -----------------------------
