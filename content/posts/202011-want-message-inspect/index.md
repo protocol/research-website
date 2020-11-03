@@ -142,5 +142,7 @@ We are already considering several points of improvement for our current impleme
 
 -   The dynamic configuration of the number of peers from the peer-block registry to whom to send WANT_BLOCK messages, so according to the state of the peer-block registry,  the specific application, the number of active connections, or the state of the network, we are able to perform smarter lookups either to make a more efficient use of bandwidth, or to minimize the time to fetch the content.
 
-Even more, we are already devising the combination of this RFC with other prototypes in progress to potentially achieve further improvements. Stay tuned and do not hesitate to reach us out if you want to start contributing to this exciting line of work!
+Even more, we are already devising the combination of this RFC with other prototypes in progress to potentially achieve further improvements. One of which, is the creation of [Content Anchors that are designed to track all kinds of networks smarts to help discovery for both static data (i.e. Files) or dynamic data (e.g. PubSub Streams)](https://github.com/protocol/ResNetLab/issues/6).
+
+Stay tuned and do not hesitate to reach us out if you want to start contributing to this exciting line of work!
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
