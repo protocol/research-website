@@ -78,7 +78,6 @@ This prototype was focused on trying to validate our assumption that if we use p
 To emulate the request of periodic content, leechers in the experiment request the content in waves of two nodes, in intervals of 5 seconds. Thus, for subsequent waves, previous leechers have already requested the content before.
 
 <center>{{< figure src="xkcd.png" alt="xkcd image exchanged by nodes in our experiment" >}}</center>
-  <p></p>
 
 
 ### Vanilla Bitswap Results
