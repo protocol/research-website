@@ -38,7 +38,7 @@ Every research endeavour starts with a thorough analysis of the state of the art
 
 # The contribution
 
-The IPFS Bitswap protocol currently discards by default a lot of useful information from its connected peers, such as: the blocks that those peers are looking for. Our hypothesis was that if we used that information to inform ourselves about the state of the network, we would be able to perform faster content discoveries, and consequently, transfer files faster.
+IPFS's Bitswap protocol currently discards a lot of useful information from its connected peers, such as: the blocks that those peers are looking for. Our hypothesis was that if we used that information to inform ourselves about the state of the network, we would be able to perform faster content discoveries and, consequently, reduce transfer time.
 
 By keeping the intel about what blocks are being requested by whom in a new data structure, the peer-block registry, we are nw able to guess with a high probability of success, which nodes have which content. The assumption made is that if a node was looking for something, it probably found it meanwhile. 
 
