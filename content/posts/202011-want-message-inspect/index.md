@@ -113,7 +113,6 @@ Thus, the average number of WANT messages exchanged is reduced by 33%, while the
 
 
 <center>{{< figure src="average_baseline.png" alt="Average number of WANT messages seen by peer in baseline" >}}</center>
-  <p></p>
 
 <center>{{< figure src="total_messages.png" alt="Total number of messages exchanged in the experiments" >}}</center>
 
