@@ -85,7 +85,7 @@ You can read the details of architecture in the [RFC](https://github.com/protoco
 
 Our target use case was the transfer of datasets that grow in popularity over time. We designed an experiment where 30 different leecher IPFS nodes request over time the XKCD image below with a size of 149 KB from a single seeder IPFS node providing it in the network.
 
-<center>{{< figure src="xkcd.png" alt="xkcd image exchanged by nodes in our experiment" >}}</center>
+<img src="xkcd.png" alt="xkcd image exchanged by nodes in our experiment" width="200px"></img>
 
 To emulate the request of periodic content, leechers request the content in waves of size 2, in intervals of 5 seconds. This creates a situation in which the next set of leechers already has received the WANT messages from previous leechers, therefore, estimating that those nodes have the file they were looking for.
 
