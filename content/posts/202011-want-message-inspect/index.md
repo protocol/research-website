@@ -114,10 +114,7 @@ The use of message inspection has another interesting result apart from the time
 
 Thus, the average number of WANT messages exchanged is reduced by 33%, while the number of WANT-HAVEs is reduced by 75%. All of this for a slight increase in the number of WANT-BLOCK exchanged of 7%.
 
-<center>{{< figure src="average_rfc.png" alt="Average number of WANT messages seen by peer in prototype" >}}</center>
-
-
-<center>{{< figure src="average_baseline.png" alt="Average number of WANT messages seen by peer in baseline" >}}</center>
+<center>{{< figure src="messages.png" alt="Average number of WANT messages seen by peer" >}}</center>
 
 <center>{{< figure src="total_messages.png" alt="Total number of messages exchanged in the experiments" >}}</center>
 
@@ -125,10 +122,7 @@ This improvement doesn't come without a small trade-off. The fact that we are se
 
 While in the vanilla Bitswap implementation a single WANT-BLOCK is sent to a peer that has answered that has the block, in our prototype we send three different WANT-BLOCK, and as we select the recipient peers from the peer-block registry, all of them will potentially have the block. The number of WANT-BLOCK messages to send to peers in the peer-block registry can be configured, so it could even be dynamically adapted to balance the trade-off between savings in WANT messages and duplicate if we want to optimize for bandwidth use.
 
-<center>{{< figure src="data_rfc.png" alt="Data exchanged by peer in RFC" >}}</center>
-  <p></p>
-
-<center>{{< figure src="data_baseline.png" alt="Data exchanged by peer in baseline" >}}</center>
+<center>{{< figure src="data.png" alt="Data exchanged by peer" >}}</center>
   <p></p>
 
 
