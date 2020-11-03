@@ -109,7 +109,6 @@ The use of message inspection has another interesting result apart from the time
 Thus, the average number of WANT messages exchanged is reduced by 33%, while the number of WANT-HAVEs is reduced by 75%. All of this for a slight increase in the number of WANT-BLOCK exchanged of 7%.
 
 <center>{{< figure src="average_rfc.png" alt="Average number of WANT messages seen by peer in prototype" >}}</center>
-  <p></p>
 
 
 <center>{{< figure src="average_baseline.png" alt="Average number of WANT messages seen by peer in baseline" >}}</center>
