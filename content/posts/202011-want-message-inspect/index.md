@@ -53,15 +53,18 @@ This new scheme showed promising results, reducing in one RTT the time required 
 
 # The methodology
 
-## Building the foundation
+## Building our understanding and identifying limitations
 
-The foundation of this specific improvement was two-fold: first, we performed a thorough analysis of what was being done around file-sharing in P2P networks in academia; we then evaluated the current bottlenecks and limitations of an existing content exchange protocol over an existing P2P network, in our case Bitswap and IPFS, respectively. Needless to say, all of this work is a recurring one and not a one-time thing, and you can follow every update [here](https://github.com/protocol/ResNetLab/tree/master/beyond-bitswap/).
+We performed a thorough analysis of:
+- What was being done around file-sharing in P2P networks in previous academic work
+- We then evaluated the current bottlenecks and limitations of an existing content exchange protocol over an existing P2P network, in our case Bitswap and IPFS, respectively
+You can find our [notebook on the beyond-bitswap folder at the ResNetLab repo](https://github.com/protocol/ResNetLab/tree/master/beyond-bitswap/).
 
-All of this work drove us to the realization that in Bitswap and IPFS, the discovery of the peers storing the content a user is asking for is blind and deterministic. When a client starts a query in the IPFS network, bitswap initialises content discovery by asking all of the peers it is connected to for the content's CID through a set of WANT messages. If this discovery fails, then the content is resolved using IPFS's/libp2p's DHT. No information of previous events that took place in the network is used to smartly direct this discovery.
+We identified that the content discovery perfomed by Bitswap is suboptimal, blind and deterministic. When a file is requested, Bitswap performs two actions: 1) a DHT Content Routing Query and; 2) sends an optimistic WANT message to all of its connected peers. No information of previous events that took place in the network is used to smartly guide this discovery.
 
-With this in mind we started wondering, _"can't we use some information from the network to make more informed decisions and improve the efficiency of content discovery?"_. We started wondering what this information could be, when we came across [this slightly unrelated paper](http://www4.comp.polyu.edu.hk/~csbxiao/bittorrentweb/report/report.pdf). The authors of this paper suggested the inspection of requests from peers to identify nodes which underreport the stored content (i.e. that intentionally do not announce pieces of content they store). This simple concept inspired the RFC that we prototyped, evaluated and that led to our first improvements over file-sharing in IPFS.
+We knew that we could do better, starting with the hypothesis: _"can't we use some information from the network to make more informed decisions and improve the efficiency of content discovery?"_. Later, we came across [this slightly unrelated paper](http://www4.comp.polyu.edu.hk/~csbxiao/bittorrentweb/report/report.pdf) in which the authors suggest the inspection of requests from peers to identify nodes which underreport the stored content (i.e. that intentionally do not announce pieces of content they store). This simple concept inspired the RFC that we prototyped, evaluated and that led to our first improvements over file-sharing in IPFS.
 
-The same way nodes in the aforementioned paper listen to requests to detect underreporting peers, we can use this same principle to track Bitswap's WANT messages from our peers so that whenever we want content that others have requested before, instead of polling the full network from scratch, we also ask nodes that have requested that CID beforehand, as they most likely will have the content by then.
+The same way nodes in the aforementioned paper listen to requests to detect underreporting peers, we can use this same principle to track Bitswap's WANT messages from our peers. This way, whenever we want content that others have requested before, instead of polling the full network from scratch, we also ask nodes that have requested that CID beforehand, as they most likely will have the content by then.
 
 ## Discussing the RFC and building the prototype.
 
