@@ -62,7 +62,6 @@ With this in mind we started wondering, _"can't we use some information from the
 The same way nodes in the aforementioned paper listen to requests to detect underreporting peers, we can use this same principle to track Bitswap's WANT messages from our peers so that whenever we want content that others have requested before, instead of polling the full network from scratch, we also ask nodes that have requested that CID beforehand, as they most likely will have the content by then.
 
 ## Discussing the RFC and building the prototype.
------------------------------
 
 The first thing we do whenever someone comes up with a new improvement idea is to [write an RFC in "brainstorm" ](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md)state, so that anyone can jump into the discussion and contribute to the definition of the prototype and the evaluation plan to test the improvement proposal. Once everyone is comfortable with the aspirations of the RFC, we move it to a "draft" state, and we start building the prototype.
 
