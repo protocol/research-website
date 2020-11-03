@@ -83,7 +83,7 @@ To emulate the request of periodic content, leechers in the experiment request t
 <center>{{< figure src="xkcd.png" alt="xkcd image exchanged by nodes in our experiment" >}}</center>
 
 
-### Vanilla Bitswap Results
+### Results with standard Bitswap
 
 For the baseline implementation of Bitswap, the first retrieval is the slowest because only the seeder has the content. For the following waves, more nodes apart from the seeder already have the content, so when leechers broadcast their WANT-HAVEs they have a higher probability of hitting a node with the requested content.
 
