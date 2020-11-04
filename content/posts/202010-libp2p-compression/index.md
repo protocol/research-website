@@ -253,7 +253,6 @@ What do these bandwidth savings mean for the time to fetch a full dataset from I
     <td>
     <p><a href="https://ipfs.io/ipfs/QmNvTjdqEPjZVWCvRWsFJA1vK7TTw1g9JP6we1WBJTRADM"><span style="font-weight: 400;">IETF RFC Archive </span></a></br><span style="font-weight: 400;">Size: 500MB</span>
         <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">B: 10Mbps</span><br/><span style="font-weight: 400;"></span>L: 50ms</span>
-        </br><span style="font-weight: 400;"></span>L: 50ms</span>
         </br><span style="font-weight: 400;"></span>🇺🇸️🇵🇹️🇬🇧️🇬🇷️</span></p>
     </td>
     <td>
@@ -270,7 +269,6 @@ What do these bandwidth savings mean for the time to fetch a full dataset from I
     <td>
     <p><a href="https://ipfs.io/ipfs/QmRTSA1UFHSx3z7taNRwUVM8AjB2EQwKvyZu3BfJg9QRtZ"><span style="font-weight: 400;">World Wide Web History Project</span></a></br><span style="font-weight: 400;"> Size: 92MB</span>
     <br/><span style="font-weight: 400;">B: 50Mbps</span></br><span style="font-weight: 400;">L: 50ms</span>
-    </br><span style="font-weight: 400;"></span>L: 50ms</span>
         </br><span style="font-weight: 400;"></span>🇰🇷️🇳🇴️🇨🇦️🇳🇱️🇨🇭️🇦🇺️</span></p>
     </td>
     <td>
@@ -303,7 +301,6 @@ What do these bandwidth savings mean for the time to fetch a full dataset from I
     <td>
     <p><a href="https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX"><span style="font-weight: 400;">Textfiles.com</span></a><br/><span style="font-weight: 400;"> Size: 1.6GB</span>
     <br/><span style="font-weight: 400;">B: 50Mbps</span></br><span style="font-weight: 400;">L: 50ms</span>
-    </br><span style="font-weight: 400;"></span>L: 50ms</span>
         </br><span style="font-weight: 400;"></span>🇰🇷️🇳🇴️🇨🇦️🇳🇱️🇨🇭️🇦🇺️</span></p>
     </td>
     <td>
