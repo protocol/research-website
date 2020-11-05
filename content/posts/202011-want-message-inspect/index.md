@@ -62,28 +62,23 @@ Nodes in the aforementioned paper listen to requests to detect underreporting pe
 
 ## Crafting RFC and the prototype
 
-The applied RFC driven development, [RFC BBL104](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md), so that anyone can can contribute both to the design and evaluation plan of the improvement proposal.
+We have drafted an [RFC BBL104](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md) so that anyone can can contribute both to the design and evaluation plan of the improvement proposal. To build the prototype, we [forked the go-bitswap](https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL104) and applied the necessary changes. You can read the details of its architecture in the [RFC](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md). The summary is:
 
-To build the prototype, we [forked the go-bitswap](https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL104) and applied the necessary changes.
-
-You can read the details of architecture in the [RFC](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md). The summary is:
-- Bitswap tracks every WANT message received and updates a peer-block registry, which is a brand new data structure introduced in this RFC and prototyped for evaluation. The peer-block registry maps each CID seen by a node to the peers that have recently requested this particular CID. 
-- This information is then used by Bitswap sessions to direct their search for content. Whenever a peer wants a CID, if the peer-block registry for that CID is populated with peers that already requested that content, instead of broadcasting WANT-HAVE messages to all his connected peers, it will only send a WANT-BLOCK to the n latest peers (with n=3 in the default implementation) of the peer-block registry. 
+- Bitswap tracks every WANT message received and updates a _peer-block registry_, which is a brand new data structure introduced in this RFC and prototyped for evaluation. The peer-block registry maps each CID seen by a node to the peers that have recently requested this particular CID. 
+- This information is then used by Bitswap sessions to direct their search for content. Whenever a peer wants a CID, if the peer-block registry for that CID is populated with peers that already requested that content, instead of broadcasting WANT-HAVE messages to all his connected peers, it will only send a WANT-BLOCK to the n latest peers (n=3 in the default implementation) of the peer-block registry. 
 - If the contacted peers have the content, they will immediately respond the WANT-BLOCK with the corresponding block, while if this is not the case, they will answer with a DONT_HAVE, and the peer will then perform the broadcasting of WANT_HAVEs to all its connected peers.
-- The expected impact of this scheme is the following: the time to first block (i.e. time to first byte - TTFB) will be reduced from at least two RTTs to one, as if the WANT_BLOCK hits a peer with the content it will directly answer with the content; while the penalization from not hitting a peer with content will be of just one RTT.
+
+The expected impact of this scheme is the following: the time to first block (i.e. time to first byte - TTFB) will be reduced from at least two RTTs to one: if the WANT_BLOCK hits a peer with the content it will directly answer with the content, while the penalization from not hitting a peer with content will be of just one RTT.
 
 <center>{{< figure src="architecture.png" alt="Implementation Diagram" >}}</center>
 
 ## Evaluation Plan and Results
 
-
-Our target use case was the transfer of datasets that grow in popularity over time. We designed an experiment where 30 different leecher IPFS nodes request over time the XKCD image below with a size of 149 KB from a single seeder IPFS node providing it in the network.
+Our target use case was the transfer of datasets that grow in popularity over time. We designed an experiment where 30 different leecher IPFS nodes request, over time, the XKCD image below (size 49 KB) from a single seeder IPFS node providing it in the network.
 
 <img src="xkcd.png" alt="xkcd image exchanged by nodes in our experiment" width="200px"></img>
 
-To emulate the request of periodic content, leechers request the content in waves of size 2, in intervals of 5 seconds. This creates a situation in which the next set of leechers already has received the WANT messages from previous leechers, therefore, estimating that those nodes have the file they were looking for.
-
-
+To emulate the request of periodic content, leechers request the content in waves of size 2, in intervals of 5 seconds. This creates a situation in which the next set of leechers has already received the WANT messages from previous leechers, and can therefore assume that those nodes have the file they were looking for.
 
 ### Results with standard Bitswap
 
