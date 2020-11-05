@@ -78,7 +78,7 @@ Our target use case was the transfer of datasets that grow in popularity over ti
 
 <img src="xkcd.png" alt="xkcd image exchanged by nodes in our experiment" width="200px"></img>
 
-To emulate the request of periodic content, leechers request the content in waves of size 2, in intervals of 5 seconds. This creates a situation in which the next set of leechers has already received the WANT messages from previous leechers, and can therefore assume that those nodes have the file they were looking for.
+To emulate the request of popular content, leechers perioddically request the content in waves of size 2, in intervals of 5 seconds. This creates a situation in which the next set of leechers has already received the WANT messages from previous leechers, and can therefore assume that those nodes have the file they were looking for.
 
 ### Results with standard Bitswap
 
@@ -87,7 +87,6 @@ For the baseline implementation of Bitswap, the first retrieval is the slowest b
 Despite hitting a node with the content, the minimum number of RTTs required by the vanilla implementation of Bitswap to get the content is two: one for the WANT-HAVE broadcast, and another one to explicitly request the content with a WANT-BLOCK.
 
 <center>{{< figure src="latency.png" alt="Time to fetch for baseline vs prototype (100 MB - 100 ms)" >}}</center>
-
 
 ### Results with peer-block registry enabled on Bitswap
 
@@ -118,7 +117,7 @@ In all the aforementioned experiments we were using a file that would fit in a s
 
 <center>{{< figure src="total_messages.png" alt="Total number of messages and duplicate blocks exchanged for different file sizes" >}}</center>
 
-In addition to from the reduction in the number of messages exchanged in the experiment (especially for small files), we inferred another interesting result. The use of the peer-block registry to perform smarter lookups of content doesn't actually eliminate the number of duplicate blocks in the network as we initially thought, but it does reduce it. In our initial experiments, we exchanged a single block in order to evaluate the performance improvement of the TTFB. With a single block, the WANT-BLOCK round sent by the peer-block registry caused the appearance of two additional duplicate blocks. However, for larger files, the number of blocks exchanged is much larger, and knowing in advance which peers to request the content from prevents peers from polling the entire network, consequently reducing the number of duplicate blocks generated in the file exchange.
+In addition to from the reduction in the number of messages exchanged in the experiment (especially for small files), we inferred another interesting result. The use of the peer-block registry to perform smarter lookups of content doesn't actually increase the number of duplicate blocks in the network, as we initially thought, but rather _reduces_ it. In our initial experiments, we exchanged a single block in order to evaluate the performance improvement of the TTFB: each block exchanged generated two additional duplicate blocks. For larger files, the number of blocks exchanged is much larger, and knowing in advance which peers to request the content from prevents peers from polling the entire network, which consequently reduces the number of duplicate blocks generated in the file exchange.
 
 ## Conclusions and Future Work
 
