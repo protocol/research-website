@@ -39,11 +39,11 @@ A few months ago, we challenged ourselves with a new project whose main objectiv
 ## What we can learn from the most widely used protocol for file distribution today, HTTP 
 Compression is already an important and convenient way to increase performance in Web 2.0. For certain files, we can reach size reductions of up to 70%, with corresponding improvements in bandwidth requirements. Compression in the web happens at three different levels:
 
-- First, some file formats are compressed at the application level with specific optimized methods, such as specific video and image compression algorithms.
+1. First, some file formats are compressed at the application level with specific optimized methods, such as specific video and image compression algorithms.
 
-- Then, general encryption can happen at the HTTP level (the resource transmitted is compressed end-to-end).
+2. Then, general encryption can happen at the HTTP level (the resource transmitted is compressed end-to-end).
 
-- And finally, compression can be defined at the connection level, between two nodes of an HTTP connection.
+3. And finally, compression can be defined at the connection level, between two nodes of an HTTP connection.
 
 To date, libp2p has not been using compression in any way in the exchange of files in IPFS, so why not mimic HTTP and use compression to drive speed-ups in IPFS file-exchange?
 
@@ -59,16 +59,16 @@ The data exchange subsystem currently used in IPFS is Bitswap, so we chose to st
 
 Following a similar approach, we implemented three different compression strategies in Bitswap to evaluate the one that achieved better performance improvements:
 
-- Block compression: Files within Bitswap are exchanged in the form of blocks. Files are composed of several blocks organized in a DAG structure with each block having a size limit of 256KB[ (check out these ProtoSchool tutorials to learn a bit more about this)](https://proto.school/data-structures). In this compression approach, we compressed blocks before including them in a message and transmitting them through the link. This can be considered the equivalent to compressing the body in HTTP.
+- **Block compression**: Files within Bitswap are exchanged in the form of blocks. Files are composed of several blocks organized in a DAG structure with each block having a size limit of 256KB (check out these [ProtoSchool tutorials](https://proto.school/data-structures) to learn a bit more about this). In this compression approach, we compressed blocks before including them in a message and transmitting them through the link. This can be considered the equivalent to compressing the body in HTTP.
 
-- Full message compression: In this compression strategy instead of only compressing blocks we compressed every single message before sending it, i.e. the equivalent of compressing header+body in HTTP.
+- **Full message compression**: In this compression strategy instead of only compressing blocks we compressed every single message before sending it, i.e. the equivalent of compressing header+body in HTTP.
 
-- Stream compression: this method uses compression at a stream level, so every byte that enters the stream writer of a node at a transport level will be conveniently compressed using a stream wrapper. This is actually the approach that [this Golang implementation of a Gzip HTTP handler](https://github.com/nytimes/gziphandler/blob/master/gzip.go) follows.
+- **Stream compression**: this method uses compression at a stream level, so every byte that enters the stream writer of a node at a transport level will be conveniently compressed using a stream wrapper. This is actually the approach that [this Golang implementation of a Gzip HTTP handler](https://github.com/nytimes/gziphandler/blob/master/gzip.go) follows.
 
 <center>{{< figure src="compression-strategies.png" alt="Different compression strategies implemented" >}}</center>
   <p></p>
 
-For convenience, we used Gzip as the compression algorithm for the aforementioned strategies. Many have[ reported the compression benefits of brotli over Gzip](https://dropbox.tech/infrastructure/-broccoli--syncing-faster-by-syncing-less), but the lack of a stable implementation of brotli for Golang made us initially choose Gzip as the compression candidate for our prototypes.
+For convenience, we used Gzip as the compression algorithm for the aforementioned strategies. Many have reported [the compression benefits of brotli over Gzip](https://dropbox.tech/infrastructure/-broccoli--syncing-faster-by-syncing-less), but the lack of a stable implementation of brotli for Golang made us initially choose Gzip as the compression candidate for our prototypes.
 
 We ran our evaluation plans on the implementations of the aforementioned strategies over our[ file-sharing Testground testbed](https://github.com/adlrocha/beyond-bitswap/) reaching the following interesting results:
 
@@ -80,9 +80,9 @@ Lessons learned from the evaluation of these implementations? Applying compressi
 
 ## Landing the prototype in libp2p
 
-The compression strategy that led to the best results in our first prototypes of compression wasn't at a protocol-level but at a transport-level. This meant that if we implemented compression embedded in the underlying transport layer, not only could file-sharing protocols benefit from compression, but potentially any other P2P protocol leveraging that same transport layer.
+The compression strategy that led to the best results in our first prototypes of compression wasn't at a protocol level but at a transport level. This meant that if we implemented compression embedded in the underlying transport layer, not only could file-sharing protocols benefit from compression, but potentially any other P2P protocol leveraging that same transport layer.
 
-Bitswap uses [libp2p](https://docs.ipfs.io/concepts/libp2p/) as its underlying P2P transport, and just like Bitswap, there are already many applications and protocols using libp2p as their transport layer which could start directly benefiting from the use of compression without any changes to their protocols and applications  (there are implementations of libp2p in Go, JavaScript, Rust, Python, JVM, C++, and even Nim).
+Bitswap uses [libp2p](https://docs.ipfs.io/concepts/libp2p/) as its underlying P2P transport, and just like Bitswap, there are already many applications and protocols using libp2p as their transport layer which could start directly benefiting from the use of compression without any changes to their protocols and applications (there are implementations of libp2p in Go, JavaScript, Rust, Python, JVM, C++, and even Nim).
 
 This is how we ended up adding a new compression layer to the libp2p stack. We've implemented compression as a new transport upgrader between the stream multiplexer and the security layer. Thus, instead of individually compressing streams for each protocol (as we were doing in our Bitswap stream strategy), all the data coming from the multiplexer is conveniently compressed, encrypted at the security layer, and then sent through the underlying transport.
 
@@ -211,25 +211,25 @@ So what kind of improvements can we expect from the use of compression? Let's st
 
 We can see that, depending on the dataset, we can achieve savings of up to 75% of the required bandwidth. From our tests we draw two interesting conclusions:
 
-1. large datasets benefit more from the use of compression due to the higher probability of finding redundancies in the data;
+1. Large datasets benefit more from the use of compression due to the higher probability of finding redundancies in the data.
 
-2. the compressor and the nature of the underlying data exchanged matters in the compression rate achieved and consequently the potential bandwidth savings that can be leveraged. Gzip has a really good performance with text-based data, but [presents a pretty bad behavior when compressing images](https://www.quora.com/Can-gzip-file-compression-increase-the-file-size?share=1). So compression can generally achieve bandwidth savings as long as the right compression algorithm is used for the data exchanged.
+2. The compressor and the nature of the underlying data exchanged matters in the compression rate achieved and consequently the potential bandwidth savings that can be leveraged. Gzip performs very well with text-based data, but presents a pretty bad behavior [when compressing images](https://www.quora.com/Can-gzip-file-compression-increase-the-file-size?share=1). So compression can generally achieve bandwidth savings as long as the right compression algorithm is used for the data exchanged.
 
-What do these bandwidth savings mean for the time to fetch a full dataset from IPFS? We selected a few datasets from the aforementioned list that showed bandwidth savings, and ran the same file-exchange over Testground emulating different bandwidth and latency configurations for the links between the nodes ([taking as a reference the average connections speed for different countries](https://en.wikipedia.org/wiki/List_of_countries_by_Internet_connection_speeds)). The results are shown in the following table:
+What do these bandwidth savings mean for the time to fetch a full dataset from IPFS? We selected a few datasets from the aforementioned list that showed bandwidth savings, and ran the same file-exchange over Testground emulating different bandwidth and latency configurations for the links between the nodes (taking as a reference the [average connection speed for different countries](https://en.wikipedia.org/wiki/List_of_countries_by_Internet_connection_speeds)). The results are shown in the following table:
 <table>
     <tbody>
     <tr>
     <td>
-    <p><span style="font-weight: 400;">Average Connection Speed</span></p>
+    <p><span style="font-weight: 400;"><strong>Average Connection Speed</strong></span></p>
     </td>
     <td>
-    <p><span style="font-weight: 400;">Time to fetch without compression</span></p>
+    <p><span style="font-weight: 400;"><strong>Time to fetch without compression</strong></span></p>
     </td>
     <td>
-    <p><span style="font-weight: 400;">Time to fetch with compression</span></p>
+    <p><span style="font-weight: 400;"><strong>Time to fetch with compression</strong></span></p>
     </td>
     <td>
-    <p><span style="font-weight: 400;">Latency Improvement</span></p>
+    <p><span style="font-weight: 400;"><strong>Latency Improvement</strong></span></p>
     </td>
     </tr>
     <tr>
@@ -331,29 +331,29 @@ What do these bandwidth savings mean for the time to fetch a full dataset from I
     </table>
     <p>&nbsp;</p>
 
-Considering  the results obtained from the bandwidth savings and comparing the time to fetch with compression and without compression leads to a bit of disappointment. Compression starts showing appreciable improvements for large datasets, but they can still be considered negligible (below the 1%). What this means for IPFS users is that a user in Portugal would only save half a minute in the download of the [textfiles.com](https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX) dataset (1658MBs) through IPFS when using compression, out of a total of almost 4.5hrs when transferring uncompressed data. We believe we can achieve better results by continuing to fine-tune the compression levels. Furthermore, compression is cumulative: the more data transferred, the greater the opportunity for compression -- your daily usage will likely show even more interesting results.
+Considering  the results obtained from the bandwidth savings and comparing the time-to-fetch with compression and without compression leads to a bit of disappointment. Compression starts showing appreciable improvements for large datasets, but they can still be considered negligible (below the 1%). What this means for IPFS users is that a user in Portugal would only save half a minute in the download of the [textfiles.com](https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX) dataset (1658MBs) through IPFS when using compression, out of a total of almost 4.5hrs when transferring uncompressed data. We believe we can achieve better results by continuing to fine-tune the compression levels. Furthermore, compression is cumulative: the more data transferred, the greater the opportunity for compression -- your daily usage will likely show even more interesting results.
 
-The compression algorithm implementation we used for our transport was Golang's standard implementation (compress/gzip). In light of the above results, we began to wonder if the Gzip implementation we were using was not efficient enough for our use case, so all the time gained from bandwidth savings was being lost in the compression process. We then decided to implement our gzip transport with a [reportedly more efficient golang implementation of gzip](https://github.com/klauspost/compress) and a [brand new go-libp2p brotli compressed transport](https://github.com/adlrocha/go-libp2p-cbrotli/), and compared the computational overhead and bandwidth savings of the two implementations:
+The compression algorithm implementation we used for our transport was Golang's standard implementation (compress/gzip). In light of the above results, we began to wonder if the Gzip implementation we were using was not efficient enough for our use case, so all the time gained from bandwidth savings was being lost in the compression process. We then decided to implement our gzip transport with a reportedly more efficient [golang implementation of gzip](https://github.com/klauspost/compress) and a brand new [go-libp2p brotli compressed transport](https://github.com/adlrocha/go-libp2p-cbrotli/), and compared the computational overhead and bandwidth savings of the two implementations:
 <table>
     <tbody>
     <tr>
     <td>
-    <p><span style="font-weight: 400;">Dataset</span></p>
+    <p><span style="font-weight: 400;"><strong>Dataset</strong></span></p>
     </td>
     <td>
-    <p><span style="font-weight: 400;">compress/gzip </span><span style="font-weight: 400;"><br /></p>
+    <p><span style="font-weight: 400;"><strong>compress/<br />gzip </strong></span><span style="font-weight: 400;"><br /></p>
     </td>
     <td>
-    <p><span style="font-weight: 400;">klauspost/<br />compress/gzip</span><span style="font-weight: 400;"><br /></p>
+    <p><span style="font-weight: 400;"><strong>klauspost/<br />compress/gzip</strong></span><span style="font-weight: 400;"><br /></p>
     </td>
     <td>
-    <p><span style="font-weight: 400;">Brotli C impl<br />(Quality: 2)</span><span style="font-weight: 400;"><br /></p>
+    <p><span style="font-weight: 400;"><strong>Brotli C impl<br />(Quality: 2)</strong></span><span style="font-weight: 400;"><br /></p>
     </td>
     <td>
-    <p><span style="font-weight: 400;">Improvement<br />New Gzip</span></p>
+    <p><span style="font-weight: 400;"><strong>Improvement<br />New Gzip</strong></span></p>
     </td>
     <td>
-        <p><span style="font-weight: 400;">Improvement<br />Brotli</span></p>
+        <p><span style="font-weight: 400;"><strong>Improvement<br />Brotli</strong></span></p>
         </td>
     </tr>
     <tr>
@@ -399,31 +399,30 @@ The compression algorithm implementation we used for our transport was Golang's 
 </tbody>
 </table>
 <p>&nbsp;</p>
-The results of the experiment show how using an alternative implementation of the Gzip algorithm can lead to slightly worse bandwidth savings, but a significant improvement in the computational overhead of compression. Even more, we see how using an alternative (and reportedly better) compression algorithm results in achieving improvements in terms of bandwidth savings and time to compress. This states the importance of choosing the right compressor for the task according to the metric that wants to be improved. 
+The results of the experiment show how using an alternative implementation of the Gzip algorithm can lead to slightly worse bandwidth savings, but a significant improvement in the computational overhead of compression. Even more, we see how using an alternative (and reportedly better) compression algorithm results in achieving improvements in terms of bandwidth savings and time to compress. This demonstates the importance of choosing the right compressor for the task according to the metric that needs to be improved.
 
-## Conclusions 
+## Conclusions
 
-From the implementation of compression in libp2p we have gained a set of interesting insights. We've seen how compression can lead to significant bandwidth improvements for file-sharing and potentially many other protocols built over libp2p. The value of these bandwidth savings have to be considered in the overall framework under which Bitswap operates, that is in P2P networks. In these networks, users “donate” their bandwidth resources to serve content to other users. That said, any contribution towards avoiding upload bandwidth saturation is of significant value. Our results have shown that even moderate file exchanges of ~1GB, which is quite common for modern applications, can be shrunk by ~50% - a significant reduction! 
+From the implementation of compression in libp2p we have gained a set of interesting insights. We've seen how compression can lead to significant bandwidth improvements for file-sharing and potentially many other protocols built over libp2p. The value of these bandwidth savings has to be considered in the overall framework under which Bitswap operates, that is in P2P networks. In these networks, users “donate” their bandwidth resources to serve content to other users. That said, any contribution towards avoiding upload bandwidth saturation is of significant value. Our results have shown that even moderate file exchanges of ~1GB, which is quite common for modern applications, can be shrunk by ~50% - a significant reduction!
 
 However, these bandwidth savings don't come for free. The use of compression adds a computational overhead that in some cases may end up removing all the savings achieved by reducing the amount of data exchanged. Furthermore, the underlying data exchanged can dramatically affect the compression performance (even leading to higher bandwidth and worse performance).
 
 ## Show me the demo! 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/plTBHzInro0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Future Work & invitation to join the research
 
-# Future Work & invite to join the research
+As shown in our experiments, it is of the utmost importance to select the compression algorithm to be used wisely, according to the metric that needs to be optimized and the type of data to be exchanged. Different implementations of the same compression algorithm can lead to significant differences in terms of performance and compression rates.
 
-As shown in our experiments, it is of utmost importance to select wisely the compression algorithm to be used according to the metric that wants to be optimized, and the type of data to be exchanged. Different implementations of the same compression algorithm can lead to significant differences in terms of performance and compression rates.
+From here, there are a number of lines for future work and ways in which you can contribute and build upon this work:
 
-From here, there are a lot of lines for future work and ways in which you can contribute and build upon this work:
+- **Explore the use of more efficient compression algorithms**. As shown above, [Golang's standard implementation of Gzip is not the most computationally efficient in the wild](https://docs.google.com/spreadsheets/d/1nuNE2nPfuINCZJRMt6wFWhKpToF95I47XjSsc-1rbPQ/edit#gid=774138357), and this explains the high differences between the bandwidth saving results and the actual time-to-fetch improvements obtained in the tests. A simple next step to improve this would be to test other compression approaches like using Huffman tables (instead of full gzip) to minimize the computational overhead but achieve some bandwidth savings; or testing more complex compression algorithm and protocols such as the [approach followed by Dropbox with Broccoli](https://dropbox.tech/infrastructure/-broccoli--syncing-faster-by-syncing-less) (we've already started [exploring this approach with a new transport](https://github.com/adlrocha/go-libp2p-broccoli), do not hesitate to join our efforts).
 
--   Explore the use of more efficient compression algorithms. As shown above, [Golang's standard implementation of Gzip is not the most computationally efficient in the wild](https://docs.google.com/spreadsheets/d/1nuNE2nPfuINCZJRMt6wFWhKpToF95I47XjSsc-1rbPQ/edit#gid=774138357) and this explains the high differences between the bandwidth saving results and the actual time to fetch improvements obtained in the tests. A simple next step to improve this would be to test other compression approaches like using Huffman tables (instead of full gzip) to minimize the computational overhead but achieve some bandwidth savings; or testing more complex compression algorithm and protocols such as the [approach followed by Dropbox with Broccoli](https://dropbox.tech/infrastructure/-broccoli--syncing-faster-by-syncing-less) (we've already started [exploring this approach with a new transport](https://github.com/adlrocha/go-libp2p-broccoli), do not hesitate to join our efforts).
+- **Fine-tune the compression algorithms**. Throughout all of our tests we have been using Gzip with the DefaultCompression Level and Brotli with an automatic window and a quality level of 2. A further exploration of the best configuration for these algorithms could achieve the right trade-off between computational overhead and compression rate to achieve even further improvements (have a look at [this reference](https://imagekit.io/blog/what-and-why-brotli-compression/) to start exploring this). Even more, we could devise a dynamic configuration of these algorithms according to the application and the data exchanged.
 
--   Fine-tune the compression algorithms. Throughout all of our tests we have been using Gzip with the DefaultCompression Level and Brotli with an automatic window and a quality level of 2. A further exploration of the best configuration for these algorithms could achieve the right trade-off between computational overhead and compression rate to achieve even further improvements (have [a look at this reference to start exploring this](https://imagekit.io/blog/what-and-why-brotli-compression/)). Even more, we could devise a dynamic configuration of these algorithms according to the application and the data exchanged.
+- **Explore the implementation of a negotiation protocol** to allow libp2p nodes to agree on the compression to use according (at a stream level or transport level) to the data to be exchanged and the overlying protocol. This way according to the exchange of data to be performed by the application it can select the right compression algorithm to use with the other end and at what level (as long as both of them support it).
 
--   Explore the implementation of a negotiation protocol to allow libp2p nodes to agree on the compression to use according (at a stream-level or transport-level) to the data to be exchanged and the overlying protocol. This way according to the exchange of data to be performed by the application it can select the right compression algorithm to use with the other end and at what level (as long as both of them support it).
-
-And probably many other things that we may be missing and that you can come up with! If you want to contribute to this work you can start implementing your own compression transport for libp2p to see if you are able to reach further improvements in bandwidth savings and times to fetch (which let me tell you, considering the current gzip implementation you must definitely be able to do so). Adding a new compression algorithm to libp2p is easy, you just need to implement the [libp2p compression interface](https://github.com/adlrocha/go-libp2p-core/blob/feat/compression-v0.6.1/compression/compression.go), and wrap the reader and writer of the libp2p connection into the compression's algorithm interfaces. [Read the code of the gzip](https://github.com/adlrocha/go-libp2p-gzip) and [brotli](https://github.com/adlrocha/go-libp2p-cbrotli/) transport implementations to see how simple it would be to add your own compression to libp2p. You can also check out and contribute to the work in progress transport implementation for [broccoli](https://github.com/adlrocha/go-libp2p-broccoli). You can test your implementation over our [Testground testbed](https://github.com/adlrocha/beyond-bitswap) injecting [your compression algorithm into the IPFS nodes](https://github.com/adlrocha/beyond-bitswap/blob/feat/compression/testbed/utils/compression.go) and profiling the links between nodes.
+And probably many other things that we may be missing and that you can come up with! If you want to contribute to this work, you can start implementing your own compression transport for libp2p to see if you are able to reach further improvements in bandwidth savings and times-to-fetch (which let me tell you, considering the current gzip implementation you must definitely be able to do so). Adding a new compression algorithm to libp2p is easy: you just need to implement the [libp2p compression interface](https://github.com/adlrocha/go-libp2p-core/blob/feat/compression-v0.6.1/compression/compression.go) and wrap the reader and writer of the libp2p connection into the compression's algorithm interfaces. Read the code of the [gzip](https://github.com/adlrocha/go-libp2p-gzip) and [brotli](https://github.com/adlrocha/go-libp2p-cbrotli/) transport implementations to see how simple it would be to add your own compression to libp2p. You can also check out and contribute to the work-in-progress transport implementation for [broccoli](https://github.com/adlrocha/go-libp2p-broccoli). You can test your implementation over our [Testground testbed](https://github.com/adlrocha/beyond-bitswap), injecting [your compression algorithm into the IPFS nodes](https://github.com/adlrocha/beyond-bitswap/blob/feat/compression/testbed/utils/compression.go) and profiling the links between nodes.
 
 Do not hesitate to reach out or open an issue to join our quest of driving speed-ups to file-sharing in P2P networks.
 
