@@ -82,38 +82,39 @@ To emulate the request of periodic content, leechers request the content in wave
 
 ### Results with standard Bitswap
 
-For the baseline implementation of Bitswap, the first retrieval is the slowest because only the seeder has the content. For the following waves, more nodes apart from the seeder already have the content, so when leechers broadcast their WANT-HAVEs they have a higher probability of hitting a node with the requested content.
+For the baseline implementation of Bitswap, the first retrieval is the slowest because only the seeder has the content. For the following waves, more nodes in addition to the original seeder already have the content, so when leechers broadcast their WANT-HAVEs they have a higher probability of hitting a node with the requested content.
 
-Despite hitting a node with the content, the minimum number of RTTs required by the vanilla implementation of Bitswap to get the content are two: one for the WANT-HAVE broadcast, and another one to explicitly request the content with a WANT-BLOCK.
+Despite hitting a node with the content, the minimum number of RTTs required by the vanilla implementation of Bitswap to get the content is two: one for the WANT-HAVE broadcast, and another one to explicitly request the content with a WANT-BLOCK.
 
 <center>{{< figure src="latency.png" alt="Time to fetch for baseline vs prototype (100 MB - 100 ms)" >}}</center>
 
 
 ### Results with peer-block registry enabled on Bitswap
 
-For our modified implementation of Bitswap with the WANT message inspection mechanism, the time to fetch, and thus the time to first block for popular content, can significantly be reduced. Why is this?
+For our modified implementation of Bitswap with the WANT message inspection mechanism, the time-to-fetch, and thus the time to first block for popular content, can be significantly reduced. Why is this?
 
-As was the case for the baseline experiment, the first wave of leechers has no previous knowledge about where the content is, so the only thing they can do is to broadcast WANT-HAVEs, find the seeder, and request the content. For subsequent waves, though, peers have been listening to the WANT messages exchanged in the network by other peers, so before broadcasting WANT-HAVEs to every connected peer, they will send an optimistic WANT-BLOCK to peers that have previously requested that content. If they are lucky, they will hit the content in a single WANT-BLOCK and receive the block in that same interaction, reducing the time to fetch the content to a single RTT.
+As was the case for the baseline experiment, the first wave of leechers has no previous knowledge about where the content is, so the only thing they can do is to broadcast WANT-HAVEs, find the seeder, and request the content. For subsequent waves, however, peers have been listening to the WANT messages exchanged in the network by other peers, so before broadcasting WANT-HAVEs to every connected peer, they will send an optimistic WANT-BLOCK to peers that have previously requested that content. If they are lucky, they will hit the content in a single WANT-BLOCK and receive the block in that same interaction, reducing the time to fetch the content to a single RTT.
 
 #### Reduction in the numbers of messages exchange, saving bandwidth
 
-The use of message inspection has another interesting result apart from the time to fetch improvement for popular content. The number of control messages exchanged by Bitswap nodes is significantly reduced. Keeping in the peer-block registry a list of peers that have recently requested a specific CID allows the transmission of the optimistic WANT-BLOCK preventing the need of broadcasting a WANT-HAVE to all our connected peers.
+The use of message inspection has another interesting result apart from the time-to-fetch improvement for popular content. The number of control messages exchanged by Bitswap nodes is significantly reduced. Keeping a list of peers that have recently requested a specific CID in the peer-block registry allows the transmission of the optimistic WANT-BLOCK, eliminating the need to broadcast a WANT-HAVE to all our connected peers.
 
-Thus, the average number of WANT messages exchanged is reduced by 33%, while the number of WANT-HAVEs is reduced by 75%. All of this for a slight increase in the number of WANT-BLOCK exchanged of 7%.
+The average number of WANT messages exchanged is thus reduced by 33%, while the number of WANT-HAVEs is reduced by 75%. All of this for a slight increase in the number of WANT-BLOCK exchanged of 7%.
 
 <center>{{< figure src="messages.png" alt="Average number of WANT messages seen by peer" >}}</center>
 
 <center>{{< figure src="total_messages.png" alt="Total number of messages exchanged in the experiments" >}}</center>
 
-This improvement doesn't come without a small trade-off. The fact that we are sending an optimistic WANT-BLOCK to n peers from the peer-block registry which potentially have the content (in the default implementation n=3), means that the number of duplicates blocks exchanged in the network is slightly increased.
+This improvement doesn't come without a small trade-off. The fact that we are sending an optimistic WANT-BLOCK to _n_ peers from the peer-block registry that potentially have the content (in the default implementation n=3) means that the number of duplicate blocks exchanged in the network is slightly increased.
 
-While in the vanilla Bitswap implementation a single WANT-BLOCK is sent to a peer that has answered that has the block, in our prototype we send three different WANT-BLOCK, and as we select the recipient peers from the peer-block registry, all of them will potentially have the block. The number of WANT-BLOCK messages to send to peers in the peer-block registry can be configured, so it could even be dynamically adapted to balance the trade-off between savings in WANT messages and duplicate if we want to optimize for bandwidth use.
+While in the vanilla Bitswap implementation a single WANT-BLOCK is sent to a peer that has answered that has the block, in our prototype we send three different WANT-BLOCKs, and as we select the recipient peers from the peer-block registry, all of them will potentially have the block. The number of WANT-BLOCK messages to send to peers in the peer-block registry can be configured, so it could even be dynamically adapted to balance the trade-off between savings in WANT messages and duplicates if we want to optimize for bandwidth use.
 
 <center>{{< figure src="data.png" alt="Data exchanged by peer" >}}</center>
   <p></p>
 
 #### Playing with larger files
-In all the aforementioned experiments we were using a file that would fit a single block. We started wondering what would be the impact of the prototype if instead we exchanged larger files. We repeated the experiment with the same configuration but using different file sizes, and we reached the results depicted below:
+
+In all the aforementioned experiments we were using a file that would fit a single block. We started wondering what the impact of the prototype would be if instead we exchanged larger files. We repeated the experiment with the same configuration but using different file sizes, and we reached the results depicted below:
 
 <center>{{< figure src="total_messages.png" alt="Total number of messages and duplicate blcoks exchanged for different file sizes" >}}</center>
 
