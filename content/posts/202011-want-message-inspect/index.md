@@ -126,7 +126,7 @@ The implementation of this RFC stresses the effectiveness of using information a
 
 We are already considering several points of improvement for our current implementation to get the most out of our WANT message inspection mechanisms, including:
 
-- The use of the characteristic time of the cache of IPFS nodes and other heuristics to avoid sending WANT-BLOCK messages to peers that may have already garbage-collected the content we are looking for (as a way of cleaning and "garbage collecting" the information stored in the peer-block registry).
+- The use of the characteristic cache time of IPFS nodes and other heuristics to avoid sending WANT-BLOCK messages to peers that may have already garbage-collected the content we are looking for (as a way of cleaning and "garbage collecting" the information stored in the peer-block registry).
 
 - The dynamic configuration of the number of peers from the peer-block registry to whom to send WANT_BLOCK messages, so that according to the state of the peer-block registry,  the specific application, the number of active connections, or the state of the network, we are able to perform smarter lookups either to make a more efficient use of bandwidth, or to minimize the time to fetch the content.
 
