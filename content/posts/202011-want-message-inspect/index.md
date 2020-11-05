@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: '"Two ears, one mouth", how to leverage bitswap chatter for faster transfers'
+title: '"Two ears, one mouth": how to leverage bitswap chatter for faster transfers'
 
 # Website post date. Format YYYY-MM-DD
 date: 2020-11-03
@@ -31,14 +31,14 @@ groups:
 
 
 
-As part of ResNetLab's research endeavour to drive speed ups on file transfers, beyond swapping bits, we present a new contribution to IPFS Bitswap protocol. We argue that Bitswap is currently discarding a wealth of information that could be used to its benefit, improving retrieval success and minimizing the latency to retrieve content. You can also read our last contribution [here](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/), which targeted compression of libp2p streams.
+As part of ResNetLab's research endeavour to drive speed-ups on file transfers, Beyond Swapping Bits, we present a new contribution to IPFS Bitswap protocol. We argue that Bitswap is currently discarding a wealth of information that could be used to its benefit, improving retrieval success and minimizing the latency to retrieve content. You can also read our last contribution [here](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/), which targeted compression of libp2p streams.
 
-Every research endeavour starts with a thorough analysis of the state of the art. This initial effort builds the foundation for the work to come. What we are doing differently in the drive speed-ups for file-transfer in P2P networks at ResNetLab is that beyond giving you the results and how to benefit from them, we want to guide you through the process we followed to reach these improvements: from the state-of-the-art, through ideation, prototyping, and to evaluation. We want to illustrate this process by documenting how we prototyped and evaluated the first improvement that brought around **25% improvements in the time to fetch popular content, and a reduction of the number of control messages exchanged in Bitswap by 75%**. In other words, come for the results, stay for the scientific methodology and the repeatability of the evaluation, so that you can learn how to implement your own variations!
+Every research endeavour starts with a thorough analysis of the state of the art. This initial effort builds the foundation for the work to come. What we are doing differently in the drive speed-ups for file-transfer in P2P networks at ResNetLab is that beyond giving you the results and how to benefit from them, we want to guide you through the process we followed to reach these improvements, from the state-of-the-art, through ideation and prototyping, to evaluation. We want to illustrate this process by documenting how we prototyped and evaluated the first upgrade, which produced an approximately **25% improvement in the time to fetch popular content, and a reduction of the number of control messages exchanged in Bitswap by 75%**. In other words, come for the results, stay for the scientific methodology and the repeatability of the evaluation, so that you can learn how to implement your own variations!
 
 
 # The contribution
 
-IPFS's Bitswap protocol currently discards a lot of useful information from its connected peers, such as: the blocks that those peers are looking for. Our hypothesis was that if we used that information to inform ourselves about the state of the network, we would be able to perform faster content discoveries and, consequently, reduce transfer time.
+IPFS's Bitswap protocol currently discards a lot of useful information from its connected peers, such as the blocks that those peers are looking for. Our hypothesis was that if we used that discarded information to inform ourselves about the state of the network, we would be able to perform faster content discoveries and, consequently, reduce transfer time.
 
 By keeping the intel about what blocks are being requested by which peer in a new data structure (which we introduce here and we call the _peer-block registry_), we are now able to guess with high accuracy which nodes have which content. The assumption is that if a node was looking for something, it probably found it.
 
@@ -48,16 +48,13 @@ Additionally, **we were able to minimize the overhead of bitswap messages**. We 
 
 This new scheme showed promising results, reducing in one RTT the time required to discover and transfer popular content (previously requested by other nodes in the network), and reducing the amount of messages exchanged in the network by up to 75%.
 
-# The methodology
+## The methodology
 
-## Building our understanding and identifying limitations
+### Building our understanding and identifying limitations
 
-We performed a thorough analysis of:
-- What was being done around file-sharing in P2P networks in previous academic work
-- We then evaluated the current bottlenecks and limitations of an existing content exchange protocol over an existing P2P network, in our case Bitswap and IPFS, respectively
-You can find our [notebook on the beyond-bitswap folder at the ResNetLab repo](https://github.com/protocol/ResNetLab/tree/master/beyond-bitswap/).
+We first performed a thorough analysis of What was being done around file-sharing in P2P networks in previous academic work. We then evaluated the current bottlenecks and limitations of an existing content exchange protocol over an existing P2P network: in our case Bitswap and IPFS, respectively. You can find our [notebook on the beyond-bitswap folder at the ResNetLab repo](https://github.com/protocol/ResNetLab/tree/master/beyond-bitswap/).
 
-We identified that the content discovery perfomed by Bitswap is suboptimal, blind and deterministic. When a file is requested, Bitswap performs two actions: 1) a DHT Content Routing Query and; 2) sends an optimistic WANT message to all of its connected peers. No information of previous events that took place in the network is used to smartly guide this discovery.
+We identified that the content discovery perfomed by Bitswap is suboptimal, blind and deterministic. When a file is requested, Bitswap performs a DHT Content Routing Query and sends an optimistic WANT message to all of its connected peers. No information of previous events that took place in the network is used to intelligently guide this discovery.
 
 We knew that we could do better, starting with the hypothesis: _"can't we use some information from the network to make more informed decisions and improve the efficiency of content discovery?"_. Later, we came across [this slightly unrelated paper](http://www4.comp.polyu.edu.hk/~csbxiao/bittorrentweb/report/report.pdf) in which the authors suggest the inspection of requests from peers to identify nodes which underreport the stored content (i.e. that intentionally do not announce pieces of content they store). This simple concept inspired the RFC that we prototyped, evaluated and that led to our first improvements over file-sharing in IPFS.
 
