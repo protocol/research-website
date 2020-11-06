@@ -113,7 +113,7 @@ While in the vanilla Bitswap implementation a single WANT-BLOCK is sent to a pee
 
 #### Playing with larger files
 
-In all of the aforementioned experiments we were using a file that would fit in a single block. We started wondering what the prototype's impact would be if we exchanged larger files. We repeated the experiment with the same configuration but using different file sizes, and we obtained the results depicted below:
+In all the aforementioned experiments we were using a file that would fit in a single block. We started wondering what the prototype's impact would be if we exchanged larger files. We repeated the experiment with the same configuration but using different file sizes, and we obtained the results depicted below:
 
 <center>{{< figure src="duplicates.png" alt="Total number of messages and duplicate blocks exchanged for different file sizes" >}}</center>
 
