@@ -123,7 +123,7 @@ While in the vanilla Bitswap implementation a single WANT-BLOCK is sent to a pee
 #### Playing with larger files
 In all the aforementioned experiments we were using a file that would fit a single block. We started wondering what would be the impact of the prototype if instead we exchanged larger files. We repeated the experiment with the same configuration but using different file sizes, and we reached the results depicted below:
 
-<center>{{< figure src="total_messages.png" alt="Total number of messages and duplicate blcoks exchanged for different file sizes" >}}</center>
+<center>{{< figure src="duplicates.png" alt="Total number of messages and duplicate blocks exchanged for different file sizes" >}}</center>
 
 Apart from the reduction in the number of messages exchanged in the experiment (especially for small files), we inferred another interesting result from the experiment. The use of the peer-block registry to perform smarter lookups of content doesn't actually improve the number of duplicates blocks in the network as we initially thought, but it reduces it. In our initial experiments we exchanged a single block. The reason for this was to evaluate the performance improvement of the TTFB. With a single block, the WANT-BLOCK round sent by the peer-block registry was causing the appearance of two additional duplicate blocks. However, for larger files, the number of blocks exchanged is way larger, and knowing in advance what peers to request the content from prevents peers from polling several the network, consequently reducing the number of duplicates blocks generated in the file exchange.
 
