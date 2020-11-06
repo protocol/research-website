@@ -52,7 +52,7 @@ This new scheme showed promising results, reducing in one RTT the time required 
 
 ### Building our understanding and identifying limitations
 
-We first performed a thorough analysis of What was being done around file-sharing in P2P networks in previous academic work. We then evaluated the current bottlenecks and limitations of an existing content exchange protocol over an existing P2P network: in our case Bitswap and IPFS, respectively. You can find our [notebook on the beyond-bitswap folder at the ResNetLab repo](https://github.com/protocol/ResNetLab/tree/master/beyond-bitswap/).
+We first performed a thorough analysis of what was being done around file-sharing in P2P networks in previous academic work. We then evaluated the current bottlenecks and limitations of an existing content exchange protocol over an existing P2P network: in our case Bitswap and IPFS, respectively. You can find our [notebook on the beyond-bitswap folder at the ResNetLab repo](https://github.com/protocol/ResNetLab/tree/master/beyond-bitswap/).
 
 We identified that the content discovery perfomed by Bitswap is suboptimal, blind and deterministic. When a file is requested, Bitswap performs a DHT content routing query and sends an optimistic WANT message to all of its connected peers. No information of previous events that took place in the network is used to intelligently guide this discovery.
 
@@ -60,7 +60,7 @@ We knew that we could do better. We hypothesized that we could use some informat
 
 Nodes in the aforementioned paper listen to requests to detect underreporting peers; we can use this same principle to track Bitswap's WANT messages from our peers. This way, whenever we want content that others have requested before, instead of polling the full network from scratch, we first ask nodes that have previously requested that CID, as they will likely have the content.
 
-## Crafting RFC and the prototype
+### Crafting the RFC and the prototype
 
 We have drafted an [RFC BBL104](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md) so that anyone can can contribute both to the design and evaluation plan of the improvement proposal. To build the prototype, we [forked the go-bitswap](https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL104) and applied the necessary changes. You can read the details of its architecture in the [RFC](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md). The summary is:
 
@@ -78,7 +78,7 @@ Our target use case was the transfer of datasets that grow in popularity over ti
 
 <img src="xkcd.png" alt="xkcd image exchanged by nodes in our experiment" width="200px"></img>
 
-To emulate the request of popular content, leechers perioddically request the content in waves of size 2, in intervals of 5 seconds. This creates a situation in which the next set of leechers has already received the WANT messages from previous leechers, and can therefore assume that those nodes have the file they were looking for.
+To emulate the request of popular content, leechers periodically request the content in waves of size 2, in intervals of 5 seconds. This creates a situation in which the next set of leechers has already received the WANT messages from previous leechers, and can therefore assume that those nodes have the file they were looking for.
 
 ### Results with standard Bitswap
 
@@ -96,7 +96,7 @@ As was the case for the baseline experiment, the first wave of leechers has no p
 
 #### Reduction in the numbers of messages exchange, saving bandwidth
 
-The use of message inspection has another interesting result apart from the time-to-fetch improvement for popular content. The number of control messages exchanged by Bitswap nodes is significantly reduced. Keeping a list of peers that have recently requested a specific CID in the peer-block registry allows the transmission of the optimistic WANT-BLOCK, eliminating the need to broadcast a WANT-HAVE to all our connected peers.
+The use of message inspection has another interesting result apart from the time-to-fetch improvement for popular content: the number of control messages exchanged by Bitswap nodes is significantly reduced. Keeping a list of peers that have recently requested a specific CID in the peer-block registry allows the transmission of the optimistic WANT-BLOCK, eliminating the need to broadcast a WANT-HAVE to all our connected peers.
 
 The average number of WANT messages exchanged is thus reduced by 33%, while the number of WANT-HAVEs is reduced by 75%. We get all of this at the cost of a slight increase in the number of WANT-BLOCKs exchanged of 7%.
 
@@ -113,11 +113,11 @@ While in the vanilla Bitswap implementation a single WANT-BLOCK is sent to a pee
 
 #### Playing with larger files
 
-In all the aforementioned experiments we were using a file that would fit in a single block. We started wondering what the prototype's impact would be if we exchanged larger files. We repeated the experiment with the same configuration but using different file sizes, and we obtained the results depicted below:
+In all of the aforementioned experiments we were using a file that would fit in a single block. We started wondering what the prototype's impact would be if we exchanged larger files. We repeated the experiment with the same configuration but using different file sizes, and we obtained the results depicted below:
 
-<center>{{< figure src="total_messages.png" alt="Total number of messages and duplicate blocks exchanged for different file sizes" >}}</center>
+<center>{{< figure src="duplicates.png" alt="Total number of messages and duplicate blocks exchanged for different file sizes" >}}</center>
 
-In addition to from the reduction in the number of messages exchanged in the experiment (especially for small files), we inferred another interesting result. The use of the peer-block registry to perform smarter lookups of content doesn't actually increase the number of duplicate blocks in the network, as we initially thought, but rather _reduces_ it. In our initial experiments, we exchanged a single block in order to evaluate the performance improvement of the TTFB: each block exchanged in the WANT-BLOCK round sent by the peer-block registry generated two additional duplicate blocks. For larger files, the number of blocks exchanged is much greater, and knowing in advance which peers to request the content from prevents peers from polling the entire network, which consequently reduces the number of duplicate blocks generated in the file exchange.
+In addition to the reduction in the number of messages exchanged in the experiment (especially for small files), we inferred another interesting result. The use of the peer-block registry to perform smarter lookups of content doesn't actually increase the number of duplicate blocks in the network, as we initially thought, but rather _reduces_ it. In our initial experiments, we exchanged a single block in order to evaluate the performance improvement of the TTFB: each block exchanged in the WANT-BLOCK round sent by the peer-block registry generated two additional duplicate blocks. For larger files, the number of blocks exchanged is much greater, and knowing in advance which peers to request the content from prevents peers from polling the entire network, which consequently reduces the number of duplicate blocks generated in the file exchange.
 
 ## Conclusions and Future Work
 
@@ -129,7 +129,7 @@ We are already considering several points of improvement for our current impleme
 
 - The dynamic configuration of the number of peers from the peer-block registry to whom to send WANT_BLOCK messages, so that according to the state of the peer-block registry,  the specific application, the number of active connections, or the state of the network, we are able to perform smarter lookups either to make a more efficient use of bandwidth, or to minimize the time to fetch the content.
 
-Additionally, we are already devising the combination of this RFC with other prototypes in progress to potentially achieve further improvements. One of which is the creation of [Content Anchors](https://github.com/protocol/ResNetLab/issues/6) that are designed to track all kinds of networks smarts to help discovery for both static data (i.e. files) or dynamic data (e.g. PubSub Streams).
+Additionally, we are exploring the combination of this RFC with other prototypes in progress to potentially achieve further improvements, one of which is the creation of [Content Anchors](https://github.com/protocol/ResNetLab/issues/6) that are designed to track all kinds of network intel to improve discovery of both static data (i.e. files) and dynamic data (e.g. PubSub Streams).
 
 Stay tuned and do not hesitate to reach us out if you want to start contributing to this exciting line of work!
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
