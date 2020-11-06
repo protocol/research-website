@@ -33,7 +33,7 @@ groups:
 
 As part of ResNetLab's research endeavour to drive speed-ups on file transfers, Beyond Swapping Bits, we present a new contribution to IPFS Bitswap protocol. We argue that Bitswap is currently discarding a wealth of information that could be used to its benefit, improving retrieval success and minimizing the latency to retrieve content. You can also read our last contribution [here](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/), which targeted compression of libp2p streams.
 
-Every research endeavour starts with a thorough analysis of the state of the art. This initial effort builds the foundation for the work to come. What we are doing differently in the drive speed-ups for file-transfer in P2P networks at ResNetLab is that beyond giving you the results and how to benefit from them, we want to guide you through the process we followed to reach these improvements, from the state-of-the-art, through ideation and prototyping, to evaluation. We want to illustrate this process by documenting how we prototyped and evaluated the first upgrade, which produced an approximately **25% improvement in the time to fetch popular content, and a reduction of the number of control messages exchanged in Bitswap by 75%**. In other words, come for the results, stay for the scientific methodology and the repeatability of the evaluation, so that you can learn how to implement your own variations!
+Every research endeavour starts with a thorough analysis of the state of the art. This initial effort builds the foundation for the work to come. What we are doing differently to drive file-transfer speedups in P2P networks at ResNetLab is that beyond giving you the results and how to benefit from them, we want to guide you through the process we followed to reach these improvements, from the state-of-the-art, through ideation and prototyping, to evaluation. We want to illustrate this process by documenting how we prototyped and evaluated the first upgrade, which produced an approximately **25% improvement in the time to fetch popular content, and a reduction of the number of control messages exchanged in Bitswap by 75%**. In other words, come for the results, stay for the scientific methodology and the repeatability of the evaluation, so that you can learn how to implement your own variations!
 
 
 # The contribution
@@ -46,7 +46,7 @@ The peer-block registry is populated with data extracted from the WANT messages 
 
 Additionally, **we were able to minimize the overhead of bitswap messages**. We modified the Bitswap first turn flood mechanism to only send WANT message to the peers we believe to have the CID, if we happen to have any. Given our assumption, the recipient of the WANT message will have the content and immediately transfers the corresponding block, saving precious bandwidth from all the other nodes. If, on the other hand, the node doesn't have the content anymore, Bitswap falls back to its normal operation (broadcasting WANT messages until a provider with the content is found).
 
-This new scheme showed promising results, reducing in one RTT the time required to discover and transfer popular content (previously requested by other nodes in the network), and reducing the amount of messages exchanged in the network by up to 75%.
+This new scheme showed promising results, reducing by one RTT the time required to discover and transfer popular content (previously requested by other nodes in the network), and reducing the amount of messages exchanged in the network by up to 75%.
 
 ## The methodology
 
@@ -62,10 +62,10 @@ Nodes in the aforementioned paper listen to requests to detect underreporting pe
 
 ### Crafting the RFC and the prototype
 
-We have drafted an [RFC BBL104](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md) so that anyone can can contribute both to the design and evaluation plan of the improvement proposal. To build the prototype, we [forked the go-bitswap](https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL104) and applied the necessary changes. You can read the details of its architecture in the [RFC](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md). The summary is:
+We have drafted an [RFC BBL104](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md) so that anyone can can contribute both to the design and evaluation plan of the improvement proposal. To build the prototype, we [forked go-bitswap](https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL104) and applied the necessary changes. You can read the details of its architecture in the [RFC](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL104.md). The summary is:
 
 - Bitswap tracks every WANT message received and updates a _peer-block registry_, which is a brand new data structure introduced in this RFC and prototyped for evaluation. The peer-block registry maps each CID seen by a node to the peers that have recently requested this particular CID.
-- This information is then used by Bitswap sessions to direct their search for content. Whenever a peer wants a CID, if the peer-block registry for that CID is populated with peers that already requested that content, instead of broadcasting WANT-HAVE messages to all its connected peers, it will only send a WANT-BLOCK to the n latest peers (n=3 in the default implementation) of the peer-block registry.
+- This information is then used by Bitswap sessions to direct their search for content. Whenever a peer wants a CID, if the peer-block registry for that CID is populated with peers that already requested that content, instead of broadcasting WANT-HAVE messages to all its connected peers, it will only send a WANT-BLOCK to the _n_ latest peers (n=3 in the default implementation) of the peer-block registry.
 - If the contacted peers have the content, they will immediately respond the WANT-BLOCK with the corresponding block, while if this is not the case, they will answer with a DONT_HAVE, and the peer will then perform the broadcasting of WANT_HAVEs to all its connected peers.
 
 The expected impact of this scheme is the following: the time to first block (i.e. time to first byte - TTFB) will be reduced from at least two RTTs to one: if the WANT_BLOCK hits a peer with the content it will directly answer with the content, while the penalization from not hitting a peer with content will be of just one RTT.
@@ -90,7 +90,7 @@ Despite hitting a node with the content, the minimum number of RTTs required by 
 
 ### Results with peer-block registry enabled on Bitswap
 
-For our modified implementation of Bitswap with the WANT message inspection mechanism, the time-to-fetch, and thus the time to first block for popular content, can be significantly reduced. Why is this?
+For our modified implementation of Bitswap with the WANT message inspection mechanism, the time-to-fetch, and thus the time-to-first-block for popular content, can be significantly reduced. Why is this?
 
 As was the case for the baseline experiment, the first wave of leechers has no previous knowledge about where the content is, so the only thing they can do is broadcast WANT-HAVEs, find the seeder, and request the content. For subsequent waves, however, peers have been listening to the WANT messages exchanged in the network by other peers, so before broadcasting WANT-HAVEs to every connected peer, they will send an optimistic WANT-BLOCK to peers that have previously requested that content. If they are lucky, they will hit the content in a single WANT-BLOCK and receive the block in that same interaction, reducing the time to fetch the content to a single RTT.
 
