@@ -107,94 +107,94 @@ This preliminary compression implementation hasn't landed yet on the go-libp2p u
 
 So what kind of improvements can we expect from the use of compression? Let's start discussing the bandwidth savings that the use of compression can bring. For this test we exchanged datasets from [these "awesome IPFS" datasets](https://awesome.ipfs.io/datasets/) with compression enabled and disabled, and measured the nodes' total use of bandwidth. We use the DefaultCompression level configuration for the underlying gzip algorithm in all our experiments.
 
-<table>
+<table class="table-striped table-bordered">
 <tbody>
 <tr>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>Dataset</strong></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>Bandwidth use without compression</strong></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>Bandwidth use with compression</strong></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>Savings</strong></p>
 </td>
 </tr>
 <tr>
-<td>
+<td class= "border px-4 py-2">
 <p><a href="https://ipfs.io/ipfs/QmNvTjdqEPjZVWCvRWsFJA1vK7TTw1g9JP6we1WBJTRADM"><span style="font-weight: 400;">IETF RFC Archive</span></a></p>
 <p><span style="font-weight: 400;">Size: 500MB</span></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><span style="font-weight: 400;">509.667 MB</span></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>230.83 MB</strong></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>54.71%</strong></p>
 </td>
 </tr>
 <tr>
-<td>
+<td class= "border px-4 py-2">
 <p><a href="https://ipfs.io/ipfs/QmRTSA1UFHSx3z7taNRwUVM8AjB2EQwKvyZu3BfJg9QRtZ"><span style="font-weight: 400;">World Wide Web History Project</span></a></p>
 <p><span style="font-weight: 400;">Size: 92MB</span></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><span style="font-weight: 400;">100.512 MB</span></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>52.677 MB</strong></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>47.59%</strong></p>
 </td>
 </tr>
 <tr>
-<td>
+<td class= "border px-4 py-2">
 <p><a href="https://ipfs.io/ipfs/QmdA5WkDNALetBn4iFeSepHjdLGJdxPBwZyY47ir1bZGAK"><span style="font-weight: 400;">Yarchive.net</span></a></p>
 <p><span style="font-weight: 400;">Size: 196MB</span></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><span style="font-weight: 400;">200.709 MB</span></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>177.473 MB</strong></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>11.58%</strong></p>
 </td>
 </tr>
 <tr>
-<td>
+<td class= "border px-4 py-2">
 <p><a href="https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX"><span style="font-weight: 400;">Textfiles.com</span></a></p>
 <p><span style="font-weight: 400;">Size: 1.6GB</span></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><span style="font-weight: 400;">1658.862 MB</span></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>836.012 MB</strong></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>49.6%</strong></p>
 </td>
 </tr>
 <tr>
-<td>
+<td class= "border px-4 py-2">
 <p><a href="https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX"><span style="font-weight: 400;">Cdnjs</span></a></p>
 <p><span style="font-weight: 400;">Size: 17GB</span></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><span style="font-weight: 400;">17.82 GB</span></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>4.33 GB</strong></p>
 </td>
-<td>
+<td class= "border px-4 py-2">
 <p><strong>75.7 %</strong></p>
 </td>
 </tr>
@@ -219,111 +219,111 @@ What do these bandwidth savings mean for the time to fetch a full dataset from I
 <table>
     <tbody>
     <tr>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;"><strong>Average Connection Speed</strong></span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;"><strong>Time to fetch without compression</strong></span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;"><strong>Time to fetch with compression</strong></span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;"><strong>Latency Improvement</strong></span></p>
     </td>
     </tr>
     <tr>
-    <td>
+    <td class= "border px-4 py-2">
     <p><a href="https://ipfs.io/ipfs/QmNvTjdqEPjZVWCvRWsFJA1vK7TTw1g9JP6we1WBJTRADM"><span style="font-weight: 400;">IETF RFC Archive </span></a><br/><span style="font-weight: 400;">Size: 500MB</span>
         <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">B: 50Mbps</span></br><span style="font-weight: 400;"></span>L: 50ms</span>
         </br><span style="font-weight: 400;"></span>🇰🇷️🇳🇴️🇨🇦️🇳🇱️🇨🇭️🇦🇺️</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">1339.47 s</span><span style="font-weight: 400;"><br /><br /></span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><strong>1338.46 s</strong></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><strong>0.07%</strong></p>
     </td>
     </tr>
     <tr>
-    <td>
+    <td class= "border px-4 py-2">
     <p><a href="https://ipfs.io/ipfs/QmNvTjdqEPjZVWCvRWsFJA1vK7TTw1g9JP6we1WBJTRADM"><span style="font-weight: 400;">IETF RFC Archive </span></a></br><span style="font-weight: 400;">Size: 500MB</span>
         <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">B: 10Mbps</span><br/><span style="font-weight: 400;"></span>L: 50ms</span>
         </br><span style="font-weight: 400;"></span>🇺🇸️🇵🇹️🇬🇧️🇬🇷️</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">1370.5 s</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><strong>1364.80 s</strong></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><strong>0.4%</strong></p>
     </td>
     </tr>
     <tr>
-    <td>
+    <td class= "border px-4 py-2">
     <p><a href="https://ipfs.io/ipfs/QmRTSA1UFHSx3z7taNRwUVM8AjB2EQwKvyZu3BfJg9QRtZ"><span style="font-weight: 400;">World Wide Web History Project</span></a></br><span style="font-weight: 400;"> Size: 92MB</span>
     <br/><span style="font-weight: 400;">B: 50Mbps</span></br><span style="font-weight: 400;">L: 50ms</span>
         </br><span style="font-weight: 400;"></span>🇰🇷️🇳🇴️🇨🇦️🇳🇱️🇨🇭️🇦🇺️</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">1100.76 s</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><strong>1100.99 s</strong></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><strong>0.02%</strong></p>
     </td>
     </tr>
     <tr>
-    <td>
+    <td class= "border px-4 py-2">
     <p><a href="https://ipfs.io/ipfs/QmRTSA1UFHSx3z7taNRwUVM8AjB2EQwKvyZu3BfJg9QRtZ"><span style="font-weight: 400;">World Wide Web History Project</span></a></br><span style="font-weight: 400;"> Size: 92MB</span>
     <br/><span style="font-weight: 400;">B: 10Mbps</span></br><span style="font-weight: 400;">L: 50ms</span>
             </br><span style="font-weight: 400;"></span>🇺🇸️🇵🇹️🇬🇧️🇬🇷️</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">1098.87 s&nbsp;</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><strong> 1092.39 s</strong></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><strong>0.5%</strong></p>
     </td>
     </tr>
     <tr>
-    <td>
+    <td class= "border px-4 py-2">
     <p><a href="https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX"><span style="font-weight: 400;">Textfiles.com</span></a><br/><span style="font-weight: 400;"> Size: 1.6GB</span>
     <br/><span style="font-weight: 400;">B: 50Mbps</span></br><span style="font-weight: 400;">L: 50ms</span>
         </br><span style="font-weight: 400;"></span>🇰🇷️🇳🇴️🇨🇦️🇳🇱️🇨🇭️🇦🇺️</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">15489.85 s</span></p>
     <br /><br /></td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><strong>15334.95 s</strong></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><strong>0.1%</strong></p>
     </td>
     </tr>
     <tr>
-    <td>
+    <td class= "border px-4 py-2">
     <p><a href="https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX"><span style="font-weight: 400;">Textfiles.com</span></a></br><span style="font-weight: 400;"> Size: 1.6GB</span>
     <br/><span style="font-weight: 400;">B: 10Mbps</span></br><span style="font-weight: 400;">L: 50ms</span></br><span style="font-weight: 400;"></span>🇺🇸️🇵🇹️🇬🇧️🇬🇷️</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">15528.32 s</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><strong>15556.76 s</strong></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><strong>0.18%</strong></p>
     </td>
     </tr>
@@ -337,62 +337,62 @@ The compression algorithm implementation we used for our transport was Golang's 
 <table>
     <tbody>
     <tr>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;"><strong>Dataset</strong></span></p>
     </td>
-    <td>
+    <td td class= "border px-4 py-2">
     <p><span style="font-weight: 400;"><strong>compress/<br />gzip </strong></span><span style="font-weight: 400;"><br /></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;"><strong>klauspost/<br />compress/gzip</strong></span><span style="font-weight: 400;"><br /></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;"><strong>Brotli C impl<br />(Quality: 2)</strong></span><span style="font-weight: 400;"><br /></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;"><strong>Improvement<br />New Gzip</strong></span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
         <p><span style="font-weight: 400;"><strong>Improvement<br />Brotli</strong></span></p>
         </td>
     </tr>
     <tr>
-    <td>
+    <td class= "border px-4 py-2">
     <p><a href="https://ipfs.io/ipfs/QmNvTjdqEPjZVWCvRWsFJA1vK7TTw1g9JP6we1WBJTRADM"><span style="font-weight: 400;">IETF RFC Archive</span><span style="font-weight: 400;"><br /></span></a><span style="font-weight: 400;">Size 500MB</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">B: 230.83MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 37 s</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">B: 248.11MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 22 s</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">B: 167.58MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 33 s</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p></span><span style="font-weight: 400;">B: </span><span style="font-weight: 400;">-7.8%</span> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: </span><strong>40%</strong></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
         <p><span style="font-weight: 400;">B: </span><strong>27.4%</strong> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: </span><strong>10.8%</strong></p>
     </td>
     </tr>
     <tr>
-    <td>
+    <td class= "border px-4 py-2">
     <p><a href="https://ipfs.io/ipfs/QmRrnfFUgx81KZR9ibEcxDXgevoj9e5DydB5v168yembnX"><span style="font-weight: 400;">Textfiles.com</span><span style="font-weight: 400;"><br /></span></a><span style="font-weight: 400;">Size 1.6GB</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">B: 836.012MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 202 s</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">B: 948.79MB </span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 136 s</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">B: 593.79MB</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: 167 s</span></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
     <p><span style="font-weight: 400;">B: </span><span style="font-weight: 400;">-13%</span> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: </span><strong>32%</strong></p>
     </td>
-    <td>
+    <td class= "border px-4 py-2">
         <p><span style="font-weight: 400;">B: </span><strong>28.97%</strong> <span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">L: </span><strong>17.32 %</strong></p>
         </td>
 </tr>
@@ -428,3 +428,4 @@ Do not hesitate to reach out or open an issue to join our quest of driving speed
 
 Until the next one, we bid you a great day!
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center> 
+
