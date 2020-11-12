@@ -1,10 +1,10 @@
 ---
 # Blog post title
-title: "A PL Resarch Perspective on Filecoin"
+title: "A PL Research Perspective on Filecoin"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-11-13
+date: 2020-11-12
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
