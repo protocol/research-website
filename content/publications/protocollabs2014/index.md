@@ -7,7 +7,7 @@ publishDate: 2014-07-15
 doi:
 
 authors:
-  - protocol-labs
+  - "Protocol Labs"
 publication_types:
   - report
 groups:

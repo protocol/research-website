@@ -9,7 +9,7 @@ doi:
 publication_types:
   - report
 authors:
-  - protocol-labs
+  - "Protocol Labs"
 groups:
   - cryptolab
 categories:
