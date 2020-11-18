@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Jorge Soares
+name: Jorge M. Soares
 
 # Username (this should match the folder name)
 authors:
@@ -42,6 +42,8 @@ social:
     link: https://www.linkedin.com/in/jorgesoares/
   - icon: researchgate
     link: https://www.researchgate.net/profile/Jorge_Soares
+  - icon: orcid
+    link: https://orcid.org/0000-0002-8528-3489
   - icon: link
     link: https://jorgesoares.org/
 
@@ -54,6 +56,10 @@ user_groups:
 quote:
 ---
 
-Jorge holds BSc and MSc degrees in network engineering. He received a joint PhD from École polytechnique fédérale de Lausanne (Lausanne, Switzerland) and Instituto Superior Técnico – Universidade de Lisboa (Lisbon, Portugal) on the basis of his research on distributed and marine robotics.
+Jorge holds BSc and MSc degrees in communication networks engineering, with an emphasis on embedded systems and wireless sensor networks. He received a joint PhD in robotics, control, and intelligent systems at [École polytechnique fédérale de Lausanne](https://www.epfl.ch/en/) (Lausanne, Switzerland) and in electrical engineering at [Instituto Superior Técnico – Universidade de Lisboa](https://tecnico.ulisboa.pt/en/) (Lisbon, Portugal) on the basis of his research in distributed and underwater robotics.
 
-His technical interests cover a wide range of topics, from software engineering and communication protocols to sensor networks and marine technology. While in academia, he worked in multiple national and European research projects and published in international conferences and journals in networks and robotics. He was a patent examiner with the European Patent Office (The Hague, The Netherlands), where he worked mainly in the fields of human-computer interaction and construction of computers.
+His technical interests cover a wide range of topics, from software engineering and communication protocols to sensor networks and marine technology. While a researchers, he worked in several national and European research projects and published in multiple international conferences and journals.
+
+Following his doctoral studies, he served as a patent examiner with the [European Patent Office](https://www.epo.org/) (The Hague, The Netherlands), the second largest intergovernmental organisation in Europe, where he mainly worked in the fields of human-computer interaction and construction of computers.
+
+In his spare time, Jorge volunteers with [IEEE](https://www.ieee.org/), having started as a student branch chair in 2007 and since served in numerous roles at the section, region, and global levels.
