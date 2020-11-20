@@ -35,5 +35,4 @@ draft: false
 
 ---
 
-
 In [Part One](https://research.protocol.ai/blog/2020/a-research-perspective-on-filecoin/), we traced the intellectual and technological history  of modern implementations of distributed ledger technology. Now let’s take a stroll through the technological landscape around the time of Filecoin’s release:
