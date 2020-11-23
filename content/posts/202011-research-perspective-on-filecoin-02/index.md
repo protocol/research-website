@@ -4,7 +4,7 @@ title: "A Research Perspective on Filecoin, Part Two"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-11-20
+date: 2020-11-23
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
