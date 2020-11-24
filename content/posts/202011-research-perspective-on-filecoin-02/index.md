@@ -105,7 +105,7 @@ Predicting — and shaping — the trajectory of a new technology is a complex p
 
   - [VDFs](https://eprint.iacr.org/2018/601.pdf) — *Verifiable Delay Functions* -- guarantee a random delay given some hardware assumptions and a small set of requirements. VRFs play a role in public randomness beacons, in leader election in consensus protocols, and in proofs of replication. VRFs are not currently implemented in the Filecoin spec, but are an [active](https://research.protocol.ai/talks/vdfs-and-filecoin/) [research area](https://filecoin.io/blog/collaboration-on-vdfs/).
 
-  - [Depth Robust Graphs ](https://research.protocol.ai/talks/proof-of-replication-using-depth-robust-graphs/) — a form of directed acyclic graph structure — are produced in Filecoin’s proof-of-replication step as original data is encoded into a replica and committed to the blockchain. Work on DRGs part of ongoing research into the proof system and graph structures.
+  - [Depth Robust Graphs](https://research.protocol.ai/talks/proof-of-replication-using-depth-robust-graphs/) — a form of directed acyclic graph structure — are produced in Filecoin’s proof-of-replication step as original data is encoded into a replica and committed to the blockchain. Work on DRGs is part of the ongoing research into the proof system and graph structures.
 
   - [Vector Commitments](https://eprint.iacr.org/2011/495.pdf) — cryptographic primitives enabling secret precommitments that can be revealed later — are an important component of Filecoin’s verifiable decentralized storage model, and [new vector commitment techniques](https://research.protocol.ai/talks/vector-commitment-techniques-and-applications-to-verifiable-decentralized-storage/) are an active area of CryptoLab research.
 
