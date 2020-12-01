@@ -68,7 +68,7 @@ We highly recommend watching [this list of top quality videos](https://www.youtu
 
 ***Q:*** Is there any limitation on the number of replicas that one can store on Filecoin?
 
-***A:*** No, there is no limit on the number of replicas that one can store on Filecoin and there is already more than 1 EiB of storage capacity committed to the network (at the time of writing), so there is enough storage for a lot of replicas!
+***A:*** No, there is no limit on the number of replicas that one can store on Filecoin, and there is already more than 1 Exbibyte (EiB) of storage capacity committed to the network (at the time of writing), so there is enough storage for a lot of replicas!
 
 Note, however, that each replica comes with its own storage cost and therefore increasing the number of replicas improves data availability but also increases the overall cost of storage.
 
