@@ -34,7 +34,7 @@ draft: false
 
 ---
 
-ResNetLab was invited to present a 3.5hr tutorial at one of the biggest conferences in the "NetMan" community, the [16th International Conference on Network and Service Management](http://www.cnsm-conf.org/2020).
+ResNetLab was invited to present a 3.5 hour tutorial at one of the biggest conferences in the "NetMan" community, the [16th International Conference on Network and Service Management](http://www.cnsm-conf.org/2020).
 
 We were impressed by the quality of talks, keynotes, workshops, and tutorials presented during the conference. The topic areas show that the conference is keeping pace with the rapid developments in the field, targeting themes such as AI/ML, Edge Computing, Technologies Beyond 5G, and the Future of the Internet Protocol. It was a full week packed with very interesting content smoothly delivered to a remote audience.
 
