@@ -40,7 +40,7 @@ We were impressed by the quality of talks, keynotes, workshops, and tutorials pr
 
 The organising committee did a fantastic job of keeping everyone on track and responding rapidly to requests. We really enjoyed the application that the organisers used, which allowed us to network with other conference attendees and post our presentation material, job openings, and the [tutorial flyer](https://gateway.ipfs.io/ipfs/QmcTTR4maY9RpuKeupbBgGaEnVxe6yW8aBteoe6wvgH5sK/IPFS-libp2p-filecoin_flyer_CNSM2020-v2.pdf). The videos from the entire conference have also been made available to conference attendees - very convenient for catching up with sessions that we missed!
 
-As we do traditionally with all conferences that we attend, we would like to take this opportunity to relate the questions we were asked as a resource for the future reader.
+As we traditionally do with all conferences that we attend, we would like to take this opportunity to relate the questions we were asked as a resource for future readers.
 
 ***Q:*** What would you say are the current main challenges in the research areas of Information-Centric Networks (ICN) and Named-Data Networks (NDN)? Can you share some research directions that IPFS is exploring?
 
