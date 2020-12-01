@@ -36,7 +36,7 @@ draft: false
 
 ResNetLab was invited to present a 3.5hr tutorial at one of the biggest conferences in the "NetMan" community, the [16th International Conference on Network and Service Management](http://www.cnsm-conf.org/2020).
 
-We were impressed by the quality of talks, keynotes, workshops, and tutorials presented during the conference. The topic areas show that the conference is keeping pace with the rapid developments in the area, targeting thematic areas such as AI/ML, Edge Computing, Technologies Beyond 5G, and the Future of the Internet Protocol. It was a full week packed with very interesting content smoothly delivered to a remote audience.
+We were impressed by the quality of talks, keynotes, workshops, and tutorials presented during the conference. The topic areas show that the conference is keeping pace with the rapid developments in the field, targeting themes such as AI/ML, Edge Computing, Technologies Beyond 5G, and the Future of the Internet Protocol. It was a full week packed with very interesting content smoothly delivered to a remote audience.
 
 The organising committee did a fantastic job of keeping everyone on track and responding rapidly to requests. We really enjoyed the application that the organisers used, which allowed us to network with other conference attendees and post our presentation material, job openings, and the [tutorial flyer](https://gateway.ipfs.io/ipfs/QmcTTR4maY9RpuKeupbBgGaEnVxe6yW8aBteoe6wvgH5sK/IPFS-libp2p-filecoin_flyer_CNSM2020-v2.pdf). The videos from the entire conference have also been made available to conference attendees - very convenient for catching up with sessions that we missed!
 
