@@ -1,7 +1,7 @@
 ---
 headless: true
 nositemap: false
-weight: 7
+weight: 6
 title: Research Jobs
 linkText: Browse current openings
 linkUrl: "https://jobs.lever.co/protocol?department=Research"
