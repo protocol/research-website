@@ -37,11 +37,11 @@ We asked Anca about the road that led them here and what the future looks like:
 
 **What path brought you to PL?**
 
-> I studied SNARKs for so many years motivated mostly by applications in the area of Delegated Computation. I was motivated to broaden my knowledge on this topic, learn more on other use-cases of SNARKs and use my background to improve these protocols so I am excited to start working on this at PL.
+> I studied SNARKs for so many years motivated mostly by applications in the area of delegated computation. I was motivated to broaden my knowledge on this topic, learn more on other use-cases of SNARKs and use my background to improve these protocols so I am excited to start working on this at PL.
 
 **What are you working on?**
 
-> At PL I will work on Filecoin Protocol, especially on improving SNARKs and Proofs of Replication.
+> At PL I will work on the Filecoin protocol, especially on improving SNARKs and Proofs-of-Replication.
 
 **What future technology are you most excited about?**
 
