@@ -16,7 +16,10 @@ resources:
 
 # Research interests
 interests:
-  - Proving systems
+- Verifiable Computation
+  - Proving systems: SNARKs, Zero-Knowledge Proofs
+  - Authentication Primitives
+  
   - Zero-knowledge proofs
   - SNARKs
 
