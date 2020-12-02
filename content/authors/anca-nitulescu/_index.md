@@ -45,7 +45,7 @@ social:
   - icon: twitter
     link: https://twitter.com/13portocale
   - icon: github
-    link: https://github.com/ancaens/
+    link: https://github.com/anitulescu
   - icon: linkedin
     link: https://www.linkedin.com/in/anca-nitulescu/
   - icon: researchgate
