@@ -10,10 +10,12 @@ date: 2020-01-15
 journal:
 
 # Venue Name
-venue:
+venue: ACM Advances in Financial Technologies 2020
 
 # Venue Location
 venue_location:
+
+venue_date: 2020-10-21
 
 # Digital Object Identifier
 doi:
@@ -25,7 +27,7 @@ resources:
 # Taxonomies:
 # use only one!
 publication_types:
-  - report
+  - conference-paper
 
 authors:
   - "Dan Boneh"
