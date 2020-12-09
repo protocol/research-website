@@ -64,27 +64,27 @@ The we were trying to evaluate in this RFC is the ability of Bitswap nodes to ex
 
 First we evaluated the performance of our protocol for the exchange of small files such as this XKCD image of 66 KB.
 
-<center>{{< figure src="image5.png" width="300px" caption="Figure 2: XKCD images exchanged by nodes in our experiment">}}</center>
+<center>{{< figure src="image-xkcd.png" width="300px" caption="Figure 2: XKCD image exchanged by nodes in our experiment">}}</center>
 
 We used the vanilla implementation of Bitswap with the DHT enabled and disabled as a baseline, and compared it with our prototype of Bitswap with TTL. For baseline Bitswap with the DHT disabled, every request for content by leechers times out. Leechers broadcast their request for content to their directly connected peers and, as they are only connected to passive nodes which do not provide content, and they can't resort to the DHT to find a provider for the content, they are unable to find the content they are looking for.
 
 If we enable the DHT in the baseline protocol, leechers are now able to find the content they are looking for, but they need to resort to the DHT to find the nodes providing it. By comparison, our RFC's implementation using TTL in Bitswap messages results in faster discovery and fetch times (Figure 3).
 
-<center>{{< figure src="image6.png"  caption="Figure 3: Time to fetch xkcd image">}}</center>
+<center>{{< figure src="image1.png"  caption="Figure 3: Time to fetch xkcd image">}}</center>
 
 As always, this improvement in content discovery and content fetch time doesn't come for free. The use of TTL in Bitswap messages results in a message overhead of only 1.6%, and we even see a slight reduction in the number of WANT messages exchanged (Figure 4). The real overhead, however, comes from the number of duplicate blocks exchanged in the network. By delegating the discovery of content to other nodes, we are amplifying the range of the request, but we are also making it more difficult for the requester to notify peers seeking blocks on its behalf when it has received the requested CIDs.  Peers that are not able to see the requester's CANCEL message continue their search, forwarding the blocks that have already been fetched. This results in the appearance of additional duplicate blocks.
 
-<center>{{< figure src="image1.png"  caption="Figure 4: Number of messages exchanged for XKCD image exchange">}}</center>
+<center>{{< figure src="image7.png"  caption="Figure 4: Number of messages exchanged for XKCD image exchange">}}</center>
 
 ### Impact on larger files
 
 The results for the xkcd images were promising: this scheme gave nodes the ability to find content some hops apart without having to resort to the DHT, even achieving faster times-to-fetch than when using the DHT. Would this result hold for larger files? We repeated the same exact experiment from above with a 30 MB file, and we obtained the results depicted below:
 
-<center>{{< figure src="image2.png"  caption="Figure 5: Time to fetch 30MB file">}}</center>
+<center>{{< figure src="image3.png"  caption="Figure 5: Time to fetch 30MB file">}}</center>
 
 We can see in Figure 5 that the time to fetch the file for the TTL prototype is improved 17% on average compared to the baseline implementation of Bitswap with the DHT enabled. Unfortunately, the cost we pay for this is an increase of up to 4 times the number of duplicate blocks in the network relative to the baseline experiment (Figure 6). Again, the fact that nodes don't have an easy way of cancelling relay sessions started by other peers on their behalf is causing an increase in the number of duplicate blocks.
 
-<center>{{< figure src="image7.png"  caption="Figure 6: Number of messages exchanged for XKCD image exchange">}}</center>
+<center>{{< figure src="image6.png"  caption="Figure 6: Number of messages exchanged for XKCD image exchange">}}</center>
 
 ### Large scale networks
 
@@ -92,9 +92,9 @@ Now we understand the potential of the RFC in a network with a few dozen nodes. 
 
 In this notebook, you will be able to play with a lot of configuration parameters for the DHT, the TTL protocol, the network, and the popularity of the content to get an approximate comparison between the DHT and our "jumping Bitswap" protocol when it comes to latency and the probability of finding content.
 
-<center>{{< figure src="image8.png"  caption="Figure 8: Sample latency plot from the Observable notebook">}}</center>
+<center>{{< figure src="image2.png"  caption="Figure 8: Sample latency plot from the Observable notebook">}}</center>
 
-<center>{{< figure src="image3.png"  caption="Figure 9: Sample plot from the Observable notebook depicting probability of finding content">}}</center>
+<center>{{< figure src="image8.png"  caption="Figure 9: Sample plot from the Observable notebook depicting probability of finding content">}}</center>
 
 ## Conclusions and Future Work
 
