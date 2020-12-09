@@ -62,7 +62,7 @@ The we were trying to evaluate in this RFC is the ability of Bitswap nodes to ex
 
 ### Exchanging small files
 
-First we evaluated the performance of our protocol for the exchange of small files such as this XKCD image of 64 KB.
+First we evaluated the performance of our protocol for the exchange of small files such as this XKCD image of 66 KB.
 
 <center>{{< figure src="image5.png" width="300px" caption="Figure 2: XKCD images exchanged by nodes in our experiment">}}</center>
 
