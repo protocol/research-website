@@ -44,7 +44,7 @@ In addition to enabling Bitswap to find content without having to resort to the 
 
 ### Discussing the RFC and building the prototype
 
-As is standard with every prototype built by ResNetLab, we started with the [design of an RFC](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL102.md) to discuss the hypothesis and build the foundations for the prototype. With this RFC, we wanted to evaluate how increasing the discovery capabilities of Bitswap without having to resort to the DHT could lead to improvements in content exchange within IPFS. To this end, we added a TTL field to Bitswap messages, and gave peers the ability to discover content on behalf of other peers through a relay session.
+As is standard with every prototype built by ResNetLab, we started with the [design of an RFC](https://github.com/protocol/beyond-bitswap/tree/master/RFC/rfcBBL102) to discuss the hypothesis and build the foundations for the prototype. With this RFC, we wanted to evaluate how increasing the discovery capabilities of Bitswap without having to resort to the DHT could lead to improvements in content exchange within IPFS. To this end, we added a TTL field to Bitswap messages and gave peers the ability to discover content on behalf of other peers through a relay session.
 
 You can check out  the implementation of the RFC [in this go-bitswap fork](https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL102), read a detailed description of the RFC [here](https://github.com/protocol/ResNetLab/blob/master/beyond-bitswap/rfc/rfcBBL102.md), and view some calculations we performed to model the prototype [here](https://observablehq.com/d/8429dc0ec2032844). To summarize, this new addition to the Bitswap protocol works as follows: when client A starts a query in the IPFS network, Bitswap initialises content discovery by adding a TTL to its WANT message requests (TTL=1 by default). When node B receives this request, if it doesn't store some of the CIDs the peer is requesting, it looks at the TTL of the request. If the TTL is greater than zero, node B notifies its relay session and requests the discovery of these CIDs on behalf of node A, decreasing the TTL by 1.
 
@@ -68,7 +68,7 @@ First we evaluated the performance of our protocol for the exchange of small fil
 
 We used the vanilla implementation of Bitswap with the DHT enabled and disabled as a baseline, and compared it with our prototype of Bitswap with TTL. For baseline Bitswap with the DHT disabled, every request for content by leechers times out. Leechers broadcast their request for content to their directly connected peers and, as they are only connected to passive nodes which do not provide content, and they can't resort to the DHT to find a provider for the content, they are unable to find the content they are looking for.
 
-If we enable the DHT in the baseline protocol, leechers are now able to find the content they are looking for, but they need to resort to the DHT to find the nodes providing it. By comparison, our RFC's implementation using TTL in Bitswap messages results in faster discovery and fetch times (Figure 3).
+If we enable the DHT in the baseline protocol, leechers are now able to find the content for which they are looking but need to resort to the DHT to find the nodes providing it. By comparison, our RFC's implementation using TTL in Bitswap messages results in faster discovery and fetch times (Figure 3).
 
 <center>{{< figure src="image1.png"  caption="Figure 3: Time to fetch xkcd image">}}</center>
 
@@ -110,7 +110,7 @@ In the meantime, we are working on several improvements to our current implement
 
 - Finally, in our prototype, Bitswap nodes leverage connected peers to broadcast their WANT messages and flood the network. This forces Bitswap to include mechanisms like degree (*d*), mentioned above, or assign a budget limiting the number of messages that will be processed from any given peer, which prevents nodes from abusing the protocol and mitigates potential attacks. Fortunately, we already have an overlay infrastructure with all these mechanisms in place: [GossipSub](https://research.protocol.ai/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains/). An additional future line of exploration to extend this prototype would be to leverage the use of GossipSub to spread WANT messages to other nodes in the network.
 
-There is a lot of exciting work ahead in our quest to make file-sharing on P2P networks blazing fast. Do not hesitate to [reach us out and join us](mailto:resnetlab@protocol.ai) on this endeavor!
+There is a lot of exciting work ahead in our quest to make file-sharing on P2P networks blazing fast. Do not hesitate to [reach us out and join us](mailto:resnetlab@protocol.ai) in this endeavor!
 
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_lightviolet.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
 
