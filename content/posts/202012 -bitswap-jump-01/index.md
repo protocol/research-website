@@ -3,7 +3,7 @@
 title: 'Teaching Bitswap Nodes to Jump'
 
 # Website post date. Format YYYY-MM-DD
-date: 2020-12-09
+date: 2020-12-10
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -36,7 +36,7 @@ In today's post, we want to share how adding a TTL (Time To Live) field to Bitsw
 
 The idea for this RFC came not from an academic paper, but rather from [this Github issue](https://github.com/ipfs/notes/issues/386) by the brilliant [Alan Shaw](https://blog.ipfs.io/meet-the-community-alan-shaw/). The basic hypothesis was the following: in its current implementation, when Bitswap is not able to find the content it is looking for from its directly connected peers, it resorts to the DHT to find a provider for the content. By adding a TTL to Bitswap messages, nodes are able to forward their request for content to nodes TTL+1 hops away, extending their range of discovery and minimizing their dependence on the DHT (especially if the content requested is not rare).
 
-When a node receives a WANT message with a TTL greater than zero, it reduces the TTL of the request by one and forwards the request to *d*(degree) of its connected nodes that haven't yet received this request. All the logic behind the request and discovery of content on behalf of other peers is managed through a special session that we call the relay session. The relay session tracks all the WANT messages and CIDs being requested on behalf of other nodes. When a node receives a block from a request belonging to some other peer, it forwards it to the source, following the same path as the original request (symmetric routing).
+When a node receives a WANT message with a TTL greater than zero, it reduces the TTL of the request by one and forwards the request to *d* (degree) of its connected nodes that haven't yet received this request. All the logic behind the request and discovery of content on behalf of other peers is managed through a special session that we call the relay session. The relay session tracks all the WANT messages and CIDs being requested on behalf of other nodes. When a node receives a block from a request belonging to some other peer, it forwards it to the source, following the same path as the original request (symmetric routing).
 
 In addition to enabling Bitswap to find content without having to resort to the DHT, this implementation also improves the time to fetch content not stored by directly connected peers by 33%, increases the number of messages exchanged by 1.6%, and creates a 5-fold increase in the number of duplicate blocks exchanged in the network.
 
@@ -110,7 +110,7 @@ In the meantime, we are working on several improvements to our current implement
 
 - Finally, in our prototype, Bitswap nodes leverage connected peers to broadcast their WANT messages and flood the network. This forces Bitswap to include mechanisms like degree (*d*), mentioned above, limit the accepted TTL range, or assign a budget limiting the number of messages that will be processed from any given peer, which prevents nodes from abusing the protocol and mitigates potential attacks. Fortunately, we already have an overlay infrastructure with all these mechanisms in place: [GossipSub](https://research.protocol.ai/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains/). An additional future line of exploration to extend this prototype would be to leverage the use of GossipSub to spread WANT messages to other nodes in the network.
 
-There is a lot of exciting work ahead in our quest to make file-sharing on P2P networks blazing fast. Do not hesitate to [reach us out and join us](mailto:resnetlab@protocol.ai) in this endeavor!
+There is a lot of exciting work ahead in our quest to make file-sharing on P2P networks blazing fast. Do not hesitate to [reach out](mailto:resnetlab@protocol.ai) and join us in this endeavor!
 
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_lightviolet.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
 
