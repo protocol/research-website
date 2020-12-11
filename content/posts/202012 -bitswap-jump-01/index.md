@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: 'Teaching Bitswap Nodes to Jump'
+title: 'Teaching Bitswap nodes to jump'
 
 # Website post date. Format YYYY-MM-DD
 date: 2020-12-10
