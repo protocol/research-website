@@ -4,9 +4,9 @@ name: Auto Assign to Projects
 
 on:
   issues:
-    types: [opened, labeled]
+    types: [labeled]
   pull_request:
-    types: [opened, labeled]
+    types: [labeled]
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -21,5 +21,5 @@ jobs:
         contains(github.event.issue.labels.*.name, 'blog') ||
         contains(github.event.pull_request.labels.*.name, 'blog')
       with:
-        project: 'https://github.com/srggrs/assign-one-project-github-action/projects/1'
+        project: 'https://github.com/protocol/research-website/projects/1'
         column_name: 'Upcoming'
