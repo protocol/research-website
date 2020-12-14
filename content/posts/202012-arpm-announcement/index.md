@@ -4,7 +4,7 @@ title: 'Announcing Protocol Labs Associate Research Program Manager (ARPM) summe
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-12-15
+date: 2020-12-14
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
