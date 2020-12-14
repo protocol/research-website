@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: Announcing Protocol Labs Associate Research Program Manager (ARPM) summer program!
+title: 'Announcing Protocol Labs Associate Research Program Manager (ARPM) summer program!'
 
 # Website post date
 # format YYYY-MM-DD
@@ -11,12 +11,12 @@ date: 2020-12-15
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
-authors: jonathan-gross
-  -
+authors: 
+  - jonathan-gross
 
 # If applicable
 categories:
-  - posts
+  - blog
   - news
 
 # Zero or more of the areas in content/areas
@@ -26,9 +26,6 @@ areas:
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
   - 
-
-# Not used
-draft: false
 
 ---
 Protocol Labs is currently accepting applications for its Associate Research Program 
