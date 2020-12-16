@@ -22,4 +22,4 @@ jobs:
         contains(github.event.pull_request.labels.*.name, 'blog')
       with:
         project: 'https://github.com/protocol/research-website/projects/1'
-        column_name: 'Upcoming'
+        column_name: 'New'
