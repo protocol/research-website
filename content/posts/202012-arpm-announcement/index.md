@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: 'Announcing Protocol Labs Associate Research Program Manager (ARPM) summer program!'
+title: 'Announcing the Protocol Labs Associate Research Program Manager (ARPM) summer program'
 
 # Website post date
 # format YYYY-MM-DD
