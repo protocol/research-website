@@ -29,7 +29,7 @@ groups:
 
 ---
 Protocol Labs is currently accepting applications for its Associate Research Program 
-Manager (ARPM) ten week summer program (2021). The ARPM program is an opportunity for 
+Manager (ARPM) ten-week summer program (2021). The ARPM program is an opportunity for 
 undergraduate students to learn to grow and support research programs, drive research initiatives,
 and engage in meta-research analyses (researching high-level ways to improve
 the efficacy and impact of research programs).
