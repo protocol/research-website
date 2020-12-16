@@ -37,7 +37,7 @@ the efficacy and impact of research programs.
 Running from late June to early September, the ARPM 
 program is a chance for early-stage researchers to explore alternative career opportunities 
 within the research ecosystem and gain experience developing, executing, and evaluating a 
-cross-disciplinary research program within a technology startup environment. ARPMs will 
+cross-disciplinary research program within a dynamic tech startup. ARPMs will 
 learn how research labs are run and funded, how research consortia are established and 
 coordinated, and how fundamental research relates to the development of practical 
 applications. With the support of the research management team, ARPMs will also pursue a 
