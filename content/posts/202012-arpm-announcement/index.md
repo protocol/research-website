@@ -34,7 +34,7 @@ undergraduate students to learn to support and grow research programs, drive res
 and engage in meta-research analyses, exploring high-level ways to improve
 the efficacy and impact of research programs.
 
-Running from late June to early September (exact dates negotiable by cohort), the ARPM 
+Running from late June to early September, the ARPM 
 program is a chance for early-stage researchers to explore alternative career opportunities 
 within the research ecosystem and gain experience developing, executing, and evaluating a 
 cross-disciplinary research program within a technology startup environment. ARPMs will 
