@@ -64,7 +64,7 @@ In order to explore the impact of this prototype, we repeated exactly the same t
 
 ### Exchanging small files
 
-For the exchange of the small XKCD image file of 66 KB, we see an improvement in the time to fetch the image of 12%, with a slight reduction in the number of duplicate blocks and messages exchanged. The fact that nodes have a way to request the content from peers with a larger probability of storing it reduces the amount of messages required both in direct sessions and relay sessions. (Figures 2 and 3).
+For the exchange of the small XKCD image file of 66 KB, we see an improvement in the time to fetch the image of 12%, with a slight reduction in the number of duplicate blocks and messages exchanged. The fact that nodes have a way to request the content from peers with a larger probability of storing it reduces the amount of messages required both in direct sessions and relay sessions (Figures 2 and 3).
 
 <center>{{< figure src="image3.png" width="700px" caption="Figure 2: Time to fetch xkcd image">}}</center>
 
@@ -90,7 +90,7 @@ The combination of these two ideas gave very encouraging results, and we believe
 
 - Could we optimize the way we select the subset of peers to whom WANT requests from relay sessions are forwarded? Can we use information about direct sessions (such as the latency, and peers included in each session) to make even better decisions? Is it worth tracking in the peer-block registry the TTL of the WANT messages seen so that we don't only prioritize candidates that have recently seen the content, but also candidates that are fewer hops away (to ensure fast retrieval of blocks)?
 
-- And thinking about the configuration parameters of the protocol -- what configuration of the degree (*d*) and TTL of relay sessions, and the number of candidates selected in the peer-block registry leads to a better performance? Can we make these parameters dynamic and adjustable in runtime so that according to the status of the network, the peers available, and the certainty we have on the probability of the nodes contacted having the block we are looking for, their value self-adjusts? We already use a split-ratio in Bitswap sessions to determine the number of independent streams of discovery according to the number of duplicate blocks seen, so we could use a similar approach.
+- And thinking about the configuration parameters of the protocol -- what configuration of the degree (*d*) and TTL of relay sessions, and the number of candidates selected in the peer-block registry leads to a better performance? Can we make these parameters dynamic and adjustable in runtime so that their value self-adjusts according to the status of the network, the peers available, and the estimated probability of the nodes contacted having the sought-after block? We already use a split-ratio in Bitswap sessions to determine the number of independent streams of discovery according to the number of duplicate blocks seen, so we could use a similar approach.
 
 In summary, exciting ideas and exciting results that still require further research to unleash all of its potential. If you want to join us in this endeavor of making file transfers blazing fast, do not hesitate to reach us out!
 
