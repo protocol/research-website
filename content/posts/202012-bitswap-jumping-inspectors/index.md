@@ -46,7 +46,7 @@ Our rationale is as follows: on the one hand, the fact that nodes can relay WANT
 
 ## Prototype
 
-You can find the code for [this modified implementation of "jumping Bitswap" in this fork.](https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL102+rfcBBL104) Its operation is straightforward:
+You can find the code for this modified implementation of "jumping Bitswap" [in this fork.](https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL102+rfcBBL104) Its operation is straightforward:
 
 - Every Bitswap node listens for WANT messages from neighboring peers and populates its peer-block registry with the CID and the ID of the peer sending the WANT message. This is done for every WANT message independently of its TTL.
 
