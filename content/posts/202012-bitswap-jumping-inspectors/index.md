@@ -3,7 +3,7 @@
 title: 'Our Bitswap nodes have become “jumping inspectors”'
 
 # Website post date. Format YYYY-MM-DD
-date: 2020-12-17
+date: 2020-12-16
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -52,7 +52,7 @@ You can find the code for [this modified implementation of "jumping Bitswap" in 
 
 - When a client wants to find content, a new direct session is triggered in Bitswap. These sessions check if there are candidate peers that have requested the block recently by checking the peer-block registry, and if this is the case, an "optimistic" WANT-BLOCK is sent to the three peers that requested the CID most recently (up until here is the normal operation of [this RFC](https://github.com/protocol/beyond-bitswap/tree/master/RFC/rfcBBL104)).
 
-- If a node receives a WANT message with a TTL larger than zero, instead of forwarding the WANT message with TTL-1 to a random subset of D of its connected peers (where D is the degree of the relay session), it first chooses three candidates from the peer-block registry that have recently seen the CID (if they exist) and select the D-3 peers left for the forwarding session randomly. In this way, the relay session is targeting peers that have recently requested those CIDs on behalf of other peers.
+- If a node receives a WANT message with a TTL larger than zero, instead of forwarding the WANT message with TTL-1 to a random subset of *d* of its connected peers (where *d* is the degree of the relay session), it first chooses three candidates from the peer-block registry that have recently seen the CID (if they exist) and select the *d*-3 peers left for the forwarding session randomly. In this way, the relay session is targeting peers that have recently requested those CIDs on behalf of other peers.
 
 The use of peers from the peer-block registry to forward the requests from other peers increases the probability of intermediate nodes finding the content, hence performing faster discovery of blocks. Additionally, the fact that nodes may be looking for blocks on behalf of other peers makes the use of the information in the peer-block registry more powerful than in the baseline implementation of Bitswap.
 
