@@ -3,7 +3,7 @@
 title: 'Our Bitswap nodes have become “jumping inspectors”'
 
 # Website post date. Format YYYY-MM-DD
-date: 2020-12-14
+date: 2020-12-17
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
