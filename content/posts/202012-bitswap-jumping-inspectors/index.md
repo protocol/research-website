@@ -94,7 +94,7 @@ We went one step further and repeated the experiment for 150 MB files. The numbe
 
 Vanilla Bitswap performs a DHT lookup to discover the seeders storing the content. When it finds one, Bitswap establishes a connection with it, adds it to its session, and requests the rest of the blocks of the content directly from this seeder from there on (without additional lookups).
 
-For both versions of "jumping Bitswap", with and without WANT inspection, even if a requester discovers the intermediate node behind whom a seeder with the content is, it still needs to request every single block of the content through intermediate nodes (due to the symmetric routing approach used in the protocol). This results in a significant increase in the number of blocks traversing the network, with its subsequent overhead in peer resources.
+For both versions of "jumping Bitswap", with and without WANT inspection, even if a requester discovers the intermediate node behind whom a seeder with the content is, it still needs to request every single block of the content through those intermediate nodes (due to the symmetric routing approach used in the protocol). This results in a significant increase in the number of blocks traversing the network, with its subsequent overhead in peer resources.
 
 ### Future Work: Asymmetric Routing
 
