@@ -86,7 +86,7 @@ Repeating the experiment using 30MB files shows similar performance in terms of 
 
 <center>{{< figure src="image5.png" width="700px" caption="Figure 5: Number of messages exchanged 30 MB file">}}</center>
 
-We went one step further and repeated the experiment for 150 MB files. The number of messages required for "jumping Bitswap" to discover and transfer the content compared to vanilla Bitswap is still significantly lower. However, the increase in the number of duplicate blocks in the TTL prototypes results in them not being able to fetch content faster than vanilla Bitswap (see Figures 5 and 6), even if this was the case for smaller files. 
+We went one step further and repeated the experiment for 150 MB files. The number of messages required for "jumping Bitswap" to discover and transfer the content compared to vanilla Bitswap is still significantly lower. However, the increase in the number of duplicate blocks originating from the TTL enhancement, results in peers not being able to fetch content faster than vanilla Bitswap (see Figures 5 and 6). 
 
 <center>{{< figure src="figure5.png" width="700px" caption="Figure 5: Time to fetch 150MB file">}}</center>
 
