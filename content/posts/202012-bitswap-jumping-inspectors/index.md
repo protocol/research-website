@@ -46,7 +46,7 @@ Our rationale goes as follows: on the one hand, the fact that nodes can relay WA
 
 **Merging these two ideas enabled an improvement in the average time to fetch content by 12.5%, with a reduction in the number of duplicate blocks in the network by 10% compared to the previous TTL prototype.**
 
-Not happy with this, we decided to perform further experiments to understand the impact that exchanging larger files could have for our "jumping Bitswap" protocol. The experiments show how when the number of blocks exchanged increases, the overhead due to the number of duplicate blocks traversing the network can dwarf the improvements in the time to fetch content. This is a result of using symmetric routing to forward blocks through intermediate nodes (i.e. relaying blocks following the same path the request followed). 
+Not happy with this, we decided to perform further experiments to understand the impact that exchanging larger files could have for our "jumping Bitswap" protocol. The experiments show that with increasing number of blocks exchanged, the overhead due to the number of duplicate blocks traversing the network can dwarf the improvements in the time to fetch content. This is a result of using symmetric routing to forward blocks through intermediate nodes (i.e. relaying blocks following the same path the request followed). 
 
 To solve this, **we glimpse as future work the use of asymmetric routing**. Thus, when a peer storing the content receives a relayed request, instead of forwarding blocks through an intermediate peer, it establishes a connection with the requester and sends the block directly. 
 
