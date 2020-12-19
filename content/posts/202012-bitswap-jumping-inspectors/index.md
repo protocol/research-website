@@ -38,7 +38,7 @@ Along with this new prototype, we also performed further experiments with larger
 
 ## The contribution
 
-With this prototype, we showed the value of leveraging the wealth of information gathered from previous network activity (i.e. WANT messages). We have proven that this information can be extremely useful in subsequent content discovery performance as previous requests are strong indicators of where the content is going to live.
+With this prototype, we showed the value of leveraging the wealth of information gathered from previous network activity (i.e. WANT messages). We have proven that this information can be extremely useful in subsequent content discovery performance as previous requests are strong indicators of where the content lives.
 
 Adding a TTL to the Bitswap protocol (in our [previous](https://research.protocol.ai/blog/2020/teaching-bitswap-nodes-to-jump/) contribution) offered nodes a way to discover content TTL+1 hops away before having to resort to the DHT. The TTL improvement also enabled faster retrieval of content from nodes TTL+1 hops apart, compared to vanilla Bitswap using the DHT. The new feature, though, came at the cost of additional overhead in the number of messages and duplicate blocks transferred through the network. After some further thinking, however, we realized that we could leverage this overhead in our favor to stretch the performance improvement introduced in our prototype even more.
 
