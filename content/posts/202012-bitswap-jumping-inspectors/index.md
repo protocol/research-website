@@ -3,6 +3,7 @@
 title: 'Our Bitswap nodes have become “jumping inspectors”'
 
 # Website post date. Format YYYY-MM-DD
+
 date: 2020-12-19
 
 # Publish from this date (defaults to date)
@@ -52,7 +53,7 @@ To solve this, **we look to the use of asymmetric routing**. Thus, when a peer s
 
 ## Prototype
 
-You can find the code for [this modified implementation of "jumping Bitswap" in this fork.](https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL102+rfcBBL104) Its operation is straightforward:
+You can find the code for this modified implementation of "jumping Bitswap" [in this fork.](https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL102+rfcBBL104) Its operation is straightforward:
 
 - Every Bitswap node listens for WANT messages from neighboring peers and populates its peer-block registry with the CID and the ID of the peer sending the WANT message. This is done for every WANT message independently of its TTL.
 
@@ -79,7 +80,6 @@ For the exchange of the small XKCD image file of 66 KB, we see an improvement in
 ### Impact on larger files
 
 Repeating the experiment using 30MB files shows similar performance in terms of the time to fetch (i.e., an improvement of approximately 12%) and reduces the number of duplicate blocks in the network even further.
-
 
 <center>{{< figure src="image1.png" width="700px" caption="Figure 4: Time to fetch 30MB file">}}</center>
 
@@ -128,4 +128,4 @@ After all of our explorations around "jumping Bitswap", we have become convinced
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_lightviolet.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
 
 <center style=font-size:11pt><i> We are always open to further discussion on our research topics and welcome opportunities to answer questions and develop collaborations. Join the discussion at <a href
-="https://discuss.ipfs.io"> the IPFS Forum</a> or reach out via email (<a href="mailto:research@protocol.ai">research\@protocol.ai</a>). The <a href="https://docs.ipfs.io">IPFS</a>, <a href="https://docs.libp2p.io">libp2p</a>, and <a href="https://docs.filecoin.io">Filecoin</a> documentation sites and <a href="https://proto.school"> Protoschool's</a> interactive tutorials are a good starting point for exploration of these topics.</i></center>
+="https://discuss.ipfs.io"> the IPFS Forum</a> or reach out via email (<a href="mailto:research@protocol.ai">research\@protocol.ai</a>). The <a href="https://docs.ipfs.io">IPFS</a>, <a href="https://docs.libp2p.io">libp2p</a>, and <a href="https://docs.filecoin.io">Filecoin</a> documentation sites and <a href="https://proto.school"> ProtoSchool's</a> interactive tutorials are a good starting point for exploration of these topics.</i></center>
