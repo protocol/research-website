@@ -1,10 +1,10 @@
 ---
 # Blog post title
-title: 'Our Bitswap nodes have become “jumping inspectors”'
+title: 'Our Bitswap nodes have become “jumping inspectors” (updated)'
 
 # Website post date. Format YYYY-MM-DD
 
-date: 2020-12-19
+date: 2021-01-01
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -29,7 +29,7 @@ areas:
 groups:
 - resnetlab
 ---
-A few weeks ago we shared how we have taught our Bitswap nodes to jump. If you recall from [that post](https://research.protocol.ai/blog/2020/teaching-bitswap-nodes-to-jump/), the content discovery range extension gained came at the expense of an increased number of duplicate blocks exchanged in the network. Already in that post, we reflected on potential ways of improving the issue with duplicate blocks to make more efficient use of bandwidth. One of our proposals was to use WANT message inspection and the peer-block registry (introduced in the prototype described [here](https://research.protocol.ai/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers)) to make content discovery more efficient by adjusting the degree of WANT message propagation with the introduction of relay sessions.
+A few weeks ago, we shared how we have taught our Bitswap nodes to jump. If you recall from [that post](https://research.protocol.ai/blog/2020/teaching-bitswap-nodes-to-jump/), the content discovery range extension gained came at the expense of an increased number of duplicate blocks exchanged in the network. Already in that post, we reflected on potential ways of improving the issue with duplicate blocks to make more efficient use of bandwidth. One of our proposals was to use WANT message inspection and the peer-block registry (introduced in the prototype described [here](https://research.protocol.ai/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers)) to make content discovery more efficient by adjusting the degree of WANT message propagation with the introduction of relay sessions.
 
 Equipped with the previous prototypes and the [Testing Hardness](https://github.com/protocol/beyond-bitswap/tree/master/testbed), we had all the assets to explore this hypothesis of combining the Bitswap TTL prototype ([described in this RFC](https://github.com/protocol/beyond-bitswap/tree/master/RFC/rfcBBL102)) with the WANT inspection one ([detailed here](https://github.com/protocol/beyond-bitswap/tree/master/RFC/rfcBBL104)) and see what would happen. We rolled up our ResNetLabber sleeves,  built a quick prototype combining both RFCs, and ran some experiments with our testing harness. The results were delightful!
 
