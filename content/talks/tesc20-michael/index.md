@@ -47,4 +47,4 @@ and the MIT Energy Initiative, as well as Frank O’Sullivan, who is also at the
 
 ---
 
-{{< image "featured.png" >}}
+{{< youtube 5otHevAeEgg >}}
