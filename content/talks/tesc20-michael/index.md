@@ -41,9 +41,9 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: Michael Hammersley talks about enabling transactive energy on legacy power grids. 
+abstract: "Michael Hammersley talks about enabling transactive energy on legacy power grids. 
 This work was done in conjunction with Alan Ransil, who is associated with both Protocol Labs 
-and the MIT Energy Initiative, as well as Frank O’Sullivan, who is also at the MIT Energy Initative.
+and the MIT Energy Initiative, as well as Frank O’Sullivan, who is also at the MIT Energy Initative."
 
 ---
 
