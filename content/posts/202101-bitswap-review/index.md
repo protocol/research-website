@@ -35,7 +35,7 @@ draft: false
 
 ---
 
-If you have been following along for the past three months ([1](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/), [2](https://research.protocol.ai/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers/), [3](https://research.protocol.ai/blog/2020/teaching-bitswap-nodes-to-jump/), [4](https://research.protocol.ai/blog/2021/our-bitswap-nodes-have-become-jumping-inspectors-updated/)), you know that we in ResNetLab, started the Beyond Bitswap with one goal in mind: to drive speed-ups for file-sharing in IPFS. The results so far have been astounding and we couldn't be happier to share a huge list of new ideas, RFCs, prototypes, a testing harness, promising results --- and the release of the "Beyond Swapping Bits" paper!
+If you have been following along for the past three months ([1](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/), [2](https://research.protocol.ai/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers/), [3](https://research.protocol.ai/blog/2020/teaching-bitswap-nodes-to-jump/), [4](https://research.protocol.ai/blog/2021/our-bitswap-nodes-have-become-jumping-inspectors-updated/)), you know that we in ResNetLab started the **Beyond Bitswap** project  with one goal in mind: to drive speed-ups for file-sharing in IPFS. The results so far have been astounding and we are delighted to share a huge list of new ideas, RFCs, prototypes, a testing harness, promising results --- and the release of the "Beyond Swapping Bits" paper!
 
 We invite you to journey through the contributions of the "Beyond Swapping Bits" project since its inception. By the end of this post, you will have all the tools you need to understand the results we achieved so far, to run your own research experiments, and to learn about a myriad of high-potential ideas for future work. We welcome everyone to join us in transforming the **Beyond Swapping Bits** project into a multi-research-group open research endeavor, so that any networking researcher can start collaborating with us and build upon our work. The journey towards blazing fast P2P File Transfer starts here!
 
@@ -61,23 +61,19 @@ The beyond-bitswap toolkit includes the following core components:
 
 - [The Testbed](https://github.com/protocol/beyond-bitswap/blob/master/testbed/testbed): It leverages Testground and implements a multitude of Bitswap benchmarks and variations of the protocol (RFC prototypes). It additionally incorporates a Jupyter notebook to enable easy test configuration and data processing and visualization.
 
-![](image4.png)
+<center>{{< figure src="image4.png" width="700px" caption="Screenshot of the Testbed Python Notebook">}}</center>
 
-![](image3.png)
+<center>{{< figure src="image3.png" width="700px" caption="Screenshot of the Testbed Python Notebook">}}</center>
 
-*Figure: Screenshots of the Testbed Python Notebook*
 
 - [Probe](https://github.com/protocol/beyond-bitswap/blob/master/testbed/probe): A handy CLI tool to test new implementations and for debugging purposes. With Probe you can run an easily customizable in-process IPFS node, and interact with it through a set of simple commands in the CLI. With the probe you will be able to add a random file or a file from a local system, get an ipfs path, connect to other nodes, or even perform a graphsync exchange between two nodes. The in-process IPFS node of the probe is implemented so that you can manually inject ANY dependency. It should be straightforward to manipulate your node and to embed your own protocol design for testing.
 
-[![asciicast](https://asciinema.org/a/2xqFne0tkGXprE3tDmAhHRKZo.svg)](https://asciinema.org/a/2xqFne0tkGXprE3tDmAhHRKZo)
-
-*Figure: Animation of sample execution of the probe.*
+<a href="https://asciinema.org/a/2xqFne0tkGXprE3tDmAhHRKZo">
+<center>{{< figure src="https://asciinema.org/a/2xqFne0tkGXprE3tDmAhHRKZo.svg" width="400px" caption="Animation of a sample execution of the probe">}}</center></a>
 
 - [Bitswap Viewer](https://github.com/protocol/beyond-bitswap/blob/master/testbed/viewer): An instrumented go-bitswap fork and an ObservableHQ notebook that allows you to interactively follow the flow of messages exchanged and the session state of Bitswap nodes in an execution run that uses the instrumented code. This tool uses Jaeger to collect all the traces from the code. Follow the instructions in the repo to see how it works.
 
-![](image2.png)
-
-*Figure: Screenshot of the Bitswap viewer.*
+<center>{{< figure src="image2.png" width="700px" caption="Screenshot of the Bitswap Viewer">}}</center>
 
 All of these are available at the [beyond-bitswap repo](REPO URL) and licensed with the Permissive License stack.
 
@@ -96,9 +92,8 @@ We have published a total of [10 improvement RFCs](https://github.com/protocol/b
 
 We currently have RFCs in three different stages: "brainstorm", meaning the RFC is still in the ideation stage and there are fringes to be solved before it is ready for prototyping; "draft", for the RFCs whose design is ready but no working prototype for it exists yet; and finally, "prototype" for the RFCs with a working prototype. Let's discuss the latter a bit.
 
-![](image1.png)
+<center>{{< figure src="image1.png" width="600px" caption="List of RFCs">}}</center>
 
-*Figure: List of RFCs*
 
 **From RFCs to Prototypes & Evaluations**
 =========================================
@@ -115,21 +110,21 @@ Since the inception of the project, we have implemented three and a half prototy
 
 Finally, we wanted to provide an easy way to make our prototype's experiments and evaluations easily replicable. To achieve this, we added a way to run experiments over prototyped RFCs with [a single script](https://github.com/protocol/beyond-bitswap/tree/master/RFC) (provided that you have our testbed installed). Do not hesitate to give it a try!
 
-[![asciicast](https://asciinema.org/a/sbFZgodBh7cONSZ67XsSlM9yz.svg)](https://asciinema.org/a/sbFZgodBh7cONSZ67XsSlM9yz)
+  <a href="https://asciinema.org/a/sbFZgodBh7cONSZ67XsSlM9yz">
+<center>{{<figure src="https://asciinema.org/a/sbFZgodBh7cONSZ67XsSlM9yz.svg" width="400px" caption="Sample execution of a replicable experiment">}}</center></a>
 
-*Figure: Sample execution of a replicable experiment.*
 
 **A new perspective: Bitswap as a content routing systems accelerator**
 =======================================================================
 
-There has always been an existential question around Bitswap: "*is it a content routing protocol, or a block exchange protocol?".* All the work done in the "Beyond Swapping Bits" has given us the tools to answer this question, and the answer is *neither*. Bitswap's aim is not to replace content routing subsystems but to *complement* them and enhance their performance. Let's illustrate this using the DHT as an example of a content routing subsystem. Nodes using a DHT to find content in a P2P network are able to find providers for the content with a 100% probability (as long as all peers in the network are dialable). However, DHT lookups can be extremely slow in networks with a large number of nodes, so looking for every block through the DHT may be intractable. Fortunately, this is the *raison d'être* of bitswap: to minimize the number of lookups required by content routing subsystems to discover content, speeding up their block exchange.
+There has always been an existential question around Bitswap: "*is it a content routing protocol, or a block exchange protocol?*". All the work done in the "Beyond Swapping Bits" has given us the tools to answer this question, and the answer is *neither*. Bitswap's aim is not to replace content routing subsystems but to *complement* them and enhance their performance. Let's illustrate this using the DHT as an example of a content routing subsystem. Nodes using a DHT to find content in a P2P network are able to find providers for the content with a 100% probability (as long as all peers in the network are dialable). However, DHT lookups can be extremely slow in networks with a large number of nodes, so looking for every block through the DHT may be intractable. Fortunately, this is the *raison d'être* of bitswap: to minimize the number of lookups required by content routing subsystems to discover content, speeding up their block exchange.
 
 Moreover, the modular design of Bitswap's architecture makes it easily configurable to enhance the limitations of any content routing subsystems. Check out the Bitswap paper to learn more about Bitswap as a content routing system accelerator.
 
 **The final ribbon: The Bitswap Paper**
 =======================================
 
-![the bitswap paper](paper.png)
+<center>{{< figure src="paper.png" width="700px" caption="The Bitswap preprint">}}</center>
 
 Bitswap has not yet made its academic debut, and after all the work done within the "Beyond Swapping Bits" project we thought it was about time. So we embarked on the writing of an academic paper to formalize the operation of Bitswap and share some of the work done within the project. The result has been a paper whose pre-print is [accessible in IPFS](https://gateway.ipfs.io/ipfs/QmTDxsUf9iV8ja8zNKdv3TwBqU18LF8o5uWhA7srKz3rfd). We have already submitted a version of this paper to a peer-reviewed conference, so stay tuned to check the final version.
 
