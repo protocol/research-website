@@ -46,7 +46,7 @@ If you are a person of action and you want to go straight to the code to start t
 
 The first thing we did in the scope of the project was to evaluate the current status of file-sharing in IPFS and P2P networks overall. We evaluated Bitswap's current performance and soaked up all of the ideas that have been discussed over the years in related [Github issues](https://github.com/ipfs/notes/) around other P2P file-sharing protocols. As a result of this work we made the following early contributions:
 
-- [A report](https://docs.google.com/document/d/14AE8OJvSpkhguq2k1Gfc9h0JvorvLgOUSVrj3CnOkQk/edit\#heading=h.nxkc23tlbqhl)  describing all the related work of file-sharing in IPFS and P2P networks(summarized in these [slides](https://docs.google.com/presentation/d/18\_aRTye2t6Xs\_VhKwEbhvCYYu9ePaLgamIrJkpUDtfY/edit\#slide=id.p)).
+- [A report](https://docs.google.com/document/d/14AE8OJvSpkhguq2k1Gfc9h0JvorvLgOUSVrj3CnOkQk/edit\#heading=h.nxkc23tlbqhl)  describing all the related work of file-sharing in IPFS and P2P networks (summarized in these [slides](https://docs.google.com/presentation/d/18\_aRTye2t6Xs\_VhKwEbhvCYYu9ePaLgamIrJkpUDtfY/edit\#slide=id.p)).
 
 - [A survey](https://docs.google.com/document/d/172q0EQFPDrVrWGt5TiEj2MToTXIor4mP1gCuKv4re5I/edit\#heading=h.nxkc23tlbqhl) of file sharing strategies in P2P networks with a summary of 10 papers that deeply inspired many of the ideas explored throughout this first stage of the project.
 
@@ -55,7 +55,7 @@ The first thing we did in the scope of the project was to evaluate the current s
 **An IPFS Research Toolkit at your disposal**
 =============================================
 
-A huge drag in any research project is assembling the testbed that will enable the researcher to test their ideas. With this in mind, we decided to start building our [IPFS file-sharing Testground-based testbed](https://github.com/protocol/beyond-bitswap/tree/master/testbed/testbed) so that ourwork would be repeatable (and tinker-able) by others.
+A huge drag in any research project is assembling the testbed that will enable the researcher to test their ideas. With this in mind, we decided to start building our [IPFS file-sharing Testground-based testbed](https://github.com/protocol/beyond-bitswap/tree/master/testbed/testbed) so that our work would be repeatable (and tinker-able) by others.
 
 The beyond-bitswap toolkit includes the following core components:
 
@@ -75,7 +75,7 @@ The beyond-bitswap toolkit includes the following core components:
 
 <center>{{< figure src="image2.png" width="700px" caption="Screenshot of the Bitswap Viewer">}}</center>
 
-All of these are available at the [beyond-bitswap repo](REPO URL) and licensed with the Permissive License stack.
+All of these are available at the [beyond-bitswap repo](https://github.com/protocol/beyond-bitswap) and licensed with the Permissive License stack.
 
 **A walk through the RFCs & Future Work**
 =========================================
@@ -100,7 +100,7 @@ We currently have RFCs in three different stages: "brainstorm", meaning the RFC 
 
 Since the inception of the project, we have implemented three and a half prototypes from RFCs (you'll see where that half comes from in a moment):
 
-- **[RFCBBL203A - Use of compression and adjustable block size](https://github.com/protocol/beyond-bitswap/tree/master/RFC/rfcBBL203A):** HTTP already uses compression for file-sharing on the Internet, so why not also use compression for P2P file-sharing? In this RFC we explored the implementation of different compression strategies for file-sharing in IPFS. In the scope of this RFC we evaluated several compression strategies: from compressing only blocks within Bitswap messages or compressing full Bitswap messages, to stream compressing Bitswap and adding compression at a libp2p level. We realized that the best performing alternatives were the Bitswap stream compression or the lib2p transport-level compression strategy. The prototype ended up achieving up to a 75% decrease in bandwidth use when performing an IPFS file exchange. Read this [blog post](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/)to learn more about this RFC.
+- **[RFCBBL203A - Use of compression and adjustable block size](https://github.com/protocol/beyond-bitswap/tree/master/RFC/rfcBBL203A):** HTTP already uses compression for file-sharing on the Internet, so why not also use compression for P2P file-sharing? In this RFC we explored the implementation of different compression strategies for file-sharing in IPFS. In the scope of this RFC we evaluated several compression strategies: from compressing only blocks within Bitswap messages or compressing full Bitswap messages, to stream compressing Bitswap and adding compression at a libp2p level. We realized that the best performing alternatives were the Bitswap stream compression or the lib2p transport-level compression strategy. The prototype ended up achieving up to a 75% decrease in bandwidth use when performing an IPFS file exchange. Read this [blog post ](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/)to learn more about this RFC.
 
 - **[RFCBBL104 - Track WANT messages for future queries](https://github.com/protocol/beyond-bitswap/tree/master/RFC/rfcBBL104):** The next thing we realized is that the current implementation of Bitswap is disregarding some useful information from the operation of the protocol that could be used to perform more efficient content discoveries. In this prototype we gave Bitswap nodes a way to inspect WANT messages from other connected peers to gather knowledge about the content being requested in their surroundings. This information was then used to accelerate content discovery in future queries. We achieved this by introducing an extra component in Bitswap's architecture: the "peer-block registry". The peer-block registry keeps track of the requests that a peer receives and utilises this knowledge to redirect subsequent queries. The prototype achieved a 25% improvement in the time to fetch popular content and a reduction of the number of control messages exchanged in Bitswap by 75%. Everything you need to know about the implementation of this prototype is shared in [this post](https://research.protocol.ai/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers/).
 
