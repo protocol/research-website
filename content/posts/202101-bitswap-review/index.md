@@ -129,9 +129,10 @@ Moreover, the modular design of Bitswap's architecture makes it easily configura
 **The final ribbon: The Bitswap Paper**
 =======================================
 
-==insert screenshot of the preprint==
+![the bitswap paper](paper.png)
 
-Bitswap did not have the opportunity to make its debut in academia yet, but with the excuse of all the work done within the "Beyond Swapping Bits" project we thought it was about time, so we embarked on the writing of an academic paper to formalize the operation of Bitswap and share some of the work done within the project. The result is this paper that you can ==[read here](LINK\_TO\_PAPER)==, and that has been submitted to ==[ADD IFIP VENUE ONCE SUBMITTED]==.
+Bitswap has not yet made its academic debut, and after all the work done within the "Beyond Swapping Bits" project we thought it was about time. So we embarked on the writing of an academic paper to formalize the operation of Bitswap and share some of the work done within the project. The result has been a paper whose pre-print is [accessible in IPFS](https://gateway.ipfs.io/ipfs/QmTDxsUf9iV8ja8zNKdv3TwBqU18LF8o5uWhA7srKz3rfd). We have already submitted a version of this paper to a peer-reviewed conference, so stay tuned to check the final version.
+
 
 **Collaborate with us!**
 ========================
