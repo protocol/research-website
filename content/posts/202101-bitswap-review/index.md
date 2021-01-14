@@ -90,7 +90,7 @@ We have published a total of [10 improvement RFCs](https://github.com/protocol/b
 
 - **Layer 2 - Negotiation and Content Transmission:** Along with the discovery of content, there may optionally be a negotiation phase so that once the content has been discovered its transmission is "formally" requested. This layer implements schemes to negotiate the request of content to the most suitable peers available, as well as the actual transmission of blocks from the network. It negotiates and opens a transmission channel between the requestor node and the provider of the content. In some implementations, this layer may be embedded in layer 1.
 
-We currently have RFCs in three different stages: "brainstorm", meaning the RFC is still in the ideation stage and there are fringes to be solved before it is ready for prototyping; "draft", for the RFCs whose design is ready but no working prototype for it exists yet; and finally, "prototype" for the RFCs with a working prototype. Let's discuss the latter a bit.
+We currently have RFCs in three different stages: "brainstorm", meaning the RFC is still in the ideation stage and there are things to be solved before it is ready for prototyping; "draft", for the RFCs whose design is ready but no working prototype for it exists yet; and finally, "prototype" for the RFCs with a working prototype. Let's discuss the latter a bit.
 
 <center>{{< figure src="image1.png" width="600px" caption="List of RFCs">}}</center>
 
