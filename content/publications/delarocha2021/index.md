@@ -1,10 +1,10 @@
 ---
 # Publication title
-title:
+title: "Accelerating Content Routing with Bitswap: A multi-path file transfer protocol in IPFS and Filecoin"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2014-07-14
+date: 2021-01-14
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -25,25 +25,24 @@ doi:
 # Type of publication
 # delete all but one
 publication_types:
-  - conference-paper
-  - journal-article
+  
   - report
-  - book
-  - book-section
-  - thesis
-  - patent
+  
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  -
+  - alfonso-delarocha
+  - david-dias
+  - yiannis-psaras
 
 # Zero or more of the areas in content/areas
 areas:
-  -
+  - distributed-systems
+  - networking
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  -
+  - resnetlab
 
 # Publications without a PL affiliation can be added to the author's profile without showing up elsewhere
 # If adding one, set this to true *and* do not set an area or group
@@ -72,4 +71,4 @@ unaffiliated: false
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Bitswap   is   a   Block   Exchange   protocol   designed for  P2P  Content  Addressable  Networks.  It  leverages  merkle-linked graphs in order to parallelize retrieval and verify content integrity. Bitswap is being used in the InterPlanetary File System architecture  as  the  main  content  exchange  protocol,  as  well  as in  the  Filecoin  network  as  part  of  the  block  synchronisation protocol. In this work, we present Bitswap’s baseline design and then  apply  several  new  extensions  with  the  goal  of  improving Bitswap’s  efficiency and  efficacy  and  minimizing  its  bandwidth  fingerprint. Most importantly, our extensions result in a substantial increase to the protocol’s content discovery rate. This is achieved by  using  the  wealth  of  information  that  the  protocol  acquires from  the  content  routing  subsystem  to  make  smarter  decisions on  where  to  fetch  the  content  from.
