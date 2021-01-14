@@ -10,7 +10,7 @@ date: 2020-12-09
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: IEEE-TESC 2020
+venue:  IEEE PES Transactive Energy Systems Conference (TESC)
 
 # Venue Location
 venue_location: 
