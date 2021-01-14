@@ -124,15 +124,15 @@ Moreover, the modular design of Bitswap's architecture makes it easily configura
 **The final ribbon: The Bitswap Paper**
 =======================================
 
-<a href="https://gateway.ipfs.io/ipfs/QmTDxsUf9iV8ja8zNKdv3TwBqU18LF8o5uWhA7srKz3rfd"><center>{{< figure src="paper.png" width="700px" caption="The Bitswap preprint">}}</center></a>
+<a href="/../../publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/delarocha2021.pdf"><center>{{< figure src="paper.png" width="700px" caption="The Bitswap preprint">}}</center></a>
 
-Bitswap has not yet made its academic debut, and after all the work done within the "Beyond Swapping Bits" project we thought it was about time. So we embarked on the writing of an academic paper to formalize the operation of Bitswap and share some of the work done within the project. The result has been a paper whose pre-print is [accessible in IPFS](https://gateway.ipfs.io/ipfs/QmTDxsUf9iV8ja8zNKdv3TwBqU18LF8o5uWhA7srKz3rfd). We have already submitted a version of this paper to a peer-reviewed conference, so stay tuned to check the final version.
+Bitswap has not yet made its academic debut, and after all the work done within the "Beyond Swapping Bits" project we thought it was about time. So we embarked on the writing of an academic paper to formalize the operation of Bitswap and share some of the work done within the project. The result has been a [paper](/../../publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/delarocha2021.pdf) (pre-print also accessible [via IPFS](https://gateway.ipfs.io/ipfs/QmTDxsUf9iV8ja8zNKdv3TwBqU18LF8o5uWhA7srKz3rfd). We have already submitted a version of this paper to a peer-reviewed conference, so stay tuned to check the final version.
 
 
 **Collaborate with us!**
 ========================
 
-**>> The Resilient Networks Lab mission is to build resilient distributed systems, by creating and operating a platform where researchers can collaborate openly and asynchronously on deep technical work.**
+**>> The Resilient Networks Lab mission is to build resilient distributed systems by creating and operating a platform where researchers can collaborate openly and asynchronously on deep technical work.**
 
 ResNetLab collaborates with over 10 research groups all over the world, and Protocol Labs Research has developed dozens of research collaborations over the last few years. We are always eager to collaborate with more researchers in all kinds of capacites, from thesis projects (M.Sc or PhD), to postdoctoral research, and through grants, RFPs, and independent research projects.
 
