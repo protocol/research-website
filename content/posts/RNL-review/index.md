@@ -76,7 +76,7 @@ Read more about:
 
 #### Drand, League of Entropy and the Randomness Summit
 
-The world needed a dependable and  [unbiasable source of randomness](https://www.coindesk.com/randomness-internet-age) which other platforms and applications publicly verify. Randomness is at the core of many of the security-critical operations we perform online  every day, and until 2020, there wasn't a single reliable and trustworthy source. That chaged in 2020.
+The world needed a dependable and  [unbiasable source of randomness](https://www.coindesk.com/randomness-internet-age) which other platforms and applications publicly verify. Randomness is at the core of many of the security-critical operations we perform online  every day, and until 2020, there wasn't a single reliable and trustworthy source. That changed in 2020.
 
 We selected the drand protocol and made it production grade, and the results are astonishing. Now with a live deployment hosted by more than 15 independent League of Entropy Partners, drand is available for any project that needs randomness. Learn all about it at the [launch post](https://drand.love/blog/2020/08/10/drand-launches-v1-0/).
 
@@ -86,7 +86,7 @@ To celebrate, we organized a virtual conference with ETHGlobal, world experts at
 
 ResNetLab was on deck to launch Filecoin for multiple months with the whole Protocol Labs team. We had the opportunity to contribute to protocol review, implementation, infrastructure deployment, and monitoring. If you want to dive deep and learn about Filecoin, we welcome you to review all the amazing talks from [liftoff week](https://liftoff.filecoin.io/).
 
-We shipped a new version of the Filecoin specification and website, making Filecoin a much more welcoming project for implementers, builders and researchers. Find the launch post [here](https://filecoin.io/blog/filecoin-spec-update/) and the full spec website at [spec.filecoin.io](https://spec.filecoin.io/).
+We shipped a new version of the Filecoin specification and website, making Filecoin a much more welcoming project for implementers, builders, and researchers. Find the launch post [here](https://filecoin.io/blog/filecoin-spec-update/) and the full spec website at [spec.filecoin.io](https://spec.filecoin.io/).
 
 #### Drive IPFS file-transfer speedups - Beyond swapping bits
 
@@ -112,7 +112,7 @@ We have built a half-day tutorial to introduce the DWeb, the IPFS ecosystem, the
 
 The tutorial is primarily composed of lecture material and many of our tutorials have been very interactive. In 2021, we are enhancing the tutorial with hands-on sessions, so that it becomes more exciting for students and researchers with a passion to tinker as they learn.
 
-In the links below, you will find the blogosts describing the events we participated in. If you want us to speak to your lab or event, give us a [shout](resnetlab\@protocol.ai)! We will be honoured!
+In the links below, you will find the blogosts describing the events we participated in. If you want us to speak to your lab or event, give us a [shout](resnetlab\@protocol.ai)! We will be honored!
 
 - March 2020: [NDN Project Consortium](https://research.protocol.ai/blog/2020/ndn-seminar-a-high-level-overview-of-the-interplanetary-file-system/)
 
@@ -158,7 +158,7 @@ Although this round of RFPs has closed, we have more in the works for the second
 
 #### Spontaneous collaborations
 
-We're open to collaborating beyond the RFP structure and are always available for spontaneous reach outs. It has been really great to work in an informal capacity with a variety of labs and these collaborations have yielded some really valuable results. Such as:
+We're open to collaborating beyond the RFP structure and are always available for spontaneous reach outs. It has been really great to work with a variety of labs in an informal capacity, and these collaborations have yielded some really valuable results, including:
 
 - A crawler of the IPFS network and a public service for monitoring network by the [Weizenbaum-Institute](https://www.weizenbaum-institut.de/en/research/rg17/):
 
@@ -166,13 +166,13 @@ We're open to collaborating beyond the RFP structure and are always available fo
 
   - [Live Monitoring](http://78.47.197.225/index.html)
 
-- A series of vulnerabilities of the IPFS DHT and respective mitigations from the Technical University of Graz, which has made the IPFS DHT orders of magnitude more resilient.
+- A series of vulnerabilities of the IPFS DHT and respective mitigations from the Technical University of Graz, which has made the IPFS DHT orders of magnitude more resilient:
 
   - [Report](https://blog.ipfs.io/2020-10-30-dht-hardening/)
 
   - [Paper](https://graz.pure.elsevier.com/en/publications/total-eclipse-of-the-heart-disrupting-the-interplanetary-file-sys)
 
-- A new PubSub routing algorithm, named PulsarCast, from INESC-ID Lisboa, at University of Lisbon.
+- A new PubSub routing algorithm, named PulsarCast, from INESC-ID Lisboa, at University of Lisbon:
 
   - [Presentation](https://www.youtube.com/watch?v=pP0fS-FCsjE)
 
@@ -182,9 +182,9 @@ We're open to collaborating beyond the RFP structure and are always available fo
 
 ## 🧘🏽‍♀️ Reflection
 
-It goes without saying that 2020 has been an incredibly strange and challenging year by multiple definitions. Now we all know by first hand experience what the impact of a pandemic on humanity can have when it reaches global scale and nations are not prepared. We believe that it is of utmost importance that we keep building resiliency in our society, just our information systems, create and improve on existing governing and decision making structures in order to distribute knowledge gathered faster, so that we can better prepare ourselves and react to future challenges.
+It goes without saying that 2020 has been an incredibly strange and challenging year by multiple definitions. Now we have experienced what the impact of a global-scale pandemic can be when we are caught unprepared. We believe that it is of utmost importance to continue building resiliency into our society -- not just our information systems -- and to create and improve upon existing governing and decision-making structures in order to rapidly distribute knowledge so that we are better prepared to react to future challenges.
 
-We, the ResNetLab, will continue to focus on doing what we do best, building resiliency into the fabric of distributed systems through open collaboration. Our mission is:
+We at ResNetLab will continue to focus on doing what we do best: building resiliency into the fabric of distributed systems through open collaboration. Our mission is:
 
 The Resilient Networks Lab mission is to build resilient distributed systems, by creating and operating a platform where researchers can collaborate openly and asynchronously on deep technical work.
 
@@ -200,7 +200,7 @@ Through the year, we've identified and catalogued what are still some significan
 
 Overcoming these challenges will require novel solutions that undergo rigorous testing and review by multiple experts in order to ensure that no potential gap is missed.
 
-**At the ResNetLab, we developed a culture of rigorous evaluation of our hypothesis**, creating the infrastructure necessary to get accurate answers. In 2021, we will continue investing in accelerating the pipeline of pushing ideas from research to deployment. Some of the initiatives that we took on in 2020 and we seek to continue pursuing in 2021, as they proved to be of high value to the research ecosystem and respective deployments, are:
+**At the ResNetLab, we developed a culture of rigorous evaluation of our hypotheses**, creating the infrastructure necessary to get accurate answers. In 2021, we will continue investing in accelerating the pipeline of pushing ideas from research to deployment. Some of the initiatives that we took on in 2020 and we seek to continue pursuing in 2021, as they proved to be of high value to the research ecosystem and respective deployments, are:
 
 1. Ensuring that the work produced is published in the form of papers (e.g. [1](https://arxiv.org/abs/2007.02754), [2](https://gateway.ipfs.io/ipfs/QmRAFP5DBnvNjdYSbWhEhVRJJDFCLpPyvew5GwCCB4VxM4), [3](https://github.com/JGAntunes/pulsarcast/blob/master/paper/paper.pdf), ), lectures ([1](https://randomness2020.com/), [2](https://www.youtube.com/watch?v=APVp-20ATLk&feature=youtu.be&t=3612), [3](https://www.youtube.com/watch?v=pP0fS-FCsjE), [4](https://www.youtube.com/watch?v=paWmKqi8MZk), [5](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view), [6](https://www.youtube.com/watch?v=D2UKQPKMjr4&list=PLhuBigpl7lqu6xWpiXtbEzJQtlMH1tqoG&index=16), [7](https://www.youtube.com/watch?v=Jy5__VuwZC0), [8](https://www.youtube.com/watch?v=K4Usud4g4iY&feature=youtu.be&t=1008)), posts ([1](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/), [2](https://research.protocol.ai/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers/), [3](https://research.protocol.ai/blog/2020/teaching-bitswap-nodes-to-jump/), [4](https://research.protocol.ai/blog/2021/our-bitswap-nodes-have-become-jumping-inspectors-updated/), [5](https://research.protocol.ai/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains/)), and more.
 
