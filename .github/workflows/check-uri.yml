@@ -8,6 +8,6 @@ jobs:
     name: Check internal links
     steps:
     - name: Scan for research.protocol.ai occurrences
-      uses: jsoares/github-pr-contains-action@latest
+      uses: jsoares/github-pr-contains-action@5f4384e
       with:
         diffDoesNotContain: 'research.protocol.ai'
