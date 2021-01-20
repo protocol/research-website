@@ -6,7 +6,7 @@ title: "ResNetLab 2020 in review: how it all happened"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-01-19
+date: 2021-01-20
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
