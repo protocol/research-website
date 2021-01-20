@@ -112,7 +112,7 @@ We have built a half-day tutorial to introduce the DWeb, the IPFS ecosystem, the
 
 The tutorial is primarily composed of lecture material, and many of our tutorials have been very interactive. In 2021, we are enhancing the tutorial with hands-on sessions, so it will be even more exciting for students and researchers with a passion to tinker as they learn.
 
-In the links below, you will find the blogosts describing the events we participated in. If you want us to speak to your lab or event, give us a [shout](resnetlab@protocol.ai)! We will be honored!
+In the links below, you will find the blogosts describing the events we participated in. If you want us to speak to your lab or event, give us a [shout](mailto:resnetlab@protocol.ai)! We will be honored!
 
 - March 2020: [NDN Project Consortium](https://research.protocol.ai/blog/2020/ndn-seminar-a-high-level-overview-of-the-interplanetary-file-system/)
 
