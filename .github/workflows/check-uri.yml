@@ -1,0 +1,12 @@
+name: "Check internal links"
+
+on: [pull_request]
+
+jobs:
+  check_pr:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check internal links
+      uses: shayfrendt/github-pr-contains-action@911ef71
+      with:
+        diffDoesNotContain: 'research.protocol.ai'
