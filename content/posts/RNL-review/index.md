@@ -68,7 +68,7 @@ Together with the libp2p team, we embarked on a mission to harden the protocol's
 
 Learn more about:
 
-- The features of Gossipsub-v1.1 in this [blogpost](https://research.protocol.ai/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains) and this [paper](https://research.protocol.ai/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/vyzovitis2020a.pdf)
+- The features of Gossipsub-v1.1 in this [blogpost](https://research.protocol.ai/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains) and this [paper](https://research.protocol.ai/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/)
 
 - The protocol's exhaustive testing with dozens of test scenarios and hundreds of experimental runs on our Testground-based AWS VM-testbed in this [Performance Evaluation Report](https://research.protocol.ai/publications/gossipsub-v1.1-evaluation-report/).
 
@@ -234,4 +234,3 @@ The ResNetLab Team -- David Dias, Yiannis Psaras, Alfonso de la Rocha
 
 <center style=font-size:11pt><i> We are always open to further discussion on our research topics and welcome opportunities to answer questions and develop collaborations. Join the discussion at <a href
 ="https://discuss.ipfs.io"> the IPFS Forum</a> or reach out via email (<a href="mailto:research@protocol.ai">research\@protocol.ai</a>). The <a href="https://docs.ipfs.io">IPFS</a>, <a href="https://docs.libp2p.io">libp2p</a>, and <a href="https://docs.filecoin.io">Filecoin</a> documentation sites and <a href="https://proto.school"> ProtoSchool's</a> interactive tutorials are a good starting point for exploration of these topics.</i></center>
-
