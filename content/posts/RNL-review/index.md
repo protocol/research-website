@@ -92,7 +92,7 @@ We shipped a new version of the Filecoin specification and website, making Filec
 
 We set ourselves the challenge of exploring ways to make IPFS blazing fast. This was the inception of the ["Beyond Swapping Bits" project](https://github.com/protocol/beyond-bitswap), whose main goal was straightforward: driving speed-ups to file-transfer in IPFS.
 
-In less than four months, we've achieved some phenomenal contributions to Bitswap and set the [groundwork](https://research.protocol.ai/blog/2021/beyond-swapping-bits-project-review-and-preview/) for other researchers and teams to build upon our work. A few highlights of the **Beyond Bitswap** project are:
+In less than four months, we've achieved some phenomenal contributions to Bitswap and set the [groundwork](/blog/2021/beyond-swapping-bits-project-review-and-preview/) for other researchers and teams to build upon our work. A few highlights of the **Beyond Bitswap** project are:
 
 - [A list of 10 RFCs](https://github.com/protocol/beyond-bitswap#enhancement-rfcs) with potential ways of improving file-transfer speeds in IPFS and P2P networks.
 
