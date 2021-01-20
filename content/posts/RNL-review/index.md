@@ -204,7 +204,7 @@ Overcoming these challenges requires novel solutions that undergo rigorous testi
 
 2. Continuing to make research repeatable and measurable from the start, by crafting an evaluation plan and delivering the evaluation. Two great examples are:
 
-    - [Evaluation & Report for GossipSub](https://gateway.ipfs.io/ipfs/QmPWuNBs8h6a8KamRvGqhTq5UDYJRQsEEy37zDKjujQQQm/Gossipsub%20Evaluation%20Report.pdf)
+    - [Evaluation & Report for GossipSub](/publications/gossipsub-v1.1-evaluation-report/)
 
     - [Beyond Bitswap](https://github.com/protocol/beyond-bitswap) and the [Testing Harness](https://github.com/protocol/beyond-bitswap/tree/master/testbed)
 
