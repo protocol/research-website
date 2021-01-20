@@ -114,17 +114,17 @@ The tutorial is primarily composed of lecture material, and many of our tutorial
 
 In the links below, you will find the blogosts describing the events we participated in. If you want us to speak to your lab or event, give us a [shout](mailto:resnetlab@protocol.ai)! We will be honored!
 
-- March 2020: [NDN Project Consortium](https://research.protocol.ai/blog/2020/ndn-seminar-a-high-level-overview-of-the-interplanetary-file-system/)
+- March 2020: [NDN Project Consortium](/blog/2020/ndn-seminar-a-high-level-overview-of-the-interplanetary-file-system/)
 
-- April 2020: [IRTF DINRG](https://research.protocol.ai/blog/2020/ipfs-talk-at-the-irtf-decentralised-internet-infrastructure-research-group-meeting)
+- April 2020: [IRTF DINRG](/blog/2020/ipfs-talk-at-the-irtf-decentralised-internet-infrastructure-research-group-meeting)
 
-- May 2020: [IEEE ICBC](https://research.protocol.ai/blog/2020/ieee-icbc-2020-the-interplanetary-file-system-and-the-filecoin-network/)
+- May 2020: [IEEE ICBC](/blog/2020/ieee-icbc-2020-the-interplanetary-file-system-and-the-filecoin-network/)
 
-- May 2020: [NGN Group](https://research.protocol.ai/blog/2020/next-generation-networks-ngn-group-talk-a-high-level-overview-of-the-interplanetary-file-system/)
+- May 2020: [NGN Group](/blog/2020/next-generation-networks-ngn-group-talk-a-high-level-overview-of-the-interplanetary-file-system/)
 
-- July 2020: [IFIP/IEEE DSN](https://research.protocol.ai/blog/2020/ieee/ifip-dsn-2020-the-interplanetary-file-system-and-the-filecoin-network/)
+- July 2020: [IFIP/IEEE DSN](/blog/2020/ieee/ifip-dsn-2020-the-interplanetary-file-system-and-the-filecoin-network/)
 
-- November 2020: [CNSM](https://research.protocol.ai/blog/2020/ieee/ifip-cnsm-2020-the-interplanetary-file-system-and-the-filecoin-network/)
+- November 2020: [CNSM](/blog/2020/ieee/ifip-cnsm-2020-the-interplanetary-file-system-and-the-filecoin-network/)
 
 - December 2020: IEEE Globecom (blog post coming soon)
 
