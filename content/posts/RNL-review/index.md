@@ -100,7 +100,7 @@ In less than four months, we've achieved some phenomenal contributions to Bitswa
 
 - Prototypes for 3 of the RFCs with an [extensive (and repeatable evaluation)](https://github.com/protocol/beyond-bitswap/tree/master/RFC). Our prototypes have ranged from the use of compression in Bitswap and libp2p to achieve bandwidth savings of up to 75% compared to the baseline, to the use of a TTL field in Bitswap messages and the inspection of requests to increase Bitswap's range of discovery and file transfer speed by up to a 20%.
 
-- The [publication of an academic paper](https://research.protocol.ai/publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/) presenting Bitswap as a content routing system's accelerator and desccribing many of the contributions of the project.
+- The [publication of an academic paper](/publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/) presenting Bitswap as a content routing system's accelerator and desccribing many of the contributions of the project.
 
 ### 🎫 Events
 
