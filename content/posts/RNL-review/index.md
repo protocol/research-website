@@ -68,7 +68,7 @@ Together with the libp2p team, we embarked on a mission to harden the protocol's
 
 Learn more about:
 
-- The features of Gossipsub-v1.1 in this [blogpost](https://research.protocol.ai/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains) and this [paper](https://research.protocol.ai/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/)
+- The features of Gossipsub-v1.1 in this [blogpost](/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains) and this [paper](/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/)
 
 - The protocol's exhaustive testing with dozens of test scenarios and hundreds of experimental runs on our Testground-based AWS VM-testbed in this [Performance Evaluation Report](/publications/gossipsub-v1.1-evaluation-report/).
 
