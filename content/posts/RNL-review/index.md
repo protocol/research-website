@@ -204,7 +204,7 @@ Overcoming these challenges requires novel solutions that undergo rigorous testi
   - **papers**, such as: 
       - [the Gossipsub paper](/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/)
       - [Gossipsub's performance evaluation report](/publications/gossipsub-v1.1-evaluation-report/)
-      - [the Pulsarcast paper](https://github.com/JGAntunes/pulsarcast/blob/master/paper/paper.pdf) )
+      - [the Pulsarcast paper](https://github.com/JGAntunes/pulsarcast/blob/master/paper/paper.pdf) 
   - **presentations**,  including:
       - [the Randomness Summit](https://randomness2020.com/)
       - [an invited lecture on Gossipsub](https://www.youtube.com/watch?v=APVp-20ATLk&feature=youtu.be&t=3612) at the Matrix meetup
@@ -222,20 +222,19 @@ Overcoming these challenges requires novel solutions that undergo rigorous testi
       - and this [high-level description](/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains/) of Gossipsub's hardening features     
 
 2. Continuing to make research repeatable and measurable from the start, by crafting an evaluation plan and delivering the evaluation. Two great examples are:
+  - [Evaluation & Report for GossipSub](/publications/gossipsub-v1.1-evaluation-report/)
 
-    - [Evaluation & Report for GossipSub](/publications/gossipsub-v1.1-evaluation-report/)
-
-    - [Beyond Bitswap](https://github.com/protocol/beyond-bitswap) and the [Testing Harness](https://github.com/protocol/beyond-bitswap/tree/master/testbed)
+  - [Beyond Bitswap](https://github.com/protocol/beyond-bitswap) and the [Testing Harness](https://github.com/protocol/beyond-bitswap/tree/master/testbed)
 
 3. Continuing to make all code available under the [Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/), enabling others to learn from it and build on top of it.
 
-4. Supporting academic research through our multiple collaborations by providing infrastructure for testing hypotheses and publishing the results. A good example are the results published by the [DHT Hardening collaboration](https://blog.ipfs.io/2020-10-30-dht-hardening/).
+4. Supporting academic research through our multiple collaborations by providing infrastructure for testing hypotheses and publishing the results.The results published by the [DHT Hardening collaboration](https://blog.ipfs.io/2020-10-30-dht-hardening/) illustrate the beneficial outcomes of supporting these collaborations.
 
 ## 🔭 Looking forward
 
 Our foci for the first half of 2021 will be **Decentralized Data Delivery Markets (3DM)** and **Networking in Heterogeneous Runtimes (NHR)**. Both of these areas are ripe for new research and significant leaps forward.
 
-With the successful launch of the Filecoin network, there is a unique opportunity to make a significant contribution to the content delivery networks research area by combining it with decentralization and an open market. We believe that there is space for creating a highly-efficient auction setup optimised towards rapid decentralized data delivery, just like [it exists for electricity](https://en.wikipedia.org/wiki/Electricity_market#Wholesale_electricity_market). The core challenge is not product or UX, but technical: the metering of network usage so that a fair and verifiable trade can happen. Once this primary obstacle is out of the way, it is then a matter of optimising the resource utilisation of the network with better routing approaches. Although the sub-topics of the larger problem have been investigated in different research fields in the past, *decentralized content delivery networks through built-in incentives* have never been built before. We are very excited to have the opportunity to design and develop the first 3DM of its kind!
+With the successful launch of the Filecoin network, there is a unique opportunity to make a significant contribution to the content delivery networks research area by combining it with decentralization and an open market. We believe that there is space for creating a highly-efficient auction setup optimised towards rapid decentralized data delivery, just like [it exists for electricity](https://en.wikipedia.org/wiki/Electricity_market#Wholesale_electricity_market). The core challenge is not product or UX, but technical: the metering of network usage so that a fair and verifiable trade can happen. Once this primary obstacle is out of the way, it is then a matter of optimising the resource utilization of the network with better routing approaches. Although the sub-topics of the larger problem have been investigated in different research fields in the past, *decentralized content delivery networks through built-in incentives* have never been built before. We are very excited to have the opportunity to design and develop the first 3DM of its kind!
 
 As for Networking in Heterogeneous Runtimes, we believe that IoT, VR, Mobile, VANETs and all sorts of embedded devices are here to stay, and that we are on the verge of setting the course of history by making P2P a first-class citizen of those runtimes. We want to work with integrators and leaders building the stacks for these different runtimes and explore ways to integrate libp2p, the P2P stack.
 
@@ -243,7 +242,7 @@ We will be publishing our progress on this blog. Meanwhile, you can consult our 
 
 If you find either or both of these areas fascinating, have a deep passion for decentralization, and you don't shy from large challenges, **consider joining and/or collaborating with us by applying for an [open position](https://jobs.lever.co/protocol?department=Research) or a spontaneous [RFP](https://protocollabs.smapply.io/)**.
 
-Once more, we want to thank all those that have followed and supported our work. We look forward to all the future collaborators and the results we will be producing together.
+Once more, we want to thank all those that have followed and supported our work. We look forward to all of our future collaborations and the results we will be producing together.
 
 We bid you all a great 2021,
 
