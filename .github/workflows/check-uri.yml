@@ -1,12 +1,13 @@
-name: "Check internal links"
+name: Check PR text
 
 on: [pull_request]
 
 jobs:
   check_pr:
     runs-on: ubuntu-latest
+    name: Check internal links
     steps:
-    - name: Check internal links
-      uses: shayfrendt/github-pr-contains-action@911ef71
+    - name: Scan for research.protocol.ai occurrences
+      uses: jsoares/github-pr-contains-action@911ef71
       with:
         diffDoesNotContain: 'research.protocol.ai'
