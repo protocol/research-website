@@ -206,13 +206,13 @@ Overcoming these challenges requires novel solutions that undergo rigorous testi
       - [Gossipsub's performance evaluation report](/publications/gossipsub-v1.1-evaluation-report/)
       - [the Pulsarcast paper](https://github.com/JGAntunes/pulsarcast/blob/master/paper/paper.pdf) )
   - **presentations**,  including:
-      - [the Randomness Summit](https://randomness2020.com/
+      - [the Randomness Summit](https://randomness2020.com/)
       - [an invited lecture on Gossipsub](https://www.youtube.com/watch?v=APVp-20ATLk&feature=youtu.be&t=3612) at the Matrix meetup
       - [showcasing our test setup for P2P networks](https://www.youtube.com/watch?v=pP0fS-FCsjE)
       - [Gossipsub at the Filecoin Liftoff week](https://www.youtube.com/watch?v=paWmKqi8MZk)
       - [our IPFS, libp2p tutorial](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view) at the IEEE ICBC'20 conference
       - [Pulsarcast in action](https://www.youtube.com/watch?v=D2UKQPKMjr4&list=PLhuBigpl7lqu6xWpiXtbEzJQtlMH1tqoG&index=16)
-      - [a seminar on IPFS] (https://www.youtube.com/watch?v=Jy5__VuwZC0) presented at the NDN project consortium
+      - [a seminar on IPFS](https://www.youtube.com/watch?v=Jy5__VuwZC0) presented at the NDN project consortium
       - [a introductory presentation on IPFS](https://www.youtube.com/watch?v=K4Usud4g4iY&feature=youtu.be&t=1008) at the IRTF DINRG Group
   - and **posts**, like these on:
       - [Bitswap compression](/blog/2020/honey-i-shrunk-our-libp2p-streams/)
