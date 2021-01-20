@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "ResNetLab 2020 in review: how it all happened"
+title: "ResNetLab 2020 in review: we love it when a plan comes together"
 
 
 
@@ -188,7 +188,7 @@ We at ResNetLab will continue to focus on doing what we do best: building resili
 
 Throughout the year, we've identified and catalogued what are still some significant [Open Problems](https://github.com/protocol/ResNetLab/tree/master/OPEN_PROBLEMS) in the space that need to be solved in order to unblock a whole new set of users and applications to join the Distributed Web. These include:
 
-- Achieving [full privacy-preserving primitives](https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PRESERVE_USER_PRIVACY.md) that do not leak important information and/or users intent through side-channel attacks.
+- Achieving [full privacy-preserving primitives](https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PRESERVE_USER_PRIVACY.md) that do not leak important information and/or user intent through side-channel attacks.
 
 - [Scaling Content Routing to billions of users](https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ROUTING_AT_SCALE.md) in order to support the rapid adoption of the Internet by the world's population and the even fastest growing number of devices per person.
 
@@ -200,31 +200,49 @@ Overcoming these challenges requires novel solutions that undergo rigorous testi
 
 **At ResNetLab, we developed a culture of rigorous evaluation of our hypotheses**, creating the infrastructure necessary to get accurate answers. In 2021, we will continue to investigate how to accelerate the pipeline that pushes ideas from research to deployment. Some of the initiatives that we took on in 2020 and we seek to continue pursuing in 2021, as they proved to be of high value to the research ecosystem and respective deployments, are:
 
-1. Ensuring that the work produced is published in the form of 
-  - **papers**, such as: 
-      - [the Gossipsub paper](/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/)
-      - [Gossipsub's performance evaluation report](/publications/gossipsub-v1.1-evaluation-report/)
-      - [the Pulsarcast paper](https://github.com/JGAntunes/pulsarcast/blob/master/paper/paper.pdf) 
-  - **presentations**,  including:
-      - [the Randomness Summit](https://randomness2020.com/)
-      - [an invited lecture on Gossipsub](https://www.youtube.com/watch?v=APVp-20ATLk&feature=youtu.be&t=3612) at the Matrix meetup
-      - [showcasing our test setup for P2P networks](https://www.youtube.com/watch?v=pP0fS-FCsjE)
-      - [Gossipsub at the Filecoin Liftoff week](https://www.youtube.com/watch?v=paWmKqi8MZk)
-      - [our IPFS, libp2p tutorial](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view) at the IEEE ICBC'20 conference
-      - [Pulsarcast in action](https://www.youtube.com/watch?v=D2UKQPKMjr4&list=PLhuBigpl7lqu6xWpiXtbEzJQtlMH1tqoG&index=16)
-      - [a seminar on IPFS](https://www.youtube.com/watch?v=Jy5__VuwZC0) presented at the NDN project consortium
-      - [a introductory presentation on IPFS](https://www.youtube.com/watch?v=K4Usud4g4iY&feature=youtu.be&t=1008) at the IRTF DINRG Group
-  - and **posts**, like these on:
-      - [Bitswap compression](/blog/2020/honey-i-shrunk-our-libp2p-streams/)
-      - [Bitswap WANT message inspection](/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers/)
-      - [Bitswap TTL extension](/blog/2020/teaching-bitswap-nodes-to-jump/)
-      - [Bitswap combined improvements](/blog/2021/our-bitswap-nodes-have-become-jumping-inspectors-updated/)
-      - and this [high-level description](/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains/) of Gossipsub's hardening features     
+1. Ensuring that the work produced is published in the form of
+
+- **papers**, such as:
+  - [the Gossipsub paper](/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/)
+
+  - [Gossipsub's performance evaluation report](/publications/gossipsub-v1.1-evaluation-report/)
+
+  - [the Pulsarcast paper](https://github.com/JGAntunes/pulsarcast/blob/master/paper/paper.pdf)
+
+- **presentations**, including:
+  - a variety of public talks at the [Randomness Summit](https://randomness2020.com/)
+
+  - [an invited lecture on Gossipsub](https://www.youtube.com/watch?v=APVp-20ATLk&feature=youtu.be&t=3612) at the Matrix meetup
+
+  - [a showcase of our test setup for P2P networks](https://www.youtube.com/watch?v=pP0fS-FCsjE) at the IPFS weekly call
+
+  - [an introduction to Gossipsub](https://www.youtube.com/watch?v=paWmKqi8MZk) at Filecoin Liftoff week
+
+  - [our IPFS, libp2p tutorial](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view) at the IEEE ICBC'20 conference
+
+  - [Pulsarcast in action](https://www.youtube.com/watch?v=D2UKQPKMjr4&list=PLhuBigpl7lqu6xWpiXtbEzJQtlMH1tqoG&index=16) at the PL Research Seminar
+
+  - [a seminar on IPFS](https://www.youtube.com/watch?v=Jy5__VuwZC0) for the NDN project consortium
+
+  - [an introductory presentation on IPFS](https://www.youtube.com/watch?v=K4Usud4g4iY&feature=youtu.be&t=1008) for the IRTF DINRG Group
+
+- and **posts**, like these on:
+
+  - [Bitswap compression](/blog/2020/honey-i-shrunk-our-libp2p-streams/)
+
+  - [Bitswap WANT message inspection](/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers/)
+
+  - [Bitswap TTL extension](/blog/2020/teaching-bitswap-nodes-to-jump/)
+
+  - [Bitswap combined improvements](/blog/2021/our-bitswap-nodes-have-become-jumping-inspectors-updated/)
+
+  - and this [high-level description](/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains/) of Gossipsub's hardening features.
 
 2. Continuing to make research repeatable and measurable from the start, by crafting an evaluation plan and delivering the evaluation. Two great examples are:
-  - [Evaluation & Report for GossipSub](/publications/gossipsub-v1.1-evaluation-report/)
 
-  - [Beyond Bitswap](https://github.com/protocol/beyond-bitswap) and the [Testing Harness](https://github.com/protocol/beyond-bitswap/tree/master/testbed)
+- the [Evaluation & Report for GossipSub](/publications/gossipsub-v1.1-evaluation-report/)
+
+- [Beyond Bitswap](https://github.com/protocol/beyond-bitswap) and the [Testing Harness](https://github.com/protocol/beyond-bitswap/tree/master/testbed)
 
 3. Continuing to make all code available under the [Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/), enabling others to learn from it and build on top of it.
 
