@@ -222,7 +222,7 @@ As for Networking in Heterogeneous Runtimes, we believe that IoT, VR, Mobile, VA
 
 We will be publishing our progress on this blog. Meanwhile, you can consult our [new Open Problem for NHR](https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/HETEROGENEOUS_RUNTIMES.md).
 
-If you find either or both of these areas fascinating, have a deep passion for decentralisation, and you don't shy from large challenges, **consider joining and/or collaborating with us by applying for an [open position](https://jobs.lever.co/protocol/f39f7fe0-1805-40d2-9453-90fd25c72bc3) or a spontaneous [RFP](https://protocollabs.smapply.io/)**.
+If you find either or both of these areas fascinating, have a deep passion for decentralisation, and you don't shy from large challenges, **consider joining and/or collaborating with us by applying for an [open position](https://jobs.lever.co/protocol?department=Research) or a spontaneous [RFP](https://protocollabs.smapply.io/)**.
 
 Once more, we want to thank all those that have followed and supported our work. We look forward to all the future collaborators and the results we will be producing together.
 
