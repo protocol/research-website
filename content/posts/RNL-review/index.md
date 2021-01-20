@@ -152,7 +152,7 @@ At ResNetLab we love to work with bright teams and individuals to solve some of 
 
 - [Dr. Hidehiro Kanemitsu](https://www.teu.ac.jp/grad/english/teacher/cs\_spc/index.html?id=45) and [Prof. Hidenori Nakazato](https://waseda.pure.elsevier.com/en/persons/hidenori-nakazato) and their teams at the [Tokyo University of Technology](https://www.teu.ac.jp/english/index.html) and [Waseda University](https://www.waseda.jp/top/en/), respectively.
 
-You can read more details about the recipients of our first round of grants [here](https://research.protocol.ai/blog/2020/meet-the-latest-protocol-labs-research-grant-recipients/).
+You can read more details about the recipients of our first round of grants [here](/blog/2020/meet-the-latest-protocol-labs-research-grant-recipients/).
 
 Although this round of RFPs has closed, we have more in the works for the second quarter of 2021, so [subscribe to our mailing list](http://eepurl.com/gNraX5), or reach out if you have ideas for collaboration. [RFP-0](https://grants.protocol.ai/prog/rfp-0) is always open to accept proposals.
 
