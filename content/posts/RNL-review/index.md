@@ -200,7 +200,26 @@ Overcoming these challenges requires novel solutions that undergo rigorous testi
 
 **At ResNetLab, we developed a culture of rigorous evaluation of our hypotheses**, creating the infrastructure necessary to get accurate answers. In 2021, we will continue to investigate how to accelerate the pipeline that pushes ideas from research to deployment. Some of the initiatives that we took on in 2020 and we seek to continue pursuing in 2021, as they proved to be of high value to the research ecosystem and respective deployments, are:
 
-1. Ensuring that the work produced is published in the form of **papers** (e.g. [the Gossipsub paper](/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/), [Gossipsub's performance evaluation report](/publications/gossipsub-v1.1-evaluation-report/), [the Pulsarcast](https://github.com/JGAntunes/pulsarcast/blob/master/paper/paper.pdf) ), **lectures** ([the Randomness Summit](https://randomness2020.com/), [an invited lecture on Gossipsub at the Matrix meetup](https://www.youtube.com/watch?v=APVp-20ATLk&feature=youtu.be&t=3612), [showcasing our test setup for P2P networks](https://www.youtube.com/watch?v=pP0fS-FCsjE), [Gossipsub at the Filecoin Liftoff week](https://www.youtube.com/watch?v=paWmKqi8MZk), [our IPFS, libp2p tutorial at the IEEE ICBC'20 conference](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view), [Pulsarcast in action](https://www.youtube.com/watch?v=D2UKQPKMjr4&list=PLhuBigpl7lqu6xWpiXtbEzJQtlMH1tqoG&index=16), [a seminar on IPFS presented at the NDN project consortium](https://www.youtube.com/watch?v=Jy5__VuwZC0), [a introductory presentation on IPFS at the IRTF DINRG Group](https://www.youtube.com/watch?v=K4Usud4g4iY&feature=youtu.be&t=1008)), **posts** (on [Bitswap compression](/blog/2020/honey-i-shrunk-our-libp2p-streams/), [Bitswap WANT message inspection](/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers/), [Bitswap TTL extension](/blog/2020/teaching-bitswap-nodes-to-jump/), [Bitswap combined improvements](/blog/2021/our-bitswap-nodes-have-become-jumping-inspectors-updated/), and [a high-level description of Gossipsub's hardening features](/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains/)), and more.
+1. Ensuring that the work produced is published in the form of 
+  - **papers**, such as: 
+      - [the Gossipsub paper](/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/)
+      - [Gossipsub's performance evaluation report](/publications/gossipsub-v1.1-evaluation-report/)
+      - [the Pulsarcast paper](https://github.com/JGAntunes/pulsarcast/blob/master/paper/paper.pdf) )
+  - **presentations**,  including:
+      - [the Randomness Summit](https://randomness2020.com/
+      - [an invited lecture on Gossipsub](https://www.youtube.com/watch?v=APVp-20ATLk&feature=youtu.be&t=3612) at the Matrix meetup
+      - [showcasing our test setup for P2P networks](https://www.youtube.com/watch?v=pP0fS-FCsjE)
+      - [Gossipsub at the Filecoin Liftoff week](https://www.youtube.com/watch?v=paWmKqi8MZk)
+      - [our IPFS, libp2p tutorial](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view) at the IEEE ICBC'20 conference
+      - [Pulsarcast in action](https://www.youtube.com/watch?v=D2UKQPKMjr4&list=PLhuBigpl7lqu6xWpiXtbEzJQtlMH1tqoG&index=16)
+      - [a seminar on IPFS] (https://www.youtube.com/watch?v=Jy5__VuwZC0) presented at the NDN project consortium
+      - [a introductory presentation on IPFS](https://www.youtube.com/watch?v=K4Usud4g4iY&feature=youtu.be&t=1008) at the IRTF DINRG Group
+  - and **posts**, like these on:
+      - [Bitswap compression](/blog/2020/honey-i-shrunk-our-libp2p-streams/)
+      - [Bitswap WANT message inspection](/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers/)
+      - [Bitswap TTL extension](/blog/2020/teaching-bitswap-nodes-to-jump/)
+      - [Bitswap combined improvements](/blog/2021/our-bitswap-nodes-have-become-jumping-inspectors-updated/)
+      - and this [high-level description](/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains/) of Gossipsub's hardening features     
 
 2. Continuing to make research repeatable and measurable from the start, by crafting an evaluation plan and delivering the evaluation. Two great examples are:
 
