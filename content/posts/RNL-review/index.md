@@ -78,7 +78,7 @@ Learn more about:
 
 The world needed a dependable and  [unbiasable source of randomness](https://www.coindesk.com/randomness-internet-age) which other platforms and applications publicly verify. Randomness is at the core of many of the security-critical operations we perform online  every day, and until 2020, there wasn't a single reliable and trustworthy source. That changed in 2020.
 
-We selected the drand protocol and made it production grade, and the results are astonishing. Now with a live deployment hosted by more than 15 independent members of the League of Entropy, drand is available for any project that needs randomness. Learn all about it at the [launch post](https://drand.love/blog/2020/08/10/drand-launches-v1-0/).
+We selected the drand protocol and made it production-grade. The results are astonishing: with a live deployment hosted by more than 15 independent members of the League of Entropy, drand is now available for any project that needs randomness. Learn all about it at the [launch post](https://drand.love/blog/2020/08/10/drand-launches-v1-0/).
 
 To celebrate, we organized a virtual Randomness Summit with ETHGlobal, world experts at organizing professional and technologically advanced events. You can watch all the talks at [randomness2020.com](https://randomness2020.com).
 
