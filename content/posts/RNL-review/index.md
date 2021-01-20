@@ -134,7 +134,7 @@ We also have more events lined up for 2021, with keynotes at the [IEEE Global In
 
 In addition to the *ResNetLab on Tour*  series, we've also enjoyed the chance to contribute to other events focused on developers. You can catch up on the results at:
 
-- [Matrix.org Virtual Meetup (2020-04-08)](https://research.protocol.ai/blog/2020/gossipsub-v1.1-at-open-tech-will-save-us-virtual-event/)
+- [Matrix.org Virtual Meetup (2020-04-08)](/blog/2020/gossipsub-v1.1-at-open-tech-will-save-us-virtual-event/)
 
 - [Ready Layer One (2020-05-04)](https://www.youtube.com/watch?v=H9Eb4uftrSA)
 
