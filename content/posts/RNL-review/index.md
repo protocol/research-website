@@ -56,15 +56,15 @@ We started the first semester of 2020 with an ambitious goal in mind: to upgrade
 
 In addition, we also created an RFC and the implementation of a Hydra Booster peer. This new type of peer exists to augment the network by creating multiple distributed identities across the DHT address space, enabling it to contribute to the storage and discovery of content provider records. All of these identities are linked by the same backend datastore, which from the other peers' perspective, creates the effect of multiple peers being present and holding a vast collection of the provider records in the network.
 
-The Hydra Booster has been instrumental for the stability and fast content resolution of the IPFS network. Thanks to hydra booster, we now have a new lens into the activity of the network: we can see how much data is being provided, view the multiple versions running on the public network, and track how many data queries are resolved and how many fail.
+The Hydra Booster has been instrumental for the stability and fast content resolution of the IPFS network. Thanks to Hydra Booster, we now have a new lens into the activity of the network: we can see how much data is being provided, view the multiple versions running on the public network, and track how many data queries are resolved and how many fail.
 
 The Hydra Booster is [fully open source](https://github.com/libp2p/hydra-booster) and can be deployed by anyone.
 
 #### Gossipsub v1.1
 
-Gossipsub is one of the many libp2p PubSub routers used to disseminate IPNS records, enable real-time distributed applications, and much more. Because GossipSub was adoptied as a messaging layer by Filecoin and Ethereum 2 due to its functionality and fast performance on permissionless networks, we found it necessary to invest additional effort to protect it against sybil attacks and malicious behaviour in general.
+Gossipsub is one of the many libp2p PubSub routers used to disseminate IPNS records, enable real-time distributed applications, and much more. Because GossipSub was adoptied as a messaging layer by Filecoin and Ethereum 2 due to its functionality and fast performance on permissionless networks, we found it necessary to invest additional effort to protect it against sybil attacks and malicious behavior in general.
 
-Together with the libp2p team, we embarked on a mission to harden the protocol's behaviour. The outcome is a hardened version of the Gossipsub protocol that integrates several mitigation strategies *at the protocol level*. The results are quite impressive, especially if we consider that the enormous amount of research in the area of pubsub has generally outsourced security considerations to higher levels of the stack (i.e. the application layer), instead of integrating them at the protocol level.
+Together with the libp2p team, we embarked on a mission to harden the protocol's behavior. The outcome is a hardened version of the Gossipsub protocol that integrates several mitigation strategies *at the protocol level*. The results are quite impressive, especially if we consider that the enormous amount of research in the area of pubsub has generally outsourced security considerations to higher levels of the stack (i.e. the application layer), instead of integrating them at the protocol level.
 
 Learn more about:
 
@@ -76,7 +76,7 @@ Learn more about:
 
 #### Drand, League of Entropy and the Randomness Summit
 
-The world needed a dependable and  [unbiasable source of randomness](https://www.coindesk.com/randomness-internet-age) which other platforms and applications publicly verify. Randomness is at the core of many of the security-critical operations we perform online  every day, and until 2020, there wasn't a single reliable and trustworthy source. That changed in 2020.
+The world needed a dependable and  [unbiasable source of randomness](https://www.coindesk.com/randomness-internet-age) which other platforms and applications could publicly verify. Randomness is at the core of many of the security-critical operations we perform online every day, and until 2020, there wasn't a single reliable and trustworthy source. That changed in 2020.
 
 We selected the drand protocol and made it production-grade. The results are astonishing: with a live deployment hosted by more than 15 independent members of the League of Entropy, drand is now available for any project that needs randomness. Learn all about it at the [launch post](https://drand.love/blog/2020/08/10/drand-launches-v1-0/).
 
@@ -100,7 +100,7 @@ In less than four months, we've achieved some phenomenal contributions to Bitswa
 
 - Prototypes for 3 of the RFCs with an [extensive (and repeatable evaluation)](https://github.com/protocol/beyond-bitswap/tree/master/RFC). Our prototypes have ranged from the use of compression in Bitswap and libp2p to achieve bandwidth savings of up to 75% compared to the baseline, to the use of a TTL field in Bitswap messages and the inspection of requests to increase Bitswap's range of discovery and file transfer speed by up to a 20%.
 
-- The [publication of an academic paper](/publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/) presenting Bitswap as a content routing system's accelerator and desccribing many of the contributions of the project.
+- The [publication of an academic paper](/publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/) presenting Bitswap as a content routing system's accelerator and describing many of the contributions of the project.
 
 ### 🎫 Events
 
@@ -108,7 +108,7 @@ We at ResNetLab love to be close to the community of researchers and developers 
 
 #### ResNetLab on (Virtual) Tour 2020
 
-We have built a half-day tutorial to introduce the DWeb, the IPFS ecosystem, the IPFS architecture and its supporting protocols, and the high-level design decisions of the Filecoin network. In 2020, we have travelled virtually to multiple conferences and other academic events to bring the exciting projects we're working on and invite great researchers to collaborate with us.
+We have built a half-day tutorial to introduce the DWeb, the IPFS ecosystem, the IPFS architecture and its supporting protocols, and the high-level design decisions of the Filecoin network. In 2020, we have participated in multiple conferences and other academic events to discuss the exciting projects we're working on and invite great researchers to collaborate with us.
 
 The tutorial is primarily composed of lecture material, and many of our tutorials have been very interactive. In 2021, we are enhancing the tutorial with hands-on sessions, so it will be even more exciting for students and researchers with a passion to tinker as they learn.
 
@@ -216,13 +216,13 @@ Overcoming these challenges requires novel solutions that undergo rigorous testi
 
 Our foci for the first half of 2021 will be **Decentralized Data Delivery Markets (3DM)** and **Networking in Heterogeneous Runtimes (NHR)**. Both of these areas are ripe for new research and significant leaps forward.
 
-With the successful launch of the Filecoin network, there is a unique opportunity to make a significant contribution to the content delivery networks research area by combining it with decentralization and an open market. We believe that there is space for creating a highly-efficient auction setup optimised towards rapid decentralised data delivery, just like [it exists for electricity](https://en.wikipedia.org/wiki/Electricity_market#Wholesale_electricity_market). The core challenge is not product or UX, but technical: the metering of network usage so that a fair and verifiable trade can happen. Once this primary obstacle is out of the way, it is then a matter of optimising the resource utilisation of the network with better routing approaches. Although the sub-topics of the larger problem have been investigated in different research fields in the past, *decentralised content delivery networks through built-in incentives* have never been built before. We are very excited to have the opportunity to design and develop the first 3DM of its kind!
+With the successful launch of the Filecoin network, there is a unique opportunity to make a significant contribution to the content delivery networks research area by combining it with decentralization and an open market. We believe that there is space for creating a highly-efficient auction setup optimised towards rapid decentralized data delivery, just like [it exists for electricity](https://en.wikipedia.org/wiki/Electricity_market#Wholesale_electricity_market). The core challenge is not product or UX, but technical: the metering of network usage so that a fair and verifiable trade can happen. Once this primary obstacle is out of the way, it is then a matter of optimising the resource utilisation of the network with better routing approaches. Although the sub-topics of the larger problem have been investigated in different research fields in the past, *decentralized content delivery networks through built-in incentives* have never been built before. We are very excited to have the opportunity to design and develop the first 3DM of its kind!
 
 As for Networking in Heterogeneous Runtimes, we believe that IoT, VR, Mobile, VANETs and all sorts of embedded devices are here to stay, and that we are on the verge of setting the course of history by making P2P a first-class citizen of those runtimes. We want to work with integrators and leaders building the stacks for these different runtimes and explore ways to integrate libp2p, the P2P stack.
 
 We will be publishing our progress on this blog. Meanwhile, you can consult our [new Open Problem for NHR](https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/HETEROGENEOUS_RUNTIMES.md).
 
-If you find either or both of these areas fascinating, have a deep passion for decentralisation, and you don't shy from large challenges, **consider joining and/or collaborating with us by applying for an [open position](https://jobs.lever.co/protocol?department=Research) or a spontaneous [RFP](https://protocollabs.smapply.io/)**.
+If you find either or both of these areas fascinating, have a deep passion for decentralization, and you don't shy from large challenges, **consider joining and/or collaborating with us by applying for an [open position](https://jobs.lever.co/protocol?department=Research) or a spontaneous [RFP](https://protocollabs.smapply.io/)**.
 
 Once more, we want to thank all those that have followed and supported our work. We look forward to all the future collaborators and the results we will be producing together.
 
