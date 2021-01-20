@@ -62,13 +62,13 @@ The Hydra Booster is [fully open source](https://github.com/libp2p/hydra-booster
 
 #### Gossipsub v1.1
 
-Gossipsub is one of the many libp2p PubSub routers used to disseminate IPNS records, enable real-time distributed applications, and much more. Because GossipSub was adoptied as a messaging layer by Filecoin and Ethereum 2 due to its functionality and fast performance on permissionless networks, we found it necessary to invest additional effort to protect it against sybil attacks and malicious behavior in general.
+Gossipsub is one of the many libp2p PubSub routers used to disseminate IPNS records, enable real-time distributed applications, and much more. Because GossipSub was adopted as a messaging layer by Filecoin and Ethereum 2 due to its functionality and fast performance on permissionless networks, we found it necessary to invest additional effort to protect it against sybil attacks and malicious behavior in general.
 
 Together with the libp2p team, we embarked on a mission to harden the protocol's behavior. The outcome is a hardened version of the Gossipsub protocol that integrates several mitigation strategies *at the protocol level*. The results are quite impressive, especially if we consider that the enormous amount of research in the area of pubsub has generally outsourced security considerations to higher levels of the stack (i.e. the application layer), instead of integrating them at the protocol level.
 
 Learn more about:
 
-- The features of Gossipsub-v1.1 in this [blogpost](/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains) and this [paper](/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/)
+- The features of Gossipsub v1.1 in this [blogpost](/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains) and this [paper](/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/)
 
 - The protocol's exhaustive testing with dozens of test scenarios and hundreds of experimental runs on our Testground-based AWS VM-testbed in this [Performance Evaluation Report](/publications/gossipsub-v1.1-evaluation-report/).
 
@@ -76,7 +76,7 @@ Learn more about:
 
 #### Drand, League of Entropy and the Randomness Summit
 
-The world needed a dependable and  [unbiasable source of randomness](https://www.coindesk.com/randomness-internet-age) which other platforms and applications could publicly verify. Randomness is at the core of many of the security-critical operations we perform online every day, and until 2020, there wasn't a single reliable and trustworthy source. That changed in 2020.
+The world needed a dependable and [unbiasable source of randomness](https://www.coindesk.com/randomness-internet-age) which other platforms and applications could publicly verify. Randomness is at the core of many of the security-critical operations we perform online every day, and until 2020, there wasn't a single reliable and trustworthy source. That changed in 2020.
 
 We selected the drand protocol and made it production-grade. The results are astonishing: with a live deployment hosted by more than 15 independent members of the League of Entropy, drand is now available for any project that needs randomness. Learn all about it at the [launch post](https://drand.love/blog/2020/08/10/drand-launches-v1-0/).
 
@@ -128,7 +128,7 @@ In the links below, you will find the blogosts describing the events we particip
 
 - December 2020: IEEE Globecom (blog post coming soon)
 
-We also have more events lined up for 2021, with keynotes at the [IEEE Global Internet Symposium](https://infocom2021.ieee-infocom.org/ieee-global-internet-symposium-call-papers%5C) (taking place alongside IEEE Infocom this year) and the [24th Conference on Innovation in Clouds, Internet and Networks](https://www.icin-conference.org/keynotes/), as well as other events.
+We also have more events lined up for 2021, with keynotes at the [IEEE Global Internet Symposium](https://infocom2021.ieee-infocom.org/ieee-global-internet-symposium-call-papers/) (taking place alongside IEEE Infocom this year) and the [24th Conference on Innovation in Clouds, Internet and Networks](https://www.icin-conference.org/keynotes/), as well as other events.
 
 #### Additional contributions
 
