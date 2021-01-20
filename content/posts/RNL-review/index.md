@@ -208,7 +208,7 @@ Overcoming these challenges requires novel solutions that undergo rigorous testi
 
     - [Beyond Bitswap](https://github.com/protocol/beyond-bitswap) and the [Testing Harness](https://github.com/protocol/beyond-bitswap/tree/master/testbed)
 
-3. Continuing to make all the code produced under the [Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/), enabling others to learn from it and build on top of it.
+3. Continuing to make all code available under the [Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/), enabling others to learn from it and build on top of it.
 
 4. Supporting academic research through our multiple collaborations by providing infrastructure for testing hypotheses and publishing the results. A good example are the results published by the [DHT Hardening collaboration](https://blog.ipfs.io/2020-10-30-dht-hardening/).
 
