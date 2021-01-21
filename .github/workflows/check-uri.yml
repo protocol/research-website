@@ -10,4 +10,5 @@ jobs:
     - name: Scan for research.protocol.ai occurrences
       uses: jsoares/github-pr-contains-action@master
       with:
+        github-token: ${{github.token}}
         diffDoesNotContain: 'research.protocol.ai'
