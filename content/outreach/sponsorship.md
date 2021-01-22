@@ -3,8 +3,8 @@ headless: true
 nositemap: false
 weight: 5
 title: Sponsorship
-summary: "We support conferences, workshops and events that are directly aligned with the mission and values of Protocol Labs Research. These sponsorships support open source collaboration and innovation, further the visibility and impact of our research, and strengthen relationships between Protocol Labs and other open source communities.
-linkText: Read our sponsorship policy"
+summary: "We support conferences, workshops and events that are directly aligned with the mission and values of Protocol Labs Research. These sponsorships support open source collaboration and innovation, further the visibility and impact of our research, and strengthen relationships between Protocol Labs and other open source communities."
+linkText: Read our sponsorship policy
 linkUrl: "/outreach/sponsorship"
 ---
 
