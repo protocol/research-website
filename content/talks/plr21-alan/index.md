@@ -1,6 +1,6 @@
 ---
 # Talk title
-title: "The Inter-Cranial Abstraction System (IACS)"
+title: "The Inter-Cranial Abstraction System (ICAS)"
 
 # Website post date
 # format YYYY-MM-DD
