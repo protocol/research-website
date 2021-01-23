@@ -167,11 +167,11 @@ figcaption {
 }
 
 
-.page-content a:not(.no-underline) {
+.page-top a:not(.no-underline), .page-content a:not(.no-underline) {
   @apply text-blue;
 }
 
-.page-content a:hover {
+.page-top a:hover, .page-content a:hover {
   @apply text-blue;
   @apply underline;
 }
