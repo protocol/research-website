@@ -7,7 +7,7 @@ menu:
     identifier: "talks"
     weight: 3
 description: "The talks below are from Protocol Labs researchers or close collaborators 
-about work done at PL. You may also be interested in the [Research Seminar Series YouTube playlist](https://www.youtube.com/playlist?list=PLhuBigpl7lqu6xWpiXtbEzJQtlMH1tqoG), where we post invited talks from external speakers."
+about work done at PL. You may also be interested in the <a href="https://www.youtube.com/playlist?list=PLhuBigpl7lqu6xWpiXtbEzJQtlMH1tqoG">Research Seminar Series YouTube playlist</a>, where we post invited talks from external speakers."
 aliases:
     - /research/talks
 ---
