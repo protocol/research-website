@@ -47,4 +47,4 @@ We have established a set of criteria by which we evaluate sponsorship requests:
 
 If you accept our sponsorship, we’ll ask for a post-event report summarizing the key outcomes and metrics, e.g. the strengths and weaknesses of the event, the number of participants, notable presentations, video resources, social media presence, etc. The purpose of this follow-up is to help us track the effectiveness of our sponsorships and make decisions for the future. This is also a great way for us to strengthen the relationship between PL and those we sponsor. Hearing about great events gets us excited about supporting similar events in the future.
 
-To submit a request for sponsorship, click [here](https://protocollabs.smapply.io/prog/sponsorship/).
+To submit a request for sponsorship, click [here](https://grants.protocol.ai/prog/sponsorship/).
