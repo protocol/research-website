@@ -62,6 +62,6 @@ user_groups:
 
 Anca is a cryptographer working on research problems related to Filecoin.
 
-Anca holds a Ph.D. in Cryptography from École Normale Supérieure Paris (ENS) under the supervision of David Pointcheval and Dario Fire (IMDEA, Madrid). Their PhD subject revolved around SNARKs, a tool to prove integrity for results of Delegated Computation. They were a visiting assistant researcher at Columbia University, USA working with Rosario Gennaro and Mariana Raykova on Verifiable Computation topics. They also completed a postdoc at Aarhus University on topics related to authentication primitives and theoretical aspects of SNARKs.
+Anca holds a Ph.D. in Cryptography from École Normale Supérieure Paris (ENS) under the supervision of David Pointcheval and Dario Fiore (IMDEA, Madrid). Their PhD subject revolved around SNARKs, a tool to prove integrity for results of Delegated Computation. They were a visiting assistant researcher at Columbia University, USA working with Rosario Gennaro and Mariana Raykova on Verifiable Computation topics. They also completed a postdoc at Aarhus University on topics related to authentication primitives and theoretical aspects of SNARKs.
 
 Their main research interests are cryptographic proving systems, especially zero-knowledge proofs and succinct arguments of knowledge (SNARKs).
