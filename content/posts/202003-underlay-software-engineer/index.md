@@ -17,7 +17,7 @@ areas:
   - knowledge-engineering
 
 groups:
-  -
+  - abstractionlab
 
 draft: false
 

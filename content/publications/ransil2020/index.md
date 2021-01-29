@@ -13,7 +13,7 @@ date: 2020-12-09
 venue:  IEEE PES Transactive Energy Systems Conference (TESC)
 
 # Venue Location
-venue_location: 
+venue_location:
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
@@ -39,7 +39,7 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  -
+  - abstractionlab
 
 # Publications without a PL affiliation can be added to the author's profile without showing up elsewhere
 # If adding one, set this to true *and* do not set an area or group
