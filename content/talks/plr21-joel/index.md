@@ -1,10 +1,10 @@
 ---
 # Talk title
-title: "The Inter-Cranial Abstraction System (ICAS)"
+title: "The Underlay: A distributed public knowledge graph"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-01-12
+date: 2021-01-19
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -17,18 +17,18 @@ venue_url:
 
 # Venue date (defaults to date)
 # format YYYY-MM-DD
-venue_date: 2021-01-12
+venue_date: 2021-01-19
 
 # Venue location
 venue_location:
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - alan-ransil
+  - joel-gustafson
 
 # Zero or more of the areas in content/areas
 areas:
-  - type-theory
+  - knowledge-engineering
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
@@ -37,12 +37,12 @@ groups:
 # Name the cover image featured.jpg
 resources:
   - title: featured-image
-    src: featured.png
+    src: featured.jpg
 
 # Short abstract
 # Describe talk here
-abstract: "Alan Ransil discusses the Inter-Cranial Abstraction system (ICAS), a ‘Merkle Forest’ of content-addressed types and programs."
-
+abstract: "Joel Gustafson talks about what knowledge graphs are, generally, 
+with special attention to his research project, The Underlay, which is a distributed public knowledge graph." 
 ---
 
-{{< youtube J4WllOW_6As >}}
+{{< youtube QIZV1Y71F8A >}}
