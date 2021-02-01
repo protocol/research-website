@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "Independent Research Update: notes from the frontier"
+title: "Abstraction Lab Update: notes from the frontier"
 
 
 # Website post date
@@ -34,7 +34,7 @@ draft: false
 
 ---
 
-The Independent Researchers of Protocol Labs tackle ambitious projects with huge potential to drive breakthroughs in computing, communication, and decentralization. They are the scout ship pilots exploring the farthest reaches of the adjacent possible. And they have a lot of interesting news to report!
+The independent researchers of the [Abstraction Lab](link) tackle ambitious projects with huge potential to drive breakthroughs in computing, communication, and decentralization. They are the scout ship pilots exploring the farthest reaches of the adjacent possible. And they have a lot of interesting news to report!
 
 The Inter-Cranial Abstraction System
 ====================================
@@ -50,14 +50,14 @@ The Decentralized Energy Project
 
 Michael recently presented the Energy Project's work on [*Enabling plug-and-play transactive energy on legacy power grids*](/talks/enabling-plug-and-play-transactive-energy-on-legacy-power-grids/) to the [IEEE International Transactive Energy Systems Conference (TESC)](https://ieee-tesc.org/). In his presentation, Michael discusses the current trajectory of distributed energy resource adoption, asking whether it is possible to drive the adoption of transactive energy in the legacy portions of our current grid to hasten the adoption of distributed energy and distributed energy markets. Michael describes the potential for heterogeneous adoption of transactive energy without disrupting grid operations, and introduces [VOLTTRON](https://volttron.org/) (no, not that [Voltron](https://en.wikipedia.org/wiki/Voltron_(1984_TV_series))), a simulation platform developed by Pacific Northwest National Laboratory that the Energy Project is using to model different modes of transactive energy integration.
 
-The Energy Project also published a TESC conference paper on [*Improving system resilience through formal verification of transactive energy controls*](/publications/improving-system-resilience-through-formal-verification-of-transactive-energy-controls/), using TLA+ to model control algorithms for a transactive energy system where distributed energy resources trade power with their neighboring nodes.
+The Energy Project also published a TESC conference paper on [*Improving system resilience through formal verification of transactive energy controls*](/publications/improving-system-resilience-through-formal-verification-of-transactive-energy-controls/), using TLA+ to verify control algorithms for a transactive energy system where distributed energy resources trade power with their neighboring nodes.
 
 The Energy Project is continually developing new tools and methods to improve the resilience of our electrical infrastructure. Check out their work to get a bolt of inspiration!
 
 The Underlay
 ============
 
-**[The Underlay](https://www.underlay.org/)** is a collaboration with the [MIT Knowledge Futures Group](https://www.knowledgefutures.org/) to liberate and provenance humanity's knowledge by creating a publicly accessible distributed knowledge graph built on open-source protocols and tools. Joel Gustafson described how the Underlay project conceptualizes a distributed knowledge graph in a recent [blog post](https://notes.knowledgefutures.org/pub/belji1gd/release/2), which sparked a lively twitter conversation and virtual salon.
+**[The Underlay](https://www.underlay.org/)** is a collaboration with the [MIT Knowledge Futures Group](https://www.knowledgefutures.org/) to liberate and provenance humanity's knowledge by creating a publicly accessible distributed knowledge graph built on open-source protocols and tools. Joel Gustafson described how the Underlay project conceptualizes a distributed knowledge graph in a recent [blog post](https://notes.knowledgefutures.org/pub/belji1gd/release/2), which sparked a the formation of a social knowledge graph interest group and virtual salon.
 
 Joel's [Protocol Labs Research Seminar](/talks/the-underlay-a-distributed-public-knowledge-graph/) expands on the topic, proposing a functional definition of a knowledge graph and describing the issues involved in scaling a public distributed knowledge graph. Is it possible to contextualize data at scale? What *is* the Underlay? Join the conversation by viewing Joel's talk --- and of course, the [Q&A](https://youtu.be/QIZV1Y71F8A?t=2932). Schema-curious? You can read the docs and try out the Underlay's schema editor at the [R1 website](https://r0.underlay.org/docs/schemas).
 
