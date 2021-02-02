@@ -20,6 +20,7 @@ authors:
 areas:
   - applied-category-theory
 groups:
+  - abstractionlab
 
 resources:
   - title: featured-image
