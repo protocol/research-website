@@ -10,6 +10,7 @@ authors:
 role: Research Scientist
 
 groups:
+  - abstractionlab
 
 resources:
   - name: avatar

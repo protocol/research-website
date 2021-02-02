@@ -13,6 +13,8 @@ tags:
 categories:
 areas:
   - applied-category-theory
+groups:
+  - abstractionlab
 journal:
 
 venue: Fifth Symposium on Compositional Structures (SYCO)

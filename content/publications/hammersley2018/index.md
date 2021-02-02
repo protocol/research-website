@@ -37,7 +37,7 @@ areas:
 
 # Zero or more of the groups in content/research/groups (should match author membership)
 groups:
-  -
+  - abstractionlab
 
 # Publication pdf, should be in the same folder
 # No need to fill this out; just name the file the same as the folder
