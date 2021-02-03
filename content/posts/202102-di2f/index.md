@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: `"Decentralising the Internet with IPFS and Filecoin workshop" at IFIP Networking 2021: Call for Contributions`
+title: "Decentralising the Internet with IPFS and Filecoin (DI2F) workshop at IFIP Networking 2021: Call for Contributions"
 
 # Website post date
 # format YYYY-MM-DD
