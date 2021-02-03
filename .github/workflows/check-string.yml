@@ -1,0 +1,14 @@
+name: Check PR content
+
+on: [pull_request]
+
+jobs:
+  check_pr:
+    runs-on: ubuntu-latest
+    name: Check for forbidden string
+    steps:
+    - name: Scan forbidden string
+      uses: jsoares/github-pr-contains-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        diffDoesNotContain: 'bad string'
