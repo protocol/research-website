@@ -25,7 +25,7 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  -
+  - incentivelab
 
 # Not used
 draft: false
