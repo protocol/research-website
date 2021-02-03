@@ -1,6 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
-name: Auto Assign to Projects
+name: Auto assign blog items to project
 
 on:
   issues:
@@ -13,7 +11,7 @@ env:
 jobs:
   assign_one_project:
     runs-on: ubuntu-latest
-    name: Assign to One Project
+    name: Assign to project
     steps:
     - name: Assign issues and pull requests with `blog` label to the blog board
       uses: srggrs/assign-one-project-github-action@1.2.0

@@ -1,0 +1,14 @@
+name: Check PRs for internal links
+
+on: [pull_request]
+
+jobs:
+  check_pr:
+    runs-on: ubuntu-latest
+    name: Scan links
+    steps:
+    - name: Scan for research.protocol.ai occurrences
+      uses: jsoares/github-pr-contains-action@v3
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        diffDoesNotContain: 'research.protocol.ai'
