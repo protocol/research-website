@@ -1,11 +1,11 @@
-name: Check PRs for internal links
+name: Check for internal links
 
 on: [pull_request]
 
 jobs:
   check_pr:
     runs-on: ubuntu-latest
-    name: Scan links
+    name: Scan
     steps:
     - name: Scan for research.protocol.ai occurrences
       uses: jsoares/gh-pr-content-checker@v3
