@@ -21,3 +21,4 @@ jobs:
       with:
         project: 'https://github.com/protocol/research-website/projects/1'
         column_name: 'New'
+
