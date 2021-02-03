@@ -11,4 +11,4 @@ jobs:
       uses: jsoares/gh-pr-content-checker@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        diffDoesNotContain: 'research.protocol.ai'
+        diffDoesNotContain: 'research'
