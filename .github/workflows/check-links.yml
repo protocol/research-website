@@ -8,7 +8,7 @@ jobs:
     name: Scan links
     steps:
     - name: Scan for research.protocol.ai occurrences
-      uses: jsoares/github-pr-contains-action@v3
+      uses: jsoares/gh-pr-content-checker@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         diffDoesNotContain: 'research.protocol.ai'
