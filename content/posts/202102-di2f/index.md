@@ -39,12 +39,14 @@ That is about to change! Working alongside a number of researchers in academia a
 
 The workshop, titled [*“Decentralising the Internet with IPFS and Filecoin” (DI2F)*](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin) will be hosted  at IFIP Networking 2021, a top academic conference in networking research, which will take place during 21-24 June.
 
-The programme and structure of the workshop are a little different from traditional academic workshops and intended to serve different communities. The workshop will include:
+The programme and structure of the workshop are a little different from traditional academic workshops, and will feature activities intended to serve a variety of communities. The workshop will include:
 
-- Paper presentation sessions, for which we’re calling on experts in the field to submit work-in-progress papers, demos, and abstract or position papers advancing new ideas, both relating to the IPFS stack and broader decentralisation field.
+- Paper presentation sessions, for which we’re calling on experts in the field to submit work-in-progress papers, demos, and abstract or position papers advancing new ideas, relating to both the IPFS stack and broader decentralisation field.
 - A tutorial session to introduce the IPFS stack for those new to it, which will be a great way to get  ready for the rest of the workshop.
 - A hands-on session where theory from the tutorial session will become practice and participants can get to know the ins and outs of the existing tools or extend a project they have been working on.
 
 The workshop will finish with a Call for Hacks, which will run for two weeks following the event, followed by a separate gathering to announce the winners and awards.
 
 The call for papers, demos, and competition projects is open until **19 March**. To learn more and submit, *check out the [Call for Contributions in the IFIP Networking 2021 website](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin)*.
+
+Please join us for what is sure to be a very enriching event!
