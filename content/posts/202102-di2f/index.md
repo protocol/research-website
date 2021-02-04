@@ -33,7 +33,7 @@ draft: false
 
 ---
 
-Since the InterPlanetary File System (IPFS) was first introduced in a 2014 whitepaper, interest from the research community on improving and building on its protocol stack has been steadily growing. [A search for “IPFS networking” on Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=ipfs+networking&btnG=) now returns over 1500 results, and that is just a fraction of the relevant publications. However, to this day, there has been no forum for researchers and academics working in this space to present their work and exchange ideas.
+Since the InterPlanetary File System (IPFS) was first introduced in a [2014 whitepaper](https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf), interest from the research community on improving and building on its protocol stack has been steadily growing. [A search for “IPFS networking” on Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=ipfs+networking&btnG=) now returns over 1500 results, and that is just a fraction of the relevant publications. However, to this day, there has been no forum for researchers and academics working in this space to present their work and exchange ideas.
 
 That is about to change! Working alongside a number of researchers in academia and industry around the world, we’re happy to announce that we’ll be co-hosting a workshop on decentralising the Internet, with a focus on IPFS, Filecoin, libp2p, and IPLD.
 
