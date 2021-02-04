@@ -46,4 +46,4 @@ The programme and structure of the workshop are a little different to traditiona
 
 The workshop will finish with a Call for Hacks, which will run for two weeks following the event , followed by a separate gathering to announce the winners and awards.
 
-The call for papers, demos, and competition projects is open until *19 March*. To learn more and submit, *check out the Call for Contributions in the IFIP Networking 2021 website*. (TODO: LINK)
+The call for papers, demos, and competition projects is open until *19 March*. To learn more and submit, *check out the [Call for Contributions in the IFIP Networking 2021 website](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin)*.
