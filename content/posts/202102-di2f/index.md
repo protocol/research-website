@@ -37,7 +37,7 @@ Since the InterPlanetary File System (IPFS) was first introduced in a [2014 whit
 
 That is about to change! Working alongside a number of researchers in academia and industry around the world, we’re happy to announce that we’ll be co-hosting a workshop on decentralising the Internet, with a focus on IPFS, Filecoin, libp2p, and IPLD.
 
-The workshop, titled *“Decentralising the Internet with IPFS and Filecoin” (DI2F)* (TODO: LINK) will be hosted  at IFIP Networking 2021, a top academic conference in networking research, which will take place during 21-24 June.
+The workshop, titled [*“Decentralising the Internet with IPFS and Filecoin” (DI2F)*](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin) will be hosted  at IFIP Networking 2021, a top academic conference in networking research, which will take place during 21-24 June.
 
 The programme and structure of the workshop are a little different to traditional academic workshops and intended to serve different communities. It will include:
 - Paper presentation sessions, for which we’re calling on experts in the field to submit work-in-progress papers, demos, and abstract or position papers advancing new ideas, both relating to the IPFS stack and broader decentralisation field.
