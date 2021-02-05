@@ -10,7 +10,7 @@ authors:
 role: Research Scientist
 
 groups:
-  - "Independent Research"
+  - abstractionlab
 
 resources:
   - name: avatar

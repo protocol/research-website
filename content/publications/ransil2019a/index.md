@@ -16,6 +16,8 @@ categories:
   -
 areas:
   - knowledge-engineering
+groups:
+  - abstractionlab
 
 venue: Metascience Symposium
 
