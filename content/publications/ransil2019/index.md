@@ -19,6 +19,9 @@ categories:
 areas:
   - distributed-power-systems
 
+groups:
+  - abstractionlab
+
 
 venue: IEEE PES Transactive Energy Systems Conference (TESC)
 

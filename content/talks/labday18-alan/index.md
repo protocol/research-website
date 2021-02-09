@@ -20,6 +20,7 @@ authors:
 areas:
   - distributed-power-systems
 groups:
+  - abstractionlab
 
 resources:
   - title: featured-image
