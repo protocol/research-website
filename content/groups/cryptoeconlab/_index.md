@@ -39,4 +39,5 @@ The lab’s genesis comes from a growing need for the ability to design and depl
 ### Blogposts
 
 [Understanding Filecoin Circulating Supply](https://filecoin.io/blog/filecoin-circulating-supply/)
+
 Filecoin Features for [Gas Fees](https://filecoin.io/blog/filecoin-features-gas-fees/), [Block Reward](https://filecoin.io/blog/filecoin-features-block-rewards/), and [Slashing Filecoin's Cryptoeconomic Constructions](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/) (April 2020)
