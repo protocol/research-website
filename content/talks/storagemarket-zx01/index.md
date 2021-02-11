@@ -1,6 +1,6 @@
 ---
 # Talk title
-title:
+title: "Filecoin  Circulating Supply"
 
 # Website post date
 # format YYYY-MM-DD

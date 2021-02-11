@@ -1,6 +1,6 @@
 ---
 # Talk title
-title:
+title: "The Filecoin Storage Economy"
 
 # Website post date
 # format YYYY-MM-DD
