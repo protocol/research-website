@@ -68,11 +68,11 @@ unaffiliated: false
 
 ---
 
-"Winkle protects any validator-based byzantine fault tolerant consensus mechanisms, such as those used in modern Proof-of-Stake
+Winkle protects any validator-based byzantine fault tolerant consensus mechanisms, such as those used in modern Proof-of-Stake
 blockchains, against long-range attacks where old validators’ signature keys get compromised. Winkle is a decentralized secondary
 layer of client-based validation, where a client includes a single additional field into a transaction that they sign: a hash of the 
 previously sequenced block. The block that gets a threshold of signatures (confirmations) weighted by clients’ coins is called a “confirmed”
 checkpoint. We show that under plausible and flexible security assumptions about clients the confirmed checkpoints can not be
 equivocated. We discuss how client key rotation increases security, how to accommodate for coins’ minting and how delegation
 allows for faster checkpoints. We evaluate checkpoint latency experimentally using Bitcoin and Ethereum transaction graphs, with
-and without delegation of stake."
+and without delegation of stake.
