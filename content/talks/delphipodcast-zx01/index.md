@@ -1,19 +1,19 @@
 ---
 # Talk title
-title: "Filecoin  Circulating Supply"
+title: "A Technical Dive Into Filecoin’s Tokeneconomics"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2020-12-17
+date: 2020-11-27
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
 
 # Venue name
-venue: Storage Markets Summit 
+venue: The Delphi Podcast
 
 # Venue link
-venue_url:
+venue_url: 
 
 # Venue date (defaults to date)
 # format YYYY-MM-DD
@@ -42,8 +42,8 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract:   "Colin Evran and Zixuan Zhang discuss  a model of Filecoin circulating supply. "
+abstract:   "Colin Evran and Zixuan Zhang lead Chain Reaction Podcast host Tom Shaughnessy on a technical deep dive into the cryptoeconomics of the Filecoin network."
 ---
 
 
-{{< youtube O0SHgksn1AI >}}
+{{< youtube bykk-6zrVq8 >}}

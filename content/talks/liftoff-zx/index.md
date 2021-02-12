@@ -41,7 +41,7 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract:  "CryptoEconLab research scientist ZX  discusses the mechanisms and models presented in the recent Engineering Filecoin's Economy report." 
+abstract:  "CryptoEconLab research scientist ZX  discusses the mechanisms and models presented in the report \"Engineering Filecoin's Economy\"." 
 
 ---
 
