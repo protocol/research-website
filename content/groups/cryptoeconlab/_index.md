@@ -21,8 +21,6 @@ CryptoEconLab at PL aspires to become a research hub for research on economic in
 
 The lab’s genesis comes from a growing need for the ability to design and deploy large-scale economic systems, from token networks to the Metaverse. CryptoEconLab is designed to take ownership of the economic aspects of a technosocial system including design, specification, validation, deployment, and governance.
 
-< INSERT IMAGE >
-
 ## Research Endeavors
 
 - Stochastic optimal control for evolutionary systems
@@ -32,12 +30,8 @@ The lab’s genesis comes from a growing need for the ability to design and depl
 
 ## Related Links
 
-### Podcasts
-
-[A Technical Deep Dive Into Filecoin’s Tokeneconomics](https://www.delphidigital.io/reports/colin-and-zx-a-technical-dive-into-filecoins-tokeneconomics/) (November 2020 - Chain Reaction)
-
-### Blogposts
-
-[Understanding Filecoin Circulating Supply](https://filecoin.io/blog/filecoin-circulating-supply/)
-
-Filecoin Features for [Gas Fees](https://filecoin.io/blog/filecoin-features-gas-fees/), [Block Reward](https://filecoin.io/blog/filecoin-features-block-rewards/), and [Slashing Filecoin's Cryptoeconomic Constructions](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/) (April 2020)
+- [Understanding Filecoin Circulating Supply](https://filecoin.io/blog/filecoin-circulating-supply/)
+- [Filecoin's Cryptoeconomic Constructions](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/)
+- Filecoin Features: [Gas Fees](https://filecoin.io/blog/filecoin-features-gas-fees/)
+- Filecoin Features: [Block Rewards](https://filecoin.io/blog/filecoin-features-block-rewards/)
+- Filecoin Features: [Slashing](https://filecoin.io/blog/posts/filecoin-features-slashing/)
