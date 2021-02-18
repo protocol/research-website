@@ -35,7 +35,7 @@ draft: false
 
 [IEEE Globecom](http://globecom2020.ieee-globecom.org/) is one of the flagship IEEE ComSoc conferences in the field of networks and communications -- and, with over 2000 attendees, one of the largest conferences in the field.
 
-We were very honored to deliver a half-day [Industry Tutorial](https://globecom2020.ieee-globecom.org/program/industry-tutorials#it-04) on “The InterPlanetary File System and the Filecoin Network”] at IEEE GlobeCom 2020. In this workshop, we covered a broad part of the spectrum in the Web 3.0 space, including:
+We were very honored to deliver a half-day [Industry Tutorial](https://globecom2020.ieee-globecom.org/program/industry-tutorials#it-04) on “The InterPlanetary File System and the Filecoin Network” at IEEE GlobeCom 2020. In this workshop, we covered a broad part of the spectrum in the Web 3.0 space, including:
 
 - DWeb/Web 3.0 Growth and Adoption
 - IPFS and its protocol stack
