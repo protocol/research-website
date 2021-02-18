@@ -44,7 +44,7 @@ We were very honored to deliver a half-day [Industry Tutorial](https://globecom2
 
 You can find more information on the content and the structure of the tutorial in our [flyer](IPFS-libp2p-filecoin_flyer_GLOBECOM2020.pdf).
 
-We also participated in the  [Industry Presentations programme](https://globecom2020.ieee-globecom.org/program/industry-presentations#ip-03), a presentation session organised to give emphasis on technical topics in communications and networking from a business point of view. There were multiple interesting talks and we highly recommend watching the recordings.
+We also participated in the  [Industry Presentations programme](https://globecom2020.ieee-globecom.org/program/industry-presentations#ip-03), a presentation session organised to give emphasis on technical topics in communications and networking from a business point of view. There were multiple very interesting talks on exciting new and emerging fields of research!
 
 Throughout our contributions we received a series of pertinent questions, and -- as we love to do every time we attend a conference -- we present here the questions and answers as a resource for the future reader.
 
