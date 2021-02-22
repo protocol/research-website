@@ -23,9 +23,12 @@ The lab’s genesis comes from a growing need for the ability to design and depl
 
 ## Research Endeavors
 
+- Formation, diffusion, and learning in networks
 - Stochastic optimal control for evolutionary systems
+- Optimal pricing and resource allocation in distributed networks
 - Value attribution and graph-based algorithms
 - Market design, algorithmic game theory & differential privacy
+- Prediction markets, automated market makers, reputation systems
 - Institutional economics and governance
 
 ## Related Links
