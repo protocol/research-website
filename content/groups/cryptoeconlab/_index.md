@@ -25,10 +25,10 @@ The lab’s genesis comes from a growing need for the ability to design and depl
 
 - Formation, diffusion, and learning in networks
 - Stochastic optimal control for evolutionary systems
+- Evolutionary game theory, population games, state based potential games
 - Optimal pricing and resource allocation in distributed networks
 - Value attribution and graph-based algorithms
 - Market design, algorithmic game theory & differential privacy
-- Evolutionary game theory, population games, state based potential games
 - Prediction markets, automated market makers, reputation systems
 - Institutional economics and governance
 
