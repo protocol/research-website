@@ -126,7 +126,7 @@ In the links below, you will find the blogosts describing the events we particip
 
 - November 2020: [CNSM](/blog/2020/ieee/ifip-cnsm-2020-the-interplanetary-file-system-and-the-filecoin-network/)
 
-- December 2020: IEEE Globecom (blog post coming soon)
+- December 2020: [IEEE Globecom](https://research.protocol.ai/blog/2021/ieee-globecom-2020-the-interplanetary-file-system-and-the-filecoin-network/)
 
 We also have more events lined up for 2021, with keynotes at the [IEEE Global Internet Symposium](https://infocom2021.ieee-infocom.org/ieee-global-internet-symposium-call-papers/) (taking place alongside IEEE Infocom this year) and the [24th Conference on Innovation in Clouds, Internet and Networks](https://www.icin-conference.org/keynotes/), as well as other events.
 
