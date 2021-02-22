@@ -20,12 +20,6 @@ interests:
   - Distributed Systems
   - Software Measurement
 
-education:
-  courses:
-  - course: 
-    institution: 
-    year: 
-
 social:
 - icon: twitter
   link: https://twitter.com/LanzafameAdrian
