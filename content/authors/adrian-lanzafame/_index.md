@@ -17,13 +17,14 @@ resources:
     src: avatar.jpg
 
 interests:
-  - 
+  - Distributed Systems
+  - Software Measurement
 
 education:
   courses:
-  - course: BIT, Computer Science and Geoscience
-    institution: Queensland University of Technology
-    year: 2015
+  - course: 
+    institution: 
+    year: 
 
 social:
 - icon: twitter
