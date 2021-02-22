@@ -32,7 +32,7 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - cryptonetlab
+  - cryptolab
 
 # Name the cover image featured.jpg
 resources:
