@@ -36,3 +36,4 @@ user_groups:
 # For display at the top of the author details page
 quote:
 ---
+Adrian has a diverse background having written software in domains such as geological exploration, software-defined networking and healthcare systems. At Protocol Labs he has been involved in the IPFS Cluster project, the IPFS Gateways, and Filecoin Mining Operations.
