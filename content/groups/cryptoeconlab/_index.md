@@ -15,7 +15,7 @@ Cryptoeconomics is an emerging field of economic coordination games in cryptogra
 
 ## Mission & Vision
 
-CryptoEconLab at PL aspires to become a research hub for research on economic incentives, coordination games, and novel marketplaces. We aim to develop capacity to design, validate, deploy, and govern large-scale economic systems. CryptoEconLab strives to empower projects in the ecosystem through novel incentives and advance humanity’s understanding of multiagent systems and algorithmic steering of economic networks.
+CryptoEconLab at PL aspires to become a hub for research on economic incentives, coordination games, and novel marketplaces. We aim to develop capacity to design, validate, deploy, and govern large-scale economic systems. CryptoEconLab strives to empower projects in the ecosystem through novel incentives and advance humanity’s understanding of multiagent systems and algorithmic steering of economic networks.
 
 ## Motivation & Description
 
