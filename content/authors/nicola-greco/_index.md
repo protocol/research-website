@@ -24,7 +24,7 @@ education:
     - course: MS/PhD in Computer Science
       institution: Massachusetts Institute of Technology
       year: on leave
-    - course: BSc in iComputer Science
+    - course: BSc in Computer Science
       institution: University College London
       year: 2015
 
