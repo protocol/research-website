@@ -42,7 +42,7 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: "ResNetLab Research Engineer Alfonso de la Rocha discusses his 'Beyond Bitswap' project. Also check out the companion blog post.
+abstract: "ResNetLab Research Engineer Alfonso de la Rocha discusses his 'Beyond Bitswap' project. Check out the companion blog post."
 
 ---
 
