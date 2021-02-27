@@ -42,9 +42,7 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: "ResNetLab Research Engineer Alfonso de la Rocha discusses his 'Beyond Bitswap' project. Learn more 
-at the [Beyond Bitswap GitHub repo](https://github.com/protocol/beyond-bitswap/) or the 
-[Beyond Swapping Bits blog post](/blog/2021/beyond-swapping-bits-project-review-and-preview/)."
+abstract: "ResNetLab Research Engineer Alfonso de la Rocha discusses his 'Beyond Bitswap' project. Also check out the companion blog post.
 
 ---
 
