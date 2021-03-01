@@ -3,7 +3,7 @@
 name: Barath Raghavan
 
 # Role/position (e.g. Research Scientist)
-role: Advisor 
+role: Research Advisor 
 
 # Zero or one of the groups in content/groups (or free text)
 groups: 
