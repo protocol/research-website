@@ -48,4 +48,4 @@ user_groups:
 # quote:
 ---
 
-Write bio here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Barath has very broad interests spanning from networked systems (Internet architecture, distributed systems, protocol design) to security (privacy and anonymity, secure routing) to broader applications (agroecology, zero-carbon computing, urban revitalization).
