@@ -37,10 +37,10 @@ draft: false
 
 We are happy to have secured four slots in the event, where we presented the latest developments and results from a variety of our activities in 2020:
 
-- Molly Mackinlay, who leads PL’s development work on IPFS & FIlecoin,  presented the benefits of building on top of IPFS and Filecoin and the opportunities these platforms create  for researchers and developers.
-- Nikkolas Gailly, research scientist in the Filecoin team, presented [DRAND](https://drand.love/), a distributed randomness beacon, and described  the necessity of such a system in decentralised network setups.
-- Alfonso de la Rocha, research engineer at ResNetLab, presented the latest improvements proposed for IPFS’s Bitswap protocol and the performance benefits it brings.
-- Yiannis Psaras, research scientist at ResNetLab, presented the technical design details of GossipSub, a pubsub protocol for transaction and block message propagation in the Filecoin and ETH2.0 blockchains.
+- **Molly Mackinlay**, who leads PL’s development work on IPFS & FIlecoin,  presented the benefits of building on top of IPFS and Filecoin and the opportunities these platforms create  for researchers and developers.
+- **Nikkolas Gailly**, research scientist in the Filecoin team, presented [DRAND](https://drand.love/), a distributed randomness beacon, and described  the necessity of such a system in decentralised network setups.
+- **Alfonso de la Rocha**, research engineer at ResNetLab, presented the latest improvements proposed for IPFS’s Bitswap protocol and the performance benefits it brings.
+- **Yiannis Psaras**, research scientist at ResNetLab, presented the technical design details of GossipSub, a pubsub protocol for transaction and block message propagation in the Filecoin and ETH2.0 blockchains.
 
 As we always do when we attend a conference, here you can find the questions we received during the event together with their answers in text form, as a resource for the future reader.
 
