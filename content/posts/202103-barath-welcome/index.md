@@ -1,10 +1,10 @@
 ---
 # Blog post title
-title: Barath Raghavan becomes a REsNetLab Advisor
+title: ResNetLab welcomes new advisor Barath Raghavan
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-03-08
+date: 2021-03-03
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -37,10 +37,10 @@ We are pleased to announce that [Barath Raghavan](/authors/barath-raghavan/) wil
 We asked Barath about his journey to PL, the ResNetLab projects he will be advising, and his thoughts about future technological developments:
 
 **How did you decide to become an advisor to PL?**
-I'd known about PL's work from the earliest days of IPFS, but hadn't been following it closely.  Last year [Jonathan](/authors/jonathan-gross/) reached out to have me give a talk about my research on Internet architecture, and took an interest after seeing the breadth of projects and unusual (and interesting) structure of the company.
+> I'd known about PL's work from the earliest days of IPFS, but hadn't been following it closely.  Last year [Jonathan](/authors/jonathan-gross/) reached out to have me give a talk about my research on [Internet architecture](https://raghavan.usc.edu/papers/evolution-sigcomm19.pdf), and took an interest after seeing the breadth of projects and unusual (and interesting) structure of the company.
 
 **What problems are you currently most interested in?**
-I'm interested in understanding how to build secure distributed systems and network architectures that enable trust and responsibility among their participants and that are responsive to the necessarily-messy societal challenges that we face in information ecosystems.
+> I'm interested in understanding how to build secure distributed systems and network architectures that enable trust and responsibility among their participants and that are responsive to the necessarily-messy societal challenges that we face in information ecosystems.
 
 **What future technology are you most excited about?**
-Systems for sustainable agroecosystem design and management.
+> Systems for sustainable agroecosystem design and management.
