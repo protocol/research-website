@@ -14,7 +14,7 @@ date: 2021-02-11
 authors:
   - david-dias
   - yiannis-psaras
-  - alfonoso-delarocha
+  - alfonso-delarocha
 
 # If applicable
 categories:
