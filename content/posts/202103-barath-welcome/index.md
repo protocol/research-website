@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: ResNetLab welcomes new advisor Barath Raghavan
+title: ResNetLab welcomes Barath Raghavan as a research advisor
 
 # Website post date
 # format YYYY-MM-DD
