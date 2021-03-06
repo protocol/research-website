@@ -36,7 +36,7 @@ We are pleased to announce that [Barath Raghavan](/authors/barath-raghavan/) wil
 
 We asked Barath about his journey to PL, the ResNetLab projects he will be advising, and his thoughts about future technological developments:
 
-**How did you decide to become an advisor to PL?**
+**How did you become an advisor to PL?**
 > I'd known about PL's work from the earliest days of IPFS, but hadn't been following it closely.  Last year [Jonathan](/authors/jonathan-gross/) reached out to have me give a talk about my research on [Internet architecture](https://raghavan.usc.edu/papers/evolution-sigcomm19.pdf), and took an interest after seeing the breadth of projects and unusual (and interesting) structure of the company.
 
 **What problems are you currently most interested in?**
