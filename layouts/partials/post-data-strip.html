@@ -1,7 +1,7 @@
 <div class="text-sm text-gray-700 mb-1">
 <span>{{ .Date.Format .Site.Params.DateForm }}</span>
 
-{{ if (and .Params.categories (partial "func/has-values" .Params.categories)) }}
+{{ if .Params.categories }}
 <span class="mx-0 text-blue">/</span>
 
 <span>
