@@ -103,7 +103,7 @@ A: Bitswap leverages already established connections in the node to broadcast it
 
 *Q: In baseline Bitswap, do peers forward messages (i.e. if peer A sends a want-have/want-block message to peer B, and peer B knows peer C, does peer B forward it to peer C)?*
 
-A: No. In the baseline Bitswap protocol, peers only interact with their direct neighbors. Bitswap messages are only forwarded in the [“jumping Bitswap” prototype](https://research.protocol.ai/blog/2020/teaching-bitswap-nodes-to-jump/) implementation of the protocol.  In that protocol extension, a TTL field is added to Bitswap messages to allow messages to be forwarded to “neighbors of neighbors” up to the TTL value specified in the message.
+A: No. In the baseline Bitswap protocol, peers only interact with their direct neighbors. Bitswap messages are only forwarded in the [“jumping Bitswap” prototype](/blog/2020/teaching-bitswap-nodes-to-jump/) implementation of the protocol.  In that protocol extension, a TTL field is added to Bitswap messages to allow messages to be forwarded to “neighbors of neighbors” up to the TTL value specified in the message.
 
 *Q: How does Jumping  Bitswap avoid the same peer from getting the same message multiple times?*
 
