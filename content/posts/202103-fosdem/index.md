@@ -33,7 +33,7 @@ draft: false
 
 ---
 
-[FOSDEM](https://fosdem.org/2021/) is one of the biggest events for software developers building open-source software. It takes place once a year in Brussels, gathering over 8000 developers, hackers and engineers from across the spectrum of software development.  Many of the contributors in the  IPFS/libp2p ecosystem have used FOSDEM as a meeting point and as an opportunity to demo progress in each of their projects.
+[FOSDEM](https://fosdem.org/2021/) is one of the biggest events for software developers building open-source software. Founded in 2000, the conference takes place once a year in Brussels, gathering over 8000 developers, hackers and engineers from across the spectrum of software development.  Many of the contributors in the  IPFS/libp2p ecosystem have used FOSDEM as a meeting point and as an opportunity to demo progress in each of their projects.
 
 In this year’s edition, we were thrilled to present the latest developments on the IPFS, libp2p, Filecoin and a new projected deployed in 2020, Drand!.
 
