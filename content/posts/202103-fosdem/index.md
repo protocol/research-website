@@ -78,7 +78,7 @@ Jumping Bitswap nodes include a degree parameter to limit the number of messages
 Jumping Bitswap nodes do not forward requests for CIDs for which they have already forwarded a request (even if the CID is being requested from another source node). This prevents the duplicate requests for the same CID.
 
 
-## DRAND Talk
+## drand Talk
 
 *Q: What is the trust assumption of drand? Do we need to trust the individual nodes to use the randomness?*
 
