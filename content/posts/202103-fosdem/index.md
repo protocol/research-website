@@ -54,7 +54,7 @@ A: Filecoin does not use Proof-of-Work consensus, so it is not as energy-consumi
 
 *Q: Web3 needs a new kind of infrastructure to work. How easy is it to get started and  for an org to get the stack working? Is there some existing, well-maintained open network?*
 
-A: Indeed, Web3 needs several different network components to improve on the current Web2.0. A key ingredient of building Web3 is the community surrounding it. In that sense, the open-source nature of most Web3 projects is key to success. Both the IPFS and Filecoin networks in operation today are open-source, community-driven, and permissionless when it comes to new nodes joining the network. To get started, check out the tools at Filecoin.io/build
+A: Indeed, Web3 needs several different network components to improve on the current Web2.0. A key ingredient of building Web3 is the community surrounding it. In that sense, the open-source nature of most Web3 projects is key to success. Both the IPFS and Filecoin networks in operation today are open-source, community-driven, and permissionless when it comes to new nodes joining the network. To get started, check out the tools at https://filecoin.io/build/
 
 *Q: Presumably the tokens must have some value, or otherwise gaining them wouldn’t be desirable and the system wouldn’t work, right?*
 
