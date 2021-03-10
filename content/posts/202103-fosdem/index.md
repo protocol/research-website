@@ -35,7 +35,7 @@ draft: false
 
 [FOSDEM](https://fosdem.org/2021/) is one of the biggest events for software developers building open-source software. Founded in 2000, the conference takes place once a year in Brussels, gathering over 8000 developers, hackers and engineers from across the spectrum of software development.  Many of the contributors in the  IPFS/libp2p ecosystem have used FOSDEM as a meeting point and as an opportunity to demo progress in each of their projects.
 
-In this year’s edition, we were thrilled to present the latest developments on the IPFS, libp2p, Filecoin and a new projected deployed in 2020, Drand!.
+In this year’s edition, we were thrilled to present the latest developments in the IPFS, libp2p, and Filecoin projects, and in  a new project deployed in 2020: Drand!
 
 - **Molly Mackinlay**, who leads PL’s development work on IPFS & FIlecoin,  presented the benefits of building on top of IPFS and Filecoin and the opportunities these platforms create  for researchers and developers.
 - **Nicolas Gailly**, research scientist in the Filecoin team, presented [drand](https://drand.love/), a distributed randomness beacon, and described  the necessity of such a system in decentralised network setups.
@@ -50,7 +50,7 @@ As we always do when we attend a conference, here you can find the questions we 
 
 *Q: What is the environmental impact of filecoin?*
 
-A: Filecoin does not use Proof-of-Work consensus, so it is not as energy-consuming as other cryptocurrencies. Filecoin uses two consensus algorithms called [Proof-of-replication](https://spec.filecoin.io/#section-algorithms.pos.porep) and [Proof-of-Spacetime](https://spec.filecoin.io/#section-algorithms.pos.post). These two algorithms guarantee secure and provable storage without excessive energy consumption. We do not however know of any study that measured the environmental footprint of Filecoin.
+A: Filecoin does not use Proof-of-Work consensus, so it is not as energy-consuming as other cryptocurrencies. Filecoin uses two consensus algorithms called [Proof-of-Replication](https://spec.filecoin.io/#section-algorithms.pos.porep) and [Proof-of-Spacetime](https://spec.filecoin.io/#section-algorithms.pos.post). These two algorithms guarantee secure and provable storage without excessive energy consumption. We do not however know of any study that measured the environmental footprint of Filecoin.
 
 *Q: Web3 needs a new kind of infrastructure to work. How easy is it to get started and  for an org to get the stack working? Is there some existing, well-maintained open network?*
 
