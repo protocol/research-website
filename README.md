@@ -16,8 +16,8 @@ This repository contains the source code for the Protocol Labs Research website,
 
 ## Setup
 
-- You will need [Hugo](https://gohugo.io/) (CI version: 0.69.2)
-- You will need [NodeJS](https://nodejs.org/en/) (CI version: latest v10 release)
+- You will need [Hugo](https://gohugo.io/) (CI version: 0.81.0)
+- You will need [NodeJS](https://nodejs.org/en/) (CI version: latest v14 release)
 - You will need [Yarn](https://yarnpkg.com/lang/en/)
 - Run `yarn` to install deps.
 
