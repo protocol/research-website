@@ -44,15 +44,15 @@ In this year’s edition, we were thrilled to present the latest developments in
 
 ## Q&A
 
-As we always do when we attend a conference, here you can find the questions we received during the event together with their answers in text form, as a resource for the future reader.
+As we always do when we attend a conference, we have recorded the questions we received during the event together with their answers in text form, as a resource for the future reader.
 
 ### [IPFS & Filecoin Talk](https://fosdem.org/2021/schedule/event/open_research_filecoin_ipfs/)
 
-*Q: What is the environmental impact of filecoin?*
+*Q: What is the environmental impact of Filecoin?*
 
-A: Filecoin does not use Proof-of-Work consensus, so it is not as energy-consuming as other cryptocurrencies. Filecoin uses two consensus algorithms called [Proof-of-Replication](https://spec.filecoin.io/#section-algorithms.pos.porep) and [Proof-of-Spacetime](https://spec.filecoin.io/#section-algorithms.pos.post). These two algorithms guarantee secure and provable storage without excessive energy consumption. We do not however know of any study that measured the environmental footprint of Filecoin.
+A: Filecoin does not use Proof-of-Work consensus, so it is not as energy-consuming as other cryptocurrencies. Filecoin uses two consensus algorithms called [Proof-of-Replication](https://spec.filecoin.io/#section-algorithms.pos.porep) and [Proof-of-Spacetime](https://spec.filecoin.io/#section-algorithms.pos.post). These two algorithms guarantee secure and provable storage without excessive energy consumption. We do not, however, know of any study that measured the environmental footprint of Filecoin.
 
-*Q: Web3 needs a new kind of infrastructure to work. How easy is it to get started and  for an org to get the stack working? Is there some existing, well-maintained open network?*
+*Q: Web3 needs a new kind of infrastructure to work. How easy is it to get started and for an org to get the stack working? Is there some existing, well-maintained open network?*
 
 A: Indeed, Web3 needs several different network components to improve on the current Web2.0. A key ingredient of building Web3 is the community surrounding it. In that sense, the open-source nature of most Web3 projects is key to success. Both the IPFS and Filecoin networks in operation today are open-source, community-driven, and permissionless when it comes to new nodes joining the network. To get started, check out the tools at https://filecoin.io/build/
 
@@ -71,7 +71,7 @@ A: Yes, both miners and clients pay for storage via Filecoin, which can be used 
 
 *Q: Is Filecoin an ETH2.0 coin?*
 
-A: Filecoin runs its own blockchain and is not an ERC20 token. This makes it the first of its kind: a  decentralised storage network that runs on its own blockchain network. You can find more information about the network, including a dashboard with current  statistics, at this link: https://network.filecoin.io/#mainnet
+A: Filecoin runs its own blockchain and is not an ERC20 token. This makes it the first of its kind: a  decentralised storage network that runs on its own blockchain network. You can find more information about the network, including a dashboard with current statistics, at this link: https://network.filecoin.io/#mainnet
 
 ### [drand Talk](https://fosdem.org/2021/schedule/event/drand/)
 
@@ -81,7 +81,7 @@ A: No. In order to use the randomness delivered by a drand network, you only nee
 
 *Q: How can one compromise the network?*
 
-A: An attacker needs to compromise more than 50% of nodes and access their private key in order to be able to derive future randomness. This is why the League of Entropy network puts significant  emphasis on node security and diversity. We have nodes deployed around the globe under different jurisdictions and different ISPs, as well as  self-hosted nodes that belong to different teams. Each deployment is different with regard to its diversity of deployed infrastructure and thus the resources needed to attack it. However all deployments must meet strict security requirements such as access logs and constant monitoring, to name a few. It is important to note that we are continually increasing the size of the League of Entropy network: the security of the network increases with the number of nodes it contains, since attackers need to compromise a larger number of nodes. We are approaching 25 robust, diverse nodes, including companies with extensive background and expertise in Internet security —  see the [drand website](https://drand.love) for more information.
+A: An attacker needs to compromise more than 50% of nodes and access their private key in order to be able to derive future randomness. This is why the League of Entropy network puts significant emphasis on node security and diversity. We have nodes deployed around the globe under different jurisdictions and different ISPs, as well as self-hosted nodes that belong to different teams. Each deployment is different with regard to diversity of deployed infrastructure and thus the resources needed to attack it. However, all deployments must meet strict security requirements such as access logs and constant monitoring, to name a few. It is important to note that we are continually increasing the size of the League of Entropy network: the security of the network increases with the number of nodes it contains, since attackers need to compromise a larger number of nodes. We are approaching 25 robust, diverse nodes, including companies with extensive background and expertise in Internet security —  see the [drand website](https://drand.love) for more information.
 
 *Q: Can I deploy my own drand network? What would be the benefit?*
 
@@ -89,11 +89,11 @@ A: Yes, anybody can deploy their own drand network. However, whether a separate 
 
 *Q: What are the conditions that one needs to meet to become a node in the League of Entropy?*
 
-A: The conditions cover a wide range of criteria given that the League of Entropy is a production-ready network. First of all, we require a high level of expertise in deploying and monitoring secure networked infrastructure. Secondly, a dedicated team that is reachable 24/7 in case of problems needs to be in place. Furthermore, we also aim for high diversity in terms of cloud providers (or self-hosting solutions), jurisdictions, and geographical locations. Even though we aim to be as open as possible (in the semi-permissioned model under which drand operates), joining the network as an individual is discouraged. You can find more information via [the drand Github repo and mailing list](https://drand.love/about/community/#mailing-list). 
+A: The conditions cover a wide range of criteria given that the League of Entropy is a production-ready network. First of all, we require a high level of expertise in deploying and monitoring secure networked infrastructure. Secondly, a dedicated team that is reachable 24/7 in case of problems needs to be in place. Furthermore, we aim for high diversity in terms of cloud providers (or self-hosting solutions), jurisdictions, and geographical locations. Even though we aim to be as open as possible (in the semi-permissioned model under which drand operates), joining the network as an individual is discouraged. You can find more information via [the drand Github repo and mailing list](https://drand.love/about/community/#mailing-list). 
 
 *Q: Are there different implementations of drand?*
 
-A: Currently the [main implementation](https://github.com/drand/drand) is in Go. Work on a  Rust implementation for drand is in progress. On the client side  (that is, in order to fetch and verify the randomness) there is a Go and a Rust implementation, as well as a wasm implementation that is compatible with the smart contract platform on the COSMOS blockchain.
+A: Currently the [main implementation](https://github.com/drand/drand) is in Go. Work on a Rust implementation for drand is in progress. On the client side (that is, in order to fetch and verify the randomness) there is a Go and a Rust implementation, as well as a wasm implementation that is compatible with the smart contract platform on the COSMOS blockchain.
 
 ### [Bitswap Talk](https://fosdem.org/2021/schedule/event/ipfs/)
 
@@ -107,20 +107,17 @@ A: No. In the baseline Bitswap protocol, peers only interact with their direct n
 
 *Q: How does Jumping  Bitswap avoid the same peer from getting the same message multiple times?*
 
-A: There is no way of preventing a peer from receiving the same message multiple times. Peers may have several shared connections with several peers in the path, and the topology of the network is unpredictable. However, the protocol has several schemes in place to minimize the duplication of messages and reduce the flooding of messages in the network:
-Jumping Bitswap nodes include a degree parameter to limit the number of messages that are forwarded. Thus, for a degree *d*, Bitswap nodes only forward requests to *d* of the peers in the session.
-Jumping Bitswap nodes do not forward requests for CIDs for which they have already forwarded a request (even if the CID is being requested from another source node). This prevents the duplicate requests for the same CID.
+A: There is no way of preventing a peer from receiving the same message multiple times. Peers may have several shared connections with multiple peers in the path, and the topology of the network is unpredictable. However, the protocol has schemes in place to minimize the duplication of messages and reduce the flooding of messages in the network:
+- Jumping Bitswap nodes include a degree parameter to limit the number of messages that are forwarded. Thus, for a degree *d*, Bitswap nodes only forward requests to *d* of the peers in the session.
+- Jumping Bitswap nodes do not forward requests for CIDs for which they have already forwarded a request (even if the CID is being requested from another source node). This prevents the duplicate requests for the same CID.
 
 ### [GossipSub Talk](https://fosdem.org/2021/schedule/event/gossipsub/)
 
-*Q: I was not here at the beginning of the talk: what is the relationship between Filecoin and Gossipsub?*
+*Q: What is the relationship between Filecoin and Gossipsub?*
 
-A: Filecoin is a blockchain network, and as every blockchain network it needs to propagate blocks and transaction messages between miners so that all nodes are in sync, reach consensus, and advance the blockchain. As most blockchain networks are primarily permissionless peer-to-peer networks, they need a message propagation protocol to deliver new blocks and messages to all nodes in the network.
+A: Filecoin is a blockchain network, and, as every blockchain network, it needs to propagate blocks and transaction messages between miners so that all nodes are in sync, reach consensus, and advance the blockchain. Because most blockchain networks are primarily permissionless peer-to-peer networks, they need a message propagation protocol to deliver new blocks and messages to all nodes in the network.
 
-GossipSub is the message propagation protocol for the Filecoin blockchain. It makes sure that: 
-- all messages are delivered to their destination with bounded delay
-- the network is not overloaded with traffic
-The network stays resilient against a large number of very challenging attacks.
+GossipSub is the message propagation protocol for the Filecoin blockchain. It makes sure that all messages are delivered to their destination with bounded delay, the network is not overloaded with traffic, and the network stays resilient against a large number of very challenging attacks.
 
 
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_violet.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center>
