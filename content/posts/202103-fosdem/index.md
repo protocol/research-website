@@ -33,14 +33,14 @@ draft: false
 
 ---
 
-[FOSDEM](https://fosdem.org/2021/) is one of the biggest events for software developers building open-source software. Founded in 2000, the conference takes place once a year in Brussels, gathering over 8000 developers, hackers and engineers from across the spectrum of software development.  Many of the contributors in the  IPFS/libp2p ecosystem have used FOSDEM as a meeting point and as an opportunity to demo progress in each of their projects.
+[FOSDEM](https://fosdem.org/2021/) is one of the biggest events for software developers building open-source software. Founded in 2000, the conference takes place once a year in Brussels, gathering over 8000 developers, hackers, and engineers from across the spectrum of software development.  Many of the contributors in the  IPFS/libp2p ecosystem have used FOSDEM as a meeting point and as an opportunity to demo progress in each of their projects.
 
 In this year’s edition, we were thrilled to present the latest developments in the IPFS, libp2p, and Filecoin projects, and in  a new project deployed in 2020: Drand!
 
-- **Molly Mackinlay**, who leads PL’s development work on IPFS & FIlecoin,  presented the benefits of building on top of IPFS and Filecoin and the opportunities these platforms create  for researchers and developers.
-- **Nicolas Gailly**, research scientist in the Filecoin team, presented [drand](https://drand.love/), a distributed randomness beacon, and described  the necessity of such a system in decentralised network setups.
-- **Alfonso de la Rocha**, research engineer at ResNetLab, presented the latest improvements proposed for IPFS’s Bitswap protocol and the performance benefits it brings.
-- **Yiannis Psaras**, research scientist at ResNetLab, presented the technical design details of GossipSub, a pubsub protocol for transaction and block message propagation in the Filecoin and ETH2.0 blockchains.
+- **Molly Mackinlay**, who leads PL’s development work on IPFS and FIlecoin,  presented the benefits of building on top of IPFS and Filecoin and the opportunities these platforms create  for researchers and developers.
+- **Nicolas Gailly**, a research scientist in the Filecoin team, presented [drand](https://drand.love/), a distributed randomness beacon, and described  the necessity of such a system in decentralised network setups.
+- **Alfonso de la Rocha**, a research engineer at ResNetLab, presented the latest improvements proposed for IPFS’s Bitswap protocol and the performance benefits they bring.
+- **Yiannis Psaras**, a research scientist at ResNetLab, presented the technical design details of GossipSub, a pubsub protocol for transaction and block message propagation in the Filecoin and ETH2.0 blockchains.
 
 ## Q&A
 
@@ -54,7 +54,7 @@ A: Filecoin does not use Proof-of-Work consensus, so it is not as energy-consumi
 
 *Q: Web3 needs a new kind of infrastructure to work. How easy is it to get started and for an org to get the stack working? Is there some existing, well-maintained open network?*
 
-A: Indeed, Web3 needs several different network components to improve on the current Web2.0. A key ingredient of building Web3 is the community surrounding it. In that sense, the open-source nature of most Web3 projects is key to success. Both the IPFS and Filecoin networks in operation today are open-source, community-driven, and permissionless when it comes to new nodes joining the network. To get started, check out the tools at https://filecoin.io/build/
+A: Indeed, Web3 needs several different network components to improve on the current Web2.0. A key ingredient of building Web3 is the community surrounding it. In that sense, the open-source nature of most Web3 projects is key to their success. Both the IPFS and Filecoin networks in operation today are open-source, community-driven, and permissionless when it comes to new nodes joining the network. To get started, check out the tools at https://filecoin.io/build/
 
 *Q: Presumably the tokens must have some value, or otherwise gaining them wouldn’t be desirable and the system wouldn’t work, right?*
 
@@ -109,7 +109,7 @@ A: No. In the baseline Bitswap protocol, peers only interact with their direct n
 
 A: There is no way of preventing a peer from receiving the same message multiple times. Peers may have several shared connections with multiple peers in the path, and the topology of the network is unpredictable. However, the protocol has schemes in place to minimize the duplication of messages and reduce the flooding of messages in the network:
 - Jumping Bitswap nodes include a degree parameter to limit the number of messages that are forwarded. Thus, for a degree *d*, Bitswap nodes only forward requests to *d* of the peers in the session.
-- Jumping Bitswap nodes do not forward requests for CIDs for which they have already forwarded a request (even if the CID is being requested from another source node). This prevents the duplicate requests for the same CID.
+- Jumping Bitswap nodes do not forward requests for CIDs for which they have already forwarded a request (even if the CID is being requested from another source node). This prevents  duplicate requests for the same CID.
 
 ### [GossipSub Talk](https://fosdem.org/2021/schedule/event/gossipsub/)
 
