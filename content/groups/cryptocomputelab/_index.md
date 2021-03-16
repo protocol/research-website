@@ -21,7 +21,27 @@ aliases:
 Seeded by the hard problems Filecoin Mainnet presented, our long-term vision is to build on the solutions discovered and bring them to maturity. In this way, we will address a broader range of general problems, while discovering and overcoming new hard research development challenges along the way. Our aspiration is to harness this ongoing feedback loop to make ever more ambitious computational techniques practical for real-world applications.
 
 
-### **External Collaborators**
+## Research Endeavours
+
+- Elliptic curve cryptography, applied and research
+- Programming Language Research & Development
+- High Performance Computing
+    - Chip design & analysis
+    - Algorithm & data structure design
+    - Server design
+
+## Team
+
+### The Home Team
+
+- **Lab Lead:** Friedel Ziegelmayer
+- Porçu Quine 
+- nemo
+- drpetervannostrand
+- Volker Mische
+
+
+### External Collaborators
 
 - [Supranational](https://www.supranational.net/)
     - GPU and CPU optimizations
@@ -33,11 +53,5 @@ Seeded by the hard problems Filecoin Mainnet presented, our long-term vision is 
     - Halo2
     - VDFs
 
-# **Research Endeavors**
 
-- Elliptic curve cryptography, applied and research
-- Programming Language Research & Development
-- High Performance Computing
-    - *Chip design & analysis*
-    - *Algorithm & data structure design*
-    - *Server design*
+
