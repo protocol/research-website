@@ -1,6 +1,6 @@
 ---
 # Display name
-name: nemo
+name: jake
 
 # Role/position (e.g. Research Scientist)
 role: Research Engineer
@@ -14,21 +14,19 @@ resources:
   - name: avatar
     src: avatar.png
 
-# Research interests
-interests:
- 
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 social:
   - icon: github
-    link: https://github.com/cryptonemo
+    link: https://github.com/drpetervannostrand
    
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
 user_groups:
   - Researchers
+
 
 # For display at the top of the author details page
 # Not currently used

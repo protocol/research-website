@@ -37,7 +37,7 @@ Seeded by the hard problems Filecoin Mainnet presented, our long-term vision is 
 - **Lab Lead:** Friedel Ziegelmayer
 - Porçu Quine 
 - nemo
-- drpetervannostrand
+- jake
 - Volker Mische
 
 
