@@ -34,7 +34,7 @@ Much of CryptoLab’s work is exhibited in the Filecoin Research [website](https
 
 
 
-## Researchers
+## Team
 - [Nicola Greco](/authors/nicola-greco)
 - [Irene Giacomelli](/authors/irene-giacomelli)
 - [Anca Nitelescu](/authors/anca-nitulescu/)
