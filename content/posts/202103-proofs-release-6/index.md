@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "CryptoComputeLab Proofs Release 6.1.0"
+title: "CryptoComputeLab announces proofs release 6.1.0"
 
 # Website post date
 # format YYYY-MM-DD
@@ -54,11 +54,11 @@ proofs code actually incorporates
 library wrapper, and this release updates from **v0.1.3** to **v0.2.2**.
 More on that below.
 
-The latest **rust-fil-proofs v6.1.0** at the source code level does a
-number of significant re-organizations. Several source directories have
+The latest **rust-fil-proofs v6.1.0** does a
+number of significant re-organizations at the source code level. Several source directories have
 been moved out into their own 'crate' (the name used for a *Rust*
 package), including **phase2** and **fr32**, and all of the source code
-got a once over trying to remove so-called [glob
+got a once-over trying to remove so-called [glob
 imports](https://drs.is/post/against-globs/), arguably a sloppy
 style of importing modules that accrued over time.
 
@@ -74,9 +74,9 @@ and optionally allows access to
 [OpenCL](https://en.wikipedia.org/wiki/OpenCL) backend.
 Benchmarking within the updated
 [blstrs](https://github.com/filecoin-project/blstrs/) library
-alone shows optimized performance in 2 key operations: *g1/g2 multiply*
-and *fp12* *inverse*. A performance comparison is shown below between
-the previous version and the latest one.
+alone shows optimized performance in two key operations: *g1/g2 multiply*
+and *fp12* *inverse*. A performance comparison between
+the previous version and the latest one is shown below:
 
 <table>
 <thead>
