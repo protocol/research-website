@@ -36,7 +36,7 @@ Today we're proud to announce the recent release of
 **[rust-fil-proofs](https://github.com/filecoin-project/rust-fil-proofs)
 v6.1.0**. This release contains a number of significant re-factors and
 performance optimizations, but we'd like to dig deeper into a couple of
-them and show some of the real-world impacts.
+them to show some of the real-world impacts.
 
 But first, *in the realm of security,* this release ships with
 **[blst](https://github.com/supranational/blst) v3.3.0** as an
@@ -114,20 +114,20 @@ Switching gears, by default, the proofs code uses
 [neptune](https://github.com/filecoin-project/neptune)'s gpu
 backend, which accelerates the *Pre-commit Phase 2* stage of sealing by
 building merkle trees efficiently on the GPU. This code has served
-proofs well for some time and is a significant performance leap ahead of building those same trees
+proofs well for some time and is a significant performance leap from building those same trees
 on modern CPUs. However, the GPU code itself inside of
 [neptune](https://github.com/filecoin-project/neptune) has been
 updated significantly and now includes a pure
 [OpenCL](https://en.wikipedia.org/wiki/OpenCL) based
 implementation to do that same tree building even more efficiently. For
-the sake of this article, we'll describe the legacy/default tree
+the sake of this post, we'll describe the legacy/default tree
 building as ***gpu*** and the new optional feature as ***gpu2***. With
 this release, you can use this feature today by compiling
 [rust-fil-proofs](https://github.com/filecoin-project/rust-fil-proofs)
 with the ***gpu2*** feature. The only reason the new ***gpu2*** feature
 remains optional at this time is because we would like to see wider
 testing with it before making it the default -- though we don't expect
-it'll be optional for too much longer. That said, let's dive into some
+it to remain optional for too much longer. That said, let's dive into some
 comparisons of the two and see what kind of impact we're looking at!
 
 For the testing hardware, we have an [AMD Ryzen 9 3950X 16-core
@@ -142,7 +142,7 @@ steps of sealing, and instead
 [isolate](https://github.com/filecoin-project/rust-fil-proofs/pull/1427)
 the 'Precommit Phase 2' stage of sealing, which is primarily the tree
 building. Enabling this feature allows us to better benchmark GPU work
-so that we can have an apples to apples comparison on the performance.
+so that we can have an apples-to-apples comparison on the performance.
 
 The proofs team is happy to share that the results of this testing are
 very promising!
@@ -150,7 +150,7 @@ very promising!
 <img src="image1.png" style="width:6.5in;height:4.19444in" />
 <p>&nbsp;</p> 
 
-The image above summarizes our findings, which takes a look at wall
+The image above summarizes our findings, which take a look at wall
 clock time for GPU tree building. The tested feature combinations are
 with ***blst*** and ***gpu*** enabled, with ***pairing*** and ***gpu***
 enabled, with ***blst*** and ***gpu2*** enabled, and finally with
