@@ -207,3 +207,6 @@ or see below!
 
 <img src="image2.png" style="width:5.98958in;height:5.39583in" />
 
+<center>{{< figure src="/images/cryptocomputelab/cryptocomputelab-streamline-temp.png" alt=CryptoComputeLab" link="/research/groups/cryptocomputelab/" width="75px" >}}</center>
+
+<center style=font-size:11pt><i> We at CryptoComputeLab welcome further discussion of our research topics,  and we're always on the lookout for  opportunities to answer questions and develop collaborations. Please reach out via email (<a href="mailto:research@protocol.ai">research@protocol.ai</a>) to start the conversation! </i></center>
