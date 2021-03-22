@@ -78,29 +78,29 @@ alone shows optimized performance in two key operations: *g1/g2 multiply*
 and *fp12* *inverse*. A performance comparison between
 the previous version and the latest one is shown below:
 
-<table>
+<table class="table-fixed">
 <thead>
 <tr class="header">
-<th><strong>Operation</strong></th>
-<th><strong>Blstrs v0.1.3 (nanoseconds)</strong></th>
-<th><strong>Blstrs v0.2.2 (nanoseconds)</strong></th>
-<th><strong>Speed-up</strong></th>
+<th class="w-1/2"><strong>Operation</strong></th>
+<th class="w-1/4"><strong>Blstrs v0.1.3 <br>(nanoseconds)</strong></th>
+<th class="w-1/4"><strong>Blstrs v0.2.2 <br>(nanoseconds)</strong></th>
+<th class="w-1/4"><strong>Speed-up</strong></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr class="bg-gray-100">
 <td>G1 multiply</td>
 <td>102,865</td>
 <td>79,089</td>
 <td>1.3x</td>
 </tr>
-<tr class="even">
+<tr class="bg-white">
 <td>G2 multiply</td>
 <td>252,315</td>
 <td>180,283</td>
 <td>1.4x</td>
 </tr>
-<tr class="odd">
+<tr class="bg-gray-100">
 <td>FP12 Inverse</td>
 <td>9,314</td>
 <td>5,520</td>
@@ -108,6 +108,7 @@ the previous version and the latest one is shown below:
 </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 Switching gears, by default, the proofs code uses
 [neptune](https://github.com/filecoin-project/neptune)'s gpu
@@ -147,6 +148,7 @@ The proofs team is happy to share that the results of this testing are
 very promising!
 
 <img src="image1.png" style="width:6.5in;height:4.19444in" />
+<p>&nbsp;</p> 
 
 The image above summarizes our findings, which takes a look at wall
 clock time for GPU tree building. The tested feature combinations are
@@ -159,37 +161,38 @@ the time of the test run. The times recorded are in milliseconds. Both
 CPU and wall time are shown, but they may vary depending on the specific
 CPU and GPU used.
 
-<table>
+<table class="table-fixed">
 <thead>
 <tr class="header">
-<th><strong>Features enabled</strong></th>
-<th><strong>CPU time (milliseconds)</strong></th>
-<th><strong>Wall time (milliseconds)</strong></th>
+<th class="w-1/2"><strong>Features enabled</strong></th>
+<th class="w-1/4"><strong>CPU time <br>(milliseconds)</strong></th></br>
+<th class="w-1/4"><strong>Wall time <br>(milliseconds)</strong></th> </br>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr class="bg-gray-100">
 <td>Pairing and gpu</td>
 <td>2,647,533</td>
 <td>1,281,010</td>
 </tr>
-<tr class="even">
+<tr class="bg-white">
 <td>Pairing and gpu2</td>
 <td>3,338,394</td>
 <td>687,922</td>
 </tr>
-<tr class="odd">
+<tr class="bg-gray-100">
 <td>Blst and gpu</td>
 <td>2,660,596</td>
 <td>1,261,724</td>
 </tr>
-<tr class="even">
+<tr class="bg-white">
 <td>Blst and gpu2</td>
 <td>5,390,836</td>
 <td>696,688</td>
 </tr>
 </tbody>
-</table>
+</table> 
+<p>&nbsp;</p> 
 
 Another notable improvement included in this release is an updated
 version of the
