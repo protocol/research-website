@@ -21,6 +21,7 @@ areas:
   - distributed-systems
   - type-theory
 groups:
+  - abstractionlab
 
 resources:
   - title: featured-image

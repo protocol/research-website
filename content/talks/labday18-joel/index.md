@@ -20,6 +20,7 @@ authors:
 areas:
   - knowledge-engineering
 groups:
+  - abstractionlab
 
 resources:
   - title: featured-image

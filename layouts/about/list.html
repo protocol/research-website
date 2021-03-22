@@ -18,7 +18,7 @@
         <div class="max-w-sm md:mx-auto lg:w-1/2 lg:mt-40">
           <p class="leading-relaxed mb-8">“We consistently bet, not only that the future could be a fantastic and wonderful place, but that it’s worthwhile for us, as an organization, to work toward that future."</p>
 
-          {{ with $.Site.GetPage "taxonomyTerm" "authors/evan-miyazono" }}
+          {{ with $.Site.GetPage "taxonomy" "authors/evan-miyazono" }}
             {{ $author := . }}
             {{ range $author.Resources.Match "avatar" }}
               {{ $image := .Fill "56x56" }}

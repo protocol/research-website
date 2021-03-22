@@ -6,7 +6,7 @@
   </div>
 {{ end }}
 
-{{ if (and .Params.authors (partial "func/has-values" .Params.authors)) }}
+{{ if .Params.authors }}
   <div class="text-sm text-gray-700">
     <img class="inline-block mr-2" src="/images/icon/user.svg">
     {{ $taxonomy := "authors" }}
@@ -30,7 +30,7 @@
 {{ end }}
 
 
-{{ if (and .Params.groups (partial "func/has-values" .Params.groups)) }}
+{{ if .Params.groups }}
   <div class="text-sm text-gray-700">
     <img class="inline-block mr-2" src="/images/icon/group.svg">
     {{ $taxonomy := "groups" }}
@@ -54,7 +54,7 @@
 {{ end }}
 
 
-{{ if (and .Params.areas (partial "func/has-values" .Params.areas)) }}
+{{ if .Params.areas }}
   <div class="text-sm text-gray-700">
     <img class="inline-block mr-2" src="/images/icon/tag.svg">
     {{ $taxonomy := "areas" }}

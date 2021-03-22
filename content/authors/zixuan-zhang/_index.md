@@ -10,7 +10,7 @@ authors:
 role: Research Scientist
 
 groups:
-  - cryptolab
+  - cryptoeconlab
 
 resources:
   - name: avatar

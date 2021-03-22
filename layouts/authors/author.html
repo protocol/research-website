@@ -23,7 +23,7 @@
 
           {{ range (index .Params "groups")}}
             <span>/</span>
-            {{ with $.Site.GetPage "taxonomyTerm" (printf "/groups/%s" (urlize . )) }}
+            {{ with $.Site.GetPage "taxonomy" (printf "/groups/%s" (urlize . )) }}
               <a href="{{ .RelPermalink }}" class="inline-block hover:text-blue capitalize">
                 {{ .Title }}
               </a>

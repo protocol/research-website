@@ -32,7 +32,7 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - 
+  - abstractionlab
 
 # Name the cover image featured.jpg
 resources:
@@ -41,8 +41,8 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: "Michael Hammersley talks about enabling transactive energy on legacy power grids. 
-This work was done in conjunction with Alan Ransil, who is associated with both Protocol Labs 
+abstract: "Michael Hammersley talks about enabling transactive energy on legacy power grids.
+This work was done in conjunction with Alan Ransil, who is associated with both Protocol Labs
 and the MIT Energy Initiative, as well as Frank O’Sullivan, who is also at the MIT Energy Initative."
 
 ---
