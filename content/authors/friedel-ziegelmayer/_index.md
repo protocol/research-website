@@ -10,7 +10,7 @@ authors:
 role: Research Engineer
 
 groups:
-  - cryptolab
+  - cryptocomputelab
 
 resources:
   - name: avatar
