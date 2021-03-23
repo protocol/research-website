@@ -24,14 +24,14 @@ research_areas:
 
 # Zero or more of the groups in content/research/groups (should match author membership)
 groups:
-  - cryptolab
+  - cryptonetlab
 
 # Not used
 draft: false
 
 ---
 
-[Anca Nitulescu](/authors/anca-nitulescu/) is joining [CryptoLab](/groups/cryptolab/) as a Research Scientist. After obtaining their PhD in cryptography at [ENS Paris](https://www.ens.psl.eu/en), they worked as a Postdoctoral Scholar at [Aarhus University](https://international.au.dk/) and as Chief Cryptographer at [Cosmian](https://cosmian.com/) before coming to Protocol Labs. Their main research interests are cryptographic proving systems, especially zero-knowledge proofs and succinct arguments of knowledge (SNARKs).
+[Anca Nitulescu](/authors/anca-nitulescu/) is joining CryptoLab (Update: now [CryptoNetLab](/groups/cryptonetlab/)) as a Research Scientist. After obtaining their PhD in cryptography at [ENS Paris](https://www.ens.psl.eu/en), they worked as a Postdoctoral Scholar at [Aarhus University](https://international.au.dk/) and as Chief Cryptographer at [Cosmian](https://cosmian.com/) before coming to Protocol Labs. Their main research interests are cryptographic proving systems, especially zero-knowledge proofs and succinct arguments of knowledge (SNARKs).
 
 We asked Anca about the road that led them here and what the future looks like:
 

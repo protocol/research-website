@@ -28,7 +28,8 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - CryptoLab
+  - cryptonetlab
+  - cryptocomputelab
 
 # Not used
 draft: false

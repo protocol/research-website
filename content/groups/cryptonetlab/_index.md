@@ -30,7 +30,7 @@ CryptoNetlab’s current foci are:
 - 
 - 
 
-Much of CryptoLab’s work is exhibited in the Filecoin Research [website](https://research.filecoin.io/) and [GitHub repo](https://github.com/filecoin-project/research/).
+Much of CryptoNetLab’s work is exhibited in the Filecoin Research [website](https://research.filecoin.io/) and [GitHub repo](https://github.com/filecoin-project/research/).
 
 
 

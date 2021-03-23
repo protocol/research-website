@@ -9,8 +9,6 @@ authors:
 # Role/position
 role: Research Scientist
 
-groups:
-  - cryptolab
 
 resources:
   - name: avatar

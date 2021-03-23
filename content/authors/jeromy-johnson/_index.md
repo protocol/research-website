@@ -9,9 +9,6 @@ authors:
 # Role/position
 role: Research Engineer
 
-groups:
-  - cryptolab
-
 resources:
   - name: avatar
     src: avatar.jpg
