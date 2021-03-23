@@ -21,7 +21,7 @@ CryptoEconLab at PL aspires to become a hub for research on economic incentives,
 
 The lab’s genesis comes from a growing need to enable the design and deployment of large-scale economic systems, from token networks to the Metaverse. CryptoEconLab is designed to take ownership of the economic aspects of a technosocial system including design, specification, validation, deployment, and governance.
 
-## Research Endeavors
+## Research Endeavours
 
 - Formation, diffusion, and learning in networks
 - Stochastic optimal control for evolutionary systems
