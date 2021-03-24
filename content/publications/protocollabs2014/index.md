@@ -11,7 +11,8 @@ authors:
 publication_types:
   - report
 groups:
-  - cryptolab
+  - cryptonetlab
+  - cryptocomputelab
 categories:
   -
 areas:

@@ -10,7 +10,7 @@ authors:
 role: Research Advisor
 
 groups:
-  - cryptolab
+  - "CryptoLab"
 
 resources:
   - name: avatar

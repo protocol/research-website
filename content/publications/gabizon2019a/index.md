@@ -20,7 +20,8 @@ areas:
   - cryptography
 
 groups:
-  - cryptolab
+  - cryptonetlab
+  - cryptocomputelab
 
 venue: Stanford Blockchain Conference
 venue_location: Stanford, CA, USA

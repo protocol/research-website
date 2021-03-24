@@ -17,7 +17,7 @@ areas:
   - cryptography
 
 groups:
-  - cryptolab
+  - cryptonetlab
 
 draft: false
 

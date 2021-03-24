@@ -45,7 +45,7 @@ areas:
   - cryptography
 
 groups:
-  - cryptolab
+  - cryptonetlab
 
 featured: false
 

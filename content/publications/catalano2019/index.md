@@ -45,7 +45,7 @@ areas:
 
 # Zero or more of the groups in content/research/groups (should match author membership)
 groups:
-  - cryptolab
+  - cryptonetlab
 
 # Not generally used
 # featured: false

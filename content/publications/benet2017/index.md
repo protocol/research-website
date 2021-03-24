@@ -15,7 +15,7 @@ areas:
   - cryptography
   - distributed-systems  
 groups:
-  - cryptolab
+  - cryptonetlab
 categories:
 
 journal:

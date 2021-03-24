@@ -7,7 +7,7 @@ role: Research Advisor
 
 # Existing research group (use folder name) or free text
 groups:
-  - cryptolab
+  - "CryptoLab"
 
 # Avatar (no need to edit)
 resources:
@@ -54,4 +54,4 @@ user_groups:
 # quote:
 ---
 
-Rosario Gennaro received his Ph.D. from the Massachusetts Institute of Technology in 1996, and was a researcher at the IBM T.J.Watson Research Center before joining City College in the Summer of 2012. Rosaio’s research focuses on cryptography and network security and more in general on theoretical computer science. His most recent works address the security of the cloud computing infrastructure, the issues of privacy and anonymity in electronic communication, and proactive security to minimize the effects of system break-ins.
+Rosario Gennaro received his Ph.D. from the Massachusetts Institute of Technology in 1996, and was a researcher at the IBM T.J.Watson Research Center before joining City College in the Summer of 2012. Rosario’s research focuses on cryptography and network security and more in general on theoretical computer science. His most recent works address the security of the cloud computing infrastructure, the issues of privacy and anonymity in electronic communication, and proactive security to minimize the effects of system break-ins.

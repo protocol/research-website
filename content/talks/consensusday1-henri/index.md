@@ -20,7 +20,8 @@ authors:
 areas:
   - distributed-systems
 groups:
-  - cryptolab
+  - cryptonetlab
+  - cryptocomputelab
 
 resources:
   - title: featured-image

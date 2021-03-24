@@ -14,7 +14,8 @@ authors:
   - ariel-gabizon
 tags:
 groups:
-  - cryptolab
+  - cryptonetlab
+  - cryptocomputelab
 categories:
 areas:
   - cryptography
