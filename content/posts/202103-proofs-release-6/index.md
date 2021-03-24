@@ -12,7 +12,7 @@ date: 2021-03-22
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  - nemo
+  - "nemo"
   - volker-mische
 
 # If applicable
