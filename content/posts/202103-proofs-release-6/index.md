@@ -4,7 +4,7 @@ title: "CryptoComputeLab announces proofs release 6.1.0"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-03-22
+date: 2021-03-24
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -209,4 +209,5 @@ or see below!
 
 <center>{{< figure src="/images/cryptocomputelab/cryptocomputelab-streamline-temp.png" alt=CryptoComputeLab" link="/research/groups/cryptocomputelab/" width="75px" >}}</center>
 
-<center style=font-size:11pt><i> We at CryptoComputeLab welcome further discussion of our research topics,  and we're always on the lookout for  opportunities to answer questions and develop collaborations. Please reach out via email (<a href="mailto:research@protocol.ai">research@protocol.ai</a>) to start the conversation! </i></center> If you’re interested in working with us on issues at the intersection of cryptography, high-performance computing, and programming language design, please contribute to the Open Problems in our [Research Repo](https://github.com/protocol/research) and check out our [Open Positions](https://jobs.lever.co/protocol?team=Research%20Development).
+<center style=font-size:11pt><i> We at CryptoComputeLab welcome further discussion of our research topics,  and we're always on the lookout for  opportunities to answer questions and develop collaborations. Please reach out via email (<a href="mailto:research@protocol.ai">research@protocol.ai</a>) to start the conversation! If you’re interested in working with us on issues at the intersection of cryptography, high-performance computing, and programming language design, please contribute to the Open Problems in our <a href ="https://github.com/protocol/research">Research Repo</a> and check out our <a href ="https://jobs.lever.co/protocol?team=Research%20Development"> Open Positions</a>.
+</i></center>
