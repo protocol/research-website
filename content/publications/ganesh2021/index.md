@@ -25,7 +25,7 @@ doi:
 # Type of publication
 # delete all but one
 publication_types:
- 
+
   - report
 
 
@@ -70,11 +70,8 @@ unaffiliated: false
 
 ---
 
-Succinct non-interactive arguments of knowledge (SNARKs) enable non-interactive efficient verification of NP computations and admit short proofs. However, all current SNARK constructions assume that the statements to be proven can be efficiently represented as either Boolean or arithmetic circuits over finite fields. For most constructions, the choice of the prime field $\\Bbb\{F}_p$ 
-
-is limited by the existence of groups of matching order for which secure bilinear maps exist.
+Succinct non-interactive arguments of knowledge (SNARKs) enable non-interactive efficient verification of NP computations and admit short proofs. However, all current SNARK constructions assume that the statements to be proven can be efficiently represented as either Boolean or arithmetic circuits over finite fields. For most constructions, the choice of the prime field $F_p$ is limited by the existence of groups of matching order for which secure bilinear maps exist.
 
 In this work, we overcome such restrictions and enable verifying computations over rings. We construct the first designated-verifier SNARK for statements which are represented as circuits over a broader kind of commutative rings, namely those containing big enough *exceptional set*. Exceptional sets consist of elements such that their pairwise differences are invertible. Our contribution is threefold: We first introduce Quadratic Ring Programs (QRPs) as a characterization of NP where the arithmetic is over a ring and we generalize pre-existent assumptions employed in field-restricted SNARKs to the ring context.
 
-We construct ring SNARKs from framework based on encodings, inspired by the Pinocchio. Our scheme is modular, based on generic encodings over rings and allows for various instantiations in order to adapt to different settings. Finally, we propose two applications for our SNARKs. In the first one, we instantiate our construction for the Galois Rings $\\pmb\{GR(2^k,d)}$, i.e. the degree-*d* Galois extension of  $\\Bbb\{Z_{2^k}}$. This allows us to naturally prove statements about circuits over  $\\Bbb\{Z_{2^{64}}}$, which closely matches real-life computer architectures such as standard CPUs. Our second application is verifiable computation over encrypted data, specifically for evaluations of Ring-LWE-based homomorphic encryption schemes.
-
+We construct ring SNARKs from framework based on encodings, inspired by the Pinocchio. Our scheme is modular, based on generic encodings over rings and allows for various instantiations in order to adapt to different settings. Finally, we propose two applications for our SNARKs. In the first one, we instantiate our construction for the Galois Rings $GR(2^k,d)$, i.e. the degree-*d* Galois extension of  $Z_{2^k}$. This allows us to naturally prove statements about circuits over  $Z_{2^{64}}$, which closely matches real-life computer architectures such as standard CPUs. Our second application is verifiable computation over encrypted data, specifically for evaluations of Ring-LWE-based homomorphic encryption schemes.
