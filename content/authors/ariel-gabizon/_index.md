@@ -7,7 +7,7 @@ authors:
   - ariel-gabizon
 
 # Role/position
-role: Research Advisor
+role: Research Scientist
 
 groups:
   - "CryptoLab"
@@ -36,7 +36,7 @@ social:
 email:
 
 user_groups:
-  - Advisors
+  - Alumni
 
 # For display at the top of the author details page
 quote:
