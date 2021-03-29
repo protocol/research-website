@@ -79,7 +79,7 @@
 
     {{ $mathjax_config := resources.Get "js/mathjax-config.js" | minify | fingerprint }}
     <script type="text/javascript" src={{ $mathjax_config.RelPermalink }} integrity={{ $mathjax_config.Data.Integrity }}></script>
-    <script type="text/javascript" src="/mathjax/tex-mml-chtml.js"></script>
+    <script type="text/javascript" src="/mathjax/tex-chtml.js"></script>
     {{ $js := resources.Get "js/bundle.js" | minify | fingerprint }}
     <script type="text/javascript" src={{ $js.RelPermalink }} integrity={{ $js.Data.Integrity }}></script>
 
