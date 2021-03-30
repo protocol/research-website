@@ -1,0 +1,144 @@
+<div class="md:flex md:flex-row md:flex-nowrap relative mb-0 border-4 md:px-0 p-4" style="border-color: #29d2ef;">
+  <img class="absolute z-20 left-0 bottom-0" style="transform: translate(calc(-50% - 2px), calc(50% + 2px));" src="/images/tutorials/hex-bus.png" width="200px">
+
+  <div class="block relative z-30 md:w-1/2 lg:w-5/12 md:mb-20 px-4">
+    <h2 class="text-md font-bold mb-4">Where We've Been</h2>
+    <p class="mb-4">Text acknowledging the situation we find ourselves in globally, and noting that despite this, we participate in many events, and host them?</p>
+    <a class="text-blue hover:underline"  href="https://google.com">Call to Action </a>
+  </div>
+
+  <div class="block md:w-1/2 lg:w-7/12 px-4 relative z-10">
+    <div id="mapid" style="height: 300px;"></div>
+  </div>
+</div>
+
+<script>
+
+
+  // TO ADD NEW LOCATIONS:
+  // to add a new map marker, add a new object with content like this:
+  // {
+  //   name: 'Event Name',
+  //   locale: [longitude, latitude],
+  //   isUpcoming: false,
+  //   url: 'https://google.com'
+  // }
+  //
+  // make sure each object in the locations array ends with a comma (to separate the objects), except for the final one
+
+  //  ADD NEW LOCATIONS HERE:
+  let locations = [
+    {
+      name: 'ACM ICN 2019',
+      locale: [22.1987, 113.5439],
+      isUpcoming: false,
+      url: 'https://conferences2.sigcomm.org/acm-icn/2019/'
+    },
+    {
+      name: 'NDN Project',
+      locale: [32.2319, -110.9501],
+      isUpcoming: false,
+      url: 'https://named-data.net/'
+    },
+    {
+      name: 'IEEE ICBC 2020',
+      locale: [45.5, -73.56],
+      isUpcoming: false,
+      url: 'https://icbc2020.ieee-icbc.org/'
+    },
+    {
+      name: 'IEEE/IFIP DSN 2020',
+      locale: [39.469906, -0.376],
+      isUpcoming: false,
+      url: 'https://dsn2020.webs.upv.es/'
+    },
+    {
+      name: 'CNSM 2020',
+      locale: [38.423733, 27.142826],
+      isUpcoming: false,
+      url: 'http://www.cnsm-conf.org/2020/'
+    },
+    {
+      name: 'IEEE Globecom 2020',
+      locale: [25.0329, 121.565],
+      isUpcoming: false,
+      url: 'https://globecom2020.ieee-globecom.org/'
+    },
+    {
+      name: 'FOSDEM 2021',
+      locale: [50.85, 4.35],
+      isUpcoming: false,
+      url: 'https://fosdem.org/2021/'
+    },
+    {
+      name: 'ETHIndia',
+      locale: [22, 77],
+      isUpcoming: false,
+      url: 'https://devfolio.co/blog/devfolio-ethereum-india-fellowship-2-0-is-here/'
+    },
+    {
+      name: 'ICIN 2021',
+      locale: [48.856, 2.35],
+      isUpcoming: false,
+      url: 'https://www.icin-conference.org/'
+    },
+    {
+      name: 'UCL ICCS',
+      locale: [51.507, 0.1278],
+      isUpcoming: false,
+      url: 'https://www.ucl.ac.uk/iccs/events/2021/mar/online-seminar-filecoin-decentralised-data-storage-and-delivery-market'
+    }
+  ]
+
+
+
+  // DONT TOUCH THINGS BELOW THIS LINE UNLESS YOU CAN CODE JAVASCRIPT
+  // Leaflet map setup
+
+  var mymap = L.map('mapid').setView([51.5, 0.12], 1);
+
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      minZoom: 1,
+      id: '',
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: ''
+  }).addTo(mymap);
+
+  var LeafIcon = L.Icon.extend({
+    options: {
+      iconUrl: '/images/tutorials/map-marker-green.png',
+      iconSize:     [18, 18], // size of the icon
+    }
+  });
+
+  var greenIcon = new LeafIcon({iconUrl: '/images/tutorials/map-marker-green.png'}),
+    purpleIcon = new LeafIcon({iconUrl: '/images/tutorials/map-marker-purple.png'});
+
+
+
+
+  // Create markers from Locations array
+
+  for (var i = 0; i < locations.length; i++) {
+
+    let theIcon = purpleIcon;
+    if (locations[i].isUpcoming){
+      theIcon = greenIcon;
+    }
+
+    let popupMessage = locations[i].name;
+    if (locations[i].url.length > 1){
+      popupMessage = '<a class="underline" href="' + locations[i].url + ' " target="_blank">' + locations[i].name + '</a>';
+    }
+
+    marker = new L.marker(locations[i].locale, {icon: theIcon} )
+      .bindPopup(popupMessage)
+      .addTo(mymap);
+  }
+
+
+
+</script>
