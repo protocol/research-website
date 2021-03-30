@@ -31,7 +31,7 @@
       {{ range .Pages }}
 
         {{ if .Params.isCore }}
-          <div class='flex mb-20 lg:even:flex-row-reverse flex-wrap lg:flex-nowrap -mx-4 core-card-{{ $.Scratch.Get "index" }}'>
+          <div class='flex mb-20 lg:even:flex-row-reverse flex-wrap lg:flex-nowrap md:-mx-4 core-card-{{ $.Scratch.Get "index" }}'>
 
             {{ $.Scratch.Set "index" (add ($.Scratch.Get "index") 1) }}
 
@@ -57,7 +57,7 @@
 
       {{ range .Pages }}
         {{ if not .Params.isCore }}
-          <div class='flex mb-12 lg:even:flex-row-reverse flex-wrap lg:flex-nowrap -mx-4'>
+          <div class='flex mb-12 lg:even:flex-row-reverse flex-wrap lg:flex-nowrap md:-mx-4'>
             {{ partial "tutorial-module-card" . }}
           </div>
         {{ end }}
@@ -67,12 +67,7 @@
   </div>
 
   <div class="max-w-screen mx-auto mb-6" id="map">
-    <div class="flex flex-row items-center justify-between mb-0 px-4 md:px-0">
-      <div class="block">
-        <h2 class="text-md font-bold">Where We've Been</h2>
-        <!-- <img class="block" src="/icons/mini-graphic-line.svg"> -->
-      </div>
-    </div>
+    {{ partial "tutorial-map" . }}
   </div>
 
 
