@@ -1,14 +1,19 @@
-<div class="md:flex md:flex-row md:flex-nowrap relative mb-0 border-4 mx-6 lg:mx-0 md:px-0 p-4" style="border-color: #29d2ef;">
-  <img class="absolute z-20 left-0 bottom-0" style="transform: translate(calc(-50% - 2px), calc(50% + 2px));" src="/images/tutorials/hex-bus.png" width="200px">
+<div class="mb-20 lg:px-0 map">
 
-  <div class="block relative z-30 md:w-1/2 lg:w-5/12 md:mb-20 px-4">
-    <h2 class="text-md font-bold mb-4">See where we’ve been!</h2>
-    <p class="mb-4">Despite the COVID restrictions, we have been on a virtual tour throughout 2020 and 2021 and have talked at more than 10 events! Check the blogposts we published after every event to find out more about the event, as well as detailed answers to the questions we received after our talks.</p>
-    <a class="text-blue hover:underline"  href="/blog/">Read the Blog</a>
-  </div>
+  <div class="md:flex md:flex-row md:flex-nowrap relative mb-0 border-4 mx-6 lg:mx-0 md:px-0 " style="border-color: #29d2ef;">
+    <img id="hex-bus" class="absolute z-20 left-0 bottom-0" src="/images/tutorials/hex-bus.png">
 
-  <div class="block md:w-1/2 lg:w-7/12 px-4 relative z-10">
-    <div id="mapid" style="height: 350px;"></div>
+    <div class="block relative z-30 md:w-1/2 lg:w-5/12 md:mb-10 p-8 md:pr-4">
+      <h2 class="text-md font-bold mb-4">See where we’ve been!</h2>
+      <p class="mb-4">Despite the COVID restrictions, we have been on a virtual tour throughout 2020 and 2021 and have talked at more than 10 events! Check the blogposts we published after every event to find out more about the event, as well as detailed answers to the questions we received after our talks.</p>
+      <p class="mb-4">
+        <a class="text-blue hover:underline"  href="/blog/">Read the Blog</a>
+      </p>
+    </div>
+
+    <div class="block md:w-1/2 lg:w-7/12 relative z-10 p-8 -mt-4 md:mt-0 md:pt-8 md:pl-4">
+      <div id="mapid" style="height: 330px;"></div>
+    </div>
   </div>
 </div>
 
@@ -25,6 +30,7 @@
   // }
   //
   // make sure each object in the locations array ends with a comma (to separate the objects), except for the final one
+  // the first location in the array will begin with its popup open
 
   //  ADD NEW LOCATIONS HERE:
   let locations = [
@@ -101,10 +107,10 @@
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 18,
       minZoom: 1,
-      id: '',
+      id: 'suzannabustout/ckmw829y018vl17qcn6exjhnk',
       tileSize: 512,
       zoomOffset: -1,
-      accessToken: ''
+      accessToken: 'pk.eyJ1Ijoic3V6YW5uYWJ1c3RvdXQiLCJhIjoiY2ttdGtxdTNjMHNmNjMwbXhvN2M2MGo0diJ9.hprt_uE-i0FE1889Z6Plqg'
   }).addTo(mymap);
 
   var LeafIcon = L.Icon.extend({
@@ -133,10 +139,16 @@
     if (locations[i].url.length > 1){
       popupMessage = '<a class="underline" href="' + locations[i].url + ' " target="_blank">' + locations[i].name + '</a>';
     }
-
+    if (i === 0) {
+      marker = new L.marker(locations[i].locale, {icon: theIcon} )
+        .bindPopup(popupMessage)
+        .addTo(mymap)
+        .openPopup();
+    } else {
     marker = new L.marker(locations[i].locale, {icon: theIcon} )
       .bindPopup(popupMessage)
-      .addTo(mymap);
+      .addTo(mymap)
+    }
   }
 
 

@@ -196,3 +196,16 @@ img.post-logo {
   max-height: 60px;
   max-width: 200px;
 }
+#hex-bus {
+  transform: translate(calc(-50% - 2px), calc(50% + 2px));
+  width: 200px;
+
+
+}
+@media (max-width:768px) {
+  #hex-bus {
+    transform: translate(calc(-32% - 2px), calc(32% + 2px));
+    height: 180px;
+    width: 180px;
+  }
+}

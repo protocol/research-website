@@ -3,14 +3,13 @@
 
   {{ $alert_heading := .Params.alertHeading }}
   {{ $alert_subHeading := .Params.alertSubHeading }}
-  <!-- {{ $alert_link := .Params.alertLink }} -->
+  {{ $alert_link := .Params.alertLink }}
   {{ $alert_summary := .Params.alertSummary }}
 
   <div class="relative max-w-screen mx-auto overflow-hidden text-white mb-10" data-removal-target>
     <img class="object-cover h-full w-full absolute" src="/images/banners/alertBackground.png" >
 
     <div class="relative max-w-screen mx-auto z-10 flex flex-col p-4 md:flex-row md:items-center md:px-10 md:py-8 md:justify-between">
-      <img on-click="removeParentTargetFromDom" class="absolute right-0 top-4 mr-4 md:top-0 lg:-mr-2 p-1 md:p-4" src="/images/icon/close.png" alt="Close button">
 
       <div class="mb-4 mr-4 pr-4 md:mr-0 md:mb-0">
         {{ if $alert_heading }}
@@ -26,6 +25,8 @@
       {{ end }}
 
       {{ if $alert_link }}
+        <img on-click="removeParentTargetFromDom" class="absolute right-0 top-4 mr-4 md:top-0 lg:-mr-2 p-1 md:p-4" src="/images/icon/close.png" alt="Close button">
+
         <div class="flex-shrink-0 md:ml-4">
           <button class="text-sm bg-transparent font-semibold py-2 px-3 border border-white-500 rounded shadow">
             <a href="{{ $alert_link }}">Read more</a>
