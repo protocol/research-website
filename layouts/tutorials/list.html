@@ -1,21 +1,22 @@
 {{ define "main" }}
 
-  {{ partial "alert" . }}
 
 <div class="max-w-screen mx-auto pt-4 md:px-10">
 
+  {{ partial "alert" . }}
+
   {{ partial "tutorial-page-top" . }}
 
-  <div class="max-w-screen mx-4 lg:mx-0 mb-6 pt-12 font-bold text-sm">
+  <div class="mx-4 lg:mx-0 mb-6 pt-12 font-bold text-sm">
     <label class="block">Jump to Content:</label>
     <nav class="flex flex-row items-centerjustify-between mb-0 px-0">
       <a class="mr-4 text-blue hover:underline" href="#core">Core</a>
-      <a class="mr-4 text-blue hover:underline" href="#elective">Elective</a>
+      <!-- <a class="mr-4 text-blue hover:underline" href="#elective">Elective</a> -->
       <a class="mr-4 text-blue hover:underline" href="#map">Where We've Been</a>
     </nav>
   </div>
 
-  <div class="max-w-screen mx-auto mb-6 pt-12" id="core">
+  <div class="mb-6 pt-12" id="core">
     <div class="flex flex-row items-center justify-between mb-10 px-4 md:px-0">
       <div class="block">
         <h2 class="text-md font-bold">Core Course Modules</h2>
@@ -45,7 +46,7 @@
     </div>
   </div>
 
-  <div class="max-w-screen mx-auto mb-6 pt-12" id="elective">
+  <!-- <div class="max-w-screen mx-auto mb-6 pt-12" id="elective">
     <div class="flex flex-row items-center justify-between mb-10 px-4 md:px-0">
       <div class="block">
         <h2 class="text-md font-bold">Elective Course Modules</h2>
@@ -64,14 +65,19 @@
       {{ end }}
     {{ end }}
     </div>
-  </div>
+  </div> -->
 
-  <div class="max-w-screen mx-auto mb-6" id="map">
+  <div class="mb-20 lg:px-0" id="map">
     {{ partial "tutorial-map" . }}
   </div>
 
-
+  <div class="mt-8 mb-6 ">
+    {{ partial "tutorial-logo-list" . }}
+  </div>
 
 </div>
+
+{{ partial "tutorials-footer-top" . }}
+
 
 {{ end }}
