@@ -18,6 +18,8 @@ authors:
 categories:
   - talks
 
+tags:
+  - resnet-lab-on-tour
 
 # Zero or more of the areas in content/research/areas
 areas:
@@ -30,8 +32,6 @@ groups:
 # Not used
 draft: false
 
-
-show-in-tutorials-logos: true
 
 ---
 [ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) presented at one of the most prominent conferences in the area of Distributed Ledger Technologies: the [IEEE International Conference on Blockchain and Cryptocurrencies](https://icbc2020.ieee-icbc.org/)! IEEE ICBC 2020 took place remotely, was well-attended, and had an exciting programme both in terms of tutorials during the first day and invited talks during the main conference, where Vitalik Buterin delivered the keynote speech. Although this is a young conference, still in its second edition, the papers presented were of very high quality, establishing the conference as one of the most important events in the area of blockchains and cryptocurrencies.

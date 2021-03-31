@@ -18,6 +18,9 @@ authors:
 categories:
   - Talks
 
+tags:
+  - resnet-lab-on-tour
+
 # Zero or more of the areas in content/research/areas
 areas:
   - distributed-systems
@@ -29,7 +32,6 @@ groups:
 # Not used
 draft: false
 
-show-in-tutorials-logos: true
 
 ---
 
