@@ -18,6 +18,9 @@ authors:
 categories:
   -
 
+tags:
+  -
+
 # Zero or more of the areas in content/areas
 areas:
   -
@@ -30,8 +33,6 @@ groups:
 draft: false
 
 
-# if TRUE adds a logo link to this post on the Tutorials page (post folder must also include an image named "logo.*")
-show-in-tutorials-logos: false
 
 ---
 

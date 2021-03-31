@@ -1,9 +1,11 @@
-<div class="logos-loop text-center">
-  <h3 class="text-md px-4 font-light lg:w-2/3 mx-auto">We are participating in one event per month on average and so far, we’ve been at more than 10 events!</h3>
+<div class="logos-loop text-center mt-8 pt-8 mb-20">
+  <h3 class="text-md p-4 font-light lg:w-2/3 mx-auto">We are participating in one event per month on average and so far, we’ve been at more than 10 events!</h3>
 
-  <div class="flex flex-wrap justify-center">
-    {{ range where (where .Site.Pages "Section" "posts") ".Params.show-in-tutorials-logos" true }}
-      {{ partial "post-logo" . }}
+  <div class="flex flex-wrap justify-center mx-auto" style="max-width: 860px;">
+    {{ range where .Site.Pages "Section" "posts"}}
+      {{ if in .Params.tags "resnet-lab-on-tour" }}
+        {{ partial "post-logo" . }}
+      {{ end }}
     {{ end }}
   </div>
 </div>
