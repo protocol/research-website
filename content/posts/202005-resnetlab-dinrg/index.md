@@ -29,6 +29,8 @@ groups:
 # Not used
 draft: false
 
+show-in-tutorials-logos: true
+
 ---
 
 [ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) was invited to meet with the Decentralised Internet Infrastructure Research Group [(DINRG)](https://datatracker.ietf.org/rg/dinrg/about/) of the Internet Research Task Force [(IRTF)](https://irtf.org/) to present and discuss the Software Architecture of the [IPFS](https://ipfs.io/) protocol.

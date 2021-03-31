@@ -29,6 +29,10 @@ groups:
 # Not used
 draft: false
 
+
+show-in-tutorials-logos: true
+
+
 # Adds summary to prevent break on i.e.
 summary: 'ResNetLab was invited to present the “High-Level Overview of the IPFS Architecture” to the Named Data Networking consortium!'
 
@@ -111,7 +115,7 @@ A: Peers that cache the content also publish provider records to the DHT to decl
 
 A: Cached content can be resolved and served until the next “garbage collection” period, at which point the cached content will expire unless it is “pinned” (hence, permanently replicated until the user says otherwise). Note that at the time of writing, garbage collection is turned off by default.
 
-**Q: The need to keep republishing IPNS records requires more overhead - the publisher needs to stay online and the ISP needs to provide connectivity. How does this compare to other systems?** 
+**Q: The need to keep republishing IPNS records requires more overhead - the publisher needs to stay online and the ISP needs to provide connectivity. How does this compare to other systems?**
 
 A: Data hosts need to stay online in order to keep their content accessible. In IPFS, data is provider agnostic and anyone can rehost the data. There are services, known as Pinning Services, that users can rely on to keep content available on the network when they go offline.
 
@@ -119,7 +123,7 @@ In IPNS, default configuration requires the content publisher (or a delegate wit
 
 **Q: IPFS relies on DNS and therefore IPFS can only always be an overlay. Can IPFS route over the link layer?**
 
-A: IPFS does not rely on DNS. Instead, we support an extension, [DNSLlink](https://dnslink.io/), which is a mechanism outside of the IPFS protocol that can used by IPFS implementations to register human-readable names and link them to CIDs, IPNS or even other DNSLinks. DNSLink does rely on DNS, but is an optional addition and users are free to use decentralized domain names like [ENS](https://ens.domains/) or [Unstoppable Domains](https://unstoppabledomains.com/) instead. 
+A: IPFS does not rely on DNS. Instead, we support an extension, [DNSLlink](https://dnslink.io/), which is a mechanism outside of the IPFS protocol that can used by IPFS implementations to register human-readable names and link them to CIDs, IPNS or even other DNSLinks. DNSLink does rely on DNS, but is an optional addition and users are free to use decentralized domain names like [ENS](https://ens.domains/) or [Unstoppable Domains](https://unstoppabledomains.com/) instead.
 
 With regards to routing over the link layer, IPFS currently doesn't leverage the routing at the link layer to optimize its data transfers, but it does have plans to do so in the future.
 

@@ -29,6 +29,10 @@ groups:
 # Not used
 draft: false
 
+
+show-in-tutorials-logos: true
+
+
 aliases:
   - /posts/202004-matrix-virtual-meetup-gossipsub
 

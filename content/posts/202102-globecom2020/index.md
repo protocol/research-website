@@ -31,6 +31,9 @@ groups:
 # Not used
 draft: false
 
+
+show-in-tutorials-logos: true
+
 ---
 
 [IEEE Globecom](http://globecom2020.ieee-globecom.org/) is one of the flagship IEEE ComSoc conferences in the field of networks and communications -- and, with over 2000 attendees, one of the largest conferences in the field.

@@ -29,6 +29,10 @@ groups:
 # Not used
 draft: false
 
+
+show-in-tutorials-logos: true
+
+
 ---
 
 [ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) was invited to present “The InterPlanetary File System and the Filecoin Network” in a 3-hour tutorial at the [IEEE/IFIP International Conference on Dependable Systems and Networks](https://dsn2020.webs.upv.es/)! The conference, now in its 50th edition, has an established track record of top-quality research contributions, and is one of the oldest conferences in its subject area.

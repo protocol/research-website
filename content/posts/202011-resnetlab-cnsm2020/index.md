@@ -32,6 +32,10 @@ groups:
 # Not used
 draft: false
 
+
+show-in-tutorials-logos: true
+
+
 ---
 
 ResNetLab was invited to present a 3.5 hour tutorial at one of the biggest conferences in the "NetMan" community, the [16th International Conference on Network and Service Management](http://www.cnsm-conf.org/2020).
