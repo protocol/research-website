@@ -191,3 +191,8 @@ figcaption {
 .rotate-180 {
   transform: rotate(180deg);
 }
+
+img.post-logo {
+  max-height: 60px;
+  max-width: 200px;
+}
