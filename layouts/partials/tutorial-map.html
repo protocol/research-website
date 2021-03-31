@@ -35,64 +35,64 @@
   //  ADD NEW LOCATIONS HERE:
   let locations = [
     {
-      name: 'ACM ICN 2019',
-      locale: [22.1987, 113.5439],
-      isUpcoming: false,
-      url: 'https://conferences2.sigcomm.org/acm-icn/2019/'
-    },
-    {
       name: 'NDN Project',
       locale: [32.2319, -110.9501],
       isUpcoming: false,
-      url: 'https://named-data.net/'
+      url: '/blog/2020/ndn-seminar-a-high-level-overview-of-the-interplanetary-file-system/'
+    },
+    {
+      name: 'ACM ICN 2019',
+      locale: [22.1987, 113.5439],
+      isUpcoming: false,
+      url: ''
     },
     {
       name: 'IEEE ICBC 2020',
       locale: [45.5, -73.56],
       isUpcoming: false,
-      url: 'https://icbc2020.ieee-icbc.org/'
+      url: '/blog/2020/ieee-icbc-2020-the-interplanetary-file-system-and-the-filecoin-network/'
     },
     {
       name: 'IEEE/IFIP DSN 2020',
       locale: [39.469906, -0.376],
       isUpcoming: false,
-      url: 'https://dsn2020.webs.upv.es/'
+      url: '/blog/2020/ieee/ifip-dsn-2020-the-interplanetary-file-system-and-the-filecoin-network/'
     },
     {
       name: 'CNSM 2020',
       locale: [38.423733, 27.142826],
       isUpcoming: false,
-      url: 'http://www.cnsm-conf.org/2020/'
+      url: '/blog/2020/ieee/ifip-cnsm-2020-the-interplanetary-file-system-and-the-filecoin-network/'
     },
     {
       name: 'IEEE Globecom 2020',
       locale: [25.0329, 121.565],
       isUpcoming: false,
-      url: 'https://globecom2020.ieee-globecom.org/'
+      url: '/blog/2021/ieee-globecom-2020-the-interplanetary-file-system-and-the-filecoin-network/'
     },
     {
       name: 'FOSDEM 2021',
       locale: [50.85, 4.35],
       isUpcoming: false,
-      url: 'https://fosdem.org/2021/'
+      url: '/blog/2021/protocol-labs-at-fosdem-2021/'
     },
     {
       name: 'ETHIndia',
       locale: [22, 77],
       isUpcoming: false,
-      url: 'https://devfolio.co/blog/devfolio-ethereum-india-fellowship-2-0-is-here/'
+      url: ''
     },
     {
       name: 'ICIN 2021',
       locale: [48.856, 2.35],
       isUpcoming: false,
-      url: 'https://www.icin-conference.org/'
+      url: ''
     },
     {
       name: 'UCL ICCS',
       locale: [51.507, 0.1278],
       isUpcoming: false,
-      url: 'https://www.ucl.ac.uk/iccs/events/2021/mar/online-seminar-filecoin-decentralised-data-storage-and-delivery-market'
+      url: ''
     }
   ]
 
@@ -115,13 +115,13 @@
 
   var LeafIcon = L.Icon.extend({
     options: {
-      iconUrl: '/images/tutorials/map-marker-green.png',
-      iconSize:     [18, 18], // size of the icon
+      iconUrl: '../images/tutorials/map-marker-green.png',
+      iconSize:     [18, 18],
     }
   });
 
-  var greenIcon = new LeafIcon({iconUrl: '/images/tutorials/map-marker-green.png'}),
-    purpleIcon = new LeafIcon({iconUrl: '/images/tutorials/map-marker-purple.png'});
+  var greenIcon = new LeafIcon({iconUrl: '../images/tutorials/map-marker-green.png'}),
+    purpleIcon = new LeafIcon({iconUrl: '../images/tutorials/map-marker-purple.png'});
 
 
 
@@ -137,7 +137,7 @@
 
     let popupMessage = locations[i].name;
     if (locations[i].url.length > 1){
-      popupMessage = '<a class="underline" href="' + locations[i].url + ' " target="_blank">' + locations[i].name + '</a>';
+      popupMessage = '<a class="underline text-center block" href="' + locations[i].url + ' ">Read the blog post: <br/>'  + locations[i].name + '</a>';
     }
     if (i === 0) {
       marker = new L.marker(locations[i].locale, {icon: theIcon} )
