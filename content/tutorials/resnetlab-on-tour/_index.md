@@ -1,5 +1,5 @@
 ---
-title: ResNet Lab On Tour Tutorials
+title: ResNetLab On Tour Tutorials
 
 date: 2021-03-31T14:20:47+01:00
 menu:
