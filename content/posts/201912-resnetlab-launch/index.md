@@ -68,7 +68,7 @@ Last, but not least, it is worth noting that our first RFPs only address a small
 
 ## Publications and Talks
 
-As we make progress and create contributions, we will update the [ResNetLab page at research.protocol.ai](/research/groups/resnetlab/). Today, we are thrilled to share with you the lastest ones:
+As we make progress and create contributions, we will update the [ResNetLab page](/research/groups/resnetlab/). Today, we are thrilled to share with you the lastest ones:
 
 - [Workshop: A Brief History of Information-Centric Networks (2019.07.31)](https://github.com/protocol/research/issues/14)
   - [Recording](https://www.youtube.com/watch?v=rbLioc1h9dg)
