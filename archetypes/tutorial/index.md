@@ -3,7 +3,7 @@ title: Module Name
 
 publishDate: 2021-04-02
 
-taxonomyName: tutorial group name
+taxonomyName: tutorial-name
 
 isCore: false
 
@@ -14,6 +14,14 @@ resources:
     src: featured.jpg
 
 summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+
+# creates a unordered list of links after the content on the single module page
+links: [
+  ["google", "https://google.com"],
+  ["cnn", "https://cnn.com"],
+  ["facebook", "https://facebook.com"]
+]
+
 
 ---
 
