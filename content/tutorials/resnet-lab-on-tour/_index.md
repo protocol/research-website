@@ -13,7 +13,7 @@ menu:
 layout: tutorial
 
 # this must match the taxonomyName of the child modules within this tutorial for them to render properly on the list page
-taxonomyName: resnet-lab-on-tour
+taxonomyName: resnetlab-on-tour
 
 summary: Join us to learn everything about IPFS’s Content Addressing system, the Content Identifier (CID), as well as the Content Routing and Content Exchange strategies. Learn how IPFS deals with dynamic, mutable content.
 

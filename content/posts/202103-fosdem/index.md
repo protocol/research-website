@@ -22,7 +22,7 @@ categories:
   - talks
 
 tags:
-  - resnet-lab-on-tour
+  - resnetlab-on-tour
 
 
 # Zero or more of the areas in content/areas

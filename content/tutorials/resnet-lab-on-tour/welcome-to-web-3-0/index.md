@@ -3,7 +3,7 @@ title: Welcome to Web3.0
 
 publishDate: 2020-03-30
 
-taxonomyName: resnet-lab-on-tour
+taxonomyName: resnetlab-on-tour
 
 isCore: true
 

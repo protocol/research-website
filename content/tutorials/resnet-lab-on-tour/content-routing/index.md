@@ -3,7 +3,7 @@ title: Content Routing
 
 publishDate: 2020-03-28
 
-taxonomyName: resnet-lab-on-tour
+taxonomyName: resnetlab-on-tour
 
 isCore: true
 

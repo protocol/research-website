@@ -3,7 +3,7 @@ title: Content Exchange
 
 publishDate: 2020-03-27
 
-taxonomyName: resnet-lab-on-tour
+taxonomyName: resnetlab-on-tour
 
 isCore: true
 
