@@ -56,9 +56,9 @@ IPFS shares the same vision of content addressing, but operates at a different l
 
 Inevitably, IPFS shares some of the scalability challenges of the wider ICN area. IPFS has adopted the principle of *random access*, which means that every content chunk should be named explicitly and be routable individually, independently from the rest of the file it belongs to. This clearly puts significant strain on both the content publisher who has to provide (and then frequently re-provide) provider records per content chunk. We are currently exploring the option of allowing the publisher to declare whether providing random access is desirable for their application.
 
-You can find the full set of open problems that ResNetLab is exploring [here](https://research.protocol.ai/groups/resnetlab/) together with their very detailed problem statements. Our open problems include: preserving user privacy when publishing and fetching content, exploring human-readable naming options for content-addressable networks, as well as routing at scale through multi-level DHT structures. We have already [funded three projects in this area](https://research.protocol.ai/blog/2020/meet-the-latest-protocol-labs-research-grant-recipients/) for academic collaborators to investigate such designs and we will be sharing our findings as soon as they come out!
+You can find the full set of open problems that ResNetLab is exploring [here](/groups/resnetlab/) together with their very detailed problem statements. Our open problems include: preserving user privacy when publishing and fetching content, exploring human-readable naming options for content-addressable networks, as well as routing at scale through multi-level DHT structures. We have already [funded three projects in this area](/blog/2020/meet-the-latest-protocol-labs-research-grant-recipients/) for academic collaborators to investigate such designs and we will be sharing our findings as soon as they come out!
 
-Note that at ResNetLab we run frequent Requests For Proposals (RFPs) to fund and collaborate with the best researchers in the area, so keep an eye on our [research blog](https://research.protocol.ai/blog/) and subscribe to the Protocol Labs Research [newsletter](https://research.protocol.ai/). We also regularly host seminars from top researchers in the area, which are open to the public!
+Note that at ResNetLab we run frequent Requests For Proposals (RFPs) to fund and collaborate with the best researchers in the area, so keep an eye on our [research blog](/blog/) and subscribe to the Protocol Labs Research [newsletter](/). We also regularly host seminars from top researchers in the area, which are open to the public!
 
 ***Q:*** How do you compare IPFS to CDN? Is it possible to replace CDN with IPFS and what are the challenges to do so?
 
@@ -76,7 +76,7 @@ We highly recommend watching [this list of top quality videos](https://www.youtu
 
 Note, however, that each replica comes with its own storage cost and therefore increasing the number of replicas improves data availability but also increases the overall cost of storage.
 
-<center>{{< figure src="/images/resnetlab/resnetlab_logo_lightviolet.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
+<center>{{< figure src="/images/resnetlab/resnetlab_logo_lightviolet.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center>
 
 <center style=font-size:11pt><i> We are always open to further discussion on our research topics and welcome opportunities to answer questions and develop collaborations. Join the discussion at <a href
 ="https://discuss.ipfs.io"> the IPFS Forum</a> or reach out via email (<a href="mailto:research@protocol.ai">research\@protocol.ai</a>). The <a href="https://docs.ipfs.io">IPFS</a>, <a href="https://docs.libp2p.io">libp2p</a>, and <a href="https://docs.filecoin.io">Filecoin</a> documentation sites and <a href="https://proto.school"> ProtoSchool's</a> interactive tutorials are a good starting point for exploration of these topics.</i></center>

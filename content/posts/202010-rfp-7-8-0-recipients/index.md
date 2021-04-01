@@ -32,7 +32,7 @@ groups:
 draft: false
 
 ---
-In January of 2020, the [Resilient Networks Lab](https://research.protocol.ai/groups/resnetlab/) (ResNetLab) 
+In January of 2020, the [Resilient Networks Lab](/groups/resnetlab/) (ResNetLab) 
 launched two RFPs (Requests for Proposals) to address pressing open problems faced by IPFS and libp2p, 
 namely, [Routing at Scale](https://github.com/libp2p/notes/blob/master/OPEN_PROBLEMS/ROUTING_AT_SCALE.md) 
 and [PubSub at Scale](https://github.com/libp2p/notes/blob/master/OPEN_PROBLEMS/PUBSUB_AT_SCALE.md).  

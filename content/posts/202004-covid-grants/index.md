@@ -35,7 +35,7 @@ aliases:
 
 ---
 
-After a marathon review, followed by necessary legal and financial procedures, we are happy to announce the projects we are supporting with [Protocol Labs' COVID-19 Open Innovation Grant program](https://research.protocol.ai/posts/202003-covid-grants/).
+After a marathon review, followed by necessary legal and financial procedures, we are happy to announce the projects we are supporting with [Protocol Labs' COVID-19 Open Innovation Grant program](/posts/202003-covid-grants/).
 
 This program was created to surface and support open-source projects working on tools to help humanity through present and future pandemics. Over the last three weeks we received 55 applications — an outstanding response from our global community.
 

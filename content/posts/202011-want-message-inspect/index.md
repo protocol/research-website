@@ -31,7 +31,7 @@ groups:
 
 
 
-As part of ResNetLab's research endeavour to drive speed-ups on file transfers, Beyond Swapping Bits, we present a new contribution to IPFS Bitswap protocol. We argue that Bitswap is currently discarding a wealth of information that could be used to its benefit, improving retrieval success and minimizing the latency to retrieve content. You can also read our last contribution [here](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/), which targeted compression of libp2p streams.
+As part of ResNetLab's research endeavour to drive speed-ups on file transfers, Beyond Swapping Bits, we present a new contribution to IPFS Bitswap protocol. We argue that Bitswap is currently discarding a wealth of information that could be used to its benefit, improving retrieval success and minimizing the latency to retrieve content. You can also read our last contribution [here](/blog/2020/honey-i-shrunk-our-libp2p-streams/), which targeted compression of libp2p streams.
 
 Every research endeavour starts with a thorough analysis of the state of the art. This initial effort builds the foundation for the work to come. What we are doing differently to drive file-transfer speedups in P2P networks at ResNetLab is that beyond giving you the results and how to benefit from them, we want to guide you through the process we followed to reach these improvements, from the state-of-the-art, through ideation and prototyping, to evaluation. We want to illustrate this process by documenting how we prototyped and evaluated the first upgrade, which produced an approximately **25% improvement in the time to fetch popular content, and a reduction of the number of control messages exchanged in Bitswap by 75%**. In other words, come for the results, stay for the scientific methodology and the repeatability of the evaluation, so that you can learn how to implement your own variations!
 
@@ -132,4 +132,4 @@ We are already considering several points of improvement for our current impleme
 Additionally, we are exploring the combination of this RFC with other prototypes in progress to potentially achieve further improvements, one of which is the creation of [Content Anchors](https://github.com/protocol/ResNetLab/issues/6) that are designed to track all kinds of network intel to improve discovery of both static data (i.e. files) and dynamic data (e.g. PubSub Streams).
 
 Stay tuned and do not hesitate to reach us out if you want to start contributing to this exciting line of work!
-<center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
+<center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center>

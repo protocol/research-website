@@ -32,7 +32,7 @@ groups:
 draft: false
 ---
 
-Today we're excited to share the story of how we decided to explore **compression for libp2p streams** and  ended up achieving up to a 75% decrease in bandwidth use when performing an IPFS file exchange. This work is part of a broader initiative to drive speed-ups in file-sharing within IPFS --  and P2P networks more generally  -- led by [ResNetLab](https://research.protocol.ai/groups/resnetlab/).
+Today we're excited to share the story of how we decided to explore **compression for libp2p streams** and  ended up achieving up to a 75% decrease in bandwidth use when performing an IPFS file exchange. This work is part of a broader initiative to drive speed-ups in file-sharing within IPFS --  and P2P networks more generally  -- led by [ResNetLab](/groups/resnetlab/).
 
 A few months ago, we challenged ourselves with a new project whose main objective is to design, prototype, measure, and evaluate ways of making file-transfers in P2P networks as fast as or even faster than a file exchange using a raw TCP protocol and a point-to-point connection (hint: by benefiting from streaming from multiple endpoints). After a thorough analysis of the state of the art, we've started [designing several RFCs](https://github.com/protocol/ResNetLab/tree/master/beyond-bitswap/rfc) and implementing them with the goal of speeding up transfers at different levels of the IPFS stack. There are many ideas and prototypes in the pipeline, and today we share one that we are very excited about.
 
@@ -427,4 +427,4 @@ And probably many other things that we may be missing and that you can come up w
 Do not hesitate to reach out or open an issue to join our quest of driving speed-ups to file-sharing in P2P networks.
 
 Until the next one, we bid you a great day!
-<center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center> 
+<center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center> 

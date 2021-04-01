@@ -35,7 +35,7 @@ draft: false
 
 ---
 
-[ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) was invited to meet with the Decentralised Internet Infrastructure Research Group [(DINRG)](https://datatracker.ietf.org/rg/dinrg/about/) of the Internet Research Task Force [(IRTF)](https://irtf.org/) to present and discuss the Software Architecture of the [IPFS](https://ipfs.io/) protocol.
+[ResNetLab](/research/groups/resnetlab/) was invited to meet with the Decentralised Internet Infrastructure Research Group [(DINRG)](https://datatracker.ietf.org/rg/dinrg/about/) of the Internet Research Task Force [(IRTF)](https://irtf.org/) to present and discuss the Software Architecture of the [IPFS](https://ipfs.io/) protocol.
 
 
 There were a total of [4 talks at the meeting](https://datatracker.ietf.org/meeting/interim-2020-dinrg-01/materials/agenda-interim-2020-dinrg-01-dinrg-01.html). Ours was titled “High-Level Overview of the IPFS Architecture”. The presentation covered what happens when **importing, naming, finding, and fetching** content on IPFS, and was followed by some great questions from the 29 participants that attended in real time. You can watch the [full recording](https://www.youtube.com/watch?v=K4Usud4g4iY&feature=youtu.be&t=1008) and check the [slide deck](https://datatracker.ietf.org/meeting/interim-2020-dinrg-01/materials/slides-interim-2020-dinrg-01-sessa-an-overview-of-the-interplanetary-file-system-ipfs.pdf).
@@ -76,4 +76,4 @@ Thank you to everyone that attended the talk and to the DINRG for organizing thi
 
 
 
-<center>{{< figure src="/images/resnetlab/resnetlab_logo_red.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
+<center>{{< figure src="/images/resnetlab/resnetlab_logo_red.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center>

@@ -33,9 +33,9 @@ draft: false
 
 ---
 
-In the spring, as COVID-19 swept the globe, Protocol Labs quickly retooled its [grant program](https://github.com/protocol/research-rfps) and launched an [accelerated grants program](https://research.protocol.ai/blog/2020/protocol-labs-launches-a-covid-19-open-innovation-grants-program/) to support open-source projects building tools to confront present and future pandemics. Within one month of launch, PL awarded a total of $200,000 to ten projects marshalling hardware, software, research, and community-building to fight COVID.
+In the spring, as COVID-19 swept the globe, Protocol Labs quickly retooled its [grant program](https://github.com/protocol/research-rfps) and launched an [accelerated grants program](/blog/2020/protocol-labs-launches-a-covid-19-open-innovation-grants-program/) to support open-source projects building tools to confront present and future pandemics. Within one month of launch, PL awarded a total of $200,000 to ten projects marshalling hardware, software, research, and community-building to fight COVID.
 
-The [COVID-19 Open Innovation grant program](https://research.protocol.ai/blog/2020/announcing-our-covid-19-open-innovation-grant-awardees/) has spurred a great deal of interest from the PL community, and we’re pleased to be able to share an update on the progress of some of our funded projects:
+The [COVID-19 Open Innovation grant program](/blog/2020/announcing-our-covid-19-open-innovation-grant-awardees/) has spurred a great deal of interest from the PL community, and we’re pleased to be able to share an update on the progress of some of our funded projects:
 
 The [**Geo Backtracer**](https://github.com/aimxhaisse/geo-backtracer) project is building technology to enhance contact-tracing efforts: Geo Backtracer is a distributed backend to store users’ real-time GPS locations and provide a way to backtrace close contacts between users (close proximity lasting  >15 minutes) over a period of 15 days.
 
@@ -68,4 +68,4 @@ Since its launch, the Digital Observatory has aggregated and published public da
 
 We at Protocol Labs have enjoyed the privilege of contributing to such an interesting roster of projects. While we have closed our COVID grant program, there are still many opportunities for individuals and groups to donate their skills or resources to pandemic response efforts; many of these can be found by browsing platforms like [HelpWithCovid](https://helpwithcovid.com/projects).
 
-We continue to focus on our core mission of [making the internet faster, safer, and more open](https://research.protocol.ai/blog/2020/how-content-addressing-can-solve-streaming-challenges-as-networks-are-overloaded/) while remaining alert to [new opportunities](https://openresearchlab.org/basic-income) to invest in resilient communities.
+We continue to focus on our core mission of [making the internet faster, safer, and more open](/blog/2020/how-content-addressing-can-solve-streaming-challenges-as-networks-are-overloaded/) while remaining alert to [new opportunities](https://openresearchlab.org/basic-income) to invest in resilient communities.
