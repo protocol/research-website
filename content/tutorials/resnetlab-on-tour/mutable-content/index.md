@@ -1,7 +1,7 @@
 ---
-title: Content Exchange
+title: Mutable Content
 
-publishDate: 2020-03-27
+publishDate: 2020-03-26
 
 isCore: true
 
@@ -13,6 +13,6 @@ resources:
   - title: featured-image
     src: featured.jpg
 
-summary: Almost there! Your client is ready to receive its first bits over the IPFS network! In this module you’ll hear about IPFS’s Content Exchange protocols, namely, Bitswap and GraphSync.
+summary: This module has been created to answer all the questions on how IPFS can be used for dynamic real-time applications. Hear about the InterPlanetary Naming System (IPNS) and the mechanics of the protocols that support dynamic content applications on top of IPFS. Take a sneak peek on the applications that use IPNS.
 
 ---
