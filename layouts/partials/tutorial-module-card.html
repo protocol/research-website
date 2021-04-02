@@ -1,5 +1,5 @@
 
-  <div class="even:order-1 md:w-1/2 lg:w-7/12 px-4">
+  <div class="even:order-1 md:w-1/2 lg:w-7/12 px-4 relative z-10">
     <a class="" href="{{ .RelPermalink }}">
       {{ range .Resources.Match "featured.*" }}
         <img class=""  src="{{ .RelPermalink }}" alt="{{ $.Page.Params.Title }} video thumbnail">

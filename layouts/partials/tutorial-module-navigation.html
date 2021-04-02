@@ -12,7 +12,7 @@
         <ul class="has-bullets ml-8" style="column-count:2;">
           {{ range .RegularPages }}
             {{ if eq .Params.isCore true }}
-            <li> <a class="mr-4 text-blue hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            <li class="mb-2"> <a class="mr-4 text-blue hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
             {{ end }}
           {{ end }}
         </ul>
@@ -23,7 +23,7 @@
         <ul class="has-bullets ml-8" style="column-count:2;">
           {{ range .RegularPages }}
             {{ if eq .Params.isCore false }}
-            <li> <a class="mr-4 text-blue hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            <li class="mb-2"> <a class="mr-4 text-blue hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
             {{ end }}
           {{ end }}
         </ul>
