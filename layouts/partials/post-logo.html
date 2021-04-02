@@ -1,7 +1,7 @@
 <div class="px-4 pt-8 mb-6 flex items-center">
   <a class="" href="{{ .RelPermalink }}" >
     {{ range .Resources.Match "logo.*" }}
-      <img class="post-logo" src="{{ .RelPermalink }}" aria-label="{{ .Title }}" alt="conference logo">
+      <img class="mx-4 post-logo" src="{{ .RelPermalink }}" aria-label="{{ .Title }}" alt="conference logo">
     {{ end }}
   </a>
 </div>
