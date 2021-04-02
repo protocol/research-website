@@ -7,13 +7,12 @@ menu:
     parent: tutorials
     identifier: resnetlabontour
     weight: 8
-    name: ResNet Lab on Tour
-
-
-layout: tutorial
+    name: ResNetLab on Tour
 
 # this must match the taxonomyName of the child modules within this tutorial for them to render properly on the list page
 taxonomyName: resnetlab-on-tour
+
+layout: tutorial
 
 summary: Join us to learn everything about IPFS’s Content Addressing system, the Content Identifier (CID), as well as the Content Routing and Content Exchange strategies. Learn how IPFS deals with dynamic, mutable content.
 

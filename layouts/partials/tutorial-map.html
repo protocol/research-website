@@ -137,7 +137,7 @@
 
     let popupMessage = locations[i].name;
     if (locations[i].url.length > 1){
-      popupMessage = '<a class="underline text-center block" href="' + locations[i].url + ' ">Read the blog post: <br/>'  + locations[i].name + '</a>';
+      popupMessage = '<a class="hover:underline text-center block" href="' + locations[i].url + ' "><strong>'  + locations[i].name + '</strong><br/>Read the post</a>';
     }
     if (i === 0) {
       marker = new L.marker(locations[i].locale, {icon: theIcon} )
