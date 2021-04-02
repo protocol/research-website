@@ -213,13 +213,11 @@ img.post-logo {
   }
 }
 .vector-pattern-left {
-  left: -13vw;
   transform:translateY(-75%);
-  width:12vw;
 }
-.vector-pattern-right {
-  right: -13vw;
+.vector-pattern-right, .vector-pattern-left {
   width: 12vw;
+  max-width: 300px;
 }
 
 /* Leaflet */
