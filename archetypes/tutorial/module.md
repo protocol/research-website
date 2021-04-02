@@ -14,7 +14,7 @@ resources:
 summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
 
 # creates a unordered list of links after the content on the single module page
-links: [
+relevantLinks: [
   ["google", "https://google.com"],
   ["cnn", "https://cnn.com"],
   ["facebook", "https://facebook.com"]

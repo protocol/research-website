@@ -13,7 +13,7 @@ resources:
   - title: featured-image
     src: featured.jpg
 
-links: [
+relevantLinks: [
   ["A link to Google", "https://google.com"],
   ["CNN", "https://cnn.com"],
   ["This links to Facebook", "https://facebook.com"]
