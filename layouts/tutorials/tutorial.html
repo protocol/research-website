@@ -7,14 +7,7 @@
 
   {{ partial "tutorial-page-top" . }}
 
-  <div class="mx-4 lg:mx-0 mb-6 pt-12 font-bold text-sm">
-    <label class="block">Jump to Content:</label>
-    <nav class="flex flex-row items-centerjustify-between mb-0 px-0">
-      <a class="mr-4 text-blue hover:underline" href="#core">Core</a>
-      <!-- <a class="mr-4 text-blue hover:underline" href="#elective">Elective</a> -->
-      <a class="mr-4 text-blue hover:underline" href="#map">Where We've Been</a>
-    </nav>
-  </div>
+  {{ partial "tutorial-module-navigation" . }}
 
   <div class="mb-6 pt-12" id="core">
     <div class="flex flex-row items-center justify-between mb-10 px-4 md:px-0">
@@ -72,11 +65,17 @@
     {{ partial "tutorial-map" . }}
 
     {{ partial "tutorial-logo-list" . }}
+
+    </div>
+
+    {{ partial "tutorials-footer-top" . }}
+
+  {{ else }}
+
+
+  </div>
+
   {{ end }}
-
-</div>
-
-{{ partial "tutorials-footer-top" . }}
 
 
 {{ end }}

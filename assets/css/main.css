@@ -205,7 +205,53 @@ img.post-logo {
 
 
 }
-@media (max-width:768px) {
+/* Tutorials-specific styles */
+.tutorial-navigation {
+  margin-bottom: 5rem;
+}
+.tutorial-navigation h3 {
+  @apply relative;
+  font-size:22px;
+  border-bottom: 2px solid #FF9900;
+}
+
+.tutorial-navigation h3:after, .tutorial-navigation h3:before {
+  @apply absolute;
+  content: '';
+  background-image: url(/images/tutorials/yellow-dot.png);
+  display: block;
+  height: 12px;
+  width: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  bottom: -6px;
+}
+
+.tutorial-navigation h3:after {
+  right: -1px;
+  left: unset;
+}
+.core, .elective {
+  width: 100%;
+}
+
+.elective h3:before {
+  display: block;
+}
+
+@media (min-width:768px) {
+
+  .elective h3:before {
+    display: none;
+  }
+}
+
+ul.has-bullets li {
+  list-style: disc;
+}
+
+@media (max-width:767px) {
   #hex-bus {
     transform: translate(calc(-32% - 2px), calc(32% + 2px));
     height: 180px;
@@ -213,7 +259,7 @@ img.post-logo {
   }
 }
 .vector-pattern-left {
-  transform:translateY(-75%);
+  transform:translateY(-45%);
 }
 .vector-pattern-right, .vector-pattern-left {
   width: 12vw;
