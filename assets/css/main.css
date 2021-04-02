@@ -218,7 +218,7 @@ img.post-logo {
 .tutorial-navigation h3:after, .tutorial-navigation h3:before {
   @apply absolute;
   content: '';
-  background-image: url(/images/tutorials/yellow-dot.png);
+  background-image: url(../../images/tutorials/yellow-dot.png);
   display: block;
   height: 12px;
   width: 12px;
