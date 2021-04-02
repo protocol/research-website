@@ -3,8 +3,6 @@ title: Module Name
 
 publishDate: 2021-04-02
 
-taxonomyName: tutorial-name
-
 isCore: false
 
 video: 8_9ONpyRZEI
