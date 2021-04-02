@@ -65,11 +65,9 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Leaflet -->
-    {{ $leafletCSS_config := resources.Get "leaflet/leaflet.css"}}
-    <link rel="stylesheet" type="text/css" href="{{ $leafletCSS_config.RelPermalink }}" />
+    <link rel="stylesheet" type="text/css" href="/js/leaflet/leaflet.css" />
+    <script type="text/javascript" src="/js/leaflet/leaflet.js"></script>
 
-    {{ $leafletJS_config := resources.Get "leaflet/leaflet.js" }}
-    <script type="text/javascript" src={{ $leafletJS_config.RelPermalink }}></script>
   </head>
 
   <body class="font-body min-w-site text-base text-black leading-normal subpixel-antialiased antialiased">
@@ -90,10 +88,6 @@
     <script type="text/javascript" src={{ $mathjax_js.RelPermalink }} integrity={{ $mathjax_js.Data.Integrity }}></script>
     {{ $js := resources.Get "js/bundle.js" | minify | fingerprint }}
     <script type="text/javascript" src={{ $js.RelPermalink }} integrity={{ $js.Data.Integrity }}></script>
-
-    <!-- Leaflet JS-->
-    {{ $leafletJS_config := resources.Get "leaflet/leaflet.js" }}
-    <script type="text/javascript" src={{ $leafletJS_config.RelPermalink }}></script>
 
     {{ template "_internal/google_analytics.html" . }}
   </body>
