@@ -38,7 +38,7 @@
       name: 'NDN Project',
       locale: [32.2319, -110.9501],
       isUpcoming: false,
-      url: '/blog/2020/ndn-seminar-a-high-level-overview-of-the-interplanetary-file-system/'
+      url: '../../blog/2020/ndn-seminar-a-high-level-overview-of-the-interplanetary-file-system/'
     },
     {
       name: 'ACM ICN 2019',
@@ -50,31 +50,31 @@
       name: 'IEEE ICBC 2020',
       locale: [45.5, -73.56],
       isUpcoming: false,
-      url: '/blog/2020/ieee-icbc-2020-the-interplanetary-file-system-and-the-filecoin-network/'
+      url: '../../blog/2020/ieee-icbc-2020-the-interplanetary-file-system-and-the-filecoin-network/'
     },
     {
       name: 'IEEE/IFIP DSN 2020',
       locale: [39.469906, -0.376],
       isUpcoming: false,
-      url: '/blog/2020/ieee/ifip-dsn-2020-the-interplanetary-file-system-and-the-filecoin-network/'
+      url: '../../blog/2020/ieee/ifip-dsn-2020-the-interplanetary-file-system-and-the-filecoin-network/'
     },
     {
       name: 'CNSM 2020',
       locale: [38.423733, 27.142826],
       isUpcoming: false,
-      url: '/blog/2020/ieee/ifip-cnsm-2020-the-interplanetary-file-system-and-the-filecoin-network/'
+      url: '../../blog/2020/ieee/ifip-cnsm-2020-the-interplanetary-file-system-and-the-filecoin-network/'
     },
     {
       name: 'IEEE Globecom 2020',
       locale: [25.0329, 121.565],
       isUpcoming: false,
-      url: '/blog/2021/ieee-globecom-2020-the-interplanetary-file-system-and-the-filecoin-network/'
+      url: '../../blog/2021/ieee-globecom-2020-the-interplanetary-file-system-and-the-filecoin-network/'
     },
     {
       name: 'FOSDEM 2021',
       locale: [50.85, 4.35],
       isUpcoming: false,
-      url: '/blog/2021/protocol-labs-at-fosdem-2021/'
+      url: '../../blog/2021/protocol-labs-at-fosdem-2021/'
     },
     {
       name: 'ETHIndia',
@@ -115,15 +115,13 @@
 
   var LeafIcon = L.Icon.extend({
     options: {
-      iconUrl: '../images/tutorials/map-marker-green.png',
+      iconUrl: '../../images/tutorials/map-marker-green.png',
       iconSize:     [18, 18],
     }
   });
 
-  var greenIcon = new LeafIcon({iconUrl: '{{ .Site.BaseURL }}/images/tutorials/map-marker-green.png'}),
-    purpleIcon = new LeafIcon({iconUrl: '{{ .Site.BaseURL }}/images/tutorials/map-marker-purple.png'});
-
-
+  var greenIcon = new LeafIcon({iconUrl: '../../images/tutorials/map-marker-green.png'}),
+    purpleIcon = new LeafIcon({iconUrl: '../../images/tutorials/map-marker-purple.png'});
 
 
   // Create markers from Locations array
