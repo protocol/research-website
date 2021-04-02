@@ -221,3 +221,11 @@ img.post-logo {
   right: -13vw;
   width: 12vw;
 }
+
+/* Leaflet */
+#mapid {
+  @apply font-body;
+}
+#mapid a:not(.leaflet-popup-close-button):not(.leaflet-control-zoom-out):not(.leaflet-control-zoom-in) {
+  @apply text-blue;
+}
