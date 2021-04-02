@@ -266,6 +266,10 @@ ul.has-bullets li {
   max-width: 300px;
 }
 
+a.underline:hover {
+  text-decoration: none;
+}
+
 /* Leaflet */
 #mapid {
   @apply font-body;
