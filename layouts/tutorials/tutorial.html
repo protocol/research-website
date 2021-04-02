@@ -27,7 +27,8 @@
 
 
     {{ range .RegularPages }}
-      {{ $.Scratch.Set "index" 0 }}
+      {{ if eq .Params.isCore true }}
+        {{ $.Scratch.Set "index" 0 }}
 
             <div class='flex mb-20 lg:even:flex-row-reverse flex-wrap lg:flex-nowrap md:-mx-4 core-card-{{ $.Scratch.Get "index" }}'>
 
@@ -39,7 +40,7 @@
                 <img class="absolute z-0 hidden lg:block vector-pattern-right" style="width:13vw;" src="/images/tutorials/rnl-core-pattern2.png">
               {{ end }}
             </div>
-
+      {{ end }}
     {{ end }}
 
 
@@ -53,17 +54,15 @@
       </div>
     </div>
     <div class="flex flex-col md:flex-row md:flex-wrap md:mx-0 mb:12">
-    {{ range where .Site.Pages "Type" "tutorials" }}
 
 
-      {{ range .Pages }}
-        {{ if and (eq $pageTaxonomyName .Params.taxonomyName) (eq .Params.isCore false) }}
+      {{ range .RegularPages }}
+        {{ if eq .Params.isCore false }}
           <div class='flex mb-12 lg:even:flex-row-reverse flex-wrap lg:flex-nowrap md:-mx-4'>
             {{ partial "tutorial-module-card" . }}
           </div>
         {{ end }}
       {{ end }}
-    {{ end }}
     </div>
   </div> -->
 
