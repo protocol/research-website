@@ -3,11 +3,11 @@ title: Content Routing
 
 publishDate: 2020-03-28
 
-taxonomyName: resnetlab-on-tour
-
 isCore: true
 
 video: N9oxmRT2YWw
+
+layout: module
 
 resources:
   - title: featured-image

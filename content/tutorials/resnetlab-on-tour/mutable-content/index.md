@@ -3,11 +3,11 @@ title: Content Exchange
 
 publishDate: 2020-03-27
 
-taxonomyName: resnetlab-on-tour
-
 isCore: true
 
 video: N9oxmRT2YWw
+
+layout: module
 
 resources:
   - title: featured-image

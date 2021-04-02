@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-{{ $pageTaxonomyName := .Page.Params.taxonomyName }}
-
 <div class="max-w-screen mx-auto pt-4 md:px-10">
 
   {{ partial "alert" . }}
@@ -27,13 +25,9 @@
     <div class="flex flex-col md:flex-row md:flex-wrap md:mx-0 mb:12 relative">
 
 
-
-    {{ range where .Site.Pages "Type" "tutorials" }}
+    {{ range .RegularPages }}
       {{ $.Scratch.Set "index" 0 }}
 
-      {{ range .Pages }}
-
-        {{ if and (eq $pageTaxonomyName .Params.taxonomyName) (.Params.isCore) }}
             <div class='flex mb-20 lg:even:flex-row-reverse flex-wrap lg:flex-nowrap md:-mx-4 core-card-{{ $.Scratch.Get "index" }}'>
 
               {{ $.Scratch.Set "index" (add ($.Scratch.Get "index") 1) }}
@@ -45,8 +39,6 @@
               {{ end }}
             </div>
 
-        {{ end }}
-      {{ end }}
     {{ end }}
 
 
