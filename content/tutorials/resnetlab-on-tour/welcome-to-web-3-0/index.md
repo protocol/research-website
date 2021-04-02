@@ -3,11 +3,11 @@ title: Welcome to Web3.0
 
 publishDate: 2020-03-30
 
-taxonomyName: resnetlab-on-tour
-
 isCore: true
 
 video: N9oxmRT2YWw
+
+layout: module
 
 resources:
   - title: featured-image

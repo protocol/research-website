@@ -3,11 +3,11 @@ title: Content Addressing
 
 publishDate: 2020-03-29
 
-taxonomyName: resnetlab-on-tour
-
 isCore: true
 
 video: N9oxmRT2YWw
+
+layout: module
 
 resources:
   - title: featured-image
@@ -23,4 +23,3 @@ links: [
 ]
 
 ---
-
