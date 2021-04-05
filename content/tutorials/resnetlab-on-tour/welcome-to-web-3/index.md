@@ -1,5 +1,5 @@
 ---
-title: Welcome to Web3.0
+title: Welcome to Web 3.0
 
 publishDate: 2020-03-30
 
