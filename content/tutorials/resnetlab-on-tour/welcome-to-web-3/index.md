@@ -19,4 +19,13 @@ summary: Web 3.0 joins Blockchains, the Semantic Web, and the Distributed Web in
   - IPFS and its role in Web3.0,
   - the progress so far in the IPFS ecosystem.
 
+# Sidebar icons
+links:
+  - name: PDF Slides
+    url: external pdf url
+    icon: download
+  - name: Google Slides
+    url: https://docs.google.com/presentation/d/1LvyOH1cqRNefbdLfVwg7raHMqbas0zE6UuQLT2MOTPI/edit?usp=sharing
+    icon: link
+    
 ---
