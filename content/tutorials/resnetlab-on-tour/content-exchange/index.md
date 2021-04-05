@@ -29,6 +29,14 @@ links:
     icon: download
   - name: Google Slides
     url: https://docs.google.com/presentation/d/1VqduQ6bWMV_R9CQCd86vs1Ozw4WnA3bdO-h-wWilf_0/edit?usp=sharing
-    icon: link
+    icon: download
     
 ---
+
+Almost there! You have learned how IPFS discovers content and with this, your hypothetical client is ready to receive its first bits over the IPFS network! In this module, you’ll hear about:
+  - IPFS’s Content Exchange protocols, namely, Bitswap and GraphSync,
+  - the message types and workflows of Bitswap and GraphSync, and
+  - the differences between the two protocols.
+
+
+<!--more-->
