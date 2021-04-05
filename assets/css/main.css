@@ -195,17 +195,26 @@ figcaption {
   transform: rotate(180deg);
 }
 
+ul {
+  @apply p-4 ml-6 list-disc;
+}
+
+ul li li {
+  list-style: circle;
+}
+
+
+
+/* Tutorials-specific styles */
 img.post-logo {
   max-height: 60px;
   max-width: 200px;
 }
+
 #hex-bus {
   transform: translate(calc(-50% - 2px), calc(50% + 2px));
   width: 200px;
-
-
 }
-/* Tutorials-specific styles */
 .tutorial-navigation {
   margin-bottom: 5rem;
 }
@@ -240,10 +249,6 @@ img.post-logo {
   display: block;
 }
 
-ul.has-bullets li {
-  list-style: disc;
-}
-
 .vector-pattern-left {
   transform:translateY(-45%);
 }
@@ -251,9 +256,16 @@ ul.has-bullets li {
   width: 12vw;
   max-width: 300px;
 }
+.module-card p {
+  margin-bottom: 1rem;
+}
 
 a.underline:hover {
   text-decoration: none;
+}
+
+.relevant-links li {
+  list-style: none;
 }
 
 @media (min-width:768px) {

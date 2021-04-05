@@ -13,17 +13,13 @@
       </div>
       <div class="md:flex">
         <div class="md:w-2/3">
-          <!-- if there's no content, display the summary -->
-          {{ if gt (len .Content) 2 }}
-            {{ .Content }}
-          {{ else }}
-            {{ .Summary }}
-          {{ end }}
+
+          {{ .Content }}
 
           {{ if .Params.relevantLinks }}
-            <div class="links mt-8 mb-4">
+            <div class="relevant-links mt-8 mb-4">
               <h4 class="mb-0">Relevant Links</h4>
-              <ul class="mt-0 pl-4">
+              <ul class="p-1">
               {{ range .Params.relevantLinks }}
                 <li>&#x2192; <a class="pl-2" href="{{ index (.) 1 }}" target="_blank">{{ index (.) 0 }}</a></li>
               {{ end }}
