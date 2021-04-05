@@ -26,4 +26,13 @@ relevantLinks: [
   ["ProtoSchool Tutorial on Storing and Sharing Files", "https://proto.school/regular-files-api"]
 ]
 
+# Sidebar icons
+links:
+  - name: PDF Slides
+    url: external pdf url
+    icon: download
+  - name: Google Slides
+    url: https://docs.google.com/presentation/d/15kzc0rEgOmFTKfcY17E6sjxRDGyqGt760wLTonTtomc/edit?usp=sharing
+    icon: link
+    
 ---
