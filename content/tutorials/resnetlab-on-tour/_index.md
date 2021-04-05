@@ -14,9 +14,9 @@ taxonomyName: resnetlab-on-tour
 
 layout: tutorial
 
-summary: Join us to learn everything about IPFS’s Content Addressing system, the Content Identifier (CID), as well as the Content Routing and Content Exchange strategies. Learn how IPFS deals with dynamic, mutable content.
+summary: Join us to learn everything about IPFS’s Content Addressing and Content Routing subsystems, its and Content Exchange strategies, as well as how IPFS deals with dynamic, mutable content.
 
-description: <p>Join us to learn everything about IPFS’s Content Addressing system, the Content Identifier (CID), as well as the Content Routing and Content Exchange strategies. Learn how IPFS deals with dynamic, mutable content.</p> <br /><p>Watch the tutorials to get all the background you need in order to start proposing your own protocol improvements and get involved in the [Discussion](link to GH repo).</p>
+description: <p>Join us to learn everything about IPFS’s Content Addressing and Content Routing subsystems, its and Content Exchange strategies, as well as how IPFS deals with dynamic, mutable content.</p> <br /><p>Watch the tutorials to acquire all the background you need in order to start your project on IPFS and the Web3.0 stack and get involved in the [Discussion](https://github.com/protocol/ResNetLab/discussions/categories/resnetlab-on-tour-tutorial-q-a).</p> <br /><p>All the material on this page is free to use for your own course, talk, or university module.</p>
 
 
 #alert
