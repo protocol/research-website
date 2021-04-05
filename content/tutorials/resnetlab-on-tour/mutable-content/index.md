@@ -25,4 +25,14 @@ relevantLinks: [
   ["ProtoSchool Tutorial on the Mutable File System", "https://proto.school/mutable-file-system/01"]
 ]
 
+
+# Sidebar icons
+links:
+  - name: PDF Slides
+    url: external pdf url
+    icon: download
+  - name: Google Slides
+    url: https://docs.google.com/presentation/d/1M63MpZYBBUpN8gvvWjbuPjaeny3aFBb5Hdzx-mr2yIw/edit?usp=sharing
+    icon: link
+    
 ---
