@@ -16,7 +16,7 @@ layout: tutorial
 
 summary: Join us to learn everything about IPFS’s Content Addressing and Content Routing subsystems, its and Content Exchange strategies, as well as how IPFS deals with dynamic, mutable content.
 
-description: <p>Join us to learn everything about IPFS’s Content Addressing and Content Routing subsystems, its and Content Exchange strategies, as well as how IPFS deals with dynamic, mutable content.</p> <br /><p>Watch the tutorials to acquire all the background you need in order to start your project on IPFS and the Web3.0 stack and get involved in the [Discussion](https://github.com/protocol/ResNetLab/discussions/categories/resnetlab-on-tour-tutorial-q-a).</p> <br /><p>All the material on this page is free to use for your own course, talk, or university module.</p>
+description: <p>Join us to learn everything about IPFS’s Content Addressing and Content Routing subsystems, its and Content Exchange strategies, as well as how IPFS deals with dynamic, mutable content.</p> <br /><p>Watch the tutorials to acquire all the background you need in order to start your project on IPFS and the Web3.0 stack and <a href="https://github.com/protocol/ResNetLab/discussions/categories/resnetlab-on-tour-tutorial-q-a)">get involved in the discussion</a>.</p> <br /><p>All the material on this page is free to use for your own course, talk, or university module.</p>
 
 
 #alert
