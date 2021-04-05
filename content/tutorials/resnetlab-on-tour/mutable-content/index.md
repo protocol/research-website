@@ -21,7 +21,7 @@ summary: This module has been created to answer all the questions on how IPFS ca
   - what is available in the ecosystem.
 
 relevantLinks: [
-  ["ProtoSchool Tutorial on Blogging on the Decentralised Web", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ENHANCED_BITSWAP_GRAPHSYNC.md"]
+  ["ProtoSchool Tutorial on Blogging on the Decentralised Web", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ENHANCED_BITSWAP_GRAPHSYNC.md"],
   ["ProtoSchool Tutorial on the Mutable File System", "https://proto.school/mutable-file-system/01"]
 ]
 
