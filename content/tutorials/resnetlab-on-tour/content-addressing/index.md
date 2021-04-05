@@ -15,7 +15,7 @@ resources:
 
 summary: 'Learn all about the most foundational principle of the IPFS architecture: the IPFS Content Identifier, or CID. Stay here to understand":"
   - how IPFS addresses files,
-  - how IPFS transforms files into Merkle DAGs, as well as 
+  - how IPFS transforms files into Merkle DAGs, as well as
   - the detailed anatomy of a CID!'
 
 
@@ -29,5 +29,15 @@ relevantLinks: [
   ["Open Problem on Hash-Linked Data Graph Layouts", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/HASH_LINKED_DATA_GRAPH_LAYOUTS.md"],
   ["Open Problem on Human Readable Naming", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/HUMAN_READABLE_NAMING.md"]
 ]
+
+# Sidebar icons
+links:
+  - name: Slides
+    url: external pdf url
+    icon: download
+#  - name: Publisher
+#    url: link to publisher
+#    icon: link
+
 
 ---
