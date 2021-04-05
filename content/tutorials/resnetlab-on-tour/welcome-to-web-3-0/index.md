@@ -13,13 +13,10 @@ resources:
   - title: featured-image
     src: featured.jpg
 
-relevantLinks: [
-  ["A link to Google", "https://google.com"],
-  ["CNN", "https://cnn.com"],
-  ["This links to Facebook", "https://facebook.com"]
-]
 
-
-summary: Web 3.0 joins Blockchains, the Semantic Web, and the Distributed Web in one package and creates a revolution, which will change the way we do networking! Stick around to find out the motivation for the movement, the progress so far, as well as the role of IPFS in it.
+summary: Web 3.0 joins Blockchains, the Semantic Web, and the Distributed Web in one package and creates a revolution, which will change the way we do networking! Stick around to find out:
+- the issues facing Web2.0 and the motivation for the Web3.0 movement,
+- IPFS and its role in Web3.0,
+- the progress so far in the IPFS ecosystem.
 
 ---
