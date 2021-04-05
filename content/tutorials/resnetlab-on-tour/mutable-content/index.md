@@ -13,6 +13,16 @@ resources:
   - title: featured-image
     src: featured.jpg
 
-summary: This module has been created to answer all the questions on how IPFS can be used for dynamic real-time applications. Hear about the InterPlanetary Naming System (IPNS) and the mechanics of the protocols that support dynamic content applications on top of IPFS. Take a sneak peek on the applications that use IPNS.
+summary: This module has been created to answer all the questions on how IPFS can be used for dynamic real-time applications. In this module, you will learn about:
+  - how to reason about dynamic data on IPFS,
+  - IPNS, the simplest construction for naming in IPFS,
+  - how PubSub can offer subsecond speeds for interactive applications,
+  - how CRDTs are a fundamental building block for distributed applications,
+  - what is available in the ecosystem.
+
+relevantLinks: [
+  ["ProtoSchool Tutorial on Blogging on the Decentralised Web", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ENHANCED_BITSWAP_GRAPHSYNC.md"]
+  ["ProtoSchool Tutorial on the Mutable File System", "https://proto.school/mutable-file-system/01"]
+]
 
 ---
