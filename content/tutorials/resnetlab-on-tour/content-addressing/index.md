@@ -13,10 +13,6 @@ resources:
   - title: featured-image
     src: featured.jpg
 
-summary: 'Learn all about the most foundational principle of the IPFS architecture: the IPFS Content Identifier, or CID. Stay here to understand":"
-  - how IPFS addresses files,
-  - how IPFS transforms files into Merkle DAGs, as well as
-  - the detailed anatomy of a CID!'
 
 
 relevantLinks: [
@@ -37,7 +33,14 @@ links:
     icon: download
   - name: Google Slides
     url: https://docs.google.com/presentation/d/1Ym2jGkQAnK4NftPYJPsffQKsxZoh5hf9o-PPsAxoAnw/edit?usp=sharing
-    icon: link
+    icon: download
 
 
 ---
+
+Learn all about the most foundational principle of the IPFS architecture: the IPFS Content Identifier, or CID. Stay here to understand:
+  - how IPFS addresses files,
+  - how IPFS transforms files into Merkle DAGs, as well as
+  - the detailed anatomy of a CID!
+ 
+<!--more-->
