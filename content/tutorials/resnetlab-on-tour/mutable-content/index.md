@@ -35,8 +35,8 @@ This module has been created to answer all the questions on how IPFS can be used
 
   - How to reason about dynamic data on IPFS
   - IPNS, the simplest construction for naming in IPFS
-  - How PubSub can offer subsecond latency for interactive applications
-  - CRDTs as a fundamental building block for distributed applications
+  - PubSub and subsecond latency for interactive apps
+  - CRDTs for distributed applications
   - Ecosystem tooling and applications
 
 <!--more-->
