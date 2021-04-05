@@ -45,9 +45,9 @@ The exciting outcomes of the ResNetLab-on-Tour series include:
 - Hundreds of researchers attended our live sessions, and many more watched the recordings that were made available later by the conference organisers!
 - Several universities have expressed interest  in delivering the course as part of their curriculum!
 - ResNetLab has fielded multiple requests for collaboration with top researchers and academics!
-- We published a blogpost for each event capturing all the questions and answers of each session. You can find these at the [PL Research Website blog](https://research.protocol.ai/blog/tags/resnetlab-on-tour/).
+- We published a blogpost for each event capturing all the questions and answers of each session. You can find these at the [PL Research Website blog](/tags/resnetlab-on-tour/).
 
-Today, we are making all the materials created available to everyone to use for themselves,their local communities, and their classrooms! Head over to the [shiny new ResNetLab on Tour website](https://research.protocol.ai/tutorials/resnetlab-on-tour) we have put together for all the material and extra pointers!
+Today, we are making all the materials created available to everyone to use for themselves,their local communities, and their classrooms! Head over to the [shiny new ResNetLab on Tour website](/tutorials/resnetlab-on-tour) we have put together for all the material and extra pointers!
 
 ## ResNetLab on Tour goes on demand!
 
@@ -69,7 +69,7 @@ And this is just the beginning! We will be releasing up to eight extra **“Elec
 
 As you go through the modules, we encourage learners to:
 - come chat with us on our [Github discussion forum](https://github.com/protocol/ResNetLab/discussions/categories/resnetlab-on-tour-tutorial-q-a). You have questions or new exciting ideas? Start a new discussion thread and get the discussion going.
-- design and publish protocol optimisation proposals! Share them with us and the community through the Github discussion forum, but also get in touch to establish a collaboration between your group and [ResNetLab](https://research.protocol.ai/groups/resnetlab/).
+- design and publish protocol optimisation proposals! Share them with us and the community through the Github discussion forum, but also get in touch to establish a collaboration between your group and [ResNetLab](/groups/resnetlab/).
 - apply for funding to implement your ideas, and help us solve our exciting [Open Problems](https://github.com/protocol/ResNetLab/tree/master/OPEN_PROBLEMS).
 
 Additionally, if you are an event organizer, lecturer or trainer, please:
