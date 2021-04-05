@@ -9,6 +9,8 @@
   <div class="mb-4 even:order-2 md:w-1/2 lg:w-5/12 px-4 module-card">
     <a class="text-md leading-relaxed text-blue hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a>
     <p class="">{{ .Summary }}</p>
+
+    <a class="text-blue hover:underline" href="{{ .RelPermalink }}">Learn more<img class="inline-block pl-2" src="/icons/chevron-pink.svg"></a>
+
     {{ partial "page-metadata" . }}
   </div>
-
