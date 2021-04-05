@@ -32,8 +32,6 @@ links:
 Almost there! You have learned how IPFS discovers content and, with this, your hypothetical client is ready to receive its first bits over the IPFS network! In this module, you’ll hear about:
 
   - IPFS’s content exchange protocols (Bitswap and GraphSync)
-  - The message types and workflows of the two protocols
-  - The differences between them
-
+  - Their message types and workflows
 
 <!--more-->
