@@ -29,12 +29,13 @@ links:
   - name: Google Slides
     url: https://docs.google.com/presentation/d/15kzc0rEgOmFTKfcY17E6sjxRDGyqGt760wLTonTtomc/edit?usp=sharing
     icon: download
-    
+
 ---
 
-The content routing system of IPFS is the part of the architecture that discovers content in the network. It is considered by many as the most important part of the architecture, as well as the one with the most open research questions. Come to learn:
-- IPFS's Content Routing Architecture,
-- the protocol settings and algorithmics of IPFS’s mighty DHT, 
-- IPFS's gossip-based content routing approaches.
+The content routing system of IPFS is the part of the architecture that discovers content in the network. It is considered by many as the most important part of the architecture, as well as the one with the most open research questions. In this module, you’ll hear about:
+
+- IPFS's content routing architecture
+- The protocol settings and algorithmics of IPFS’s DHT
+- IPFS's gossip-based content routing approaches
 
 <!--more-->

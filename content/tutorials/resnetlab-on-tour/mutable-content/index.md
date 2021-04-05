@@ -28,15 +28,15 @@ links:
   - name: Google Slides
     url: https://docs.google.com/presentation/d/1M63MpZYBBUpN8gvvWjbuPjaeny3aFBb5Hdzx-mr2yIw/edit?usp=sharing
     icon: download
-    
+
 ---
 
-This module has been created to answer all the questions on how IPFS can be used for dynamic real-time applications. In this module, you will learn:
-  - how to reason about dynamic data on IPFS,
-  - IPNS, the simplest construction for naming in IPFS,
-  - how PubSub can offer subsecond speeds for interactive applications,
-  - how CRDTs are a fundamental building block for distributed applications,
-  - what is available in the ecosystem.
+This module has been created to answer all the questions on how IPFS can be used for dynamic real-time applications. In this module, you’ll hear about:
 
+  - How to reason about dynamic data on IPFS
+  - IPNS, the simplest construction for naming in IPFS
+  - How PubSub can offer subsecond latency for interactive applications
+  - CRDTs as a fundamental building block for distributed applications
+  - Ecosystem tooling and applications
 
 <!--more-->
