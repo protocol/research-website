@@ -18,5 +18,12 @@ summary: The content routing system of IPFS is the part of the architecture that
   - the protocol settings and algorithmics of IPFS’s mighty DHT, 
   - IPFS's gossip-based content routing approaches.
 
+relevantLinks: [
+  ["Open Problem on Routing at Scale", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ROUTING_AT_SCALE.md"],
+  ["Open Problem on Preserve User Privacy", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PRESERVE_USER_PRIVACY.md"],
+  ["Open Problem on PubSub at Scale", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PUBSUB_AT_SCALE.md"],
+  ["ProtoSchool Tutorial on libp2p", "https://proto.school/introduction-to-libp2p"],
+  ["ProtoSchool Tutorial on Storing and Sharing Files", "https://proto.school/regular-files-api"]
+]
 
 ---
