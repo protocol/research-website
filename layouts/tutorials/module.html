@@ -17,7 +17,7 @@
           {{ .Content }}
 
           {{ if .Params.relevantLinks }}
-            <div class="relevant-links mt-8 mb-4">
+            <div class="relevant-links mt-8 mb-8">
               <h4 class="mb-0">Relevant Links</h4>
               <ul class="p-1">
               {{ range .Params.relevantLinks }}
@@ -26,6 +26,8 @@
               </ul>
             </div>
           {{ end }}
+
+          <a class="text-blue hover:underline" href="{{.Parent.RelPermalink}}"><img class="inline-block pl-2" style="transform: scaleX(-1);" src="/icons/chevron-pink.svg"> Back to tutorial</a>
         </div>
 
         <div class=" pb-8 mb-12 md:w-1/3 md:ml-16">
