@@ -32,7 +32,7 @@ links:
 
 ---
 
-The content routing system of IPFS is the part of the architecture that discovers content in the network. It is considered by many as the most important part of the architecture, as well as the one with the most open research questions. In this module, you’ll hear about:
+The content routing system of IPFS is the part of the architecture that discovers content in the network. It is one of the most important parts of the architecture, as well as the one with the most open research questions. In this module, you’ll hear about:
 
 - IPFS's content routing architecture
 - The protocol settings and algorithmics of IPFS’s DHT
