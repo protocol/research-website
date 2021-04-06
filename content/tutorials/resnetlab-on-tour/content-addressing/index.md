@@ -1,5 +1,5 @@
 ---
-title: Content Addressing
+title: Content addressing
 
 publishDate: 2020-03-29
 

@@ -1,5 +1,5 @@
 ---
-title: Content Exchange
+title: Content exchange
 
 publishDate: 2020-03-27
 

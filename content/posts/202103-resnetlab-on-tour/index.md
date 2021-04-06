@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "ResNetLab on Tour Tutorials go On Demand"
+title: "ResNetLab on Tour tutorials go on demand"
 
 # Website post date
 # format YYYY-MM-DD
@@ -37,7 +37,7 @@ draft: false
 
 ---
 
-We started the **ResNetLab on Tour** programme in late 2019 with the target to onboard the research and academic community to the IPFS architecture and the multiple interesting open problems and research directions associated with the decentralisation of internet services . Since its inception, we have had the opportunity to talk with thousands of experts in networking and distributed systems, acquired a tremendous amount of invaluable feedback on our designs, started many new collaborations,  and funded new research to work on our [Open Problems](https://github.com/protocol/ResNetLab/tree/master/OPEN_PROBLEMS). 
+We started the **ResNetLab on Tour** programme in late 2019 with the target to onboard the research and academic community to the IPFS architecture and the multiple interesting open problems and research directions associated with the decentralisation of internet services . Since its inception, we have had the opportunity to talk with thousands of experts in networking and distributed systems, acquired a tremendous amount of invaluable feedback on our designs, started many new collaborations,  and funded new research to work on our [Open Problems](https://github.com/protocol/ResNetLab/tree/master/OPEN_PROBLEMS).
 
 
 The exciting outcomes of the ResNetLab-on-Tour series include:

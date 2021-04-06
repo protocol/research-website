@@ -1,5 +1,5 @@
 ---
-title: Mutable Content
+title: Mutable content
 
 publishDate: 2020-03-26
 
