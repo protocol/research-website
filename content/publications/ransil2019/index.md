@@ -7,7 +7,7 @@ publishDate: 2019-07-09
 doi:
 
 publication_types:
-  -
+  - conference-paper
 authors:
   - alan-ransil
   - "Edwin Fonkwe Fongang"

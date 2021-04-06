@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Energy Pricing"
+title: "Energy pricing"
 
 # Website post date
 # format YYYY-MM-DD
@@ -10,7 +10,7 @@ date: 2018-08-23
 # publishDate: 2018-08-23
 
 # Venue Name
-venue: 
+venue:
 
 # Venue Location
 venue_location:

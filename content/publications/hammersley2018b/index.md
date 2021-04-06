@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Smart Grid Pilot Projects"
+title: Smart grid pilot projects
 
 # Website post date
 # format YYYY-MM-DD
@@ -10,7 +10,7 @@ date: 2018-10-15
 # publishDate: 2018-10-15
 
 # Venue Name
-venue: 
+venue:
 
 # Venue Location
 venue_location:
