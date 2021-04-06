@@ -1,5 +1,5 @@
 ---
-title: ResNetLab On Tour
+title: ResNetLab on Tour
 
 date: 2021-04-06T14:20:47+01:00
 menu:
