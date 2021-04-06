@@ -2,7 +2,7 @@
 headless: true
 nositemap: true
 weight: 1
-title: Open Science
+title: Open science
 linkText: Browse our discussions (GitHub)
 linkUrl: "https://github.com/protocol/research/blob/master/README.md"
 ---

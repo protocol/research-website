@@ -2,7 +2,7 @@
 headless: true
 nositemap: true
 weight: 7
-title: Public Talks
+title: Public talks
 linkText: Watch previous talks (YouTube)
 linkUrl: "https://www.youtube.com/channel/UCJvMzILpV3b4AWXTEeQjcng"
 ---

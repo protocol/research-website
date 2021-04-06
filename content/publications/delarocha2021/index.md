@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Accelerating Content Routing with Bitswap: A multi-path file transfer protocol in IPFS and Filecoin"
+title: "Accelerating content routing with Bitswap: A multi-path file transfer protocol in IPFS and Filecoin"
 
 # Website post date
 # format YYYY-MM-DD
@@ -25,9 +25,9 @@ doi:
 # Type of publication
 # delete all but one
 publication_types:
-  
+
   - report
-  
+
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:

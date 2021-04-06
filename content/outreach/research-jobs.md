@@ -2,7 +2,7 @@
 headless: true
 nositemap: false
 weight: 6
-title: Research Jobs
+title: Research jobs
 linkText: Browse current openings
 linkUrl: "https://jobs.lever.co/protocol/"
 ---

@@ -2,7 +2,7 @@
 headless: true
 nositemap: false
 weight: 2
-title: ARPM Program
+title: ARPM program
 #linkText: Learn more and apply
 #linkUrl: "https://jobs.lever.co/protocol/2839e68a-fd92-4c8c-8677-06c6f2e721c6"
 ---

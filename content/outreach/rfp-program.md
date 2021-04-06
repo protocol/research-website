@@ -2,7 +2,7 @@
 headless: true
 nositemap: true
 weight: 3
-title: RFP Program
+title: RFP program
 linkText: Browse our RFPs (GitHub)
 linkUrl: "https://github.com/protocol/research-RFPs"
 ---

@@ -1,5 +1,5 @@
 ---
-title: Knowledge Engineering
+title: Knowledge engineering
 date: 2019-09-02T14:20:51+01:00
 
 weight: 1
