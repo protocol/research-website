@@ -47,6 +47,7 @@ module.exports = {
       'pink': '#E51A66',
       'white': '#ffffff',
       'transparent': 'transparent',
+      'teal': '#12bfdf',
     },
     fontSize: {
       xl: '48px',

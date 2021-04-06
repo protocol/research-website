@@ -18,6 +18,9 @@ authors:
 categories:
   - talks
 
+tags:
+  - resnetlab-on-tour
+
 # Zero or more of the areas in content/research/areas
 areas:
   - distributed-systems
@@ -29,6 +32,7 @@ groups:
 # Not used
 draft: false
 
+
 aliases:
   - /posts/202004-matrix-virtual-meetup-gossipsub
 
@@ -36,7 +40,7 @@ aliases:
 
 ![](open-tech-banner.jpg)
 
-[ResNetLab](https://research.protocol.ai/research/groups/resnetlab) was present at [Open Tech Will Save Us](https://matrix.org/open-tech-meetup) virtual meetup, an event organized by the Matrix.org team during which participants could watch a live stream provided by [Jitsi](https://jitsi.org) and ask questions using the [Matrix protocol](https://matrix.org) (often through a client like [Riot](https://about.riot.im)).
+[ResNetLab](/research/groups/resnetlab) was present at [Open Tech Will Save Us](https://matrix.org/open-tech-meetup) virtual meetup, an event organized by the Matrix.org team during which participants could watch a live stream provided by [Jitsi](https://jitsi.org) and ask questions using the [Matrix protocol](https://matrix.org) (often through a client like [Riot](https://about.riot.im)).
 
 Matrix is both a project and an ecosystem that focuses on providing secure and federated platform for all types of communication. We are big fans of Matrix at Protocol Labs, both taking inspiration from their innovations (e.g. the [Olm](https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/olm.md) and [MegaOlm](https://gitlab.matrix.org/matrix-org/olm/blob/master/docs/megolm.md) cryptographic ratchets) and bridging the [IPFS](https://riot.im/app/#/group/+ipfs:matrix.org) and [libp2p](https://riot.im/app/#/group/+libp2p:matrix.org) IRC channels with Matrix.
 
@@ -85,4 +89,4 @@ I recommend watching the other two talks in this event! You can learn more about
 
 We really appreciate the invitation. It was a fun way to catch up and learn about some of the projects that inspire us, while also getting to see the people that we'd normally be meeting in in-person events. Thank you and looking forward to the next one!
 
-<center>{{< figure src="/images/resnetlab/resnetlab_logo_green.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
+<center>{{< figure src="/images/resnetlab/resnetlab_logo_green.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center>

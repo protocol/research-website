@@ -18,6 +18,10 @@ authors:
 categories:
   -
 
+# If applicable
+tags:
+  -
+
 # Zero or more of the areas in content/areas
 areas:
   -
@@ -28,6 +32,8 @@ groups:
 
 # Not used
 draft: false
+
+
 
 ---
 

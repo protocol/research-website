@@ -26,6 +26,10 @@ areas:
 groups:
   - resnetlab
 
+# Tags
+tags:
+  - resnetlab-on-tour
+
 # Not used
 draft: false
 

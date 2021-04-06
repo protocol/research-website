@@ -18,6 +18,9 @@ authors:
 categories:
   - Talks
 
+tags:
+  - resnetlab-on-tour
+
 # Zero or more of the areas in content/research/areas
 areas:
   - distributed-systems
@@ -29,11 +32,12 @@ groups:
 # Not used
 draft: false
 
+
 # Adds summary to prevent break on i.e.
 summary: 'ResNetLab was invited to present the “High-Level Overview of the IPFS Architecture” to the Named Data Networking consortium!'
 
 ---
-[ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) was invited to present the “High-Level Overview of the IPFS Architecture” to the [Named Data Networking](https://named-data.net/) consortium!
+[ResNetLab](/research/groups/resnetlab/) was invited to present the “High-Level Overview of the IPFS Architecture” to the [Named Data Networking](https://named-data.net/) consortium!
 
 The Named Data Networking project is the flagship project in the area of Information-Centric Networks, which is building a network-layer, information-centric (i.e. content-addressable) protocol stack. It started almost a decade ago with the partnership of 10 US universities and funded by the NSF.
 
@@ -86,7 +90,7 @@ A: No. Any node can run a gateway. They are not authenticated. There is no built
 
 **Q: Where are IPNS records kept?**
 
-A: IPNS is using the same infrastructure as content routing, that is, the DHT. The multi-hash of the public key of a peer is registered on the DHT to point to mutable content. There are also other ways to distribute IPNS records: a pubsub protocol called gossipsub  ([spec](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub), [techrep](https://research.protocol.ai/posts/201912-resnetlab-launch/PL-TechRep-gossipsub-v0.1-Dec30.pdf), [recent talk](https://research.protocol.ai/posts/202004-matrix-virtual-meetup-gossipsub/)) is being used for this purpose, as a faster way to distribute IPNS records. As mentioned earlier, the difference between IPNS over PubSub vs DHT is the push (PubSub) vs pull (DHT) model.
+A: IPNS is using the same infrastructure as content routing, that is, the DHT. The multi-hash of the public key of a peer is registered on the DHT to point to mutable content. There are also other ways to distribute IPNS records: a pubsub protocol called gossipsub  ([spec](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub), [techrep](/posts/201912-resnetlab-launch/PL-TechRep-gossipsub-v0.1-Dec30.pdf), [recent talk](/posts/202004-matrix-virtual-meetup-gossipsub/)) is being used for this purpose, as a faster way to distribute IPNS records. As mentioned earlier, the difference between IPNS over PubSub vs DHT is the push (PubSub) vs pull (DHT) model.
 
 **Q: If you put the name into the DHT and the name can point to different things that can be changed by different guys (good, bad), then can this be a big security problem?**
 
@@ -111,7 +115,7 @@ A: Peers that cache the content also publish provider records to the DHT to decl
 
 A: Cached content can be resolved and served until the next “garbage collection” period, at which point the cached content will expire unless it is “pinned” (hence, permanently replicated until the user says otherwise). Note that at the time of writing, garbage collection is turned off by default.
 
-**Q: The need to keep republishing IPNS records requires more overhead - the publisher needs to stay online and the ISP needs to provide connectivity. How does this compare to other systems?** 
+**Q: The need to keep republishing IPNS records requires more overhead - the publisher needs to stay online and the ISP needs to provide connectivity. How does this compare to other systems?**
 
 A: Data hosts need to stay online in order to keep their content accessible. In IPFS, data is provider agnostic and anyone can rehost the data. There are services, known as Pinning Services, that users can rely on to keep content available on the network when they go offline.
 
@@ -119,7 +123,7 @@ In IPNS, default configuration requires the content publisher (or a delegate wit
 
 **Q: IPFS relies on DNS and therefore IPFS can only always be an overlay. Can IPFS route over the link layer?**
 
-A: IPFS does not rely on DNS. Instead, we support an extension, [DNSLlink](https://dnslink.io/), which is a mechanism outside of the IPFS protocol that can used by IPFS implementations to register human-readable names and link them to CIDs, IPNS or even other DNSLinks. DNSLink does rely on DNS, but is an optional addition and users are free to use decentralized domain names like [ENS](https://ens.domains/) or [Unstoppable Domains](https://unstoppabledomains.com/) instead. 
+A: IPFS does not rely on DNS. Instead, we support an extension, [DNSLlink](https://dnslink.io/), which is a mechanism outside of the IPFS protocol that can used by IPFS implementations to register human-readable names and link them to CIDs, IPNS or even other DNSLinks. DNSLink does rely on DNS, but is an optional addition and users are free to use decentralized domain names like [ENS](https://ens.domains/) or [Unstoppable Domains](https://unstoppabledomains.com/) instead.
 
 With regards to routing over the link layer, IPFS currently doesn't leverage the routing at the link layer to optimize its data transfers, but it does have plans to do so in the future.
 
@@ -151,7 +155,7 @@ In order to achieve Signed HTTP Exchanges, a Signature is added to the original 
 
 Learn more about SXG and Web Packages with the IPFS Camp presentation on [Signed exchanges in Chrome](https://youtu.be/zYjsVe4s1JA) ([slidedeck](https://github.com/ipfs/camp/blob/master/LIGHTNING_TALKS/ipfscamp2019-lightningtalk-signedexchangeschrome.pdf))
 
-Thank you to everyone that attended the talk and to the The Named Data Networking consortium for organizing this event and inviting us! Check out our [open positions](https://jobs.lever.co/protocol?department=Research), [open RFPs](https://github.com/protocol/research-rfps), and [latest work](https://research.protocol.ai/research/groups/resnetlab/)!
+Thank you to everyone that attended the talk and to the The Named Data Networking consortium for organizing this event and inviting us! Check out our [open positions](https://jobs.lever.co/protocol?department=Research), [open RFPs](https://github.com/protocol/research-rfps), and [latest work](/research/groups/resnetlab/)!
 
 ## References
 
@@ -160,4 +164,4 @@ Thank you to everyone that attended the talk and to the The Named Data Networkin
 
 
 
-<center>{{< figure src="/images/resnetlab/resnetlab_logo_orange.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
+<center>{{< figure src="/images/resnetlab/resnetlab_logo_orange.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center>

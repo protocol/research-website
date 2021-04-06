@@ -166,6 +166,9 @@ figcaption {
   @apply font-semibold my-4 text-base;
 }
 
+.page-content h4.mb-0 {
+  @apply mb-0;
+}
 
 .page-top a:not(.no-underline), .page-content a:not(.no-underline) {
   @apply text-blue;
@@ -190,4 +193,106 @@ figcaption {
 
 .rotate-180 {
   transform: rotate(180deg);
+}
+
+ul {
+  @apply pl-4 pt-1 pb-4 ml-6 list-disc;
+}
+
+ul li li {
+  list-style: circle;
+}
+
+
+
+/* Tutorials-specific styles */
+img.post-logo {
+  max-height: 60px;
+  max-width: 200px;
+}
+
+#hex-bus {
+  transform: translate(calc(-50% - 2px), calc(50% + 2px));
+  width: 200px;
+}
+.tutorial-navigation {
+  margin-bottom: 5rem;
+}
+.tutorial-navigation h3 {
+  @apply relative;
+  font-size:22px;
+  border-bottom: 2px solid #FF9900;
+}
+
+.tutorial-navigation h3:after, .tutorial-navigation h3:before {
+  @apply absolute;
+  content: '';
+  background-image: url(../images/tutorials/yellow-dot.png);
+  display: block;
+  height: 12px;
+  width: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  bottom: -6px;
+}
+
+.tutorial-navigation h3:after {
+  right: -1px;
+  left: unset;
+}
+.core, .elective {
+  width: 100%;
+}
+
+.elective h3:before {
+  display: block;
+}
+
+.vector-pattern-left {
+  transform:translateY(-45%);
+}
+.vector-pattern-right, .vector-pattern-left {
+  width: 12vw;
+  max-width: 300px;
+}
+.module-card p {
+  margin-bottom: 1rem;
+}
+
+a.underline:hover {
+  text-decoration: none;
+}
+
+.relevant-links li {
+  list-style: none;
+}
+
+@media (min-width:768px) {
+
+  .elective h3:before {
+    display: none;
+  }
+}
+
+@media (max-width:767px) {
+  .tutorial-top-img {
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #hex-bus {
+    transform: translate(calc(-32% - 2px), calc(32% + 2px));
+    height: 180px;
+    width: 180px;
+  }
+}
+
+/* Leaflet */
+#mapid {
+  @apply font-body;
+}
+#mapid a:not(.leaflet-popup-close-button):not(.leaflet-control-zoom-out):not(.leaflet-control-zoom-in) {
+  @apply text-blue;
 }

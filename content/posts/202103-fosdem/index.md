@@ -13,13 +13,17 @@ date: 2021-03-16
 # We sort authors alphabetically by last name
 authors:
   - "Molly Mackinlay"
-  - nicolas-gailly 
+  - nicolas-gailly
   - alfonso-delarocha
   - yiannis-psaras
 
 # If applicable
 categories:
   - talks
+
+tags:
+  - resnetlab-on-tour
+
 
 # Zero or more of the areas in content/areas
 areas:
@@ -30,6 +34,9 @@ groups:
 
 # Not used
 draft: false
+
+
+
 
 ---
 
@@ -60,10 +67,10 @@ A: Indeed, Web3 needs several different network components to improve on the cur
 
 A: Yes, the tokens do need to have value in order to reward those who contribute to the network. The Filecoin network is supported by a robust crypto-economic model. You can read more about the exciting journey of building the Filecoin Economy in the following reports and blogposts:
 
-- [Engineering Filecoin’s Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf) 
+- [Engineering Filecoin’s Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
 - [Introducing the Filecoin Economy](https://filecoin.io/blog/posts/introducing-the-filecoin-economy/)
 - [Understanding Filecoin Circulating Supply](https://filecoin.io/blog/posts/understanding-filecoin-circulating-supply/)
-- [Filecoin Network Economics](https://filecoin.io/blog/posts/filecoin-network-economics/) 
+- [Filecoin Network Economics](https://filecoin.io/blog/posts/filecoin-network-economics/)
 
 *Q: So you store data in return for credit to fetch data?*
 
@@ -85,11 +92,11 @@ A: An attacker needs to compromise more than 50% of nodes and access their priva
 
 *Q: Can I deploy my own drand network? What would be the benefit?*
 
-A: Yes, anybody can deploy their own drand network. However, whether a separate drand network will provide a real benefit or not highly depends on the application. We have put a lot of effort into designing and deploying the most robust and secure drand network ever, so that the Internet can use it as a global randomness-as-a-service. 
+A: Yes, anybody can deploy their own drand network. However, whether a separate drand network will provide a real benefit or not highly depends on the application. We have put a lot of effort into designing and deploying the most robust and secure drand network ever, so that the Internet can use it as a global randomness-as-a-service.
 
 *Q: What are the conditions that one needs to meet to become a node in the League of Entropy?*
 
-A: The conditions cover a wide range of criteria given that the League of Entropy is a production-ready network. First of all, we require a high level of expertise in deploying and monitoring secure networked infrastructure. Secondly, a dedicated team that is reachable 24/7 in case of problems needs to be in place. Furthermore, we aim for high diversity in terms of cloud providers (or self-hosting solutions), jurisdictions, and geographical locations. Even though we aim to be as open as possible (in the semi-permissioned model under which drand operates), joining the network as an individual is discouraged. You can find more information via [the drand Github repo and mailing list](https://drand.love/about/community/#mailing-list). 
+A: The conditions cover a wide range of criteria given that the League of Entropy is a production-ready network. First of all, we require a high level of expertise in deploying and monitoring secure networked infrastructure. Secondly, a dedicated team that is reachable 24/7 in case of problems needs to be in place. Furthermore, we aim for high diversity in terms of cloud providers (or self-hosting solutions), jurisdictions, and geographical locations. Even though we aim to be as open as possible (in the semi-permissioned model under which drand operates), joining the network as an individual is discouraged. You can find more information via [the drand Github repo and mailing list](https://drand.love/about/community/#mailing-list).
 
 *Q: Are there different implementations of drand?*
 
@@ -122,5 +129,4 @@ GossipSub is the message propagation protocol for the Filecoin blockchain. It ma
 
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_violet.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center>
 
-<center style=font-size:11pt><i> We are always open to further discussion on our research topics and welcome opportunities to answer questions and develop collaborations. Join the discussion at <a href
-="https://discuss.ipfs.io"> the IPFS Forum</a> or reach out via email (<a href="mailto:research@protocol.ai">research@protocol.ai</a>). The <a href="https://docs.ipfs.io">IPFS</a>, <a href="https://docs.libp2p.io">libp2p</a>, and <a href="https://docs.filecoin.io">Filecoin</a> documentation sites and <a href="https://proto.school"> ProtoSchool's</a> interactive tutorials are a good starting point for exploration of these topics.</i></center>
+<center style=font-size:11pt><i> We are always open to further discussion on our research topics and welcome opportunities to answer questions and develop collaborations. Join the discussion in <a href="https://github.com/protocol/ResNetLab/discussions">our GitHub forum</a> or reach out via email (<a href="mailto:research@protocol.ai">research@protocol.ai</a>). The <a href="https://docs.ipfs.io">IPFS</a>, <a href="https://docs.libp2p.io">libp2p</a>, and <a href="https://docs.filecoin.io">Filecoin</a> documentation sites and <a href="https://proto.school"> ProtoSchool's</a> interactive tutorials are a good starting point for exploration of these topics.</i></center>

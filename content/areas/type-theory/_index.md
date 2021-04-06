@@ -1,5 +1,5 @@
 ---
-title: Type Theory
+title: Type theory
 date: 2019-09-02T14:20:47+01:00
 
 weight: 2

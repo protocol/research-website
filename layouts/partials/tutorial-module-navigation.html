@@ -1,0 +1,33 @@
+<div class="mb-6 pt-12 tutorial-navigation mb-6" id="curriculum">
+
+  <div class="block p-6">
+    <h2 class="text-md font-bold">Curriculum</h2>
+  </div>
+
+  <div class="mx-4 p-6 pb-2 lg:mx-0 mb-6 text-sm" style="background: rgba(18, 191, 219, 10%);">
+    <nav class="flex flex-row flex-wrap md:flex-nowrap">
+
+      <div class="md:w-1/2 md:flex-1 core pb-4">
+        <h3 class="block pb-4 mb-6" style="font-size:22px; border-bottom: 2px solid #FF9900;">Core Modules</h3>
+        <ul style="column-count:2;">
+          {{ range .RegularPages }}
+            {{ if eq .Params.isCore true }}
+            <li class="mb-2"> <a class="mr-4 text-blue hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+      <div class="md:w-1/2 md:flex-1 elective pb-4">
+        <h3 class="block pb-4 mb-6" style="font-size:22px; border-bottom: 2px solid #FF9900;">Elective Modules</h3>
+          <p class="pt-1">Coming Soon: <a class="text-blue hover:underline" href="#footer">Join our mailing list!</a></p>
+        <ul style="column-count:2;">
+          {{ range .RegularPages }}
+            {{ if eq .Params.isCore false }}
+            <li class="mb-2"> <a class="mr-4 text-blue hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>

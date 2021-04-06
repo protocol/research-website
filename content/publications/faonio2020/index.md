@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: Subversion-resilient Enhanced Privacy ID
+title: Subversion-resilient enhanced privacy ID
 
 # Website post date
 # format YYYY-MM-DD

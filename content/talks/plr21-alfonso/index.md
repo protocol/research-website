@@ -1,6 +1,6 @@
 ---
 # Talk title
-title: "Beyond Swapping Bits"
+title: "Beyond swapping bits"
 
 # Website post date
 # format YYYY-MM-DD

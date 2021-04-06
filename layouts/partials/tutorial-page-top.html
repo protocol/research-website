@@ -1,0 +1,25 @@
+<div class="page-top mb-4 flex flex-wrap">
+
+  {{ range .Resources.Match "featured.*" }}
+    <div class="tutorial-top-img pt-8 md:pt-16 px-4 md:pr-0  md:w-1/2 lg:w-5/12 md:order-last" >
+      <img class="" src="{{ .RelPermalink }}" alt="{{ .Title }}">
+    </div>
+  {{ end }}
+
+  <div class="p-8 md:pl-0 md:w-1/2 lg:w-7/12 md:order-first">
+
+    <div class="mb-4">
+      {{partial "tutorial-data-strip" . }}
+    </div>
+
+    <div class="text-lg md:text-larger mb-4 leading-tight">
+      {{ .Title }}
+    </div>
+    <div class="text-lg md:text-larger mb-4 leading-tight">
+      {{ .Params.tutorialSeries | markdownify }}
+    </div>
+    <div class="font-light text-almost-black text-md">{{ .Description | markdownify }}</div>
+  </div>
+
+
+</div>

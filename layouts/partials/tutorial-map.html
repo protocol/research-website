@@ -1,0 +1,154 @@
+<div class="mb-20 lg:px-0 map" id="map">
+
+  <div class="md:flex md:flex-row md:flex-nowrap relative mb-0 border-4 mx-6 lg:mx-0 md:px-0 " style="border-color: #29d2ef;">
+    <img id="hex-bus" class="absolute z-20 left-0 bottom-0" src="/images/tutorials/hex-bus.png">
+
+    <div class="block relative z-30 md:w-1/2 lg:w-5/12 md:mb-10 p-8 md:pr-4">
+      <h2 class="text-md font-bold mb-4">See where we’ve been!</h2>
+      <p class="mb-4">We started our tour in 2019 and quickly adapted to virtual delivery in 2020. See all the events that we participated in and check the blogposts that we published afterwards to find detailed answers to the questions we received after our talks!</p>
+      <p class="mb-4">
+        <a class="text-blue hover:underline" href="/tags/resnetlab-on-tour/">Read the blog<img class="inline-block pl-2" src="/icons/chevron-pink.svg"></a>
+      </p>
+    </div>
+
+    <div class="block md:w-1/2 lg:w-7/12 relative z-10 p-8 -mt-4 md:mt-0 md:pt-8 md:pl-4">
+      <div id="mapid" style="height: 330px;"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+
+  // TO ADD NEW LOCATIONS:
+  // to add a new map marker, add a new object with content like this:
+  // {
+  //   name: 'Event Name',
+  //   locale: [longitude, latitude],
+  //   isUpcoming: false,
+  //   url: 'https://google.com'
+  // }
+  //
+  // make sure each object in the locations array ends with a comma (to separate the objects), except for the final one
+  // the first location in the array will begin with its popup open
+
+  //  ADD NEW LOCATIONS HERE:
+  let locations = [
+    {
+      name: 'NDN Project',
+      locale: [32.2319, -110.9501],
+      isUpcoming: false,
+      url: '../../blog/2020/ndn-seminar-a-high-level-overview-of-the-interplanetary-file-system/'
+    },
+    {
+      name: 'ACM ICN 2019',
+      locale: [22.1987, 113.5439],
+      isUpcoming: false,
+      url: ''
+    },
+    {
+      name: 'IEEE ICBC 2020',
+      locale: [45.5, -73.56],
+      isUpcoming: false,
+      url: '../../blog/2020/ieee-icbc-2020-the-interplanetary-file-system-and-the-filecoin-network/'
+    },
+    {
+      name: 'IEEE/IFIP DSN 2020',
+      locale: [39.469906, -0.376],
+      isUpcoming: false,
+      url: '../../blog/2020/ieee/ifip-dsn-2020-the-interplanetary-file-system-and-the-filecoin-network/'
+    },
+    {
+      name: 'CNSM 2020',
+      locale: [38.423733, 27.142826],
+      isUpcoming: false,
+      url: '../../blog/2020/ieee/ifip-cnsm-2020-the-interplanetary-file-system-and-the-filecoin-network/'
+    },
+    {
+      name: 'IEEE Globecom 2020',
+      locale: [25.0329, 121.565],
+      isUpcoming: false,
+      url: '../../blog/2021/ieee-globecom-2020-the-interplanetary-file-system-and-the-filecoin-network/'
+    },
+    {
+      name: 'FOSDEM 2021',
+      locale: [50.85, 4.35],
+      isUpcoming: false,
+      url: '../../blog/2021/protocol-labs-at-fosdem-2021/'
+    },
+    {
+      name: 'ETHIndia',
+      locale: [22, 77],
+      isUpcoming: false,
+      url: ''
+    },
+    {
+      name: 'ICIN 2021',
+      locale: [48.856, 2.35],
+      isUpcoming: false,
+      url: ''
+    },
+    {
+      name: 'UCL ICCS',
+      locale: [51.507, 0.1278],
+      isUpcoming: false,
+      url: ''
+    }
+  ]
+
+
+
+  // DONT TOUCH THINGS BELOW THIS LINE UNLESS YOU CAN CODE JAVASCRIPT
+  // Leaflet map setup
+
+  var mymap = L.map('mapid').setView([51.5, 0.12], 1);
+
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      minZoom: 1,
+      id: 'suzannabustout/ckmw829y018vl17qcn6exjhnk',
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: 'pk.eyJ1IjoicGwtbWFwYm94IiwiYSI6ImNrbjBuYWttNTBwNnEyb21samZqbXh1bWUifQ.4kJgCZpYizE5xcyM5RpI8A'
+  }).addTo(mymap);
+
+  var LeafIcon = L.Icon.extend({
+    options: {
+      iconUrl: '../../images/tutorials/map-marker-green.png',
+      iconSize:     [16, 16],
+    }
+  });
+
+  var greenIcon = new LeafIcon({iconUrl: '../../images/tutorials/map-marker-green.png'}),
+    purpleIcon = new LeafIcon({iconUrl: '../../images/tutorials/map-marker-purple.png'});
+
+
+  // Create markers from Locations array
+
+  for (var i = 0; i < locations.length; i++) {
+
+    let theIcon = purpleIcon;
+    if (locations[i].isUpcoming){
+      theIcon = greenIcon;
+    }
+
+    let popupMessage = locations[i].name;
+    if (locations[i].url.length > 1){
+      popupMessage = '<a class="hover:underline text-center block" href="' + locations[i].url + ' "><strong>'  + locations[i].name + '</strong><br/>Read the post</a>';
+    }
+    if (i === 0) {
+      marker = new L.marker(locations[i].locale, {icon: theIcon} )
+        .bindPopup(popupMessage)
+        .addTo(mymap)
+        .openPopup();
+    } else {
+    marker = new L.marker(locations[i].locale, {icon: theIcon} )
+      .bindPopup(popupMessage)
+      .addTo(mymap)
+    }
+  }
+
+
+
+</script>

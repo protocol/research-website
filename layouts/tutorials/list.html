@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<div class="max-w-screen mx-auto pt-4 md:px-10">
+  {{ partial "page-top" . }}
+
+  <div class="md:-mx-4 md:w-2/3">
+      {{ range sort .Pages ".Title" "asc"}}
+        {{ partial "research-taxonomy-card" . }}
+      {{ end }}
+  </div>
+</div>
+{{ end }}

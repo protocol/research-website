@@ -18,6 +18,9 @@ authors:
 categories:
   - Talks
 
+tags:
+  - resnetlab-on-tour
+
 # Zero or more of the areas in content/areas
 areas:
   - distributed-systems
@@ -29,9 +32,10 @@ groups:
 # Not used
 draft: false
 
+
 ---
 
-[ResNetLab](https://research.protocol.ai/research/groups/resnetlab/) was invited to present “The InterPlanetary File System and the Filecoin Network” in a 3-hour tutorial at the [IEEE/IFIP International Conference on Dependable Systems and Networks](https://dsn2020.webs.upv.es/)! The conference, now in its 50th edition, has an established track record of top-quality research contributions, and is one of the oldest conferences in its subject area.
+[ResNetLab](/research/groups/resnetlab/) was invited to present “The InterPlanetary File System and the Filecoin Network” in a 3-hour tutorial at the [IEEE/IFIP International Conference on Dependable Systems and Networks](https://dsn2020.webs.upv.es/)! The conference, now in its 50th edition, has an established track record of top-quality research contributions, and is one of the oldest conferences in its subject area.
 
 We would like to thank the conference organizers for including our tutorial in the conference, and for the great organization of the conference in general and our tutorial in particular. Here we present some of the questions we received after our presentation as a reference for future readers:
 
@@ -56,4 +60,4 @@ A: The Filecoin Network operates in block epochs of 30 seconds. This means that 
 
 A: We believe in open protocols. We’ve both committed to not close/monetize our protocols directly through licensing and made a pledge to add the [Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/) to all our tech. Protocol Labs is in the business of making significant technological breakthroughs and we believe that open collaboration is essential to achieve those aims.
 
-<center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="https://research.protocol.ai/research/groups/resnetlab/" width="150px" >}}</center>
+<center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center>

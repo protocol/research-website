@@ -67,11 +67,8 @@ Gossipsub is one of the many libp2p PubSub routers used to disseminate IPNS reco
 Together with the libp2p team, we embarked on a mission to harden the protocol's behavior. The outcome is a hardened version of the Gossipsub protocol that integrates several mitigation strategies *at the protocol level*. The results are quite impressive, especially if we consider that the enormous amount of research in the area of pubsub has generally outsourced security considerations to higher levels of the stack (i.e. the application layer), instead of integrating them at the protocol level.
 
 Learn more about:
-
 - The features of Gossipsub v1.1 in this [blogpost](/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains) and this [paper](/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/)
-
 - The protocol's exhaustive testing with dozens of test scenarios and hundreds of experimental runs on our Testground-based AWS VM-testbed in this [Performance Evaluation Report](/publications/gossipsub-v1.1-evaluation-report/).
-
 - A [Gossipsub v1.1 talk](https://www.youtube.com/watch?v=APVp-20ATLk&feature=youtu.be&t=3612) at the Matrix.org "Open Tech will save us all" event
 
 #### Drand, League of Entropy and the Randomness Summit
@@ -93,13 +90,9 @@ We shipped a new version of the Filecoin specification and website, making Filec
 We set ourselves the challenge of exploring ways to make IPFS blazing fast. This was the inception of the ["Beyond Swapping Bits" project](https://github.com/protocol/beyond-bitswap), whose main goal was straightforward: driving speed-ups to file-transfer in IPFS.
 
 In less than four months, we've achieved some phenomenal contributions to Bitswap and set the [groundwork](/blog/2021/beyond-swapping-bits-project-review-and-preview/) for other researchers and teams to build upon our work. A few highlights of the **Beyond Bitswap** project are:
-
 - [A list of 10 RFCs](https://github.com/protocol/beyond-bitswap#enhancement-rfcs) with potential ways of improving file-transfer speeds in IPFS and P2P networks.
-
 - A [complete testbed](https://github.com/protocol/beyond-bitswap/tree/master/testbed) to benchmark and debug file sharing in IPFS.
-
 - Prototypes for 3 of the RFCs with an [extensive (and repeatable evaluation)](https://github.com/protocol/beyond-bitswap/tree/master/RFC). Our prototypes have ranged from the use of compression in Bitswap and libp2p to achieve bandwidth savings of up to 75% compared to the baseline, to the use of a TTL field in Bitswap messages and the inspection of requests to increase Bitswap's range of discovery and file transfer speed by up to a 20%.
-
 - The [publication of an academic paper](/publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/) presenting Bitswap as a content routing system's accelerator and describing many of the contributions of the project.
 
 ### 🎫 Events
@@ -115,17 +108,11 @@ The tutorial is primarily composed of lecture material, and many of our tutorial
 In the links below, you will find the blogosts describing the events we participated in. If you want us to speak to your lab or event, give us a [shout](mailto:resnetlab@protocol.ai)! We will be honored!
 
 - March 2020: [NDN Project Consortium](/blog/2020/ndn-seminar-a-high-level-overview-of-the-interplanetary-file-system/)
-
 - April 2020: [IRTF DINRG](/blog/2020/ipfs-talk-at-the-irtf-decentralised-internet-infrastructure-research-group-meeting)
-
 - May 2020: [IEEE ICBC](/blog/2020/ieee-icbc-2020-the-interplanetary-file-system-and-the-filecoin-network/)
-
 - May 2020: [NGN Group](/blog/2020/next-generation-networks-ngn-group-talk-a-high-level-overview-of-the-interplanetary-file-system/)
-
 - July 2020: [IFIP/IEEE DSN](/blog/2020/ieee/ifip-dsn-2020-the-interplanetary-file-system-and-the-filecoin-network/)
-
 - November 2020: [CNSM](/blog/2020/ieee/ifip-cnsm-2020-the-interplanetary-file-system-and-the-filecoin-network/)
-
 - December 2020: [IEEE Globecom](/blog/2021/ieee-globecom-2020-the-interplanetary-file-system-and-the-filecoin-network/)
 
 We also have more events lined up for 2021, with keynotes at the [IEEE Global Internet Symposium](https://infocom2021.ieee-infocom.org/ieee-global-internet-symposium-call-papers/) (taking place alongside IEEE Infocom this year) and the [24th Conference on Innovation in Clouds, Internet and Networks](https://www.icin-conference.org/keynotes/), as well as other events.
@@ -135,7 +122,6 @@ We also have more events lined up for 2021, with keynotes at the [IEEE Global In
 In addition to the *ResNetLab on Tour*  series, we've also enjoyed the chance to contribute to other events focused on developers. You can catch up on the results at:
 
 - [Matrix.org Virtual Meetup (2020-04-08)](/blog/2020/gossipsub-v1.1-at-open-tech-will-save-us-virtual-event/)
-
 - [Ready Layer One (2020-05-04)](https://www.youtube.com/watch?v=H9Eb4uftrSA)
 
 ### 🤝Research Collabs
@@ -143,13 +129,9 @@ In addition to the *ResNetLab on Tour*  series, we've also enjoyed the chance to
 #### RFP recipients
 
 At ResNetLab we love to work with bright teams and individuals to solve some of the most challenging and exciting problems in decentralised and permissionless P2P networks research. Early in 2020 we published two [Requests For Proposals (RFPs)](https://github.com/protocol/research-RFPs/): one on [Multi-Layer DHTs](https://github.com/protocol/research-RFPs/blob/master/RFPs/rfp-7-MLDHT.md) and another on the [scalability bounds of pubsub systems](https://github.com/protocol/research-RFPs/blob/master/RFPs/rfp-8-pubsub.md). Our target with these funded projects is to get ahead of the game and design protocols that will sustain IPFS's expected exponential growth. This funding round, we funded four great teams to tackle these projects! They are:
-
 - [Prof. George Polyzos](https://www.aueb.gr/en/faculty\_page/polyzos-george) and his team at the [Athens University of Economics and Business (AUEB)](https://mm.aueb.gr/).
-
 - [Dr. João Leitão](https://asc.di.fct.unl.pt/~jleitao/) and his team at the [NOVA University of Lisbon](https://www.fct.unl.pt/en/research/nova-laboratory-computer-science-and-informatics).
-
 - [Dr. Sreeram Kannan](https://people.ece.uw.edu/kannan\_sreeram/) and [Shaileshh Bojja Venkatakrishnan](https://cse.osu.edu/people/bojjavenkatakrishnan.2) at the [University of Washington](https://www.ece.uw.edu/) and [Ohio State University](https://engineering.osu.edu/), respectively.
-
 - [Dr. Hidehiro Kanemitsu](https://www.teu.ac.jp/grad/english/teacher/cs\_spc/index.html?id=45) and [Prof. Hidenori Nakazato](https://waseda.pure.elsevier.com/en/persons/hidenori-nakazato) and their teams at the [Tokyo University of Technology](https://www.teu.ac.jp/english/index.html) and [Waseda University](https://www.waseda.jp/top/en/), respectively.
 
 You can read more details about the recipients of our first round of grants [here](/blog/2020/meet-the-latest-protocol-labs-research-grant-recipients/).
@@ -160,24 +142,15 @@ Although this round of RFPs has closed, we have more in the works for the second
 
 We are also open to collaborating beyond the RFP structure and are always receptive to spontaneous outreach. It has been really great to work with a variety of labs in an informal capacity, and these collaborations have yielded some really valuable results, including:
 
-- A crawler of the IPFS network and a public service for monitoring network by the [Weizenbaum-Institute](https://www.weizenbaum-institut.de/en/research/rg17/):
-
+- A crawler of the IPFS network and a public service for monitoring network by the [Weizenbaum-Institute](https://www.weizenbaum-institut.de/en/research/rg17/)
   - [IPFS Crawler](https://github.com/wiberlin/ipfs-crawler)
-
   - [Live Monitoring](http://78.47.197.225/index.html)
-
-- A series of vulnerabilities of the IPFS DHT and respective mitigations from the Technical University of Graz, which has made the IPFS DHT orders of magnitude more resilient:
-
+- A series of vulnerabilities of the IPFS DHT and respective mitigations from the Technical University of Graz, which has made the IPFS DHT orders of magnitude more resilient
   - [Report](https://blog.ipfs.io/2020-10-30-dht-hardening/)
-
   - [Paper](https://graz.pure.elsevier.com/en/publications/total-eclipse-of-the-heart-disrupting-the-interplanetary-file-sys)
-
-- A new PubSub routing algorithm, named PulsarCast, from INESC-ID Lisboa, at University of Lisbon:
-
+- A new PubSub routing algorithm, named PulsarCast, from INESC-ID Lisboa, at University of Lisbon
   - [Presentation](https://www.youtube.com/watch?v=pP0fS-FCsjE)
-
   - [Code & Testing Harness](https://github.com/ipfs/notes/issues/266#issuecomment-605923269)
-
   - [Paper](https://github.com/JGAntunes/pulsarcast/blob/master/paper/paper.pdf)
 
 ## 🧘🏽‍♀️ Reflection
@@ -187,13 +160,9 @@ It goes without saying that 2020 has been an incredibly strange and challenging 
 We at ResNetLab will continue to focus on doing what we do best: building resiliency into the fabric of distributed systems through open collaboration. Our mission is *to build resilient distributed systems, by creating and operating a platform where researchers can collaborate openly and asynchronously on deep technical work.*
 
 Throughout the year, we've identified and catalogued what are still some significant [Open Problems](https://github.com/protocol/ResNetLab/tree/master/OPEN_PROBLEMS) in the space that need to be solved in order to unblock a whole new set of users and applications to join the Distributed Web. These include:
-
 - Achieving [full privacy-preserving primitives](https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PRESERVE_USER_PRIVACY.md) that do not leak important information and/or user intent through side-channel attacks.
-
 - [Scaling Content Routing to billions of users](https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ROUTING_AT_SCALE.md) in order to support the rapid adoption of the Internet by the world's population and the even fastest growing number of devices per person.
-
 - [Bringing full support to the P2P Stack to all kinds of different runtimes](https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/HETEROGENEOUS_RUNTIMES.md) (VR, Mobile, IoT, etc) in order to secure the interoperability and upgradability of those additional platforms.
-
 - And other equally important problems that you can find on the [ResNetLab's Open Problem list](https://github.com/protocol/ResNetLab/tree/master/OPEN_PROBLEMS).
 
 Overcoming these challenges requires novel solutions that undergo rigorous testing and review by multiple experts in order to ensure that no potential gap is missed.
@@ -204,44 +173,30 @@ Overcoming these challenges requires novel solutions that undergo rigorous testi
 
 - **papers**, such as:
   - [the Gossipsub paper](/publications/gossipsub-attack-resilient-message-propagation-in-the-filecoin-and-eth2.0-networks/)
-
   - [Gossipsub's performance evaluation report](/publications/gossipsub-v1.1-evaluation-report/)
-
   - [the Pulsarcast paper](https://github.com/JGAntunes/pulsarcast/blob/master/paper/paper.pdf)
 
 - **presentations**, including:
   - a variety of public talks at the [Randomness Summit](https://randomness2020.com/)
-
   - [an invited lecture on Gossipsub](https://www.youtube.com/watch?v=APVp-20ATLk&feature=youtu.be&t=3612) at the Matrix meetup
-
   - [a showcase of our test setup for P2P networks](https://www.youtube.com/watch?v=pP0fS-FCsjE) at the IPFS weekly call
-
   - [an introduction to Gossipsub](https://www.youtube.com/watch?v=paWmKqi8MZk) at Filecoin Liftoff week
-
   - [our IPFS, libp2p tutorial](https://drive.google.com/file/d/1OcHjR1XA1E8To3qpw3fnsEQe-xSKFGy3/view) at the IEEE ICBC'20 conference
-
   - [Pulsarcast in action](https://www.youtube.com/watch?v=D2UKQPKMjr4&list=PLhuBigpl7lqu6xWpiXtbEzJQtlMH1tqoG&index=16) at the PL Research Seminar
-
   - [a seminar on IPFS](https://www.youtube.com/watch?v=Jy5__VuwZC0) for the NDN project consortium
-
   - [an introductory presentation on IPFS](https://www.youtube.com/watch?v=K4Usud4g4iY&feature=youtu.be&t=1008) for the IRTF DINRG Group
 
 - and **posts**, like these on:
 
   - [Bitswap compression](/blog/2020/honey-i-shrunk-our-libp2p-streams/)
-
   - [Bitswap WANT message inspection](/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers/)
-
   - [Bitswap TTL extension](/blog/2020/teaching-bitswap-nodes-to-jump/)
-
   - [Bitswap combined improvements](/blog/2021/our-bitswap-nodes-have-become-jumping-inspectors-updated/)
-
   - and this [high-level description](/blog/2020/gossipsub-an-attack-resilient-messaging-layer-protocol-for-public-blockchains/) of Gossipsub's hardening features.
 
 2. Continuing to make research repeatable and measurable from the start, by crafting an evaluation plan and delivering the evaluation. Two great examples are:
 
 - the [Evaluation & Report for GossipSub](/publications/gossipsub-v1.1-evaluation-report/)
-
 - [Beyond Bitswap](https://github.com/protocol/beyond-bitswap) and the [Testing Harness](https://github.com/protocol/beyond-bitswap/tree/master/testbed)
 
 3. Continuing to make all code available under the [Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/), enabling others to learn from it and build on top of it.
@@ -268,5 +223,4 @@ The ResNetLab Team -- David Dias, Yiannis Psaras, Alfonso de la Rocha
 
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_lightviolet.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center>
 
-<center style=font-size:11pt><i> We are always open to further discussion on our research topics and welcome opportunities to answer questions and develop collaborations. Join the discussion at <a href
-="https://discuss.ipfs.io"> the IPFS Forum</a> or reach out via email (<a href="mailto:research@protocol.ai">research@protocol.ai</a>). The <a href="https://docs.ipfs.io">IPFS</a>, <a href="https://docs.libp2p.io">libp2p</a>, and <a href="https://docs.filecoin.io">Filecoin</a> documentation sites and <a href="https://proto.school"> ProtoSchool's</a> interactive tutorials are a good starting point for exploration of these topics.</i></center>
+<center style=font-size:11pt><i> We are always open to further discussion on our research topics and welcome opportunities to answer questions and develop collaborations. Join the discussion in <a href="https://github.com/protocol/ResNetLab/discussions">our GitHub forum</a> or reach out via email (<a href="mailto:research@protocol.ai">research@protocol.ai</a>). The <a href="https://docs.ipfs.io">IPFS</a>, <a href="https://docs.libp2p.io">libp2p</a>, and <a href="https://docs.filecoin.io">Filecoin</a> documentation sites and <a href="https://proto.school"> ProtoSchool's</a> interactive tutorials are a good starting point for exploration of these topics.</i></center>

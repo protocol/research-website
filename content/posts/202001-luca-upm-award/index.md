@@ -25,7 +25,7 @@ draft: false
 
 _Source: [IMDEA Software Institute](https://software.imdea.org/news.html#2019-12-20-luca-nizzardo-phd-en). Posted here with permission._
 
-[Luca Nizzardo](https://research.protocol.ai/authors/luca-nizzardo/) was a PhD student of the [IMDEA Software Institute](https://software.imdea.org/es) and his thesis “Cryptographic Techniques for the Security of Cloud and Blockchain Systems” defended in 2018 was directed by Associate Professor [Dario Fiore](https://software.imdea.org/people/dario.fiore/index.html). Nowadays he works for Protocol Labs helping to build protocols, systems, and tools to improve how the Internet works.
+[Luca Nizzardo](/authors/luca-nizzardo/) was a PhD student of the [IMDEA Software Institute](https://software.imdea.org/es) and his thesis “Cryptographic Techniques for the Security of Cloud and Blockchain Systems” defended in 2018 was directed by Associate Professor [Dario Fiore](https://software.imdea.org/people/dario.fiore/index.html). Nowadays he works for Protocol Labs helping to build protocols, systems, and tools to improve how the Internet works.
 
 This month the [Universidad Politécnica de Madrid (UPM)](http://www.upm.es/) announced the two winners of the Extraordinary Award and Luca’s thesis is one of them. In his thesis, Lucas investigates how to enforce the honest behavior of parties involved in a digital interaction over the Internet, particularly considering two emerging paradigms in this setting: cloud computing and e-commerce.
 

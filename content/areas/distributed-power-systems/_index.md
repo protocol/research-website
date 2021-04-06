@@ -1,5 +1,5 @@
 ---
-title: Distributed Power Systems
+title: Distributed power systems
 date: 2019-11-13T19:29:02-08:00
 
 weight: 7
