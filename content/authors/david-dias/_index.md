@@ -11,10 +11,6 @@ role: Research Director
 
 groups:
   - resnetlab
-  - cryptonetlab
-  - cryptocomputelab
-  - cryptoeconlab
-  - consensuslab
 
 resources:
   - name: avatar
@@ -46,7 +42,7 @@ social:
 email:
 
 user_groups:
-  - Researchers
+  - Management and support
 
 # For display at the top of the author details page
 quote:
