@@ -15,8 +15,8 @@ resources:
 
 
 relevantLinks: [
-  ["ProtoSchool Tutorial on Blogging on the Decentralised Web", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ENHANCED_BITSWAP_GRAPHSYNC.md"],
-  ["ProtoSchool Tutorial on the Mutable File System", "https://proto.school/mutable-file-system/01"]
+  ["ProtoSchool Tutorial on Blogging on the Decentralised Web", "https://proto.school/blog"],
+  ["ProtoSchool Tutorial on the Mutable File System", "https://proto.school/mutable-file-system"]
 ]
 
 
