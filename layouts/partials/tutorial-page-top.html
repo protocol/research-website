@@ -7,9 +7,14 @@
   {{ end }}
 
   <div class="p-8 md:pl-0 md:w-1/2 lg:w-7/12 md:order-first">
-    <h1 class="text-md font-bold">
-      {{ .Title | title }}
-    </h1>
+
+    <div class="mb-4">
+      {{partial "tutorial-data-strip" . }}
+    </div>
+
+    <div class="text-lg md:text-larger mb-4 leading-tight">
+      {{ .Title }}
+    </div>
     <div class="text-lg md:text-larger mb-4 leading-tight">
       {{ .Params.tutorialSeries | markdownify }}
     </div>
