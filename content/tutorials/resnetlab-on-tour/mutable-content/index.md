@@ -37,6 +37,6 @@ This module has been created to answer all the questions on how IPFS can be used
   - IPNS, the simplest construction for naming in IPFS
   - PubSub and subsecond latency for interactive apps
   - CRDTs for distributed applications
-  - Ecosystem tooling and applications
+  - Ecosystem tooling and existing applications
 
 <!--more-->
