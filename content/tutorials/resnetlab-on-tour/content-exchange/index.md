@@ -15,7 +15,8 @@ resources:
 
 
 relevantLinks: [
-  ["Open Problem on Enhancing Bitswap and Graphsync", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ENHANCED_BITSWAP_GRAPHSYNC.md"]
+  ["Open Problem on Enhancing Bitswap and Graphsync", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ENHANCED_BITSWAP_GRAPHSYNC.md"],
+  ["Beyond Bitswap Project", "https://github.com/protocol/beyond-bitswap"]
 ]
 
 # Sidebar icons
