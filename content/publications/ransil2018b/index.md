@@ -10,7 +10,7 @@ date: 2018-09-27
 # publishDate: 2018-09-27
 
 # Venue Name
-venue:  Protocol Labs Research Report
+venue: 
 
 # Venue Location
 venue_location:
