@@ -7,10 +7,14 @@ authors:
   - david-dias
 
 # Role/position
-role: Research Engineer
+role: Research Director
 
 groups:
   - resnetlab
+  - cryptonetlab
+  - cryptocomputelab
+  - cryptoeconlab
+  - consensuslab
 
 resources:
   - name: avatar
@@ -36,8 +40,6 @@ social:
     link: https://scholar.google.com/citations?hl=es&user=L0Ybwt4AAAAJ
   - icon: github
     link: http://github.com/daviddias/
-  - icon: linkedin
-    link: https://www.linkedin.com/in/diasdavid/
   - icon: link
     link: https://daviddias.me/
 
