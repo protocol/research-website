@@ -4,7 +4,7 @@ title: "ResNetLab on Tour tutorials go on demand"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-04-02
+date: 2021-04-06
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
