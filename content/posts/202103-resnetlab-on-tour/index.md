@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "ResNetLab on Tour tutorials go on demand"
+title: "ResNetLab on Tour tutorials go on-demand"
 
 # Website post date
 # format YYYY-MM-DD
