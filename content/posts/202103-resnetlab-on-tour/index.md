@@ -37,45 +37,45 @@ draft: false
 
 ---
 
-We started the **ResNetLab on Tour** programme in late 2019 with the target to onboard the research and academic community to the IPFS architecture and the multiple interesting open problems and research directions associated with the decentralisation of internet services . Since its inception, we have had the opportunity to talk with thousands of experts in networking and distributed systems, acquired a tremendous amount of invaluable feedback on our designs, started many new collaborations,  and funded new research to work on our [Open Problems](https://github.com/protocol/ResNetLab/tree/master/OPEN_PROBLEMS).
+We started the **ResNetLab on Tour** programme in late 2019 with the goal of onboarding the research and academic community to the IPFS architecture and the interesting open problems and research directions associated with the decentralisation of internet services. Since its inception, we've had the opportunity to speak to thousands of experts in networking and distributed systems, acquired a tremendous amount of invaluable feedback, started new collaborations, and funded new research to work on our [open problems](https://github.com/protocol/ResNetLab/tree/master/OPEN_PROBLEMS).
 
 
-The exciting outcomes of the ResNetLab-on-Tour series include:
+The exciting outcomes of ResNetLab on Tour include:
 - We delivered our four-hour long tutorials more than 15 times in high-profile academic conferences and university labs!
 - Hundreds of researchers attended our live sessions, and many more watched the recordings that were made available later by the conference organisers!
 - Several universities have expressed interest  in delivering the course as part of their curriculum!
 - ResNetLab has fielded multiple requests for collaboration with top researchers and academics!
-- We published a blogpost for each event capturing all the questions and answers of each session. You can find these at the [PL Research Website blog](/tags/resnetlab-on-tour/).
+- We published a blogpost for each event capturing all the questions and answers of each session. You can find these on the [blog](/tags/resnetlab-on-tour/).
 
-Today, we are making all the materials created available to everyone to use for themselves,their local communities, and their classrooms! Head over to the [shiny new ResNetLab on Tour website](/tutorials/resnetlab-on-tour) we have put together for all the material and extra pointers!
+Today, we are making all the materials available to everyone to use for their own benefit ,their local communities, and their classrooms. Head on over to the [shiny new ResNetLab on Tour pages](/tutorials/resnetlab-on-tour) for materials and extra pointers!
 
 ## ResNetLab on Tour goes on demand!
 
 We are making all the lectures and decks created accessible on demand, free of charge, to everyone. Today, we are launching the Core Modules, designed to equip you with a solid understanding of the IPFS stack. These are:
-- Introduction to the DWeb - [watch here](/tutorials/resnetlab-on-tour/welcome-to-web-3/),
-- Content Addressing in IPFS - [watch here](/tutorials/resnetlab-on-tour/content-addressing/),
-- Content Routing in IPFS - [watch here](/tutorials/resnetlab-on-tour/content-routing/),
-- Content Exchange in IPFS - [watch here](/tutorials/resnetlab-on-tour/content-exchange/), and
-- Mutable Content in IPFS - [watch here](/tutorials/resnetlab-on-tour/mutable-content/).
+- [Introduction to Web 3.0](/tutorials/resnetlab-on-tour/welcome-to-web-3/)
+- [Content addressing in IPFS](/tutorials/resnetlab-on-tour/content-addressing/)
+- [Content Routing in IPFS](/tutorials/resnetlab-on-tour/content-routing/)
+- [Content Exchange in IPFS](/tutorials/resnetlab-on-tour/content-exchange/)
+- [Mutable Content in IPFS](/tutorials/resnetlab-on-tour/mutable-content/)
 
-And this is just the beginning! We will be releasing up to eight extra **“Elective Modules”** on a bi-weekly release cycle starting from this month to provide more in-depth knowledge on the several different parts and protocols of the architecture. You can look forward to  elective modules on:
-- A deep dive on the **Bitswap Protocol**
-- The modular P2P networking stack, **libp2p**.
-- How to build the Internet of Data Structures with **IPLD**.
-- The **Filecoin Protocol** and Decentralized Storage Markets
-- Battle tested and secure p2p messaging layer with **Gossipsub**.
-- Secure and unbiasable randomness beacons with **DRAND**.
+And this is just the beginning! We will be releasing up to eight extra “elective modules” on a bi-weekly release cycle starting this month; these will provide more in-depth knowledge on the several different parts and protocols of the architecture. You can look forward to  elective modules on:
+- A deep dive on the **Bitswap** protocol
+- The modular P2P networking stack, **libp2p**
+- How to build the Internet of Data Structures with **IPLD**
+- The **Filecoin** protocol and Decentralized Storage Markets
+- Battle tested and secure p2p messaging layer with **Gossipsub**
+- Secure and unbiasable randomness beacons with **drand**
 - Testing large scale distributed software
 
-As you go through the modules, we encourage learners to:
-- come chat with us on our [Github discussion forum](https://github.com/protocol/ResNetLab/discussions/categories/resnetlab-on-tour-tutorial-q-a). You have questions or new exciting ideas? Start a new discussion thread and get the discussion going.
-- design and publish protocol optimisation proposals! Share them with us and the community through the Github discussion forum, but also get in touch to establish a collaboration between your group and [ResNetLab](/groups/resnetlab/).
-- apply for funding to implement your ideas, and help us solve our exciting [Open Problems](https://github.com/protocol/ResNetLab/tree/master/OPEN_PROBLEMS).
+As you go through the modules, we encourage you to:
+- Come chat with us on our [GitHub discussion forum](https://github.com/protocol/ResNetLab/discussions/categories/resnetlab-on-tour-tutorial-q-a). Questions or new exciting ideas? Start a new discussion thread and get the discussion going.
+- Design and publish protocol optimisation proposals! Share them with us and the community through the GitHub discussion forum but also get in touch to establish a collaboration between your group and [ResNetLab](/groups/resnetlab/).
+- Apply for funding to implement your ideas, and help us solve our exciting [open problems](https://github.com/protocol/ResNetLab/tree/master/OPEN_PROBLEMS).
 
 Additionally, if you are an event organizer, lecturer or trainer, please:
-- feel free to reuse the material and integrate it in the curriculum of your undergrad or MSc module!
-- build self-contained projects for your students’ M.Sc or PhD projects. You will get tons of help and advice from both PL Researchers — and, most importantly — the research community!
-- structure your PhD studies around the Web3.0 stack, as well as our visionary [Open Problems](https://github.com/protocol/ResNetLab/tree/master/OPEN_PROBLEMS). Get to work together with a vibrant community on some of the most promising future directions!
+- Feel free to reuse (and modify) the material and integrate it in the curriculum of your undergrad or MSc module. These are all licensed under [CC-BY 4.0](/terms-of-service)!
+- Build self-contained projects for your students’ MSc or PhD projects. You will get tons of help and advice from both PL Researchers and — most importantly — the research community!
+- Structure your PhD studies around the Web 3.0 stack, as well as our [open problems](https://github.com/protocol/ResNetLab/tree/master/OPEN_PROBLEMS). Get to work together with a vibrant community on some of the most promising future directions!
 
 We love sharing the knowledge in real time, so [get in touch](https://docs.google.com/forms/d/e/1FAIpQLSdxIgPmfuh8wy-4NRRg7jsmQ5JuqmBBtmAkSD9hvRW6AiO9qw/viewform) if you want these talks to be presented live in your class, group, or event. We will do our best to try to accommodate all requests.
 
