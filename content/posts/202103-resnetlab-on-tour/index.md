@@ -52,11 +52,11 @@ Today, we are making all the materials created available to everyone to use for 
 ## ResNetLab on Tour goes on demand!
 
 We are making all the lectures and decks created accessible on demand, free of charge, to everyone. Today, we are launching the Core Modules, designed to equip you with a solid understanding of the IPFS stack. These are:
-- Introduction to the DWeb - [watch here](link),
-- Content Addressing in IPFS - [watch here](link),
-- Content Routing in IPFS - [watch here](link),
-- Content Exchange in IPFS - [watch here](link), and
-- Mutable Content in IPFS - [watch here](link).
+- Introduction to the DWeb - [watch here](/tutorials/resnetlab-on-tour/welcome-to-web-3/),
+- Content Addressing in IPFS - [watch here](/tutorials/resnetlab-on-tour/content-addressing/),
+- Content Routing in IPFS - [watch here](/tutorials/resnetlab-on-tour/content-routing/),
+- Content Exchange in IPFS - [watch here](/tutorials/resnetlab-on-tour/content-exchange/), and
+- Mutable Content in IPFS - [watch here](/tutorials/resnetlab-on-tour/mutable-content/).
 
 And this is just the beginning! We will be releasing up to eight extra **“Elective Modules”** on a bi-weekly release cycle starting from this month to provide more in-depth knowledge on the several different parts and protocols of the architecture. You can look forward to  elective modules on:
 - A deep dive on the **Bitswap Protocol**
