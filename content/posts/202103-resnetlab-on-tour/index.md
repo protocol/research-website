@@ -47,7 +47,7 @@ The exciting outcomes of ResNetLab on Tour include:
 - ResNetLab has fielded multiple requests for collaboration with top researchers and academics!
 - We published a blogpost for each event capturing all the questions and answers of each session. You can find these on the [blog](/tags/resnetlab-on-tour/).
 
-Today, we are making all the materials available to everyone to use for their own benefit ,their local communities, and their classrooms. Head on over to the [shiny new ResNetLab on Tour pages](/tutorials/resnetlab-on-tour) for materials and extra pointers!
+Today, we are making all the materials available to everyone to use for their own benefit, their local communities, and their classrooms. Head on over to the [shiny new ResNetLab on Tour pages](/tutorials/resnetlab-on-tour) for materials and extra pointers!
 
 ## ResNetLab on Tour goes on demand!
 
