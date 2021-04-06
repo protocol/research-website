@@ -196,7 +196,7 @@ figcaption {
 }
 
 ul {
-  @apply pl-4 pt-1 ml-6 list-disc;
+  @apply pl-4 pt-1 pb-4 ml-6 list-disc;
 }
 
 ul li li {
