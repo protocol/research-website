@@ -38,7 +38,7 @@ links:
 
 ---
 
-Learn all about the most foundational principle of the IPFS architecture: content addressing and IPFS's Content Identifier, or CID. In this module, you'll learn:
+Learn all about the most foundational principle of the IPFS architecture: content addressing and IPFS's content identifier (or CID). In this module, you'll hear about:
 
   - How IPFS addresses files
   - How IPFS transforms files into Merkle DAGs

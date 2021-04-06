@@ -30,9 +30,9 @@ links:
 
 ---
 
-Almost there! You have learned how IPFS addresses and discovers content and, with this, your client is ready to receive its first bits over the IPFS network! In this module, you’ll hear about:
+Almost there! You've learned how IPFS addresses and discovers content and, with this, your client is ready to receive its first bits over the IPFS network! In this module, you’ll hear about:
 
   - How IPFS exchanges content with Bitswap and GraphSync
-  - What are the protocols' message types and workflows
+  - The protocols' message types and workflows
 
 <!--more-->

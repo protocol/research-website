@@ -25,9 +25,9 @@ links:
 
 ---
 
-Web 3.0 joins blockchains, the semantic web, and the distributed web in one package and creates a revolution, which will change the way we do networking! In this module, you’ll hear about:
+Web 3.0 joins blockchains, the semantic web, and the distributed web in one package that will revolutionize the way we do networking! In this module, you’ll hear about:
 
-- The issues facing Web 2.0 and the motivation for Web 3.0
+- Issues facing Web 2.0 and motivation for Web 3.0
 - IPFS and its role in Web 3.0
 - Exciting projects in the IPFS ecosystem
 
