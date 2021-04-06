@@ -4,7 +4,7 @@ title: "Smart Grid Pilot Projects"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-04-06
+date: 2018-10-15
 
 # Publish from this date (defaults to date)
 # publishDate: 2018-10-15
