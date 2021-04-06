@@ -3,8 +3,6 @@ name: Auto assign blog items to project
 on:
   issues:
     types: [labeled]
-  pull_request:
-    types: [labeled]
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
