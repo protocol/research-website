@@ -24,7 +24,7 @@ relevantLinks: [
 # Sidebar icons
 links:
   - name: PDF Slides
-    url: external pdf url
+    url: https://www.slideshare.net/IoannisPsaras/module-content-routing-in-ipfs
     icon: download
   - name: Google Slides
     url: https://docs.google.com/presentation/d/15kzc0rEgOmFTKfcY17E6sjxRDGyqGt760wLTonTtomc/edit?usp=sharing
