@@ -23,7 +23,7 @@ relevantLinks: [
 # Sidebar icons
 links:
   - name: PDF Slides
-    url: external pdf url
+    url: https://www.slideshare.net/IoannisPsaras/module-mutable-content-in-ipfs
     icon: download
   - name: Google Slides
     url: https://docs.google.com/presentation/d/1M63MpZYBBUpN8gvvWjbuPjaeny3aFBb5Hdzx-mr2yIw/edit?usp=sharing

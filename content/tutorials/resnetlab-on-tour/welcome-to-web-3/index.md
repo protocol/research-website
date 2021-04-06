@@ -17,7 +17,7 @@ resources:
 # Sidebar icons
 links:
   - name: PDF Slides
-    url: external pdf url
+    url: https://www.slideshare.net/IoannisPsaras/module-welcome-to-web-30
     icon: download
   - name: Google Slides
     url: https://docs.google.com/presentation/d/1LvyOH1cqRNefbdLfVwg7raHMqbas0zE6UuQLT2MOTPI/edit?usp=sharing

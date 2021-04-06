@@ -29,7 +29,7 @@ relevantLinks: [
 # Sidebar icons
 links:
   - name: PDF Slides
-    url: external pdf url
+    url: https://www.slideshare.net/IoannisPsaras/module-content-addressing-in-ipfs
     icon: download
   - name: Google Slides
     url: https://docs.google.com/presentation/d/1Ym2jGkQAnK4NftPYJPsffQKsxZoh5hf9o-PPsAxoAnw/edit?usp=sharing
