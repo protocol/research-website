@@ -39,7 +39,7 @@ PL was [founded with a vision](https://blog.ycombinator.com/ipfs-coinlist-and-th
 
 A key part of doing this successfully is dividing the pipeline between research, development and production phases. Organizations that get good at pushing ideas along these phases develop frameworks for describing and triaging that process. Examples are basic research, applied research, and development at [Bell Labs](https://www.goodreads.com/book/show/11797471-the-idea-factory) and the Technology Readiness Levels used by [DARPA](https://api.army.mil/e2/c/downloads/404585.pdf) and [NASA](https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html). A new idea beginning, inchoate, at the early stage of that pipeline is progressively validated as it passes through. At each stage, a decision is made whether to commit more resources to pursue the project as it is derisked and grows in maturity.
 
-At PL, [Abstraction Lab](https://research.protocol.ai/groups/abstractionlab/) (formerly Independent Research) pursues problems at the earliest stages of that R&D pipeline. Our job is to look broadly at PL - both the direction of the organization itself and its global context - and to find [leverage points](http://www.donellameadows.org/wp-content/userfiles/Leverage_Points.pdf) where some new piece of knowledge or technology could improve our future trajectory.
+At PL, [Abstraction Lab](/groups/abstractionlab/) (formerly Independent Research) pursues problems at the earliest stages of that R&D pipeline. Our job is to look broadly at PL - both the direction of the organization itself and its global context - and to find [leverage points](http://www.donellameadows.org/wp-content/userfiles/Leverage_Points.pdf) where some new piece of knowledge or technology could improve our future trajectory.
 
 As the research organization was starting, it was clear that energy is one of these leverage points. We live today in the context of more [violent](https://www.nytimes.com/2020/05/18/climate/climate-changes-hurricane-intensity.html) hurricanes, [orange skies](https://www.bbc.com/news/world-us-canada-54096319) in California due to wildfires, deadly [snowstorms](https://oberlinreview.org/22876/opinions/the-texas-snow-storm-another-deadly-wake-up-call/) in Texas, fatal mosquito-borne [viruses](https://www.jwatch.org/na50739/2020/02/07/eastern-equine-encephalitis-large-outbreak) increasing their spread, [flooding](https://www.thenation.com/article/environment/florida-flooding-miami/) coastal cities, and species [extinction rates](https://www.pnas.org/content/117/8/4211) that are high on even geologic timescales. These problems are driven by a changing climate, which is tied to the global energy system. Energy use in turn is dominated by three flows: **oil** used for transportation, **natural gas** used in buildings and industry, and **electricity**. All of these flows are maintained by giant organizations possessing extended supply chains and huge amounts of infrastructure under centralized control. In parallel with the ethos of Web3, decentralizing the energy system is key to environmental sustainability.
 
@@ -75,7 +75,7 @@ System design affects how complexity evolves as the system is modified, and thus
 
 Applying this thinking to power systems, we developed a “Functionally Defined Invariant Architecture” (FIDA) for the power grid (Figure 2). The FDIA breaks the overall power system into fundamental tasks needed for grid operation. For example, separating Transactions from other tasks in principle allows a grid operator to implement a digital payment system without substantially affecting other operations. These tasks are deep modules with simple interfaces between them, that thus allow upgrades while minimizing increases in complexity of the overall system.
 
-For more on the FDIA architecture and how it enables the transition to a distributed power system, see our [previous post](https://research.protocol.ai/blog/2020/hello-from-the-decentralized-energy-project/) and publications below.
+For more on the FDIA architecture and how it enables the transition to a distributed power system, see our [previous post](/blog/2020/hello-from-the-decentralized-energy-project/) and publications below.
 
 
 
@@ -93,7 +93,7 @@ We build these agent-based systems using [VOLTTRON](https://volttron.org/publica
 
 We modeled individual FDIA modules as agents communicating over a VOLTTRON message bus, and ran simulations using IEEE feeder data. These tests demonstrate that, using an FDIA architecture, it is possible to implement subsections of the grid using decentralized power management systems which are able to coexist with systems based on a centralized architecture. This establishes a feasible pathway for transitioning to a fully decentralized power grid.
 
-For more information about this work, see [Michael’s TESC 2020 Presentation](https://research.protocol.ai/talks/enabling-plug-and-play-transactive-energy-on-legacy-power-grids/) and our publications below.
+For more information about this work, see [Michael’s TESC 2020 Presentation](/talks/enabling-plug-and-play-transactive-energy-on-legacy-power-grids/) and our publications below.
 
 #Formally Verifying Grid Systems
 
@@ -118,16 +118,16 @@ That said, we broadly believe in distributed power systems and are interested in
 
 *Reports, talks, code and peer-reviewed publications from this project:*
 
-- Ransil, Alan. [*Energy Pricing*](https://drive.google.com/file/d/1nHCgAEW1B-fTOx5uU1NiapZYtQOdkoqo/view). Protocol Labs Research Report. (2018)
-- Ransil, Alan. [*Microgrids*](https://drive.google.com/file/d/1Pbirtnl72t1AsE6fxrwG7SHPglDUJtDK/view). Protocol Labs Research Report. (2018)
-- Ransil, Alan. [*Price signals and demand-side management in the electric distribution and retail system*](https://drive.google.com/file/d/1gZSkzziwucHPdcLMzWey6i-KEq6IvPcc/view). Protocol Labs Research Report. (2018)
-- Hammersley, Michael. [*Electricity Policy and Market Design*](https://research.protocol.ai/publications/u.s.-energy-policy-and-market-design/). Protocol Labs Research Report. (2018)
+- Ransil, Alan. [*Energy Pricing*](/publications/energy-pricing/). Protocol Labs Research Report. (2018)
+- Ransil, Alan. [*Microgrids*](/publications/microgrids/). Protocol Labs Research Report. (2018)
+- Ransil, Alan. [*Price signals and demand-side management in the electric distribution and retail system*](/publications/price-signals-and-demand-side-management-in-the-electric-distribution-and-retail-system/). Protocol Labs Research Report. (2018)
+- Hammersley, Michael. [*Electricity Policy and Market Design*](/publications/u.s.-energy-policy-and-market-design/). Protocol Labs Research Report. (2018)
 - Ransil, Alan. *A Multilayer Power System Model for Future-Proof Interoperability*. MIT Energy Initiative Electric Power Systems Center Workshop. (2018)
-- Hammersley, Michael. [*Smart Grid Pilot Projects*](https://drive.google.com/file/d/18UZrOcQBmPduAuw4wH9-2Gj1MHokl7Uo/view). Protocol Labs Research Report. (2018)
-- Ransil, Alan. Fonkwe Fongang, Edwin. Hammersley, Michael. Celanovic, Ivan. O’Sullivan, Francis. [*A computable multilayer system stack for future-proof interoperability*](https://research.protocol.ai/publications/a-computable-multilayer-system-stack-for-future-proof-interoperability/). IEEE PES Transactive Energy Systems Conference. (2019)
-- Hammersley, Michael. [*Decentralized Energy Grid: A Protocol Labs Independent Research Project*](https://research.protocol.ai/talks/decentralized-energy-grid-a-protocol-labs-independent-research-project/). Protocol Labs Research Seminar. (2020)
-- Hammersley, Michael. Ransil, Alan. [*Hello from the Decentralized Energy Project!*](https://research.protocol.ai/blog/2020/hello-from-the-decentralized-energy-project/) Protocol Labs Blog. (2020)
-- Hammersley, Michael. Ransil, Alan. O’Sullivan, Francis. [*Enabling Plug and Play Transactive Energy on Legacy Power Grids*](https://research.protocol.ai/talks/enabling-plug-and-play-transactive-energy-on-legacy-power-grids/).  IEEE PES Transactive Energy Systems Conference. (2020)
-- Ransil, Alan, Michael Hammersley, and Francis M. O’Sullivan. [*Improving system resilience through formal verification of transactive energy controls*](https://research.protocol.ai/publications/improving-system-resilience-through-formal-verification-of-transactive-energy-controls/). IEEE PES Transactive Energy Systems Conference. (2020)
+- Hammersley, Michael. [*Smart Grid Pilot Projects*](/publications/smart-grid-pilot-projects/). Protocol Labs Research Report. (2018)
+- Ransil, Alan. Fonkwe Fongang, Edwin. Hammersley, Michael. Celanovic, Ivan. O’Sullivan, Francis. [*A computable multilayer system stack for future-proof interoperability*](/publications/a-computable-multilayer-system-stack-for-future-proof-interoperability/). IEEE PES Transactive Energy Systems Conference. (2019)
+- Hammersley, Michael. [*Decentralized Energy Grid: A Protocol Labs Independent Research Project*](/talks/decentralized-energy-grid-a-protocol-labs-independent-research-project/). Protocol Labs Research Seminar. (2020)
+- Hammersley, Michael. Ransil, Alan. [*Hello from the Decentralized Energy Project!*](/blog/2020/hello-from-the-decentralized-energy-project/) Protocol Labs Blog. (2020)
+- Hammersley, Michael. Ransil, Alan. O’Sullivan, Francis. [*Enabling Plug and Play Transactive Energy on Legacy Power Grids*](/talks/enabling-plug-and-play-transactive-energy-on-legacy-power-grids/).  IEEE PES Transactive Energy Systems Conference. (2020)
+- Ransil, Alan, Michael Hammersley, and Francis M. O’Sullivan. [*Improving system resilience through formal verification of transactive energy controls*](/publications/improving-system-resilience-through-formal-verification-of-transactive-energy-controls/). IEEE PES Transactive Energy Systems Conference. (2020)
 - Ransil, Alan.  [github.com/redransil/TLA-laminar](https://github.com/redransil/TLA-laminar/tree/v0.14.0):  Release  v0.14.0  (Version  v0.14.0).Zenodo. http://doi.org/10.5281/zenodo.4162501 (2020)
 - *Two additional manuscripts in preparation*
