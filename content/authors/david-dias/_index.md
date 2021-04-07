@@ -47,3 +47,5 @@ user_groups:
 # For display at the top of the author details page
 quote:
 ---
+
+David Dias leads the Research-Development organisation at Protocol Labs, as well as ResNetLab. Previously David worked at &yet where he had the chance to collaborate with all types of teams, helping them ship better secure software by auditing web applications and delivering hands on training in Node.js application security and also how to use WebRTC. He has also done Research at the Distributed Systems Group at INESC-ID Lisboa, later becoming an Invited Lecturer and creating the "Modern Web Development" course (from scratch). Passionate about technology, has served IEEE, Google and Kairos, organizing several events and conferences, and even starting his own online events with the Lisbon JavaScript Conference (2012, 2013 and 2014) and Startup Scholarship.
