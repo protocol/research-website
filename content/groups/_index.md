@@ -9,4 +9,6 @@ menu:
     name: Groups
 aliases:
   - /research/groups
+  - /research/groups/cryptolab
+  - /groups/cryptolab
 ---
