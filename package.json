@@ -32,5 +32,6 @@
     "simple-custom-attributes": "^2.6.0",
     "tailwindcss": "^1.8.10",
     "watchify": "^4.0.0"
-  }
+  },
+  "dependencies": {}
 }
