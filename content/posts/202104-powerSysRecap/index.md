@@ -45,7 +45,7 @@ PL Research recognizes that energy is one of these leverage points. We live toda
 
 A first-principles view makes the possibility of decentralizing the energy system clear:
 
-1. The US uses about [100 quads](https://www.eia.gov/energyexplained/us-energy-facts/) of energy in a year, or about 3.3x10^12W of power.
+1. The US uses about [100 quads](https://www.eia.gov/energyexplained/us-energy-facts/) of energy in a year, or about 3.3x10$^{12}$W of power.
 
 2. An estimate of solar irradiance (the solar power that reaches the ground) is 1000 W/${m^2}$. Estimating a solar cell efficiency of 24% and an average of 6 hours per day of sunlight at this irradiance level gives us 60W/${m^2}$ of practical energy production per area of solar cell
 
