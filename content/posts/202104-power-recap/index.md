@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: Distributed Power Systems Project Recap
+title: Distributed power systems project recap
 
 # Website post date
 # format YYYY-MM-DD
@@ -35,7 +35,7 @@ Three years ago, we set out to apply the decentralization ethos to the power gri
 
 # Origins
 
-PL was [founded with a vision](https://blog.ycombinator.com/ipfs-coinlist-and-the-filecoin-ico-with-juan-benet-and-dalton-caldwell/) -- not just to develop a specific set of technologies, but to drive humanity forward by tackling ambitious computing problems requiring  a broad research and development pipeline. Much of what we do as an organization lies at the late-stage ‘implementation’ end of that development pipeline and has immediate relevance to  the direction and day-to-day operations of Protocol Labs. But many of our projects reach maturity over a longer time period. These longer-arc projects often begin with an element of inherent uncertainty: step one of the plan is to create new knowledge in order to determine the next phase of the plan itself. 
+PL was [founded with a vision](https://blog.ycombinator.com/ipfs-coinlist-and-the-filecoin-ico-with-juan-benet-and-dalton-caldwell/) -- not just to develop a specific set of technologies, but to drive humanity forward by tackling ambitious computing problems requiring  a broad research and development pipeline. Much of what we do as an organization lies at the late-stage ‘implementation’ end of that development pipeline and has immediate relevance to  the direction and day-to-day operations of Protocol Labs. But many of our projects reach maturity over a longer time period. These longer-arc projects often begin with an element of inherent uncertainty: step one of the plan is to create new knowledge in order to determine the next phase of the plan itself.
 
 A key part of doing this successfully is dividing the pipeline between research, development, and production phases and managing each appropriately. Organizations that get good at pushing ideas along these phases develop frameworks for describing and triaging that process. Examples are basic research, applied research, and development at [Bell Labs](https://www.goodreads.com/book/show/11797471-the-idea-factory) and the Technology Readiness Levels used by [DARPA](https://api.army.mil/e2/c/downloads/404585.pdf) and [NASA](https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html). A new idea, inchoate at the early stage of that pipeline, is progressively validated as it passes through. At each stage, a decision is made whether to commit more resources to pursue the project as it is derisked and further developed.
 
@@ -64,7 +64,7 @@ Today’s power system is built to transport electricity from a small number of 
 
 Complicating the picture is that power systems are spread out among many overlapping jurisdictions and consist of expensive infrastructure which is replaced only infrequently. Upgrading the centralized control system with a decentralized system all at once is impractical: any new system will need to be interoperable with the legacy grid and accommodate a patchwork of incremental upgrades.
 
-Approaching this problem from a distributed systems perspective, we asked what control architecture would best allow an evolution from a centralized to a decentralized grid? What would enable a patchwork of upgrades, while maintaining system reliability and security? How can the grid be ‘future-proofed’ so that investments today are compatible with future innovations in controls systems? And what technical expertise can we contribute, as an organization with experience building decentralized systems for information storage and retrieval?
+Approaching this problem from a distributed systems perspective, we asked what control architecture would best allow an evolution from a centralized grid to a decentralized grid? What would enable a patchwork of upgrades, while maintaining system reliability and security? How can the grid be ‘future-proofed’ so that investments today are compatible with future innovations in controls systems? And what technical expertise can we contribute, as an organization with experience building decentralized systems for information storage and retrieval?
 
 
 # A Functionally Defined Invariant Architecture
@@ -99,7 +99,7 @@ For more information about this work, see [Michael’s TESC 2020 Presentation](/
 
 In August 2003, there was a localized outage in the power grid near Akron, Ohio. FirstEnergy, the local grid operator, would normally respond to an outage by adjusting generation and rerouting power. In this particular case, operators were unaware of the problem due to a bug in the software they were using to monitor the system. They even ignored calls alerting them to problems because their system showed no error. The result was a cascade that rippled through the Northeastern electric grid, causing an outage that affected 45 million people.
 
-The XA/21 Energy Management System with the error had not only undergone normal testing by its developer, GE Energy, but had been run for over 3 million operational hours without the bug being noticed. [The error](https://www.securityfocus.com/news/8412) was a rare race condition in which two processes competed to write to the same location. Similar subtle bugs are common in distributed systems, and are difficult to detect during a normal design and testing process. Compounding the risks as the power system is decentralized are [cybersecurity concerns](https://www.gao.gov/products/gao-19-332). Historically, critical grid infrastructure has been air-gapped from the internet. An increasingly networked power grid  —  and particularly, one in which distributed generation such as home solar plays a significant role  —  has a vastly expanded attack surface. 
+The XA/21 Energy Management System with the error had not only undergone normal testing by its developer, GE Energy, but had been run for over 3 million operational hours without the bug being noticed. [The error](https://www.securityfocus.com/news/8412) was a rare race condition in which two processes competed to write to the same location. Similar subtle bugs are common in distributed systems, and are difficult to detect during a normal design and testing process. Compounding the risks as the power system is decentralized are [cybersecurity concerns](https://www.gao.gov/products/gao-19-332). Historically, critical grid infrastructure has been air-gapped from the internet. An increasingly networked power grid  —  and particularly, one in which distributed generation such as home solar plays a significant role  —  has a vastly expanded attack surface.
 
 The third part of our work was therefore to formally verify control systems for distributed power grids. Formal verification tools such as  model checking using TLA+ exhaustively survey system states in order to find errors that would be difficult or impossible to detect using normal testing. They bring rigor to system design and increase confidence that the system will actually work as intended.
 
@@ -110,11 +110,11 @@ We developed a series of TLA+ models to [formally verify an FDIA-based control s
 
 # Next Steps
 
-According to the pipeline model discussed above, there comes a time when basic research on a topic ends and a decision must be made about whether to translate the work into an applied project. 
+According to the pipeline model discussed above, there comes a time when basic research on a topic ends and a decision must be made about whether to translate the work into an applied project.
 
 Having completed research establishing a new framework for distributed energy controls systems, exploring interactions between these systems with agent-based models, and formally verifying system behavior, it became clear to us that we are entering a new phase in our energy research efforts. Taking the next step in developing this line of decentralized-power-systems-related work would require scaling up the engineering and policy elements of this project. For now, we’re putting that on hold while we apply our insights to exploring the Filecoin network itself: both analyzing its energy use and looking at how to optimize it to encourage low- and zero-emissions mining.
 
-That said, we are excited about the future of distributed power systems and are interested in supporting further work in this area. If you have ideas for building on this work or pursuing related projects and would like to discuss them, please [reach out](mailto:research@protocol.ai)! 
+That said, we are excited about the future of distributed power systems and are interested in supporting further work in this area. If you have ideas for building on this work or pursuing related projects and would like to discuss them, please [reach out](mailto:research@protocol.ai)!
 
 ### Reports, talks, code and peer-reviewed publications from this project:
 
