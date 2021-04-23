@@ -31,7 +31,7 @@ draft: false
 
 ---
 
-Three years ago, we set out to apply the decentralization ethos to the power grid — a complex, sprawling network with some parts dating back over a century. That was the beginning of the Distributed Power Systems Project, an effort within AbstractionLab. Now that the Filecoin network is running, we are wrapping up our work on the broader grid and focusing our energy-related efforts on Filecoin itself - more on that soon! For now, we invite you to join us on a tour of our power systems project: its achievements, pivots, and our thoughts on its future.
+Three years ago, we set out to apply the decentralization ethos to the power grid — a complex, sprawling network with some parts dating back over a century. That was the beginning of the Decentralized Energy Project, an effort within AbstractionLab. Now that the Filecoin network is running, we are wrapping up our work on the broader grid and focusing our energy-related efforts on Filecoin itself - more on that soon! For now, we invite you to join us on a tour of our power systems project: its achievements, pivots, and our thoughts on its future.
 
 # Origins
 
