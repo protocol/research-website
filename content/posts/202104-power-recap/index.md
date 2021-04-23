@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: Distributed power systems project recap
+title: Decentralized Energy Project recap
 
 # Website post date
 # format YYYY-MM-DD
