@@ -1,10 +1,10 @@
 ---
 # Blog post title
-title:
+title: "SnarkPack: How to aggregate SNARKs efficiently"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2001-01-01
+date: 2021-05-01
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -12,23 +12,23 @@ date: 2001-01-01
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  -
+  - nicolas-gailly
 
 # If applicable
 categories:
-  -
+  - blog
 
 # If applicable
 tags:
-  -
+  - 
 
 # Zero or more of the areas in content/areas
 areas:
-  -
+  - cryptography
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  -
+  - cryptonetlab
 
 # Not used
 draft: false
