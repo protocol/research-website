@@ -16,36 +16,36 @@ resources:
 
 # Research interests
 interests:
-  - Interest 1
-  - Interest 2
+  - Mechanism design for tokenomics and equitable wealth distribution over a network.
+  - Consumer economics related to blockchain integration in supply chains.
 
 # Degrees
 education:
   courses:
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
+  - course: MSc Applied Economics & Management
+    institution: Cornell University
+    year: 2020
+  - course: BS - Economics
+    institution: Washington State University
+    year: 2015
+  - course: BA - International Business
+    institution: Washington State University
+    year: 2015
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 social:
   - icon: twitter
-    link: https://twitter.com/USERNAME
+    link: https://twitter.com/trentjd11
   - icon: google-scholar
-    link: https://scholar.google.com/citations?user=PERSON-ID
+    link: https://scholar.google.com/citations?hl=en&authuser=1&user=uykTzEAAAAAJ
   - icon: github
-    link: https://github.com/USERNAME
+    link: https://github.com/tjd233
   - icon: orcid
-    link: https://orcid.org/0000-0002-1825-0097
+    link: https://orcid.org/0000-0001-8878-1785
   - icon: linkedin
-    link: https://www.linkedin.com/in/USERNAME
-  - icon: researchgate
-    link: https://www.researchgate.net/profile/USERNAME
-  - icon: link
-    link: https://example.org/    
+    link: https://www.linkedin.com/in/trentjdavis/
+
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
@@ -54,7 +54,9 @@ user_groups:
 
 # For display at the top of the author details page
 # Not currently used
-# quote:
+# quote: "Experiencing the world through endless second hand information isn't enough. If we want authenticity, we have to initiate it." - Travis Rice
 ---
 
-Write bio here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Trent joined Protocol Labs in April 2021 after spending time working at Cornell University and helping develop the Smart Contract Research Forum. He recevied his MSc in Applied Economics and Management from Cornell where he focused on consumer, agricultural, and development economics. Before starting graduate school Trent spent two years living in the Peruvian jungle working with coffee and pineapple farmers to increase their access to markets. Outside of tech research Trent is passionate about both sustainable coffee farming and wine production. Eventually he hopes to one day own and operate a coffee farm, but until then he is excited to push the boundaries of open source technology and research!
+
+
