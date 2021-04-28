@@ -7,72 +7,78 @@
 {{ end }}
 
 {{ if .Params.authors }}
-  <div class="text-sm text-gray-700">
-    <img class="inline-block mr-2" src="/images/icon/user.svg">
-    {{ $taxonomy := "authors" }}
-    {{ with .Param $taxonomy }}
-      {{ range $index, $value := . }}
-        {{- $profile_page := site.GetPage (printf "/%s/%s" $taxonomy (. | urlize)) -}}
-        {{- $name := $profile_page.Params.name | default ($value|markdownify) -}}
-        {{- if gt $index 0 }}, {{ end -}}
-        <span class="inline-block mb-0">
-          {{ if $profile_page.Params.name }}
-            {{- with $profile_page -}}
-              <a class="hover:text-blue" href="{{.RelPermalink}}">{{$name}}</a>
-            {{ end }}
-          {{- else -}}
-            {{$name}}
-          {{- end -}}
-        </span>
-      {{- end -}}
-    {{ end }}
-  </div>
+  {{ if partial "func/has-values" .Params.authors }}
+    <div class="text-sm text-gray-700">
+      <img class="inline-block mr-2" src="/images/icon/user.svg">
+      {{ $taxonomy := "authors" }}
+      {{ with .Param $taxonomy }}
+        {{ range $index, $value := . }}
+          {{- $profile_page := site.GetPage (printf "/%s/%s" $taxonomy (. | urlize)) -}}
+          {{- $name := $profile_page.Params.name | default ($value|markdownify) -}}
+          {{- if gt $index 0 }}, {{ end -}}
+          <span class="inline-block mb-0">
+            {{ if $profile_page.Params.name }}
+              {{- with $profile_page -}}
+                <a class="hover:text-blue" href="{{.RelPermalink}}">{{$name}}</a>
+              {{ end }}
+            {{- else -}}
+              {{$name}}
+            {{- end -}}
+          </span>
+        {{- end -}}
+      {{ end }}
+    </div>
+  {{ end }}
 {{ end }}
 
 
 {{ if .Params.groups }}
-  <div class="text-sm text-gray-700">
-    <img class="inline-block mr-2" src="/images/icon/group.svg">
-    {{ $taxonomy := "groups" }}
-    {{ with .Param $taxonomy }}
-      {{ range $index, $value := . }}
-        {{- $profile_page := site.GetPage (printf "/groups/%s" (. | urlize)) -}}
-        {{- $name := $profile_page.Title | default ($value|markdownify) -}}
-        {{- if gt $index 0 }}, {{ end -}}
-        <span class="inline-block mb-0">
-          {{ if $profile_page.Title }}
-            {{- with $profile_page -}}
-              <a class="hover:text-blue" href="{{.RelPermalink}}">{{$name}}</a>
-            {{ end }}
-          {{- else -}}
-            {{$name}}
-          {{- end -}}
-        </span>
-      {{- end -}}
-    {{ end }}
-  </div>
+  {{ if partial "func/has-values" .Params.groups }}
+    <div class="text-sm text-gray-700">
+      <img class="inline-block mr-2" src="/images/icon/group.svg">
+      {{ $taxonomy := "groups" }}
+      {{ with .Param $taxonomy }}
+        {{ range $index, $value := . }}
+          {{- $profile_page := site.GetPage (printf "/groups/%s" (. | urlize)) -}}
+          {{- $name := $profile_page.Title | default ($value|markdownify) -}}
+          {{- if gt $index 0 }}, {{ end -}}
+          <span class="inline-block mb-0">
+            {{ if $profile_page.Title }}
+              {{- with $profile_page -}}
+                <a class="hover:text-blue" href="{{.RelPermalink}}">{{$name}}</a>
+              {{ end }}
+            {{- else -}}
+              {{$name}}
+            {{- end -}}
+          </span>
+        {{- end -}}
+      {{ end }}
+    </div>
+  {{ end }}
 {{ end }}
 
 
 {{ if .Params.areas }}
-  <div class="text-sm text-gray-700">
-    <img class="inline-block mr-2" src="/images/icon/tag.svg">
-    {{ $taxonomy := "areas" }}
-    {{ with .Param $taxonomy }}
-      {{ range $index, $value := . }}
-        {{- $profile_page := site.GetPage (printf "/areas/%s" (. | urlize)) -}}
-        {{- $name := $profile_page.Title | default ($value|markdownify) -}}
-        {{- if gt $index 0 }}, {{ end -}}
-        <span class="inline-block mb-0">
-          {{ if $profile_page.Title }}
-            {{- with $profile_page -}}
-              <a class="hover:text-blue" href="{{.RelPermalink}}">{{$name}}</a>
-            {{ end }}
-          {{- else -}}
-            {{$name}}
-          {{- end -}}
-        </span>
-      {{- end -}}
-    {{ end }}
-  </div>
+  {{ if partial "func/has-values" .Params.areas }}
+    <div class="text-sm text-gray-700">
+      <img class="inline-block mr-2" src="/images/icon/tag.svg">
+      {{ $taxonomy := "areas" }}
+      {{ with .Param $taxonomy }}
+        {{ range $index, $value := . }}
+          {{- $profile_page := site.GetPage (printf "/areas/%s" (. | urlize)) -}}
+          {{- $name := $profile_page.Title | default ($value|markdownify) -}}
+          {{- if gt $index 0 }}, {{ end -}}
+          <span class="inline-block mb-0">
+            {{ if $profile_page.Title }}
+              {{- with $profile_page -}}
+                <a class="hover:text-blue" href="{{.RelPermalink}}">{{$name}}</a>
+              {{ end }}
+            {{- else -}}
+              {{$name}}
+            {{- end -}}
+          </span>
+        {{- end -}}
+      {{ end }}
+    </div>
+  {{ end }}
 {{ end }}
