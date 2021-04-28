@@ -16,7 +16,8 @@ authors:
 
 # If applicable
 categories:
-  -
+  - News
+  - Team
 
 # If applicable
 tags:
@@ -33,15 +34,15 @@ groups:
 # Not used
 draft: false
 
-
-
 ---
 
---> Jorge to write
+[Trent Davis](/authors/trent-davis/) is joining the PL Research team as a Research Administrator. Trent received degrees in business and economics at [Washington State University](https://wsu.edu/) and [Cornell University](https://www.cornell.edu/), did research at Cornell, and helped develop the [Cornell Blockchain](https://cornellblockchain.org/) club and the [Smart Contract Research Forum](https://www.smartcontractresearch.org/).
+
+We asked Trent about his journey to PL, what he'll be working on, and his thoughts on the future:
 
 **What path brought you to PL?**
 
->  It wasn't a direct path thats for sure! Before joining the team you could find me conducting research on how the COVID-19 pandemic influenced customer satisfaction at wineries, and then the next day looking at how tokenomic designs may increase the equity of crpytocurrency rewards. I've always been passionate about the idea that research conducted by industry or academia should be accessible to any and all who are interested. At the end of the day, the open source nature of how research is conducted here is what brought me to PL.   
+>  It wasn't a direct path; that's for sure! Before joining the team, you could find me conducting research on how the COVID-19 pandemic influenced customer satisfaction at wineries, and then the next day looking at how tokenomic designs may increase the equity of crpytocurrency rewards. I've always been passionate about the idea that research conducted by industry or academia should be accessible to any and all who are interested. At the end of the day, the open source nature of how research is conducted here is what brought me to PL.   
 
 **What are you working on?**
 

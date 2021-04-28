@@ -16,19 +16,19 @@ resources:
 
 # Research interests
 interests:
-  - Mechanism design for tokenomics and equitable wealth distribution over a network.
-  - Consumer economics related to blockchain integration in supply chains.
+  - Mechanisms for tokenomics and equitable wealth distribution
+  - Consumer economics of blockchain integration in supply chains
 
 # Degrees
 education:
   courses:
-  - course: MSc Applied Economics & Management
+  - course: MSc in Applied Economics & Management
     institution: Cornell University
     year: 2020
-  - course: BS - Economics
+  - course: BS in Economics
     institution: Washington State University
     year: 2015
-  - course: BA - International Business
+  - course: BA in International Business
     institution: Washington State University
     year: 2015
 
@@ -57,6 +57,4 @@ user_groups:
 # quote: "Experiencing the world through endless second hand information isn't enough. If we want authenticity, we have to initiate it." - Travis Rice
 ---
 
-Trent joined Protocol Labs in April 2021 after spending time working at Cornell University and helping develop the Smart Contract Research Forum. He recevied his MSc in Applied Economics and Management from Cornell where he focused on consumer, agricultural, and development economics. Before starting graduate school Trent spent two years living in the Peruvian jungle working with coffee and pineapple farmers to increase their access to markets. Outside of tech research Trent is passionate about both sustainable coffee farming and wine production. Eventually he hopes to one day own and operate a coffee farm, but until then he is excited to push the boundaries of open source technology and research!
-
-
+Trent joined Protocol Labs in April 2021 after spending time working at Cornell University and helping develop the Smart Contract Research Forum. He received his MSc in Applied Economics and Management from Cornell, where he focused on consumer, agricultural, and development economics. Before starting graduate school, Trent spent two years living in the Peruvian jungle working with coffee and pineapple farmers to increase their access to markets. Outside of tech research, Trent is passionate about both sustainable coffee farming and wine production. Eventually he hopes to one day own and operate a coffee farm, but until then he is excited to push the boundaries of open source technology and research!
