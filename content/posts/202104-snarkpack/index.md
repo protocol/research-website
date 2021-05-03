@@ -37,7 +37,7 @@ draft: false
 
 ---
 
-# SnarkPack: How to aggregate SNARKs efficiently
+# SnarkPack: How to aggregate SNARKs efficiently {#SnarkPack-How-to-aggregate-SNARKs-efficiently}
 
 *A guided dive into the cryptographic techniques of SnarkPack*
 
@@ -50,34 +50,32 @@ This post exposes the inner workings of SnarkPack, a practical scheme to aggrega
 anybody with a high school math level can follow easily. For a more formal
 description of the scheme, we refer to our [paper](https://eprint.iacr.org/2021/529).
 
+**Table of Contents**
+- [SnarkPack: How to aggregate SNARKs efficiently](#SnarkPack-How-to-aggregate-SNARKs-efficiently)
+   - [SNARKs & Scalability](##SNARKs-&-Scalability)
+     -  [Groth16 proofs in Filecoin](###Groth16-proofs-in-Filecoin)
+    - [Notations](#Notations)
+    - [Inner Pairing Product Argument (IPP)](##Inner-Pairing-Product-Argument-(IPP))
+       - [Generalized Inner Product Argument (GIPA)](###Generalized-Inner-Product-Argument-(GIPA))
+    - [Trusted Inner Pairing Product (TIPP)](##Trusted-Inner-Pairing-Product-(TIPP))
+        - [Commitment Scheme](###Commitment-Scheme)
+        - [Trusted Setup](###Trusted-Setup)
+        - [Logarithmic Commitment Key Verification](###Logarithmic-Commitment-Key-Verification)
+    - [Multiexponentiation Inner Pairing Product (MIPP)](##Multiexponentiation-Inner-Pairing-Product-(MIPP))
+    - [Groth16 Aggregation](##Groth16-Aggregation)
+        - [Groth16 Proof Verification](###Groth16-Proof-Verification)
+        - [Groth16 Aggregated Verification](###Groth16-Aggregated-Verification)
+    - [Putting everything together](##Putting-everything-together)
+        - [Rescaled commitment keys](###Rescaled-commitment-keys)
+        - [Groth16 Aggregation Protocol](###Groth16-Aggregation-Protocol)
+        - [Groth16 Verification](###Groth16-Verification)
+    - [Performance](##Performance)
+        - [Trusted Setup](###Trusted-Setup)
+        - [Optimizations](###Optimizations)
+    - [Conclusion](##Conclusion)
+    - [Acknowledgements](##Acknowledgements)
 
-- [SnarkPack: How to aggregate SNARKs efficiently]
-   - [SNARKs & Scalability]
-     -  [Groth16 proofs in Filecoin]
-    - [Notations]
-    - [Inner Pairing Product Argument (IPP)]
-       - [Generalized Inner Product Argument (GIPA)]
-    - [Trusted Inner Pairing Product (TIPP)]
-        - [Commitment Scheme]
-        - [Trusted Setup]
-        - [Logarithmic Commitment Key Verification]
-    - [Multiexponentiation Inner Pairing Product (MIPP)]
-    - [Groth16 Aggregation]
-        - [Groth16 Proof Verification]
-        - [Groth16 Aggregated Verification]
-    - [Putting everything together]
-        - [Rescaled commitment keys]
-        - [Groth16 Aggregation Protocol]
-        - [Groth16 Verification]
-    - [Performance]
-        - [Trusted Setup]
-        - [Optimizations]
-    - [Conclusion]
-    - [Acknowledgements]
-
-
-
-## SNARKs & Scalability
+## SNARKs & Scalability {##SNARKs-&-Scalability}
 
 SNARKs are *Succinct Non-interactive ARguments of Knowledge*; in short, one can prove to a verifier, in a succinct way, that they executed a computation correctly with the correct inputs . They have *tremendously* impacted the blockchain world by opening multiple uses cases that were previously impracticable, such as anonymous transactions ([Zcash](https://z.cash/)), fast light clients / compact blockchain ([Celo](https://celo.org/), [Mina](https://minaprotocol.com)), and provable decentralized storage such as ([Filecoin](https://www.filecoin.com/)).
 
@@ -91,7 +89,7 @@ Fortunately, a [result](https://eprint.iacr.org/2019/1177) that came out in 2019
 
 After discovering this paper, we started looking to see if it could be applied in Filecoin. We were really excited about the potential scalability it could bring. 
 
-### Groth16 proofs in Filecoin
+### Groth16 proofs in Filecoin {###Groth16-proofs-in-Filecoin}
 
 Filecoin miners need to prove they have encoded a 32GiB portion of storage correctly, i.e. that they reserved 32GiB of storage. That's their stake so they can participate in the consensus and mine blocks. In order to do that, a miner run a special encoding function ([the proof of replication](https://spec.filecoin.io/#section-algorithms.sdr)) which works in several consecutive steps. At each steps, the miner encodes a layer of 2^30 nodes of 32 bytes (2^8 bits) each (leading to 2^38 bits = 32GB) using nodes from previous layer and nodes from the same layer. After each step, it makes a [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) of all these nodes.
 At the end, the prover must create a proof that they did all these computations correctly by giving a Merkle path to random nodes in each layer.
@@ -99,7 +97,7 @@ At the end, the prover must create a proof that they did all these computations 
 The problem is that there are so many nodes in a layer. Our trusted setup could only go up to 2^27 to be practical (the size of the trusted setup becomes too large to be practical afterwards) so we've had to split our proof of replication SNARK into 10 smallers SNARKs. 
 Fortunately, we can verify SNARKs using batch verification. What we will see in this post, however, is that we dramatically reduce the cost of having 10 SNARKs for one proof by being able to aggregate them.
 
-## Notations
+# Notations {#Notations}
 
 We will give a high level overview of how the proof aggregation works but, before that, we need to define some notations (not to worry; these are all usual notations!).
 * We work in pairing-equipped curves, such as [BLS12-381](https://electriccoin.co/blog/new-snark-curve/), used by Filecoin and Zcash.
