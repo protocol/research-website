@@ -1,0 +1,10 @@
+{{ $return := false }}
+{{ with . }}
+  {{ range $key, $value := . }}
+    {{ with $value }}
+      {{ $return = true }}
+    {{ end }}
+   {{ end }}
+{{ end }}
+
+{{ return $return }}
