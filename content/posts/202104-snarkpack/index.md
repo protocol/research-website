@@ -50,7 +50,32 @@ This post exposes the inner workings of SnarkPack, a practical scheme to aggrega
 anybody with a high school math level can follow easily. For a more formal
 description of the scheme, we refer to our [paper](https://eprint.iacr.org/2021/529).
 
-[TOC]
+
+- [SnarkPack: How to aggregate SNARKs efficiently]
+   - [SNARKs & Scalability]
+     -  [Groth16 proofs in Filecoin]
+    - [Notations]
+    - [Inner Pairing Product Argument (IPP)]
+       - [Generalized Inner Product Argument (GIPA)]
+    - [Trusted Inner Pairing Product (TIPP)]
+        - [Commitment Scheme]
+        - [Trusted Setup]
+        - [Logarithmic Commitment Key Verification]
+    - [Multiexponentiation Inner Pairing Product (MIPP)]
+    - [Groth16 Aggregation]
+        - [Groth16 Proof Verification]
+        - [Groth16 Aggregated Verification]
+    - [Putting everything together]
+        - [Rescaled commitment keys]
+        - [Groth16 Aggregation Protocol]
+        - [Groth16 Verification]
+    - [Performance]
+        - [Trusted Setup]
+        - [Optimizations]
+    - [Conclusion]
+    - [Acknowledgements]
+
+
 
 ## SNARKs & Scalability
 
@@ -608,3 +633,4 @@ We have now seen how can we prove an inner product in an efficient manner, and h
 ## Acknowledgements
 
 Thank you to Marry Maller, Benedikt Bunz, Pratyush Mishra and Noah Vesely for insightful discussion and helping us understand their scheme.  Thank you to Anca & Porcuquine whose insightful comments improved this post. Thank you dignifiedquire, whose help on the Rust implementation has led to substantial gains and new Rust knowledge for myself.
+
