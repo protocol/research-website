@@ -77,9 +77,9 @@ description of the scheme, we refer to our [paper](https://eprint.iacr.org/2021/
 
 ## SNARKs & Scalability {##SNARKs-&-Scalability}
 
-SNARKs are *Succinct Non-interactive ARguments of Knowledge*; in short, one can prove to a verifier, in a succinct way, that they executed a computation correctly with the correct inputs . They have *tremendously* impacted the blockchain world by opening multiple uses cases that were previously impracticable, such as anonymous transactions ([Zcash](https://z.cash/)), fast light clients / compact blockchain ([Celo](https://celo.org/), [Mina](https://minaprotocol.com)), and provable decentralized storage such as ([Filecoin](https://www.filecoin.com/)).
+SNARKs are __*Succinct Non-interactive ARguments of Knowledge*__; in short, one can prove to a verifier, in a succinct way, that they executed a computation correctly with the correct inputs . They have *tremendously* impacted the blockchain world by opening multiple uses cases that were previously impracticable, such as anonymous transactions ([Zcash](https://z.cash/)), fast light clients / compact blockchain ([Celo](https://celo.org/), [Mina](https://minaprotocol.com)), and provable decentralized storage ([Filecoin](https://www.filecoin.com/)).
 
-The most promiment SNARK system deployed in production is the construction proposed by [Jens Groth in Eurocrypt 2016](https://eprint.iacr.org/2016/260) that showed how to obtain a succinct proof of knowledge with an efficient verifier for any arithmetic circuits. Note that this proof system requires a Structured Reference String, a vectors of elements specially crafted for a specific computation. To generate the SRS, we need to run a trusted setup, a *complicated* setup ceremony run by multiple users to generate keys that provers and verifiers require. It has been implemented in multiple frameworks and programming languages and is the most used SNARK system to this day. To give a sense of proportion, the Filecoin network verifies more than **2 millions Groth16 SNARKs per day** (more info [here](https://spacegap.github.io/#/)) !
+The most promiment SNARK system deployed in production is the construction proposed by [Jens Groth in Eurocrypt 2016](https://eprint.iacr.org/2016/260) that showed how to obtain a succinct proof of knowledge with an efficient verifier for any arithmetic circuits. Note that this proof system requires a Structured Reference String: a vector of elements specially crafted for a specific computation. To generate the SRS, we need to run a trusted setup, a *complicated* setup ceremony run by multiple users to generate keys that provers and verifiers require. The Groth16 system has been implemented in multiple frameworks and programming languages and is the most used SNARK system to this day. To give a sense of proportion, the Filecoin network verifies more than *2 million Groth16 SNARKs per day* (more info [here](https://spacegap.github.io/#/)) !
 
 Due to its rapid and massive adoption, systems that use SNARKs face a **scalability challenge** similar to [current issues](https://education.district0x.io/general-topics/ethereum-scaling/introduction-to-ethereum-scaling/) Ethereum is facing. The reason is that all the nodes in the network have to process each proof individually to agree on the final state, and thereby this enforces an implicit limit as to how many proofs the network can verify per day. 
 
@@ -129,10 +129,12 @@ Thanks to the IPP paper, we can also prove an inner product relationship *in the
 $$
 <\mathbf{C},\mathbf{r}> = \prod C_i^{r_i} = \prod G^{c_i r_i} = G^{\sum c_i r_i}
 $$
-Another example called TIPP, is using the pairing operation so the inner product happens in the exponent between two vectors $\mathbf{A} \in \mathbb{G_1^n}$ and $\mathbf{B} \in \mathbb{G_2^n}$:
+Another example called TIPP uses the pairing operation so the inner product happens in the exponent between two vectors $\mathbf{A} \in \mathbb{G_1^n}$ and $\mathbf{B} \in \mathbb{G_2^n}$:
+
 $$
 \lt \mathbf{A},\mathbf{B} \gt = \prod e(G^a_i,H^b_i) = \prod e(G,H)^{a_i*b_i} = e(G,H)^{\sum a_i*b_i}
 $$ 
+
 In fact, the paper generalizes the scheme to allow extended variants of such computations called *inner product maps*, which satisfy the same bilinear properties as the classical inner product over integers: 
 $$
 <\mathbf{a} + \mathbf{b}, \mathbf{c} + \mathbf{d}> = <\mathbf{a},\mathbf{c}>+<\mathbf{a},\mathbf{d}> + <\mathbf{b},\mathbf{c}> + <\mathbf{b},\mathbf{d}>
