@@ -215,24 +215,24 @@ We can observe similarities with the small example shown in the previous section
 * $b' = \sum\limits_{i=0}^{m'} b_{i} + x^{-1}b_{m' + i}$ is the "compression" of the $\mathbf{B}$ vector (size halves after this step)
 
 
-What GIPA is doing on top is *committing to both $z_l$ and $z_r$* at each step of the reduction using the commitment scheme provided. Indeed, the prover will return to the verifier all $z_l$, $z_r$, $C_l$ and $C_r$ at each step, so he needs to commit to these values at each step. Given we now use a commitment scheme, we also need to "compress" the commitment keys the same way, that's what $ck_1'$ and $ck_2'$ are doing. 
+What GIPA is doing on top is *committing to both $z_l$ and $z_r$* at each step of the reduction using the commitment scheme provided. Indeed, the prover will return to the verifier all $z_l$, $z_r$, $C_l$ and $C_r$ at each step, so he needs to commit to these values at each step. Given that we now use a commitment scheme, we also need to "compress" the commitment keys the same way, that's what $ck_1'$ and $ck_2'$ are doing. 
 
-If you look closely at the verifier computations (ex. $ck_1' = ck_{1,[:m']} + x^{-1}\cdot ck_{1,[m':]}$), you can notice the *verifier is doing a linear amount of work* (the first step operates on $n$-sized keys). This contradicts our goals, however, later on, we will see how to make the prover compute the final commitment keys for the verifier and let the verifier quickly verify their validity. This allows the verifier to only perform a logarithmic number of operations.
+If you look closely at the verifier computations (ex. $ck_1' = ck_{1,[:m']} + x^{-1}\cdot ck_{1,[m':]}$), you can notice the *verifier is doing a linear amount of work* (the first step operates on $n$-sized keys). This contradicts our goals; however, later on, we will see how to make the prover compute the final commitment keys for the verifier and let the verifier quickly verify their validity. This allows the verifier to only perform a *logarithmic* number of operations.
 
-#### Non interactive proof
+#### Non-interactive proof
 
-So far GIPA is shown in the interactive setting, where a prover and a verifier interact during the proof. In practice though we want to have a *non-interactive* proof where the prover makes the proof on his side and sends it to the verifier, i.e. a blockchain for example. We can easily do so by making all random challenges $x$ deterministically derived from a hash function (such as SHA256) given the previous computations of the prover and public inputs:
+So far GIPA is shown in the interactive setting, where a prover and a verifier interact during the proof. In practice however we want to have a *non-interactive* proof where the prover makes the proof on his side and sends it to the verifier, e.g. a blockchain. We can easily do so by making all random challenges $x$ deterministically derived from a hash function (such as SHA256) given the previous computations of the prover and public inputs:
 $$
 x = Hash(z_l,z_r,C_l,C_r)
 $$
 
 This is what is usually called the [Fiat Shamir heuristic](https://en.wikipedia.org/wiki/Fiat%E2%80%93Shamir_heuristic) which can turn interactive proofs to non-interactive via the use of hash functions. Usually, using Fiat-Shamir *reduces* the security of the scheme so the security parameters have to be *higher*. It is even more the case in the recursive loops where the reductions in security compound. 
 
-Interestingly, the security proof of this aggregation scheme use a different model (algebraic commitment model) without using the Fiat-Shamir reduction and thereby **does not suffer from the usual reduction in security** !
+Interestingly, the security proof of this aggregation scheme uses a different model (an algebraic commitment model) without using the Fiat-Shamir reduction and thereby *does not suffer from the usual reduction in security* !
 
 ## Trusted Inner Pairing Product (TIPP)
 
-In this section, we are exploring one instantiation of GIPA called TIPP required to compute a proof of corect Groth16 aggregation. It produces a proof showing the prover correctly computed the pairing product $Z = \prod e(A_i,B_i)$ given a commitment to $\mathbf{A}$ and $\mathbf{B}$. To prove such a statement, we need a commitment scheme suitable for GIPA.
+In this section, we explore an instantiation of GIPA called TIPP required to compute a proof of corect Groth16 aggregation. It produces a proof showing the prover correctly computed the pairing product $Z = \prod e(A_i,B_i)$ given a commitment to $\mathbf{A}$ and $\mathbf{B}$. To prove such a statement, we need a commitment scheme suitable for GIPA.
 
 ### Commitment Scheme 
 
@@ -246,12 +246,13 @@ Note the commitment keys structure: they only contain even powers and the maximu
 
 Lets try to plug this into GIPA verifier code and see the concrete changes from the generic GIPA. For the sake of succintness, we only look at the verifier part here.
 
-Recall that the verifier gets as input the original commitment $C = CM((\mathbf{V},\mathbf{W},1), \mathbf{A},\mathbf{B},\prod e(A_i,B_i)) = (C_1,C_2,C_3)$. There are two main instructions for the verifier. The first one compresses the commitment:
+Recall that the verifier receives as input the original commitment $C = CM((\mathbf{V},\mathbf{W},1), \mathbf{A},\mathbf{B},\prod e(A_i,B_i)) = (C_1,C_2,C_3)$. There are two main instructions for the verifier. The first one compresses the commitment:
 $$
 C = C_l^x * C * C_r^{x^{-1}}
 $$
-(note in the GIPA diagram, they use the additive notation, while we use the multiplicative notation)
-This gets changed to
+*(note in the GIPA diagram, they use the additive notation, while we use the multiplicative notation)*
+
+This is changed to
 $$
 C_1 = C_{1,l}^x * C_1 * C_{1,r}^{x^{-1}} \\
 C_2 = C_{2,l}^x * C_2 * C_{2,r}^{x^{-1}} \\
@@ -269,28 +270,28 @@ e(A,V) == C_1 \\
 e(W,B) == C_2 \\
 e(A,B) == C_3
 $$
-where $A$, $B$ are the last compressed single values of $\mathbf{A}$ and $\mathbf{B}$ and $V$ and $W$ are the last compressed commitment keys (length 1 as well).
-The first and second checks are verifying that the commitments to $\mathbf{A}$ and $\mathbf{B}$ have been correctly compressed at each step. The final check is verifying if the inner pairing product have been correctly computed, as in our first toy example!
+where $A$, $B$ are the last compressed single values of $\mathbf{A}$ and $\mathbf{B}$ and $V$ and $W$ are the last compressed commitment keys (also length 1).
+The first and second checks are verifying that the commitments to $\mathbf{A}$ and $\mathbf{B}$ have been correctly compressed at each step. The final check is verifying that the inner pairing product have been correctly computed, as in our first toy example!
 
 
 ### Trusted Setup
 
-As you can see, $\mathbf{v}$ and $\mathbf{w}$ depend on two parameters $\alpha$ and $\beta$, but we haven't shown where they come from. As it happens often in cryptography, we simply enforce that they come associated with the scheme as a ***Structured Reference String***. This SRS is to be generated **outside of the protocol** in a one-time manner similar to how trusted setups, or sometimes called powers of tau ceremonies, have been made for regular usage of Groth16 ([Zcash](https://www.zfnd.org/blog/powers-of-tau/), [Filecoin](https://github.com/filecoin-project/powersoftau), [Celo](https://celo.org/plumo)...). During these ceremonies, the $g^\alpha$ and $h^\beta$ are computed via a multi-party computation protocol and the $\alpha$ and $\beta$ are never computed directly.
+As you can see, $\mathbf{v}$ and $\mathbf{w}$ depend on two parameters $\alpha$ and $\beta$, but we haven't shown where they come from. As often happens in cryptography, we simply enforce that they come associated with the scheme as a ***Structured Reference String***. This SRS is to be generated *outside of the protocol* in a one-time manner similar to how trusted setups -- sometimes called **powers of tau ceremonies** -- have been made for regular usage of Groth16 (e.g. in [Zcash](https://www.zfnd.org/blog/powers-of-tau/), [Filecoin](https://github.com/filecoin-project/powersoftau), [Celo](https://celo.org/plumo), etc.). During these ceremonies, the $g^\alpha$ and $h^\beta$ are computed via a multi-party computation protocol and the $\alpha$ and $\beta$ are never computed directly.
 
-There is one problem though: **the SRS is not the same as the one for Groth16**!
+There is one problem though: *the SRS is not the same as the one for Groth16*!
 The Groth16 SRS is quite involved, so we're only showing the relevant part here:
-$$ \mathbf{V} = \{H^{\alpha^{i}}\}_{i=0}^{n-1} \space
-    \mathbf{W} = \{G^{\alpha^{i}}\}_{i=0}^{n-1}
+$$ \mathbf{V} = \{H^{\alpha^{i}}\}\_{i=0}^{n-1} \space
+    \mathbf{W} = \{G^{\alpha^{i}}\}\_{i=0}^{n-1}
 $$
 
 We can see we only have one "secret" exponent here, $\alpha$ ! However, our commitment scheme requires two "secret" exponents:
-* Aggregation proving key: $\mathbf{V} = \{H^{\beta^{2i}}\}_{i=0}^{n-1}$ and $\mathbf{W} = \{G^{\alpha^{2i}}\}_{i=0}^{n-1}$
+* Aggregation proving key: $\mathbf{V} = \{H^{\beta^{2i}}\}\_{i=0}^{n-1}$ and $\mathbf{W} = \{G^{\alpha^{2i}}\}\_{i=0}^{n-1}$
 * Aggregation verifiying key $(H^\alpha,G^\beta)$
 
 Note that it also requires a power twice as high as Groth16's SRS.
 We could make of course a new trusted setup, but we wanted to rely on the same security assumptions as of today and running a trusted setup is an expensive and long process we wanted to avoid.
 
-One idea we had is that we could use two Groth16 SRS, for example the one from Filecoin and Zcash together, so we end up with two hidden exponent $\alpha$ and $\beta$. This was actually our first thought but **this would have been totally insecure**! Indeed, with two Groth16 SRS we would have $(G^\beta)^i$ and $(H^\beta)^i$  for $i:0 \rightarrow n$ while in our commitment scheme SRS, the verifying key only contains terms of the form $H^{\beta^{2i}}$, where the exponent of $\beta$ is even.  In other words, given an SRS constructed from two Groth16 SRS, **the binding property is broken**. Let's see an example where we can devise two different messages that map to the same commitment.
+One idea we had is that we could use two Groth16 SRS, for example the one from Filecoin and Zcash together, so we end up with two hidden exponent $\alpha$ and $\beta$. This was actually our first thought but *this would have been totally insecure*! Indeed, with two Groth16 SRS we would have $(G^\beta)^i$ and $(H^\beta)^i$  for $i:0 \rightarrow n$ while in our commitment scheme SRS, the verifying key only contains terms of the form $H^{\beta^{2i}}$, where the exponent of $\beta$ is even.  In other words, given an SRS constructed from two Groth16 SRS, *the binding property is broken*. Let's see an example where we can devise two different messages that map to the same commitment.
 The commitment of the vector $\mathbf{A} = \{(G^{\beta^2})^x, G^y\}$ is:
 $$
 C_{A} = \prod e(A_i,V_i) = e(G^{\beta^2 x},H)e(G^y,H^{\beta^2}) = e(G,H)^{\beta^2 x + \beta^2 y}
@@ -301,13 +302,13 @@ C_{A'} = \prod e(A_i',V_i) = e(G^{\beta^2 y},H)e(G^x,H^{\beta^2}) = e(G,H)^{\bet
 $$
 Here the prover had access to $G^{\beta^2}$ from the Groth16 SRS which enabled him to break the binding property!
 
-**We needed a new commitment scheme**. Thanks to Mary Maller, we devised a new commitment scheme whose SRS can be constructed from two Groth16 SRS. In other words, we found a commitment scheme that **enable us to aggregate current proofs without changing the proofs or requiring a new trusted setup**
+*We needed a new commitment scheme*. Thanks to Mary Maller, we devised a new commitment scheme whose SRS can be constructed from two Groth16 SRS. In other words, we found a commitment scheme that enables us to *aggregate current proofs without changing the proofs or requiring a new trusted setup.*
 
 Here is its description:
 $$
 ck = (\mathbf{V_1},\mathbf{V_2},\mathbf{W_1},\mathbf{W_2}) \textrm{ where} \\
- \mathbf{V_1} = \{H^{\alpha^{i}}\}_{i=0}^{n-1}, \mathbf{V_2} =\{H^{\beta^{i}}\}_{i=0}^{n-1}) \\
-\mathbf{W_1} = \{G^{\alpha^{n + i}}\}_{i=0}^{n-1}, \mathbf{W_2} = \{G^{\beta^{n + i}}\}_{i=0}^{n-1}) \\
+ \mathbf{V_1} = \{H^{\alpha^{i}}\}\_{i=0}^{n-1}, \mathbf{V_2} =\{H^{\beta^{i}}\}\_{i=0}^{n-1}) \\
+\mathbf{W_1} = \{G^{\alpha^{n + i}}\}\_{i=0}^{n-1}, \mathbf{W_2} = \{G^{\beta^{n + i}}\}\_{i=0}^{n-1}) \\
 m = (\mathbf{A} \in \mathbb{G_1^n},\mathbf{B} \in \mathbb{G_2^n},\prod e(A_i,B_i) \in \mathbb{G_t})
 $$
 
