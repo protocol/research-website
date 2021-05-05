@@ -289,9 +289,9 @@ We can see we only have one "secret" exponent here, $\alpha$ ! However, our comm
 * Aggregation verifiying key $(H^\alpha,G^\beta)$
 
 Note that it also requires a power twice as high as Groth16's SRS.
-We could make of course a new trusted setup, but we wanted to rely on the same security assumptions as of today and running a trusted setup is an expensive and long process we wanted to avoid.
+We could of course create a new trusted setup, but we wanted to rely on the same security assumptions in use today, and running a trusted setup is an expensive and long process that we wanted to avoid.
 
-One idea we had is that we could use two Groth16 SRS, for example the one from Filecoin and Zcash together, so we end up with two hidden exponent $\alpha$ and $\beta$. This was actually our first thought but *this would have been totally insecure*! Indeed, with two Groth16 SRS we would have $(G^\beta)^i$ and $(H^\beta)^i$  for $i:0 \rightarrow n$ while in our commitment scheme SRS, the verifying key only contains terms of the form $H^{\beta^{2i}}$, where the exponent of $\beta$ is even.  In other words, given an SRS constructed from two Groth16 SRS, *the binding property is broken*. Let's see an example where we can devise two different messages that map to the same commitment.
+One idea we had is that we could use two Groth16 SRS, for example the one from Filecoin and Zcash together, so we end up with two hidden exponents $\alpha$ and $\beta$. This was actually our first thought, but *this would have been totally insecure*! Indeed, with two Groth16 SRS we would have $(G^\beta)^i$ and $(H^\beta)^i$  for $i:0 \rightarrow n$ while in our commitment scheme SRS, the verifying key only contains terms of the form $H^{\beta^{2i}}$, where the exponent of $\beta$ is even.  In other words, given an SRS constructed from two Groth16 SRS, *the binding property is broken*. Let's see an example where we can devise two different messages that map to the same commitment.
 The commitment of the vector $\mathbf{A} = \{(G^{\beta^2})^x, G^y\}$ is:
 $$
 C_{A} = \prod e(A_i,V_i) = e(G^{\beta^2 x},H)e(G^y,H^{\beta^2}) = e(G,H)^{\beta^2 x + \beta^2 y}
@@ -325,21 +325,21 @@ $$
 
 
 We can make a couple of observation here:
-1. It requires indeed 4 commitment "keys" $(\mathbf{V_1},\mathbf{V_2},\mathbf{W_1},\mathbf{W_2})$ instead of 2 as in the previous commitment scheme. Both $\mathbf{V_1}$ and $\mathbf{W_1}$ can be created using one transcript of a Groth16 trusted setup and the second pair using another trusted setup transcript. 
-2. We commit to $\mathbf{A}$ and $\mathbf{B}$ together, using both pairs of commitment keys. This leads us to use both of the secret exponents from both trusted setup and therefore gains the security property (blinding) of our scheme.
-3. The keys $\mathbf{W_1},\mathbf{W_2}$ are *shifted* by $n$, the powers in the exponent go from $n$ to $2n-1$. Note this means both Groth16 transcripts must have *twice the size* of the number of proofs you want to aggregate ($n$) as the exponent goes to $2n-1$. In practice it is not a big deal since the transcripts existing starts at $2^{21}$ (zcash) so the maximum number of proofs we can aggregate using these is more than 1 millions proofs already.
+1. It indeed requires 4 commitment "keys" $(\mathbf{V_1},\mathbf{V_2},\mathbf{W_1},\mathbf{W_2})$ instead of 2 as in the previous commitment scheme. Both $\mathbf{V_1}$ and $\mathbf{W_1}$ can be created using one transcript of a Groth16 trusted setup and the second pair using another trusted setup transcript. 
+2. We commit to $\mathbf{A}$ and $\mathbf{B}$ together, using both pairs of commitment keys. This leads us to use both of the secret exponents from both trusted setups, and therefore gains the security property (blinding) of our scheme.
+3. The keys $\mathbf{W_1},\mathbf{W_2}$ are *shifted* by $n$: the powers in the exponent go from $n$ to $2n-1$. Note this means both Groth16 transcripts must have *twice the size* of the number of proofs you want to aggregate ($n$) as the exponent goes to $2n-1$. This isn't a big deal in practice since the transcripts existing starts at $2^{21}$ (zcash), so the maximum number of proofs we can aggregate using these is already more than 1 million proofs.
 4. Note the third component of the message is also the third component of the commitment scheme output, as it was the case in the first TIPP example.
 
-Even though we can use this scheme directly, we also loose a bit of efficiency as now a prover must run twice more pairings and verifying the opening cost two more pairings (more on that later). However, given the very good performance of the scheme (more on that later as well!), this is an acceptable cost.
+Even though we can use this scheme directly, we lose a bit of efficiency, as  a prover must now  run twice as many pairings, and verifying the opening costs two more pairings (more on that later). However, given the very good performance of the scheme (more on that later as well!), this is an acceptable cost.
 
-Can we use this scheme in GIPA ? Indeed this scheme is doubly homomorphic and uses an inner pairing map, so we're good to go ! I'll leave as an exercise to prove it fulfills the properties we listed before and see how this plugs in GIPA.
+Can we use this scheme in GIPA? Indeed this scheme is doubly homomorphic and uses an inner pairing map, so we're good to go! I'll leave as an exercise to prove it fulfills the properties we listed before and see how this plugs into GIPA.
 
 ### Logarithmic Commitment Key Verification
 
-We have our commitment scheme that we can plug into GIPA, but so far the verifier is still required to perform all the work on the commitment keys themselves and we said this is $O(n)$ work, this doesn't get us far !
-The trick to get the verifier to only perform a logarithmic amount of work when verifying the commitment key has first been presented in the [Halo paper](https://eprint.iacr.org/2019/1021.pdf) and has been formalized later on in the [Proof Carrying Data paper](https://eprint.iacr.org/2020/499.pdf).  
+We have our commitment scheme that we can plug into GIPA, but so far the verifier is still required to perform all the work on the commitment keys themselves and we said this is $O(n)$ work -- this doesn't get us far!
+The trick to get the verifier to only perform a logarithmic amount of work when verifying the commitment key was first presented in the [Halo paper](https://eprint.iacr.org/2019/1021.pdf) and has been formalized later on in the [Proof Carrying Data paper](https://eprint.iacr.org/2020/499.pdf).  
 
-To understand the trick let's make a small example. let's define our commitment key as
+To understand the trick let's make a small example. Let's define our commitment key as
 $$
 \mathbf{V} = \{V_1,V_2,V_3,V_4\} = \{H,H^\alpha,H^{\alpha^2},H^{\alpha^3}\} 
 $$
@@ -352,22 +352,24 @@ For the second and final iteration, we derive the challenge $x_1$ and compress f
 $$
 \mathbf{V'} = V_1' + V_2'^{x_1} = H^{(1 + x_0\alpha^2) + \alpha(1 + x_0\alpha^2)x_1} = H^{1 + x_0\alpha^2 + \alpha x_1 + \alpha^3 x_0x_1 }
 $$
-The trick is that we can represent **the elements in the exponent into a logarithmically sized product** ! Let's only look at the exponents:
+The trick is that we can represent the elements in the exponent into a *logarithmically sized product*! Let's only look at the exponents:
 $$
 1 + x_0\alpha^2 + \alpha x_1 + \alpha^3 x_0x_1 = (1 + x_1\alpha)(1 + x_0\alpha^2) = \prod_{i=0}^{l-1} (1 + x_{l-i-1}\alpha^{2^i})
 $$
-Now we have a formula that express the commitment key at the last step computable **in a logarithmic number of steps!** The verifier can evaluate this formula in $O(log(n))$ time. For the more details, you can look how this formula is derived and proven more formally in the paper.
 
-How can we use this trick now ? Well, let's consider the following polynomial, with $l = log(n)$ and $x_i$ being the $i-th$ challenge generated:
+Now we have a formula that express the commitment key at the last step computable *in a logarithmic number of steps!* The verifier can evaluate this formula in $O(log(n))$ time. For more details, you can look how this formula is derived and proven more formally in the paper.
+
+How can we use this trick now? Well, let's consider the following polynomial, with $l = log(n)$ and $x_i$ being the $i-th$ challenge generated:
 $$
 f(y) = \prod_{i=0}^{log(n)-1} (1 + (x_{l-i}y)^{2^i})
 $$
-We just showed that the last commitment key $v$ is equal to $H^{f(\alpha)}$ !
-To avoid the verifier to compute the compressed commitment keys at each step (which is linear work), the prover can use **a polyomial commitment scheme!** 
+
+We just showed that the last commitment key $v$ is equal to $H^{f(\alpha)}$!
+To avoid the verifier to compute the compressed commitment keys at each step (which is linear work), the prover can use a **polyomial commitment scheme!** 
 
 #### Polynomial Commitments
 
-A polynomial commitment is a construction that allows a prover to commit to a polynomial $f(x)$ and then later on reveal $y = f(a)$ with a proof that shows he correctly evaluated the polynomial. In this setting, since we are allowed to use pairings and we have a trusted setup at our disposal, we can use the [KZG](https://pdfs.semanticscholar.org/31eb/add7a0109a584cfbf94b3afaa3c117c78c91.pdf) polynomial commitment scheme, which is used in multiple places, including in state of the art SNARKs systems such as Plonk.
+A polynomial commitment is a construction that allows a prover to commit to a polynomial $f(x)$ and then later on reveal $y = f(a)$ with a proof that shows he correctly evaluated the polynomial. In this setting, since we are allowed to use pairings and we have a trusted setup at our disposal, we can use the [KZG](https://pdfs.semanticscholar.org/31eb/add7a0109a584cfbf94b3afaa3c117c78c91.pdf) polynomial commitment scheme, which is used in multiple places, including in state-of-the-art SNARK systems such as [Plonk](https://eprint.iacr.org/2019/953).
 Given there are already lots of ressources on KZG commitments, we invite you to read the excellent and succinct description of Tomescu on KZG polynomial commitments -> [link](https://alinush.github.io/2020/05/06/kzg-polynomial-commitments.html).
 
 To use this trick, the prover perform the following steps: 
