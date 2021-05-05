@@ -43,11 +43,11 @@ draft: false
 
 This post exposes the inner workings of SnarkPack, a practical scheme to aggregate Groth16 proofs, a derivation of the Inner Pairing Product work of [Bunz et al.](https://eprint.iacr.org/2019/1177), and its application to Filecoin. It first explains what are Groth16 proofs, then explains what is the inner product argument, what is the difference between the original IPP [paper](https://eprint.iacr.org/2019/1177) and our modifications. This posts ends by showing the performance of our scheme and all optimizations we made to reach that performance.
 
-**TLDR**: SnarkPack can aggregate 8192 proofs in 12sec, producing a proof which is 38x smaller in size and can be verified in 50ms, including serialization — 11x faster than batch verification. The scheme scales logarithmically, yielding an exponentially faster verification scheme than batching: the more you aggregate, the better.
+**TLDR**: SnarkPack can aggregate 8192 proofs in 12 seconds, producing a proof which is 38x smaller in size and can be verified in 50ms, including serialization — 11x faster than batch verification. The scheme scales logarithmically, yielding an exponentially faster verification scheme than batching: the more you aggregate, the better.
 
 
 **Scope**: This post is not for experienced cryptographers; the goal is that
-anybody with a high school math level can follow easily. For a more formal
+anybody with a high school math level can follow along. For a more formal
 description of the scheme, we refer to our [paper](https://eprint.iacr.org/2021/529).
 
 **Table of Contents**
@@ -60,11 +60,11 @@ description of the scheme, we refer to our [paper](https://eprint.iacr.org/2021/
 
 SNARKs are __*Succinct Non-interactive ARguments of Knowledge*__; in short, one can prove to a verifier, in a succinct way, that they executed a computation correctly with the correct inputs . They have *tremendously* impacted the blockchain world by opening multiple uses cases that were previously impracticable, such as anonymous transactions ([Zcash](https://z.cash/)), fast light clients / compact blockchain ([Celo](https://celo.org/), [Mina](https://minaprotocol.com)), and provable decentralized storage ([Filecoin](https://www.filecoin.com/)).
 
-The most promiment SNARK system deployed in production is the construction proposed by [Jens Groth in Eurocrypt 2016](https://eprint.iacr.org/2016/260) that showed how to obtain a succinct proof of knowledge with an efficient verifier for any arithmetic circuits. Note that this proof system requires a Structured Reference String: a vector of elements specially crafted for a specific computation. To generate the SRS, we need to run a trusted setup, a *complicated* setup ceremony run by multiple users to generate keys that provers and verifiers require. The Groth16 system has been implemented in multiple frameworks and programming languages and is the most used SNARK system to this day. To give a sense of proportion, the Filecoin network verifies more than *2 million Groth16 SNARKs per day* (more info [here](https://spacegap.github.io/#/)) !
+The most promiment SNARK system deployed in production is the construction proposed by [Jens Groth in Eurocrypt 2016](https://eprint.iacr.org/2016/260) that showed how to obtain a succinct proof of knowledge with an efficient verifier for any arithmetic circuits. Note that this proof system requires a **structured reference string**: a vector of elements specially crafted for a specific computation. To generate the SRS, we need to run a trusted setup, a *complicated* setup ceremony run by multiple users to generate keys that provers and verifiers require. The Groth16 system has been implemented in multiple frameworks and programming languages and is the most-used SNARK system to this day. To give a sense of proportion, the Filecoin network verifies more than *2 million Groth16 SNARKs per day* (more info [here](https://spacegap.github.io/#/)) !
 
 Due to its rapid and massive adoption, systems that use SNARKs face a **scalability challenge** similar to [current issues](https://education.district0x.io/general-topics/ethereum-scaling/introduction-to-ethereum-scaling/) Ethereum is facing. The reason is that all the nodes in the network have to process each proof individually to agree on the final state, and thereby this enforces an implicit limit as to how many proofs the network can verify per day. 
 
-There are multiple solutions that came up to face this challenge with respect to SNARKs. The most recent and efficient is based on the notion of *proof carrying data* that enables fully recursive proof system: one proof can verify another proof and the level of recursion is infinite. This is the approach that the [Mina protocol](https://minaprotocol.com) and [Halo2](https://github.com/zcash/halo2) (from Zcash) are currently pursuing. Unfortunately, this approach requires a complete new proof system which is incompatible with the current Groth16 proof system. Ideally we'd like to be able to scale the current proofs that we have now in production.
+Multiple solutions have been developed to face this challenge with respect to SNARKs. The most recent and efficient is based on the notion of **proof carrying data** that enables fully recursive proof system: one proof can verify another proof and the level of recursion is infinite. This is the approach that the [Mina protocol](https://minaprotocol.com) and [Halo2](https://github.com/zcash/halo2) (from Zcash) are currently pursuing. Unfortunately, this approach requires a complete new proof system which is incompatible with the current Groth16 proof system. Ideally we'd like to be able to scale the current proofs that we have now in production.
 
 Fortunately, a [result](https://eprint.iacr.org/2019/1177) that came out in 2019 from Bunz, Maller,  Mishra ,  Tyagi and Vesely showed a rather elegant solution to **aggregate Groth16 proofs** together, giving a logarithmic sized proof and not requiring any change in the proof system itself! In other words, one can aggregate current proofs and bring scalability to the current systems without drastic changes!
 
@@ -72,10 +72,10 @@ After discovering this paper, we started looking to see if it could be applied i
 
 ### Groth16 proofs in Filecoin 
 
-Filecoin miners need to prove they have encoded a 32GiB portion of storage correctly, i.e. that they reserved 32GiB of storage. That's their stake so they can participate in the consensus and mine blocks. In order to do that, a miner run a special encoding function ([the proof of replication](https://spec.filecoin.io/#section-algorithms.sdr)) which works in several consecutive steps. At each steps, the miner encodes a layer of 2^30 nodes of 32 bytes (2^8 bits) each (leading to 2^38 bits = 32GB) using nodes from previous layer and nodes from the same layer. After each step, it makes a [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) of all these nodes.
+Filecoin miners need to prove they have encoded a 32GiB portion of storage correctly, i.e. that they reserved 32GiB of storage. That's their stake so they can participate in the consensus and mine blocks. In order to do that, miners run a special encoding function ([the proof of replication](https://spec.filecoin.io/#section-algorithms.sdr)) which works in several consecutive steps. At each step, the miner encodes a layer of 2$^{30}$ nodes of 32 bytes (2$^{8}$ bits) each (leading to 2$^{38}$ bits = 32GB) using nodes from previous layer and nodes from the same layer. After each step, it makes a [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) of all these nodes.
 At the end, the prover must create a proof that they did all these computations correctly by giving a Merkle path to random nodes in each layer.
 
-The problem is that there are so many nodes in a layer. Our trusted setup could only go up to 2^27 to be practical (the size of the trusted setup becomes too large to be practical afterwards) so we've had to split our proof of replication SNARK into 10 smallers SNARKs. 
+The problem is that there are so many nodes in a layer. Our trusted setup could only go up to 2$^{27}$ to be practical (the size of the trusted setup becomes too large to be practical afterwards) so we've had to split our proof of replication SNARK into 10 smallers SNARKs. 
 Fortunately, we can verify SNARKs using batch verification. What we will see in this post, however, is that we dramatically reduce the cost of having 10 SNARKs for one proof by being able to aggregate them.
 
 # Notations {#Notations}
@@ -85,17 +85,17 @@ We will give a high level overview of how the proof aggregation works but, befor
 * We have one field called $F_q$ with $q$ prime
     * It simply means we deal with numbers between 0 and $q-1$ 
     * Addition and multiplication are done $\textrm{mod }  q$
-    * All scalars in this **field are written in lowercase**
-* We have two base groups $\mathbb{G_1}$ and $\mathbb{G_2}$ and one target group $G_t$ **all written in uppercase**.
+    * All scalars in this field are written in *lowercase*
+* We have two base groups $\mathbb{G_1}$ and $\mathbb{G_2}$ and one target group $G_t$ all written in *uppercase*.
     * These are the points on the BLS12-381 elliptic curves, for example
     * All groups are of orders $q$ (there are $q$ points on each group)
     * $G$ is a generator of $\mathbb{G_1}$ and $H$ a generator of $\mathbb{G_2}$
-* We can do a *scalar multiplication* by multipliying an element from $\mathbb{F_q}$ and an elliptic curve point: $C = A^s$
+* We can do a **scalar multiplication** by multipliying an element from $\mathbb{F_q}$ and an elliptic curve point: $C = A^s$
 * Points on the elliptic curve are a group, we can add/substract them. Here we are using the multplicative notation so we say we can multiply / divide them: $C = A * B$
-* We have a special function, called bilinear pairing map, defined as $e: \mathbb{G_1} \times \mathbb{G_2} \rightarrow \mathbb{G_t}$ with the following property called *bilinearity*:
+* We have a special function, called bilinear pairing map, defined as $e: \mathbb{G_1} \times \mathbb{G_2} \rightarrow \mathbb{G_t}$ with the following property called **bilinearity**:
     * $e(G^a,H^b) = e(G,H)^{ab}$
 
-The pairing equipped curves (elliptic curves that posses such a pairing map) have had a huge impact on cryptographic schemes over the last 20 years. For example, they enabled constant size SNARKs, short BLS signatures (used in Eth2), and efficient identity management solutions.
+The **pairing-equipped curves** (elliptic curves that posses such a pairing map) have had a huge impact on cryptographic schemes over the last 20 years. For example, they enabled constant size SNARKs, short BLS signatures (used in Eth2), and efficient identity management solutions.
 
 
 ## Inner Pairing Product Argument (IPP)
@@ -105,7 +105,7 @@ First, let's agree on what the inner product is for two vectors in $\mathbb{F_q^
 $$
 \lt \mathbf{a},\mathbf{b} \gt = \sum a_ib_i
 $$ 
-The inner product argument allows a prover to prove he correctly computed such product to a verifier, **without the verifier to do this computation**. 
+The inner product argument allows a prover to prove he correctly computed such product to a verifier, *without the verifier performing this computation*. 
 Thanks to the IPP paper, we can also prove an inner product relationship *in the exponent*. For example, the following is an inner product "in the exponent" between a vector $\mathbf{C} = \{G^{c_i}\}$ and a vector $\mathbf{r} \in \mathbb{F_q^n}$, which we later call a MIPP relation:
 $$
 <\mathbf{C},\mathbf{r}> = \prod C_i^{r_i} = \prod G^{c_i r_i} = G^{\sum c_i r_i}
@@ -113,10 +113,10 @@ $$
 Another example called TIPP uses the pairing operation so the inner product happens in the exponent between two vectors $\mathbf{A} \in \mathbb{G_1^n}$ and $\mathbf{B} \in \mathbb{G_2^n}$:
 
 $$
-\lt \mathbf{A},\mathbf{B} \gt = \prod e(G^a_i,H^b_i) = \prod e(G,H)^{a_i*b_i} = e(G,H)^{\sum a_i*b_i}
-$$ 
+lt \mathbf{A},\mathbf{B} \gt = \prod e(G^a_i,H^b_i) = \prod e(G,H)^{a_i*\{b}_i} = e(G,H)^{\sum a_i*\{b}_i}
+$$  
 
-In fact, the paper generalizes the scheme to allow extended variants of such computations called *inner product maps*, which satisfy the same bilinear properties as the classical inner product over integers: 
+In fact, the paper generalizes the scheme to allow extended variants of such computations called **inner product maps**, which satisfy the same bilinear properties as the classical inner product over integers: 
 $$
 <\mathbf{a} + \mathbf{b}, \mathbf{c} + \mathbf{d}> = <\mathbf{a},\mathbf{c}>+<\mathbf{a},\mathbf{d}> + <\mathbf{b},\mathbf{c}> + <\mathbf{b},\mathbf{d}>
 $$
@@ -135,7 +135,7 @@ One way do to that is to do an interactive proof over a "cross computation":
 * Prover computes 
     * the left cross product $l = e(A_1,B_2) = e(G,H)^{a_1b_2}$
     * the right cross product $r = e(A_2,B_1) = e(G,H)^{a_2b_1}$
-    * **Note** how the indices are swapped !
+    * *Note how the indices are swapped !*
 * Verifier samples a random $x$ and sends to verifier 
     * This can be done via a hash function using the Fiat Shamir heuristic.
 * Prover outputs 
@@ -146,16 +146,16 @@ Now the verification equation becomes:
 $$
 e(A',B') = l^x * c * r^{x^{-1}}
 $$
-and the verifier only has to do **one pairing operations to verify** that statement, instead of two naively. To understand why it works, let's write what happens in $e(A',B')$, the **left term** of the verification equation:
+and the verifier only has to do *one pairing operation* to verify that statement, instead of two naively. To understand why it works, let's write what happens in $e(A',B')$, the *left term* of the verification equation:
 $$
-e(A',B') = e(G^{a_1 x}*G^{a_2},H^{b_1 x^{-1} + b_2} * H^{b_2}) = e(G^{a_1 x + a_2},H^{b_1 x^{-1} + b_2}) \\= e(G,H)^{(a_1 x + a_2) * (b_1 x^{-1} + b_2)}
+e(A',B') = e(G^{a_1 x}*G^{a_2},H^{b_1 x^{-1} + b_2} * H^{b_2}) = e(G^{a_1 x + a_2},H^{b_1 x^{-1} + b_2}) \{\}= e(G,H)^{(a_1 x + a_2) * (b_1 x^{-1} + b_2)}
 $$
 For the sake of clarity, let's only write the exponents:
 $$
  (a_1 x + a_2) * (b_1 x^{-1} + b_2) = a_1b_1 + xa_1b_2 + x^{-1}a_2b_1 + a_2b_2 
 $$
 
-We also know that $c = e(A_1,B_1)*e(A_2,B_2) = e(G,H)^{a_1b_1 + a_2b_2}$ - remember $c$ is the value the prover wants to convince the verifier of its validity. Therefore, in the **right term** of the verification equation, we have:
+We also know that $c = e(A_1,B_1)*e(A_2,B_2) = e(G,H)^{a_1b_1 + a_2b_2}$ - remember $c$ is the value the prover wants to convince the verifier of its validity. Therefore, in the *right term* of the verification equation, we have:
 $$
 l^x * c * r^{x^{-1}} = (e(G,H)^{a_1b_2})^x * e(G,H)^{a_1b_1 + a_2b_2} * (e(G,H)^{a_2b_1})^{x^{-1}}
 $$
@@ -163,12 +163,12 @@ For the sake of clarity, let's only write the exponents:
 $$
 x(a_1b_2) + a_1b_1 + a_2b_2 + x^{-1}(a_2b_1)
 $$
-which is **exactly** what we have in the left term ! 
+which is *exactly* what we have in the left term ! 
 
-We have just roughly shown that the protocol is complete and **enable us to halve the number of pairing operations**. One might ask though why is it secure? The security comes from the fact the prover doesn't know the $x$ in advance when he computes $l$ and $r$ so there is only a negligible probability he can compute these in a malicious way that will make the verification equation pass.
+We have just roughly shown that the protocol is complete and enables us to *halve the number of pairing operations*. One might ask though why is it secure? The security comes from the fact the prover doesn't know the $x$ in advance when he computes $l$ and $r$ so there is only a negligible probability he can compute these in a malicious way that will make the verification equation pass.
 
-GIPA extends this idea to any *bilinear inner product map* relation between two vectors whose lengths equal a power of two.
-Before diving into how GIPA works, we first needs a to define what is an **inner product commitment scheme** as it is an essential requirement of the GIPA protocol.
+GIPA extends this idea to any **bilinear inner product map** relation between two vectors whose lengths equal a power of two.
+Before diving into how GIPA works, we must first a to define what is an **inner product commitment scheme** as it is an essential requirement of the GIPA protocol.
 
 #### Inner product commitment scheme
 
