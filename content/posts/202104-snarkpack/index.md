@@ -370,29 +370,29 @@ To avoid the verifier to compute the compressed commitment keys at each step (wh
 #### Polynomial Commitments
 
 A polynomial commitment is a construction that allows a prover to commit to a polynomial $f(x)$ and then later on reveal $y = f(a)$ with a proof that shows he correctly evaluated the polynomial. In this setting, since we are allowed to use pairings and we have a trusted setup at our disposal, we can use the [KZG](https://pdfs.semanticscholar.org/31eb/add7a0109a584cfbf94b3afaa3c117c78c91.pdf) polynomial commitment scheme, which is used in multiple places, including in state-of-the-art SNARK systems such as [Plonk](https://eprint.iacr.org/2019/953).
-Given there are already lots of ressources on KZG commitments, we invite you to read the excellent and succinct description of Tomescu on KZG polynomial commitments -> [link](https://alinush.github.io/2020/05/06/kzg-polynomial-commitments.html).
+Given there are already lots of ressources on KZG commitments, we invite you to read Tomescu's [excellent and succinct description](https://alinush.github.io/2020/05/06/kzg-polynomial-commitments.html) of  KZG polynomial commitments.
 
-To use this trick, the prover perform the following steps: 
+To use this trick, the prover performs the following steps: 
 1. At the end of GIPA, it derives a random challenge $z$ via a hash function.
     * It hashes the last commitment key value $\mathbf{V}$
 3. Computes an KZG opening for $f(z)$. Precisely, it computes $H^{f(alpha) - f(z) / (alpha - z)}$
 4. Sends the opening and the last commitment key to the verifier
 
-Normally in KZG the $f(alpha)$ is the commitment to the polynomial. In our case, the commitment **is the last commitment key value** !
+Normally in KZG the $f(alpha)$ is the commitment to the polynomial. In our case, the commitment is the *last commitment key value* !
 
-The verifier do the following:
+The verifier performs the following:
 1. Verifies all GIPA checks
-2. Recompute the challenge $z$ (it can do so because it has the last commitment keys from the prover) 
-3. Evaluate $f(z)$ using the formula described at the previous section
-4. Verifies the KZG opening at the point $z$ with the basis being the last commitment key $\mathbf{V}$ !
+2. Recomputes the challenge $z$ (it can do so because it has the last commitment keys from the prover) 
+3. Evaluates $f(z)$ using the formula described in the previous section
+4. Verifies the KZG opening at the point $z$ with the basis being the last commitment key $\mathbf{V}$!
 
 If the opening at a random point verifies, it means that the polynomial $f$ has been computed correctly with high proabibility and therefore that the final commitment keys are correct!
 
-**Note the verifier must do this for both $\mathbf{V_1}$, $\mathbf{V_2}$, $\mathbf{W_1}$ and $\mathbf{W_2}$ for TIPP**; he must verify 4 openings in total for TIPP .
+**Note the verifier must do this for both $\mathbf{V_1}$, $\mathbf{V_2}$, $\mathbf{W_1}$ and $\mathbf{W_2}$ for TIPP**; it must verify 4 openings in total for TIPP.
 
 ## Multiexponentiation Inner Pairing Product (MIPP)
 
-For Groth16 aggregation, we are going to need to prove the relation $Z = \sum_{i=0}^{n-1} C_i^{r_i}$ which is a multiexponentiation product. We can do this with GIPA simply by changing the commitment scheme!
+For Groth16 aggregation, we will need to prove the relation $Z = \sum_{i=0}^{n-1} C_i^{r_i}$ which is a multiexponentiation product. We can do this with GIPA simply by changing the commitment scheme!
 $$
 m = (\mathbf{C} \in \mathbb{G_1^n}, \mathbf{r} \in \mathbb{F_r}, \sum_{i=0}^{n-1} C_i^{r_i}) \\
 ck = (\mathbf{V} = \{H^{\alpha^i}\}_{i=0}^{n-1} \in \mathbb{G_2^n}, \mathbf{1} \in \mathbb{F_r^n}, 1 \in \mathbb{G_t}) \\
@@ -405,9 +405,9 @@ With this commitment scheme, we also need to use the KZG opening proofs to prove
 
 ## Groth16 Aggregation
 
-This is all good but our original goal was to be able to aggregate Groth16 proofs. How can GIPA help us do that ?
+This is all well and good but our original goal was to be able to aggregate Groth16 proofs. How can GIPA help us do that?
 
-To answer this question, we must first revisit a little bit the Groth16 verification procedure, don't worry, it's not more complicated than what you've been through until now !
+To answer this question, we must first briefly revisit the Groth16 verification procedure -- don't worry, it's not more complicated than what you've been through until now!
 
 ### Groth16 Proof Verification 
 
@@ -417,12 +417,12 @@ e(A,B)= e(G^\alpha,H^\beta) \cdot e(\prod_{i} S_i^{a_i},H^\gamma)  \cdot e(C, H^
 $$
 
 Let's define some of these terms:
-* $G^\alpha$ and $H^\beta$ and $H^\delta$ come from the trusted setup. Note we only use the $\alpha$ from the same trusted setup the prover have been using. In our case, these come from the Filecoin power of taus ceremony transcript.
+* $G^\alpha$ and $H^\beta$ and $H^\delta$ come from the trusted setup. Note we only use the $\alpha$ from the same trusted setup the prover has been using. In our case, these come from the Filecoin power of taus ceremony transcript.
 * $a_i$ are all the public inputs provided by the verifier.
 
 ### Groth16 Aggregated Verification
 
-We can actually combine multiple verifications, from differents proofs represented as vectors $(\mathbf{A},\mathbf{B}, \mathbf{C})$  and different public inputs $\mathbf{a}$ into one. The way to do this is to make a **random linear combination** of each of the parts of the equation. The reason we must perform a random linear combination is to avoid the aggregator to find some combinations of proof that makes the verification pass while some of them are invalid. By randomizing the combination, probability to pass verification with invalid proofs becomes negligible. It is a common trick in cryptography.
+We can actually combine multiple verifications, from differents proofs represented as vectors $(\mathbf{A},\mathbf{B}, \mathbf{C})$  and different public inputs $\mathbf{a}$ into one. The way to do this is to make a **random linear combination** of each of the parts of the equation. The reason we must perform a random linear combination is to avoid the aggregator finding some combinations of proofs that makes the verification pass despite some of them being invalid. By randomizing the combination, the probability of passing verification with invalid proofs becomes negligible. It is a common trick in cryptography.
 
 Let's define $\mathbf{r} = (1,r,r^2,r^3,\dots,r^{n-1})$ a structured vector from a random $r$ element. The **randomized verification equation** is:
 $$
@@ -445,15 +445,15 @@ We leave the others parts as exercise to the reader to show they are linear comb
 Finally we are able to put all the pieces together! As you can see there are similarities between what the Groth16 aggregated verification requires and what we've seen we can do with GIPA and TIPP.
 
 Indeed, the prover can prove the value $Z = \prod e(A_i,B_i^{r_i})$ via TIPP using the vectors $\mathbf{A}$ and $\mathbf{B^r}$! 
-Wait...where this $\mathbf{r}$ vector comes from ? Because we want this proof to be *non-interactive*, we can't ask the verifier to sample it. Instead, this $r$ is derived from the *commitments of the vectors* $\mathbf{A},\mathbf{B}$ and $\mathbf{C}$, using again the Fiat-Shamir heuristic. 
+Wait...where does this $\mathbf{r}$ vector come from? Because we want this proof to be *non-interactive*, we can't ask the verifier to sample it. Instead, this $r$ is derived from the *commitments of the vectors* $\mathbf{A},\mathbf{B}$ and $\mathbf{C}$, again using the Fiat-Shamir heuristic. 
 $$
 r = Hash(CM_t(\mathbf{V_1},\mathbf{V_2},\mathbf{W_1},\mathbf{W_2},\mathbf{A},\mathbf{B}),CM_m(\mathbf{V_1},\mathbf{V_2},\mathbf{C})
 $$
-Note here the third component of the commitment scheme is excluded, since we only want to compute the commitment of the individual vectors, not to their product. See next section for understanding why.
+Note here the third component of the commitment scheme is excluded, since we only want to compute the commitment of the individual vectors, not to their product. See the next section to understand why.
 
 ### Rescaled commitment keys
 
-$Z = \prod e(A_i,B_i^{r_i})$ is the third input to the commitment scheme. That means we should also input $\mathbf{B^r}$ as the input vector for TIPP right ? However that causes a problem here:  we can't define $\mathbf{B^r}$ without the commitment of $\mathbf{A}$ and $\mathbf{B}$ necessary to create $r$ and we can't use $\mathbf{B}$ if we use $\mathbf{B^r}$ as the third input...
+$Z = \prod e(A_i,B_i^{r_i})$ is the third input to the commitment scheme. That means we should also input $\mathbf{B^r}$ as the input vector for TIPP, right? But that causes a problem here:  we can't define $\mathbf{B^r}$ without the commitment of $\mathbf{A}$, and $\mathbf{B}$ necessary to create $r$,  and we can't use $\mathbf{B}$ if we use $\mathbf{B^r}$ as the third input...
 
 The solution to that is to use a **rescaled commitment key** $\mathbf{W'} = \mathbf{W^{r^{-1}}}$. Thanks to the property of the commitment scheme, the $r$ component will cancel out. Here is one part of the commitment to show how it behaves:
 $$
@@ -471,9 +471,9 @@ Let's show the whole prover protocol now:
 2. Compute the commitments to $\mathbf{C}$ using the commitment scheme of MIPP
     + $(T_{C},U_{C},\perp) = CM_m((\mathbf{V_1},\mathbf{V_2},\perp),\mathbf{C},\mathbf{r},\perp)$
 3. Derive $r = Hash(T_{AB},U_{AB},T_{C},U_{C})$ and then $\mathbf{r} = (1,r^2,\dots,r^{n-1})$
-    * This steps enforce that $r$ is random and therefore the prover can not trick the linear combination.
+    * This step enforces that $r$ is random and therefore the prover can not trick the linear combination.
 4. Compute $\mathbf{B^r}$ and $\mathbf{W_1'} = \mathbf{W_1^{r^{-1}}}$ and $\mathbf{W_2'} = \mathbf{W_2^{r^{-1}}}$
-5. Compute $Z_{AB} = \prod e(A_i,B_i^{r_i})$ as third input to TIPP
+5. Compute $Z_{AB} = \prod e(A_i,B_i^{r_i})$ as the third input to TIPP
 6. Compute $Z_{C} = \prod C_i^{r_i}$
     * Note here we don't need to rescale anything, since $r$ is part of input vectors of the commitment scheme of MIPP
 8. Compute the TIPP proof $\pi_t$ with 
@@ -483,15 +483,15 @@ Let's show the whole prover protocol now:
     * Inputs $\mathbf{C}$, $\mathbf{r}$ and $Z_C$
     * Commitment keys $(\mathbf{V_1}, \mathbf{V_2})$
 10. Output $\pi = (\pi_t, \pi_m, T_{AB},U_{AB}, T_{C},U_{C},Z_{AB}, Z_{C})$
-    * The last two elements are required for verifying the Groth16 equation
-    * The four previous ones are required for the verifier to derive $r$ 
+    * The last two elements are required to verify the Groth16 equation
+    * Elements 4-8 are required for the verifier to derive $r$ 
 
 ### Groth16 Verification
 
 The verifier protocol is straightforward:
 1. Derive $r$ from $\pi$
-2. Verify MIPP proof
-3. Verify TIPP proof
+2. Verify the MIPP proof
+3. Verify the TIPP proof
 4. Verify the Groth16 equation using $Z_{AB}$ and $Z_C$ as the linear combination of the proofs.
 
 That's about it ! 
@@ -500,7 +500,7 @@ That's about it !
 
 We implemented the scheme in Rust, using our [Bellman fork](https://github.com/zkcrypto/bellman/) called [Bellperson](https://github.com/filecoin-project/bellperson). The implementation is derived from the implementation in [Arkworks](https://github.com/arkworks-rs/ripp/) by the authors of the original paper. All benchmarks were performed on a 64t/32cores with AMD Ryzen Threadripper CPUs. All proofs are Groth16 proofs with 350 public inputs, which is similar to the proofs posted by Filecoin miners.
 
-**TLDR**: We can aggregate more than 8192 proofs in around 12s, aggregated proof take less than 40KB (versus 1.1MB with individual proofs) and can be verified in 48ms, this is including deserialization of the proof (around 20ms) ! We compared the verification time with batch verification of Groth16 (as defined in [zcash specs](https://zips.z.cash/protocol/protocol.pdf)) and aggregation becomes superior from 256 proofs.
+**TLDR**: We can aggregate more than 8192 proofs in around 12 seconds, aggregated proofs take less than 40KB (versus 1.1MB with individual proofs) and can be verified in 48ms -- this includes deserialization of the proof (around 20ms)! We compared the verification time with batch verification of Groth16 (as defined in [zcash specs](https://zips.z.cash/protocol/protocol.pdf)) and aggregation becomes superior from 256 proofs.
 ![](https://i.imgur.com/4mBHUUj.png)
 ![](https://i.imgur.com/g2sWBth.png)
 ![](https://i.imgur.com/hcKPzrP.png)
@@ -509,33 +509,34 @@ We implemented the scheme in Rust, using our [Bellman fork](https://github.com/z
 
 ### Trusted Setup
 
-We created a condensed version of the SRS required for our protocol from the powers of tau transcript of both Zcash and Filecoin. The code to assemble the powers of tau is located in the [taupipp](https://github.com/nikkolasg/taupipp) implementation.  The  SRS  created  allows  to  aggregate  up  to  2^19 proofs.
+We created a condensed version of the SRS required for our protocol from the powers of tau transcripts of both Zcash and Filecoin. The code to assemble the powers of tau is located in the [taupipp](https://github.com/nikkolasg/taupipp) implementation.  The  SRS  created  allows us  to  aggregate  up  to  2$^{19}$ proofs.
 
 
 ### Optimizations
 
 #### Multi-core
 
-While this may sound simple, it is not always simple to use multi-threading when implementing cryptographic schemes, even more when there are some sequential steps involved. Even though there are big chunks of the computation that happens sequentially when described on paper, it turns out it is possible to parallelize most of it. For example, the verifier is supposed to perform this operation a logarithmic number of times: 
+While this may sound simple, it is not always simple to use multi-threading when implementing cryptographic schemes, especially when there are some sequential steps involved. Even though there are big chunks of the computation that occur sequentially when described on paper, it turns out it is possible to parallelize most of it. For example, the verifier is supposed to perform this operation a logarithmic number of times: 
 $$
 C = C_{l}^x * C * C_{r}^{x^{-1}}
 $$
-but it can be computed in parallel and joined at the end. We also verify MIPP / TIPP in parallel with the Groth16 check.
-This gave us **orders of magnitude faster verification.**
+
+but it can be computed in parallel and joined at the end. We also verify MIPP / TIPP in parallel with the Groth16 check.This gave us *orders of magnitude faster verification.*
 
 #### Merging TIPP and MIPP
 
-As you can see, TIPP and MIPP are very similar except for the commitment scheme. Specifically, both $\mathbf{A}$ and $\mathbf{C}$ are committed with respect to the keys $\mathbf{v_1}$ and $\mathbf{v_2}$. Therefore, we can run **one GIPA loop for both TIPP and MIPP**. The crucial point here is to make sure the random challenge depends on both inputs from MIPP and TIPP. By re-using GIPA terminology, our random challenge at the $i$th iteration is now:
-As you can see, TIPP and MIPP are very similar except for the commitment scheme. Specifically, both $\mathbf{A}$ and $\mathbf{C}$ are committed with respect to the keys $\mathbf{v_1}$ and $\mathbf{v_2}$. Therefore, we can run **one GIPA loop for both TIPP and MIPP**. The crucial point here is to make sure the random challenge depends on both inputs from MIPP and TIPP. By re-using GIPA terminology, our random challenge at the $i$th iteration is now:
+As you can see, TIPP and MIPP are very similar except for the commitment scheme. Specifically, both $\mathbf{A}$ and $\mathbf{C}$ are committed with respect to the keys $\mathbf{v_1}$ and $\mathbf{v_2}$. Therefore, we can run *one GIPA loop for both TIPP and MIPP*. The crucial point here is to make sure the random challenge depends on both inputs from MIPP and TIPP. By re-using GIPA terminology, our random challenge at the $i$th iteration is now:
+As you can see, TIPP and MIPP are very similar except for the commitment scheme. Specifically, both $\mathbf{A}$ and $\mathbf{C}$ are committed with respect to the keys $\mathbf{v_1}$ and $\mathbf{v_2}$. Therefore, we can run *one GIPA loop for both TIPP and MIPP*. The crucial point here is to make sure the random challenge depends on both inputs from MIPP and TIPP. By re-using GIPA terminology, our random challenge at the $i$th iteration is now:
 $$
  x_i = Hash(TIPP(z_l,z_r,C_l,C_r),MIPP(z_l,z_r,C_l,C_r))
 $$
-The advantage is that it allows us to re-use the *same KZG opening proof* for both TIPP and MIPP. In other words the proof is shorter by 2 opening proof and saves 4 pairings checks for the verifier.
+
+The advantage is that it allows us to re-use the *same KZG opening proof*  for both TIPP and MIPP. In other words, the proof is shorter by 2 opening proof and saves 4 pairing checks for the verifier.
 During our benchmarks, we observed a **gain of 20-30% percent in verification time**.
 
 #### Compressing $\mathbb{G_t}$ elements
 
-The proof contains mostly $\mathbb{G_t}$ elements, which are the largest elements, currently 288 bytes. We implemented compressions on those points using algorithms derived from Diego F. Aranha's [RELIC library](https://github.com/relic-toolkit/relic) which gives us a 50% size reduction. The cost of unserializing increases a bit but is negligible when verifiying the proof. You can find the specific implementation in this [branch](https://github.com/filecoin-project/blstrs/compare/feat-compression). This  led to a **40% reduction in proof size**. 
+The proof contains mostly $\mathbb{G_t}$ elements, which are the largest elements, currently 288 bytes. We implemented compressions on those points using algorithms derived from Diego F. Aranha's [RELIC library](https://github.com/relic-toolkit/relic), which gives us a 50% size reduction. The cost of unserializing increases a bit but is negligible when verifiying the proof. You can find the specific implementation in this [branch](https://github.com/filecoin-project/blstrs/compare/feat-compression). This  led to a **40% reduction in proof size**. 
 
 #### Compressing Pairing Checks
 
@@ -549,7 +550,7 @@ $$
 e(A,B) = FinalExponentation(MillerLoop(A,B))
 $$
 
-The Miller loop returns a point on $\mathbb{F_{p^{12}}}$, and is able to do the
+The Miller loop returns a point on $\mathbb{F_{p^{12}}}$, and is able to perform the
 computation on any number of *pairs* of points at once. FinalExponentiation maps
 the $\mathbb{F_{p^{12}}}$ point to the right subgroup called $G_t$. As it turns
 out, **the most expensive operation is the final exponentation** because the
@@ -578,11 +579,11 @@ $$
 e(A,B)e(-C,D)e(E,F) == 1 * T <=> FE(ML((A,B),(-C,D),(E,F))) == T
 $$
 We can see here that we do only one miller loop and one final exponentiation !
-However, this would be **insecure** as the prover might be able to pick values $E$ and
-$F£ such that $e(A,B)e(-C,D)e(E,F) == T$ where the individual values don't
+However, this would be *insecure* as the prover might be able to pick values $E$ and
+$F£$ such that $e(A,B)e(-C,D)e(E,F) == T$ where the individual values don't
 satisfy the original equations we wanted to check !
 The usual way to solve this problem, as in the Groth16 aggregation, is to use a
-random linear combination ! We scale each pairing check by a random element $r$
+random linear combination! We scale each pairing check by a random element $r$
 chosen by the verifier, during verification time:
 $$
 e(A,B)e(-C,D)(e(E,F))^r == 1 * T^r  <=> e(A,B)e(-C,D)e(E^r,F) == T^r \\
@@ -591,30 +592,30 @@ $$
 
 You can see here we scale the second check by $r$: the point $E$ is scaled by
 $r$ since it is much more efficient to do scalar multiplication in
-$\mathbb{G_1}$ than in $\mathbb{G_t}$. As well we split into two MillerLoop
-since it is not parallelizable so we prefer to run all these one in parallel and
+$\mathbb{G_1}$ than in $\mathbb{G_t}$. We also split MillerLoop into two
+since it is not parallelizable, so we prefer to run all of this in parallel and
 perform the FinalExponentiation at the end.
 Using such randomization, the attacker has a negligible probability of finding
 points that satisfy $e(A,B)e(-C,D) == e(E,F)^r$ since he doesn't know $r$ in
-advance - he never knows it, it's a locally generated random element by the
+advance -- indeed he never knows it, it's a locally generated random element by the
 verifier. 
 
-At the end of the verification routine, the **verifier only performs one
-FinalExponentation, instead of 14**. We were able to significantly gain hundreds
-of ms thanks to these optimizations. You can find the general logic in the
+At the end of the verification routine, *the verifier only performs one
+FinalExponentation, instead of 14*. We were able to significantly gain hundreds
+of milliseconds thanks to these optimizations. You can find the general logic in the
 `PairingCheck` [struct](https://github.com/filecoin-project/bellperson/blob/feat-aggregation/src/groth16/aggregate/accumulator.rs).
 
 One important consideration here is to note that we need the randomness of the
-verifier to be sampled locally, and to be unpredictable in the sense the prover
-should not be able to guess what values the verifier is gonna use to aggregate
-the checks. In the implementation, verifier samples from `/dev/urandom`. 
+verifier to be sampled locally, and to be unpredictable in the sense that the prover
+should not be able to guess what values the verifier will use to aggregate
+the checks. In the implementation, the verifier samples from `/dev/urandom`. 
 
 ## Conclusion
 
-We have now seen how can we prove an inner product in an efficient manner, and how this is used to aggregate Groth16 proofs. Our implementation is efficient and is being implemented in Filecoin (FIP 13 is [opened](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0013.md)!). If you're interested in learning more, have insightful comments, or are  interested in learning more about what we do at Protocol Labs research, check out our [CryptoNetLab page](/groups/cryptonetlab), join the discussion in our [GitHub forum](https://github.com/protocol/CryptoNetLab/discussions) or reach out via [email](mailto:research@protocol.ai").
+We have now seen how can we prove an inner product in an efficient manner, and how this is used to aggregate Groth16 proofs. Our implementation is efficient and is being implemented in Filecoin (FIP 13 is [opened](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0013.md)!). If you're interested in learning more  have insightful comments about this topics, or want to learn more about what we do at Protocol Labs research, check out our [CryptoNetLab page](/groups/cryptonetlab), join the discussion in our [GitHub forum](https://github.com/protocol/CryptoNetLab/discussions), or reach out via [email](mailto:research@protocol.ai").
 
 
 ## Acknowledgements
 
-Thank you to Marry Maller, Benedikt Bunz, Pratyush Mishra and Noah Vesely for insightful discussion and helping us understand their scheme.  Thank you to Anca & Porcuquine whose insightful comments improved this post. Thank you dignifiedquire, whose help on the Rust implementation has led to substantial gains and new Rust knowledge for myself.
+Thank you to Mary Maller, Benedikt Bunz, Pratyush Mishra, and Noah Vesely for insightful discussion and helping us understand their scheme.  Thank you to Anca & Porcuquine whose insightful comments improved this post. And thank you dignifiedquire, whose help on the Rust implementation has led to substantial improvements to the scheme and new Rust knowledge for this author.
 
