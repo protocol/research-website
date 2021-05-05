@@ -172,10 +172,10 @@ Before diving into how GIPA works, we must first a to define what is an **inner 
 
 #### Inner product commitment scheme
 
-First, let me cite Wikipedia on its clear and succinct way to define what is a commitment scheme:
-> A commitment scheme allows one to commit to a chosen value (or chosen statement) while keeping it hidden to others, with the ability to reveal the committed value later. Commitment schemes are designed so that a party cannot change the value or statement after they have committed to it: that is, commitment schemes are binding
+First, let me cite [Wikipedia](https://en.wikipedia.org/wiki/Commitment_scheme) to clearly and succinctly define a commitment scheme:
+>> A commitment scheme allows one to commit to a chosen value (or chosen statement) while keeping it hidden to others, with the ability to reveal the committed value later. Commitment schemes are designed so that a party cannot change the value or statement after they have committed to it: that is, commitment schemes are binding
 
-During the rest of this post, we refer to the commitment as $CM(ck,m)$ where $ck$ is called the *commitment key* (it can be null) and $m$ is the message to commit. Specifically, we say that the commitment is *binding* when it is infeasible to find two messages that maps to the same commitment under the same key. This is an important property to make sure the prover is not able to cheat during proof generation!
+During the rest of this post, we refer to the commitment as $CM(ck,m)$ where $ck$ is called the **commitment key** (it can be null) and $m$ is the message to commit. Specifically, we say that the commitment is *binding* when it is infeasible to find two messages that maps to the same commitment under the same key. This is an important property to make sure the prover is not able to cheat during proof generation!
 
 However, GIPA requires an inner product commitment scheme $CM$ with the following properties
 * A key space $K = K_1 \times K_2 \times K_2$
@@ -195,7 +195,7 @@ This scheme can be used with GIPA to prove statements like $\prod e(A_i,B_i) = c
 
 #### GIPA
 
-Now that we introduced the requirements, let's look at how GIPA works on a high level. This is working very similarly to our preceding example.
+Now that we have introduced the requirements, let's look at how GIPA works on a high level. This works very similarly to our preceding example.
 We have as inputs:
 * Vectors $\mathbf{A}$ and $\mathbf{B}$ of length $n = 2^k$
 * Commitment scheme $CM$ with the above properties
@@ -207,17 +207,17 @@ Here is the great diagram made by the authors themselves (prover part is in blac
 
 Let's make a few observations from this diagram. 
 
-We can see the protocol runs in a recursive loop. At each step of the loop, $\mathbf{A}$ and $\mathbf{B}$  **and** the **commitment keys size are halving** in size, the variable $m$ tracks the current size. The "compressed" vectors and keys are passed into the same procedure until we reach a length of 1. This explains the logarithmic nature of the scheme (there are $log(2^k)=k$ steps)! 
+We can see the protocol runs in a recursive loop. At each step of the loop, $\mathbf{A}$ and $\mathbf{B}$  *and* the commitment keys size are *halving* in size; the variable $m$ tracks the current size. The "compressed" vectors and keys are passed into the same procedure until we reach a length of 1. This explains the logarithmic nature of the scheme (there are $log(2^k)=k$ steps)! 
 We can observe similarities with the small example shown in the previous section:
-* $z_l =  \lt \mathbf{a}_{[m':]},\mathbf{b}_{[:m']} \gt  = \prod e(A_{m' + i},B_{i})$ is the left cross product $l$
+* $z_l =  \lt \mathbf{a}\_{[m':]},\mathbf{b}\_{[:m']} \gt  = \prod e(A_{m' + i},B_{i})$ is the left cross product $l$
 * $z_r = \prod\limits_{i=0}^{m'} e(A_{i},B_{m' + i})$ is the right cross product $r$
 * $a' = \sum\limits_{i=0}^{m'} a_{i} + xa_{m' + i}$ is the "compression" of the $\mathbf{A}$ vector (size halves after this step)
 * $b' = \sum\limits_{i=0}^{m'} b_{i} + x^{-1}b_{m' + i}$ is the "compression" of the $\mathbf{B}$ vector (size halves after this step)
 
 
-What GIPA is doing on top is **to commit to both $z_l$ and $z_r$** at each step of the reduction using the commitment scheme provided. Indeed, the prover will return to the verifier all $z_l$, $z_r$, $C_l$ and $C_r$ at each step, so he needs to commit to these values at each step. Given we now use a commitment scheme, we also need to "compress" the commitment keys the same way, that's what $ck_1'$ and $ck_2'$ are doing. 
+What GIPA is doing on top is *committing to both $z_l$ and $z_r$* at each step of the reduction using the commitment scheme provided. Indeed, the prover will return to the verifier all $z_l$, $z_r$, $C_l$ and $C_r$ at each step, so he needs to commit to these values at each step. Given we now use a commitment scheme, we also need to "compress" the commitment keys the same way, that's what $ck_1'$ and $ck_2'$ are doing. 
 
-If you look closely at the verifier computations (ex. $ck_1' = ck_{1,[:m']} + x^{-1}\cdot ck_{1,[m':]}$), you can notice the **verifier is doing a linear amount of work** (the first step operates on $n$-sized keys). This contradicts our goals, however, later on, we will see how to make the prover compute the final commitment keys for the verifier and let the verifier quickly verify their validity. This allows the verifier to only perform a logarithmic number of operations.
+If you look closely at the verifier computations (ex. $ck_1' = ck_{1,[:m']} + x^{-1}\cdot ck_{1,[m':]}$), you can notice the *verifier is doing a linear amount of work* (the first step operates on $n$-sized keys). This contradicts our goals, however, later on, we will see how to make the prover compute the final commitment keys for the verifier and let the verifier quickly verify their validity. This allows the verifier to only perform a logarithmic number of operations.
 
 #### Non interactive proof
 
@@ -226,7 +226,7 @@ $$
 x = Hash(z_l,z_r,C_l,C_r)
 $$
 
-This is what is usually called the *[Fiat Shamir heuristic](https://en.wikipedia.org/wiki/Fiat%E2%80%93Shamir_heuristic)* which can turn interactive proofs to non-interactive via the use of hash functions. Usually, using Fiat-Shamir *reduces* the security of the scheme so the security parameters have to be *higher*. It is even more the case in the recursive loops where the reductions in security compound. 
+This is what is usually called the [Fiat Shamir heuristic](https://en.wikipedia.org/wiki/Fiat%E2%80%93Shamir_heuristic) which can turn interactive proofs to non-interactive via the use of hash functions. Usually, using Fiat-Shamir *reduces* the security of the scheme so the security parameters have to be *higher*. It is even more the case in the recursive loops where the reductions in security compound. 
 
 Interestingly, the security proof of this aggregation scheme use a different model (algebraic commitment model) without using the Fiat-Shamir reduction and thereby **does not suffer from the usual reduction in security** !
 
@@ -238,7 +238,7 @@ In this section, we are exploring one instantiation of GIPA called TIPP required
 
 Let's present the commitment scheme the original paper presents to be used for TIPP:
 $$
-ck = (\mathbf{V} = \{H^{\beta^{2i}}\}_{i=0}^{n-1},\mathbf{W} = \{G^{\alpha^{2i}}\}_{i=0}^{n-1},1 \in \mathbb{G_t})\\
+ck = (\mathbf{V} = \{H^{\beta^{2i}}\}\_{i=0}^{n-1},\mathbf{W} = \{G^{\alpha^{2i}}\}_{i=0}^{n-1},1 \in \mathbb{G_t})\\
 m = (\mathbf{A} \in \mathbb{G_1^n},\mathbf{B} \in \mathbb{G_2^n},\prod e(A_i,B_i) \in \mathbb{G_t})\\
 CM(ck,m) = (\prod e(A_i,V_i),\prod e(W_i,B_i), \prod e(A_i,B_i))
 $$
