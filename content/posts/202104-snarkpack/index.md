@@ -211,7 +211,7 @@ We can observe similarities with the small example shown in the previous section
 
 What GIPA is doing on top is *committing to both $z_l$ and $z_r$* at each step of the reduction using the commitment scheme provided. Indeed, the prover will return to the verifier all $z_l$, $z_r$, $C_l$ and $C_r$ at each step, so he needs to commit to these values at each step. Given that we now use a commitment scheme, we also need to "compress" the commitment keys the same way; that's what $ck_1'$ and $ck_2'$ are doing.
 
-If you look closely at the verifier computations (ex. $ck_1' = ck_{1,[:m']} + x^{-1}\cdot ck_{1,[m':]}$), you can notice the *verifier is doing a linear amount of work* (the first step operates on $n$-sized keys). This contradicts our goals; however, later on, we will see how to make the prover compute the final commitment keys for the verifier and let the verifier quickly verify their validity. This allows the verifier to only perform a *logarithmic* number of operations.
+If you look closely at the verifier computations (ex. $ck_1' = ck_{1,[:m']} + x^{-1}\cdot ck_{1,[m':]}$), you can notice the verifier is doing a linear amount of work (the first step operates on $n$-sized keys). This contradicts our goals; however, later on, we will see how to make the prover compute the final commitment keys for the verifier and let the verifier quickly verify their validity. This allows the verifier to only perform a logarithmic number of operations.
 
 #### Non-interactive proof
 
@@ -556,9 +556,9 @@ e(A,B) = FinalExponentation(MillerLoop(A,B))
 $$
 
 The Miller loop returns a point on $\mathbb{F_{p^{12}}}$, and is able to perform the
-computation on any number of *pairs* of points at once. FinalExponentiation maps
+computation on any number of pairs of points at once. FinalExponentiation maps
 the $\mathbb{F_{p^{12}}}$ point to the right subgroup called $G_t$. As it turns
-out, **the most expensive operation is the final exponentation** because the
+out, the most expensive operation is the final exponentation because the
 exponent is large. For the rest of the document, $FE$ represents the
 FinalExponentiation and $ML$ the MillerLoop.
 
