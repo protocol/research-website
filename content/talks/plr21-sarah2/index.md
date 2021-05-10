@@ -41,7 +41,7 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: "Protocol Labs Researcher Sarah Azouvi presents her research on game theoretic models of security for cryptocurrencies."
+abstract: "Protocol Labs Researcher Sarah Azouvi presents her work on game theoretic models of security for cryptocurrencies. This work was originally presented at the Cryptoeconomic Systems Conference at MIT in March 2020."
 
 ---
 
