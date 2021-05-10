@@ -4,7 +4,7 @@ title: "SnarkPack: How to aggregate SNARKs efficiently"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-05-01
+date: 2021-05-10
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -39,14 +39,13 @@ draft: false
 
 *A guided dive into the cryptographic techniques of SnarkPack*
 
-This post exposes the inner workings of SnarkPack, a practical scheme to aggregate Groth16 proofs, a derivation of the Inner Pairing Product work of [Bunz et al.](https://eprint.iacr.org/2019/1177), and its application to Filecoin. It explains Groth16 proofs, the inner product argument, and the difference between the original IPP [paper](https://eprint.iacr.org/2019/1177) and our modifications. This posts ends by showing the performance of our scheme and the optimizations we made to attain that performance.
+This post exposes the inner workings of SnarkPack, a practical scheme to aggregate Groth16 proofs, a derivation of the Inner Pairing Product work of [Bünz et al.](https://eprint.iacr.org/2019/1177), and its application to Filecoin. It explains Groth16 proofs, the inner product argument, and the difference between the original IPP [paper](https://eprint.iacr.org/2019/1177) and our modifications. This posts ends by showing the performance of our scheme and the optimizations we made to attain that performance.
 
 **TLDR**: SnarkPack can aggregate 8192 proofs in 12 seconds, producing a proof which is 38x smaller in size and can be verified in 48ms, including deserialization — 11x faster than batch verification. The scheme scales logarithmically, yielding an exponentially faster verification scheme than batching: the more you aggregate, the better.
 
 
 **Scope**: This post is not for experienced cryptographers; the goal is that
-anybody with a high school math level can follow along. For a more formal
-description of the scheme, please refer to our [paper](https://eprint.iacr.org/2021/529).
+anybody with some mathematical background can follow along. For a more formal description of the scheme, please refer to our [paper](https://eprint.iacr.org/2021/529).
 
 **Table of Contents**
 
@@ -64,7 +63,7 @@ Due to its rapid and massive adoption, systems that use SNARKs face a **scalabil
 
 Multiple solutions have been developed to face this challenge with respect to SNARKs. The most recent and efficient is based on the notion of **proof carrying data**, which enables fully recursive proof system: one proof can verify another proof and the level of recursion is infinite. This is the approach that the [Mina protocol](https://minaprotocol.com) and [Halo2](https://github.com/zcash/halo2) (from Zcash) are currently pursuing. Unfortunately, this approach requires a complete new proof system which is incompatible with the current Groth16 proof system. Ideally, we'd like to be able to scale the current proofs that we have now in production.
 
-Fortunately, a [result](https://eprint.iacr.org/2019/1177) that came out in 2019 from Bunz, Maller,  Mishra ,  Tyagi, and Vesely showed a rather elegant solution to **aggregate Groth16 proofs** together, yielding a logarithmic-sized proof and not requiring any change in the proof system itself! In other words, one can aggregate current proofs and bring scalability to the current systems without drastic changes!
+Fortunately, a [result](https://eprint.iacr.org/2019/1177) that came out in 2019 from Bünz, Maller,  Mishra , Tyagi, and Vesely showed a rather elegant solution to **aggregate Groth16 proofs** together, yielding a logarithmic-sized proof and not requiring any change in the proof system itself! In other words, one can aggregate current proofs and bring scalability to the current systems without drastic changes!
 
 After discovering this paper, we started looking to see if it could be applied to Filecoin. We were really excited about the potential scalability it could bring.
 
@@ -125,7 +124,7 @@ Let's first see a small example to understand the principles behind GIPA.
 
 #### Example
 
-The idea at its core,explained in the original paper, is relatively simple. For the sake of simplicity, let's look at an example where vectors are of length $2$. We assume the goal is to convince a verifier that $e(A_1,B_1) * e(A_2,B_2) = c$ such that the verifier doesn't have to compute everything, where $A_i = G^{a_i}$ and $B_i = H^{b_i}$.
+The idea at its core, explained in the original paper, is relatively simple. For the sake of simplicity, let's look at an example where vectors are of length $2$. We assume the goal is to convince a verifier that $e(A_1,B_1) * e(A_2,B_2) = c$ such that the verifier doesn't have to compute everything, where $A_i = G^{a_i}$ and $B_i = H^{b_i}$.
 
 One way do to that is to do an interactive proof over a "cross computation":
 * Prover computes
@@ -180,7 +179,7 @@ However, GIPA requires an inner product commitment scheme $CM$ with the followin
     * $CM(ck, M) + CM(ck,M') = CM(ck, M + M')$
 * The sum of two commitments to the *same message* under *two different commitment keys* is equal to a commitment of the message under the *sum of the keys*
     * $CM(ck, M) + CM(ck', M) = CM(ck + ck', M)$
-* And a *collapsing* property that we for sake of simplicity we will not expose here as it is not important to understand how the scheme works in this context.
+* And a *collapsing* property that for sake of simplicity we will not expose here as it is not important to understand how the scheme works in this context.
 
 For example, one such commitment scheme over vectors of length $n$ can be:
 * $ck = (\mathbf{V} \in \mathbb{G_2^n},\mathbf{W} \in \mathbb{G_1^n},1 \in \mathbb{G_t})$
@@ -624,4 +623,4 @@ We have seen how can we prove an inner product in an efficient manner and how th
 
 ## Acknowledgements
 
-Thank you to Mary Maller, Benedikt Bunz, Pratyush Mishra, and Noah Vesely for insightful discussion and helping us understand their scheme.  Thank you to Anca & Porcuquine, whose insightful comments improved this post. And thank you, dignifiedquire, whose help on the Rust implementation has led to substantial improvements to the scheme and new Rust knowledge for this author.
+Thank you to Mary Maller, Benedikt Bünz, Pratyush Mishra, and Noah Vesely for insightful discussion and for helping us to understand their scheme.  Thank you to Anca & Porcuquine, whose insightful comments improved this post. And thank you, dignifiedquire, for help on the Rust implementation which led to substantial improvements to the scheme and new Rust knowledge for this author.
