@@ -618,7 +618,7 @@ the checks. In the implementation, the verifier samples from `/dev/urandom`.
 
 ## Conclusion
 
-We have seen how can we prove an inner product in an efficient manner and how this is used to aggregate Groth16 proofs. Our implementation is fast and is being implemented in Filecoin (FIP 13 is [open](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0013.md)!). If you're interested in learning more,  have comments about this topics, or want to find out more about what we do at Protocol Labs Research, check out our [CryptoNetLab page](/groups/cryptonetlab), join the discussion in our [GitHub forum](https://github.com/protocol/CryptoNetLab/discussions), or reach out via [email](mailto:research@protocol.ai").
+We have seen how can we prove an inner product in an efficient manner and how this is used to aggregate Groth16 proofs. Our implementation is fast and is being implemented in Filecoin (FIP 13 is [open](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0013.md)!). If you're interested in this topic or want to find out more about what we do at Protocol Labs Research, check out our [CryptoNetLab page](/groups/cryptonetlab), join the discussion in our [GitHub forum](https://github.com/protocol/CryptoNetLab/discussions), or reach out via [email](mailto:research@protocol.ai).
 
 
 ## Acknowledgements
