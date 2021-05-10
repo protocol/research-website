@@ -41,7 +41,7 @@ draft: false
 
 This post exposes the inner workings of SnarkPack, a practical scheme to aggregate Groth16 proofs, a derivation of the Inner Pairing Product work of [Bünz et al.](https://eprint.iacr.org/2019/1177), and its application to Filecoin. It explains Groth16 proofs, the inner product argument, and the difference between the original IPP [paper](https://eprint.iacr.org/2019/1177) and our modifications. This posts ends by showing the performance of our scheme and the optimizations we made to attain that performance.
 
-**TLDR**: SnarkPack can aggregate 8192 proofs in 12 seconds, producing a proof which is 38x smaller in size and can be verified in 48ms, including deserialization — 11x faster than batch verification. The scheme scales logarithmically, yielding an exponentially faster verification scheme than batching: the more you aggregate, the better.
+**TLDR**: SnarkPack can aggregate 8192 proofs in 8 seconds, producing a proof which is 38x smaller in size and can be verified in 33ms, including deserialization. The scheme scales logarithmically, yielding an exponentially faster verification scheme than batching: the more you aggregate, the faster you can verify a proof.[^1]
 
 
 **Scope**: This post is not for experienced cryptographers; the goal is that
@@ -504,7 +504,7 @@ That's about it !
 
 We implemented the scheme in Rust, using our [Bellman fork](https://github.com/zkcrypto/bellman/) called [Bellperson](https://github.com/filecoin-project/bellperson). The implementation is derived from the implementation in [Arkworks](https://github.com/arkworks-rs/ripp/) by the authors of the original paper. All benchmarks were performed on a 64-thread/32-core AMD Ryzen™ Threadripper CPU. All proofs are Groth16 proofs with 350 public inputs, which is similar to the proofs posted by Filecoin miners.
 
-**TLDR**: We can aggregate more than 8192 proofs in around 12 seconds. Aggregated proofs are smaller than 40 KiB (versus 1.1 MiB with individual proofs) and can be verified in 48ms, including ~20 ms for deserialization! We compared the verification time with batch verification of Groth16 (as defined in [Zcash specs](https://zips.z.cash/protocol/protocol.pdf)) and aggregation becomes superior from 256 proofs.
+**TLDR**: We can aggregate more than 8192 proofs in around 8 seconds. Aggregated proofs are smaller than 40 KiB (versus 1.1 MiB with individual proofs) and can be verified in 33ms, including deserialization! We compared the verification time with batch verification of Groth16 (as defined in [Zcash specs](https://zips.z.cash/protocol/protocol.pdf)) and aggregation becomes superior from 256 proofs.
 ![](https://i.imgur.com/4mBHUUj.png)
 ![](https://i.imgur.com/g2sWBth.png)
 ![](https://i.imgur.com/hcKPzrP.png)
@@ -624,3 +624,5 @@ We have seen how can we prove an inner product in an efficient manner and how th
 ## Acknowledgements
 
 Thank you to Mary Maller, Benedikt Bünz, Pratyush Mishra, and Noah Vesely for insightful discussion and for helping us to understand their scheme.  Thank you to Anca & Porcuquine, whose insightful comments improved this post. And thank you, dignifiedquire, for help on the Rust implementation which led to substantial improvements to the scheme and new Rust knowledge for this author.
+
+[^1]: The performance numbers in this post have been updated to reflect new benchmark results: our initial benchmarks were run using the [paired](https://github.com/filecoin-project/paired/) library. However, we recently switched to the much faster [blst](https://github.com/filecoin-project/blstrs/) library, resulting in significant improvements.
