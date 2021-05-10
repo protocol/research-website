@@ -625,4 +625,4 @@ We have seen how can we prove an inner product in an efficient manner and how th
 
 Thank you to Mary Maller, Benedikt Bünz, Pratyush Mishra, and Noah Vesely for insightful discussion and for helping us to understand their scheme.  Thank you to Anca & Porcuquine, whose insightful comments improved this post. And thank you, dignifiedquire, for help on the Rust implementation which led to substantial improvements to the scheme and new Rust knowledge for this author.
 
-[^1]: The performance numbers in the post have been updated to reflect new benchmark results: our initial benchmarks were running using the [paired](https://github.com/filecoin-project/paired/) library. However, we recently switched to the much faster [blst](https://github.com/filecoin-project/blstrs/) library, resulting in significant improvements.
+[^1]: The performance numbers in this post have been updated to reflect new benchmark results: our initial benchmarks were run using the [paired](https://github.com/filecoin-project/paired/) library. However, we recently switched to the much faster [blst](https://github.com/filecoin-project/blstrs/) library, resulting in significant improvements.
