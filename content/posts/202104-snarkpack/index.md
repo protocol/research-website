@@ -41,7 +41,7 @@ draft: false
 
 This post exposes the inner workings of SnarkPack, a practical scheme to aggregate Groth16 proofs, a derivation of the Inner Pairing Product work of [Bünz et al.](https://eprint.iacr.org/2019/1177), and its application to Filecoin. It explains Groth16 proofs, the inner product argument, and the difference between the original IPP [paper](https://eprint.iacr.org/2019/1177) and our modifications. This posts ends by showing the performance of our scheme and the optimizations we made to attain that performance.
 
-**TLDR**: SnarkPack can aggregate 8192 proofs in 8 seconds, producing a proof which is 38x smaller in size and can be verified in 33ms, including deserialization. The scheme scales logarithmically, yielding an exponentially faster verification scheme than batching: the more you aggregate, the faster you can verify a proof.
+**TLDR**: SnarkPack can aggregate 8192 proofs in 8 seconds, producing a proof which is 38x smaller in size and can be verified in 33ms, including deserialization. The scheme scales logarithmically, yielding an exponentially faster verification scheme than batching: the more you aggregate, the faster you can verify a proof.[^1]
 
 
 **Scope**: This post is not for experienced cryptographers; the goal is that
@@ -624,3 +624,5 @@ We have seen how can we prove an inner product in an efficient manner and how th
 ## Acknowledgements
 
 Thank you to Mary Maller, Benedikt Bünz, Pratyush Mishra, and Noah Vesely for insightful discussion and for helping us to understand their scheme.  Thank you to Anca & Porcuquine, whose insightful comments improved this post. And thank you, dignifiedquire, for help on the Rust implementation which led to substantial improvements to the scheme and new Rust knowledge for this author.
+
+[^1]: The performance numbers in the post have been updated to reflect new benchmark results: our initial benchmarks were running using the [paired](https://github.com/filecoin-project/paired/) library. However, we recently switched to the much faster [blst](https://github.com/filecoin-project/blstrs/) library, resulting in significant improvements.
