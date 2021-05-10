@@ -4,7 +4,7 @@ title: "SoK: Tools for game theoretic models of security for cryptocurrencies"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-02-09
+date: 2021-05-03
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
