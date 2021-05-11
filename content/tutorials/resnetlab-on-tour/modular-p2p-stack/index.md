@@ -14,14 +14,11 @@ resources:
     src: featured.jpg
 
 relevantLinks: [
-  ["dag.ipfs.io", "https://dag.ipfs.io"],
-  ["cid.ipfs.io", "https://cid.ipfs.io"],
-  ["ProtoSchool Tutorial on Content Addressing", "https://proto.school/content-addressing"],
-  ["ProtoSchool Tutorial on Merkle DAGs", "https://proto.school/merkle-dags"],
-  ["ProtoSchool Tutorial on the Anatomy of a CID", "https://proto.school/anatomy-of-a-cid"],
-  ["ProtoSchool Tutorial on Verifiable Links", "https://proto.school/basics"],
-  ["Open Problem on Hash-Linked Data Graph Layouts", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/HASH_LINKED_DATA_GRAPH_LAYOUTS.md"],
-  ["Open Problem on Human Readable Naming", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/HUMAN_READABLE_NAMING.md"]
+  ["Open Problem on Routing at Scale", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ROUTING_AT_SCALE.md"],
+  ["Open Problem on Preserve User Privacy", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PRESERVE_USER_PRIVACY.md"],
+  ["Open Problem on PubSub at Scale", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PUBSUB_AT_SCALE.md"],
+  ["ProtoSchool Tutorial on libp2p", "https://proto.school/introduction-to-libp2p"],
+  ["libp2p docs", "https://docs.libp2p.io"]
 ]
 
 # Sidebar icons
