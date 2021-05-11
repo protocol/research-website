@@ -358,7 +358,7 @@ Now we have a formula that express the commitment key at the last step computabl
 
 How can we use this trick now? Well, let's consider the following polynomial, with $l = log(n)$ and $x_i$ being the $i-th$ challenge generated:
 $$
-f(y) = \prod_{i=0}^{log(n)-1} (1 + (x_{l-i}y)^{2^i})
+f(y) = \prod_{i=0}^{log(n)-1} (1 + x_{l-i-1}y^{2^i})
 $$
 
 We just showed that the last commitment key $v$ is equal to $H^{f(\alpha)}$!
