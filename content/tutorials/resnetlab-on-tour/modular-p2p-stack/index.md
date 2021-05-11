@@ -35,7 +35,8 @@ links:
 
 libp2p is the  Web 3.0 library of choice for decentralised process addressing. In this module, you will hear about libp2p’s modular and composable building blocks for P2P networking, which include:
 
-  - Transport protocols, pubsub protocols, and multiplexers
+  - Transport and pubsub protocols
+  - Multiplexers
   - Secure channels and NAT Traversal
   - Peer discovery, content routing, and peer routing
 
