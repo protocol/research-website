@@ -1,5 +1,5 @@
 ---
-title: Content addressing
+title: The modular P2P networking stack
 
 publishDate: 2020-05-11
 
@@ -27,19 +27,19 @@ relevantLinks: [
 # Sidebar icons
 links:
   - name: PDF Slides
-    url: https://www.slideshare.net/IoannisPsaras/module-content-addressing-in-ipfs
+    url: https://www.slideshare.net/IoannisPsaras/module-the-modular-p2-p-networking-stack/IoannisPsaras/module-the-modular-p2-p-networking-stack
     icon: download
   - name: Google Slides
-    url: https://docs.google.com/presentation/d/1Ym2jGkQAnK4NftPYJPsffQKsxZoh5hf9o-PPsAxoAnw/edit?usp=sharing
+    url: https://docs.google.com/presentation/d/190-e2PvZ9OPu3oLrT1j2Qf5RmWygV-7txpYrrcnip04/edit?usp=sharing
     icon: download
 
 
 ---
 
-Learn all about the most foundational principle of the IPFS architecture: content addressing and IPFS's content identifier (or CID). In this module, you'll hear about:
+libp2p is the ultimate Web3.0 library of choice for decentralised process addressing. In this module, you will hear about all of libp2p’s modular and composable building blocks for P2P networking, which include:
 
-  - How IPFS addresses files
-  - How IPFS transforms files into Merkle DAGs
-  - The detailed anatomy of a CID
+  - Transport protocols, pubsub protocols and multiplexers
+  - Secure channels and NAT Traversal
+  - Peer discovery, content- and peer-routing
 
 <!--more-->
