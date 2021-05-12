@@ -15,7 +15,7 @@ resources:
 
 relevantLinks: [
   ["Open Problem on Routing at Scale", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ROUTING_AT_SCALE.md"],
-  ["Open Problem on Preserve User Privacy", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PRESERVE_USER_PRIVACY.md"],
+  ["Open Problem on Preserving User Privacy", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PRESERVE_USER_PRIVACY.md"],
   ["Open Problem on PubSub at Scale", "https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PUBSUB_AT_SCALE.md"],
   ["ProtoSchool Tutorial on libp2p", "https://proto.school/introduction-to-libp2p"],
   ["libp2p docs", "https://docs.libp2p.io"]
