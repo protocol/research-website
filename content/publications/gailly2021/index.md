@@ -17,7 +17,7 @@ venue_location: virtual
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date: 2021-04-19
+venue_date: 2021-04-21
 
 # DOI, if available
 doi:
