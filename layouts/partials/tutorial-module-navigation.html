@@ -8,7 +8,7 @@
     <nav class="flex flex-row flex-wrap md:flex-nowrap">
 
       <div class="md:w-1/2 md:flex-1 core pb-4">
-        <h3 class="block pb-4 mb-6" style="font-size:22px; border-bottom: 2px solid #FF9900;">Core Modules</h3>
+        <h3 class="block pb-4 mb-6" style="font-size:22px; border-bottom: 2px solid #FF9900;">Core modules</h3>
         <ul style="column-count:2;">
           {{ range .RegularPages }}
             {{ if eq .Params.isCore true }}
@@ -18,14 +18,14 @@
         </ul>
       </div>
       <div class="md:w-1/2 md:flex-1 elective pb-4">
-        <h3 class="block pb-4 mb-6" style="font-size:22px; border-bottom: 2px solid #FF9900;">Elective Modules</h3>
-          <p class="pt-1">Coming Soon: <a class="text-blue hover:underline" href="#footer">Join our mailing list!</a></p>
+        <h3 class="block pb-4 mb-6" style="font-size:22px; border-bottom: 2px solid #FF9900;">Elective modules</h3>
         <ul style="column-count:2;">
           {{ range .RegularPages }}
             {{ if eq .Params.isCore false }}
             <li class="mb-2"> <a class="mr-4 text-blue hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
             {{ end }}
           {{ end }}
+          <li class="mb-2">More coming soon. <a class="text-blue hover:underline" href="#footer">Join our mailing list!</a>
         </ul>
       </div>
     </nav>
