@@ -28,7 +28,10 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  -
+  - cryptocomputelab
+  - cryptoeconlab
+  - cryptonetlab
+  - resnetlab
 
 # Not used
 draft: false
@@ -37,7 +40,7 @@ draft: false
 
 Protocol Labs Research has been growing rapidly, with the launch of [CryptoComputeLab](/groups/cryptocomputelab/), [CryptoEconLab](/groups/cryptoeconlab/), and [CryptoNetLab](/groups/cryptonetlab/), a number of [new](/publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/) [projects](/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/), and new researchers, advisors, and support staff [joining the team](/categories/team/).
 
-Yet, this is only the beginning of our ambitious roadmap for 2021, and we need your help to execute it! We are currently hiring for a number of roles, including:
+Yet this is only the beginning of our ambitious roadmap for 2021, and we need your help to execute it! We are currently hiring for a number of roles, including:
 
 **Support and Management**
 * Research Administrator
