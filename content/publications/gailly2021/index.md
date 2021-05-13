@@ -13,7 +13,7 @@ date: 2021-05-13
 venue: ZKProof Workshop
 
 # Venue Location
-venue_location: virtual
+venue_location: 
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
