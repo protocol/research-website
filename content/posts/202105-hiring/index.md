@@ -28,17 +28,10 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-<<<<<<< HEAD
   - cryptocomputelab
   - cryptoeconlab
   - cryptonetlab
   - resnetlab
-=======
-  - CryptoComputeLab
-  - CryptoEconLab
-  - CryptoNetLab
-  - ResNetLab
->>>>>>> 1fd4459832d6d56c9f8d436c7d6b1dc7242a21c6
 
 # Not used
 draft: false
