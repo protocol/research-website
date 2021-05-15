@@ -60,11 +60,11 @@
           <p class="font-semibold text-md leading-relaxed pt-8 mb-8">"{{ .Params.quote }}"</p>
         {{ end }}
 
-        <div class="page-content leading-relaxed mb-4">{{ .Content }}</div>
+        <div class="page-content leading-relaxed mb-6">{{ .Content }}</div>
 
         {{ if .Params.interests }}
-          <h2 class="font-semibold mb-2 pt-8">Areas of Expertise</h2>
-          <p>{{ delimit .Params.interests ", "}}</p>
+          <h2 class="font-semibold mb-2">Areas of Expertise</h2>
+          <p class="mb-8">{{ delimit .Params.interests ", "}}</p>
         {{ end }}
 
 
