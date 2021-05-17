@@ -40,7 +40,7 @@ draft: false
 
 ---
 
-We were delighted to present our brand new [ResNetLab on Tour](https://research.protocol.ai/tutorials/resnetlab-on-tour/) programme to the vibrant community of the [Berkeley’s Blockchain Innovation Hub](https://blockchain.berkeley.edu/) on April 28th and 29th!
+We were delighted to present our brand new [ResNetLab on Tour](/tutorials/resnetlab-on-tour/) programme to the vibrant community of the [Berkeley’s Blockchain Innovation Hub](https://blockchain.berkeley.edu/) on April 28th and 29th!
 
 The ResNetLab on Tour programme is a one-stop-shop for all things IPFS and Web3.0. We were joined by more than 20 students, researchers, and academics in what proved to be a very interactive event with lots of discussion. 
 
