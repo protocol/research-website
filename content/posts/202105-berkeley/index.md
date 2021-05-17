@@ -57,7 +57,7 @@ We received some really great questions, and we would like to share our answers 
 
 A: There is no single way of integrating blockchains into the current web ecosystem. Different applications have different needs, and different platforms pose different requirements. Overall, blockchain technology offers a *layer of trust* between different participants in a system without third-parties or large providers having to orchestrate these relationships. This gives users the ability to become both clients and providers of a system, collaborating to provide large scale services without having to resort to large providers. Blockchain technology lowers the barriers for the deployment of new systems and disruptive applications. Individuals can collaborate to create new systems and compete against big tech providers. Additionally, this layer of trust offers the ability to deploy systems with an enhanced level of privacy and ownership for users. 
 
-You can take [Filecoin](https://filecoin.io/) as an example of a decentralised and incentivised storage network. Miners provide storage and participate in the blockchain network, proving that they indeed keep data stored according to the deals they signed. Then, there are applications that can use the base storage layer on which to build different features, optimisation, and functionality. For instance, there can be file storage applications, similar to the cloud services that we have today: see for instance Chainsafe’s [Files](https://files.chainsafe.io/), or video storage and streaming services: see [file.video](https://file.video). If any of those businesses shut down, the users’ data will still be available on the Filecoin network -- of course, without the functionality and features that the applications provide.
+You can take [Filecoin](https://filecoin.io/) as an example of a decentralised and incentivised storage network. Miners provide storage and participate in the blockchain network, proving that they indeed keep data stored according to the deals they signed. Then, there are applications that can use the base storage layer on which to build different features, optimisation, and functionality. For instance, there can be file storage applications, similar to the cloud services that we have today: see for instance Chainsafe’s [Files](https://files.chainsafe.io/), or video storage and streaming services such as [file.video](https://file.video). If any of those businesses shut down, the users’ data will still be available on the Filecoin network -- of course, without the functionality and features that the applications provide.
 
 
 *Q: Is there only one IPFS? Or are there variants like the several different blockchains?*
@@ -69,7 +69,7 @@ There is also the [IPFS Cluster](https://cluster.ipfs.io) construction, accordin
 
 *Q: Is there content that IPFS isn’t able to store? What about dynamically generated files?*
 
-A: Any type of content can be stored in the IPFS network. Dynamic (or otherwise called “mutable”) content is also supported through the InterPlanetary Name System (IPNS). You can find a tutorial on Mutable Content on IPFS [here](https://research.protocol.ai/tutorials/resnetlab-on-tour/mutable-content/).
+A: Any type of content can be stored in the IPFS network. Dynamic (or otherwise called “mutable”) content is also supported through the InterPlanetary Name System (IPNS). You can find a tutorial on Mutable Content on IPFS [here](/tutorials/resnetlab-on-tour/mutable-content/).
 
 
 *Q: Does IPFS work like a blockchain? I have seen discussion of a consensus algorithm.*
@@ -82,7 +82,7 @@ A: Storing data on IPFS is free. Note, however, that data added to the IPFS netw
 
 *Q: How is IPFS different from BitTorrent?*
 
-A: Both IPFS and [BitTorrent](https://www.bittorrent.com/) are permissionless P2P networks. However, IPFS brings content-addressing into the picture, which provides a host of  benefits such as de-duplication and nearest-replica routing, self-certification, and integrity checking out of the box. These benefits significantly improve delivery performance and reduce both overhead and server and network load, in addition to providing the end user  with the power to check the integrity of the content they have received from the network. You can find more about the details and the benefits of content addressing in [this tutorial](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-addressing/).
+A: Both IPFS and [BitTorrent](https://www.bittorrent.com/) are permissionless P2P networks. However, IPFS brings content-addressing into the picture, which provides a host of  benefits such as de-duplication and nearest-replica routing, self-certification, and integrity checking out of the box. These benefits significantly improve delivery performance and reduce both overhead and server and network load, in addition to providing the end user  with the power to check the integrity of the content they have received from the network. You can find more about the details and the benefits of content addressing in [this tutorial](/tutorials/resnetlab-on-tour/content-addressing/).
 
 *Q: If you have a private IPFS cluster, is it easier to remove data? Is it costly to delete?*
 
@@ -90,7 +90,7 @@ A: IPFS Cluster nodes replicate state between them. When data is added or delete
 
 *Q: Are there restrictions on what type of data can be chunked? Can we chunk video content?*
 
-A: Any type of content can be chunked, added to the IPFS network, and retrieved in a chunk-based fashion. You can find more details about chunking in IPFS in the [IPFS documentation](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs). There are already products, such as https://file.video/, that use IPFS-style chunking and storage on Filecoin. A walkthrough of one of the many approaches can be found [here](https://blog.fission.codes/experimenting-with-hls-video-streaming-and-ipfs/).
+A: Any type of content can be chunked, added to the IPFS network, and retrieved in a chunk-based fashion. You can find more details about chunking in IPFS in the [IPFS documentation](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs). There are already products, such as file.video ((https://file.video), that use IPFS-style chunking and storage on Filecoin. A walkthrough of one of the many approaches can be found [here](https://blog.fission.codes/experimenting-with-hls-video-streaming-and-ipfs/).
 
 *Q: To what extent can chunking be customized per file?*
 
@@ -104,7 +104,7 @@ A: We should not see the shift to Web3.0 as a comprehensive move away from the a
 
 *Q: Are there built-in mechanisms to support versioning, e.g. how do you know that you have requested the latest (or original) version of a file or chunk?*
 
-A: IPFS builds on versioning, similar to git. Therefore, you can always have access to previous versions of a published document, as long as this is still being provided by the original publisher or another peer in the network. You can find out more about how IPFS deals with dynamic, mutable content in [this tutorial](https://research.protocol.ai/tutorials/resnetlab-on-tour/mutable-content/).
+A: IPFS builds on versioning, similar to git. Therefore, you can always have access to previous versions of a published document, as long as this is still being provided by the original publisher or another peer in the network. You can find out more about how IPFS deals with dynamic, mutable content in [this tutorial](/tutorials/resnetlab-on-tour/mutable-content/).
  
 *Q: Does Filecoin use IPFS for its content delivery?*
 
@@ -127,7 +127,7 @@ In brief, the sequence of content discovery and content exchange is as follows:
 2. In parallel to step 1, the requestor asks the DHT for the provider record of the CID that the requestor wants to fetch.
 3. When the requestor receives an answer either through step 1 or step 2, Bitswap connects to the peer that hosts the content and facilitates the content exchange.
  
-You can find more information about Bitswap in this [tutorial on Content Exchange](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-exchange/), this [paper](https://research.protocol.ai/publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/), and this [documentation page](https://docs.ipfs.io/concepts/bitswap/#bitswap).
+You can find more information about Bitswap in this [tutorial on Content Exchange](/tutorials/resnetlab-on-tour/content-exchange/), this [paper](/publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/), and this [documentation page](https://docs.ipfs.io/concepts/bitswap/#bitswap).
  
 *Q: How do you address the privacy implications of fetchers of content becoming temporary content providers?*
 
