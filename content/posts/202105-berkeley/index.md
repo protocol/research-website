@@ -60,7 +60,7 @@ A: There is no single way of integrating blockchains into the current web ecosys
 You can take [Filecoin](https://filecoin.io/) as an example of a decentralised and incentivised storage network. Miners provide storage and participate in the blockchain network, proving that they indeed keep data stored according to the deals they signed. Then, there are applications that can use the base storage layer on which to build different features, optimisation, and functionality. For instance, there can be file storage applications, similar to the cloud services that we have today: see for instance Chainsafe’s [Files](https://files.chainsafe.io/), or video storage and streaming services: see [file.video](https://file.video). If any of those businesses shut down, the users’ data will still be available on the Filecoin network -- of course, without the functionality and features that the applications provide.
 
 
-*Q: Is there only one IPFS? Or variants like the several different blockchains?*
+*Q: Is there only one IPFS? Or are there variants like the several different blockchains?*
 
 A: There is one public IPFS network, but running the IPFS stack does not mean that one has to connect to the public network. You can run the IPFS stack as a private network among the nodes of your network or users of your application. Furthermore, all of the protocols and constructions of the IPFS stack (e.g., libp2p, IPLD) can be used independently of the rest of the protocol stack.
 
@@ -72,7 +72,7 @@ There is also the [IPFS Cluster](https://cluster.ipfs.io) construction, accordin
 A: Any type of content can be stored in the IPFS network. Dynamic (or otherwise called “mutable”) content is also supported through the InterPlanetary Name System (IPNS). You can find a tutorial on Mutable Content on IPFS [here](https://research.protocol.ai/tutorials/resnetlab-on-tour/mutable-content/).
 
 
-*Q: Does IPFS work like a blockchain? I have seen discussions on a consensus algorithm.*
+*Q: Does IPFS work like a blockchain? I have seen discussion of a consensus algorithm.*
 
 A: IPFS does not work like a blockchain and neither does it use a blockchain. IPFS is a decentralised P2P and content-addressable storage network. IPFS is ideal for storage of blockchain data and is being used in this capacity by several blockchains.
 
@@ -108,7 +108,7 @@ A: IPFS builds on versioning, similar to git. Therefore, you can always have acc
  
 *Q: Does Filecoin use IPFS for its content delivery?*
 
-*A: Yes, Filecoin can use IPFS for content delivery. There are already tools, such as [Textile’s](https://www.textile.io/) Powergate that provide this functionality. You can read more about it in [Powergate’s documentation page](https://docs.textile.io/powergate/).*
+A: Yes, Filecoin can use IPFS for content delivery. There are already tools, such as [Textile’s](https://www.textile.io/) Powergate that provide this functionality. You can read more about it in [Powergate’s documentation page](https://docs.textile.io/powergate/).
  
 *Q: How fast is IPFS in practice, particularly compared to regular Web 2.0?*
 
