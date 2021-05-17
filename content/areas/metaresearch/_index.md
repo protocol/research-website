@@ -9,4 +9,4 @@ resources:
   - src: icon.png
 ---
 
-Metaresearch is the discipline that investigates how scientific innovation occurs. It encompases work in the history, philosophy, and economics of science; the effects of incentive systems in research; the evaluation and validation of scientific data; and the dissemination of scientific knowledge, among other fields. Conducting metaresearch is an important component of optimizing our learning processes and accelerating innovation.
+Metaresearch is the investigation of how scientific innovation occurs. It encompases work in the history, philosophy, and economics of science; the effects of incentive systems in research; the evaluation and validation of scientific data; and the dissemination of scientific knowledge, among other fields. Conducting metaresearch is an important component of optimizing our learning processes and accelerating innovation.
