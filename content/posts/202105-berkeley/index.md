@@ -81,7 +81,7 @@ A: Using the IPFS network is free. Note, however, that data added to the IPFS ne
 
 *Q: How is IPFS different from BitTorrent?*
 
-A: Both IPFS and [BitTorrent](https://www.bittorrent.com/) are permissionless P2P networks. However, IPFS brings content-addressing into the picture, which provides a host of  benefits such as de-duplication and nearest-replica routing, self-certification, and integrity checking out of the box. These benefits significantly improve delivery performance and reduce both overhead and server and network load, in addition to providing the end user  with the power to check the integrity of the content they have received from the network. You can find more about the details and the benefits of content addressing in [this tutorial](/tutorials/resnetlab-on-tour/content-addressing/).
+A: Both IPFS and [BitTorrent](https://www.bittorrent.com/) are permissionless P2P networks and use content hashes as identifiers, albeit in different ways (see [this tutorial](/tutorials/resnetlab-on-tour/content-addressing/) to learn more about content addressing and how it's implemented in IPFS). However, IPFS provides a host of benefits that are very useful to a general-purpose system capable of providing anything from large files to whole websites trees. Some specific differences include the use of a global "swarm" for IPFS and the use of Merkle DAGs that allow for internal and external deduplication as well as random access into a DAG. Just as important are the UX differences, including browser support for native IPFS browsing and HTTP gateways that allow users to access websites stored on IPFS transparently.
 
 *Q: If you have a private IPFS cluster, is it easier to remove data? Is it costly to delete?*
 
