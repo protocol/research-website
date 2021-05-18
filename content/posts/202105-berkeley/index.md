@@ -64,7 +64,6 @@ You can take [Filecoin](https://filecoin.io/) as an example of a decentralised a
 
 A: There is one public IPFS network, but running the IPFS stack does not mean that one has to connect to the public network. You can run the IPFS stack as a private network among the nodes of your network or users of your application. Furthermore, all of the protocols and constructions of the IPFS stack (e.g., libp2p, IPLD) can be used independently of the rest of the protocol stack.
 
-There is also the [IPFS Cluster](https://cluster.ipfs.io) construction, according to which peers have to be added/accepted into the cluster to participate in the network. Data added to one of the cluster’s peers is exclusively replicated to the peers in the cluster. The cluster can be connected to the public IPFS network to access public content and interact with the rest of the peers in the network, but it  does not have to be.
 
 
 *Q: Is there content that IPFS isn’t able to store? What about dynamically generated files?*
