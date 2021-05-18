@@ -78,7 +78,7 @@ A: IPFS does not work like a blockchain and neither does it use a blockchain. IP
 
 *Q: What’s the pricing/cost of storing data on IPFS?*
 
-A: Storing data on IPFS is free. Note, however, that data added to the IPFS network is not automatically replicated to other nodes: in other words, IPFS does not provide availability guarantees. [Filecoin](https://filecoin.io), which builds on top of IPFS, is the persistence layer that provides availability guarantees for user data.
+A: Using the IPFS network is free. Note, however, that data added to the IPFS network is not automatically replicated to other nodes: in other words, IPFS does not provide availability guarantees. [Filecoin](https://filecoin.io), which builds on top of IPFS, is a persistence layer that provides availability guarantees for user data.
 
 *Q: How is IPFS different from BitTorrent?*
 
