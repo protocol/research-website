@@ -108,7 +108,7 @@ A: IPFS CIDs are immutable. Therefore, you can always have access to previous ve
  
 *Q: Does Filecoin use IPFS for its content delivery?*
 
-A: Yes, Filecoin can use IPFS for content delivery. There are already tools, such as [Textile’s](https://www.textile.io/) Powergate that provide this functionality. You can read more about it in [Powergate’s documentation page](https://docs.textile.io/powergate/).
+A: Yes, Filecoin can use IPFS for content delivery, but it is not restricted to IPFS only. There are already tools, such as [Textile’s](https://www.textile.io/) Powergate that provide this functionality. You can read more about it in [Powergate’s documentation page](https://docs.textile.io/powergate/).
  
 *Q: How fast is IPFS in practice, particularly compared to regular Web 2.0?*
 
