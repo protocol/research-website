@@ -60,31 +60,68 @@
           <p class="font-semibold text-md leading-relaxed pt-8 mb-8">"{{ .Params.quote }}"</p>
         {{ end }}
 
-        <div class="page-content leading-relaxed mb-4">{{ .Content }}</div>
+        <div class="page-content leading-relaxed mb-6">{{ .Content }}</div>
 
         {{ if .Params.interests }}
-          <h2 class="font-semibold mb-2 pt-8">Areas of Expertise</h2>
-          <p>{{ delimit .Params.interests ", "}}</p>
+          <h2 class="font-semibold mb-2">Areas of Expertise</h2>
+          <p class="mb-8">{{ delimit .Params.interests ", "}}</p>
         {{ end }}
 
-        {{ if .Pages }}
-          <h2 class="font-semibold mb-4 pt-8">Latest work</h2>
-          <div class="">
-            {{ range .Pages }}
-              <div class="block mb-8 group">
-                <p class="text-sm text-gray-700 mb-2">
-                  <span>{{ .Date.Format .Site.Params.DateForm }}</span>
-                  <span class="text-blue-200">/</span>
-                  <span>{{ humanize .Type }}</span>
-                </p>
 
-                <h1 class="text-blue text-bigger leading-tight mb-2 hover:underline"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+        {{ $recentTalks := where .Pages "Type" "talks"}}
 
-                <p class="multiline-ellipsis-3">{{.Params.abstract | default .Summary }}</p>
-              </div>
-            {{ end }}
+        {{ if $recentTalks }}
+          <div class="mb-8">
+            <div class="flex flex-row items-end justify-between">
+                <h2 class="text-bigger font-semibold">Talks</h2>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:flex-wrap -mx-4">
+              {{ range $recentTalks }}
+                <div class="w-full md:w-1/2">
+                  {{ partial "talk-card" . }}
+                </div>
+              {{ end }}
+            </div>
           </div>
         {{ end }}
+
+        {{ $recentPublications := where .Pages "Type" "publications"}}
+
+        {{ if $recentPublications }}
+          <div class="mb-8">
+            <div class="flex flex-row items-end justify-between">
+                <h2 class="text-bigger font-semibold">Publications</h2>
+            </div>
+
+            <div class="flex flex-col flex-wrap md:flex-row -mx-4">
+              {{ range $recentPublications }}
+                <div class="w-full">
+                  {{ partial "publication-card" . }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+
+        {{ $recentPosts := where .Pages "Type" "posts"}}
+
+        {{ if $recentPosts }}
+          <div class="mb-8">
+            <div class="flex flex-row items-end justify-between">
+                <h2 class="text-bigger font-semibold">Blog posts</h2>
+            </div>
+
+            <div class="flex flex-col flex-wrap md:flex-row -mx-4">
+              {{ range $recentPosts }}
+                <div class="w-full">
+                  {{ partial "post-card" . }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+
       </div>
     </div>
   </div>
