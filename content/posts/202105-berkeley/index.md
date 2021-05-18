@@ -89,7 +89,7 @@ A: IPFS Cluster nodes replicate state between them. When data is added or delete
 
 *Q: Are there restrictions on what type of data can be chunked? Can we chunk video content?*
 
-A: Any type of content can be chunked, added to the IPFS network, and retrieved in a chunk-based fashion. You can find more details about chunking in IPFS in the [IPFS documentation](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs). There are already products, such as file.video ((https://file.video), that use IPFS-style chunking and storage on Filecoin. A walkthrough of one of the many approaches can be found [here](https://blog.fission.codes/experimenting-with-hls-video-streaming-and-ipfs/).
+A: Any type of content can be chunked, added to the IPFS network, and retrieved in a chunk-based fashion. You can find more details about chunking in IPFS in the [IPFS documentation](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs). There are already products, such as [file.video](https://file.video), that use IPFS-style chunking and storage on Filecoin. A walkthrough of one of the many approaches can be found [here](https://blog.fission.codes/experimenting-with-hls-video-streaming-and-ipfs/).
 
 *Q: To what extent can chunking be customized per file?*
 
