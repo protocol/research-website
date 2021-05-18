@@ -74,7 +74,7 @@ A: Any type of content can be stored in the IPFS network. Dynamic (or otherwise 
 
 *Q: Does IPFS work like a blockchain? I have seen discussion of a consensus algorithm.*
 
-A: IPFS does not work like a blockchain and neither does it use a blockchain. IPFS is a decentralised P2P and content-addressable storage network. IPFS is ideal for storage of blockchain data and is being used in this capacity by several blockchains.
+A: IPFS does not work like a blockchain and neither does it use a blockchain. IPFS is a decentralised P2P and content-addressable storage and delivery network. IPFS is ideal for storage of blockchain data and is being used in this capacity.
 
 *Q: What’s the pricing/cost of storing data on IPFS?*
 
