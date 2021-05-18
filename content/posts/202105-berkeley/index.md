@@ -139,7 +139,7 @@ You can read more about IPFS and Privacy in this [documentation page](https://do
  
 *Q: If there are no incentives for storage space providers, what makes IPFS grow over time and still keep the distributed nature of the network? Relatedly — if there are no incentives, how do you guarantee there are no bad nodes in a non-permissioned, public IPFS network?*
  
-A: It is important to understand that in IPFS users do not only provide storage, but they can (and usually do) also publish their own content in the network. Self-hosting of content naturally incentivises end-users to host IPFS nodes and contribute to the network. The personal interest of users to pin and reprovide content that they deem important proves to be a significant driver for adoption of IPFS.
+A: It is important to understand that in IPFS users do not only provide storage, but they can (and often do) also publish their own content in the network. Self-hosting of content naturally incentivises end-users to host IPFS nodes and contribute to the network. The personal interest of users to pin and reprovide content that they deem important proves to be a significant driver for adoption of IPFS.
  
  Furthermore, the incentives discussion is often framed around a user making a specific decision to host or not host some content on an IPFS node. The reality is that deployment in end-user scenarios doesn’t look like that: for example, in Brave, if the user has enabled the IPFS native node feature, the node rehosts IPFS content that the user has browsed, until that content is garbage collected. This provides “organic” resilience without a UX of individual file selection. 
  
