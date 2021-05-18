@@ -141,7 +141,7 @@ You can read more about IPFS and Privacy in this [documentation page](https://do
  
 A: It is important to understand that in IPFS users do not only provide storage, but they can (and often do) also publish their own content in the network. Self-hosting of content naturally incentivises end-users to host IPFS nodes and contribute to the network. The personal interest of users to pin and reprovide content that they deem important proves to be a significant driver for adoption of IPFS.
  
- Furthermore, the incentives discussion is often framed around a user making a specific decision to host or not host some content on an IPFS node. The reality is that deployment in end-user scenarios doesn’t look like that: for example, in Brave, if the user has enabled the IPFS native node feature, the node rehosts IPFS content that the user has browsed, until that content is garbage collected. This provides “organic” resilience without a UX of individual file selection. 
+Furthermore, the incentives discussion is often framed around a user making a specific decision to host or not host some content on an IPFS node. The reality is that deployment in end-user scenarios doesn’t look like that: for example, in Brave, if the user has enabled the IPFS native node feature, the node rehosts IPFS content that the user has browsed, until that content is garbage collected. This provides “organic” resilience without a UX of individual file selection. 
  
 Regarding bad nodes in the network: in a permissionless network you cannot guarantee that there are no bad nodes and instead the system should have all the security mechanisms in place in order to be resilient against attacks. We have not seen any malicious activity in the public IPFS network to date.
  
@@ -151,7 +151,7 @@ A: Yes, when a node leaves the network the routing tables of DHT nodes are updat
  
 *Q: Is Graphsync being used for syncing the Bitcoin blockchain? Is this a practical use case?*
 
-A: [Graphsync]https://specs.ipld.io/block-layer/graphsync/graphsync.html) is not used in the Bitcoin blockchain. It is used in the Filecoin blockchain as part of the Data Transfer Module to transfer payload data between nodes that have agreed a storage deal, as well as to synchronize parts of the blockchain. You can find more details in the [Filecoin Specification](https://spec.filecoin.io/#section-libraries.ipld.graphsync).
+A: [Graphsync](https://specs.ipld.io/block-layer/graphsync/graphsync.html) is not used in the Bitcoin blockchain. It is used in the Filecoin blockchain as part of the Data Transfer Module to transfer payload data between nodes that have agreed a storage deal, as well as to synchronize parts of the blockchain. You can find more details in the [Filecoin Specification](https://spec.filecoin.io/#section-libraries.ipld.graphsync).
 
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center>
 
