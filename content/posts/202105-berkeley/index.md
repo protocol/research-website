@@ -97,7 +97,7 @@ A: Any type of content can be chunked, added to the IPFS network, and retrieved 
 A: Chunking is a process done by IPFS when you add a file in your local node: the chunk size chosen is the default size used by IPFS. This parameter can be adapted to fit the application’s requirements in private IPFS deployments. You can read more about chunking here in IPFS’s [UnixFS](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs) and you can visualise your DAG and play around with different chunk sizes in [dag.ipfs.io](https://dag.ipfs.io).
 
 
-*Q: Web2.0 offers us many applications and a smooth user experience. Are we in a position today that we feel that we need to leave everything behind and move to a distributed web, or can specific applications benefit from this shift?*
+*Q: Web 2.0 offers us many applications and a smooth user experience. Are we in a position today that we feel that we need to leave everything behind and move to a distributed web, or can specific applications benefit from this shift?*
 
 A: We should not see the shift to Web3.0 as a comprehensive move away from the applications and the experience we have today. We should rather see it as a *migration*, where every application will be able to deploy the same features and the same experience to an updated infrastructure. In that sense, we will not leave behind what we have, but rather update the foundations upon which applications build.
 
