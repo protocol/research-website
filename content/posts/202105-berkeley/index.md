@@ -94,7 +94,7 @@ A: Any type of content can be chunked, added to the IPFS network, and retrieved 
 
 *Q: To what extent can chunking be customized per file?*
 
-A: Chunking is a process done by IPFS when you add a file in your local node: the chunk size chosen is the default size used by IPFS. This parameter can be adapted to fit the application’s requirements in private IPFS deployments. You can read more about chunking here in IPFS’s [UnixFS](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs) and you can visualise your DAG and play around with different chunk sizes in [dag.ipfs.io](https://dag.ipfs.io).
+A: Chunking is a process done by IPFS when you add a file in your local node: the chunk size chosen is the default size used by IPFS. This parameter can be adapted by the user (using the `-s` flag in the `ipfs add` command) according to the application’s requirements. You can read more about chunking in IPFS’s [UnixFS](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs) and you can visualise your DAG and play around with different chunk sizes in [dag.ipfs.io](https://dag.ipfs.io).
 
 
 *Q: Web 2.0 offers us many applications and a smooth user experience. Are we in a position today that we feel that we need to leave everything behind and move to a distributed web, or can specific applications benefit from this shift?*
