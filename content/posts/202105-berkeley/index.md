@@ -104,7 +104,7 @@ A: We should not see the shift to Web 3.0 as a comprehensive move away from the 
 
 *Q: Are there built-in mechanisms to support versioning, e.g. how do you know that you have requested the latest (or original) version of a file or chunk?*
 
-A: IPFS builds on versioning, similar to git. Therefore, you can always have access to previous versions of a published document, as long as this is still being provided by the original publisher or another peer in the network. You can find out more about how IPFS deals with dynamic, mutable content in [this tutorial](/tutorials/resnetlab-on-tour/mutable-content/).
+A: IPFS CIDs are immutable. Therefore, you can always have access to previous versions of a published document, as long as this is still being provided by the original publisher or another peer in the network. You can find out more about how IPFS deals with dynamic, mutable content in [this tutorial](/tutorials/resnetlab-on-tour/mutable-content/).
  
 *Q: Does Filecoin use IPFS for its content delivery?*
 
