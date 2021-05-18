@@ -99,7 +99,7 @@ A: Chunking is a process done by IPFS when you add a file in your local node: th
 
 *Q: Web 2.0 offers us many applications and a smooth user experience. Are we in a position today that we feel that we need to leave everything behind and move to a distributed web, or can specific applications benefit from this shift?*
 
-A: We should not see the shift to Web3.0 as a comprehensive move away from the applications and the experience we have today. We should rather see it as a *migration*, where every application will be able to deploy the same features and the same experience to an updated infrastructure. In that sense, we will not leave behind what we have, but rather update the foundations upon which applications build.
+A: We should not see the shift to Web 3.0 as a comprehensive move away from the applications and the experience we have today. We should rather see it as a *migration*, where every application will be able to deploy the same features and the same experience to an updated infrastructure. In that sense, we will not leave behind what we have, but rather update the foundations upon which applications build.
 
 
 *Q: Are there built-in mechanisms to support versioning, e.g. how do you know that you have requested the latest (or original) version of a file or chunk?*
