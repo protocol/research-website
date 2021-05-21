@@ -4,7 +4,7 @@ title: Adam Marblestone joins PL Research as an Advisor
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-05-18
+date: 2021-05-21
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
