@@ -4,7 +4,7 @@ title: Adam Marblestone joins PL Research as an Advisor
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-05-14
+date: 2021-05-18
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -21,7 +21,7 @@ categories:
 
 # Zero or more of the areas in content/areas
 areas:
-  - MetaResearch
+  - metaresearch
   
 
 # Zero or more of the groups in content/groups (should match author membership)
@@ -39,7 +39,7 @@ We asked Adam about his journey to PL, the MetaResearch projects he will be advi
 
 **How did you decide to become an advisor to PL?**
 
-I decided to join PL through my involvement in long-term discussions with Juan, Evan, and others about accelerating science.
+I decided to join PL through my involvement in long-term discussions with [Juan](/authors/juan-benet/), [Evan](/authors/evan-miyazono/), and others about accelerating science.
 
 **What problems are you currently most interested in?**
 
