@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "PL presentations at ETH India 2021 - Devfolio"
+title: "ResNetLab presentations at Devfolio's ETH India 2021 Fellowship"
 
 # Website post date
 # format YYYY-MM-DD
@@ -41,7 +41,7 @@ draft: false
 ---
 
 
-Hot off the heels of [ETHDenver](https://www.ethdenver.com/), the largest Ethereum community event in North America, we talked with the Devfolio team who ran the hackathon platform for the event — they asked if we’d be interested in doing an IPFS training for another of their programs: The [Devfolio Ethereum India Fellowship](https://eif2.devfolio.co/). YES, we will always take these opportunities to educate and instruct developers who want to know more about IPFS, Filecoin, libp2p and the menagerie of technologies in this interplanetary stack!
+Hot off the heels of [ETHDenver](https://www.ethdenver.com/), the largest Ethereum community event in North America, the Devfolio team who ran the hackathon platform for the event asked if we’d be interested in doing an IPFS training for another of their programs: The [Devfolio Ethereum India Fellowship](https://eif2.devfolio.co/). YES, we will always take these opportunities to educate and instruct developers who want to know more about IPFS, Filecoin, libp2p and the menagerie of technologies in this interplanetary stack!
 
 The Devfolio team had planned three days of instruction, with Protocol Labs on day one, with [Ceramic](https://ceramic.network/) and [Fleek](https://fleek.co/) on the following days. Most of the  program fellows have day jobs and would be joining the talk in their evening or night, so the format had to be short and allow for async activities.
 
