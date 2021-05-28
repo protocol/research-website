@@ -72,7 +72,7 @@ It is worth highlighting that there is an ecosystem of formats and data structur
 
 ***Q:** Doesn’t it become easy to censor any file I don’t want in my network if I am providing the file to other peers?*
 
-**A:** If the peer that wants to censor access to a file is the only one storing the content in question, then they can indeed avoid serving the content. However, this is unlikely to happen in practice: the original provider as well as other peers that have downloaded and/or pinned the content are still responsible for providing access to it. In this case, the content routing subsystems will make sure that these other peers can be reached by those that request access to the content item.
+**A:** If the peer that wants to censor access to a file is the only one storing the content in question, then they can indeed avoid serving the content. However, this is unlikely to happen in practice: the original provider as well as other peers that have downloaded and/or pinned the content are still providing access to it. In this case, the content routing subsystems will make sure that these other peers can be reached by those that request access to the content item.
 
 In other words, as with any system, if those who have the data do not want to serve it to others, they can refuse to do so. However, with IPFS and content addressing you don’t have to care who actually has the data and _anyone_ who has the data can serve it.
 
