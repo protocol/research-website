@@ -18,10 +18,11 @@ authors:
 # If applicable
 categories:
   - news
+  - grants
 
 # If applicable
 tags:
-  -
+  - 
 
 # Zero or more of the areas in content/areas
 areas:
