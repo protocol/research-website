@@ -4,7 +4,7 @@ title: "ResNetLab presentations at Devfolio's ETH India 2021 Fellowship"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-06-03
+date: 2021-06-02
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
