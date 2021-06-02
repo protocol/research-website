@@ -43,7 +43,7 @@ Protocol Labs  Research is committed to supporting the innovation needed to buil
 
 Today we are pleased to announce the expansion of the [PL Research Grant Program](http://grants.protocol.ai) to include a variety of new funding opportunities designed to support collaborative work on problems defined by the broader research community and critical to our work at Protocol Labs. 
 
-We now offer grants supporting PhD and postdoctoral research, summer term and sabbatical research projects, close collaborations between doctoral students and their thesis supervisors, and the formation of new research groups, among other options. 
+We now offer grants supporting PhD and postdoctoral research, summer term and sabbatical research projects for faculty, close collaborations between doctoral students and their thesis supervisors, the formation of new research groups, and more. 
 
 We at PL Research believe that the future of decentralized systems research is open and distributed. We encourage proposals aligned with PL's mission to drive breakthroughs in computing to push humanity forward, and we welcome unique perspectives and diverse backgrounds. 
 
