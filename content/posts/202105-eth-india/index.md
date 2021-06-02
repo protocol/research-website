@@ -78,9 +78,9 @@ In other words, as with any system, if those who have the data do not want to se
 
 ***Q:** How is IPFS different from torrent?*
 
-**A:** IPFS and Bittorrent are two completely different protocols. They are both P2P protocols used for file-exchange, but they differ in many aspects of their design. Mainly:
+**A:** IPFS and BitTorrent are two completely different protocols. They are both P2P protocols used for file-exchange, but they differ in many aspects of their design. Mainly:
 
--   Content in IPFS is found through its unique identifier, the [CID](https://docs.ipfs.io/concepts/content-addressing/#identifier-formats), which is inferred from the actual content, ensuring the authenticity of the content. The structure of the CID includes several parts, as metadata that make it future-proof. For example, the hash function used is included in the CID itself and therefore, the user knows which hash to use in order to extract the hash from the CID. This further means that the same content can be represented by two different CIDs, but still point to the same file. The anatomy of the CID is discussed in detail in the [Content Addressing Module](/tutorials/resnetlab-on-tour/content-addressing/) of the ResNetLab on Tour Tutorial programme. You can also experiment with different CIDs and their breakdown at [cid.ipfs.io](https://cid.ipfs.io). In Bittorrent, content is typically represented by a SHA-1 hash (as part of a magnet link) or a .torrent file, which is a more verbose benconded representation of its metadata.
+-   Content in IPFS is found through its unique identifier, the [CID](https://docs.ipfs.io/concepts/content-addressing/#identifier-formats), which is inferred from the actual content, ensuring the authenticity of the content. The structure of the CID includes several parts, as metadata that make it future-proof. For example, the hash function used is included in the CID itself and therefore, the user knows which hash to use in order to extract the hash from the CID. This further means that the same content can be represented by two different CIDs, but still point to the same file. The anatomy of the CID is discussed in detail in the [Content Addressing Module](/tutorials/resnetlab-on-tour/content-addressing/) of the ResNetLab on Tour Tutorial programme. You can also experiment with different CIDs and their breakdown at [cid.ipfs.io](https://cid.ipfs.io). In BitTorrent, content is typically represented by a SHA-1 hash (as part of a magnet link) or a .torrent file, which is a more verbose benconded representation of its metadata.
 
 -  In IPFS, content is indexed globally (there are no swarms) and is found in a decentralized manner using the [IPFS DHT](https://docs.ipfs.io/concepts/dht/#kademlia). BitTorrent can use trackers, which are centrally governed servers used to find content in the network, or it can also use a DHT to discover peers associated with a given content item.
 
@@ -92,7 +92,7 @@ In other words, as with any system, if those who have the data do not want to se
 
 Furthermore, the incentives discussion is often framed around a user making a specific decision to host or not host some content on an IPFS node. The reality is that deployment in end-user scenarios doesn’t look like that: for example, in Brave, if the user has enabled the IPFS native node feature, the node rehosts IPFS content that the user has browsed, until that content is garbage collected. This provides “organic” resilience without a UX of individual file selection.
 
-Filecoin comes as the incentive layer on top of IPFS to provide incentives for storage providers. You can find out more about filecoin at the [filecoin website](https://filecoin.io), the [filecoin blog](https://filecoin.io/blog), or the [filecoin spec](https://spec.filecoin.io/).
+Filecoin comes as the incentive layer on top of IPFS to provide incentives for storage providers. You can find out more about Filecoin on the [Filecoin website](https://filecoin.io), the [Filecoin blog](https://filecoin.io/blog), or the [Filecoin spec](https://spec.filecoin.io/).
 
 ***Q:** How do peers broadcast? Does IPFS have a separate channel for that?*
 
