@@ -41,7 +41,7 @@ draft: false
 
 Protocol Labs  Research is committed to supporting the innovation needed to build our decentralized future. 
 
-Today we are pleased to announce the expansion of the [PL Research Grant Program](http://grants.protocol.ai) to include a variety of new funding opportunities designed to support collaborative work on problems defined by the broader research community and critical to our work at Protocol Labs. 
+Today we are pleased to announce the expansion of the [PL Research Grant Program](http://grants.protocol.ai) to include a variety of new funding opportunities designed to support collaborative work on problems defined by the broader research community that are critical to our work at Protocol Labs. To complement our current [RFP program](https://github.com/protocol/research-grants#rfps), these grants focus on research problems proposed by the applicants rather than strictly on those pre-defined by Protocol Labs. 
 
 Our new grants spectrum consists of the following awards: 
 
