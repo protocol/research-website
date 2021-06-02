@@ -55,4 +55,4 @@ Our new grants spectrum consists of the following awards:
 
 We at PL Research believe that the future of decentralized systems research is open and distributed. We encourage proposals aligned with PL's mission to drive breakthroughs in computing to push humanity forward, and we welcome unique perspectives and diverse backgrounds. 
 
-To learn more about the available opportunities and how to apply, please visit [grants.protocol.ai](http://grants.protocol.ai)
+To learn more about the available opportunities and how to apply, please visit [grants.protocol.ai](http://grants.protocol.ai).
