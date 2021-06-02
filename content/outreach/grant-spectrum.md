@@ -2,7 +2,7 @@
 headless: true
 nositemap: true
 weight: 3
-title: Research Grant Program
+title: Research grants
 linkText: Learn more and apply 
 linkUrl: "https://grants.protocol.ai/prog/rfp-0"
 ---
