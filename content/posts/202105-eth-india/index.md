@@ -84,7 +84,7 @@ In other words, as with any system, if those who have the data do not want to se
 
 -  In IPFS, content is indexed globally (there are no swarms) and is found in a decentralized manner using the [IPFS DHT](https://docs.ipfs.io/concepts/dht/#kademlia). BitTorrent can use trackers, which are centrally governed servers used to find content in the network, or it can also use a DHT to discover peers associated with a given content item.
 
--   Finally, IPFS and Bittorrent use completely different file-exchange protocols. IPFS uses Bitswap as its main content exchange protocol. With Bitswap, IPFS clients are able to find and request sought-after content from peers storing the blocks. Bittorrent, on the other hand, uses a “tit-for-tat” protocol for content exchange. “Tit-for-tat” is used to ensure fairness in the use of resources: peers are able to download from other peers according to the resources they are contributing to the system.
+-   Finally, IPFS and BitTorrent use different file-exchange protocols. IPFS uses Bitswap as its main content exchange protocol, which allows clients to find and request the content that they seek from any peers that chose to provide the blocks, without limitations. BitTorrent is primarily a file-sharing platform and its [content-exchange protocol](https://www.bittorrent.org/beps/bep_0003.html) typically uses a “tit-for-tat” approach to ensure fairness in resource allocation: peers are able to download from other peers according to their upload-to-download ratio, a measure of the resources they are contributing to the system.
 
 ***Q:** Are there any incentives for providers to provide content? Torrents incentivize via private swarms to get access to specific content.*
 
