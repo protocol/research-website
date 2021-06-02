@@ -41,9 +41,9 @@ draft: false
 ---
 
 
-Hot off the heels of [ETHDenver](https://www.ethdenver.com/), the largest Ethereum community event in North America, the Devfolio team who ran the hackathon platform for the event asked if we’d be interested in doing an IPFS training for another of their programs: The [Devfolio Ethereum India Fellowship](https://eif2.devfolio.co/). YES, we will always take these opportunities to educate and instruct developers who want to know more about IPFS, Filecoin, libp2p and the menagerie of technologies in this interplanetary stack!
+Hot off the heels of [ETHDenver](https://www.ethdenver.com/), the largest Ethereum community event in North America, the Devfolio team who ran the hackathon platform for the event asked if we’d be interested in doing an IPFS training for another of their programs: the [Devfolio Ethereum India Fellowship](https://eif2.devfolio.co/). YES, we will always take these opportunities to educate and instruct developers who want to know more about IPFS, Filecoin, libp2p, and the menagerie of technologies in this interplanetary stack!
 
-The Devfolio team had planned three days of instruction, with Protocol Labs on day one, with [Ceramic](https://ceramic.network/) and [Fleek](https://fleek.co/) on the following days. Most of the  program fellows have day jobs and would be joining the talk in their evening or night, so the format had to be short and allow for async activities.
+The Devfolio team planned three days of instruction, with Protocol Labs on day one and [Ceramic](https://ceramic.network/) and [Fleek](https://fleek.co/) on the following days. Most of the  program fellows have day jobs and would be joining the talk in their evening, so the format had to be short and allow for async activities.
 
 We set up three components for day one, which allowed for both sync and async learning and a fun assignment:
 
@@ -60,11 +60,11 @@ We had 20 fellows join for the talks, received 20 CIDs from the assignment, and 
 
 ***Q:** What’s the difference between ETH Patricia Tries and IPFS DAGs?*
 
-**A:** An IPFS DAGs is a Directed Acyclic Graph (DAG), where each node has an identifier which is the result of hashing the node’s content. Nodes can link to other nodes using the other nodes’ unique identifiers. In the end, IPFS DAGs are general data structures that represent linked data.
+**A:** An IPFS DAG is a Directed Acyclic Graph (DAG), where each node has an identifier which is the result of hashing the node’s content. Nodes can link to other nodes using the other nodes’ unique identifiers. In the end, IPFS DAGs are general data structures that represent linked data.
 
 [Patricia Tries](https://en.wikipedia.org/wiki/Radix_tree), on the other hand, are specific data structures that organize the information using trees with four types of nodes: `EmptyNodes`, `LeafNodes`, `BranchNodes` and `ExtensionNodes`. Thus, IPFS DAGs, being general data structures, can be used to model Patricia Tries.
 
-It is worth highlighting that there is an ecosystem of formats and data structures for building applications, called the InterPlanetary Linked Data (IPLD), which includes all the assets required to model any kind of linked data structure, including Patricia Tries. Head over to the [IPLD](https://docs.ipld.io/) and [Multiformats](https://multiformats.io/) repositories to find out more.
+It is worth highlighting that there is an ecosystem of formats and data structures for building applications called the InterPlanetary Linked Data (IPLD) that includes all the assets required to model any kind of linked data structure, including Patricia Tries. Head over to the [IPLD](https://docs.ipld.io/) and [Multiformats](https://multiformats.io/) repositories to find out more.
 
 ***Q:** Isn’t there additional latency for content resolution traffic, that is, having to request multiple times for every block of the same content object?*
 
