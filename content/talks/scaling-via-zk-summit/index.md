@@ -13,7 +13,7 @@ date: 2021-06-03
 venue: ETH Global: Scaling via Zero-Knoweldge Summit
 
 # Venue link
-venue_url: https://scaling.ethglobal.co/
+venue_url:
 
 # Venue date (defaults to date)
 # format YYYY-MM-DD
@@ -44,6 +44,5 @@ resources:
 abstract: "Protocol Labs Research Engineer Friedel Ziegelmayer explains the technical accomplishments for solving scaling issues with the rising use of Filecoin."
 
 ---
-
 
 {{< youtube GRaR8N380h0 >}}
