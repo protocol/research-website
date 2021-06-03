@@ -10,7 +10,7 @@ date: 2021-06-03
 # publishDate: 2019-09-03
 
 # Venue name
-venue: ETH Global: Scaling via Zero-Knoweldge Summit
+venue: ETH Global Scaling via Zero-Knoweldge Summit
 
 # Venue link
 venue_url:
