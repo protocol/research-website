@@ -7,7 +7,7 @@ title: "Scaling zkSNARKs to meet the demands of Filecoin"
 date: 2021-06-03
 
 # Publish from this date (defaults to date)
-# publishDate: 2021-06-03
+# publishDate: 2019-09-03
 
 # Venue name
 venue: ETH Global: Scaling via Zero-Knoweldge Summit
