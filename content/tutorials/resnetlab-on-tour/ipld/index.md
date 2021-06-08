@@ -15,8 +15,9 @@ resources:
 
 
 relevantLinks: [
-  ["ProtoSchool Tutorial on Blogging on the Decentralised Web", "https://proto.school/blog"],
-  ["ProtoSchool Tutorial on the Mutable File System", "https://proto.school/mutable-file-system"]
+  [Open Problem on Hash-Linked Data Graph Layouts](https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/HASH_LINKED_DATA_GRAPH_LAYOUTS.md)
+  [IPLD docs](https://docs.ipld.io/)
+  [ProtoSchool Tutorial on IPLD](https://proto.school/course/ipld)
 ]
 
 
