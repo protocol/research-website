@@ -16,7 +16,7 @@ resources:
 
 relevantLinks: [
   [Open Problem on Hash-Linked Data Graph Layouts](https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/HASH_LINKED_DATA_GRAPH_LAYOUTS.md)
-  [IPLD docs](https://docs.ipld.io/)
+  [IPLD docs](https://docs.ipld.io/),
   [ProtoSchool Tutorial on IPLD](https://proto.school/course/ipld)
 ]
 
