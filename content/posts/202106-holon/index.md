@@ -45,7 +45,7 @@ Almost 100 event participants engaged with our content. We posed several quiz qu
 
 The event has been the first of a series of events that the organisers want to put together on decentralised technologies, Web 3.0, and IPFS and Filecoin.
 
-We presented all five Core Modules of the [ResNetLab on Tour programme](https://research.protocol.ai/tutorials/resnetlab-on-tour/) and allowed enough time for interaction with the audience. We are sharing below the very insightful questions we received during the event for the readers of our blog.
+We presented all five Core Modules of the [ResNetLab on Tour programme](/tutorials/resnetlab-on-tour/) and allowed enough time for interaction with the audience. We are sharing below the very insightful questions we received during the event for the readers of our blog.
 
 
 
@@ -59,7 +59,7 @@ We presented all five Core Modules of the [ResNetLab on Tour programme](https://
 
 ***Q:** Is giving unique identity to each and every kind of data present on the web even feasible?*
 
-**A:** From an addressing perspective and assuming that content-addressing is done through content-based hashing, then, yes, it is feasible. For instance, IPFS uses SHA-256, allowing for 2^256 different values, but larger hashes are always possible.  Furthermore, there are several versions of hash-functions with varying levels of collision resistance. When one of them is found to provide limited collision resistance (e.g., as computing advances), applications can use the next most difficult one. IPFS’s future-proofing addressing design accounts for such changes and can accommodate hash-function upgrades. You can find more information in the [IPFS documentation](https://docs.ipfs.io/concepts/content-addressing/#identifier-formats), this Proto School tutorial on the [Anatomy of a CID](https://proto.school/anatomy-of-a-cid) and the ResNetLab on Tour Module on [Content Addressing in IPFS](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-addressing/). Head over to [cid.ipfs.io](https://cid.ipfs.io/) and enter a CID to get a breakdown of its several components.
+**A:** From an addressing perspective and assuming that content-addressing is done through content-based hashing, then, yes, it is feasible. For instance, IPFS uses SHA-256, allowing for 2^256 different values, but larger hashes are always possible.  Furthermore, there are several versions of hash-functions with varying levels of collision resistance. When one of them is found to provide limited collision resistance (e.g., as computing advances), applications can use the next most difficult one. IPFS’s future-proofing addressing design accounts for such changes and can accommodate hash-function upgrades. You can find more information in the [IPFS documentation](https://docs.ipfs.io/concepts/content-addressing/#identifier-formats), this Proto School tutorial on the [Anatomy of a CID](https://proto.school/anatomy-of-a-cid) and the ResNetLab on Tour Module on [Content Addressing in IPFS](/tutorials/resnetlab-on-tour/content-addressing/). Head over to [cid.ipfs.io](https://cid.ipfs.io/) and enter a CID to get a breakdown of its several components.
 
 The process that becomes challenging as the number of items in the system increases is that of _content routing_, or in order words, storing the records of the published items and finding them (i.e., discovering content) upon clients’ requests. You can find more details on this topic in the Open Problem Statement on Content Routing scalability [here](https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ROUTING_AT_SCALE.md). If you’re working on similar topics, we’d [love to hear from you](https://github.com/protocol/ResNetLab/discussions).
 
@@ -89,7 +89,7 @@ You can read about the new opportunities created with the Web 3.0 stack in this 
 
 ***Q:** Suppose a client wants to fetch file **A** from server **P**. The client obtains the content address of **A** but it doesn’t have any other information about **A** or how to find it. What does it do next?*
 
-**A:** The content address is enough information for the client to ask the content routing system where to find *A*. It is that system that will find out that server *P* has the content, a process commonly called content discovery. The same system will also find information on how to actually reach and connect to *P* to obtain the file. The process is described in great detail in the Content Routing module, which you can find [here](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/). 
+**A:** The content address is enough information for the client to ask the content routing system where to find *A*. It is that system that will find out that server *P* has the content, a process commonly called content discovery. The same system will also find information on how to actually reach and connect to *P* to obtain the file. The process is described in great detail in the Content Routing module, which you can find [here](/tutorials/resnetlab-on-tour/content-routing/). 
 
 ***Q:** How many nodes store your file when you publish it in IPFS?*
 
@@ -97,7 +97,7 @@ You can read about the new opportunities created with the Web 3.0 stack in this 
 
 When other nodes request the content that your node has published, they fetch it from your node and reprovide it, i.e., serve as source nodes for the content. The more popular the content is, the more nodes will end up providing the content to the network.
 
-You can find a detailed description of this process in the [Content Routing module](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/). 
+You can find a detailed description of this process in the [Content Routing module](/tutorials/resnetlab-on-tour/content-routing/). 
 
 ***Q:** What mitigation factors are in place if multiple nodes are offline?*
 
@@ -135,7 +135,7 @@ In other words, in the client-server model, the system requests content from the
 
 ***Q:** Is IPFS similar to bittorrent?*
 
-**A:** Both IPFS and [BitTorrent](https://www.bittorrent.com/) are permissionless P2P networks and use content hashes as identifiers, albeit in different ways (see [this tutorial](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-addressing/) to learn more about content addressing and how it’s implemented in IPFS). However, IPFS provides a host of benefits that are very useful to a general-purpose system capable of providing anything from large files to whole websites trees. Some specific differences include the use of a global “swarm” for IPFS and the use of Merkle DAGs that allow for internal and external deduplication as well as random access into a DAG. Just as important are the UX differences, including browser support for native IPFS browsing and HTTP gateways that allow users to access websites stored on IPFS transparently.
+**A:** Both IPFS and [BitTorrent](https://www.bittorrent.com/) are permissionless P2P networks and use content hashes as identifiers, albeit in different ways (see [this tutorial](/tutorials/resnetlab-on-tour/content-addressing/) to learn more about content addressing and how it’s implemented in IPFS). However, IPFS provides a host of benefits that are very useful to a general-purpose system capable of providing anything from large files to whole websites trees. Some specific differences include the use of a global “swarm” for IPFS and the use of Merkle DAGs that allow for internal and external deduplication as well as random access into a DAG. Just as important are the UX differences, including browser support for native IPFS browsing and HTTP gateways that allow users to access websites stored on IPFS transparently.
 
 ### Module 3: Content Routing
 
@@ -169,7 +169,7 @@ This is an open research topic, so if you’re working in this space, get in tou
 
 **A:** Security spans several layers of the protocol stack and is therefore difficult to give a holistic answer. However, it is worth noting the following:
 [libp2p](https://docs.libp2p.io) supports transport connections over securely encrypted channels. What this means is that you can trust the identity of the peer you're communicating with and that no third-party can read the conversation or alter it in-flight. The current default is TLS1.3.
-Furthermore, the fact that IPFS uses content-based addressing, based on hash functions (SHA-256, in particular, with the option to upgrade when needed) means that clients can apply integrity checking on the content they received. This further means that the network (or a malicious peer) cannot deliver any other content to the requesting peer, other than the one requested. You can find more details on this in the [Content Addressing module](https://research.protocol.ai/tutorials/resnetlab-on-tour/). 
+Furthermore, the fact that IPFS uses content-based addressing, based on hash functions (SHA-256, in particular, with the option to upgrade when needed) means that clients can apply integrity checking on the content they received. This further means that the network (or a malicious peer) cannot deliver any other content to the requesting peer, other than the one requested. You can find more details on this in the [Content Addressing module](/tutorials/resnetlab-on-tour/). 
 
 
 ### Module 4: Content Exchange
@@ -186,7 +186,7 @@ Also, duplicate blocks (i.e. a block it had already received), or blocks that ha
 
 ***Q:** What does the comparison between Graphsync and Bitswap look like? Which one is faster?*
 
-**A:** There is no single answer to this question, as it depends on factors such as the type of data, the state of the network, and the specific use case. It is worth noting that Graphsync is not a replacement for Bitswap. As discussed in the [Content Exchange module](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-exchange/), Bitswap has content routing capabilities, and is able to find content in the network; instead, with Graphsync you need to know if the other peer is storing the data you are interested in for the exchange to succeed. Bitswap needs to explicitly traverse the DAG structure in order to know what blocks to download from other peers; in Graphsync all of the desired blocks are implicit in the selector shared in the request. This is what allows Graphsync to send every block through a stream without further interactions between the requester and the responder. Finally, Graphsync only supports 1:1 exchanges, while Bitswap interacts with every peer in the corresponding session, supporting multiple streams for the download of the content.
+**A:** There is no single answer to this question, as it depends on factors such as the type of data, the state of the network, and the specific use case. It is worth noting that Graphsync is not a replacement for Bitswap. As discussed in the [Content Exchange module](/tutorials/resnetlab-on-tour/content-exchange/), Bitswap has content routing capabilities, and is able to find content in the network; instead, with Graphsync you need to know if the other peer is storing the data you are interested in for the exchange to succeed. Bitswap needs to explicitly traverse the DAG structure in order to know what blocks to download from other peers; in Graphsync all of the desired blocks are implicit in the selector shared in the request. This is what allows Graphsync to send every block through a stream without further interactions between the requester and the responder. Finally, Graphsync only supports 1:1 exchanges, while Bitswap interacts with every peer in the corresponding session, supporting multiple streams for the download of the content.
 
 All of these differences make Bitswap faster in some cases, and Graphsync in others. It is up to the user or application to assess the conditions and choose the protocol that better suits their needs. For instance, when fetching content for which the underlying DAG structure is deep and narrow (i.e. lots of levels with a small number of blocks per level), Graphsync will be faster than Bitswap (provided we know if the other node is storing the content). In particular, while Bitswap needs to have several back-and-forth interactions with a peer to discover the blocks in the subsequent levels, Graphsync uses selectors, which enables it to send all the blocks right away. For wide DAGs, we see the opposite behavior, as the moment Bitswap learns the blocks it has to download, it can leverage several peers to download the corresponding blocks simultaneously, while Graphsync is limited by the throughput of the stream. 
 
