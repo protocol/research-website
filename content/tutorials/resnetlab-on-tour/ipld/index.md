@@ -1,7 +1,7 @@
 ---
 title: InterPlanetary Linked Data
 
-publishDate: 2021-06-08
+publishDate: 2020-05-10
 
 isCore: false
 
