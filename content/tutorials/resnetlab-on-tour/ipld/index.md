@@ -1,7 +1,7 @@
 ---
 title: InterPlanetary Linked Data
 
-publishDate: 2020-06-08
+publishDate: 2021-06-08
 
 isCore: false
 
@@ -35,7 +35,7 @@ links:
 InterPlanetary Linked Data (IPLD) is the data layer for content-addressed systems and the Web 3.0. It is a suite of technologies for representing and traversing hash-linked data. In this module you'll understand:
 
   - Why IPLD exists
-  - IPLD’s fundamental concepts, such as Merkle DAGs and Merkle Roots
+  - Merkle DAGs and Merkle Roots
   - The relation of IPLD to IPFS
   - How to use IPLD for a distributed data structure
 
