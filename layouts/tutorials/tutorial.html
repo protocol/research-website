@@ -52,7 +52,7 @@
 
       {{ range .RegularPages }}
         {{ if eq .Params.isCore false }}
-          <div class='flex mb-12 lg:even:flex-row-reverse flex-wrap lg:flex-nowrap md:-mx-4'>
+          <div class='flex mb-20 lg:even:flex-row-reverse flex-wrap lg:flex-nowrap md:-mx-4'>
             {{ partial "tutorial-module-card" . }}
           </div>
         {{ end }}
