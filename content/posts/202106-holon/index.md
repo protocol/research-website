@@ -148,7 +148,7 @@ In other words, in the client-server model, the system requests content from the
 
 **A:** In a permissionless network such as IPFS, you cannot guarantee that there are no bad nodes or bad files published in the network. Instead, the system and applications built atop the system should have sufficient security mechanisms in place to be resilient against attacks. This could include reputation systems for peers and content, mechanisms for flagging malicious activity, and the dissemination of malicious activity reports to other peers in the network. It is nevertheless worth noting that IPFS does not automatically replicate files (malicious or otherwise) to peers; replication only happens in response to a request by the peer.
 
-This is an open research topic, so if you’re working in this space, get in touch. 
+This is an open research topic; if you’re working in this space, [get in touch](https://github.com/protocol/ResNetLab/discussions)! 
 
 ***Q:** Given that a file is stored only on one peer and not replicated, if a peer fails (e.g. goes offline) before the next 24 hour period (the time that the network checks the liveness of the peers), does that mean the data is lost?*
 
