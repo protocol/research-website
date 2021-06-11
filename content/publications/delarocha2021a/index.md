@@ -13,7 +13,7 @@ date: 2021-06-11
 venue: IFIP
 
 # Venue Location
-venue_location: Aalto University, Finland
+venue_location: Aalto, Finland
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
