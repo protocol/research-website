@@ -71,6 +71,6 @@ unaffiliated: false
 
 ---
 
-Abstract—Permissionless computation is one of the missing pieces in the web3 stack in order to have all the tools needed to “decentralise Internet services”. There are already proposals to embed computation in decentralised networks like smart contracts, or blockchain networks for computational offloading. Although technically sound, their computational model is too restrictive to be used for general purpose computation.
+Permissionless computation is one of the missing pieces in the web3 stack in order to have all the tools needed to “decentralise Internet services”. There are already proposals to embed computation in decentralised networks like smart contracts, or blockchain networks for computational offloading. Although technically sound, their computational model is too restrictive to be used for general purpose computation.
 
-In thispaper, we propose a general architecture of a decentralised network for general-purpose and permissionless computation based on content-addressing. We present a proof-of-concept prototype and describe in detail its building blocks.
+In this paper, we propose a general architecture of a decentralised network for general-purpose and permissionless computation based on content-addressing. We present a proof-of-concept prototype and describe in detail its building blocks.
