@@ -63,11 +63,11 @@ The process of _content routing_ -- storing the records of the published items a
 
 ***Q:** Content sometimes may contain some metadata which doesn’t matter for the person who is requesting it. So whether the content address is different for the two copies of content with the same data but different metadata does not actually matter for the user. Is this addressed in IPFS?*
 
-**A:** This is a great question and relates a lot with application design. It is worth clarifying that there are generally two types of metadata:  the metadata included as part of the CID to describe the CID itself, and application metadata such as the resolution of the video. In the former case, the metadata is independent of the application and helps the client interpret the CID, so it’s necessary metadata (e.g. the CIDs of the same content that is hashed using different hash functions are different, so the client needs to know which hash function to use). In the latter case, the metadata does not need to affect the formation of the CID itself and can be left to the application layer instead. Ultimately, it is up to the application designer to leave application-specific metadata out of the content-based hashing procedure.
+**A:** This is a great question related to application design. It is worth clarifying that there are generally two types of metadata:  the metadata included as part of the CID to describe the CID itself, and application metadata such as the resolution of the video. In the former case, the metadata is independent of the application and helps the client interpret the CID, so it’s necessary metadata (e.g. the CIDs of the same content that is hashed using different hash functions are different, so the client needs to know which hash function to use). In the latter case, the metadata does not need to affect the formation of the CID itself and can be left to the application layer instead. Ultimately, it is up to the application designer to leave application-specific metadata out of the content-based hashing procedure.
 
 ***Q:** How would IPFS make more efficient use of bandwidth resources?*
 
-**A:** Content-addressing is a very powerful primitive which, if used correctly, can provide several noteworthy benefits. One of them is optimisation of bandwidth resources. This is because the content routing system can find the closest copy of the requested content and deliver that to the client. The bandwidth savings are straightforward, as data does not need to travel from far away. The ever-increasing resolution of video, as well as users’ streaming habits, make bandwidth optimisation a pressing problem.
+**A:** Content-addressing is a very powerful primitive which, if used correctly, can provide several noteworthy benefits. One of them is optimisation of bandwidth resources. This is because the content routing system can find the closest copy of the requested content and deliver that to the client. The bandwidth savings are straightforward, as data does not need to travel from far away. The ever-increasing resolution of video --  as well as users’ streaming habits -- make bandwidth optimisation a pressing problem.
 
 ***Q:** Are there things in Web 2.0 that can’t be or shouldn’t be shifted to Web 3.0?*
 
@@ -77,7 +77,7 @@ For instance, duplication of content both at rest and in transit results in sign
 
 Finally, censorship by oppressive regimes and other authorities is harder to carry out in Web 3.0, which means that freedom of information can be enhanced compared to the current status quo.
 
-More generally, in Web 3.0, “base-layer protocols” will form the basis of applications building on top, somewhat similarly to HTTP. However, Web3.0 will expand to a lot more services than HTTP does, including storage and computation. This base-layer infrastructure will be empowered by blockchain technology and as such will remove the trust associated with applications from the application providers themselves.
+More generally, in Web 3.0, *base-layer protocols* will form the basis of applications building on top, somewhat similarly to HTTP. However, Web 3.0 will offer many more services than HTTP, including storage and computation. This base-layer infrastructure will be powered by blockchain technology, replacing the need to trust in application providers themselves in order to trust applications.
 
 You can read about the new opportunities created with the Web 3.0 stack in this [technical report](https://gateway.ipfs.io/ipfs/Qmb5tp5Qka7zaWa9pqHEh33CHdRmxBx6aa5XMfzDdmX7jQ). 
 
@@ -98,14 +98,14 @@ You can find a detailed description of this process in the [Content Routing modu
 
 ***Q:** What mitigation factors are in place if multiple nodes are offline?*
 
-**A:** There is a number of measures in place to account for node churn. These are:
+**A:** There are a number of measures in place to account for node churn. These are:
 1. The routing tables of peers in IPFS’s DHT refresh their routing tables every 10 mins to account for node churn.
-2. Provider records expire 24hrs after publication. This means that content publishers have to re-publish the provider records for all content items that they have published every 24hrs. This measure is in place to account for peers that have left the system and force the original content providers to find new peers for the provider records.
-3. IPFS has a default provider record republish interval of 12hrs to accommodate for record expiration, and the fact that peers storing provider records may leave the network.
+2. Provider records expire 24 hours after publication. This means that every 24 hours, content publishers have to re-publish the provider records for all of their published content items. This measure is in place to account for peers that have left the system and force the original content providers to find new peers for the provider records.
+3. IPFS has a default provider record republish interval of 12hrs to accommodate for record expiration and the fact that peers storing provider records may leave the network.
 
 ***Q:** How does IPFS compare to Solid?*
 
-**A:** Solid and IPFS are two different initiatives and projects that sit at different layers of the protocol stack. Solid introduces the concept of storing data in so-called storage “pods” and allowing the owner of the data to control access to the data within the pod (e.g. by granting, or revoking access). IPFS provides a decentralised storage and transport layer infrastructure for any type of data. That said, Solid pods can be stored in IPFS and served from there.
+**A:** [Solid](https://solidproject.org/) and IPFS are two different initiatives and projects that sit at different layers of the protocol stack. Solid introduces the concept of storing data in so-called storage “pods” and allowing the owner of the data to control access to the data within the pod (e.g. by granting or revoking access). IPFS provides a decentralised storage and transport layer infrastructure for any type of data. That said, Solid pods can be stored in IPFS and served from there.
 
 ***Q:** How do you ensure access control over content published in IPFS?*
 
@@ -118,27 +118,27 @@ If none of the above methods is used, then access control would require parties 
 
 ***Q:** Is data encrypted when stored in other nodes?*
 
-**A:** Data published in IPFS is encrypted while in transit, i.e., when they travel over the network. IPFS does not encrypt data at rest, i.e., when they’re stored in other peers, but users and applications are free to publish encrypted data on IPFS. You can read more about IPFS and Privacy, as well as how to increase privacy when using IPFS in the IPFS documentation [here](https://docs.ipfs.io/concepts/privacy/#ipfs-and-privacy). 
+**A:** Data published in IPFS is encrypted while in transit over the network. IPFS does not encrypt data at rest, i.e., when stored in peers, but users and applications are free to publish encrypted data on IPFS. You can read more about IPFS and privacy, as well as how to increase privacy when using IPFS, in the IPFS documentation [here](https://docs.ipfs.io/concepts/privacy/#ipfs-and-privacy). 
 
 ***Q:** Is IPFS faster than the  client server model?*
 
-**A:** IPFS can become much faster than the present client-server model due to its content addressing-based architecture. In particular, the fact that content is replicated and re-provided by peers that request it means that popular content gets to exist in many nodes in the network. The content routing system then makes sure that the closest copy of the content is served to requesting users.
+**A:** IPFS can become much faster than the present client-server model due to its content addressing-based architecture. In particular, the fact that content is replicated and re-provided by peers that request it means that popular content will reside in many nodes in the network. The content routing system ensures that users are served the closest copy of the requested content.
 
-In other words, in the client-server model, the system requests content from the one node that has declared to be serving the content. In a content-based addressing system, the system requests content from any node in the network and the closest one serves it.
+In other words, in the client-server model, the system requests content from the one node that has declared that it is serving the content. In a content-based addressing system, the system requests content from any node in the network and the closest one serves it.
 
 ***Q:** If a CID is computed for each leaf, when we ask for a file why do we ask for the root CID?*
 
-**A:** Indeed, every leaf node of the IPLD graph has its own CID and can be requested independently of the rest of the file. However, in order to reconstruct the file from its pieces, one has to know how they’re linked together. This is what the IPLD graph does and it achieves this by the main property of Merkle DAGs, that is, linking to all children of an IPLD node from its parent(s). Therefore, starting from the root CID one can derive all of its children and then children of children, until leaves are reached. This also enables data that is distributed across different independent systems, data structures, or blockstores to be manipulated using one set of principles.
+**A:** Indeed, every leaf node of the IPLD graph has its own CID and can be requested independently of the rest of the file. However, in order to reconstruct the file from its pieces, one has to know how they’re linked together. This is what the IPLD graph does and it achieves this via the main property of Merkle DAGs: linking to all children of an IPLD node from its parent(s). Therefore, starting from the root CID one can derive all of its children and then children of children ...until leaves are reached. This also enables data that is distributed across different independent systems, data structures, or blockstores to be manipulated using one set of principles.
 
-***Q:** Is IPFS similar to bittorrent?*
+***Q:** Is IPFS similar to BitTorrent?*
 
-**A:** Both IPFS and [BitTorrent](https://www.bittorrent.com/) are permissionless P2P networks and use content hashes as identifiers, albeit in different ways (see [this tutorial](/tutorials/resnetlab-on-tour/content-addressing/) to learn more about content addressing and how it’s implemented in IPFS). However, IPFS provides a host of benefits that are very useful to a general-purpose system capable of providing anything from large files to whole websites trees. Some specific differences include the use of a global “swarm” for IPFS and the use of Merkle DAGs that allow for internal and external deduplication as well as random access into a DAG. Just as important are the UX differences, including browser support for native IPFS browsing and HTTP gateways that allow users to access websites stored on IPFS transparently.
+**A:** Both IPFS and [BitTorrent](https://www.bittorrent.com/) are permissionless P2P networks that use content hashes as identifiers, albeit in different ways (see [this tutorial](/tutorials/resnetlab-on-tour/content-addressing/) to learn more about content addressing and how it’s implemented in IPFS).  IPFS provides a host of benefits that are very useful to a general-purpose system capable of providing anything from large files to whole websites trees. Some specific differences between IPFS and BitTorrent include the use of a global “swarm” for IPFS and the use of Merkle DAGs that allow for internal and external deduplication as well as random access into a DAG. There are also significant UX differences, including browser support for native IPFS browsing and gateways that allow users to access to websites stored on IPFS via HTTP.
 
 ### Module 3: Content Routing
 
 ***Q:** Assume I store a content item myself and become a permanent provider and then someone else also pins the content to become another content provider. Would I still be able to delete the content by sending a delete request to all the providers?*
 
-**A:** At the base layer, in IPFS no single entity can dictate what content remains or gets deleted from the distributed network of peers; in particular, the original provider has no way of “forcing” the deletion of other copies. However, this does not mean that applications cannot build this functionality on top of the base IPFS protocol, or that deletion of content to align with regulations, such as GDPR, cannot be enforced. In fact, given content-based addressing in IPFS, one can implement content deletion programmatically at the application layer in a much easier fashion than what is possible today with HTTP.
+**A:** At the base layer, in IPFS no single entity can dictate what content remains or gets deleted from the distributed network of peers; in particular, the original provider has no way of “forcing” the deletion of other copies. However, this does not mean that applications cannot build this functionality on top of the base IPFS protocol, or that deletion of content to align with regulations such as GDPR cannot be enforced. In fact, given content-based addressing in IPFS, one can implement content deletion programmatically at the application layer in a much easier fashion than what is possible today with HTTP.
 
 ***Q**: How is DHT proximity determined?*
 
@@ -146,7 +146,7 @@ In other words, in the client-server model, the system requests content from the
 
 ***Q:** How do you prevent malicious files being published and duplicated to peers?*
 
-**A:** In a permissionless network, such as IPFS, you cannot guarantee that there are no bad nodes or bad files published in the network. Instead the system, or application built on top should have all the security mechanisms in place in order to be resilient against attacks. This could include reputation systems for peers and content to flag malicious activity and disseminate it to the other peers in the network. It is nevertheless worth noting that IPFS does not automatically replicate files (malicious or otherwise) to peers; this only happens in response to a request by the peer.
+**A:** In a permissionless network such as IPFS, you cannot guarantee that there are no bad nodes or bad files published in the network. Instead, the system and applications built atop he system should have sufficient security mechanisms in place to be resilient against attacks. This could include reputation systems for peers and content, the flagging of malicious activity, and the dissemination of malicious activity reports to other peers in the network. It is nevertheless worth noting that IPFS does not automatically replicate files (malicious or otherwise) to peers; repliication only happens in response to a request by the peer.
 
 This is an open research topic, so if you’re working in this space, get in touch. 
 
