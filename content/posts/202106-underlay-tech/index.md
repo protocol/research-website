@@ -57,7 +57,6 @@ If you're already a TypeScript expert, then you probably won't find anything nov
 
 {{< table_of_contents >}}
 
-
 ## Background
 
 *Dataflow editors* are a broad class of drag-and-drop-oriented interactive block diagram interfaces. You've probably seem them before:
@@ -79,17 +78,11 @@ The sheer complexity of dataflow interfaces can be off-putting, but they've foun
 
 ## Motivation
 
-There are also several browser-based dataflow editors out there, such as [litegraph.js](https://github.com/jagenjo/litegraph.js) and [NoFlo](https://github.com/noflo/noflo-ui), which almost all use canvas or WebGL to render the nodes and edges. This is what you'd expect, since the basic needs of a dataflow editor:
-
-- absolutely positioning elements on a scrollable canvas
-- drawing visually pleasing curves
-- prioritizing responsive drag-and-drop interactions that involve updating multiple elements at at once
-
-... are all relative weaknesses of the DOM, which is designed for hierarchical, nested-box layouts.
+There are also several browser-based dataflow editors out there, such as [litegraph.js](https://github.com/jagenjo/litegraph.js) and [NoFlo](https://github.com/noflo/noflo-ui), which almost all use canvas or WebGL to render the nodes and edges. This is what you'd expect, since the basic needs of a dataflow editor -- absolutely positioning elements on a scrollable canvas, drawing visually pleasing curves, and prioritizing responsive drag-and-drop interactions that involve updating multiple elements at at once -- are all relative weaknesses of the DOM, which is designed for hierarchical, nested-box layouts.
 
 But canvas is a heavy-duty technology, and introduces a sharp discontinuity in a (presumably) otherwise DOM-based application. You lose text selection, accessibility features, all of CSS, and get thrown into "video game world" where you have to construct everything you need from scratch.
 
-For the [Underlay](https://www.underlay.org/) project, we wanted to make a data pipeline environment to showcase our algebraic graph data model. The ideal interface we pictured was a dataflow editor where the blocks represented different kinds of transformations, with (strongly typed) data flowing through the edges. But we didn't want to use a canvas-based editor, and in particular we to embed the editor into a React application. So we set out to make a dataflow editor with three overall goals:
+For the [Underlay](https://www.underlay.org/) project, we wanted to make a data pipeline environment to showcase our algebraic graph data model. The ideal interface we pictured was a dataflow editor where the blocks represented different kinds of transformations, with (strongly typed) data flowing through the edges. But we didn't want to use a canvas-based editor, and in particular we wanted to embed the editor into a React application. So we set out to make a dataflow editor with three primary properties:
 
 - General-purpose
 - SVG-based
@@ -99,13 +92,13 @@ Expanding on these each a little bit:
 
 ### General-purpose
 
-Most dataflow editors are custom-built for a single application and domain, and can't easily be re-used by others. It's not even clear how "general-purpose" a dataflow editor can really be. Just in the small gallery of examples in the beginning there are several incompatible variations on the basic model: some allow cycles, some don't; some have blocks with multiple outputs, some only allow a single output, and so on. The "dataflow editor" interface is not as coherent or established as e.g. the "text editor" interface, but we can still do our best to be opinionated when we can get away with it and generic when we can't.
+Most dataflow editors are custom-built for a single application and domain, and can't easily be re-used by others. It's not even clear how "general-purpose" a dataflow editor can really be. Just in the small gallery of examples at the beginning of this blogpost there are several incompatible variations on the basic model: some allow cycles, some don't; some have blocks with multiple outputs, some only allow a single output, and so on. The "dataflow editor" interface is not as standardized as e.g. the "text editor" interface, but we can still do our best to be opinionated when we can get away with it and generic when we can't.
 
 Text editing is actually a useful point of reference here; it's maybe the best example of a complex general-purpose interface that has achieved essentially universal adoption. Everybody is so fluent in text editing that we rarely think about "cursors" and "selections" as things that had to be invented, or that could have been something else.
 
 ### SVG-based
 
-The only real options for rendering graphs on the web are Canvas or SVG. Canvas is definitely the bigger gun, and can perform better on visualizations with lots of data points, but in general we don't expect dataflow graphs to have tens of thousands of nodes. SVG is lighter-weight and easier to work with, and in the context of React components, SVGs have another advantage: they can be server-side rendered.
+The only real options for rendering graphs on the web are Canvas or SVG. Canvas is definitely the bigger gun, and can perform better on visualizations with lots of data points, but in general we don't expect dataflow graphs to have tens of thousands of nodes. SVG is lighter-weight and easier to work with, and in the context of React components, SVGs have another advantage: they can be rendered server-side.
 
 ### High-quality React and TypeScript integration
 
@@ -115,7 +108,7 @@ In order to be effectively general-purpose, we need to expose our editor state i
 
 What type of state does a dataflow editor have? For example, text editors have just two state components: the value of the text (as a string, an array of lines, or equivalent), and the location(s) of the cursor(s) and/or selection(s). A dataflow editor is more complex, and it's here that we have to make some decisions about the basic model that we want to work with.
 
-Let's start with a point of clarification. It feels natural to describe the state of a dataflow editor as a "graph" of "nodes and edges", but these aren't quite the same as the usual definition of directed graphs. Dataflow editors have blocks with labelled input and output *ports;* edges can only connect output ports to input ports (this is different from having edge labels because the ports are labelled on "both sides"). It'd be more proper to call this kind of thing a "wiring diagram", but we'll continue to use the term "graph" (along with "nodes" and "edges") in a casual sense to refer to the content of the editor.
+Let's start with a point of clarification. It feels natural to describe the state of a dataflow editor as a "graph" of "nodes and edges", but these aren't quite the same as the usual definition of directed graphs. Dataflow editors have blocks with labelled input and output *ports;* edges can only connect output ports to input ports (this is different from having edge labels because the ports are labelled on "both sides"). It would be more proper to call this kind of thing a "wiring diagram", but we'll continue to use the term "graph" (along with "nodes" and "edges") in a casual sense to refer to the content of the editor.
 
 <div class="flex fitems-stretch">
 {{<figure src="888E0A5E-68EE-4754-9869-70F5EE5D294A-470-0002F5B977BD1851.png"  alt="directed graph" caption="A classical directed graph" width="250" >}}
