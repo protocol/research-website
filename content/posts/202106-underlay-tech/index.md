@@ -428,7 +428,7 @@ function Index(props: {}) {
 
 3. Alright I think I've got it figured out. By working backwards I've concluded that `S` should be the concrete type `{ add: { inputs: "a" | "b"; outputs: "sum" } }`. I'm going to go ahead a propagate this through the rest of the component's types, and I'll let you know if I find any conflicts.
 
-It's possible to make a generic component where no single prop's value will determine the concrete type of the parameter, and instead to "spread the inference out" across several props. It's also possible to make a component that is generic in several parameters. But it's really not desirable to get into a "many-to-many" inference situation - that's just asking for trouble and would be extremely hard to debug. The simplest way to keep your types manageable is to centralize everything:
+It's possible to make a generic component where no single prop's value will determine the concrete type of the parameter, and instead to "spread the inference out" across several props. It's also possible to make a component that is generic in several parameters. But it's really not desirable to get into a "many-to-many" inference situation -- that's just asking for trouble and would be extremely hard to debug. The simplest way to keep your types manageable is to centralize everything:
 
 - consolidate all of the type-level data you need into a single global generic parameter
 - write an accessor utility type for every facet of the parameter that you need to use
@@ -450,7 +450,7 @@ const foo = { a: null, b: null }
 const bar = ["a", "b"]
 ```
 
-... TypeScript will give `bar` the type `bar: string[]`! The actual values `"a"` and `"b"` - which are the things we're trying to share with the type level in the first place - just get ignored.
+... TypeScript will give `bar` the type `bar: string[]`! The actual values `"a"` and `"b"` -- which are the things we're trying to share with the type level in the first place -- just get ignored.
 
 TypeScript *does* have tuple types, so we could explicitly write something like this:
 
@@ -472,16 +472,13 @@ const bar = ["a", "b"] as const
 
 ... but our whole goal was to centralize the port configuration in one place, without having to duplicate it on the type level, and without being rude to our users (`as const` etc is not something we should expect people to be familiar with). Ideally, we want configuration values to be regular JavaScript objects that expose the port configuration to the type level via TypeScript's default typing heuristics. This requires a little creative restructuring and results in the slightly more awkward `{ a: null, b: null }`.
 
-Leveraging these defaults to "drive" generics in a codebase is an *extremely* powerful design pattern. Naively we think of types as living "on top of" values, and that good code would be code with "100% type coverage", where every single value has an explicit type annotation, and where the role of the TypeScript compiler is to run around checking all your work. A more nuanced view of the type system is that it is less an authoritarian ruler and more a partner in crime - a place that you can both push data to and pull data from. Often we need to design things in reverse and make types bubble up from (deliberately unannotated) values; it's is the best way to coordinate the two levels.
+Leveraging these defaults to "drive" generics in a codebase is an *extremely* powerful design pattern. Naively we think of types as living "on top of" values, and that good code would be code with "100% type coverage", where every single value has an explicit type annotation, and where the role of the TypeScript compiler is to run around checking all your work. A more nuanced view of the type system is that it is less an authoritarian ruler and more a partner in crime -- a place that you can both push data to and pull data from. Often we need to design things in reverse and make types bubble up from (deliberately unannotated) values; it's is the best way to coordinate the two levels.
 
 Another place you see this pattern is in the [Prisma](https://www.prisma.io/) ORM client, which has some insanely high-quality TypeScript integration. Prisma knows what schema all of your tables are, so it knows how to autocomplete your query objects. But their query methods are also all generic: they use the actual *value* of the `.select` property (which you provide as a regular unannotated JavaScript object) to infer a precise return type for the whole method.
 
 {{<figure src="E1B1AB81-0082-4239-A574-B58FE3BE5914-470-00036BF55CFC5E32.png"  width="500" >}}
 
 {{<figure src="D656ACAD-71E7-48CB-9892-F18E04624C1D-470-00036BF2DE2397E7.png"  width="500" >}}
-
-
-
 
 This makes for a pretty phenomenal developer experience: end-to-end strong typing, into and out of your database, all in your IDE. And you can see traces of the same problem we had to work around! You might have expected `.select` to take an array of string property names, but object keys have stronger type behavior, so instead it's all `{ [property]: true }`.
 
@@ -500,7 +497,7 @@ interface Node<S extends Schema, K extends keyof S = keyof S> {
 }
 ```
 
-Intuitively, this says all the right things. Node is parametrized by two type variables - a schema and a kind `K` in that schema - and it has an explicit `.kind: K` along with `.inputs` and `.outputs` objects that have key domains `GetInputs<S, K>` and `GetOutputs<S, K>`, respectively.
+Intuitively, this says all the right things. Node is parametrized by two type variables -- a schema and a kind `K` in that schema -- and it has an explicit `.kind: K` along with `.inputs` and `.outputs` objects that have key domains `GetInputs<S, K>` and `GetOutputs<S, K>`, respectively.
 
 But we should check to make sure that this type actually behaves the way we want. First let's manually instantiate a concrete schema to play with.
 
@@ -524,7 +521,7 @@ type MySchemaNodeAdd = {
 }
 ```
 
-Awesome! What if we don't specify a kind? When we defined `Node` we gave the second parameter a default value `keyof S` - how does that look?
+Awesome! What if we don't specify a kind? When we defined `Node` we gave the second parameter a default value `keyof S` -- how does that look?
 
 ```tsx
 type MySchemaNode2 = Node<MySchema>
@@ -583,7 +580,7 @@ type MySchemaNode2 =
 
 In other words, we want a union of objects, not an object of unions.
 
-Controlling the way unions distribute can be one of the more frustrating parts of type-level programming in TypeScript. Fortunately, a relatively simple tactic will work for us - we just create an intermediate "index object" and then immediately index on it:
+Controlling the way unions distribute can be one of the more frustrating parts of type-level programming in TypeScript. Fortunately, a relatively simple tactic will work for us -- we just create an intermediate "index object" and then immediately index on it:
 
 ```tsx
 type Node<S extends Schema, K extends keyof S = keyof S> = {
@@ -752,7 +749,7 @@ Actions are a grammar of discrete state transitions. In a text editor, there are
 
 These actions are all still abstract in a certain sense. They represent the different ways that the state can be changed, but not *how* those changes are initiated by the user. With text editors, most of them can be done in multiple ways - using the either the keyboard or the GUI somehow. As a result, text editors usually implement some kind of command/dispatch pattern, where all state changes are represented as reified objects, and applied using a central dispatch method. This makes it easier to reliably initiate the same change in multiple ways, along with other practical benefits like general extensibility, like letting users intercept or modify actions before they're applied.
 
-This is essentially the [Redux](https://redux.js.org/) architecture. We're not actually going to use any Redux libraries, but   we will implement the same three basic things that we would in a (TypeScript) Redux application:
+This is essentially the [Redux](https://redux.js.org/) architecture. We're not actually going to use any Redux libraries, but  we will implement the same three basic things that we would in a (TypeScript) Redux application:
 
 - concrete types for each of our abstract actions
 - constructor functions for each of the concrete action types
@@ -760,7 +757,7 @@ This is essentially the [Redux](https://redux.js.org/) architecture. We're not a
 
 This also means that instead of a `onChange: (value) => void` callback like you'd expect to find in a controlled React component, our top-level `Editor` component is going to take something a little different: a `dispatch: (action: EditorAction<S>) => void` callback.
 
-This makes this a little more complex for our users -  in addition to having to store the state on their own (as with any controlled component), they also have to assemble their own reducer function *and* their own dispatch method. We can make this as easy as possible for them by exporting `reduce` function with this signature:
+This makes this a little more complex for our users: in addition to having to store the state on their own (as with any controlled component), they also have to assemble their own reducer function *and* their own dispatch method. We can make this as easy as possible for them by exporting `reduce` function with this signature:
 
 ```tsx
 declare function reduce<S extends Schema>(
@@ -796,7 +793,7 @@ function MyComponent({}) {
 }
 ```
 
-This is a little extra overhead, but it gives the user a clear place to insert their own editing logic - maybe they want to open a confirmation dialog before deleting nodes, or prevent creating more than one node of a certain kind, or enforce some kind of type-checking on edge connections.
+This is a little extra overhead, but it gives the user a clear place to insert their own editing logic -- maybe they want to open a confirmation dialog before deleting nodes, or prevent creating more than one node of a certain kind, or enforce some kind of type-checking on edge connections.
 
 Our top-level editor component now takes three props
 
@@ -812,7 +809,7 @@ interface EditorProps<S extends Schema> {
 
 ## Actions
 
-Our dataflow editor state is significantly more complex than a text editor's, but fortunately our grammar of actions is much simpler. We just have two classes of things - nodes and edges - and we can create, move, and delete them.
+Our dataflow editor state is significantly more complex than a text editor's, but fortunately our grammar of actions is much simpler. We just have two classes of things -- nodes and edges -- and we can create, move, and delete them.
 
 Some of our actions have to be generic in a parameter `S extends Schema`; others don't need to access `S`. We could make them all generic in `S` for consistency, but introducing an unused generic parameter is pretty bad practice. This means our combined `EditorAction` type looks like this:
 
@@ -958,7 +955,7 @@ declare function reduce<S extends Schema>(
 
 ... is fairly straightforward. We won't include it inline, but you can read the source [here](https://github.com/joeltg/react-dataflow-editor/blob/main/src/reduce.ts).
 
-The only tricky parts of applying our actions is making sure that the two representations of the graph structure - the values in `state.edges` and each `Node.inputs` and `Node.outputs` - stay in sync. For example, when we delete a node, we need to delete all of the edges from `EditorState.edges` that were connected to it, *and* we need to remove each of those edges from the input or output objects of the nodes on the other side.
+The only tricky parts of applying our actions is making sure that the two representations of the graph structure -- the values in `state.edges` and each `Node.inputs` and `Node.outputs` -- stay in sync. For example, when we delete a node, we need to delete all of the edges from `EditorState.edges` that were connected to it, *and* we need to remove each of those edges from the input or output objects of the nodes on the other side.
 
 The reduction function here is straightforward and is just included here for good bookkeeping. The only tricky parts are keeping the `.edges` object in sync with each node's `.inputs` and `.outputs` objects, and remembering to delete all of a node's adjacent edges when the node is deleted.
 
