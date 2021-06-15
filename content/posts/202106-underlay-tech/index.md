@@ -4,7 +4,7 @@ title: "Designing a Dataflow Editor with TypeScript and React"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-06-09
+date: 2021-06-15
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -42,7 +42,7 @@ draft: false
 
 # Introduction
 
-This is a *design report* - a story about the tradeoffs and challenges that we encountered while building a medium-complexity React component in TypeScript. These include
+This is a *design report* -- a story about the tradeoffs and challenges that we encountered while building a medium-complexity React component in TypeScript. These include
 
 - state modeling ("making illegal states unrepresentable")
 - basic type-level programming in TypeScript
