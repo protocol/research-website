@@ -63,7 +63,7 @@ If you're already a TypeScript expert, then you probably won't find anything nov
 *Dataflow editors* are a broad class of drag-and-drop-oriented interactive block diagram interfaces. You've probably seem them before:
 
 
-<iframe width="800" height="400" marginwidth="1" marginheight="1" scrolling="yes" frameborder="1"caption="Dataflow editors" src="https://www.are.na/joel-gustafson/dataflow-editors"  allowfullscreen ></iframe>
+<iframe width="600" height="400" marginwidth="1" marginheight="1" scrolling="yes" frameborder="1"caption="Dataflow editors" src="https://www.are.na/joel-gustafson/dataflow-editors"  allowfullscreen ></iframe>
 
 
 Dataflow editors are useful for creating graphs of connections that might be too complex to fit in a traditional hierarchical interface. Plus, they encourage the user to visualize their data (or whatever the editor is used for) "flowing" through the edges by rendering them as explicit, reified things, instead of just implying relationships through nesting and positioning.
@@ -117,11 +117,11 @@ What type of state does a dataflow editor have? For example, text editors have j
 
 Let's start with a point of clarification. It feels natural to describe the state of a dataflow editor as a "graph" of "nodes and edges", but these aren't quite the same as the usual definition of directed graphs. Dataflow editors have blocks with labelled input and output *ports;* edges can only connect output ports to input ports (this is different from having edge labels because the ports are labelled on "both sides"). It'd be more proper to call this kind of thing a "wiring diagram", but we'll continue to use the term "graph" (along with "nodes" and "edges") in a casual sense to refer to the content of the editor.
 
+<div class="flex fitems-stretch">
+{{<figure src="888E0A5E-68EE-4754-9869-70F5EE5D294A-470-0002F5B977BD1851.png"  alt="directed graph" caption="A classical directed graph" width="250" >}}
 
-{{<figure src="888E0A5E-68EE-4754-9869-70F5EE5D294A-470-0002F5B977BD1851.png"  alt="directed graph" caption="A classical directed graph" width="200" >}}
-
-{{<figure src="0FD8478D-14F5-4A63-B093-5406ED0F6E90-470-0002F5D69DDB1246.png"  alt="dataflow editor graph" caption="a dataflow editor 'graph'" width="400" >}}
-
+{{<figure src="0FD8478D-14F5-4A63-B093-5406ED0F6E90-470-0002F5D69DDB1246.png"  alt="dataflow editor graph" caption="a dataflow editor 'graph'" width="380" >}}
+</div>
 
 
 Here are some ground rules for the kind of dataflow editor state we're going to work with:
