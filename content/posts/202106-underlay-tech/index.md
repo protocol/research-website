@@ -154,7 +154,7 @@ The explicit "ports" show up in the types of the edge source and targets: edges 
 
 Each *node* also stores references to its incoming and outgoing edges in the `Node.inputs` and `Node.outputs` objects, respectively. Each entry in `Node.inputs` is an input port and has a value `EdgeID | null`, while each entry in `Node.outputs` is an output port and has a value `EdgeID[]`.
 
-With these types are an excellent starting point, let's try to critically evaluate them. Do they really capture the state we need to represent? Is there too much or too little state? Are there any constraints that we've overlooked that could be lifted into the type system? How can we carve this problem closer to its joints?
+These types are an excellent starting point, but let's try to critically evaluate them. Do they really capture the state we need to represent? Is there too much or too little state? Are there any constraints that we've overlooked that could be lifted into the type system? How can we carve this problem closer to its joints?
 
 ## Legal representation
 
@@ -361,12 +361,12 @@ const kinds = {
 }
 ```
 
-You might look at this and think "Ok, great! Let's make our top-level component generic in a parameter `Kinds`, have it take a prop `kinds: Kinds`, and write a generic type `MakeSchema<Kinds>` that turns `Kinds` into `S`! Here's a diagram!"
+You might look at this and think "Ok, great! Let's make our top-level component generic in a parameter `K extends Kinds`, have it take a prop `kinds: K`, and write a generic type `MakeSchema<K extends Kinds>` that turns `K` into `S`! Here's a diagram!"
 
 <center>{{<figure src="A0949381-35FB-4734-AA96-79A81054E7C2-497-00015C25881C3352.png"  width="400" >}}</center>
 
 
-This is the right way to anticipate the logical flow of data: we're going to use `kinds` to derive `S`, and then use `S` to parametrize `Nodes` and `Edges`. But, for reasons beyond the scope of this blog post, that approach won't actually work. And even if it did, it would make things more complicated than they need to be.
+This is the right way to anticipate the logical flow of data: we're going to use the value of `kinds` to derive a type `S`, and then use `S` to parametrize `Nodes` and `Edges`. But, for reasons beyond the scope of this blog post, that approach won't actually work. And even if it did, it would make things more complicated than they need to be.
 
 Something a little freaky about the type system is that the logical flow of data doesn't have to correspond to the direction of the lexical references; TypeScript is willing to do a lot of "backward" inference on our behalf. It turns out that we can just write `kinds: Kinds<S extends Schema>` just like the rest of our application, and TypeScript will *run the dotted arrow in reverse*.
 
@@ -554,6 +554,7 @@ for (const [id, node] of Object.entries(nodes)) {
 		// and that node.outputs is of type
 		// { quotient: EdgeID[]; remainder: EdgeID[] }
 	} else {
+		// And here, TS should think that node is the never type!
 		throw new Error("Invalid node kind")
 	}
 }
