@@ -742,7 +742,7 @@ Actions are a grammar of discrete state transitions. In a text editor, there are
 - Insert text at cursor
 - Replace selection with text
 - Delete character/word/line backward/forward
-- undo/redo
+- Undo/Redo
 - ???
 
 ... the list is actually pretty long, and each of these come with a bundle of fantastically complicated edge cases even in the simplest ASCII-only left-to-right contexts (text editing [hates you too](https://lord.io/text-editing-hates-you-too/)).
