@@ -37,7 +37,6 @@ draft: false
 
 ---
 
-# Designing a Dataflow Editor with TypeScript and React
 
 
 # Introduction
