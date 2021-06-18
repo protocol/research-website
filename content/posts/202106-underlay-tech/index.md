@@ -48,7 +48,7 @@ This is a *design report* -- a story about the tradeoffs and challenges that we 
 - DX patterns for generically typed React components
 - DX patterns for reusable controlled components using a Redux-like action/dispatch state paradigm
 
-These topics all deal with the external interface and TypeScript typings; lower-level implementation challenges (like optimizing drag interactions and sharing state between React and D3) have been left to a separate future post.
+These topics all deal with the external interface and TypeScript typings; lower-level implementation challenges (like optimizing drag interactions and sharing state between React and D3) have been left to a future post.
 
 If you're already a TypeScript expert, then you probably won't find anything novel in here. But if you haven't seen more advanced features like generics applied to practical web development, then this is for you!
 
