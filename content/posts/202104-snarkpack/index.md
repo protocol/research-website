@@ -143,7 +143,7 @@ e(A',B') = l^x * c * r^{x^{-1}}
 $$
 and the verifier only has to do *one pairing operation* to verify that statement, instead of two naively. To understand why it works, let's write what happens in $e(A',B')$, the left term of the verification equation:
 $$
-e(A',B') = e(G^{a_1 x}*G^{a_2},H^{b_1 x^{-1} + b_2} * H^{b_2}) = e(G^{a_1 x + a_2},H^{b_1 x^{-1} + b_2}) \{\}= e(G,H)^{(a_1 x + a_2) * (b_1 x^{-1} + b_2)}
+e(A',B') = e(G^{a_1 x}*G^{a_2},H^{b_1 x^{-1}} * H^{b_2}) = e(G^{a_1 x + a_2},H^{b_1 x^{-1} + b_2}) \{\}= e(G,H)^{(a_1 x + a_2) * (b_1 x^{-1} + b_2)}
 $$
 For the sake of clarity, let's only write the exponents:
 $$
