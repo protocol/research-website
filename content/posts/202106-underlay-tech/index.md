@@ -75,11 +75,11 @@ The sheer complexity of dataflow interfaces can be off-putting, but they've foun
 
 ## Motivation
 
-There are also several browser-based dataflow editors out there, such as [litegraph.js](https://github.com/jagenjo/litegraph.js) and [NoFlo](https://github.com/noflo/noflo-ui), which almost all use canvas or WebGL to render the nodes and edges. This is what you'd expect, since the basic needs of a dataflow editor -- absolutely positioning elements on a scrollable canvas, drawing visually pleasing curves, and prioritizing responsive drag-and-drop interactions that involve updating multiple elements at at once -- are all relative weaknesses of the DOM, which is designed for hierarchical, nested-box layouts.
+There are also several browser-based dataflow editors out there, such as [litegraph.js](https://github.com/jagenjo/litegraph.js) and [NoFlo](https://github.com/noflo/noflo-ui), which almost all use Canvas or WebGL to render the nodes and edges. This is what you'd expect, since the basic needs of a dataflow editor -- absolutely positioning elements on a scrollable canvas, drawing visually pleasing curves, and prioritizing responsive drag-and-drop interactions that involve updating multiple elements at at once -- are all relative weaknesses of the DOM, which is designed for hierarchical, nested-box layouts.
 
-But canvas is a heavy-duty technology, and introduces a sharp discontinuity in a (presumably) otherwise DOM-based application. You lose text selection, accessibility features, all of CSS, and get thrown into "video game world" where you have to construct everything you need from scratch.
+But Canvas is a heavy-duty technology, and introduces a sharp discontinuity in a (presumably) otherwise DOM-based application. You lose text selection, accessibility features, all of CSS, and get thrown into "video game world" where you have to construct everything you need from scratch.
 
-For the [Underlay](https://www.underlay.org/) project, we wanted to make a data pipeline environment to showcase our algebraic graph data model. The ideal interface we pictured was a dataflow editor where the blocks represented different kinds of transformations, with (strongly typed) data flowing through the edges. But we didn't want to use a canvas-based editor, and in particular we wanted to embed the editor into a React application. So we set out to make a dataflow editor with three primary properties:
+For the [Underlay](https://www.underlay.org/) project, we wanted to make a data pipeline environment to showcase our algebraic graph data model. The ideal interface we pictured was a dataflow editor where the blocks represented different kinds of transformations, with (strongly typed) data flowing through the edges. But we didn't want to use a Canvas-based editor, and in particular we wanted to embed the editor into a React application. So we set out to make a dataflow editor with three primary properties:
 
 - General-purpose
 - SVG-based
@@ -124,6 +124,7 @@ Here are some ground rules for the kind of dataflow editor state we're going to 
 
 With these in place, let's take a stab at writing out types for our nodes and edges:
 
+
 ```tsx
 type NodeID = string
 type EdgeID = string
@@ -146,6 +147,7 @@ interface EditorState {
 	edges: Record<EdgeID, Edge>
 }
 ```
+
 
 The explicit "ports" show up in the types of the edge source and targets: edges connect a specific output port (`Edge.source.output`) of a specific node (`Edge.source.id`) to a specific input port (`Edge.target.input`) of another node (`Edge.target.id`).
 
@@ -829,7 +831,7 @@ In the examples, we've augmented our `dispatch` method we provide to the top-lev
 
 *Creating a node* is an action that takes two arguments: a kind of node to create, and a position on the canvas.
 
-```tsx
+{{< highlight tsx "linenos=table">}}
 import { nanoid } from "nanoid"
 
 type CreateNodeAction<S extends Schema> = {
@@ -846,7 +848,10 @@ function createNode<S extends Schema>(
 	const id = nanoid(10)
 	return { type: "node/create", id, kind, position }
 }
-```
+{{< /highlight >}}
+
+<span></span>
+
 
 <center>{{<figure src="example-action-create-node.gif"  width="500" caption="create a node">}}</center>
 
@@ -855,7 +860,7 @@ function createNode<S extends Schema>(
 
 *Deleting a node* is an action that takes one argument: a node ID.
 
-```tsx
+{{< highlight tsx "linenos=table">}}
 type DeleteNodeAction = {
 	type: "node/delete"
 	id: NodeID
@@ -864,14 +869,18 @@ type DeleteNodeAction = {
 function deleteNode(id: NodeID): DeleteNodeAction {
 	return { type: "node/delete", id }
 }
-```
+
+{{< /highlight >}}
+
+<span></span>
+
 <center>{{<figure src="example-action-delete-node.gif"  width="500" caption="delete a node">}}</center>
 
 ### Move a node
 
 *Moving a node* is an action that takes two arguments: a node ID and a position on the canvas.
 
-```tsx
+{{< highlight tsx "linenos=table">}}
 type MoveNodeAction = {
 	type: "node/move"
 	id: NodeID
@@ -881,14 +890,18 @@ type MoveNodeAction = {
 function moveNode(id: NodeID, position: { x: number; y: number }): MoveNodeAction {
 	return { type: "node/move", id, position }
 }
-```
+
+{{< /highlight >}}
+
+<span></span>
+
 <center>{{<figure src="example-action-move-node.gif"  width="500" caption="move a node">}}</center>
 
 ### Create an edge
 
 *Creating an edge* is an action that takes two arguments: a source output port and a target input port.
 
-```tsx
+{{< highlight tsx "linenos=table">}}
 import { nanoid } from "nanoid"
 
 type CreateEdgeAction<S extends Schema> = {
@@ -902,14 +915,17 @@ function createEdge<S extends Schema>(source: Source<S>, target: Target<S>): Cre
 	const id = nanoid(10)
 	return { type: "edge/create", id, source, target }
 }
-```
+{{< /highlight >}}
+
+<span></span>
+
 <center>{{<figure src="example-action-create-edge.gif"  width="500" caption="create an edge">}}</center>
 
 ### Delete an edge
 
 *Deleting an edge* is an action that takes one argument: an edge ID.
 
-```tsx
+{{< highlight tsx "linenos=table">}}
 type DeleteEdgeAction = {
 	type: "edge/delete"
 	id: EdgeID
@@ -918,14 +934,17 @@ type DeleteEdgeAction = {
 function deleteEdge(id: EdgeID): DeleteEdgeAction {
 	return { type: "edge/delete", id }
 }
-```
+{{< /highlight >}}
+
+<span></span>
+
 <center>{{<figure src="example-action-delete-edge.gif"  width="500" caption="delete an edge">}}</center>
 
 ### Move an edge
 
 *Moving an edge* is an action that takes two arguments: an edge ID and the input port of a new target.
 
-```tsx
+{{< highlight tsx "linenos=table">}}
 type MoveEdgeAction<S extends Schema> = {
 	type: "edge/move"
 	id: EdgeID
@@ -935,7 +954,10 @@ type MoveEdgeAction<S extends Schema> = {
 function moveEdge<S extends Schema>(id: EdgeID, target: Target<S>): MoveEdgeAction<S> {
 	return { type: "edge/move", id, target }
 }
-```
+{{< /highlight >}}
+
+<span></span>
+
 <center>{{<figure src="example-action-move-edge.gif"  width="500" caption="move an edge">}}</center>
 
 
