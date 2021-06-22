@@ -39,8 +39,6 @@ draft: false
 
 
 
-# Introduction
-
 This is a *design report* -- a story about the tradeoffs and challenges that we encountered while building a medium-complexity React component in TypeScript. These include
 
 - state modeling ("making illegal states unrepresentable")
@@ -61,7 +59,7 @@ If you're already a TypeScript expert, then you probably won't find anything nov
 *Dataflow editors* are a broad class of drag-and-drop-oriented interactive block diagram interfaces. You've probably seem them before:
 
 
-<iframe width="600" height="400" marginwidth="1" marginheight="1" scrolling="yes" frameborder="1"caption="Dataflow editors" src="https://www.are.na/joel-gustafson/dataflow-editors"  allowfullscreen ></iframe>
+<center><iframe width="600" height="400" marginwidth="1" marginheight="1" scrolling="yes" frameborder="1"caption="Dataflow editors" src="https://www.are.na/joel-gustafson/dataflow-editors"  allowfullscreen ></iframe></center>
 
 
 Dataflow editors are useful for creating graphs of connections that might be too complex to fit in a traditional hierarchical interface. Plus, they encourage the user to visualize their data (or whatever the editor is used for) "flowing" through the edges by rendering them as explicit, reified things, instead of just implying relationships through nesting and positioning.
