@@ -4,7 +4,7 @@ title: "Designing a Dataflow Editor with TypeScript and React"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-06-15
+date: 2021-06-23
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
