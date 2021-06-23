@@ -4,7 +4,7 @@ title: "The case for AI based Web3 reputation systems"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-06-24
+date: 2021-06-23
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
