@@ -17,7 +17,7 @@ venue_location: Helsinki and Espoo, Finland
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date: June 21, 2021
+venue_date: 2021-06-21
 
 # DOI, if available
 doi:
