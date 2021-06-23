@@ -20,7 +20,7 @@ categories:
 
 # If applicable
 tags:
-  -
+  - longform
 
 # Zero or more of the areas in content/areas
 areas:
