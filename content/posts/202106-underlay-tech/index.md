@@ -977,8 +977,6 @@ declare function reduce<S extends Schema>(
 
 The only tricky parts of applying our actions is making sure that the two representations of the graph structure -- the values in `state.edges` and each `Node.inputs` and `Node.outputs` -- stay in sync. For example, when we delete a node, we need to delete all of the edges from `EditorState.edges` that were connected to it, *and* we need to remove each of those edges from the input or output objects of the nodes on the other side.
 
-The reduction function here is straightforward and is just included here for good bookkeeping. The only tricky parts are keeping the `.edges` object in sync with each node's `.inputs` and `.outputs` objects, and remembering to delete all of a node's adjacent edges when the node is deleted.
-
 # Summary
 
 Our broader goal in writing this up was to illustrate some higher-level TypeScript features and type-driven design patterns in the practical context of modern web development.
