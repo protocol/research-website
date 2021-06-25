@@ -1,10 +1,10 @@
 ---
 # Publication title
-title: "IPFS-FAN: A Function-Addressable Computation Network"
+title: "The case for AI based Web3 reputation systems"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-06-11
+date: 2021-06-21
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -25,20 +25,19 @@ doi:
 # Type of publication
 # delete all but one
 publication_types:
-
-  - conference-paper
-
+  - conference paper
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - alfonso-delarocha
+  - "Navin V. Keizer"
+  - "Fan Yang"
   - yiannis-psaras
-  - david-dias
+  - "George Pavlou"
 
 # Zero or more of the areas in content/areas
 areas:
-  - networking
   - distributed-systems
+  - networking
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
@@ -51,7 +50,7 @@ unaffiliated: false
 # Publication pdf, should be in the same folder
 # No need to fill this out; just name the file the same as the folder
 #resources:
-#  - src: delarocha2021a.pdf
+#  - src: publication-source.pdf
 
 # Not generally used
 # featured: false
@@ -71,6 +70,14 @@ unaffiliated: false
 
 ---
 
-Permissionless computation is one of the missing pieces in the web3 stack in order to have all the tools needed to “decentralise Internet services”. There are already proposals to embed computation in decentralised networks like smart contracts, or blockchain networks for computational offloading. Although technically sound, their computational model is too restrictive to be used for general purpose computation.
+Initiatives such as blockchains and decentralized
+storage networks are pushing for a decentralized Web3 to replace
+the current architecture. At the core of Web3 are network
+resource sharing services, which allow anyone to sell spare
+network capacity in return for rewards. These services require a
+way to establish trust, as parties are potentially malicious. This
+can be achieved by reputation systems.
 
-In this paper, we propose a general architecture of a decentralised network for general-purpose and permissionless computation based on content-addressing. We present a proof-of-concept prototype and describe in detail its building blocks.
+In this paper we make the case for using deep reinforcement
+learning in Web3 reputation calculation. More specifically, we
+propose a model which allows for decentralized ca
