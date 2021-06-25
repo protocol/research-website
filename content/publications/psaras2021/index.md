@@ -10,7 +10,7 @@ date: 2021-06-21
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: IFIP Networking Conference
+venue: DI2F
 
 # Venue Location
 venue_location: Helsinki and Espoo, Finland
