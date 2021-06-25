@@ -10,10 +10,10 @@ date: 2021-06-11
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: IFIP
+venue: DI2F
 
 # Venue Location
-venue_location: Aalto, Finland
+venue_location: Espoo, Finland
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
