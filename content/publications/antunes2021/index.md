@@ -13,7 +13,7 @@ date: 2021-06-21
 venue: DI2F
 
 # Venue Location
-venue_location: Helsinki and Espoo, Finland
+venue_location: Espoo, Finland
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
