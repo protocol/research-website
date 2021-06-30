@@ -51,4 +51,4 @@ user_groups:
 ---
 
 
-I'm a computer science major at UT Austin. I love learning about economics and philosophy, and I host a podcast where I interview famous intellectuals called The [Lunar Society](https://www.youtube.com/c/DwarkeshPatel). I'm interested in distributed systems because they are technically fascinating and because they have the potential to improve how we are able to store and communicate data.
+Dwarkesh is a computer science major at UT Austin. He loves learning about economics and philosophy, and hosts a podcast where he interviews famous intellectuals called The [Lunar Society](https://www.youtube.com/c/DwarkeshPatel). Dwarkesh is interested in distributed systems because they are technically fascinating and because they have the potential to improve how we are able to store and communicate data.
