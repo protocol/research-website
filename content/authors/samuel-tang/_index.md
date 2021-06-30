@@ -1,13 +1,13 @@
 ---
 # Display name
-name:
+name: Samuel Tang
 
 # Role/position (e.g. Research Scientist)
-role:
+role: Associate Research Program Manager
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-  -
+  
 
 # Avatar (no need to edit)
 resources:
@@ -41,7 +41,7 @@ social:
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
 user_groups:
-  - Researchers
+- Management and support
  
 
 # For display at the top of the author details page

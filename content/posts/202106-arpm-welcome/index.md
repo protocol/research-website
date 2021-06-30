@@ -36,7 +36,7 @@ Protocol Labs Research is delighted to welcome our inaugural cohort of Associate
 
 The ARPMs will be supporting PL Research initiatives as well as conducting research into how innovative technologies are developed.
 
-We asked our new summer researchers what about their paths to PL Research, the projects that interest them most, and their thoughts about future technological developments:
+We asked our new summer researchers about their paths to PL Research, the projects that interest them most, and their thoughts about future technological developments:
 
 ## [Max Krieger](/authors/max-krieger/)
 
