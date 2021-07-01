@@ -4,7 +4,8 @@ title: PL Research welcomes its first cohort of summer research associates
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-06-28
+date: 2021-07-01
+
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
