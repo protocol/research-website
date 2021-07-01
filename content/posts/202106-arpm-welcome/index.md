@@ -47,7 +47,7 @@ We asked our new summer researchers about their paths to PL Research, the projec
 
 I come from a background in user interface design and implementation, with a particular interest in interfaces for complex and arcane niches like math, science, and art. This eventually led to questions about where advances in computer interfaces have come from, and what kinds of environments led to their invention. In any computer science research lab, interfaces are everywhere, even if they aren’t the subject of the research itself. Protocol Labs is a unique organization in this realm, and I’m excited to dive into its inner workings this summer!
 
-**What are you working on? What would you like to work on**
+**What are you working on? What would you like to work on?**
 
 Right now I’m creating software for a variety of initiatives and projects, including math diagramming tools and new ways to collaborate with friends.
 
@@ -65,7 +65,7 @@ A lot of “future” technologies are already here, but too few people have the
 
 I found out about Protocol Labs because I started reading [Alfonso de la Rocha's](/authors/alfonso-delarocha/) great newsletter about the research he was doing at this company. I asked him how I could get involved in distributed systems, and he recommended this opportunity.
 
-**What are you working on? What would you like to work on**
+**What are you working on? What would you like to work on?**
 
 I'm learning about how IPFS and Filecoin work, how they can be improved, and how they can be applied to solve real world problems. I'm also trying to figure out why some institutions throughout history have punched above their weight in generating basic research and revolutionary techonologies.
 
@@ -80,7 +80,7 @@ I'm really excited to see if gene therapy will help us live longer, healthier, a
 
 While studying Computer Science at Tsinghua University, I became interested in blockchain and the Web 3.0 movement. The idea that power can be pushed to the edges to empower almost everyone fascinates me. I ended up spending a lot of time thinking about what a decentralized future would look like, learning how to build dApps, and working on educational content to spark interest in others. I'm personally drawn to PL because of its mission and the work that's being done here: essentially leveling the playing field by redefining the protocols to build an inclusive future, which constanly motivates and excites me everyday. 
 
-**What are you working on? What would you like to work on**
+**What are you working on? What would you like to work on?**
 
 I'm spending the summer working on meta-research, looking into how to build and direct a research program, and, on a higher level, attempting to learn where innovation happens. I'm generally interested in exploring and building humane technology that enables people to live a better and more meaningful life; that includes prioritizing user privacy, respecting user attention, maximizing user productivity, and anything that allows one to focus more on the things they care most about and truly connect with the people around them. 
 
