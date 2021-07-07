@@ -3,11 +3,11 @@
 name: Marko Vukolic
 
 # Role/position (e.g. Research Scientist or Research Engineer)
-role: ConsensusLab Lead
+role: Research Scientist
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-  - ConsensusLab
+  - consensuslab
 
 # Avatar (no need to edit)
 resources:
