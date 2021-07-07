@@ -11,4 +11,4 @@ resources:
   - src: icon.svg
 ---
 
-ConsensusLab explores cutting-edge scalable permissionless consensus protocols. 
+ConsensusLab explores fundamental problems of control, coordination, and consistency in distributed systems. 
