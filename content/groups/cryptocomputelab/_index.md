@@ -35,7 +35,7 @@ Seeded by the hard problems Filecoin Mainnet presented, our long-term vision is 
 ### The Home Team
 
 - **Lab Lead:** Friedel Ziegelmayer
-- Porçu Quine 
+- Porçu Quine
 - nemo
 - jake
 - Volker Mische
@@ -54,4 +54,5 @@ Seeded by the hard problems Filecoin Mainnet presented, our long-term vision is 
     - VDFs
 
 
-
+## Minisites
+- [zk-SNARKs for the world](../../sites/snarks/)
