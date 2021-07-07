@@ -43,4 +43,4 @@ Did you know Filecoin is the largest zk-SNARK network deployed to date?
 
 zk-SNARKs are a cryptographic technique that allows a prover to efficiently convince verifiers that the prover knows some piece of information -- without revealing the information itself. This property enables secure and private interaction in a blockchain setting.
 
-The Filecoin network currently generates up to 7 million zk-SNARK proofs per day, each proof including more than 100 million constraints. Visit our new [zk-SNARKs for the world minisite](../../sites/snarks/) to find out how.
+The Filecoin network currently generates up to 7 million zk-SNARK proofs per day, each proof including more than 100 million constraints. Visit our new [zk-SNARKs for the world minisite](../../../sites/snarks/) to find out how.
