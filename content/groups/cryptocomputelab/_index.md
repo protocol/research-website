@@ -30,6 +30,9 @@ Seeded by the hard problems Filecoin Mainnet presented, our long-term vision is 
     - Algorithm & data structure design
     - Server design
 
+## Minisites
+- [zk-SNARKs for the world](../../sites/snarks/)
+
 ## Team
 
 ### The Home Team
@@ -52,7 +55,3 @@ Seeded by the hard problems Filecoin Mainnet presented, our long-term vision is 
 - [Zcash](https://z.cash/)
     - Halo2
     - VDFs
-
-
-## Minisites
-- [zk-SNARKs for the world](../../sites/snarks/)
