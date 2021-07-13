@@ -13,8 +13,8 @@ date: 2021-07-13
 # We sort authors alphabetically by last name
 authors:
   - chhimed-kunzang
-  - jorge-soares
   - friedel-ziegelmayer
+  - jorge-soares  
 
 # If applicable
 categories:
