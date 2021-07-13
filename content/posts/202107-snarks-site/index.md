@@ -44,7 +44,7 @@ For the past two years we have been working on bringing zk-SNARKs to the world a
 
 Filecoin avoids wasteful proof of work by allowing miners to win block rewards by proving that they are storing client data. This requires an enormous volume of cryptographic proofs: we need both Proof of Replication — to ensure miners store unique copies of claimed data — and Proof of Spacetime — to ensure they maintain accessible copies of the replicated data over time.
 
-zk-SNARKs are a cryptographic technique that allows a prover to efficiently convince verifiers that the prover knows some piece of information without revealing the information itself. The efficiency of zk-SNARKs is a key property and allow us to prove storage in much less space than would otherwise be possible.
+zk-SNARKs are a cryptographic technique that allows a prover to efficiently convince verifiers that the prover knows some piece of information without revealing the information itself. The efficiency of zk-SNARKs is a key property that allow us to prove storage in much less space than would otherwise be possible.
 
 When we set out to build Filecoin, there was no precedent for the volume of proofs which would be required to secure a network as large as we envisioned. Over the course of development leading up to the network launch, we successively cleared hurdle after hurdle to make our use of zk-SNARKs practical. Since launch, we have continued to bring new research to bear to further improve performance. Today's Filecoin proofs occupy the intersection of cutting-edge research and boundary-pushing engineering.
 
