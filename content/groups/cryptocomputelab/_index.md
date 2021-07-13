@@ -30,12 +30,15 @@ Seeded by the hard problems Filecoin Mainnet presented, our long-term vision is 
     - Algorithm & data structure design
     - Server design
 
+## Minisites
+- [zk-SNARKs for the world](../../sites/snarks/)
+
 ## Team
 
 ### The Home Team
 
 - **Lab Lead:** Friedel Ziegelmayer
-- Porçu Quine 
+- Porçu Quine
 - nemo
 - jake
 - Volker Mische
@@ -52,6 +55,3 @@ Seeded by the hard problems Filecoin Mainnet presented, our long-term vision is 
 - [Zcash](https://z.cash/)
     - Halo2
     - VDFs
-
-
-
