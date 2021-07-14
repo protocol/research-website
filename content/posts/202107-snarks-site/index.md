@@ -12,9 +12,9 @@ date: 2021-07-13
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  - jorge-soares
-  - friedel-ziegelmayer
   - chhimed-kunzang
+  - friedel-ziegelmayer
+  - jorge-soares  
 
 # If applicable
 categories:
