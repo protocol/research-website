@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "A Research Perspective on Filecoin"
+title: "A research perspective on Filecoin"
 
 # Website post date
 # format YYYY-MM-DD
