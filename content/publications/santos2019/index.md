@@ -2,9 +2,9 @@
 title: "DClaims: A censorship resistant web annotations system using IPFS and Ethereum"
 
 # Conference date
-date: 2020-01-06
+date: 2020-03-30
 # Website publication date
-# publishDate: 2020-01-06
+# publishDate: 2020-03-30
 
 # Publication Name (not used)
 journal:
@@ -16,13 +16,13 @@ venue: ACM/SIGAPP Symposium On Applied Computing (to appear)
 venue_location: Brno, Czech Republic
 
 # Venue Date
-venue_date: 2020-04-30
+venue_date: 2020-03-30
 
 # Digital Object Identifier
 doi:
 
 resources:
-  - src: santos2019.pdf
+  - src: santos2020.pdf
   - src: cite.bib
 
 # Taxonomies:
