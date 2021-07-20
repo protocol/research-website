@@ -29,11 +29,11 @@ publication_types:
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - "Michal Krol"
+  - "Michał Król"
   - "Alberto Sonnino"
   - "Argyrios Tasiopoulos"
   - yiannis-psaras
-  - "Etienne Riviere"
+  - "Etienne Rivière"
 
 # Zero or more of the areas in content/areas
 areas:
