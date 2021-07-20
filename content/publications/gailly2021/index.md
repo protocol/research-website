@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "SnarkPack: Practical SNARK Aggregation"
+title: "SnarkPack: Practical SNARK aggregation"
 
 # Website post date
 # format YYYY-MM-DD

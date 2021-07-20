@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Rinocchio: SNARKs for Ring Arithmetic"
+title: "Rinocchio: SNARKs for ring arithmetic"
 
 # Website post date
 # format YYYY-MM-DD

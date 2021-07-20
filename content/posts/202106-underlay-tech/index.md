@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "Designing a Dataflow Editor with TypeScript and React"
+title: "Designing a dataflow editor with TypeScript and React"
 
 # Website post date
 # format YYYY-MM-DD
