@@ -275,23 +275,23 @@ As you can see, $\mathbf{v}$ and $\mathbf{w}$ depend on two parameters $\alpha$ 
 
 There is one problem though: *the SRS is not the same as the one for Groth16*!
 The Groth16 SRS is quite involved, so we're only showing the relevant part here:
-$$ \mathbf{V} = \{H^{\alpha^{i}}\}\_{i=0}^{n-1} \space
-    \mathbf{W} = \{G^{\alpha^{i}}\}\_{i=0}^{n-1}
+$$ \mathbf{V} = \\{H^{\alpha^{i}}\\}\_{i=0}^{n-1} \space
+    \mathbf{W} = \\{G^{\alpha^{i}}\\}\_{i=0}^{n-1}
 $$
 
 We can see we only have one "secret" exponent here, $\alpha$ ! However, our commitment scheme requires two "secret" exponents:
-* Aggregation proving key: $\mathbf{V} = \{H^{\beta^{2i}}\}\_{i=0}^{n-1}$ and $\mathbf{W} = \{G^{\alpha^{2i}}\}\_{i=0}^{n-1}$
+* Aggregation proving key: $\mathbf{V} = \\{H^{\beta^{2i}}\\}\_{i=0}^{n-1}$ and $\mathbf{W} = \\{G^{\alpha^{2i}}\\}\_{i=0}^{n-1}$
 * Aggregation verifiying key $(H^\alpha,G^\beta)$
 
 Note that it also requires a power twice as high as Groth16's SRS.
 We could of course create a new trusted setup, but we wanted to rely on the same security assumptions in use today, and running a trusted setup is an expensive and long process that we wanted to avoid.
 
 One idea we had is that we could use two Groth16 SRS, for example the one from Filecoin and Zcash together, so we end up with two hidden exponents $\alpha$ and $\beta$. This was actually our first thought, but would have been totally insecure! Indeed, with two Groth16 SRS we would have $(G^\beta)^i$ and $(H^\beta)^i$  for $i:0 \rightarrow n$ while in our commitment scheme SRS, the verifying key only contains terms of the form $H^{\beta^{2i}}$, where the exponent of $\beta$ is even.  In other words, given an SRS constructed from two Groth16 SRS, *the binding property is broken*. Let's see an example where we can devise two different messages that map to the same commitment.
-The commitment of the vector $\mathbf{A} = \{(G^{\beta^2})^x, G^y\}$ is:
+The commitment of the vector $\mathbf{A} = \\{(G^{\beta^2})^x, G^y\\}$ is:
 $$
 C_{A} = \prod e(A_i,V_i) = e(G^{\beta^2 x},H)e(G^y,H^{\beta^2}) = e(G,H)^{\beta^2 x + \beta^2 y}
 $$
-The commitment of a second vector $\mathbf{A'} = \{(G^{\beta^2})^y,G^x\}$ is:
+The commitment of a second vector $\mathbf{A'} = \\{(G^{\beta^2})^y,G^x\\}$ is:
 $$
 C_{A'} = \prod e(A_i',V_i) = e(G^{\beta^2 y},H)e(G^x,H^{\beta^2}) = e(G,H)^{\beta^2 y + \beta^2 x} = C_{A}
 $$
@@ -303,8 +303,8 @@ Here is its description:
 $$
 \begin{align}
 ck &= (\mathbf{V_1},\mathbf{V_2},\mathbf{W_1},\mathbf{W_2}) \textrm{ where} \\\\
- \mathbf{V_1} &= \{H^{\alpha^{i}}\}\_{i=0}^{n-1}, \mathbf{V_2} =\{H^{\beta^{i}}\}\_{i=0}^{n-1} \\\\
-\mathbf{W_1} &= \{G^{\alpha^{n + i}}\}\_{i=0}^{n-1}, \mathbf{W_2} = \{G^{\beta^{n + i}}\}\_{i=0}^{n-1} \\\\
+ \mathbf{V_1} &= \\{H^{\alpha^{i}}\\}\_{i=0}^{n-1}, \mathbf{V_2} =\\{H^{\beta^{i}}\\}\_{i=0}^{n-1} \\\\
+\mathbf{W_1} &= \\{G^{\alpha^{n + i}}\\}\_{i=0}^{n-1}, \mathbf{W_2} = \\{G^{\beta^{n + i}}\\}\_{i=0}^{n-1} \\\\
 m &= (\mathbf{A} \in \mathbb{G_1^n},\mathbf{B} \in \mathbb{G_2^n},\prod e(A_i,B_i) \in \mathbb{G_t})
 \end{align}
 $$
@@ -338,12 +338,12 @@ The trick to get the verifier to only perform a logarithmic amount of work when 
 
 To understand the trick let's make a small example. Let's define our commitment key as
 $$
-\mathbf{V} = \{V_1,V_2,V_3,V_4\} = \{H,H^\alpha,H^{\alpha^2},H^{\alpha^3}\}
+\mathbf{V} = \\{V_1,V_2,V_3,V_4\\} = \\{H,H^\alpha,H^{\alpha^2},H^{\alpha^3}\\}
 $$
 We define $n = 4$ and $l = log(n) = 2$.
 Let's run the GIPA loop twice (since $log(n) = 2$). During the first iteration, we derive a challenge $x_0$ and compress $\mathbf{V}$ into:
 $$
-\mathbf{V'} = \{H * H^{x_0\alpha^2}, H^\alpha  * H^{x_0\alpha^3} \} = \{V_1^{1 + x_0\alpha^2}, V_2^{1 + x_0\alpha^2}\} = \{V_1',V_2'\}
+\mathbf{V'} = \\{H * H^{x_0\alpha^2}, H^\alpha  * H^{x_0\alpha^3} \\} = \\{V_1^{1 + x_0\alpha^2}, V_2^{1 + x_0\alpha^2}\\} = \\{V_1',V_2'\\}
 $$
 For the second and final iteration, we derive the challenge $x_1$ and compress further:
 $$
@@ -393,7 +393,7 @@ For Groth16 aggregation, we will need to prove the relation $Z = \sum_{i=0}^{n-1
 $$
 \begin{align}
 m &= (\mathbf{C} \in \mathbb{G_1^n}, \mathbf{r} \in \mathbb{F_r}, \sum_{i=0}^{n-1} C_i^{r_i}) \\\\
-ck &= (\mathbf{V} = \{H^{\alpha^i}\}_{i=0}^{n-1} \in \mathbb{G_2^n}, \mathbf{1} \in \mathbb{F_r^n}, 1 \in \mathbb{G_t}) \\\\
+ck &= (\mathbf{V} = \\{H^{\alpha^i}\\}_{i=0}^{n-1} \in \mathbb{G_2^n}, \mathbf{1} \in \mathbb{F_r^n}, 1 \in \mathbb{G_t}) \\\\
 CM_{m}(ck,m) &= (\prod e(C_i,V_i), \mathbf{r}, \sum_{i=0}^{n-1} C_i^{r_i})
 \end{align}
 $$
