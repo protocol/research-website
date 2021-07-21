@@ -231,7 +231,7 @@ In this section, we explore an instantiation of GIPA required to compute a proof
 
 Let's present the commitment scheme in the original paper:
 $$\begin{align}
-ck &= (\mathbf{V} = \{H^{\beta^{2i}}\}\_{i=0}^{n-1},\mathbf{W} = \{G^{\alpha^{2i}}\}_{i=0}^{n-1},1 \in \mathbb{G_t}) \\\\
+ck &= (\mathbf{V} = \\{H^{\beta^{2i}}\\}\_{i=0}^{n-1},\mathbf{W} = \\{G^{\alpha^{2i}}\\}_{i=0}^{n-1},1 \in \mathbb{G_t}) \\\\
 m &= (\mathbf{A} \in \mathbb{G_1^n},\mathbf{B} \in \mathbb{G_2^n},\prod e(A_i,B_i) \in \mathbb{G_t}) \\\\
 CM(ck,m) &= (\prod e(A_i,V_i),\prod e(W_i,B_i), \prod e(A_i,B_i))
 \end{align}$$
