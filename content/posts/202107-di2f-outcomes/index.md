@@ -50,7 +50,7 @@ The hands-on session preceding the workshop featured:
 Sebastian Henningsen (Weizenbaum Institute, Berlin), who presented an [IPFS Crawler](https://github.com/wiberlin/ipfs-crawler) that can be used to get a better understanding of the size and structure of the IPFS network.
 - Spyros Voulgaris (AUEB, Greece), who presented an [IPFS DHT Visualization tool](https://github.com/mmlab-aueb/IPFS), which shows the lifetime of a request in the IPFS network and is very useful tool to understand the internals of the Distributed Hash Table (DHT) by looking at the sequence of steps that a request takes in the IPFS network.
 
-You can find these and other resources in the Workshop’s Handbook.
+You can find these and other resources in the [Workshop’s Handbook](https://gateway.ipfs.io/ipfs/QmZKx6xukBDDYELwVjLFZBXF9hFxasHwb2xWSwvVzyPPq6).
 
 Last, but certainly not least, we’re happy to announce the winners of the Hackathon Competition, which ran for the three weeks following the workshop:
 - Dennis Trautwein, who built the [Nebula Crawler and Monitoring system](https://github.com/dennis-tra/nebula-crawler). Nebula not only crawls the network but also monitors the liveness and availability of peers in the IPFS and Filecoin networks by periodically dialing into every peer in the network — a really useful tool for the Web3.0 stack! There is an extra explainer in the libp2p discussion forum [here](https://discuss.libp2p.io/t/nebula-libp2p-dht-crawler/950).
