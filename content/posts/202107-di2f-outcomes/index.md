@@ -43,7 +43,7 @@ The contributions covered a wide range of topics:
 - Architecture extensions to enable computing and Solid on top of IPFS
 - Decentralized identifiers as a first-class primitive for IPFS content and services
 
-[The program](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin) also featured an insightful keynote speech from Thibault Maunier, who walked us through the challenges and opportunities of building CDN-scale decentralised technology, as seen by Cloudflare’s deployment of decentralised gateways and name resolvers. Protocol Lab’s Zixuan Zhang gave an invited talk during which he walked us through the nuts and bolts of Filecoin’s Storage Economy and the rules that guarantee its stability and robustness.
+[The program](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin) also featured an insightful keynote speech from Thibault Maunier, who walked us through the challenges and opportunities of building CDN-scale decentralised technology, as seen by Cloudflare’s deployment of decentralised gateways and name resolvers. Protocol Labs' Zixuan Zhang gave an invited talk during which he walked us through the nuts and bolts of Filecoin’s Storage Economy and the rules that guarantee its stability and robustness.
 
 The hands-on session preceding the workshop featured:
 - Alfonso de la Rocha (Protocol Labs), who presented [IPFS Probe](https://github.com/protocol/beyond-bitswap/tree/master/testbed/probe), an experimental tool to play with basic IPFS commands in a testbed environment, interact with other peers, and test and debug improvements to protocols.
