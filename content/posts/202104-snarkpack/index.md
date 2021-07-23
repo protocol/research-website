@@ -231,7 +231,7 @@ In this section, we explore an instantiation of GIPA required to compute a proof
 
 Let's present the commitment scheme in the original paper:
 $$\begin{align}
-ck &= (\mathbf{V} = \{H^{\beta^{2i}}\}\_{i=0}^{n-1},\mathbf{W} = \{G^{\alpha^{2i}}\}_{i=0}^{n-1},1 \in \mathbb{G_t}) \\\\
+ck &= (\mathbf{V} = \\{H^{\beta^{2i}}\\}\_{i=0}^{n-1},\mathbf{W} = \\{G^{\alpha^{2i}}\\}_{i=0}^{n-1},1 \in \mathbb{G_t}) \\\\
 m &= (\mathbf{A} \in \mathbb{G_1^n},\mathbf{B} \in \mathbb{G_2^n},\prod e(A_i,B_i) \in \mathbb{G_t}) \\\\
 CM(ck,m) &= (\prod e(A_i,V_i),\prod e(W_i,B_i), \prod e(A_i,B_i))
 \end{align}$$
@@ -275,23 +275,23 @@ As you can see, $\mathbf{v}$ and $\mathbf{w}$ depend on two parameters $\alpha$ 
 
 There is one problem though: *the SRS is not the same as the one for Groth16*!
 The Groth16 SRS is quite involved, so we're only showing the relevant part here:
-$$ \mathbf{V} = \{H^{\alpha^{i}}\}\_{i=0}^{n-1} \space
-    \mathbf{W} = \{G^{\alpha^{i}}\}\_{i=0}^{n-1}
+$$ \mathbf{V} = \\{H^{\alpha^{i}}\\}\_{i=0}^{n-1} \space
+    \mathbf{W} = \\{G^{\alpha^{i}}\\}\_{i=0}^{n-1}
 $$
 
 We can see we only have one "secret" exponent here, $\alpha$ ! However, our commitment scheme requires two "secret" exponents:
-* Aggregation proving key: $\mathbf{V} = \{H^{\beta^{2i}}\}\_{i=0}^{n-1}$ and $\mathbf{W} = \{G^{\alpha^{2i}}\}\_{i=0}^{n-1}$
+* Aggregation proving key: $\mathbf{V} = \\{H^{\beta^{2i}}\\}\_{i=0}^{n-1}$ and $\mathbf{W} = \\{G^{\alpha^{2i}}\\}\_{i=0}^{n-1}$
 * Aggregation verifiying key $(H^\alpha,G^\beta)$
 
 Note that it also requires a power twice as high as Groth16's SRS.
 We could of course create a new trusted setup, but we wanted to rely on the same security assumptions in use today, and running a trusted setup is an expensive and long process that we wanted to avoid.
 
 One idea we had is that we could use two Groth16 SRS, for example the one from Filecoin and Zcash together, so we end up with two hidden exponents $\alpha$ and $\beta$. This was actually our first thought, but would have been totally insecure! Indeed, with two Groth16 SRS we would have $(G^\beta)^i$ and $(H^\beta)^i$  for $i:0 \rightarrow n$ while in our commitment scheme SRS, the verifying key only contains terms of the form $H^{\beta^{2i}}$, where the exponent of $\beta$ is even.  In other words, given an SRS constructed from two Groth16 SRS, *the binding property is broken*. Let's see an example where we can devise two different messages that map to the same commitment.
-The commitment of the vector $\mathbf{A} = \{(G^{\beta^2})^x, G^y\}$ is:
+The commitment of the vector $\mathbf{A} = \\{(G^{\beta^2})^x, G^y\\}$ is:
 $$
 C_{A} = \prod e(A_i,V_i) = e(G^{\beta^2 x},H)e(G^y,H^{\beta^2}) = e(G,H)^{\beta^2 x + \beta^2 y}
 $$
-The commitment of a second vector $\mathbf{A'} = \{(G^{\beta^2})^y,G^x\}$ is:
+The commitment of a second vector $\mathbf{A'} = \\{(G^{\beta^2})^y,G^x\\}$ is:
 $$
 C_{A'} = \prod e(A_i',V_i) = e(G^{\beta^2 y},H)e(G^x,H^{\beta^2}) = e(G,H)^{\beta^2 y + \beta^2 x} = C_{A}
 $$
@@ -303,8 +303,8 @@ Here is its description:
 $$
 \begin{align}
 ck &= (\mathbf{V_1},\mathbf{V_2},\mathbf{W_1},\mathbf{W_2}) \textrm{ where} \\\\
- \mathbf{V_1} &= \{H^{\alpha^{i}}\}\_{i=0}^{n-1}, \mathbf{V_2} =\{H^{\beta^{i}}\}\_{i=0}^{n-1}) \\\\
-\mathbf{W_1} &= \{G^{\alpha^{n + i}}\}\_{i=0}^{n-1}, \mathbf{W_2} = \{G^{\beta^{n + i}}\}\_{i=0}^{n-1}) \\\\
+ \mathbf{V_1} &= \\{H^{\alpha^{i}}\\}\_{i=0}^{n-1}, \mathbf{V_2} =\\{H^{\beta^{i}}\\}\_{i=0}^{n-1} \\\\
+\mathbf{W_1} &= \\{G^{\alpha^{n + i}}\\}\_{i=0}^{n-1}, \mathbf{W_2} = \\{G^{\beta^{n + i}}\\}\_{i=0}^{n-1} \\\\
 m &= (\mathbf{A} \in \mathbb{G_1^n},\mathbf{B} \in \mathbb{G_2^n},\prod e(A_i,B_i) \in \mathbb{G_t})
 \end{align}
 $$
@@ -321,7 +321,7 @@ $$
 $$
 
 
-We can make a couple of observation here:
+We can make a couple of observations here:
 1. It indeed requires 4 commitment "keys" $(\mathbf{V_1},\mathbf{V_2},\mathbf{W_1},\mathbf{W_2})$ instead of 2 as in the previous commitment scheme. Both $\mathbf{V_1}$ and $\mathbf{W_1}$ can be created using one transcript of a Groth16 trusted setup and the second pair using another trusted setup transcript.
 2. We commit to $\mathbf{A}$ and $\mathbf{B}$ together, using both pairs of commitment keys. This leads us to use both of the secret exponents from both trusted setups, and therefore gains the security property (blinding) of our scheme.
 3. The keys $\mathbf{W_1},\mathbf{W_2}$ are *shifted* by $n$: the powers in the exponent go from $n$ to $2n-1$. Note this means both Groth16 transcripts must have *twice the size* of the number of proofs you want to aggregate ($n$) as the exponent goes to $2n-1$. This isn't a big deal in practice since the existing transcript starts at $2^{21}$ (Zcash), so the maximum number of proofs we can aggregate using these is already more than 1 million proofs.
@@ -338,12 +338,12 @@ The trick to get the verifier to only perform a logarithmic amount of work when 
 
 To understand the trick let's make a small example. Let's define our commitment key as
 $$
-\mathbf{V} = \{V_1,V_2,V_3,V_4\} = \{H,H^\alpha,H^{\alpha^2},H^{\alpha^3}\}
+\mathbf{V} = \\{V_1,V_2,V_3,V_4\\} = \\{H,H^\alpha,H^{\alpha^2},H^{\alpha^3}\\}
 $$
 We define $n = 4$ and $l = log(n) = 2$.
 Let's run the GIPA loop twice (since $log(n) = 2$). During the first iteration, we derive a challenge $x_0$ and compress $\mathbf{V}$ into:
 $$
-\mathbf{V'} = \{H * H^{x_0\alpha^2}, H^\alpha  * H^{x_0\alpha^3} \} = \{V_1^{1 + x_0\alpha^2}, V_2^{1 + x_0\alpha^2}\} = \{V_1',V_2'\}
+\mathbf{V'} = \\{H * H^{x_0\alpha^2}, H^\alpha  * H^{x_0\alpha^3} \\} = \\{V_1^{1 + x_0\alpha^2}, V_2^{1 + x_0\alpha^2}\\} = \\{V_1',V_2'\\}
 $$
 For the second and final iteration, we derive the challenge $x_1$ and compress further:
 $$
@@ -393,7 +393,7 @@ For Groth16 aggregation, we will need to prove the relation $Z = \sum_{i=0}^{n-1
 $$
 \begin{align}
 m &= (\mathbf{C} \in \mathbb{G_1^n}, \mathbf{r} \in \mathbb{F_r}, \sum_{i=0}^{n-1} C_i^{r_i}) \\\\
-ck &= (\mathbf{V} = \{H^{\alpha^i}\}_{i=0}^{n-1} \in \mathbb{G_2^n}, \mathbf{1} \in \mathbb{F_r^n}, 1 \in \mathbb{G_t}) \\\\
+ck &= (\mathbf{V} = \\{H^{\alpha^i}\\}_{i=0}^{n-1} \in \mathbb{G_2^n}, \mathbf{1} \in \mathbb{F_r^n}, 1 \in \mathbb{G_t}) \\\\
 CM_{m}(ck,m) &= (\prod e(C_i,V_i), \mathbf{r}, \sum_{i=0}^{n-1} C_i^{r_i})
 \end{align}
 $$
@@ -421,11 +421,11 @@ Let's define some of these terms:
 
 ### Groth16 Aggregated Verification
 
-We can actually combine multiple verifications, from differents proofs represented as vectors $(\mathbf{A},\mathbf{B}, \mathbf{C})$  and different public inputs $\mathbf{a}$ into one. The way to do this is to make a **random linear combination** of each of the parts of the equation. The reason we must perform a random linear combination is to avoid the aggregator finding some combinations of proofs that makes the verification pass despite some of them being invalid. By randomizing the combination, the probability of passing verification with invalid proofs becomes negligible. It is a common trick in cryptography.
+We can actually combine multiple verifications, from different proofs represented as vectors $(\mathbf{A},\mathbf{B}, \mathbf{C})$  and different public inputs $\mathbf{a}$ into one. The way to do this is to make a **random linear combination** of each of the parts of the equation. The reason we must perform a random linear combination is to avoid the aggregator finding some combinations of proofs that make the verification pass despite some of them being invalid. By randomizing the combination, the probability of passing verification with invalid proofs becomes negligible. It is a common trick in cryptography.
 
 Let's define $\mathbf{r} = (1,r,r^2,r^3,\dots,r^{n-1})$ a structured vector from a random $r$ element. The **randomized verification equation** is:
 $$
-\prod e(A_i,B_i^{r_i}) = e(G^{\alpha \sum_{i=0}^{n-1} r^i} ,H^\beta)\cdot e(\prod_i S_i^{ \sum_{j=0}^{n-1} a_{i,j}},H^\delta) \cdot e(\prod_i C_i^{r^i}, H^{\delta })
+\prod e(A_i,B_i^{r_i}) = e(G^{\alpha \sum_{i=0}^{n-1} r^i} ,H^\beta)\cdot e(\prod_i S_i^{ \sum_{j=0}^{n-1} a_{i,j}*r^j},H^\delta) \cdot e(\prod_i C_i^{r^i}, H^{\delta })
 $$
 
 The left part is clearly a random linear combination since each $A_i$ is combined with a $B_i$ scaled by the corresponding $r_i$
@@ -451,7 +451,7 @@ We are now able to put all the pieces together! As you can see, there are simila
 Indeed, the prover can prove the value $Z = \prod e(A_i,B_i^{r_i})$ via TIPP using the vectors $\mathbf{A}$ and $\mathbf{B^r}$!
 Wait...where does this $\mathbf{r}$ vector come from? Because we want this proof to be *non-interactive*, we can't ask the verifier to sample it. Instead, this $r$ is derived from the commitments of the vectors $\mathbf{A},\mathbf{B}$, and $\mathbf{C}$, again using the Fiat-Shamir heuristic.
 $$
-r = Hash(CM_t(\mathbf{V_1},\mathbf{V_2},\mathbf{W_1},\mathbf{W_2},\mathbf{A},\mathbf{B}),CM_m(\mathbf{V_1},\mathbf{V_2},\mathbf{C})
+r = Hash(CM_t(\mathbf{V_1},\mathbf{V_2},\mathbf{W_1},\mathbf{W_2},\mathbf{A},\mathbf{B}),CM_m(\mathbf{V_1},\mathbf{V_2},\mathbf{C}))
 $$
 Note here the third component of the commitment scheme is excluded, since we only want to compute the commitment of the individual vectors, not to their product. See the next section to understand why.
 
@@ -567,7 +567,7 @@ points, then the FinalExponentiation on the result. We can easily then check if
 the result is "one":
 
 $$
-e(A,B)\cdot e(-C,D) = e(A,B)\cdot e(C,D)^{-1} = FE(ML((A,B),(-C,D))) == 1
+e(A,B)\cdot e(C^{-1},D) = e(A,B)\cdot e(C,D)^{-1} = FE(ML((A,B),(C^{-1},D))) == 1
 $$
 
 This allows us to only perform one Miller loop and one FinalExponentation
@@ -575,24 +575,24 @@ instead of two.
 
 We can actually generalize this trick to any number of pairing checks. Let's
 suppose we have the following checks to do:
-* $e(A,B) = e(C,D)$ which is equivalent to $e(A,B)e(-C,D) = 1$
+* $e(A,B) = e(C,D)$ which is equivalent to $e(A,B)e(C^{-1},D) = 1$
 * $e(E,F) = T$ for a given value $T \in \mathbb{G_t}$
 
 We could write directly:
 $$
-e(A,B)e(-C,D)e(E,F) == 1 * T <=> FE(ML((A,B),(-C,D),(E,F))) == T
+e(A,B)e(C^{-1},D)e(E,F) == 1 * T <=> FE(ML((A,B),(C^{-1},D),(E,F))) == T
 $$
 We can see here that we do only one miller loop and one final exponentiation !
 However, this would be *insecure* as the prover might be able to pick values $E$ and
-$F£$ such that $e(A,B)e(-C,D)e(E,F) == T$ where the individual values don't
+$F£$ such that $e(A,B)e(C^{-1},D)e(E,F) == T$ where the individual values don't
 satisfy the original equations we wanted to check !
 The usual way to solve this problem, as in the Groth16 aggregation, is to use a
 random linear combination! We scale each pairing check by a random element $r$
 chosen by the verifier, during verification time:
 $$
 \begin{align}
-e(A,B)e(-C,D)(e(E,F))^r &== 1 * T^r  \\\\ e(A,B)e(-C,D)e(E^r,F) &== T^r \\\\
-FE(ML((A,B),(-C,D)) * ML(E^r,F)) &== T^r
+e(A,B)e(C^{-1},D)(e(E,F))^r &== 1 * T^r  \\\\ e(A,B)e(C^{-1},D)e(E^r,F) &== T^r \\\\
+FE(ML((A,B),(C^{-1},D)) * ML(E^r,F)) &== T^r
 \end{align}
 $$
 
@@ -602,7 +602,7 @@ $\mathbb{G_1}$ than in $\mathbb{G_t}$. We also split MillerLoop into two
 since it is not parallelizable, so we prefer to run all of this in parallel and
 perform the FinalExponentiation at the end.
 Using such randomization, the attacker has a negligible probability of finding
-points that satisfy $e(A,B)e(-C,D) == e(E,F)^r$ since he doesn't know $r$ in
+points that satisfy $e(A,B)e(C^{-1},D) == e(E,F)^r$ since he doesn't know $r$ in
 advance -- indeed he never knows it, it's a locally generated random element by the
 verifier.
 
