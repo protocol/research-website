@@ -42,6 +42,8 @@ draft: false
 
 The [proofs](https://github.com/filecoin-project/rust-fil-proofs) team is proud to announce the recent proofs releases [v8.0.0](https://github.com/filecoin-project/rust-fil-proofs/tree/filecoin-proofs-v8.0.0), [v8.0.1](https://github.com/filecoin-project/rust-fil-proofs/tree/filecoin-proofs-v8.0.1), and [v8.0.2](https://github.com/filecoin-project/rust-fil-proofs/tree/filecoin-proofs-v8.0.2)! These releases are [Hyperdrive](https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-10-25x-increase-in-storage-onboarding/)-enabled, which means that they contain the proof aggregation API that uses [SnarkPack](/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/) -- in fact, the major difference between proofs v7.0.x and v8.0.x is the aggregation functionality!
 
+<!--more-->
+
 For the unfamiliar, [Hyperdrive](https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-10-25x-increase-in-storage-onboarding/) is a [Filecoin](https://filecoin.io/) initiative using [SnarkPack](/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/) to unlock a 10-25x increase in the storage onboarding rate. SnarkPack is a practical scheme to aggregate [Groth16](http://www.zeroknowledgeblog.com/index.php/groth16) proofs -- you can find in-depth details on Snarkpack aggregation in this [blog post](/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/).
 
 This post is a reflection on our journey to this point and some of the challenges that went into making these releases possible.
@@ -62,7 +64,7 @@ More recently, while loosely collaborating with [Eric Tu](https://github.com/EC2
 
 Much more than work on proofs went into the Hyperdrive release, including work from [Zondax](https://zondax.ch/news/filecoin-v13-hyperdrive), the tremendous work of the [Lotus](https://github.com/filecoin-project/lotus) team and the Infra testing team, as well as contributions from a wide array of volunteer community members and miners. We are currently well past the mainnet upgrade, and storage onboarding has more room to breathe. Also, [Filecoin Snarks](/sites/snarks/) are continuing to push the global bounds of what's known to be possible in scaling!
 
-<center>{{<figure src="image1.png" style="width:6.5in;height:3.18056in" caption="This image illustrates the full potential of SnarkPack vs traditional batched proof verification times and sizes">}}</center>
+<center>{{<figure src="image1.png" style="width:6.5in;height:3.18056in" caption="This image illustrates the potential of SnarkPack vs traditional batched proof verification times and sizes">}}</center>
 
 
 <center>{{< figure src="/images/cryptocomputelab/cryptocomputelab-streamline-temp.png" alt=CryptoComputeLab" link="/research/groups/cryptocomputelab/" width="75px" >}}</center>
