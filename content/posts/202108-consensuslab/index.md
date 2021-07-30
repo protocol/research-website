@@ -61,7 +61,7 @@ ConsensusLab’s vision is to be the go-to place for scalable decentralised cons
 The work areas and problems of interest for ConsensusLab are driven and practically defined by its motivating use case: being the driving engine behind Web3. These led us to identify three vertical pillars of ConsensusLab research: **scaling by sharding, scaling consensus proper, and scalable execution**. These are supported by research considerations that are pervasive in all of our work: **security, decentralisation, and correctness of design and implementation**.
 
 
-### Work Area 1: Sharding
+### Work area 1: Sharding
 
 Assuming a future Web3 handling Web2-sized workloads, one cannot rely on a single blockchain network to “rule them all”, much like today’s web workloads are not executed on any single centralised machine.
 
@@ -70,7 +70,7 @@ This immediately brings sharding to the picture, i.e. the horizontal scaling of 
 Sharding challenges are complemented by low-level interoperability challenges among consensus protocols of different families. Not precluding alternative designs, we envision a world of hierarchical shards in which shards at a “higher” level leverage consensus protocols with stronger security and possibly weaker performance than shards on a “lower” level.  
 
 
-### Work Area 2: Consensus proper
+### Work area 2: Consensus proper
 
 In this work area, we focus on consensus protocols within a single shard. In a possible hierarchical approach, different consensus protocols will be applicable to different shards and use cases.
 
@@ -79,7 +79,7 @@ We aim at identifying the “best” consensus protocol within a given security 
 We pay particular attention to the tradeoffs between ease of design, maintainability, and system guarantees.
 
 
-### Work Area 3: Parallel execution
+### Work area 3: Parallel execution
 
 Advances in scaling through sharding and scaling consensus are insufficient without considering the scalability of application execution. Existing blockchain systems largely follow, within a single shard, a classical order-execute architecture in which sequential execution of applications (e.g. smart contracts or payment scripts) follows prior ordering of transactions. This introduces severe performance bottlenecks, which have been the target of decades of research in databases, multi-core processors, and distributed systems.
 
