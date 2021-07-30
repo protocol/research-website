@@ -46,7 +46,7 @@ Intuitively, scaling consensus is challenging as it inherently brings a number o
 
 We see a number of fragmented R&D efforts aiming at scaling a given blockchain network X to have better performance than another blockchain network Y, usually targeting the range of  10s to 100s of thousands of transactions per second. These targets, which appear ambitious in the light of the performance of PoW-based blockchains and are sometimes motivated by the throughput of payment processors like Visa, have little meaning without context on the security provided by the system or the implications on its level of (de)centralisation.
 
-Yet even such target performance numbers can be seen as modest, rather than ambitious. Suppose that, instead of building a decentralised Visa, we instead **aim at bringing traditional web workloads (Web2) to the decentralised web (Web3). **In this scenario, we should be designing for billions of transactions per second, large volumes of data, complex workloads and applications, not to mention keeping an eye on the latency in addition to throughput. And we should be doing all of this while maximising decentralisation and security.
+Yet even such target performance numbers can be seen as modest, rather than ambitious. Suppose that, instead of building a decentralised Visa, we instead aim at bringing traditional web workloads (Web2) to the decentralised web (Web3). In this scenario, we should be designing for billions of transactions per second, large volumes of data, complex workloads and applications, not to mention keeping an eye on the latency in addition to throughput. And we should be doing all of this while maximising decentralisation and security.
 
 **Enter ConsensusLab.**
 
@@ -58,23 +58,23 @@ ConsensusLab’s vision is to be the go-to place for scalable decentralised cons
 
 ## Problems of interest
 
-The work areas and problems of interest for ConsensusLab are driven and practically defined by its motivating use case: being the driving engine behind Web3. These led us to identify three vertical pillars of ConsensusLab research: **scaling by sharding, scaling consensus proper, and scalable execution. **These are supported by research considerations that are pervasive in all of our work: **security, decentralisation, and correctness of design and implementation. **
+The work areas and problems of interest for ConsensusLab are driven and practically defined by its motivating use case: being the driving engine behind Web3. These led us to identify three vertical pillars of ConsensusLab research: **scaling by sharding, scaling consensus proper, and scalable execution**. These are supported by research considerations that are pervasive in all of our work: **security, decentralisation, and correctness of design and implementation**.
 
 
 ### Work Area 1: Sharding
 
 Assuming a future Web3 handling Web2-sized workloads, one cannot rely on a single blockchain network to “rule them all”, much like today’s web workloads are not executed on any single centralised machine.
 
-This immediately brings** sharding **to the picture, i.e. the horizontal scaling of decentralised systems. At ConsensusLab, we work at the intersection of classical distributed computing and database problems related to concurrency — such as _cross-shard transaction semantics_ and _shard state management_ —_ _and Web3-specific security challenges.
+This immediately brings sharding to the picture, i.e. the horizontal scaling of decentralised systems. At ConsensusLab, we work at the intersection of classical distributed computing and database problems related to concurrency — such as cross-shard transaction semantics and shard state management — and Web3-specific security challenges.
 
-Sharding challenges are complemented by low-level interoperability challenges among consensus protocols of different families. Not precluding alternative designs, we envision a world of **hierarchical shards **in which shards at a “higher” level leverage consensus protocols with stronger security and possibly weaker performance than shards on a “lower” level.  
+Sharding challenges are complemented by low-level interoperability challenges among consensus protocols of different families. Not precluding alternative designs, we envision a world of hierarchical shards in which shards at a “higher” level leverage consensus protocols with stronger security and possibly weaker performance than shards on a “lower” level.  
 
 
 ### Work Area 2: Consensus proper
 
 In this work area, we focus on consensus protocols within a single shard. In a possible hierarchical approach, different consensus protocols will be applicable to different shards and use cases.
 
-We aim at identifying** the “best” consensus protocol within a given security and scalability context**, applicable to a single shard. Different consensus protocols may be relevant, targeting distinct sybil attack protection mechanisms, participating population size, performance, and security guarantees.
+We aim at identifying the “best” consensus protocol within a given security and scalability context, applicable to a single shard. Different consensus protocols may be relevant, targeting distinct sybil attack protection mechanisms, participating population size, performance, and security guarantees.
 
 We pay particular attention to the tradeoffs between ease of design, maintainability, and system guarantees.
 
