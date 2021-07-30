@@ -38,7 +38,7 @@ draft: false
 
 ---
 
-We are excited to announce the launch of [ConsensusLab](https://research.protocol.ai/groups/consensuslab/), a new research group focused on scalable consensus for decentralised systems and a part of Protocol Labs Research.
+We are excited to announce the launch of [ConsensusLab](/groups/consensuslab/), a new research group focused on scalable consensus for decentralised systems and a part of Protocol Labs Research.
 
 Consensus — loosely defined as global agreement on the state of a decentralised network across its mutually untrusting participants — has been known to be at the heart of decentralised systems ever since the inception of [Nakamoto’s Proof-of-Work (PoW) consensus](https://bitcoin.org/bitcoin.pdf). At the same time, the scalability of consensus has been the Achilles' heel of decentralised systems, all this despite it being a very active area of research.
 
@@ -53,7 +53,7 @@ Yet even such target performance numbers can be seen as modest, rather than ambi
 
 ## Our vision
 
-ConsensusLab’s vision is to be the go-to place for scalable decentralised consensus research. In the true spirit of Protocol Labs Research, we aim to become a hub for the collaborative advancement of human knowledge on this challenging topic. Together with a wide network of academic and industry partners, and in collaboration with other open projects, our [Research Scientists](https://jobs.lever.co/protocol/6bff8e4a-7853-4460-8d91-e50c43d99972) and [Research Engineers](https://jobs.lever.co/protocol/8bca084a-5704-4954-b84d-837987ea129b) (we’re hiring!) will be building an engine for the decentralised web.
+ConsensusLab’s vision is to be the go-to place for scalable decentralised consensus research. In the true spirit of Protocol Labs Research, we aim to become a hub for the collaborative advancement of human knowledge on this challenging topic. Together with a wide network of academic and industry partners, and in collaboration with other open projects, our Research Scientists and Research Engineers ([we’re hiring!](https://jobs.lever.co/protocol?team=Research%20Development)) will be building an engine for the decentralised web.
 
 
 ## Problems of interest
@@ -92,4 +92,4 @@ We also explore alternative application programming models which support better 
 
 Beyond cutting edge research, our goal at ConsensusLab is to deliver practical impact to the Filecoin network and the larger Web3 ecosystem. We seek to transform the outcomes of our research into tangible impact on real-world systems. Our natural focal point is the Filecoin network, which will be the first beneficiary of our novel scalable consensus architecture.
 
-The Filecoin-IPFS-IPLD-libp2p-drand ecosystem, which includes modular building blocks for Web3, is the perfect home for ConsensusLab and will enable us to deliver the greatest impact. We couldn’t be more excited to embark on this journey! If you are too, [get in touch with us](mailto:research@protocol.ai), have a look at our open roles ([Research Engineer](https://jobs.lever.co/protocol/8bca084a-5704-4954-b84d-837987ea129b), [Research Scientist](https://jobs.lever.co/protocol/6bff8e4a-7853-4460-8d91-e50c43d99972)), and stay tuned for more information on the upcoming **ConsensusDay 21** workshop.
+The Filecoin-IPFS-IPLD-libp2p-drand ecosystem, which includes modular building blocks for Web3, is the perfect home for ConsensusLab and will enable us to deliver the greatest impact. We couldn’t be more excited to embark on this journey! If you are too, [get in touch with us](mailto:research@protocol.ai), have a look at our [open roles](https://jobs.lever.co/protocol?team=Research%20Development), and stay tuned for more information on the upcoming **ConsensusDay 21** workshop.
