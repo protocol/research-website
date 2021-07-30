@@ -19,7 +19,7 @@ interests:
 
 education:
   courses:
-    - course: PhD in Robotics, Control, and Intelligent systems (IST-EPFL JDI)
+    - course: PhD in Robotics, Control, and Intelligent Systems (IST-EPFL JDI)
       institution: École polytechnique fédérale de Lausanne (EPFL)
       year: 2016
     - course: PhD in Electrical and Computer Engineering (IST-EPFL JDI)
