@@ -53,7 +53,7 @@ Yet even such target performance numbers can be seen as modest, rather than ambi
 
 ## Our vision
 
-ConsensusLab’s vision is to be the go-to place for scalable decentralised consensus research. In the true spirit of Protocol Labs Research, we aim to become a hub for the collaborative advancement of human knowledge on this challenging topic. Together with a wide network of academic and industry partners, and in collaboration with other open projects, our Research Scientists and Research Engineers ([we’re hiring!](https://jobs.lever.co/protocol?team=Research%20Development)) will be building an engine for the decentralised web.
+ConsensusLab’s vision is to be the go-to place for scalable decentralised consensus research. In the true spirit of Protocol Labs Research, we aim to become a hub for the collaborative advancement of human knowledge on this challenging topic. Together with a wide network of academic and industry partners, and in collaboration with other open projects, our **Research Scientists** and **Research Engineers** ([we’re hiring!](https://jobs.lever.co/protocol?team=Research%20Development)) will be building an engine for the decentralised web.
 
 
 ## Problems of interest
