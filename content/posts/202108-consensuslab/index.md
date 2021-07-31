@@ -46,7 +46,7 @@ Intuitively, scaling consensus is challenging as it inherently brings a number o
 
 We see a number of fragmented R&D efforts aiming at scaling a given blockchain network X to have better performance than another blockchain network Y, usually targeting the range of  10s to 100s of thousands of transactions per second. These targets, which appear ambitious in the light of the performance of PoW-based blockchains and are sometimes motivated by the throughput of payment processors like Visa, have little meaning without context on the security provided by the system or the implications on its level of (de)centralisation.
 
-Yet even such target performance numbers can be seen as modest, rather than ambitious. Suppose that, instead of building a decentralised Visa, we instead aim at bringing traditional web workloads (Web2) to the decentralised web (Web3). In this scenario, we should be designing for billions of transactions per second, large volumes of data, complex workloads and applications, not to mention keeping an eye on the latency in addition to throughput. And we should be doing all of this while maximising decentralisation and security.
+Yet even such target performance numbers can be seen as modest, rather than ambitious. Suppose that, instead of building a decentralised Visa, we instead aim at bringing traditional web workloads (Web2) to the decentralised web (Web3). We should be designing for billions of transactions per second, large volumes of data, complex workloads and applications, not to mention keeping an eye on the latency in addition to throughput. And we should be doing all of this while maximising decentralisation and security.
 
 **Enter ConsensusLab.**
 
@@ -90,6 +90,6 @@ We also explore alternative application programming models which support better 
 
 ## Impact on Filecoin
 
-Beyond cutting edge research, our goal at ConsensusLab is to deliver practical impact to the Filecoin network and the larger Web3 ecosystem. We seek to transform the outcomes of our research into tangible impact on real-world systems. Our natural focal point is the Filecoin network, which will be the first beneficiary of our novel scalable consensus architecture.
+Beyond engaging in cutting edge research, our goal at ConsensusLab is to deliver practical impact to the Filecoin network and the larger Web3 ecosystem. We seek to transform the outcomes of our research into tangible impact on real-world systems. Our natural focal point is the Filecoin network, which will be the first beneficiary of our novel scalable consensus architecture.
 
 The Filecoin-IPFS-IPLD-libp2p-drand ecosystem, which includes modular building blocks for Web3, is the perfect home for ConsensusLab and will enable us to deliver the greatest impact. We couldn’t be more excited to embark on this journey! If you are too, [get in touch with us](mailto:research@protocol.ai), have a look at our [open roles](https://jobs.lever.co/protocol?team=Research%20Development), and stay tuned for more information on the upcoming **ConsensusDay 21** workshop.
