@@ -12,9 +12,9 @@ date: 2021-03-16
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  - "Molly Mackinlay"
-  - nicolas-gailly
   - alfonso-delarocha
+  - nicolas-gailly  
+  - "Molly Mackinlay"  
   - yiannis-psaras
 
 # If applicable

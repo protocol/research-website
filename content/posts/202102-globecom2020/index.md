@@ -12,9 +12,9 @@ date: 2021-02-11
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
+  - alfonso-delarocha
   - david-dias
   - yiannis-psaras
-  - alfonso-delarocha
 
 # If applicable
 categories:

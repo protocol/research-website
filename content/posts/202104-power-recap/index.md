@@ -11,8 +11,8 @@ date: 2021-04-26
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - alan-ransil
   - michael-hammersley
+  - alan-ransil
 
 # If applicable
 categories:

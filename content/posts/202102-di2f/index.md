@@ -12,8 +12,8 @@ date: 2021-02-03
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  - yiannis-psaras
   - jorge-soares
+  - yiannis-psaras
 
 # If applicable
 categories:

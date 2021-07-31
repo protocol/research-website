@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: " Call for Participation: DI2F: Decentralizing the Internet with IPFS and Filecoin"
+title: "Call for Participation: DI2F: Decentralizing the Internet with IPFS and Filecoin"
 
 # Website post date
 # format YYYY-MM-DD
@@ -12,8 +12,8 @@ date: 2021-05-24
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  - yiannis-psaras
   - jorge-soares
+  - yiannis-psaras
 
 # If applicable
 categories:
@@ -39,9 +39,9 @@ draft: false
 
 ---
 
-The first edition of a research-focused workshop on decentralisation, IPFS, and Filecoin is here! [DI2F](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin) is taking place alongside IFIP Networking 2021 on **21 June 2021** and has a packed programme full of interesting paper presentations, demos, abstracts, hands-on tutorials and invited talks! The workshop sessions will focus on protocol and architecture extensions, decentralised identity, and Web 3.0 services. 
+The first edition of a research-focused workshop on decentralisation, IPFS, and Filecoin is here! [DI2F](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin) is taking place alongside IFIP Networking 2021 on **21 June 2021** and has a packed programme full of interesting paper presentations, demos, abstracts, hands-on tutorials and invited talks! The workshop sessions will focus on protocol and architecture extensions, decentralised identity, and Web 3.0 services.
 
-After a rigorous review process, the papers that will appear in the workshop programme will cover: 
+After a rigorous review process, the papers that will appear in the workshop programme will cover:
 - topics that are central to the operation of IPFS, such as the DHT and pubsub
 - services built on top of the protocol stack, such as VPNs and federated learning systems
 - architecture extensions to enable computing and Solid on top of IPFS

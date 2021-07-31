@@ -12,9 +12,9 @@ date: 2021-06-02
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  - yiannis-psaras
-  - alfonso-delarocha
   - "Dietrich Ayala"
+  - alfonso-delarocha  
+  - yiannis-psaras
 
 # If applicable
 categories:

@@ -12,8 +12,8 @@ date: 2021-06-08
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  - yiannis-psaras
   - alfonso-delarocha
+  - yiannis-psaras
 
 # If applicable
 categories:
@@ -79,14 +79,14 @@ Finally, censorship by oppressive regimes and other authorities is harder to car
 
 More generally, in Web 3.0, *base-layer protocols* will form the basis of applications building on top, somewhat similarly to HTTP. However, Web 3.0 will offer many more services than HTTP, including storage and computation. This base-layer infrastructure will be powered by blockchain technology, replacing the need to trust in application providers themselves in order to trust applications.
 
-You can read about the new opportunities created with the Web 3.0 stack in this [technical report](https://gateway.ipfs.io/ipfs/Qmb5tp5Qka7zaWa9pqHEh33CHdRmxBx6aa5XMfzDdmX7jQ). 
+You can read about the new opportunities created with the Web 3.0 stack in this [technical report](https://gateway.ipfs.io/ipfs/Qmb5tp5Qka7zaWa9pqHEh33CHdRmxBx6aa5XMfzDdmX7jQ).
 
 
 ### Module 2: Content Addressing
 
 ***Q:** Suppose a client wants to fetch file **A** from server **P**. The client obtains the content address of **A** but it doesn’t have any other information about **A** or how to find it. What does it do next?*
 
-**A:** The content address is enough information for the client to ask the content routing system where to find *A*. It is that system that will find out that server *P* has the content, a process commonly called content discovery. The same system will also find information on how to actually reach and connect to *P* to obtain the file. The process is described in great detail in the Content Routing module, which you can find [here](/tutorials/resnetlab-on-tour/content-routing/). 
+**A:** The content address is enough information for the client to ask the content routing system where to find *A*. It is that system that will find out that server *P* has the content, a process commonly called content discovery. The same system will also find information on how to actually reach and connect to *P* to obtain the file. The process is described in great detail in the Content Routing module, which you can find [here](/tutorials/resnetlab-on-tour/content-routing/).
 
 ***Q:** How many nodes store your file when you publish it in IPFS?*
 
@@ -94,7 +94,7 @@ You can read about the new opportunities created with the Web 3.0 stack in this 
 
 When other nodes request the content that your node has published, they fetch it from your node and reprovide it, i.e., serve as source nodes for the content. The more popular the content is, the more nodes will end up providing the content to the network.
 
-You can find a detailed description of this process in the [Content Routing module](/tutorials/resnetlab-on-tour/content-routing/). 
+You can find a detailed description of this process in the [Content Routing module](/tutorials/resnetlab-on-tour/content-routing/).
 
 ***Q:** What mitigation factors are in place if multiple nodes are offline?*
 
@@ -113,12 +113,12 @@ You can find a detailed description of this process in the [Content Routing modu
 signed, which provides a form of access control in IPFS.
 
 Furthermore, libp2p allows for the creation of private networks. You can find an example [here](https://github.com/libp2p/specs/blob/master/pnet/Private-Networks-PSK-V1.md).
- 
+
 If none of the above methods is used, then access control would require parties to exchange shared secrets out-of-band to encrypt their files before publishing them to the file system.
 
 ***Q:** Is data encrypted when stored in other nodes?*
 
-**A:** Data published in IPFS is encrypted while in transit over the network. IPFS does not encrypt data at rest, i.e., when stored in peers, but users and applications are free to publish encrypted data on IPFS. You can read more about IPFS and privacy, as well as how to increase privacy when using IPFS, in the IPFS documentation [here](https://docs.ipfs.io/concepts/privacy/#ipfs-and-privacy). 
+**A:** Data published in IPFS is encrypted while in transit over the network. IPFS does not encrypt data at rest, i.e., when stored in peers, but users and applications are free to publish encrypted data on IPFS. You can read more about IPFS and privacy, as well as how to increase privacy when using IPFS, in the IPFS documentation [here](https://docs.ipfs.io/concepts/privacy/#ipfs-and-privacy).
 
 ***Q:** Is IPFS faster than the  client server model?*
 
@@ -142,13 +142,13 @@ In other words, in the client-server model, the system requests content from the
 
 ***Q**: How is DHT proximity determined?*
 
-**A:** IPFS uses the Kademlia DHT, where proximity is determined in terms of the XOR distance of Peer IDs and Content Identifiers (CIDs) in the DHT address space. Peer IDs and CIDs are hashed with SHA-256 in order to move them into the DHT’s address space. For more details on the design of the Kademlia DHT, please check the [original Kademlia paper](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf). 
+**A:** IPFS uses the Kademlia DHT, where proximity is determined in terms of the XOR distance of Peer IDs and Content Identifiers (CIDs) in the DHT address space. Peer IDs and CIDs are hashed with SHA-256 in order to move them into the DHT’s address space. For more details on the design of the Kademlia DHT, please check the [original Kademlia paper](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf).
 
 ***Q:** How do you prevent malicious files being published and duplicated to peers?*
 
 **A:** In a permissionless network such as IPFS, you cannot guarantee that there are no bad nodes or bad files published in the network. Instead, the system and applications built atop the system should have sufficient security mechanisms in place to be resilient against attacks. This could include reputation systems for peers and content, mechanisms for flagging malicious activity, and the dissemination of malicious activity reports to other peers in the network. It is nevertheless worth noting that IPFS does not automatically replicate files (malicious or otherwise) to peers; replication only happens in response to a request by the peer.
 
-This is an open research topic; if you’re working in this space, [get in touch](https://github.com/protocol/ResNetLab/discussions)! 
+This is an open research topic; if you’re working in this space, [get in touch](https://github.com/protocol/ResNetLab/discussions)!
 
 ***Q:** Given that a file is stored only on one peer and not replicated, if a peer fails (e.g. goes offline) before the next 24 hour period (the time that the network checks the liveness of the peers), does that mean the data is lost?*
 
@@ -160,13 +160,13 @@ This is an open research topic; if you’re working in this space, [get in touch
 
 ***A:** Are there any plans of storing the metadata of the files on the network?*
 
-**Q:** Content metadata can be considered as content in and of itself and stored and addressed independently as content items/files. However, this is entirely application-specific, and would have to be done by applications building on top of IPFS. IPFS doesn’t enforce how to link files and metadata. For instance, IPFS can be used to store an NFT and its corresponding metadata, but is up to the DApp developer to decide how it accesses and links the NFT with the metadata. 
+**Q:** Content metadata can be considered as content in and of itself and stored and addressed independently as content items/files. However, this is entirely application-specific, and would have to be done by applications building on top of IPFS. IPFS doesn’t enforce how to link files and metadata. For instance, IPFS can be used to store an NFT and its corresponding metadata, but is up to the DApp developer to decide how it accesses and links the NFT with the metadata.
 
 ***Q:** From a security point of view, how secure is IPFS? What vulnerabilities would be present when using it?*
 
 **A:** Security spans several layers of the protocol stack and it is therefore difficult to give a holistic answer. However, it is worth noting that
 [libp2p](https://docs.libp2p.io) supports transport connections over securely encrypted channels. What this means is that you can trust the identity of the peer you're communicating with and that no third-party can read the conversation or alter it in-flight. The current default is TLS1.3.
-Furthermore, the fact that IPFS uses content-based addressing based on hash functions (SHA-256 at present, with the option to upgrade when needed) means that clients can apply integrity checking on the content they received. This further means that the network (or a malicious peer) cannot deliver any other content to the requesting peer other than the content requested. You can find more details on this in the [Content Addressing module](/tutorials/resnetlab-on-tour/). 
+Furthermore, the fact that IPFS uses content-based addressing based on hash functions (SHA-256 at present, with the option to upgrade when needed) means that clients can apply integrity checking on the content they received. This further means that the network (or a malicious peer) cannot deliver any other content to the requesting peer other than the content requested. You can find more details on this in the [Content Addressing module](/tutorials/resnetlab-on-tour/).
 
 
 ### Module 4: Content Exchange
@@ -185,7 +185,7 @@ Also, duplicate blocks (i.e. those blocks already received) and blocks that have
 
 **A:** There is no single answer to this question, as it depends on factors such as the type of data, the state of the network, and the specific use case. It is worth noting that Graphsync is not a replacement for Bitswap. As discussed in the [Content Exchange module](/tutorials/resnetlab-on-tour/content-exchange/), Bitswap has content routing capabilities and is able to find content in the network. With Graphsync, on the other hand, you need to know if the other peer is storing the data you are interested in for the exchange to succeed. Bitswap needs to explicitly traverse the DAG structure in order to know what blocks to download from other peers; in Graphsync all of the desired blocks are implicit in the selector shared in the request -- this is what allows Graphsync to send every block through a stream without further interactions between the requester and the responder. Finally, Graphsync only supports 1:1 exchanges, while Bitswap interacts with every peer in the corresponding session, supporting multiple streams for the download of the content.
 
-All of these differences make Bitswap faster in some cases, and Graphsync in others. It is up to the user or application to assess the conditions and choose the protocol that better suits their needs. For instance, when fetching content for which the underlying DAG structure is deep and narrow (i.e. lots of levels with a small number of blocks per level), Graphsync will be faster than Bitswap (provided we know if the other node is storing the content). In particular, while Bitswap needs to have several back-and-forth interactions with a peer to discover the blocks in the subsequent levels, Graphsync uses selectors, which enables it to send all the blocks right away. For wide DAGs, Bitswap is generally faster than Graphsync, as the moment Bitswap learns the blocks it has to download, it can leverage several peers to download the corresponding blocks simultaneously, while Graphsync is limited by the throughput of the stream. 
+All of these differences make Bitswap faster in some cases, and Graphsync in others. It is up to the user or application to assess the conditions and choose the protocol that better suits their needs. For instance, when fetching content for which the underlying DAG structure is deep and narrow (i.e. lots of levels with a small number of blocks per level), Graphsync will be faster than Bitswap (provided we know if the other node is storing the content). In particular, while Bitswap needs to have several back-and-forth interactions with a peer to discover the blocks in the subsequent levels, Graphsync uses selectors, which enables it to send all the blocks right away. For wide DAGs, Bitswap is generally faster than Graphsync, as the moment Bitswap learns the blocks it has to download, it can leverage several peers to download the corresponding blocks simultaneously, while Graphsync is limited by the throughput of the stream.
 
 
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_green.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center>

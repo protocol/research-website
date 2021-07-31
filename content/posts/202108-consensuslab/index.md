@@ -12,9 +12,9 @@ date: 2021-07-30
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
+  - sarah-azouvi
   - jorge-soares
   - marko-vukolic
-  - sarah-azouvi
 
 # If applicable
 categories:
