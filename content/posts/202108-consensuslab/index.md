@@ -46,7 +46,7 @@ Intuitively, scaling consensus is challenging as it inherently brings a number o
 
 We see a number of fragmented R&D efforts aiming at scaling a given blockchain network X to have better performance than another blockchain network Y, usually targeting the range of  10s to 100s of thousands of transactions per second. These targets, which appear ambitious in the light of the performance of PoW-based blockchains and are sometimes motivated by the throughput of payment processors like Visa, have little meaning without context on the security provided by the system or the implications on its level of (de)centralisation.
 
-Yet even such target performance numbers can be seen as modest, rather than ambitious. Suppose that, instead of building a decentralised Visa, we instead aim at bringing traditional web workloads (Web2) to the decentralised web (Web3). We should be designing for billions of transactions per second, large volumes of data, complex workloads and applications, not to mention keeping an eye on the latency in addition to throughput. And we should be doing all of this while maximising decentralisation and security.
+Yet even such target performance numbers can be seen as modest, rather than ambitious. Suppose that, instead of building a decentralised Visa, we aim at bringing traditional web workloads (Web2) to the decentralised web (Web3). We should be designing for billions of transactions per second, large volumes of data, complex workloads and applications, not to mention keeping an eye on the latency in addition to throughput. And we should be doing all of this while maximising decentralisation and security.
 
 **Enter ConsensusLab.**
 
