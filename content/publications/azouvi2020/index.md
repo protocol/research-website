@@ -37,7 +37,7 @@ areas:
   - cryptography
 
 groups:
-  - cryptonetlab
+  - consensuslab
 
 featured: false
 

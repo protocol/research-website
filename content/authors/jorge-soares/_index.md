@@ -19,7 +19,7 @@ interests:
 
 education:
   courses:
-    - course: PhD in Robotics, Control, and Intelligent systems (IST-EPFL JDI)
+    - course: PhD in Robotics, Control, and Intelligent Systems (IST-EPFL JDI)
       institution: École polytechnique fédérale de Lausanne (EPFL)
       year: 2016
     - course: PhD in Electrical and Computer Engineering (IST-EPFL JDI)
@@ -56,7 +56,7 @@ user_groups:
 quote:
 ---
 
-Jorge holds BSc and MSc degrees in Communication Networks Engineering, with an emphasis on embedded systems and wireless sensor networks. He received a joint PhD in Robotics, Control, and Intelligent Systems from [École polytechnique fédérale de Lausanne](https://www.epfl.ch/en/) (Lausanne, Switzerland) and in Electrical Engineering from [Instituto Superior Técnico – Universidade de Lisboa](https://tecnico.ulisboa.pt/en/) (Lisbon, Portugal), on the basis of his research in distributed and underwater robotics.
+Jorge holds BSc and MSc degrees in Communication Networks Engineering, with an emphasis on embedded systems and wireless sensor networks. He received a joint PhD in Robotics, Control, and Intelligent Systems from [École polytechnique fédérale de Lausanne](https://www.epfl.ch/en/) (Lausanne, Switzerland) and in Electrical and Computer Engineering from [Instituto Superior Técnico – Universidade de Lisboa](https://tecnico.ulisboa.pt/en/) (Lisbon, Portugal), on the basis of his research in distributed and underwater robotics.
 
 His interests include communication protocols, sensor networks, robot navigation, and marine technology, as well as the organisation and optimisation of scientific research. While a researcher, he worked on national and European research projects and published in international conferences and journals. He also served as a patent examiner with the [European Patent Office](https://www.epo.org/) (The Hague, The Netherlands), the second largest intergovernmental organisation in Europe, where he focused on human-computer interaction and construction of computers.
 

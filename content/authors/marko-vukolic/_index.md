@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Marko Vukolic
+name: Marko Vukolić
 
 # Role/position (e.g. Research Scientist or Research Engineer)
 role: Research Scientist

@@ -10,7 +10,7 @@ authors:
 role: Research Scientist
 
 groups:
-  - cryptonetlab
+  - consensuslab
 
 resources:
   - name: avatar

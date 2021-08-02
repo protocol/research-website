@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: Marko Vukolic joins PL Research as ConsensusLab Lead
+title: Marko Vukolić joins PL Research as ConsensusLab Lead
 
 # Website post date
 # format YYYY-MM-DD
@@ -33,7 +33,7 @@ draft: false
 
 ---
 
-Protocol Labs Research is excited to announce that [Marko Vukolic](/authors/marko-vukolic/) is joining us to establish and lead the [ConsensusLab](/groups/consensuslab/), which will explore and develop methods of coordinating distributed systems.
+Protocol Labs Research is excited to announce that [Marko Vukolić](/authors/marko-vukolic/) is joining us to establish and lead the [ConsensusLab](/groups/consensuslab/), which will explore and develop methods of coordinating distributed systems.
 
 We asked Marko why he decided to join PL Research, what he will be working on, and to share his thoughts about future technological developments:
 

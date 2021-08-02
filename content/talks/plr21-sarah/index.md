@@ -32,7 +32,7 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - cryptonetlab
+  - consensuslab
 
 # Name the cover image featured.jpg
 resources:
@@ -41,9 +41,9 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: "Protocol Labs Researcher Sarah Azouvi presents her research on Winkle, 
-which protects any validator-based byzantine fault tolerant consensus mechanisms, 
-such as those used in modern Proof-of-Stake blockchains, against long-range attacks 
+abstract: "Protocol Labs Researcher Sarah Azouvi presents her research on Winkle,
+which protects any validator-based byzantine fault tolerant consensus mechanisms,
+such as those used in modern Proof-of-Stake blockchains, against long-range attacks
 where old validators’ signature keys get compromised."
 
 ---

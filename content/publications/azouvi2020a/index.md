@@ -39,7 +39,7 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - cryptonetlab
+  - consensuslab
 
 # Publications without a PL affiliation can be added to the author's profile without showing up elsewhere
 # If adding one, set this to true *and* do not set an area or group
@@ -70,7 +70,7 @@ unaffiliated: false
 
 Winkle protects any validator-based byzantine fault tolerant consensus mechanisms, such as those used in modern Proof-of-Stake
 blockchains, against long-range attacks where old validators’ signature keys get compromised. Winkle is a decentralized secondary
-layer of client-based validation, where a client includes a single additional field into a transaction that they sign: a hash of the 
+layer of client-based validation, where a client includes a single additional field into a transaction that they sign: a hash of the
 previously sequenced block. The block that gets a threshold of signatures (confirmations) weighted by clients’ coins is called a “confirmed”
 checkpoint. We show that under plausible and flexible security assumptions about clients the confirmed checkpoints can not be
 equivocated. We discuss how client key rotation increases security, how to accommodate for coins’ minting and how delegation
