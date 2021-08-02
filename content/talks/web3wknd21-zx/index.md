@@ -1,23 +1,23 @@
 ---
 # Talk title
-title: "Protocol Labs: First principles thinking - history of finance & Filecoin"
+title: "More than just storage: Business opportunities on Filecoin"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-08-02
+date: 2021-05-28
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
 
 # Venue name
-venue: HackMoney 2021
+venue: Web3 Weekend
 
 # Venue link
-venue_url: 
+venue_url: https://web3.ethglobal.co/
 
 # Venue date (defaults to date)
 # format YYYY-MM-DD
-venue_date: 2021-06-17
+venue_date: 2021-05-28
 
 # Venue location
 venue_location: 
@@ -41,9 +41,9 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: Research scientist Zixuan (ZX) Zhang gives a workshop on first principles thinking and the history of finance and Filecoin as part of ETHGlobal's HackMoney 2021.
+abstract: 
 
 ---
 
 
-{{< youtube alOkQmxKpY0 >}}
+{{< youtube 5CPUSPUGOZ0 >}}
