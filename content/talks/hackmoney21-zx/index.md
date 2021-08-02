@@ -41,7 +41,7 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: Research scientist Zixuan (ZX) Zhang gives a workshop on first principles thinking and the history of finance and Filecoin as part of ETHGlobal's HackMoney 2021.
+abstract: "Research scientist Zixuan (ZX) Zhang gives a workshop on first principles thinking and the history of finance and Filecoin as part of ETHGlobal's HackMoney 2021."
 
 ---
 
