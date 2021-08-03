@@ -20,5 +20,5 @@ ConsensusLab’s vision is to be the go-to place for scalable decentralised cons
 
 ## Problems of interest
 * Sharding
-* Consensus property
+* Consensus proper
 * Parallel execution
