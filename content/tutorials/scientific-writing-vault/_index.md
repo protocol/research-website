@@ -5,16 +5,17 @@ date: 2021-07-12
 
 layout: tutorial
 
-summary: Something about scientific writing!
+summary: Explore a suite of resources to aid researchers in creating and understanding scientific communications
 
-description: <p>Longer description of scientific writing vault</p>
+description: <p>Ana Silva (PhD),  founder of the Scientific Writing Vault, leads Protocol Labs researchers in three workshops on <i>Scientific Publication Structure</i>, <i>How to Read a Scientific Publication</i>, and <i>How to Choose the Type of a Scientific Publication</i>. These workshops are intended to aid early-stage researchers in developing effective scientific communication styles and interpreting and utilizing the scientific publications they encounter in their research careers. </p>
 
 
 #alert
 showAlertBanner: false
-alertHeading: All the material on this page is free to use for your own course, talk, or university module. Make sure you take advantage of it!
+alertHeading: The scientific writing resources on this page are provided as a service to the research community. Please credit Scientific Writing Vault when linking or citing.
+
 alertSubHeading:
-alertSummary: We are on a virtual tour to provide training to PhD students, researchers and academics on the founding principles, operational details and inner workings of the IPFS Architecture.
+alertSummary: We at Protocol Labs Research partner with top practitioners to provide professional development tools for our researchers, and strive to make our learning resources available to the broader research community wherever possible. 
 alertLink:
 
 
