@@ -7,9 +7,9 @@
  *   'Roboto-Slab',serif; Font for the body text
  *   #fafafa; Background color of the site
  *   #505050; Foreground (text) color of the site
- *   #52739e; Navy, "Template" in the logo, current page in navigation, special titles in the Program
+ *   #52739e; Navy, "Template" in the logo, current page in navigation, special titles in the Programme
  *   #b2132e; Reddish, "Conference" in the logo, hover color for links
- *   #813c54; Heading color, titles in the Program
+ *   #813c54; Heading color, titles in the Programme
  *   #115EF7; Dark Goldenrod, color for links
  */
 
@@ -55,11 +55,11 @@ body{
     font-family:'SourceSansPro';
     font-size:1em;
     line-height:1.5em;
-    margin: 60px auto;
+    margin: auto;
     width: 1000px;
 }
 
-a{color: #115EF7; text-decoration:none;}
+a{color: #1982F4; text-decoration:none;}
 a.current{font-weight: bold;}
 a:hover{text-decoration: underline;}
 h1,h2,h3,h4{clear:left; color: #131316; margin:1.5em 0em 1em 0em; font-family:'SourceSansPro',sans-serif}
@@ -69,8 +69,9 @@ h3{font-size:1.67em;}
 h4{font-size:1.33em;}
 p{list-style:none; margin:24px auto 24px auto; padding:0px; text-align:left;}
 li a, p a {text-decoration:underline; text-decoration-color:#115EF7;}
-ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
-ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
+ul{list-style:disc; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+p + ul{margin-top:-12px}
+ul li{list-style:disc; margin:0px auto 0px auto; padding:0px; text-align:left;}
 i,em{font-style:italic;}
 b,strong{font-weight:bold;}
 sup{
@@ -103,19 +104,18 @@ th,td{
 .bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px;}
 
 /* Conference Title Logo */
-.title{color: #fafafa}
-.year{color: #fafafa; font-size:0.67em; font-weight: lighter;}
+.title{color: #fafafa; font-weight: 400}
+.year{color: #fafafa; font-weight: lighter;}
 
 /* Navigation Links (Home, Registration, etc) */
 table.navigation{width:800px;}
 td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 
 /* Sponsor Images */
-table.sponsors{width:800px;}
-td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 100%}
+td.sponsor{white-space:nowrap; width:33%; text-align:left; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.sponsor img{width: 200px;}
 
-/* The Table on the Program Page */
+/* The Table on the Programme Page */
 td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
 td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
 td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px; font-family:'SourceSansPro'}
@@ -126,17 +126,16 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
 table.plenary{padding-top: 8px; background: #ffffff;}
 
 /* Registration and Directions iframes and Images */
-iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1836px; border:none;}
+iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1950px; border:none;}
 iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
 img.center{display:block; width:67%; margin:1em auto 2em auto;}
 
 /* Flyer Images */
 table.flyers{width:800px;}
 td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 100%}
 
 /* The Footer */
-table.footer{font-size:0.875em; margin: 72px auto 12px auto; width:333px;}
+table.footer{font-size:0.875em; margin: 72px auto 12px auto; width:600px;}
 td.footer{width:auto; text-align:center; vertical-align:middle;}
 
 /* My hacky way of making the site mobile-friendly */
