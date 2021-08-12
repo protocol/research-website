@@ -19,6 +19,6 @@ relevantLinks: [
 
 ---
 
-How to make an informed decision on types of conference and journal publications and publishing formats.
+Learn how to make an informed decision on types of conference and journal publications and publishing formats.
 
 <!--more-->
