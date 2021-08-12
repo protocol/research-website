@@ -1,18 +1,9 @@
 ---
 title: ResNetLab on Tour
 
-date: 2021-04-06T14:20:47+01:00
-menu:
-  main:
-    parent: tutorials
-    identifier: resnetlabontour
-    weight: 8
-    name: ResNetLab on Tour
+date: 2021-04-06
 
-# this must match the taxonomyName of the child modules within this tutorial for them to render properly on the list page
-taxonomyName: resnetlab-on-tour
-
-layout: tutorial
+layout: resnetlab-on-tour
 
 summary: Join us to learn everything about IPFS’s content addressing and content routing subsystems, its content exchange strategies, and how IPFS deals with dynamic, mutable content.
 
