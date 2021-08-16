@@ -57,6 +57,7 @@ body{
     line-height:1.5em;
     margin: auto;
     width: 1000px;
+    padding: 0 10px 0 10px;
 }
 
 a{color: #1982F4; text-decoration:none;}
@@ -141,7 +142,7 @@ td.footer{width:auto; text-align:center; vertical-align:middle;}
 /* My hacky way of making the site mobile-friendly */
 @media only screen and (max-width: 1100px) {
     h2{font-size:3.00em;}
-    p{font-size:1.5em; line-height:1.5em;}
+    p,ul{font-size:1.5em; line-height:1.5em;}
     th,td,tr{font-size:1.5em; line-height:1.5em;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
