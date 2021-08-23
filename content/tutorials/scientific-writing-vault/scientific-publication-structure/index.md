@@ -1,7 +1,7 @@
 ---
 title: Scientific Publication Structure
 
-publishDate: 2020-03-30
+publishDate: 2020-03-03
 
 video: JvK1VX5SgwY
 

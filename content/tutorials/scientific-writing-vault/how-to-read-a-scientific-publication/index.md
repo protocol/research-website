@@ -1,7 +1,7 @@
 ---
 title: How to Read a Scientific Publication
 
-publishDate: 2020-03-30
+publishDate: 2020-03-02
 
 video: 5PFcebR8r_g
 

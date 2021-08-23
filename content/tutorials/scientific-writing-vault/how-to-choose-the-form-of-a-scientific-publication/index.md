@@ -1,7 +1,7 @@
 ---
 title: How to Choose the Form of a Scientific Publication
 
-publishDate: 2020-03-30
+publishDate: 2020-03-01
 
 video: e2BguvvPkJM
 
