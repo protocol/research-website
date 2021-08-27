@@ -7,22 +7,12 @@
 
   {{ partial "tutorial-page-top" . }}
 
-  {{ partial "tutorial-module-navigation" . }}
-
   <div class="mb-6 pt-12" id="core">
-    <div class="flex flex-row items-center justify-between mb-10 px-4 md:px-0">
-      <div class="block">
-        <h2 class="text-md font-bold relative z-10">Core modules</h2>
-        <img class="absolute z-0 left-0 hidden lg:block vector-pattern-left"  src="/images/tutorials/rnl-core-pattern1.png">
-      </div>
-    </div>
     <div class="flex flex-col md:flex-row md:flex-wrap md:mx-0 mb:12">
 
     {{ $.Scratch.Set "index" 0 }}
 
     {{ range .RegularPages }}
-
-      {{ if eq .Params.isCore true }}
 
             <div class='flex mb-20 lg:even:flex-row-reverse flex-wrap lg:flex-nowrap md:-mx-4 core-card-{{ $.Scratch.Get "index" }}'>
 
@@ -34,48 +24,14 @@
                 <img class="absolute z-0 right-0 hidden lg:block vector-pattern-right" src="/images/tutorials/rnl-core-pattern2.png">
               {{ end }}
             </div>
-      {{ end }}
+            
     {{ end }}
 
 
     </div>
   </div>
 
-  <div class="max-w-screen mx-auto mb-6 pt-12" id="elective">
-    <div class="flex flex-row items-center justify-between mb-10 px-4 md:px-0">
-      <div class="block">
-        <h2 class="text-md font-bold relative z-10">Elective modules</h2>
-      </div>
-    </div>
-    <div class="flex flex-col md:flex-row md:flex-wrap md:mx-0 mb:12">
-
-
-      {{ range .RegularPages }}
-        {{ if eq .Params.isCore false }}
-          <div class='flex mb-20 lg:even:flex-row-reverse flex-wrap lg:flex-nowrap md:-mx-4'>
-            {{ partial "tutorial-module-card" . }}
-          </div>
-        {{ end }}
-      {{ end }}
-    </div>
-  </div>
-
-
-  {{ if eq $pageTaxonomyName "resnetlab-on-tour" }}
-    {{ partial "tutorial-map" . }}
-
-    {{ partial "tutorial-logo-list" . }}
-
-    </div>
-
-    {{ partial "tutorials-footer-top" . }}
-
-  {{ else }}
-
-
-  </div>
-
-  {{ end }}
+</div>
 
 
 {{ end }}
