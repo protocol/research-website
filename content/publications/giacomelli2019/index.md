@@ -31,9 +31,9 @@ publication_types:
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
   - "Ignacio Cascudo"
-  - "Ivan Damg˚ard"
+  - "Ivan Damgård"
   - " Bernardo David"
-  - "Nico D¨ottling"
+  - "Nico Döttling"
   - "Rafael Dowsley"
   - irene-giacomelli
   
