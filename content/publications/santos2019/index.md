@@ -10,7 +10,7 @@ date: 2020-03-30
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: SAC '20 - Proceedings of the 35th Annual ACM Symposium on Applied Computing
+venue: SAC 2020
 
 # Venue Location
 venue_location: Brno, Czech Republic
