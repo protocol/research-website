@@ -1,7 +1,7 @@
 ---
 # Publication title
-title: "Efficient UC Commitment Extension with Homomorphism for
-Free (and Applications)"
+title: "Efficient UC commitment extension with homomorphism for
+free (and applications)"
 
 # Website post date
 # format YYYY-MM-DD
@@ -11,7 +11,7 @@ date: 2019-10-02
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: IACR-ASIACRYPT-2019
+venue: Advances in Cryptology – ASIACRYPT 2019 
 
 # Venue Location
 venue_location: 
