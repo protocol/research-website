@@ -1,16 +1,16 @@
 ---
+# Publication title
 title: "Censorship-resistant web annotations based on Ethereum and IPFS"
 
-# Conference date
+# Website post date
+# format YYYY-MM-DD
 date: 2020-03-30
-# Website publication date
-# publishDate: 2020-03-30
 
-# Publication Name (not used)
-journal:
+# Publish from this date (defaults to date)
+# publishDate: 2019-09-03
 
 # Venue Name
-venue: SAC '20: Proceedings of the 35th Annual ACM Symposium on Applied Computing
+venue: SAC '20 - Proceedings of the 35th Annual ACM Symposium on Applied Computing
 
 # Venue Location
 venue_location: Brno, Czech Republic
