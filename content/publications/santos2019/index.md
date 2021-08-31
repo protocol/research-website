@@ -1,16 +1,16 @@
 ---
-title: "DClaims: A censorship resistant web annotations system using IPFS and Ethereum"
+# Publication title
+title: "Censorship-resistant web annotations based on Ethereum and IPFS"
 
-# Conference date
+# Website post date
+# format YYYY-MM-DD
 date: 2020-03-30
-# Website publication date
-# publishDate: 2020-03-30
 
-# Publication Name (not used)
-journal:
+# Publish from this date (defaults to date)
+# publishDate: 2019-09-03
 
 # Venue Name
-venue: ACM/SIGAPP Symposium On Applied Computing (to appear)
+venue: SAC 2020
 
 # Venue Location
 venue_location: Brno, Czech Republic
@@ -51,4 +51,4 @@ featured: false
 
 ---
 
-The proliferation of unreliable and biased information is a significant problem on the Internet. To assess the credibility of the information retrieved from news websites and other sources, users often resort to social platforms looking for confirmation with trustworthy parties. However, users may be faced with considerable obstacles posed by the platform provider, who can prevent access to certain content. This paper presents DClaims, a system that provides a censorship-resistant distributed service for the exchange of information over the Internet using web annotations. DClaims' fully decentralized architecture relies on Inter-Planetary File System (IPFS) and Ethereum blockchain, both of which offer desirable censorship resistant properties. DClaims is implemented as a web annotations browser extension which allows for the classification of news articles, on news websites. From our evaluation of the system , we conclude that a large scale implementation of the system is practical and economically viable.
+Flooded by the propagation of false or biased news in the Web, people tend to resort to social networks to read posts from reliable sources, exchange commentaries with trustworthy parties, access first-hand content, or cross-check information that appears in news outlets. However, platform providers like Facebook or Twitter can ultimately decide about the contents exposed to each user. Anecdotal evidence suggests that such platform providers are prone to pressure by political or economical agents, and may be ideologically driven to hide messages or block certain users, thereby impairing users' ability to freely access rightful information.

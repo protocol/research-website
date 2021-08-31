@@ -1,8 +1,8 @@
 ---
-title: Vector commitment techniques and applications to verifiable decentralized storage
+title: Incrementally aggregatable vector commitment techniques and applications to verifiable decentralized storage
 
 # Website post date
-date: 2020-02-17
+date: 2020-12-05
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
 
@@ -10,13 +10,13 @@ date: 2020-02-17
 # journal:
 
 # Venue Name
-venue: Theory and Practice of Blockchains 2020
+venue: Advances in Cryptology – ASIACRYPT 2020
 
 # Venue Location
 venue_location:
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
-venue_date: 2020-07-01
+venue_date: 2020-12-05
 
 # Digital Object Identifier
 doi:
@@ -41,7 +41,7 @@ tags:
   -
 
 categories:
-  -
+  - conference paper
 
 areas:
   - cryptography
@@ -59,8 +59,10 @@ featured: false
 #    icon: google-scholar
 ---
 
-Vector commitments with subvector openings (SVC) [Lai-Malavolta and Boneh-Bunz-Fisch, CRYPTO'19] allow one to open a committed vector at a set of positions with an opening of size independent of both the vector's length and the number of opened positions.
+Vector commitments with subvector openings (SVC) [Lai-Malavolta, Boneh-Bunz-Fisch; CRYPTO’19] allow one to open a committed vector at a set of positions with an opening of size independent of both the vector’s length and the number of opened positions.
 
-We propose a new SVC construction in groups of unknown order that, similarly to that of Boneh et al. has constant-size public parameters, commitments and openings, but in addition enjoys new features. First, our SVC has incremental aggregation: one can merge openings in a succinct way an unbounded number of times. Thanks to incremental aggregation we obtain: faster generation of openings via preprocessing, and a method to generate openings in a distributed way. Second, we propose efficient arguments of knowledge of subvector openings for our SVC, which immediately yields a keyless proof of storage with compact proofs.
+We continue the study of SVC with two goals in mind: improving their efficiency and making them more suitable to decentralized settings. We address both problems by proposing a new notion for VC that we call incremental aggregation and that allows one to merge openings in a succinct way an unbounded number of times. We show two applications of this property. The first one is immediate and is a method to generate openings in a distributed way. The second application is an algorithm for faster generation of openings via preprocessing.
 
-Finally, we introduce and contruct Verifiable Decentralized Storage (VDS), a cryptographic primitive that allows to check the integrity of a file stored by a network of nodes in a distributed and decentralized way.
+We then proceed to realize SVC with incremental aggregation. We provide two constructions in groups of unknown order that, similarly to that of Boneh et al. (which supports aggregating only once), have constant-size public parameters, commitments and openings. As an additional feature, for the first construction we propose efficient arguments of knowledge of subvector openings which immediately yields a keyless proof of storage with compact proofs.
+
+Finally, we address a problem closely related to that of SVC: storing a file efficiently in completely decentralized networks. We introduce and construct verifiable decentralized storage (VDS), a cryptographic primitive that allows to check the integrity of a file stored by a network of nodes in a distributed and decentralized way. Our VDS constructions rely on our new vector commitment techniques.
