@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title:
+title: A rebuttal to the Metaverse as a dystopia
 
 # Website post date
 # format YYYY-MM-DD

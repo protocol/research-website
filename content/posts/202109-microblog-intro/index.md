@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title:
+title: Introducing the microblog format
 
 # Website post date
 # format YYYY-MM-DD
@@ -37,4 +37,8 @@ draft: false
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The PL Research blog is home to news about our [software releases](/blog/2021/the-winding-journey-to-proofs-v8.0.0-and-beyond/) and [conference presentations](/blog/2021/decentralising-the-internet-with-ipfs-and-filecoin-di2f-a-report-from-the-trenches/), [deep dives](/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/) into our techniques and tech stack, [design reports](/blog/2021/designing-a-dataflow-editor-with-typescript-and-react/), and updates about our [new research initiatives](/blog/2021/consensuslab-supercharging-our-consensus-research/). 
+
+Now we're premiering a new sort of of post to our blog stack: the microblog -- short, opinionated posts about topics related to science, technology, and [the science of science](/areas/metaresearch). 
+
+Our first entry in the series is a post from Research Team Lead [Evan Miyazono](/authors/evan-miyazono/) on the future of the Metaverse: [A rebuttal to the Metaverse as a dystopia](/blog/2021/against-dystopia).
