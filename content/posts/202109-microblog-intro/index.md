@@ -41,4 +41,4 @@ The PL Research blog is home to news about our [software releases](/blog/2021/th
 
 Now we're adding a new type of of post to our blog stack: the microblog -- short, opinionated posts about topics related to science, technology, and [the science of science](/areas/metaresearch). 
 
-Our first entry in the series is a post from Research Team Lead [Evan Miyazono](/authors/evan-miyazono/) on the future of the Metaverse: [A rebuttal to the Metaverse as a dystopia](/blog/2021/against-dystopia).
+Our first entry in the series is a post from Research Team Lead [Evan Miyazono](/authors/evan-miyazono/) on the future of the Metaverse: [A rebuttal to the Metaverse as a dystopia](blog/2021/a-rebuttal-to-the-metaverse-as-a-dystopia/).
