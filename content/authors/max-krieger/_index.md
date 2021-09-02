@@ -42,11 +42,11 @@ social:
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
 user_groups:
-- Management and support
+- Alumni
   
 # For display at the top of the author details page
 # Not currently used
 # quote:
 ---
 
-Max studied cognitive and computer science at Carnegie Mellon University. He’s interested in constructing environments that enable expressive, ambitious modes of learning and creating.
+Max was an Associate Research Program Manager and metaresearcher at Protocol Labs during the summer of 2021. He studied cognitive and computer science at Carnegie Mellon University. He’s interested in constructing environments that enable expressive, ambitious modes of learning and creating.
