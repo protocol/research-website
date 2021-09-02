@@ -41,7 +41,7 @@ social:
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
 user_groups:
-- Management and support
+- Alumni
  
 
 # For display at the top of the author details page
@@ -49,4 +49,4 @@ user_groups:
 # quote:
 ---
 
-Sam is studying CS at Tsinghua University in Beijing, China. He's interested in using tech for social good and building humane tech for a more inclusive future. Sam is currently exploring the decentralization of technology in the context of human evolution and what this would enable us to do collectively to push humanity forward.
+Sam was an Associate Research Program Manager and metaresearcher at Protocol Labs during the summer of 2021. He is currently (2021) studying CS at Tsinghua University in Beijing, China. Sam's interests include the use of tech for social good and building humane tech for a more inclusive future. He is currently exploring the decentralization of technology in the context of human evolution and what this would enable us to do collectively to push humanity forward.
