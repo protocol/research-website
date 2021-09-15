@@ -1,10 +1,6 @@
 ---
 # Blog post title
-<<<<<<< HEAD
-title: Introducing MicroBlogPosts
-=======
 title: Introducing the microblog format
->>>>>>> f638312c471164bcbfeb51181744f1b14066cd03
 
 # Website post date
 # format YYYY-MM-DD
