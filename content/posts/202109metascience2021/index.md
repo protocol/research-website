@@ -54,7 +54,7 @@ Our symposium includes researchers from academic institutions, not-for-profit re
 
 - [Joel Chan](https://metascience2021.org/speakers/chan/) of the [University of Maryland’s College of Information Studies](https://ischool.umd.edu/) will present tools for creating, navigating,  and sharing composable modules of provenanced scientific evidence. 
 
-- [Karola Kirsanow]((/authors/karola-kirsanow/)) will present some lessons we've learned at Protocol Labs Research about technological roadmapping as a tool for incentive alignment and managing information flows.
+- [Karola Kirsanow](/authors/karola-kirsanow/) will present some lessons we've learned at Protocol Labs Research about technological roadmapping as a tool for incentive alignment and managing information flows.
 
 -  [Jungwon Byun](https://metascience2021.org/speakers/byun/) of [Ought](https://ought.org/) will discuss applying advanced language models to automate research workflows.
 
