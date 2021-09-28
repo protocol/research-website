@@ -14,9 +14,10 @@ resources:
 ConsensusLab’s vision is to be the go-to place for scalable decentralised consensus research. In the true spirit of Protocol Labs Research, we aim to become a hub for the collaborative advancement of human knowledge on this challenging topic. Together with a wide network of academic and industry partners, and in collaboration with other open projects, our team will be building an engine for the decentralised web.
 
 ## Team
-* Marko Vukolić (lead)
-* Jorge Soares (TPM)
+* Marko Vukolić (Lead)
 * Sarah Azouvi (Research Scientist)
+* Alfonso de la Rocha (Research Engineer)
+* Jorge Soares (Technical Program Manager)
 
 ## Problems of interest
 * Sharding
