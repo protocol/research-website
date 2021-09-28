@@ -39,7 +39,7 @@ draft: false
 
 After a two-week review marathon, we're happy to announce [the exciting program for ConsensusDays 21](/sites/consensusday21/programme/index.html). The workshop will take place 6-7 October (next week!) in the 14:00-20:00 UTC period.
 
-We were overwhelmed by the number and quality of talk proposals and many decisions ended up coming down to program limitations and session planning rather than quality alone. In the end, 24 submissions were accepted out of a total of 41. We are grateful to all authors for their submissions and to Alberto Sonnino, Alfonso de la Rocha, Barath Raghavan, Giuliano Losa, Irene Giacomelli, Luca Nizzardo, Matej Pavlovic, Nicolas Gailly, Petar Maymounkov, Sarah Azouvi, Vivien Quéma, Will Scott, and Yiannis Psaras for their reviews.
+We were overwhelmed by the number and quality of talk proposals, and many decisions ended up coming down to program limitations and session planning rather than quality alone. In the end, 24 submissions were accepted out of a total of 41. We are grateful to all authors for their submissions and to Alberto Sonnino, Alfonso de la Rocha, Barath Raghavan, Giuliano Losa, Irene Giacomelli, Luca Nizzardo, Matej Pavlovic, Nicolas Gailly, Petar Maymounkov, Sarah Azouvi, Vivien Quéma, Will Scott, and Yiannis Psaras for their reviews.
 
 If you haven't yet, please [register](https://docs.google.com/forms/d/e/1FAIpQLSeySa1MHdLmB_VgJPrD0EIaJuCpK2fL6JVC_EBzNEV_KVZrcA/viewform) to attend the workshop. We'll be sending Zoom links to registered attendees shortly before the workshop.
 
