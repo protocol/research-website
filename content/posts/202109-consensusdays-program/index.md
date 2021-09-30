@@ -43,4 +43,4 @@ We were overwhelmed by the number and quality of talk proposals, and many decisi
 
 If you haven't yet, please [register](https://docs.google.com/forms/d/e/1FAIpQLSeySa1MHdLmB_VgJPrD0EIaJuCpK2fL6JVC_EBzNEV_KVZrcA/viewform) to attend the workshop. We'll be sending Zoom links to registered attendees shortly before the workshop.
 
-In the meantime, we also invite you to join us in Slack. Please [join our workspace](https://filecoin.io/slack) and head on over to the [#consensusdays21](https://filecoinproject.slack.com/messages/consensusday21) channel.
+In the meantime, we also invite you to join us in Slack. Please [join our workspace](https://filecoin.io/slack) and head on over to the [#consensusdays21](https://filecoinproject.slack.com/messages/consensusdays21) channel.
