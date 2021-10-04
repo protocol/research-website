@@ -13,13 +13,13 @@ taxonomies:
   area: areas
   group: groups
 params:
-  DateForm: 2006.1.2
+  DateForm: 2006-01-02
   Avatar: /images/pl_research_card.png
   Logo: /images/pl_research_logo.svg
   Author: "Protocol Labs Research"
   Description: "Protocol Labs Research explores the future of decentralization and examines the infrastructure limiting what you can do with technology."
   Locale: "en_US"
-  TwitterUser: "@protocollabs"
+  TwitterUser: "@ProtoResearch"
 permalinks:
   talks: /talks/:title/
   publications: /publications/:title/
