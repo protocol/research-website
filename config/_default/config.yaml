@@ -19,7 +19,7 @@ params:
   Author: "Protocol Labs Research"
   Description: "Protocol Labs Research explores the future of decentralization and examines the infrastructure limiting what you can do with technology."
   Locale: "en_US"
-  TwitterUser: "@protocollabs"
+  TwitterUser: "@ProtoResearch"
 permalinks:
   talks: /talks/:title/
   publications: /publications/:title/
