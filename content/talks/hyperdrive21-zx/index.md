@@ -1,6 +1,6 @@
 ---
 # Talk title
-title: "HyperDrive Deep Dive"
+title: "HyperDrive deep dive"
 
 # Website post date
 # format YYYY-MM-DD
