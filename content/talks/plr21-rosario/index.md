@@ -1,38 +1,38 @@
 ---
 # Talk title
-title: "HyperDrive deep dive"
+title: "A survey of rational proofs"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-08-02
+date: 2021-09-21
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
 
 # Venue name
-venue: 
+venue: Protocol Labs Research Talks
 
 # Venue link
-venue_url: 
+venue_url:
 
 # Venue date (defaults to date)
 # format YYYY-MM-DD
-venue_date: 2021-06-26
+venue_date: 2021-09-21
 
 # Venue location
-venue_location: 
+venue_location:
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - zixuan-zhang
+  - rosario-gennaro
 
 # Zero or more of the areas in content/areas
 areas:
-  - cryptoeconomics
+  - cryptography
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - cryptoeconlab
+  - cryptonetlab
 
 # Name the cover image featured.jpg
 resources:
@@ -41,13 +41,9 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: "Research Scientist Zixuan (ZX) Zhang does a deep dive 
-to highlight what the Filecoin HyperDrive upgrade enables and how to 
-tactically take advantage of the new change in different chain utilization 
-scenarios."
-
+abstract: "In this talk, Protocol Labs Researcher Rosario Gennaro surveys some of the main results and approaches in the area of Rational Proofs, including a fascinating connection to Fine-Grained Cryptography (defined as Cryptography which is secure against adversaries that run in a fixed polynomial time, as opposed to any poly-time adversary) and discusses the main open problems."
 
 ---
 
 
-{{< youtube w_mXFtBA-98 >}}
+{{< youtube Q-wSa2W4lw >}}
