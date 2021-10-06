@@ -10,6 +10,7 @@ resources:
 
 aliases:
   - /research/groups/filecoin-research
+  - /research/groups/cryptocomputelab
 ---
 
  ## Mission & Vision
