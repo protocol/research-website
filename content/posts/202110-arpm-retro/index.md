@@ -37,9 +37,9 @@ draft: false
 
 ---
 
-Now that summer has turned to fall, we'd like to share some of the things we've learned and accomplished during this past summer with our Associate Research Program managers (ARPMs): [Dwarkesh](https://research.protocol.ai/authors/dwarkesh-patel/), [Max](https://research.protocol.ai/authors/max-krieger/), and [Sam](https://research.protocol.ai/authors/samuel-tang/).
+Now that summer has turned to fall, we'd like to share some of the things we've learned and accomplished during this past summer with our Associate Research Program managers (ARPMs): [Dwarkesh](/authors/dwarkesh-patel/), [Max](/authors/max-krieger/), and [Sam](/authors/samuel-tang/).
 
-The [ARPM program](https://research.protocol.ai/outreach/) was a 10 week summer experience that brought young researchers into PL Research to support our current program initiatives and help to develop new ideas. It was also an experiment: we wanted to discover whether we could design a viable program to train undergraduates and recent graduates in [metaresearch](https://research.protocol.ai/areas/metaresearch/)-inflected research program management. 
+The [ARPM program](/outreach/) was a 10 week summer experience that brought young researchers into PL Research to support our current program initiatives and help to develop new ideas. It was also an experiment: we wanted to discover whether we could design a viable program to train undergraduates and recent graduates in [metaresearch](/areas/metaresearch/)-inflected research program management. 
 
 We were pleased to discover that we did not have to engage in any p-hacking to get a significant positive result. The ARPMs brought a fresh perspective and lots of exciting ideas to our research meetings, discussion sessions, and journal clubs, and provided fantastic support to  the regular activities of PL Research program management. Over the summer, our ARPMs helped us to:
 
