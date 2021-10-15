@@ -1,7 +1,7 @@
 ---
 title: drand - The Distributed Randomness Beacon
 
-publishDate: 2021-10-15
+publishDate: 2020-05-08
 
 isCore: false
 
