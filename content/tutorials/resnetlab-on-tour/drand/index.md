@@ -32,7 +32,7 @@ links:
 
 ---
 
-drand is a distributed randomness beacon. It provides publicly-verifiable, unpredictable and bias-resistant random numbers as a public service. In this module, we'll walk through:
+drand is a distributed randomness beacon. It provides publicly-verifiable, unpredictable, and bias-resistant random numbers as a public service. In this module, we'll walk through:
   - Threshold Cryptography & Randomness
   - Distributed Key Generation in drand
   - The Setup and Randomness Generation Phases
