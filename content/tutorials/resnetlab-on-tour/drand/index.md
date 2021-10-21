@@ -15,7 +15,7 @@ resources:
 
 
 relevantLinks: [
-  ["drand webiste", "https://drand.love"],
+  ["drand website", "https://drand.love"],
   ["drand docs", "https://drand.love/docs/"],
   ["The League of Entropy", "https://blog.cloudflare.com/league-of-entropy/"]
 ]
