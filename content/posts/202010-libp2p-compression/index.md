@@ -107,7 +107,7 @@ This preliminary compression implementation hasn't landed yet on the go-libp2p u
 
 So what kind of improvements can we expect from the use of compression? Let's start discussing the bandwidth savings that the use of compression can bring. For this test we exchanged datasets from [these "awesome IPFS" datasets](https://awesome.ipfs.io/datasets/) with compression enabled and disabled, and measured the nodes' total use of bandwidth. We use the DefaultCompression level configuration for the underlying gzip algorithm in all our experiments.
 
-<table>
+<table class="table-fixed">
 <tbody>
 <tr>
 <td>
