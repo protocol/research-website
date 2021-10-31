@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: ConsenususDays 21 recap and recordings
+title: ConsensusDays 21 recap and recordings
 
 # Website post date
 # format YYYY-MM-DD
@@ -34,6 +34,9 @@ groups:
 
 # Not used
 draft: false
+
+aliases: 
+  - /blog/2021/consenususdays-21-recap-and-recordings
 
 ---
 
