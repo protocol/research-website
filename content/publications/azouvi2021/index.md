@@ -1,23 +1,23 @@
 ---
 # Publication title
-title: "Private Attacks in Longest Chain Proof-of-stake Protocols with Single Secret Leader Elections"
+title: "Winkle: foiling long-range attacks in proof-of-stake systems"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-11-16
+date: 2020-10-21
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: "AFT '21: 3rd ACM Conference on Advances in Financial Technologies"
+venue: "AFT '20: 2nd ACM Conference on Advances in Financial Technologies"
 
 # Venue Location
-#venue_location: New York, NY, USA
+venue_location: New York, NY, USA
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date: 2021-09-28
+venue_date: 2020-10-21
 
 # DOI, if available
 doi:
@@ -30,11 +30,12 @@ publication_types:
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
   - sarah-azouvi
-  - "Daniele Cappelletti"
+  - "George Danezis"
+  - "Valeria Nikolaenko"
 
 # Zero or more of the areas in content/areas
 areas:
-  - distributed-systems
+  - cryptography
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
@@ -67,4 +68,11 @@ unaffiliated: false
 
 ---
 
-Single Secret Leader Elections have recently been proposed as an improved leader election mechanism for proof-of-stake (PoS) blockchains. However, the security gain they provide has not been quantified. In this work, we present a comparison of PoS longest-chain protocols that are based on Single Secret Leader Elections (SSLE) - that elect exactly one leader per round - versus those based on Probabilistic Leader Elections (PLE) - where one leader is elected on expectation. Our analysis shows that when considering the private attack - the worst attack on longest-chain protocols - the security gained from using SSLE is substantial: the settlement time is decreased by roughly 25% for a 33% or 25% adversary. Furthermore, when considering grinding attacks, we find that the security threshold is increased by 10% (from 0.26 in the PLE case to 0.36 inthe SSLE case) and the settlement time is decreased by roughly 70% for a 20% adversary in the SSLE case.
+Winkle protects any validator-based byzantine fault tolerant consensus mechanisms, such as those used in modern Proof-of-Stake
+blockchains, against long-range attacks where old validators’ signature keys get compromised. Winkle is a decentralized secondary
+layer of client-based validation, where a client includes a single additional field into a transaction that they sign: a hash of the
+previously sequenced block. The block that gets a threshold of signatures (confirmations) weighted by clients’ coins is called a “confirmed”
+checkpoint. We show that under plausible and flexible security assumptions about clients the confirmed checkpoints can not be
+equivocated. We discuss how client key rotation increases security, how to accommodate for coins’ minting and how delegation
+allows for faster checkpoints. We evaluate checkpoint latency experimentally using Bitcoin and Ethereum transaction graphs, with
+and without delegation of stake.
