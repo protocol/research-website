@@ -32,27 +32,15 @@ draft: false
 
 ---
 
-We are delighted to announce that [Adam Marblestone](/authors/adam-marblestone/) will be joining PL Research  as an advisor. Adam is a neuroscientist and technologist who has conducted research in brain circuit mapping and quantum information theory. He has also worked on elucidating design principles for the invention of transformative technologies.
+We are happy to announce that [Vivien Quéma](/authors/vivien-quema/) will be advising PL Research's ConsensusLab. Vivien is a Professor of Computer Science at [Grenoble INP](https://www.grenoble-inp.fr/en) and a member of the LIG laboratory. He currently devotes his attention to Byzantine fault tolerance, multicore systems, and P2P systems. At ConsensusLab, he will first focus on parallel execution in WASM order-execute models.
 
-We asked Adam about his journey to PL, the MetaResearch projects he will be advising, and his thoughts about future technological developments:
-
+We asked Vivien about the journey that brought him to PL, the projects he will be working on, and his thoughts about future technological developments:
 
 **How did you decide to become an advisor to PL?**
-
-I decided to join PL through my involvement in long-term discussions with [Juan](/authors/juan-benet/), [Evan](/authors/evan-miyazono/), and others about accelerating science.
+> tbd
 
 **What problems are you currently most interested in?**
-
-- Developing increased capacity for research that is pre-commercial but involves systems engineering and team science
-
-- Overcoming structural monoculture in scientific organizations
-
-- The biology of aging
-
-- The neuroscience and biotechnology underpinnings of brain computer interfaces
-
-- The intersection of neuroscience and AI
+> tbd
 
 **What future technology are you most excited about?**
-
-I view many technologies as interconnected, but, basically, the convergence of information and biology.
+> tbd
