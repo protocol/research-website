@@ -32,7 +32,9 @@ draft: false
 
 ---
 
-We are happy to announce that [Vivien Quéma](/authors/vivien-quema/) will be advising PL Research's ConsensusLab. Vivien is a Professor of Computer Science at [Grenoble INP](https://www.grenoble-inp.fr/en) and a member of the LIG laboratory. He currently devotes his attention to Byzantine fault tolerance, multicore systems, and P2P systems. At ConsensusLab, he will first focus on parallel execution in WASM order-execute models.
+We are happy to announce that [Vivien Quéma](/authors/vivien-quema/) will be joining PL Research's ConsensusLab as a research advisor. Vivien is a Professor of Computer Science at [Grenoble INP](https://www.grenoble-inp.fr/en) and a member of the LIG laboratory. He currently devotes his attention to Byzantine fault tolerance, multicore systems, and P2P systems.
+
+Vivien will initially focus on advising ConsensusLab's work on parallel execution in WASM order-execute models, with the goal of eventually enabling efficient, high-performance FVM computation over arbitrary data.
 
 We asked Vivien about the journey that brought him to PL, the projects he will be working on, and his thoughts about future technological developments:
 
