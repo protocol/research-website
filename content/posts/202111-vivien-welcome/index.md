@@ -4,7 +4,7 @@ title: Vivien Quéma joins PL Research as an advisor to ConsensusLab
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-11-25
+date: 2021-11-28
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
