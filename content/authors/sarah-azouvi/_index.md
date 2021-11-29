@@ -24,7 +24,7 @@ education:
   courses:
   - course: PhD in Computer Science
     institution: University College London
-    year: 2021 (expected)
+    year: 2021
 
 social:
 - icon: google-scholar
