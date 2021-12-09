@@ -1,0 +1,93 @@
+---
+# Blog post title
+title: "Protocol Labs research funding recipients 2021, part 1"
+
+# Website post date
+# format YYYY-MM-DD
+date: 2021-12-13
+
+# Publish from this date (defaults to date)
+# publishDate: 2019-09-03
+
+# For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
+# We sort authors alphabetically by last name
+authors:
+  - jonathan-gross
+
+# If applicable
+categories:
+  - blog
+
+# If applicable
+tags:
+  - RFPs
+
+# Zero or more of the areas in content/areas
+areas:
+  - cryptography
+
+# Zero or more of the groups in content/groups (should match author membership)
+groups:
+  - cryptonetlab
+  - cryptocomputelab
+
+# Not used
+draft: false
+
+
+
+---
+This has been a prodigious year for generating new funded collaborations between Protocol Research and top academic researchers around the world! We have given out a whopping eighteen awards since August (with others pending). These include eight RFPs, five PhD fellowships, three Postdoctoral fellowships, one implementation grant, and a faculty nucleation award. We’ll be detailing these awards in two separate blog posts. This first installment is to announce the RFP award recipients as well as a new funded collaboration with Prof Nada Amin of Harvard University. PL Research’s Requests for Proposals (RFPs) are designed to fund goal-driven research in response to specific open problems defined by Protocol Labs. RFPs are posted intermittently based on need and the readiness of our research labs to support these collaborations. You can view previous RFPs here. Below, you will find descriptions of our award recipients: two proposals for RFP-000, two for RFP-009, and four for RFP-010. 
+
+If you are interested in hearing about future RFP opportunities, please [subscribe to our newsletter](https://mailchi.mp/protocol/research-newsletter-signup). 
+
+# RFP-000
+
+## Federated learning on IPFS
+### Christodoulous Pappas, [Spyros Lalis](https://faculty.e-ce.uth.gr/lalis/), and Eleni Panagou - University of Thessaly; [Dimitris Chatzopoulos](https://seng.hkust.edu.hk/about/people/faculty/dimitrios-chatzopoulos), HKUST
+
+Abstract: The InterPlanetary Learning System (IPLS) is a fully decentralized federated learning framework, partially based on the InterPlanetary File System (IPFS). Using IPLS one can distribute and replicate parts of a machine-learning model on independently executing agents, which train the model in parallel based on their local/private data and iteratively interact with each other in a p2p fashion in order to synchronize and exchange the weights of their partitions. A first working prototype of IPLS that includes a Java-based API is already available and has been validated/evaluated for certain indicative system configurations. The goal of this project is to validate design and implementation decisions, elucidate behavioral characteristics, further extend the capabilities and evaluate the performance of IPLS. Specifically, we plan to proceed along the following directions: (i) robustness against malicious agents and privacy attacks; (ii) model partitioning and partition assignment strategies for improved robustness; (iii) more efficient synchronization between the agents responsible for the same (replicated) model partition; (iv) indirect communication between agents based on suitable IPFS primitives; (v) utilization of split-learning or some other suitable method to achieve secure computation offloading from resource-constrained agents on external (e.g., edge) computing infrastructures; (vi) API for Python and integration with selected ML libraries; (vii) evaluation for different applications and realistic agent mobility/connectivity scenarios. 
+
+## IPFS measurement study
+### [Sebastian Henningsen](https://www.weizenbaum-institut.de/en/portrait/p/sebastian-henningsen/), [Leonhard Balduf](https://www.weizenbaum-institut.de/en/portrait/p/leonhard-balduf/), [Martin Florian](https://www.weizenbaum-institut.de/en/portrait/p/martin-florian/), [Björn Scheuermann](https://fonda.hu-berlin.de/partners/prof-bjorn-scheuermann/) - Humboldt University Berlin/Weizenbaum Institute
+
+Abstract: We are a team of researchers interested in measuring distributed systems. We have investigated IPFS extensively in the past, in particular the network overlay](https://arxiv.org/abs/2002.07747) and the [BitSwap](https://arxiv.org/abs/2104.09202) subprotocol. Through our measurements of the overlay we systematically enumerate all DHT-enabled nodes and learn who is connected to whom (among a ton of other metrics).  From our BitSwap monitoring we can extract which content was requested by our neighboring nodes at which point in time.
+
+In our current ongoing project we want to learn more about the content that is stored on IPFS by combining and extending both perspectives. Specifically, besides the content itself, we are interested in how content is stored, distributed and replicated in the network. Imagine tracking specific CIDs: how many nodes are replicating that content and how did the content's distribution in the network evolve over time? Our results will provide important insights which can be leveraged to further improve the performance of IPFS and related networks such as Filecoin.
+
+# RFP-009
+
+### Danilo Francati , Qiang Tang (University of Sydney), 
+
+Abstract: Verifiable capacity bound function (VCBF), a space analog of verifiable delay function, imposes a lower bound on the number of bits read from memory during evaluation (referred to as minimum capacity). Furthermore, it allows for an efficient public verification process: Given a proof-of-correctness, checking the validity of the output takes significantly fewer memory resources, sublinear in the target minimum capacity. Its space/capacity notion and the public and efficient verification process make VCBFs a potentially impactful primitive for the storage-based blockchain systems of Filecoin. However, research on VCBF is still at its very beginning, and the only known construction presents several drawbacks. One of them is that the space-based minimum capacity property of VCBF is preserved only in a “restricted model of computation” in which a machine performs a limited (constant) number of random access to the memory allocated. Building new VCBF constructions that are secure in "stronger models of computation" (e.g., machines that perform multiple non-constant random accesses) would allow VCBF to be deployed in the Filecoin network, bringing several benefits. For instance, VCBFs can play an important role in improving (or adding interesting properties to) proof of useful space, a fundamental building block for the Filecoin protocol.
+
+# RFP-010
+
+### Carla Rafols, Alexandros Zacharakis - Universitat Pompeu Fabra (UPF) 
+
+Abstract: Vector commitment schemes with subvector openings are cryptographic primitives that have been proven very useful in practice. While there exist many constructions in various settings, little is known in the discrete logarithm setting.
+
+While the discrete logarithm setting is limited since it allows to exploit only minimal structure, it remains quite interesting exploring the problem in this setting since (1) the cryptographic assumptions used are clean and extensively studied and understood, (2) the arithmetic in this setting is more efficient which could lead to more efficient constructions and (3) techniques in this setting will probably work in other settings that generalize the discrete logarithm setting, most notably bilinear groups.
+
+In this project we investigate what subsets of the desired properties of vector commitments can be achieved in the discrete logarithm and with what efficiency. We use both known techniques mainly inspired from the succinct argument literature, as well as explore new techniques to tackle the problem. Furthermore, we explore more restricted scenarios such as designated verifier and distributed trust that can be of practical importance for applications where fully public verifiability is not necessary.
+
+Team: Russell Lai and Sri Aravinda Krishnan Thyagarajan - Friedrich-Alexander University Erlangen-Nuremberg (FAU); Martin Albrecht - Royal Holloway, University of London; Giulio Malavolta, Max Planck Institute for Security and Privacy (MPI-SP)
+
+Abstract: Vector commitments enable commitments to a vector which are later opened to some function of the input vector, in a space efficient manner. In this project we study lattice-based instances of vector commitments. Being “lattice-based” allows for some advanced functionalities and, critically, enables potentially post-quantum secure constructions. In particular, utilising the flexibility offered by lattices, we aim for the first direct construction of any vector commitment with functional openings for any constant-degree polynomial. Moreover, to the best of our knowledge, this would be the first example of a lattice-based vector commitment beyond positional openings (for which there are “trivial” constructions from Merkle trees).
+
+This flexibility comes at a price. Our construction is likely to only be shown secure against a new family of lattice-based assumptions, which are natural extensions of the short integer solution (SIS) assumption. We refer to this family as the k-Ring Inhomogenous Short Integer Solution assumptions. Such assumptions offer additional algebraic structure, which allows us to transfer techniques for pairing-based cryptography to the lattice world.
+
+### Charalampos Papamanthou (Yale), 
+
+Abstract: Vector commitments (VCs) is a ubiquitous data structure that has proved to be useful in a range of real-world applications such as blockchains, verifiable computation, data outsourcing, privacy-preserving payments. A vector commitment allows one to commit to a vector of n positions so that later verifiable openings to a particular set of positions can be made. In this proposal we plan to investigate a line of research that focuses on tree-based vector commitments. What distinguishes tree-based vector commitments from other vector commitments is the fact that \emph{all} proofs can be updated/maintained in sublinear time, whenever an element of the vector changes. However, due to this convenience, other challenges arise that we plan to investigate as part of this proposal. For example, it is typically hard to provide aggregation in tree-based vector commitments (e.g., Merkle tree proofs cannot be naturally aggregated) or verification of aggregated proofs can be expensive. We will be working on three different related directions: (a) tree-based commitments based on multilinear trees; (b) tree-based commitments based on RSA groups; (c) tree-based commitments based on lattices.
+
+In addition to the teams listed above, we are also funding Dario Fiore (IMDEA) and Dominique Schrӧder (University of Erlangen-Nürnberg) to work on our Vector Commitments RFP, and Tal Moran (University of Reichman) to work on Proofs of Space. 
+
+# Faculty nuclation award
+
+### Nada Amin, Harvard University
+
+Abstract: Nada Amin will research declarative computing for zk-SNARKs. She will build on top of Protocol Lab’s new language for universal computing with zk-SNARKs, Lurk. While Lurk is a core Lisp programming language, she will suggest and develop extensions to better support declarative programming, possibly in the style of miniKanren, a relational programming language. She will also generally help iterate on the design of Lurk so that it’s a good compilation target. She will collaborate on the theorem proving foundations built on top of Lurk. With her expertise in generative programming, she is also keen at looking into partial evaluation and staging to specialize target Lurk code as well as the universal circuit. The work will be evaluated through end-to-end case studies that demonstrate how what can be proved in Lurk proofs compares with what is possible through other approaches.
+
+We are incredibly excited to fund these amazing researchers as they make progress on key problems in cryptography and distributed systems. Stay tuned for our follow-up post detailing our first crop of PhD and Postdoctoral Fellows, as well as an exciting Implementation Grant that we’ll tell you all about!
+
