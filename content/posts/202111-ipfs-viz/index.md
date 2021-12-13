@@ -73,3 +73,6 @@ Feel free to open issues in [the repository](https://github.com/mmlab-aueb/IPFS/
 
 
 
+<center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" alt="ResNetLab" link="/research/groups/resnetlab/" width="150px" >}}</center>
+
+<center style=font-size:11pt><i> We are always open to further discussion on <a href="https://github.com/protocol/ResNetLab#research">our research topics</a> and welcome opportunities to answer questions and develop collaborations. Join the discussion in <a href="https://github.com/protocol/ResNetLab/discussions">our GitHub forum</a> or reach out via email (<a href="mailto:research@protocol.ai">research@protocol.ai</a>). The <a href="https://docs.ipfs.io">IPFS</a>, <a href="https://docs.libp2p.io">libp2p</a>, and <a href="https://docs.filecoin.io">Filecoin</a> documentation sites and <a href="https://proto.school"> ProtoSchool's</a> interactive tutorials are a good starting point for exploration of these topics. Active researchers may also be interested in our <a href="https://grants.protocol.ai"> funding opportunities </a></i></center>
