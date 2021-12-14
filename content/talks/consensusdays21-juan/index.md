@@ -13,7 +13,7 @@ date: 2021-12-14
 venue: ConsensusDays 21
 
 # Venue link
-venue_url: https://research.protocol.ai/sites/consensusday21/programme/index.html
+venue_url: /sites/consensusday21/programme/index.html
 
 # Venue date (defaults to date)
 # format YYYY-MM-DD
