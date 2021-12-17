@@ -4,7 +4,7 @@ title: "Protocol Labs research funding recipients 2021, part 1"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2021-12-13
+date: 2021-12-17
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
