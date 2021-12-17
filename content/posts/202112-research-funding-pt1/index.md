@@ -87,10 +87,9 @@ If this approach is successful, it could open many new avenues to solving the pr
 
 ### Team 1: 
 - [Charalampos (Babis) Papamanthou](https://www.cs.yale.edu/homes/cpap/) (Yale University) 
+- Weijie Wang (Yale University)
 
 **Abstract:** Vector commitments (VCs) is a ubiquitous data structure that has proved to be useful in a range of real-world applications such as blockchains, verifiable computation, data outsourcing, privacy-preserving payments. A vector commitment allows one to commit to a vector of n positions so that later verifiable openings to a particular set of positions can be made. In this proposal, we plan to investigate a line of research that focuses on tree-based vector commitments. What distinguishes tree-based vector commitments from other vector commitments is the fact that all proofs can be updated/maintained in sublinear time, whenever an element of the vector changes. However, due to this convenience, other challenges arise that we plan to investigate as part of this proposal. For example, it is typically hard to provide aggregation in tree-based vector commitments (e.g., Merkle tree proofs cannot be naturally aggregated) or verification of aggregated proofs can be expensive. We will be working on three different related directions: (a) tree-based commitments based on multilinear trees; (b) tree-based commitments based on RSA groups; (c) tree-based commitments based on lattices.
-
-In addition to the teams listed above, we are also funding Dario Fiore (IMDEA) and Dominique Schrӧder (University of Erlangen-Nürnberg) to work on our Vector Commitments RFP, and Tal Moran (University of Reichman) to work on Proofs of Space. 
 
 ### Team 2: 
 - [Carla Rafols](https://www.upf.edu/web/etic/entry/-/-/127288/adscripcion/carla-rafols) (Universitat Pompeu Fabra) 
