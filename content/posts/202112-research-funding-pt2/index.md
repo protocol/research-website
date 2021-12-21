@@ -45,7 +45,7 @@ draft: false
 Here is a summary of the five PhD fellowships, three postdoctoral fellowships, and one implementation award given in the latest review round (applications submitted in September 2021). If you are interested in submitting a proposal for consideration, please see grants.protocol.ai for more information and to apply. 
 # PhD Fellowships
 
-#### **PhD Fellow:** Arantxa Zapica, Universitat Pompeu Fabra
+#### **PhD Fellow:** [Arantxa Zapico](https://sites.google.com/view/arantxazapico), Universitat Pompeu Fabra
 - **Advisor:** [Carla Rafols](https://producciocientifica.upf.edu/CawDOS/jsf/seleccionActividades/seleccionActividades.jsf?id=ba67f57664e98660&idioma=ca&elmeucv=N)
 - **Abstract:** Vector commitment constructions come from either an algebraic or Merkle tree approach. The latter usually comes with better efficiency while the former is more flexible. This project will revisit existing algebraic constructions and aim at designing a framework that can unify them. The final goal is to achieve constructions that are as general as possible without sacrificing efficiency, and to completely characterize the performance and advantages of each of the different existing algebraic approaches. Importantly, the work will also expand on previous techniques for aggregating openings, and explore new techniques by exploiting the connections of vector commitments with polynomial commitments and universal SNARKs.
 
