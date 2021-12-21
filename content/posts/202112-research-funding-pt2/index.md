@@ -40,9 +40,9 @@ draft: false
 
 
 ---
-[Last week](/blog/2021/protocol-labs-research-funding-recipients-2021-part-1/) we introduced you to the researchers pursuing key problems in cryptography via RFP-009, RFP-010, and a nucleation award. Now we are excited to share the recipients of research awards intended to fund proposals from PhD candidates, postdoctoral fellows, and faculty through our [open grant offerings](https://grants.protocol.ai/). 
+[Last week](/blog/2021/protocol-labs-research-funding-recipients-2021-part-1/) we introduced you to the researchers pursuing key problems in cryptography via RFP-009, RFP-010, and a Nucleation Grant. Now we are excited to share the recipients of research awards intended to fund proposals from PhD candidates, postdoctoral fellows, and faculty through our [open grant offerings](https://grants.protocol.ai/). 
 
-Here is a summary of the five PhD fellowships, three postdoctoral fellowships, and one implementation award given in the latest review round (applications submitted in September 2021). If you are interested in submitting a proposal for consideration, please see [grants.protocol.ai](https://grants.protocol.ai/) for more information and to apply. 
+Here is a summary of the five PhD fellowships, three postdoctoral fellowships, and one Implementation Grant given in the latest review round (applications submitted in September 2021). If you are interested in submitting a proposal for consideration, please see [grants.protocol.ai](https://grants.protocol.ai/) for more information and to apply. 
 # PhD Fellowships
 
 #### **PhD Fellow:** [Arantxa Zapico](https://sites.google.com/view/arantxazapico), Universitat Pompeu Fabra
