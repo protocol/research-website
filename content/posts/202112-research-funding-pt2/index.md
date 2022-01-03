@@ -67,7 +67,7 @@ Here is a summary of the five PhD fellowships, three postdoctoral fellowships, a
 
 # Postdoctoral Fellowships
  
-#### **Postdoc:** Akira Takahashi (PhD, Aarhus University)
+#### **Postdoc:** [Akira Takahashi](https://akiratk0355.github.io/) (PhD, Aarhus University)
 - **PI:** [Markulf Kohlweiss](https://homepages.inf.ed.ac.uk/mkohlwei/), University of Edinburgh
 - **Abstract:** Zero-knowledge proof systems have a rich history in cryptography and theory of computation supporting numerous cryptographic constructions. Many recent applications of zero-knowledge, such as cryptocurrencies, demand small proof sizes and fast verification, as provided by zk-SNARKs. As the possible advent of a quantum computer threatens the security of widely deployed cryptographic schemes, the design of new quantum-resilient alternatives is a pressing task. However, a majority of deployed zk-SNARKs are based on discrete-log type assumptions, which unfortunately do not withstand the celebrated quantum algorithm of Shor. In this project, we push forward the line of research on post-quantum zk-SNARKs. We tackle the problem by designing an efficient lattice-based polynomial commitment scheme (PCS), a core primitive for constructing modern zk-SNARKs. Lattices are, nowadays, central tools of fast and compact post-quantum cryptographic primitives such as public-key encryption and digital signatures.  Hence, interoperability with such existing constructions is an important additional feature. Our approach is expected to allow for a “commit-and-prove” extension, which enhances modularity and interoperability with other auxiliary building blocks in practical scenarios.
 
