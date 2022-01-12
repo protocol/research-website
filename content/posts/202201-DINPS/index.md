@@ -40,11 +40,11 @@ draft: false
 
 In June 2021, we ran a workshop on *“Decentralizing the Internet with IPFS and Filecoin”* (DI2F) alongside [IFIP Networking 2021](https://networking.ifip.org/2021/) to establish a forum for academics, researchers and developers to share their expertise and latest findings on decentralised storage, IPFS, libp2p, and Filecoin. The workshop attracted over 40 (virtual) participants, who created a great atmosphere with excellent presentations, insightful questions, and interesting side discussions.
 
-The DI2F workshop  marked the beginning of a large network of collaborations and projects, many of which are still active to the present day! Some of the results of the workshop, which you can find described in [this blogpost recap](https://research.protocol.ai/blog/2021/decentralising-the-internet-with-ipfs-and-filecoin-di2f-a-report-from-the-trenches/), are now being used by several teams in the IPFS and Filecoin ecosystems.
+The DI2F workshop  marked the beginning of a large network of collaborations and projects, many of which are still active to the present day! Some of the results of the workshop, which you can find described in [this blogpost recap](/blog/2021/decentralising-the-internet-with-ipfs-and-filecoin-di2f-a-report-from-the-trenches/), are now being used by several teams in the IPFS and Filecoin ecosystems.
 
 A lot has happened since then and the Web3 space is only getting bigger, with more requirements for faster, more resilient, and more secure protocols and services.Building on this momentum, we are expanding the scope of this year's workshop, now called *Decentralized Internet, Networks, Protocols, and Systems*, or **DINPS** for short. DINPS will take place with [IEEE ICDCS 2022](https://www.icdcs.org/), a top-quality conference in the area of distributed systems.
 
-The topics of interest are listed below, and the full Call for Papers can be found at the [workshop’s website](https://research.protocol.ai/sites/dinps/):
+The topics of interest are listed below, and the full Call for Papers can be found at the [workshop’s website](/sites/dinps/):
 
 - Architectural proposals for the advancement of the state of decentralized Internet services
 - Decentralized and peer-to-peer protocols and applications
@@ -60,4 +60,4 @@ The topics of interest are listed below, and the full Call for Papers can be fou
 
 The workshop will accept several types of contributions, from 2-page demo papers and hands-on tutorial proposals to short 6-page contributions. Just like last year, the workshop will conclude with a 3-week post-event competition.
 
-For now, roll up your sleeves and make sure to submit your latest findings by **March 5th 2022**! Further details on preparing your submission will be posted at the [workshop website](https://research.protocol.ai/sites/dinps/). 
+For now, roll up your sleeves and make sure to submit your latest findings by **March 5th 2022**! Further details on preparing your submission will be posted at the [workshop website](/sites/dinps/). 
