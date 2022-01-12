@@ -7,7 +7,7 @@ role: Research Engineer
 
 # Existing research group (use folder name) or free text
 research_groups:
-  - cosnensuslab
+  - consensuslab
 
 # Avatar (no need to edit)
 resources:
