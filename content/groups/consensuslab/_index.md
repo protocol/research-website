@@ -16,12 +16,13 @@ ConsensusLab’s vision is to be the go-to place for scalable decentralised cons
 For more information on our problems of interest, projects, and other activities, check out our the [protocol/ConsensusLab repo on GitHub](https://github.com/protocol/ConsensusLab/).
 
 ## Team
-* Marko Vukolić (Lead)
-* Sarah Azouvi (Research Scientist)
-* Alfonso de la Rocha (Research Engineer)
-* Jorge Soares (Technical Program Manager)
+* [Marko Vukolić](/authors/marko-vukolic/) (Lead)
+* [Sarah Azouvi](/authors/sarah-azouvi/) (Research Scientist)
+* [Alfonso de la Rocha](/authors/alfonso-de-la-rocha/) (Research Engineer)
+* [Denis Kolegov](/authors/denis-kolegov/) (Research Engineer)
+* [Jorge Soares](/authors/jorge-soares/) (Technical Program Manager)
 
 ## Problems of interest
-* Hierarchical consensus
-* Consensus proper
-* Parallel execution
+* [Hierarchical consensus](https://github.com/protocol/ConsensusLab/issues/3)
+* [Consensus protocols](https://github.com/protocol/ConsensusLab/issues/2)
+* [Parallel execution](https://github.com/protocol/ConsensusLab/issues/1)
