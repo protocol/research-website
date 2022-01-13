@@ -44,7 +44,7 @@ draft: false
 **Website:** https://research.protocol.ai/sites/dinps/
 **Submission Deadline:** 5th March 2022
 
-In June 2021, we ran a workshop on *“Decentralizing the Internet with IPFS and Filecoin”* (DI2F) alongside [IFIP Networking 2021](https://networking.ifip.org/2021/) to establish a forum for academics, researchers and developers to share their expertise and latest findings on decentralised storage, IPFS, libp2p, and Filecoin. The workshop attracted over 40 (virtual) participants, who created a great atmosphere with excellent presentations, insightful questions, and interesting side discussions.
+In June 2021, we ran a workshop on *“Decentralizing the Internet with IPFS and Filecoin”* (DI2F) alongside [IFIP Networking 2021](https://networking.ifip.org/2021/) to establish a forum for academics, researchers and developers to share their expertise and latest findings on decentralized storage, IPFS, libp2p, and Filecoin. The workshop attracted over 40 (virtual) participants, who created a great atmosphere with excellent presentations, insightful questions, and interesting side discussions.
 
 The DI2F workshop marked the beginning of a large network of collaborations and projects, many of which are still active to the present day! Some of the results of the workshop, which you can find described in [this blogpost recap](/blog/2021/decentralising-the-internet-with-ipfs-and-filecoin-di2f-a-report-from-the-trenches/), are now being used by several teams in the IPFS and Filecoin ecosystems.
 
