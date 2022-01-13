@@ -12,7 +12,9 @@ date: 2022-01-12
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
+  - "João Leitão"
   - yiannis-psaras
+  
 
 # If applicable
 categories:
@@ -37,6 +39,10 @@ draft: false
 
 
 ---
+
+**Call for Papers Announcement:** Workshop on Decentralized Internet, Networks, Protocols, and Systems
+**Website:** https://research.protocol.ai/sites/dinps/
+**Submission Deadline:** 5th March 2022
 
 In June 2021, we ran a workshop on *“Decentralizing the Internet with IPFS and Filecoin”* (DI2F) alongside [IFIP Networking 2021](https://networking.ifip.org/2021/) to establish a forum for academics, researchers and developers to share their expertise and latest findings on decentralised storage, IPFS, libp2p, and Filecoin. The workshop attracted over 40 (virtual) participants, who created a great atmosphere with excellent presentations, insightful questions, and interesting side discussions.
 
