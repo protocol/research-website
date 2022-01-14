@@ -48,7 +48,7 @@ We asked Axel about his journey to Protocol Labs, the CryptoEconLab projects he 
 
 **What problems are you most interested in?**
 
-> I am interested in the vaguely-defined field of “complex systems”. That is, systems made up of a large number of components with relatively simple and understandable dynamics (for instance electrons in a material, or rational token holders) but the complexity derives from their interactions. Specifically I’m interested in large-scale emergent phenomena, where some sort of visible order arises from the micro-scale chaos. I am especially interested in understanding how and to what extent this macroscopic behavior can be controlled by tuning microscopic variables.
+> I am interested in the vaguely-defined field of “complex systems”. That is, systems made up of a large number of components with relatively simple and understandable dynamics (for instance electrons in a material, or rational token holders) but the complexity derives from their interactions. Specifically, I’m interested in large-scale emergent phenomena, where some sort of visible order arises from the micro-scale chaos. I am especially interested in understanding how and to what extent this macroscopic behavior can be controlled by tuning microscopic variables.
 
 **What future technology are you most excited about?**
 
