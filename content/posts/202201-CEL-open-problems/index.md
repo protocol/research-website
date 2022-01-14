@@ -13,6 +13,7 @@ date: 2022-01-14
 # We sort authors alphabetically by last name
 authors:
   - karola-kirsanow
+  - zixuan-zhang
 
 # If applicable
 categories:
