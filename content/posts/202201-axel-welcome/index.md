@@ -4,7 +4,7 @@ title: Axel Cortés Cubero joins CryptoEconLab
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-01-13
+date: 2022-01-14
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
