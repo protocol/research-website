@@ -54,6 +54,6 @@ user_groups:
 ---
 
 
-Axel is interested in understanding the rich and nontrivial dynamics of cryptoeconomic networks. These networks involve complex interactions between many agents, unpredictable large scale events, as well as controlled incentives. He is also interested in understanding the overall emergent network behavior after a parameter change or an external force, which is a complex problem with many parallels in the areas of driven and active many body systems.
+Axel is interested in understanding the rich and nontrivial dynamics of cryptoeconomic networks. These networks involve complex interactions between many agents, unpredictable large scale events, as well as controlled incentives. He is also interested in understanding the overall emergent network behavior after a parameter change or an external force, which is a complex problem with many parallels in the areas of driven and active many-body systems.
 
-Axel has several years of postdoctoral academic experience, focusing on statistical physics and quantum many body systems as well as data science applications at the International School for Advanced Study in Trieste, Italy,  Utrecht University, University of Amsterdam, and the University of Puerto Rico. 
+Axel has several years of postdoctoral academic experience, focusing on statistical physics and quantum many-body systems as well as data science applications at the International School for Advanced Study in Trieste, Italy,  Utrecht University, University of Amsterdam, and the University of Puerto Rico. 
