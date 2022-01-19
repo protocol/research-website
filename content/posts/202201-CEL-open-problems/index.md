@@ -4,7 +4,7 @@ title: Open Problems in Incentive Research
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-01-18
+date: 2022-01-19
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -39,7 +39,7 @@ draft: false
 
 ---
 
-[CryptoEconLab](/groups/cryptoeconlab/) is the PL hub for research in cryptoeconomics, an emerging interdisciplinary field  investigating the dynamics of  economic coordination games in cryptographically-secured peer-to-peer networks. CryptoEconLab stands at the intersection of computer science, network science, statistics, economics, decision neuroscience, and system engineering, and the problems it explores have strong resonances with the field of complex systems theory.
+[CryptoEconLab](/groups/cryptoeconlab/) is the PL hub for research in cryptoeconomics, an emerging interdisciplinary field  investigating the dynamics of  economic coordination games in cryptographically-secured peer-to-peer networks. CryptoEconLab stands at the intersection of computer science, network science, statistics, economics, psychology, decision neuroscience, and system engineering, and the problems it explores have strong resonances with the field of complex systems theory.
 
 The researchers of CryptoEconLab have developed a set of [Open Problems](https://github.com/protocol/CryptoEconLab#open-problems)  broadly related to *incentive research*, which we think of as a search for the appropriate parameters to turn in real-world cryptoeconomic networks, and we invite the research community to join the discussion of these problems on our [Github Discussion Board](https://github.com/protocol/CryptoEconLab/discussions). These problems reflect some of  CryptoEconLab’s current research priorities, and we encourage researchers to consider applying for [PL Research grants](https://grants.protocol.ai/) to support work on these topics.
 
