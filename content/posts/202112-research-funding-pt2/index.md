@@ -20,12 +20,12 @@ categories:
 
 # If applicable
 tags:
-  - 
+  -
 
 # Zero or more of the areas in content/areas
 areas:
   - cryptography
-  - consensus
+  - distributed-systems
   - metaresearch
   - networking
 
@@ -40,16 +40,16 @@ draft: false
 
 
 ---
-[Last week](/blog/2021/protocol-labs-research-funding-recipients-2021-part-1/) we introduced you to the researchers pursuing key problems in cryptography via RFP-009, RFP-010, and a Nucleation Grant. Now we are excited to share the recipients of research awards intended to fund proposals from PhD candidates, postdoctoral fellows, and faculty through our [open grant offerings](https://grants.protocol.ai/). 
+[Last week](/blog/2021/protocol-labs-research-funding-recipients-2021-part-1/) we introduced you to the researchers pursuing key problems in cryptography via RFP-009, RFP-010, and a Nucleation Grant. Now we are excited to share the recipients of research awards intended to fund proposals from PhD candidates, postdoctoral fellows, and faculty through our [open grant offerings](https://grants.protocol.ai/).
 
-Here is a summary of the five PhD fellowships, three postdoctoral fellowships, and one Implementation Grant given in the latest review round (applications submitted in September 2021). If you are interested in submitting a proposal for consideration, please see [grants.protocol.ai](https://grants.protocol.ai/) for more information and to apply. 
+Here is a summary of the five PhD fellowships, three postdoctoral fellowships, and one Implementation Grant given in the latest review round (applications submitted in September 2021). If you are interested in submitting a proposal for consideration, please see [grants.protocol.ai](https://grants.protocol.ai/) for more information and to apply.
 # PhD Fellowships
 
 #### **PhD Fellow:** [Arantxa Zapico](https://sites.google.com/view/arantxazapico), Universitat Pompeu Fabra
 - **Advisor:** [Carla Rafols](https://producciocientifica.upf.edu/CawDOS/jsf/seleccionActividades/seleccionActividades.jsf?id=ba67f57664e98660&idioma=ca&elmeucv=N)
 - **Abstract:** Vector commitment constructions come from either an algebraic or Merkle tree approach. The latter usually comes with better efficiency while the former is more flexible. This project will revisit existing algebraic constructions and aim at designing a framework that can unify them. The final goal is to achieve constructions that are as general as possible without sacrificing efficiency, and to completely characterize the performance and advantages of each of the different existing algebraic approaches. Importantly, the work will also expand on previous techniques for aggregating openings, and explore new techniques by exploiting the connections of vector commitments with polynomial commitments and universal SNARKs.
 
-#### **PhD Fellow:**  Dennis Trautwein 
+#### **PhD Fellow:**  Dennis Trautwein
 - **Advisor:** [Bela Gipp](https://www.gipp.com/home/)
 - **Abstract:** This research project will focus on investigating if and how a super-peer architecture can complement the IPFS network from a content discovery and content retrieval perspective. Structuring the web in a decentralized way poses many challenges, as the currently deployed Internet infrastructure is tailored towards the client-server model. A promising approach to achieve this goal is based on the ideas of relaxing the decentralization requirement, acknowledging the existence of diﬀerently capable network participants, and oﬄoading certain network tasks to the subset of such potent peers (knowing that this shift bears semblance to a light form of centralization).  In the past, many traditional peer-to-peer networks eventually implemented super-peer sub-topologies within their otherwise nonhierarchical network. It can be observed that the IPFS network also holds such tendencies due to the emergence of platforms like Pinata or Infura. However, no formalism supports these developments yet. The new architecture should respect the users’ privacy by providing anonymization similar to what Virtual Private Networks do on the Internet, properly incentivize disproportionally contributing network participants, ensure permissionless entry to become a super-peer, and ensure low latency access to content.
 
@@ -66,7 +66,7 @@ Here is a summary of the five PhD fellowships, three postdoctoral fellowships, a
 - **Abstract:**  Decentralized storage networks (DSNs) allow servers to maintain data for clients in a verifiable and secure manner. The clients and servers are matched publicly so that the network as a whole can verify that the servers are indeed storing the data for the clients and punish the servers if they misbehave. But the public nature of these matches enables mapping of clients to servers and this can be leveraged by an attacker to completely compromise the security of their data. Moreover, if the storage provided by each server is leaked to the adversary and the security of the system relies on the assumption of an honest majority of storage, the adversary can simply target servers that provide more storage and disrupt the whole system. We aim to mitigate these attacks by hiding the matching between the client and servers and by keeping the storage provided by the servers private.  But this added privacy raises new challenges. Specifically,  we need the network to verify that the servers that are matched with a particular client are continuously storing the client’s data and that only capable servers participate in the protocol. We aim to tackle these challenges in this proposal.
 
 # Postdoctoral Fellowships
- 
+
 #### **Postdoc:** [Akira Takahashi](https://akiratk0355.github.io/) (PhD, Aarhus University)
 - **PI:** [Markulf Kohlweiss](https://homepages.inf.ed.ac.uk/mkohlwei/), University of Edinburgh
 - **Abstract:** Zero-knowledge proof systems have a rich history in cryptography and theory of computation supporting numerous cryptographic constructions. Many recent applications of zero-knowledge, such as cryptocurrencies, demand small proof sizes and fast verification, as provided by zk-SNARKs. As the possible advent of a quantum computer threatens the security of widely deployed cryptographic schemes, the design of new quantum-resilient alternatives is a pressing task. However, a majority of deployed zk-SNARKs are based on discrete-log type assumptions, which unfortunately do not withstand the celebrated quantum algorithm of Shor. In this project, we push forward the line of research on post-quantum zk-SNARKs. We tackle the problem by designing an efficient lattice-based polynomial commitment scheme (PCS), a core primitive for constructing modern zk-SNARKs. Lattices are, nowadays, central tools of fast and compact post-quantum cryptographic primitives such as public-key encryption and digital signatures.  Hence, interoperability with such existing constructions is an important additional feature. Our approach is expected to allow for a “commit-and-prove” extension, which enhances modularity and interoperability with other auxiliary building blocks in practical scenarios.
@@ -81,8 +81,8 @@ Here is a summary of the five PhD fellowships, three postdoctoral fellowships, a
 
 # Implementation Grant
 
-**Team:** [Joel Chan](https://ischool.umd.edu/about/directory/joel-chan) (University of Maryland), [David Vargas](https://davidvargas.me/) 
+**Team:** [Joel Chan](https://ischool.umd.edu/about/directory/joel-chan) (University of Maryland), [David Vargas](https://davidvargas.me/)
 - **Abstract:** Synthesis — the construction of novel conceptual wholes, such as theories and new questions, from previous knowledge components — is the lifeblood of scientific progress. This critical conceptual task requires deep engagement with past work at the level of theories, lines of evidence, and claims, and how they inform, support, or oppose each other. Unfortunately, infrastructures and tools for scientific literature do not support this unit of analysis, privileging instead the coarse unit of the scientific paper. This limitation is a serious impediment to scientific progress. A key building block for a new infrastructure for synthesis already exists: a discourse graph data model centered on richly contextualized networks of questions, claims, and evidence. A critical remaining challenge is how to incentivize the right people to contribute this data at scale: automated systems cannot yet replace human judgment for synthesizing knowledge claims and evidence from the literature. To meet this challenge, this project explores novel interactive tools that seamlessly integrate the work of authoring and sharing discourse graphs into scientists’ natural workflows of reading and synthesizing literature. These data can then be shared, federated, and aggregated into new infrastructures for synthesis that can accelerate scientific discovery, both within and across disciplines.
 
 # Congratulations!
-We are extremely excited to support these amazing researchers as they drive the cycle of innovation and discovery forward. If you are interested in applying for funding at Protocol Labs, visit [grants.protocol.ai](https://grants.protocol.ai) and [join our mailing list](https://mailchi.mp/protocol/research-newsletter-signup). 
+We are extremely excited to support these amazing researchers as they drive the cycle of innovation and discovery forward. If you are interested in applying for funding at Protocol Labs, visit [grants.protocol.ai](https://grants.protocol.ai) and [join our mailing list](https://mailchi.mp/protocol/research-newsletter-signup).
