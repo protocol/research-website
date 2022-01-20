@@ -36,24 +36,24 @@ draft: false
 
 
 ---
-This has been a prodigious year for generating new funded collaborations between Protocol Labs Research and top academic researchers around the world! We have given out a whopping eighteen awards since August (with others pending). These include eight **[RFPs](https://github.com/protocol/research-grants#rfps)**, five **[PhD fellowships](https://grants.protocol.ai/prog/phd_fellowship/)**, three **[Postdoctoral fellowships](https://grants.protocol.ai/prog/postdoctoral_fellowship/)**, one **[Implementation Grant](https://grants.protocol.ai/prog/implementation_grant/)**, and a **[Nucleation Grant](https://grants.protocol.ai/prog/nucleation_grant/)**. We’ll be detailing these awards in two separate blog posts. This first installment is to announce our RFP award recipients, as well as a new funded collaboration with Prof Nada Amin of Harvard University. PL Research’s Requests for Proposals (RFPs) are designed to fund goal-driven research in response to specific open problems defined by Protocol Labs. RFPs are posted intermittently based on need and the readiness of our research labs to support these collaborations. You can view previous RFPs **[here](https://github.com/protocol/research-grants#rfps)**. Nucleation Grants are intended to formalize and bootstrap new collaborations with academic research groups actively working on projects related to Protocol Labs Research. Below, you will find brief abstracts summarizing two proposals for RFP-000, two for RFP-009, four for RFP-010, and one Nucleation Grant. 
+This has been a prodigious year for generating new funded collaborations between Protocol Labs Research and top academic researchers around the world! We have given out a whopping eighteen awards since August (with others pending). These include eight **[RFPs](https://github.com/protocol/research-grants#rfps)**, five **[PhD fellowships](https://grants.protocol.ai/prog/phd_fellowship/)**, three **[Postdoctoral fellowships](https://grants.protocol.ai/prog/postdoctoral_fellowship/)**, one **[Implementation Grant](https://grants.protocol.ai/prog/implementation_grant/)**, and a **[Nucleation Grant](https://grants.protocol.ai/prog/nucleation_grant/)**. We’ll be detailing these awards in two separate blog posts. This first installment is to announce our RFP award recipients, as well as a new funded collaboration with Prof Nada Amin of Harvard University. PL Research’s Requests for Proposals (RFPs) are designed to fund goal-driven research in response to specific open problems defined by Protocol Labs. RFPs are posted intermittently based on need and the readiness of our research labs to support these collaborations. You can view previous RFPs **[here](https://github.com/protocol/research-grants#rfps)**. Nucleation Grants are intended to formalize and bootstrap new collaborations with academic research groups actively working on projects related to Protocol Labs Research. Below, you will find brief abstracts summarizing two proposals for RFP-000, two for RFP-009, four for RFP-010, and one Nucleation Grant.
 
-If you want to be notified of future RFPs, please **[subscribe to our newsletter](https://mailchi.mp/protocol/research-newsletter-signup)**. You can view the full spectrum of open grants at **[grants.protocol.ai](https://grants.protocol.ai)**. 
+If you want to be notified of future RFPs, please **[subscribe to our newsletter](https://mailchi.mp/protocol/research-newsletter-signup)**. You can view the full spectrum of open grants at **[grants.protocol.ai](https://grants.protocol.ai)**.
 
 # RFP-000
 
 ## Federated learning on IPFS
-### Team: 
+### Team:
 - Christodoulos Pappas (University of Thessaly)
 - Eleni Panagou (University of Thessaly)
 - [Manolis Vavalis](https://mav.e-ce.uth.gr/) (University of Thessaly)
 - [Spyros Lalis](https://faculty.e-ce.uth.gr/lalis/) (University of Thessaly)
 - [Dimitris Chatzopoulos](https://people.ucd.ie/dimitris.chatzopoulos) (University College Dublin)
 
-**Abstract:** The InterPlanetary Learning System (IPLS) is a fully decentralized federated learning framework, partially based on the InterPlanetary File System (IPFS). Using IPLS one can distribute and replicate parts of a machine-learning model on independently executing agents, which train the model in parallel based on their local/private data and iteratively interact with each other in a p2p fashion in order to synchronize and exchange the weights of their partitions. A first working prototype of IPLS that includes a Java-based API is already available and has been validated/evaluated for certain indicative system configurations. The goal of this project is to validate design and implementation decisions, elucidate behavioral characteristics, further extend the capabilities and evaluate the performance of IPLS. Specifically, we plan to proceed along the following directions: (i) robustness against malicious agents and privacy attacks; (ii) model partitioning and partition assignment strategies for improved robustness; (iii) more efficient synchronization between the agents responsible for the same (replicated) model partition; (iv) indirect communication between agents based on suitable IPFS primitives; (v) utilization of split-learning or some other suitable method to achieve secure computation offloading from resource-constrained agents on external (e.g., edge) computing infrastructures; (vi) API for Python and integration with selected ML libraries; and (vii) evaluation for different applications and realistic agent mobility/connectivity scenarios. 
+**Abstract:** The InterPlanetary Learning System (IPLS) is a fully decentralized federated learning framework, partially based on the InterPlanetary File System (IPFS). Using IPLS one can distribute and replicate parts of a machine-learning model on independently executing agents, which train the model in parallel based on their local/private data and iteratively interact with each other in a p2p fashion in order to synchronize and exchange the weights of their partitions. A first working prototype of IPLS that includes a Java-based API is already available and has been validated/evaluated for certain indicative system configurations. The goal of this project is to validate design and implementation decisions, elucidate behavioral characteristics, further extend the capabilities and evaluate the performance of IPLS. Specifically, we plan to proceed along the following directions: (i) robustness against malicious agents and privacy attacks; (ii) model partitioning and partition assignment strategies for improved robustness; (iii) more efficient synchronization between the agents responsible for the same (replicated) model partition; (iv) indirect communication between agents based on suitable IPFS primitives; (v) utilization of split-learning or some other suitable method to achieve secure computation offloading from resource-constrained agents on external (e.g., edge) computing infrastructures; (vi) API for Python and integration with selected ML libraries; and (vii) evaluation for different applications and realistic agent mobility/connectivity scenarios.
 
 ## IPFS monitoring study
-### Team: 
+### Team:
 - Leonhard Balduf (TU Darmstadt / Weizenbaum Institute)
 - Sebastian Henningsen (HU Berlin / Weizenbaum Institute)
 - [Martin Florian](https://m.flrn.cc) (HU Berlin / Weizenbaum Institute)
@@ -61,11 +61,11 @@ If you want to be notified of future RFPs, please **[subscribe to our newsletter
 
 **Abstract:** We are a team of researchers interested in measuring distributed systems. We have investigated IPFS extensively in the past, in particular the [network overlay](https://arxiv.org/abs/2002.07747) and the [BitSwap](https://arxiv.org/abs/2104.09202) protocol. Through our measurements of the overlay, we systematically enumerate all DHT-enabled nodes and learn who is connected to whom (among a ton of other metrics).  From our BitSwap monitoring, we can extract which content was requested by our neighboring nodes at which point in time.
 
-In our current ongoing project, we want to learn more about the nature of content that is stored on IPFS by combining and extending both perspectives. Specifically, we are interested in how content is stored, distributed, and replicated in the network. Imagine tracking specific CIDs: how many nodes are replicating that content and how did the content's distribution in the network evolve over time? Our results will provide important insights which can be leveraged to further improve the performance of IPFS and related networks such as Filecoin. This research will be privacy-preserving, and no user-specific information will be investigated or made public. 
+In our current ongoing project, we want to learn more about the nature of content that is stored on IPFS by combining and extending both perspectives. Specifically, we are interested in how content is stored, distributed, and replicated in the network. Imagine tracking specific CIDs: how many nodes are replicating that content and how did the content's distribution in the network evolve over time? Our results will provide important insights which can be leveraged to further improve the performance of IPFS and related networks such as Filecoin. This research will be privacy-preserving, and no user-specific information will be investigated or made public.
 
 # RFP-009: [Proofs of Space and Useful Space](https://github.com/protocol/research-RFPs/blob/master/RFPs/rfp-009-proof-of-space-and-useful-space.md)
 
-### Team 1: 
+### Team 1:
 - [Giuseppe Ateniese](https://www.gmu.edu/node/52511) (George Mason University)
 - Long Chen (Insititute of Software, Chinese Academy of Sciences)
 - Danilo Francati (Aarhus University)
@@ -87,15 +87,15 @@ If this approach is successful, it could open many new avenues to solving the pr
 
 # RFP-010: [Vector Commitments](https://github.com/protocol/research-grants/blob/master/RFPs/rfp-010-vector-commitments.md)
 
-### Team 1: 
-- [Charalampos (Babis) Papamanthou](https://www.cs.yale.edu/homes/cpap/) (Yale University) 
+### Team 1:
+- [Charalampos (Babis) Papamanthou](https://www.cs.yale.edu/homes/cpap/) (Yale University)
 - Weijie Wang (Yale University)
 
 **Abstract:** Vector commitments (VCs) are ubiquitous data structures that have proved to be useful in a range of real-world applications such as blockchains, verifiable computation, data outsourcing, and privacy-preserving payments. A vector commitment allows one to commit to a vector of n positions so that later verifiable openings to a particular set of positions can be made. In this proposal, we plan to investigate a line of research that focuses on tree-based vector commitments. What distinguishes tree-based vector commitments from other vector commitments is the fact that all proofs can be updated/maintained in sublinear time, whenever an element of the vector changes. However, due to this convenience, other challenges arise that we plan to investigate as part of this proposal. For example, it is typically hard to provide aggregation in tree-based vector commitments (e.g., Merkle tree proofs cannot be naturally aggregated) and verification of aggregated proofs can be expensive. We will be working on three different related directions: (a) tree-based commitments based on multilinear trees; (b) tree-based commitments based on RSA groups; (c) tree-based commitments based on lattices.
 
-### Team 2: 
-- [Carla Rafols](https://www.upf.edu/web/etic/entry/-/-/127288/adscripcion/carla-rafols) (Universitat Pompeu Fabra) 
-- Alexandros Zacharakis (Universitat Pompeu Fabra) 
+### Team 2:
+- [Carla Rafols](https://www.upf.edu/web/etic/entry/-/-/127288/adscripcion/carla-rafols) (Universitat Pompeu Fabra)
+- Alexandros Zacharakis (Universitat Pompeu Fabra)
 
 **Abstract:** Vector commitment schemes with subvector openings are cryptographic primitives that have been proven very useful in practice. While there exist many constructions in various settings, little is known in the discrete logarithm setting.
 
@@ -103,7 +103,7 @@ While the discrete logarithm setting is limited, since it allows to exploit only
 
 In this project we investigate what subsets of the desired properties of vector commitments can be achieved in the discrete logarithm and with what efficiency. We use both known techniques mainly inspired from the succinct argument literature, as well as explore new techniques to tackle the problem. Furthermore, we explore more restricted scenarios such as designated verifier and distributed trust that can be of practical importance for applications where fully public verifiability is not necessary.
 
-### Team 3: 
+### Team 3:
 - Russell Lai (Friedrich-Alexander University Erlangen-Nuremberg)
 - Sri Aravinda Krishnan Thyagarajan (Friedrich-Alexander University Erlangen-Nuremberg)
 - [Martin Albrecht](https://pure.royalholloway.ac.uk/portal/en/persons/martin-albrecht(ab997512-d7f9-4d99-92e1-33967032502b).html) (Royal Holloway, University of London)
@@ -116,7 +116,7 @@ This flexibility comes at a price. Our construction is likely to only be shown s
 ### Team 4:
 - [Dario Fiore](https://www.dariofiore.it/) (IMDEA Software Institute, Madrid, Spain)
 - [Dimitris Kolonelos](https://software.imdea.org/people/dimitris.kolonelos/index.html) (IMDEA Software Institute, Madrid, Spain)
-- [Dominique Schrӧder](https://www.chaac.tf.fau.eu/person/dominique-schroder/) (University of Erlangen-Nürnberg, Germany) 
+- [Dominique Schrӧder](https://www.chaac.tf.fau.eu/person/dominique-schroder/) (University of Erlangen-Nürnberg, Germany)
 - [Hien Chu](https://www.chaac.tf.fau.eu/person/hien-chu/) (University of Erlangen-Nürnberg, Germany)
 
 **Abstract:** Vector commitments are a cryptographic primitive that allow one to commit a vector and to later open the commitment at given vector's positions. What makes this primitive interesting is that both commitments and openings should be concise, ideally constant in the vector's length. The notion of vector commitments has been generalized to that of functional commitments. In the latter, an opening not only discloses single vector entries but can also be used to open a function of the committed vector, still in a concise manner. While there exist several realizations of vector commitments under different assumptions and with a variety of efficiency measures, less is known about functional commitments of which only a few schemes are known.
