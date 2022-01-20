@@ -7,7 +7,6 @@ role: Research Program Manager
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-  - 
 
 # Avatar (no need to edit)
 resources:
@@ -24,10 +23,10 @@ interests:
 education:
   courses:
   - course: Ph.D. in Computer Science
-    institution: Joint Programme between Universidade do Minho, Aveiro and Porto (MAPi), PT
+    institution: Joint Programme between Universities of Minho, Aveiro and Porto (MAPi)
     year: 2021
   - course: MSc in Bioengineering
-    institution: Faculdade de Engenharia da Universidade do Porto (FEUP), PT
+    institution: Faculdade de Engenharia da Universidade do Porto (FEUP)
     year: 2016
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
@@ -55,6 +54,5 @@ user_groups:
 ---
 
 Sílvia holds an MSc in Bioengineering and a Ph.D. in Computer Science, where she researched computer vision, artificial intelligence, 3D modeling, and geometric deep learning algorithms, with applications in biometrics and breast cancer imaging.
-She is a strong advocate of open science and decentralized knowledge, and that anyone should dare to ask absurd questions because research is about pushing boundaries.
- 
+She is a strong advocate of open science and decentralized knowledge, and that anyone should dare to ask absurd questions because research is about pushing boundaries. 
 In her spare time,  she likes to believe she is a rising star golfer.
