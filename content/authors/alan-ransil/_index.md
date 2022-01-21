@@ -10,7 +10,7 @@ authors:
 role: Research Scientist
 
 groups:
-  - abstractionlab
+  - 'Filecoin Green'
 
 resources:
   - name: avatar
