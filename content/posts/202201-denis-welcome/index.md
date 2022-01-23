@@ -38,10 +38,11 @@ We're excited to welcome [Denis Kolegov](/authors/denis-kolegov/) to the [Consen
 We asked Denis why he decided to join PL Research, what he will be working on, and to share his thoughts about future technological developments:
 
 **How did you decide to join Protocol Labs?**
-> TODO
+> I have been interested in the topic of consensus and distributed systems ever since I read Martin Kleppmann's [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321) book. 
+When I found that there is a company that is going to build the core of the future Internet I realized that I want to be a part of it.
 
 **What problems are you most interested in?**
-> TODO
+> I am interested in development of modern consensus protocols and frameworks for building secure distributed systems.
 
 **What future technology are you most excited about?**
-> TODO
+> Quantum computing, decentralized economy, multy-party computation.
