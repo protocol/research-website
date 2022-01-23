@@ -17,6 +17,7 @@ resources:
 # Research interests
 interests:
   - Computer security
+  - Distributed systems
 
 # Degrees
 education:
@@ -58,5 +59,8 @@ user_groups:
 # Not currently used
 # quote:
 ---
-
-TODO: add bio
+Before joining Protocol Labs, Denis worked as a security researcher lead at Wallarm, where he was responsible for the research, design and engineering of web application security mechanisms.
+  
+Denis obtained a Doctor of Philosophy (PhD) degree in formal modeling of access control systems from TSU in 2009 and Docent title in computer security from TSU 2012.
+  
+Denis has spoken at many practical security conferences such Black Hat Asia, Insomni'hack, Power of Community, Area41, DeepSec, and SecurityFest.
