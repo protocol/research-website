@@ -4,7 +4,7 @@ title: Sílvia Bessa joins PL Research
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-01-21
+date: 2022-01-24
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
