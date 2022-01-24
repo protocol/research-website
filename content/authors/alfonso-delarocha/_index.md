@@ -7,7 +7,7 @@ role: Research Engineer
 
 # Existing research group (use folder name) or free text
 research_groups:
-  - resnetlab
+  - consensuslab
 
 # Avatar (no need to edit)
 resources:
@@ -35,7 +35,7 @@ education:
   - course: BSc in Telecommunication Engineering
     institution: Universidad Politécnica de Madrid
     year: 2014
-  
+
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 social:
@@ -63,6 +63,6 @@ user_groups:
 # Not currently used
 # quote:
 ---
-Before joining Protocol Labs, Alfonso worked as a blockchain expert at Telefónica R&D, where he was responsible for the design and development of core technology based on blockchains, distributed systems, and advanced cryptography. Alfonso's involvement in research and development began at Universidad Politécnica de Madrid, where he worked on topics related to energy efficiency in data centers. His broad R&D experience also includes research into the compression efficiency of video coding standards at Ericsson Research and projects related to securing interdomain routing protocols at KTH Royal Institute of Technology in Stockholm. 
+Before joining Protocol Labs, Alfonso worked as a blockchain expert at Telefónica R&D, where he was responsible for the design and development of core technology based on blockchains, distributed systems, and advanced cryptography. Alfonso's involvement in research and development began at Universidad Politécnica de Madrid, where he worked on topics related to energy efficiency in data centers. His broad R&D experience also includes research into the compression efficiency of video coding standards at Ericsson Research and projects related to securing interdomain routing protocols at KTH Royal Institute of Technology in Stockholm.
 
 Alfonso is also an avid reader and basketball lover.

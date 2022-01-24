@@ -38,16 +38,11 @@ Protocol Labs Research is excited to announce that [Marko Vukolić](/authors/mar
 We asked Marko why he decided to join PL Research, what he will be working on, and to share his thoughts about future technological developments:
 
 **How did you decide to join Protocol Labs?**
-
-PL is one of the rare organizations which puts the "distributed systems" aspect of blockchains and decentralized systems first. I was also attracted by the magnitude of research challenges that I would face here at PL, and by PL's approach to intellectual property, which I found very attractive.
-
-Also, during my conversations with PL, I was recommended 4 amazing books to read. Whoever recommends you an excellent book -- you could consider him your friend. Who recommends 4 excellent books - is a already a really good friend!
+> PL is one of the rare organizations which puts the "distributed systems" aspect of blockchains and decentralized systems first. I was also attracted by the magnitude of research challenges that I would face here at PL, and by PL's approach to intellectual property, which I found very attractive. Also, during my conversations with PL, I was recommended 4 amazing books to read. Whoever recommends you an excellent book -- you could consider him your friend. Who recommends 4 excellent books - is a already a really good friend!
 
 
 **What problems are you most interested in?**
-
-I am interested in (inter)planet-scale distributed systems; maximizing performance; and understanding security, consistency and availability tradeoffs. I like to combine these problems with game-theoretical and economic constraints and incentives.
+> I am interested in (inter)planet-scale distributed systems; maximizing performance; and understanding security, consistency and availability tradeoffs. I like to combine these problems with game-theoretical and economic constraints and incentives.
 
 **What future technology are you most excited about?**
-
-I am most excited to see how the technology of decentralization we are working on -- pioneered by Nakamoto's Proof-of-Work -- is going to impact the future of humanity. I deeply believe that this technology can help bring more good to life on planet Earth. The link might not be immediately evident, but it is enlightening to realize.  
+> I am most excited to see how the technology of decentralization we are working on -- pioneered by Nakamoto's Proof-of-Work -- is going to impact the future of humanity. I deeply believe that this technology can help bring more good to life on planet Earth. The link might not be immediately evident, but it is enlightening to realize.  
