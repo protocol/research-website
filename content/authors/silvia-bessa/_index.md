@@ -32,7 +32,6 @@ education:
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 social:
-
   - icon: google-scholar
     link: https://scholar.google.com/citations?user=P7e3PPQAAAAJ
   - icon: github
@@ -53,6 +52,7 @@ user_groups:
 # quote:
 ---
 
-Sílvia holds an MSc in Bioengineering and a Ph.D. in Computer Science, where she researched computer vision, artificial intelligence, 3D modeling, and geometric deep learning algorithms, with applications in biometrics and breast cancer imaging.
+Sílvia holds an MSc in Bioengineering and a Ph.D. in Computer Science, for which she researched computer vision, artificial intelligence, 3D modeling, and geometric deep learning algorithms, with applications in biometrics and breast cancer imaging.
+  
 She is a strong advocate of open science and decentralized knowledge, and that anyone should dare to ask absurd questions because research is about pushing boundaries. 
 In her spare time,  she likes to believe she is a rising star golfer.
