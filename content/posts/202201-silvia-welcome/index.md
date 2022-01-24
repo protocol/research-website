@@ -38,7 +38,7 @@ draft: false
 
 ---
 
-We are excited to announce that [Sílvia Bessa](/authors/silvia-bessa) has joined PL Research.
+We are excited to welcome [Sílvia Bessa](/authors/silvia-bessa) to the Protocol Labs Research team.
 We asked Sílvia about her journey to Protocol Labs, the projects she will be working on, and her thoughts about future technological developments:
 
 **How did you decide to join Protocol Labs?**
@@ -60,5 +60,5 @@ I have a lot of questions, I hope I can pave the way to answer some of them.
 
 **What future technology are you most excited about?**
 
-> Simply put, federated learning and Privacy-preserving AI! I look at AI as a tremendous technology that might improve the general well-being of humanity.
+> Simply put, federated learning and privacy-preserving AI! I look at AI as a tremendous technology that might improve the general well-being of humanity.
 Therefore, it is paramount that we design the underlying technology and principles based on no-harm, fairness, and transparency.
