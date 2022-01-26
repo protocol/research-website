@@ -3,7 +3,9 @@ node_modules
 resources
 public
 assets/js/bundle.js
+.hugo_build.lock
 .yarn/*
+!.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
