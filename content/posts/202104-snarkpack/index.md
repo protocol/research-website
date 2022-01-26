@@ -45,7 +45,7 @@ This post exposes the inner workings of SnarkPack, a practical scheme to aggrega
 
 
 **Scope**: This post is not for experienced cryptographers; the goal is that
-anybody with some mathematical background can follow along. For a more formal description of the scheme, please refer to our [paper](https://eprint.iacr.org/2021/529).
+anybody with some mathematical background can follow along. For a more formal description of the scheme, please refer to our [paper](/publications/snarkpack-practical-snark-aggregation/).
 
 **Table of Contents**
 
