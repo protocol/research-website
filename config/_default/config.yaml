@@ -3,6 +3,7 @@ title: Protocol Labs Research
 summaryLength: 30
 googleAnalytics: UA-96910779-16
 BaseURL: "https://research.protocol.ai"
+timeZone: Etc/UTC
 relativeURLs: true
 copyright: "© Protocol Labs, Inc. Except as noted, content licensed CC-BY 3.0."
 taxonomies:
