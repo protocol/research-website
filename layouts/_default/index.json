@@ -29,7 +29,7 @@
     {{/* Correct the title and URL for author profile pages. */}}
     {{- if eq .Section "authors" -}}
       {{- $title = .Params.name -}}
-      {{- $username := path.Base (path.Split .Path).Dir -}}
+      {{- $username := path.Base (path.Split .File.Path).Dir -}}
       {{- with site.GetPage (printf "/authors/%s" $username) -}}
         {{- $permalink = .Permalink -}}
         {{- $rel_permalink = .RelPermalink -}}
@@ -54,7 +54,7 @@
         {{- end -}}
     {{- end -}}
 
-    {{- $index = $index | append (dict "objectID" .File.UniqueID "date" (.Date.Format .Site.Params.DateForm) "permalink" $permalink "relpermalink" $rel_permalink "title" $title "summary" (plainify $desc) "content" .Plain "authors" $authors "groups" $groups "kind" .Kind "type" (humanize .Type) "section" .Section "tags" .Params.Tags "categories" .Params.Categories) -}}
+    {{- $index = $index | append (dict "objectID" $permalink "date" (.Date.Format .Site.Params.DateForm) "permalink" $permalink "relpermalink" $rel_permalink "title" $title "summary" (plainify $desc) "content" .Plain "authors" $authors "groups" $groups "kind" .Kind "type" (humanize .Type) "section" .Section "tags" .Params.Tags "categories" .Params.Categories) -}}
   {{- end -}}
 {{- end -}}
 
