@@ -13,7 +13,7 @@ date: 2021-05-13
 venue: Financial Cryptography and Data Security 2022
 
 # Venue Location
-venue_location: Grenada, Spain
+venue_location: St George's, Grenada
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
