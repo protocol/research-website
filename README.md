@@ -30,7 +30,7 @@ Use `yarn serve` to launch a dynamic (real-time) local preview (defaults to loca
 
 We use fleek to automate builds and deployment for the website. A site preview is pinned to IPFS for every PR. It shows up as a status check at the bottom of the PR. Click the "_show all checks_", link and then the the "_Details_" link under fleek/build.
 
-Note the internal link check action too: if it triggers, it's likely that you used a full URL (http://research.protocol.ai/page/subpage) where you should have used the path from the website root instead (/page/subpage). This is so that users can access the website over a gateway of their choice or directly over IPFS, even if they cannot resolve our DNS name.
+Note the internal link check action too: if it triggers, it's likely that you used a full URL (http://research.protocol.ai/page/subpage) where you should have used the path from the website root instead (/page/subpage). This is so that users can access the website over a gateway of their choice or directly over IPFS, even if they cannot resolve our DNS name. In some cases, particularly minisites that aren't built by Hugo, this might be intentional -- ignore the warning at your own peril.
 
 When the `master` branch changes, typically after a PR is merged, the site will be built, pinned to cluster and the [DNSLink](https://docs.ipfs.io/guides/concepts/dnslink/) record will be updated so the live site will update **automatically** (
 once the DNS record propagates).
