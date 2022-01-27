@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Private Attacks in Longest Chain Proof-of-stake Protocols with Single Secret Leader Elections"
+title: "Private attacks in longest chain proof-of-stake protocols with single secret leader elections"
 
 # Website post date
 # format YYYY-MM-DD

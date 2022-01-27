@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "MyOPE: Malicious securitY for Oblivious Polynomial Evaluation"
+title: "MyOPE: Malicious security for oblivious polynomial evaluation"
 
 # Website post date
 # format YYYY-MM-DD
@@ -10,14 +10,14 @@ date: 2021-09-27
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: 
+venue:
 
 # Venue Location
-venue_location: 
+venue_location:
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date: 
+venue_date:
 
 # DOI, if available
 doi:

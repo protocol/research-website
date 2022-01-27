@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: On the Future of Decentralized Computing
+title: On the future of decentralized computing
 
 # Website post date
 # format YYYY-MM-DD
