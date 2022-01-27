@@ -2,7 +2,6 @@
 
 [![](https://img.shields.io/badge/team-research-0f41f4.svg?style=flat-square)](https://github.com/protocol/research)
 [![](https://img.shields.io/badge/team-%F0%9F%94%92%20research-0f41f4.svg?style=flat-square)](https://github.com/protocol/research-private)
-[![Build status](https://img.shields.io/circleci/build/github/protocol/research-website?style=flat-square&token=725e6aa020667e80f2b9770c7171764fa09ea839)](https://circleci.com/gh/protocol/research-website)
 
 This repository contains the source code for the Protocol Labs Research website, available at https://research.protocol.ai
 
@@ -16,39 +15,26 @@ This repository contains the source code for the Protocol Labs Research website,
 
 ## Setup
 
-- You will need [Hugo](https://gohugo.io/) (CI version: 0.81.0)
-- You will need [NodeJS](https://nodejs.org/en/) (CI version: latest v14 release)
+- You will need [Hugo](https://gohugo.io/) (CI version: 0.92.0)
+- You will need [NodeJS](https://nodejs.org/en/) (CI version: 17.4.0)
 - You will need [Yarn](https://yarnpkg.com/lang/en/)
 - Run `yarn` to install deps.
 
-Note for installing on Ubuntu 18.04: the standard APT packages for yarn, node, and hugo are out of date and will not allow you to execute these instructions. The easiest way to a working set-up is to follow the instalation instructions for [NodeJS](https://joshtronic.com/2018/05/08/how-to-install-nodejs-10-on-ubuntu-1804-lts/), [Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable), and [Homebrew](https://brew.sh/), and then run `brew install hugo`.
+The easiest way to a working set-up is to follow the installation instructions for [Homebrew](https://brew.sh/), and then run `brew install yarn node hugo`.
 
 ## Development
 
-- `yarn serve`
+Use `yarn serve` to launch a dynamic (real-time) local preview (defaults to localhost:1313). This greatly helps when preparing larger PRs.
 
 ## Deployment
 
-A site preview is pinned to IPFS for every PR. It shows up as a status check at the bottom of the PR. Click the "_show all checks_", link and then the the "_Details_" link to view the preview.
+We use fleek to automate builds and deployment for the website. A site preview is pinned to IPFS for every PR. It shows up as a status check at the bottom of the PR. Click the "_show all checks_", link and then the the "_Details_" link under fleek/build.
 
-![IPFS site preview link on A PR](https://github.com/ipfs-shipyard/ipfs-dns-deploy/blob/6abc3ef9f77d02e1321ea1d090b146d9cb710719/screenshot.png)
+Note the internal link check action too: if it triggers, it's likely that you used a full URL (http://research.protocol.ai/page/subpage) where you should have used the path from the website root instead (/page/subpage). This is so that users can access the website over a gateway of their choice or directly over IPFS, even if they cannot resolve our DNS name.
 
-This works by building the site on [circle-ci](https://circleci.com/gh/protocol/website) and pinning it on our [IPFS Cluster](https://cluster.ipfs.io/).
+When the `master` branch changes, typically after a PR is merged, the site will be built, pinned to cluster and the [DNSLink](https://docs.ipfs.io/guides/concepts/dnslink/) record will be updated so the live site will update **automatically** (
+once the DNS record propagates).
 
-### Private Drafts
-
-If you are writing a blog post that is so secret that you don't want it anywhere on the IPFS network, then add `draft = true` to the front matter of your post. `hugo` won't build out the html for draft posts, so you can work on it as a draft on a PR without it being part of the preview site.
-
-```toml
-+++
-author = "Protocol Labs"
-date = "2017-06-20T00:00:00"
-title = "Super secret"
-draft = true
-+++
-```
-
-When the `master` branch changes, typically after a PR is merged, the site will be built, pinned to cluster and the [DNSLink](https://docs.ipfs.io/guides/concepts/dnslink/) record will be updated so the live site will update **automatically**, once the dns change has propagated.
 
 ## Policies
 
