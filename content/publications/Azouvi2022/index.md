@@ -36,7 +36,7 @@ authors:
 
 # Zero or more of the areas in content/areas
 areas:
-  - cryptography
+  - distributed-systems
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
