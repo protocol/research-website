@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "A Visualization Tool for the IPFS DHT"
+title: "A visualization tool for the IPFS DHT"
 
 # Website post date
 # format YYYY-MM-DD
@@ -14,7 +14,7 @@ date: 2021-12-13
 authors:
   - "Spyros Voulgaris"
   - yiannis-psaras
-  
+
 
 # If applicable
 categories:

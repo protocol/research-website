@@ -1,5 +1,5 @@
 ---
-title: Scientific Publication Structure
+title: Scientific publication structure
 
 publishDate: 2020-03-03
 

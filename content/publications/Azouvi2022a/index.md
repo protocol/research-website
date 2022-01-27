@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Decentralisation Conscious Players And System Reliability"
+title: "Decentralisation conscious players and system reliability"
 
 # Website post date
 # format YYYY-MM-DD

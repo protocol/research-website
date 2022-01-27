@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Sliding Window Challenge Process for Congestion Detection"
+title: "Sliding window challenge process for congestion detection"
 
 # Website post date
 # format YYYY-MM-DD
@@ -70,4 +70,3 @@ unaffiliated: false
 ---
 
 Many prominent smart contract applications such as payment channels, auctions, and voting systems often involve a mechanism in which some party must respond to a challenge or appeal some action within a fixed time limit. This pattern of challenge-response mechanisms poses great risks if, during periods of high transaction volume, the network becomes congested. In this case, fee market competition can prevent the inclusion of the response in blocks, causing great harm. As a result, responders are allowed long periods to submit their response and overpay in fees. To overcome these problems and improve challenge-response protocols, we suggest a secure mechanism that detects congestion in blocks and adjusts the deadline of the response accordingly. The responder is thus guaranteed a deadline extension should congestion arise. We lay theoretical foundations for congestion signals in blockchains and then proceed to analyze and discuss possible attacks on the mechanism and evaluate its robustness. Our results show that in Ethereum, using short response deadlines as low as 3 hours, the protocol has > 99% defense rate from attacks even by miners with up to 33% of the computational power. Using shorter deadlines such as one hour is also possible with a similar defense rate for attackers with up to 27% of the power.
-

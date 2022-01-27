@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "IPFS-FAN: A Function-Addressable Computation Network"
+title: "IPFS-FAN: A function-addressable computation network"
 
 # Website post date
 # format YYYY-MM-DD

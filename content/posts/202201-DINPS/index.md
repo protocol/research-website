@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "Decentralized Internet, Networks, Protocols, and Systems (DINPS) workshop at IEEE ICDCS 2022: Call for Contributions" 
+title: "Decentralized internet, networks, protocols, and systems (DINPS) workshop at IEEE ICDCS 2022: call for contributions"
 
 # Website post date
 # format YYYY-MM-DD
@@ -66,4 +66,4 @@ The topics of interest are listed below, and the full Call for Papers can be fou
 
 The workshop will accept several types of contributions, from 2-page demo papers and hands-on tutorial proposals to short 6-page contributions. Just like last year, the workshop will conclude with a 3-week post-event competition.
 
-For now, roll up your sleeves and make sure to submit your latest findings by **March 5th 2022**! Further details on preparing your submission will be posted at the [workshop website](/sites/dinps/). 
+For now, roll up your sleeves and make sure to submit your latest findings by **March 5th 2022**! Further details on preparing your submission will be posted at the [workshop website](/sites/dinps/).

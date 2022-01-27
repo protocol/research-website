@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: Open Problems in Incentive Research
+title: Open problems in incentive research
 
 # Website post date
 # format YYYY-MM-DD

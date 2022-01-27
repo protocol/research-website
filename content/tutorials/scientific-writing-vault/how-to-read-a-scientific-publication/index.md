@@ -1,5 +1,5 @@
 ---
-title: How to Read a Scientific Publication
+title: How to read a scientific publication
 
 publishDate: 2020-03-02
 

@@ -1,5 +1,5 @@
 ---
-title: How to Choose the Form of a Scientific Publication
+title: How to choose the form of a scientific publication
 
 publishDate: 2020-03-01
 

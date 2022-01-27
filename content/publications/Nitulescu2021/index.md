@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Count Me In! Extendability for Threshold Ring Signatures"
+title: "Count me in! Extendability for threshold ring signatures"
 
 # Website post date
 # format YYYY-MM-DD
@@ -10,7 +10,7 @@ date: 2021-09-21
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: 
+venue:
 
 # Venue Location
 venue_location: Espoo, Finland
