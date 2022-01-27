@@ -33,5 +33,5 @@
     "tailwindcss": "^1.8.10",
     "watchify": "^4.0.0"
   },
-  "dependencies": {}
+  "packageManager": "yarn@3.1.1"
 }
