@@ -10,14 +10,14 @@ date: 2021-05-13
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: ZKProof Workshop
+venue: Financial Cryptography and Data Security 2022 (to appear)
 
 # Venue Location
-venue_location: 
+venue_location: St George's, Grenada
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date: 2021-04-21
+venue_date: 2022-02-14
 
 # DOI, if available
 doi:
