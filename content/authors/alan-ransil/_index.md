@@ -7,7 +7,7 @@ authors:
   - alan-ransil
 
 # Roles/positions
-role: Research Scientist
+role: Team Lead
 
 groups:
   - 'Filecoin Green'
