@@ -37,23 +37,23 @@ draft: false
 
 ---
 
-How do you design a general-purpose global communication network? That is the question facing researchers and inventors hoping to invent a new internet.
+How do you design a general-purpose global communication network? That is the question facing researchers and inventors hoping to create a new internet.
 
-We can consult the technohistorical record to trace the development of our current internet [^1], and we can imagine what it would be like to create a new internet from first principles. Perhaps even more challenging is to envision new internet architectures that are compatible with our current networked communication infrastructure. 
+We can consult the technohistorical record to trace the development of our current internet, and we can imagine what it would be like to create a new internet from first principles [^1]. Perhaps even more challenging is to envision new internet architectures that are compatible with our current networked communication infrastructure. 
 
 We might reframe this question as “how can we *evolve* an internet?” Evolution is both contingent and convergent, influenced by both historical processes and selective pressures. We might expect that the forms emerging from technological evolution to express patterns shaped by technological pressures but also reflect the requirements of interoperability with current and historical systems.
 
-In this spirit of evolutionary exploration and experimentation, Protocol Labs Research is pleased to announce our latest Request for Proposals:  [**RFP-011: Changing the Internet](https://github.com/protocol/research-grants/blob/rpf-011/RFPs/rfp-011-changing-the-internet.md).** 
+In this spirit of evolutionary exploration and experimentation, Protocol Labs Research is pleased to announce our latest Request for Proposals:  [**RFP-011: Changing the Internet**](https://github.com/protocol/research-grants/blob/rpf-011/RFPs/rfp-011-changing-the-internet.md).
 
-This RFP recognizes that the history of the present internet contains useful insights that can be used to inform design decisions while also encouraging creative responses to new technological and sociotechnological opportunities. We are awarding up to **$200,000 USD per team** to stimulate work on 
+This RFP recognizes that the history of the present internet contains insights that can be used to inform design decisions, while also encouraging creative responses to new technological and sociotechnological opportunities. We are awarding up to **$200,000 USD per team** to stimulate work on 
 
-- **Incentives for New Infrastructure**
-- **Incentives for New Services**
-- **Architecture for Service Introduction**
-- **Mechanisms for Service Invocation, and**
-- **Trust Mechanisms for Decentralized Infrastructure and Services**
+- incentives for new infrastructure
+- incentives for new services
+- architecture for service introduction
+- mechanisms for service invocation, and
+- trust mechanisms for decentralized infrastructure and services
 
- that will result in a **deployable prototype**: we seek technologies that are compatible with current internet infrastructure. This call will close on on **August 30, 2022** or earlier if awarded. 
+ that will result in a *deployable prototype* : we seek technologies that are compatible with current internet infrastructure. This call will close on on **August 30, 2022** or earlier if awarded. 
 
 We encourage interested researchers to reach out to us via email with any questions at research@protocol.ai, and to discuss the problems presented in the RFP in our [discussion forum](https://github.com/protocol/research/discussions). 
 
