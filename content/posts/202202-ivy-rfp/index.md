@@ -55,6 +55,6 @@ This RFP recognizes that the history of the present internet contains insights t
 
  that will result in a *deployable prototype* : we seek technologies that are compatible with current internet infrastructure. This call will close on on **August 30, 2022** or earlier if awarded. 
 
-We encourage interested researchers to reach out to us via email with any questions at research@protocol.ai, and to discuss the problems presented in the RFP in our [discussion forum](https://github.com/protocol/research/discussions). 
+We encourage interested researchers to reach out to us via email with any questions at research@protocol.ai, and to discuss the problems presented in the RFP in our [discussion forum](https://github.com/protocol/research/discussions). Submit your proposal using our application management system at https://grants.protocol.ai/.
 
 [^1]: *Designing an Internet* by David D. Clark is highly recommended on  the internet’s technical history and possible futures
