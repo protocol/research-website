@@ -39,6 +39,8 @@ draft: false
 
 How do you design a general-purpose global communication network? That is the question facing researchers and inventors hoping to create a new internet.
 
+<!--more-->
+
 We can consult the technohistorical record to trace the development of our current internet, and we can imagine what it would be like to create a new internet from first principles [^1]. Perhaps even more challenging is to envision new internet architectures that are compatible with our current networked communication infrastructure. 
 
 We might reframe this question as “how can we *evolve* an internet?” Evolution is both contingent and convergent, influenced by both historical processes and selective pressures. We might expect that the forms emerging from technological evolution to express patterns shaped by technological pressures but also reflect the requirements of interoperability with current and historical systems.
