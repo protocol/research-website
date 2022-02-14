@@ -26,29 +26,26 @@ interests:
   - Earth observation/deep learning
   - Time-series nowcasting/forecasting
 
-
 # Degrees
 education:
   courses:
-  - course: MSc Theoretical Physics
-   institution: UCL
-   year: 2011
   - course: PhD Computational Chemistry
-   institution: UCL
-   year: 2015
-
+    institution: UCL
+    year: 2015
+  - course: MSc Theoretical Physics
+    institution: UCL
+    year: 2011
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 social:
   - icon: twitter
-   link: https://twitter.com/mellantom
- - icon: google-scholar
-   link: https://scholar.google.co.uk/citations?user=lgRE9goAAAAJ&hl=en
- - icon: github
-   link: https://github.com/tmellan
-​
-
+    link: https://twitter.com/mellantom
+  - icon: google-scholar
+    link: https://scholar.google.co.uk/citations?user=lgRE9goAAAAJ&hl
+  - icon: github
+    link: https://github.com/tmellan
+  
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
@@ -62,4 +59,4 @@ user_groups:
 
 Tom is passionate about Bayesian statistics, interdisciplinary collaboration, and using math and computers to study humanity’s most interesting questions. 
 
-Tom has research experience computational physics and chemistry, and he has worked at Imperial College on modelling infectious diseases from both from the policy-decision perspective and the fundamentals, e.g. stochastic processes with competitively-interacting dynamics.
+Tom's academic background is in theoretical physics and computational chemistry. He applied insights from these fields to his work at Imperial College modelling infectious diseases,  merging the policy-decision perspective with the fundamental questions of understanding stochastic processes with competitively-interacting dynamics.
