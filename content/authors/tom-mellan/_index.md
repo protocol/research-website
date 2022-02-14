@@ -16,36 +16,39 @@ resources:
 
 # Research interests
 interests:
-  - Interest 1
-  - Interest 2
+  - Complexity and emergence
+  - Competition and cooperation dynamics
+  - Bayesian inference
+  - Quantification of uncertainty and decision theory
+  - MCMC methods
+  - Renewal/point/Gaussian processes
+  - ODEs
+  - Earth observation/deep learning
+  - Time-series nowcasting/forecasting
+
 
 # Degrees
 education:
   courses:
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
+  - course: MSc Theoretical Physics
+   institution: UCL
+   year: 2011
+  - course: PhD Computational Chemistry
+   institution: UCL
+   year: 2015
+
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 social:
   - icon: twitter
-    link: https://twitter.com/USERNAME
-  - icon: google-scholar
-    link: https://scholar.google.com/citations?user=PERSON-ID
-  - icon: github
-    link: https://github.com/USERNAME
-  - icon: orcid
-    link: https://orcid.org/0000-0002-1825-0097
-  - icon: linkedin
-    link: https://www.linkedin.com/in/USERNAME
-  - icon: researchgate
-    link: https://www.researchgate.net/profile/USERNAME
-  - icon: link
-    link: https://example.org/    
+   link: https://twitter.com/mellantom
+ - icon: google-scholar
+   link: https://scholar.google.co.uk/citations?user=lgRE9goAAAAJ&hl=en
+ - icon: github
+   link: https://github.com/tmellan
+​
+
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
@@ -57,4 +60,6 @@ user_groups:
 # quote:
 ---
 
-Write bio here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Tom is passionate about Bayesian statistics, interdisciplinary collaboration, and using math and computers to study humanity’s most interesting questions. 
+
+Tom has research experience computational physics and chemistry, and he has worked at Imperial College on modelling infectious diseases from both from the policy-decision perspective and the fundamentals, e.g. stochastic processes with competitively-interacting dynamics.
