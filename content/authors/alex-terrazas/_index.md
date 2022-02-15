@@ -23,9 +23,9 @@ interests:
   - Brain computer interfaces
 
 # Degrees
-education:  PhD
-  courses: Cognition and Neural Systems
-  - course: 
+education:
+  courses: 
+  - course: PhD in Cognition and Neural Systems
     institution: University of Arizona
     year: 2011
 
