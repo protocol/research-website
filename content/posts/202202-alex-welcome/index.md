@@ -44,7 +44,7 @@ We asked Alex about his journey to Protocol Labs, the CryptoEconLab projects he 
 
 
 **How did you decide to join Protocol Labs, and what are you working on?**
-I was looking for an opportunity to work on something completely different from what I was doing.  I am currently trying to help  CryptoEconLab keep up with the many exciting changes that are occuring in the Filecoin Network and contribute my own ideas along the way.
+I was looking for an opportunity to work on something completely different from what I was doing.  I am currently trying to help  CryptoEconLab keep up with the many exciting changes that are occurring in the Filecoin Network and contribute my own ideas along the way.
 
 
 **What research problems are you most interested in exploring?**
