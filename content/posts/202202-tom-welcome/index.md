@@ -1,10 +1,10 @@
 ---
 # Blog post title
-title: Tom Mellan joins CrytoEconLab as a Research Scientist
+title: Tom Mellan joins CryptoEconLab as a Research Scientist
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-02-15
+date: 2022-02-17
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
