@@ -59,4 +59,4 @@ user_groups:
 
 Tom is passionate about Bayesian statistics, interdisciplinary collaboration, and using math and computers to study humanity’s most interesting questions. 
 
-Tom's academic background is in theoretical physics and computational chemistry. He applied insights from these fields to his work at Imperial College modelling infectious diseases,  merging the policy-decision perspective with the fundamental questions of understanding stochastic processes with competitively-interacting dynamics.
+Tom's academic background is in theoretical physics and computational chemistry. He applied insights from these fields to his work at Imperial College modeling infectious diseases,  merging the policy-decision perspective with the fundamental questions of understanding stochastic processes with competitively-interacting dynamics.

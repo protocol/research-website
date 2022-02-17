@@ -40,7 +40,7 @@ draft: false
 
 [CryptoEconLab](/groups/cryptoeconlab/) is pleased to welcome [Tom Mellan](/authors/tom-mellan) to the team as a research scientist. 
 
-Tom has spent the last two years modeling infectious diseases at Imperial College in London. The backbone of this research centered on the messy intersection of science, maths and policy; asking simple questions like: _what’s happened and why?_, _what’s up next?_, and _how sure are we about that?_ 
+Tom has spent the last two years modeling infectious diseases at Imperial College London. The backbone of this research centered on the messy intersection of science, maths and policy; asking simple questions like: _what’s happened and why?_, _what’s up next?_, and _how sure are we about that?_ 
 
 Before that, Tom did computational physics and chemistry research at Imperial and UCL. Now he's excited to optimize the utility-generating economic protocols supporting the transition to web3.
 
@@ -54,7 +54,7 @@ We  asked Tom about what brought him to Protocol Labs, the projects he'll be wor
 
 **What research problems are you most interested in exploring?**
 
-> Ideas come and go, but a persistent one I've been considering recently is how to update network design parameters to improve the health stability/growth/utility of the network. The analogy of "tuning the engine of a 747 while it's flying" springs to mind. Every change that’s made to a parameter deep in the protocol risks stalling the engine. But there’s also a  non-negligible gain to be made from improving performance that can’t be dismissed. So this is a classic high-stakes exploration/exploitation tradeoff. My instinct is to appeal to [Thompson sampling](https://web.stanford.edu/~bvr/pubs/TS_Tutorial.pdf), perhaps with a human governance layer, but there are many aspects to think about; for example, simply defining what the time-dependent model of utility to optimize should look like is non-trivial.
+> Ideas come and go, but a persistent one I've been considering recently is how to update network design parameters to improve the health stability/growth/utility of the network. The analogy of "tuning the engine of a 747 while it's flying" springs to mind. Every change that’s made to a parameter deep in the protocol risks stalling the engine. But there’s also a  non-negligible gain to be made from improving performance that can’t be dismissed. So this is a classic high-stakes exploration/exploitation tradeoff. My instinct is to appeal to [Thompson sampling](https://web.stanford.edu/~bvr/pubs/TS_Tutorial.pdf), perhaps with a human governance layer, but there are many aspects to think about: for example, simply defining what the time-dependent model of utility to optimize should look like is non-trivial.
 
 **What future technology are you most excited about?**
 
