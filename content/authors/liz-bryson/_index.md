@@ -7,7 +7,6 @@ role: Research Administrator
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-  -
 
 # Avatar (no need to edit)
 resources:
