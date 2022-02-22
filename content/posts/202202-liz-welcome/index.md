@@ -42,8 +42,6 @@ draft: false
 
 Tom has spent the last two years modeling infectious diseases at Imperial College London. The backbone of this research centered on the messy intersection of science, maths and policy; asking simple questions like: _what’s happened and why?_, _what’s up next?_, and _how sure are we about that?_
 
-Before that, Tom did computational physics and chemistry research at Imperial and UCL. Now he's excited to optimize the utility-generating economic protocols supporting the transition to web3.
-
 We asked Liz about what brought him to Protocol Labs, the projects she'll be working on, and her thoughts about future technological developments:
 
 **How did you decide to join Protocol Labs, and what are you working on?**
