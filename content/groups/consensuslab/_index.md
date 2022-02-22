@@ -20,6 +20,7 @@ For more information on our problems of interest, projects, and other activities
 * [Sarah Azouvi](/authors/sarah-azouvi/) (Research Scientist)
 * [Alfonso de la Rocha](/authors/alfonso-de-la-rocha/) (Research Engineer)
 * [Denis Kolegov](/authors/denis-kolegov/) (Research Engineer)
+* [Matej Pavlovic](/authors/matej-pavlovic/) (Research Scientist)
 * [Jorge Soares](/authors/jorge-soares/) (Technical Program Manager)
 
 ## Problems of interest
