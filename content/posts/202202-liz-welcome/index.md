@@ -38,11 +38,9 @@ draft: false
 
 ---
 
-[CryptoEconLab](/groups/cryptoeconlab/) is pleased to welcome [Tom Mellan](/authors/tom-mellan) to the team as a research scientist.
+After Pennsylvania, Scotland, and Ireland, we're happy to welcome [Liz Bryson](/authors/liz-bryson) to Protocol Labs as our newest Research Administrator. 
 
-Liz has spent the last two years modelling infectious diseases at Imperial College London. The backbone of this research centred on the messy intersection of science, maths and policy; asking simple questions like: _what’s happened and why?_, _what’s up next?_, and _how sure are we about that?_
-
-We asked Liz about what brought him to Protocol Labs, the projects she'll be working on, and her thoughts about future technological developments:
+We asked Liz about what brought her to Protocol Labs, the projects she'll be working on, and her thoughts on future technological developments:
 
 **How did you decide to join Protocol Labs, and what are you working on?**
 
