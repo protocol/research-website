@@ -12,6 +12,7 @@ This repository contains the source code for the Protocol Labs Research website,
 - Uses the [CommonMark spec](https://spec.commonmark.org/0.29/) for Markdown syntax.
 - Uses [MathJax v3](https://www.mathjax.org/#gettingstarted) for embedded LaTeX.
 - That's it!
+- No, one more step!
 
 ## Setup
 
