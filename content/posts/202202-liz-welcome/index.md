@@ -40,7 +40,7 @@ draft: false
 
 [CryptoEconLab](/groups/cryptoeconlab/) is pleased to welcome [Tom Mellan](/authors/tom-mellan) to the team as a research scientist.
 
-Tom has spent the last two years modeling infectious diseases at Imperial College London. The backbone of this research centered on the messy intersection of science, maths and policy; asking simple questions like: _what’s happened and why?_, _what’s up next?_, and _how sure are we about that?_
+Liz has spent the last two years modelling infectious diseases at Imperial College London. The backbone of this research centred on the messy intersection of science, maths and policy; asking simple questions like: _what’s happened and why?_, _what’s up next?_, and _how sure are we about that?_
 
 We asked Liz about what brought him to Protocol Labs, the projects she'll be working on, and her thoughts about future technological developments:
 
