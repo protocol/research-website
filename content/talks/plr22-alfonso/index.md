@@ -17,7 +17,7 @@ venue_url:
 
 # Venue date (defaults to date)
 # format YYYY-MM-DD
-venue_date: 2021-02-03
+venue_date: 2022-02-03
 
 # Venue location
 venue_location:
