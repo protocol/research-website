@@ -44,12 +44,12 @@ We asked Matej about what brought him to Protocol Labs, the projects he'll be wo
 
 **How did you decide to join Protocol Labs, and what are you working on?**
 
-> tbd
+> I got to know Protocol Labs thanks to my mentor at my previous job who joined some time before me. The more I had read, seen, and heard about the company, their vision, technology, company culture, and exciting research problems to work on, the more I liked it. Having worked on consensus protocols for years, I even had the opportunity to continue developing my research project - a scalable, high-throughput consensus protocol.
 
 **What research problems are you most interested in exploring?**
 
-> tbd
+> I am very interested in the scalability and security of Byzantine fault-tolerant consensus / total-order broadcast protocols. I would like to explore the trade-offs between their performance, security, resilience to various attacks, and other properties.
 
 **What future technology are you most excited about?**
 
-> tbd
+> Fusion energy and quantum computing.

@@ -31,7 +31,7 @@ education:
     year: 2019
   - course: MSc in Computer Engineering
     institution: Technische Universität Wien
-    year: 2011
+    year: 2013
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
@@ -54,4 +54,9 @@ user_groups:
 # quote:
 ---
 
-Bio tbd
+Matej is a distributed systems researcher specializing in Byzantine
+fault-tolerant consensus protocols. He obtained a Master's degree in
+computer engineering at the Vienna University of Technology in 2013
+and a PhD in distributed systems in 2019, supervised by Prof. Rachid
+Guerraoui. Before joining Protocol Labs in February 2022, he worked on
+permissioned blockchain solutions at IBM Research Europe - Zurich.
