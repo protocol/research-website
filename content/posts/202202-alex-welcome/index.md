@@ -49,8 +49,8 @@ I was looking for an opportunity to work on something completely different from 
 
 **What research problems are you most interested in exploring?**
 
-I am interested in the collective action of inidivudals.  I hope to eventually merge ideas from decision neuroscience and behavioral psychology into our current research.  I would love to build something that we haven't even thought of yet.
+I am interested in the collective action of individuals.  I hope to eventually merge ideas from decision neuroscience and behavioral psychology into our current research.  I would love to build something that we haven't even thought of yet.
 
 **What future technology are you most excited about?**
 
-Brain-computer interfaces and virtual reality are two areas of technology that I have tracked for a long time.  I hope they finally reach their potentials. 
+Brain-computer interfaces and virtual reality are two areas of technology that I have tracked for a long time.  I hope they finally reach their potential. 
