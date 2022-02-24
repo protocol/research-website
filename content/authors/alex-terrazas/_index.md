@@ -12,7 +12,7 @@ groups:
 # Avatar (no need to edit)
 resources:
   - name: avatar
-    src: avatar.png
+    src: avatar.jpg
 
 # Research interests
 interests:
