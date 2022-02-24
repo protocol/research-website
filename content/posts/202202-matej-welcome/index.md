@@ -38,7 +38,7 @@ draft: false
 
 [ConsensusLab](/groups/consensuslab/) is pleased to welcome [Matej Pavlovic](/authors/matej-pavlovic) to the team.
 
-Matej joins us from IBM Research, where he was recently doing research on [MirBFT](https://github.com/hyperledger-labs/mirbft), among other topics in blockchains and distributed systems. Before that, he received his PhD from EPFL and his MSc from TU Wien.
+Matej joins us from IBM Research, where he was recently doing research on [MirBFT](https://github.com/hyperledger-labs/mirbft), among other topics in blockchains and distributed systems. Before that, he received his Ph.D. from EPFL and his MSc from TU Wien.
 
 We asked Matej about what brought him to Protocol Labs, the projects he'll be working on, and his thoughts on future technological developments:
 
