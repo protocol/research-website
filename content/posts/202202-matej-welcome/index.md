@@ -48,7 +48,7 @@ We asked Matej about what brought him to Protocol Labs, the projects he'll be wo
 
 **What research problems are you most interested in exploring?**
 
-> I am very interested in the scalability and security of Byzantine fault-tolerant consensus / total-order broadcast protocols. I would like to explore the trade-offs between their performance, security, resilience to various attacks, and other properties.
+> I am very interested in the scalability and security of Byzantine fault-tolerant consensus/total-order broadcast protocols. I would like to explore the trade-offs between their performance, security, resilience to various attacks, and other properties.
 
 **What future technology are you most excited about?**
 
