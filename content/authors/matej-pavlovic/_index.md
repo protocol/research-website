@@ -26,7 +26,7 @@ interests:
 # Degrees
 education:
   courses:
-  - course: PhD in Computer Science
+  - course: Ph.D. in Computer Science
     institution: EPFL
     year: 2019
   - course: MSc in Computer Engineering
