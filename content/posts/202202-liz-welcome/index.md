@@ -38,7 +38,7 @@ draft: false
 
 ---
 
-After Pennsylvania, Scotland, and Ireland, we're happy to welcome [Liz Bryson](/authors/liz-bryson) to Protocol Labs as our newest Research Administrator. 
+We are excited to welcome [Liz Bryson](/authors/liz-bryson) as a Research Administrator at Protocol Labs.  
 
 We asked Liz about what brought her to Protocol Labs, the projects she'll be working on, and her thoughts on future technological developments:
 
