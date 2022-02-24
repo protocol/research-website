@@ -49,6 +49,6 @@ Vivien is a Professor of Computer Science at [Grenoble INP](https://www.grenoble
 
 Prior to joining Grenoble INP in 2011, he worked as a researcher at CNRS and as a post-doctoral researcher at the [University of Rome 1 "La Sapienza"](https://www.uniroma1.it/it/). He also visited the LPD laboratory at École Polytechnique Fédérale de Lausanne (EPFL), the LASR laboratory at the University of Texas at Austin, and the LIP6-Inria Rocquencourt laboratory.
 
-He received his Ph.D. from Grenoble INP in 2005 and his "habilitation à diriger des recherches" from [Grenoble University](https://www.univ-grenoble-alpes.fr/) in 2010. Since 2019, he is a Junior Fellow at [Institut Universitaire de France](https://www.iufrance.fr/).
+He received his PhD from Grenoble INP in 2005 and his "habilitation à diriger des recherches" from [Grenoble University](https://www.univ-grenoble-alpes.fr/) in 2010. Since 2019, he is a Junior Fellow at [Institut Universitaire de France](https://www.iufrance.fr/).
 
 His research is about understanding, designing, and building (distributed) systems.

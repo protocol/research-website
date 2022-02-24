@@ -53,4 +53,4 @@ user_groups:
 # quote:
 ---
 
-Karola holds a Ph.D. in Human Evolutionary Biology from Harvard, where she worked on reconstructing palaeoenvironmental conditions relevant to hominid evolution. She has also conducted palaeogenetic research into modern human adaptations to diet and climate. She is broadly interested in complex networks of interaction in both natural and artificial contexts, and she is excited to support research into building resilient distributed systems at Protocol Labs.
+Karola holds a PhD in Human Evolutionary Biology from Harvard, where she worked on reconstructing palaeoenvironmental conditions relevant to hominid evolution. She has also conducted palaeogenetic research into modern human adaptations to diet and climate. She is broadly interested in complex networks of interaction in both natural and artificial contexts, and she is excited to support research into building resilient distributed systems at Protocol Labs.
