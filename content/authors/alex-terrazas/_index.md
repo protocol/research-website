@@ -17,7 +17,7 @@ resources:
 # Research interests
 interests:
   - Neural models of decision making
-  - Economic incentives and beahvioral psychology
+  - Economic incentives and behavioral psychology
   - Artificial intelligence
   - Virtual and augmented reality
   - Brain computer interfaces
