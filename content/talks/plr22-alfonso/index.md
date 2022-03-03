@@ -1,6 +1,6 @@
 ---
 # Talk title
-title: "Filecoin Hierarchical Consensus"
+title: "Filecoin hierarchical consensus"
 
 # Website post date
 # format YYYY-MM-DD
