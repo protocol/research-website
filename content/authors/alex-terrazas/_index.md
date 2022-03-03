@@ -53,6 +53,6 @@ user_groups:
 # quote:
 ---
 
-Alex Terrazas, Ph.D. is a neuroscientist and psychologist at the nexus of neural science, AI, and cognitive psychology.  Dr. Terrazas has worked as an entrepreneur, academic researcher and corportate executive.  
+Alex Terrazas, PhD is a neuroscientist and psychologist at the nexus of neural science, AI, and cognitive psychology.  Dr. Terrazas has worked as an entrepreneur, academic researcher and corportate executive.  
 
 Prior to joining Protocol Labs, he was Founder and Chief Scientist at Santa Cruz Robotics and was Chief of Artificial Intelligence and Cognitive Robotics at RE2 Robotics.  Dr. Terrazas pioneered the use of satellite imagery and geospatial big data for market research as Senior Vice President at the Nielsen Company.  His research in spatial cognition and neural computation has influenced researchers in diverse fields including virtual reality and autonomous systems.  Dr. Terrazas is the author of seventeen patents and is a former Fellow of the National Institutes of Health. 
