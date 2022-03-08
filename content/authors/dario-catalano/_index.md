@@ -24,7 +24,7 @@ education:
   - course: Ph.D.
     institution: Università di Catania
     year: 2002
-  - course: Laurea in Scienze dell'Informazione.
+  - course: Laurea in Scienze dell'Informazione
     institution: Università di Catania 
     year: 1995
   
@@ -51,7 +51,7 @@ user_groups:
 # quote:
 ---
 
-Dario is a professor at University of Catania. Before joining the University of Catania as a faculty, he was a full time researcher at the French CNRS. There he was part of the Crypto Team, at the Laboratoire d’Informatique de l’Ecole Normale Supérieure, in Paris, for five years (1 as a postdoc and 4 as a CNRS researcher).
+Dario is a professor at University of Catania. Before joining the University of Catania as faculty member, he was a full-time researcher at the French CNRS. There he was part of the Crypto Team  at the Laboratoire d’Informatique de l’Ecole Normale Supérieure in Paris for five years: one year as a postdoc, and four as a CNRS researcher.
 
-Dario's main research interests are in the area of cryptography and, more specifically, on questions related to reducing the gap between theory and practice in cryptography.  His most recent works address the realization of advanced yet efficient encryption mechanisms and the design of secure distributed digital signature schemes.  
+Dario's main research interests are in the area of cryptography, and more specifically, on questions related to reducing the gap between theory and practice in cryptography.  His most recent works address the realization of advanced yet efficient encryption mechanisms and the design of secure distributed digital signature schemes.  
 
