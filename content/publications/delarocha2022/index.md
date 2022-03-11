@@ -4,10 +4,10 @@ title: "Hierarchical consensus: A horizontal scaling framework for blockchains"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-03-14
+date: 2022-03-11
 
 # Publish from this date (defaults to date)
-publishDate: 2022-03-11
+#publishDate: 2022-03-11
 
 # Venue Name
 venue:
