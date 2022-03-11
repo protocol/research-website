@@ -1,6 +1,6 @@
 ---
 # Talk title
-title: "Hierarchical consensus project update"
+title: "Tendermint subnet consensus project update"
 
 # Website post date
 # format YYYY-MM-DD
@@ -24,7 +24,7 @@ venue_location: Dubai, UAE
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - alfonso-delarocha
+  - denis-kolegov
 
 # Zero or more of the areas in content/areas
 areas:
@@ -41,9 +41,9 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: "Alfonso de la Rocha provides the latest updates on ConsensusLab's project B1, focused on hierarchical consensus."
+abstract: "Denis Kolegov provides the latest updates on ConsensusLab's project Y5, focused on implementing Tendermint as a subnet consensus mechanism."
 
 ---
 
 
-{{< youtube 4-MNI_3VG5k >}}
+{{< youtube UUXZb8sf9uY >}}

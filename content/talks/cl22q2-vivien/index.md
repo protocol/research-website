@@ -1,10 +1,10 @@
 ---
 # Talk title
-title: "Tendermint subnet consensus project update"
+title: "Parallel execution project update"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-03-11
+date: 2022-02-23
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -24,7 +24,7 @@ venue_location: Dubai, UAE
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - denis-kolegov
+  - vivien-quema
 
 # Zero or more of the areas in content/areas
 areas:
@@ -41,9 +41,9 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: "Denis Kolegov provides the latest updates on ConsensusLab's project Y5, focused on implementing Tendermint as a subnet consensus mechanism."
+abstract: "Vivien Quéma provides the latest updates on ConsensusLab's project G1, focused on the parallelisation of execution in WASM order-execute models."
 
 ---
 
 
-{{< youtube UUXZb8sf9uY >}}
+{{< youtube C9-8O63-OY4 >}}
