@@ -17,7 +17,7 @@ venue_location: "St. George’s, Grenada"
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date: 2022-02-16
+venue_date: 2022-05-02
 
 # DOI, if available
 doi:
