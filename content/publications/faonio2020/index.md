@@ -10,22 +10,22 @@ date: 2020-11-17
 # publishDate: 2019-09-03
 
 # Venue Name
-venue:
+venue: "Cryptographers’ Track at the RSA Conference"
 
 # Venue Location
-venue_location:
+venue_location: San Francisco, CA, USA
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date:
+venue_date: 2022-02-07
 
 # DOI, if available
-doi:
+doi: 10.1007/978-3-030-95312-6_23
 
 # Type of publication
 # delete all but one
 publication_types:
-  - report
+  - conference-paper
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
@@ -69,8 +69,4 @@ unaffiliated: false
 
 ---
 
-Anonymous attestation for secure hardware platforms leverages tailored group signature schemes and assumes the hardware to be trusted. Yet, there is an ever increasing concern on the trustworthiness of hardware components and embedded systems. A subverted hardware may, for example, use its signatures to exfiltrate identifying information or even the signing key.
-
-In this paper we focus on Enhanced Privacy ID (EPID)---a popular anonymous attestation scheme used in commodity secure hardware platforms like Intel SGX. We define and instantiate a subversion resilient EPID scheme (or SR-EPID). In a nutshell, SR-EPID provides the same functionality and security guarantees of the original EPID, despite potentially subverted hardware. In our design, a sanitizer ensures no covert channel between the hardware and the outside world both during enrollment and during attestation (i.e., when signatures are produced). We design a practical SR-EPID scheme secure against adaptive corruptions and based on a novel combination of malleable NIZKs and hash functions modeled as random oracles.
-
-Our approach has a number of advantages over alternative designs. Namely, the sanitizer bears no secret information---hence, a memory leak does not erode security. Further, the role of sanitizer may be distributed in a cascade fashion among several parties so that sanitization becomes effective as long as one of the parties has access to a good source of randomness. Also, we keep the signing protocol non-interactive, thereby minimizing latency during signature generation.
+Anonymous attestation for secure hardware platforms leverages tailored group signature schemes and assumes the hardware to be trusted. Yet, there is an increasing concern on the trustworthiness of hardware components and embedded systems. A subverted hardware may, for example, use its signatures to exfiltrate identifying information or even the signing key. We focus on Enhanced Privacy ID (EPID)—a popular anonymous attestation scheme used in commodity secure hardware platforms like Intel SGX. We define and instantiate a subversion resilient EPID scheme (or SR-EPID). In a nutshell, SR-EPID provides the same functionality and security guarantees of the original EPID, despite potentially subverted hardware. In our design, a “sanitizer” ensures no covert channel between the hardware and the outside world both during enrollment and during attestation (i.e., when signatures are produced). We design a practical SR-EPID scheme secure against adaptive corruptions and based on a novel combination of malleable NIZKs and hash functions modeled as random oracles. Our approach has a number of advantages over alternative designs. Namely, the sanitizer bears no secret information—hence, a memory leak does not erode security. Also, we keep the signing protocol non-interactive, thereby minimizing latency during signature generation.
