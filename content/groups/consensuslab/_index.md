@@ -13,7 +13,7 @@ resources:
 
 ConsensusLab’s vision is to be the go-to place for scalable decentralised consensus research. In the true spirit of Protocol Labs Research, we aim to become a hub for the collaborative advancement of human knowledge on this challenging topic. Together with a wide network of academic and industry partners, and in collaboration with other open projects, our team will be building an engine for the decentralised web.
 
-For more information on our problems of interest, projects, and other activities, check out our the [protocol/ConsensusLab repo on GitHub](https://github.com/protocol/ConsensusLab/).
+For more information on our problems of interest, projects, and other activities, check out the [protocol/ConsensusLab repo on GitHub](https://github.com/protocol/ConsensusLab/).
 
 ## Team
 * [Marko Vukolić](/authors/marko-vukolic/) (Lead)
