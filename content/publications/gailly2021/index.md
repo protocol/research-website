@@ -17,7 +17,7 @@ venue_location: St George's, Grenada
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date: 2022-02-14
+venue_date: 2022-05-02
 
 # DOI, if available
 doi:
@@ -26,7 +26,7 @@ doi:
 # delete all but one
 publication_types:
   - conference-paper
-  
+
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
