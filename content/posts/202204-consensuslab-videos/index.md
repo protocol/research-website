@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: Working in public at ConsensusLab
+title: "Working in public @ ConsensusLab"
 
 # Website post date
 # format YYYY-MM-DD
@@ -42,4 +42,4 @@ You can read about a lot of our recent work in this very website, such as our re
 
 This is still all rather passive and retrospective. But you're also invited to interact with us on ongoing work, future ideas, and random discussions. On our [GitHub repository](https://github.com/protocol/ConsensusLab/), you'll find tracking issues for each project -- these not only link to all the relevant resources but now feature [notes from our weekly calls](https://github.com/protocol/ConsensusLab/issues/5#issuecomment-1061277732). Have questions (or answers)? Post a comment on the issue, or come talk to us in **#consensus**, on the [Filecoin Slack workspace](https://filecoin.io/slack) -- we'll be happy to invite you to our next call. You'll also find our detailed [roadmap](https://app.zenhub.com/workspaces/consensuslab-60f84a7fa2395a0011e4134c/roadmap?invite=true) there, as well as the [code](https://github.com/filecoin-project/eudico/) we're writing. Oh, and we'll be organising further events this year, including a new edition of ConsensusDays, so stay tuned!
 
-Would you like to see more? Do you have any ideas for how we can do it better? We're all ears. And we're also hiring Research Engineers and Research Scientists so, if you're passionate about consensus and about working in the open, [come and join us](https://protocol.ai/join/)!
+Would you like to see more? Have any ideas for how we can do things better? We're all ears. We're also hiring Research Engineers and Research Scientists -- if you're passionate about consensus and about working in the open, [come and join us](https://protocol.ai/join/)!
