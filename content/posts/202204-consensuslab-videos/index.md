@@ -4,7 +4,7 @@ title: "Working in public @ ConsensusLab"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-03-14
+date: 2022-03-16
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
