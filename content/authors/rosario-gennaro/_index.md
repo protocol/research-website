@@ -3,7 +3,7 @@
 name: Rosario Gennaro
 
 # Role/position (e.g. Research Scientist)
-role: Research Advisor
+role: Research Scientist
 
 # Existing research group (use folder name) or free text
 groups:
@@ -47,7 +47,7 @@ social:
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
 user_groups:
-  - Advisors
+  - Researchers
 
 # For display at the top of the author details page
 # Not currently used
