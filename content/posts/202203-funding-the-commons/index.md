@@ -4,7 +4,7 @@ title: "Funding the Commons"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-03-16
+date: 2022-03-21
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -25,7 +25,7 @@ tags:
 # Zero or more of the areas in content/areas
 areas:
   - metaresearch
-  - network funding
+  
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:

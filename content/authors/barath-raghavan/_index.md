@@ -7,7 +7,7 @@ role: Research Advisor
 
 # Zero or one of the groups in content/groups (or free text)
 groups: 
-  - resnetlab
+  - network-research
 
 # Avatar (no need to edit)
 resources:
