@@ -48,4 +48,4 @@ These [four project areas](https://github.com/protocol/CryptoEconLab/blob/main/R
 
 These project ideas can be discused on the [CryptoEconLab Discussion Board](https://github.com/protocol/CryptoEconLab/discussions), and  inquiries about opportunities for grant-supported research can be directed to research-grants@protocol.ai.
 
-Additionally, CryptoEconLab has also assembled a [list of resources](https://www.notion.so/pl-strflt/CryptoEconLab-reading-list-79100f7b0f9b427db628c5f53906929c) that we find particularly useful in our work, and that you might find  interesting as well. Come join us on our cryptoeconomics learning journey!
+CryptoEconLab has also assembled a [list of resources](https://www.notion.so/pl-strflt/CryptoEconLab-reading-list-79100f7b0f9b427db628c5f53906929c) that we find particularly useful in our work, and that you might find  interesting as well. Come join us on our cryptoeconomics learning journey!
