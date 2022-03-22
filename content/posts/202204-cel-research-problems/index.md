@@ -37,7 +37,7 @@ draft: false
 
 ---
 
-The hard-thinking research scientists of the [CryptoEconLab](/groups/cryptoeconlab) have developed a [set of research questions](https://github.com/protocol/CryptoEconLab/blob/main/README.md#projects) that are particularly appropriate for scoped independent work. These questions can be used to design an MSc thesis or PhD industry-experience project for students in computer science, statistics, complexity, economics or related areas, or as the basis for independent research.
+The hard-thinking research scientists of the [CryptoEconLab](/groups/cryptoeconlab) have developed a [set of research questions](https://github.com/protocol/CryptoEconLab/blob/main/README.md#projects) that are particularly appropriate for scoped independent work. These questions can be used to design an MSc thesis or PhD industry-experience project for students in computer science, statistics, complexity science, economics, or related areas, or as the basis for independent research.
 
 These [four project areas](https://github.com/protocol/CryptoEconLab/blob/main/README.md#projects) concern problems that can be explored using Filecoin network data, or using Web3 ecosystems as a model system:
 
