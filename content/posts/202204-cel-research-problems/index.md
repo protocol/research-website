@@ -46,6 +46,6 @@ These [four project areas](https://github.com/protocol/CryptoEconLab/blob/main/R
 3.  **Implementing optimal control in a blockchain system**: we'd like to apply the lessons of the optimal control literature can be applied to blockchains, developing approaches to update tokenomic parameters in a systematic way
 4. **Injecting stochasticity into Web3 game environments**: this project concerns the dynamics of a specific Web3  game mechanic, the breeding system in [Axie Infinity](https://axieinfinity.com/): what happens if we inject a bit of randomness into the system?
 
-These project ideas can be discused on the [CryptoEconLab Discussion Board](https://github.com/protocol/CryptoEconLab/discussions), and  inquiries about opportunities for grant-supported research can be directed to research-grants@protocol.ai.
+These project ideas can be discussed on the [CryptoEconLab Discussion Board](https://github.com/protocol/CryptoEconLab/discussions), and inquiries about opportunities for grant-supported research can be directed to research-grants@protocol.ai.
 
 CryptoEconLab has also assembled a [list of resources](https://www.notion.so/pl-strflt/CryptoEconLab-reading-list-79100f7b0f9b427db628c5f53906929c) that we find particularly useful in our work, and that you might find  interesting as well. Come join us on our cryptoeconomics learning journey!
