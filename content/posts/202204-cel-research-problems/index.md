@@ -44,7 +44,7 @@ These [four project areas](https://github.com/protocol/CryptoEconLab/blob/main/R
 1. **Scaling structure and network stability**: the Filecoin decentralized network generates millions of unique events per day. We'd like to understand the emergent scaling structure of event cascades, and how this structure can inform the economic impact of rare events on future network stability.
 2. **Using machine learning to model the Filecoin network**: we'd like to' to develop machine learning models with the necessary inductive biases to model data-rich Web3 systems like the Filecoin network
 3.  **Implementing optimal control in a blockchain system**: we'd like to apply the lessons of the optimal control literature can be applied to blockchains, developing approaches to update tokenomic parameters in a systematic way
-4. **Injecting stochasticity into Web3 game environments**: this project concerns the dynamics of a specific Web3  game mechanic, the breeding system in [Axie Infinity](https://axieinfinity.com/): what happens if we inject a bit of randonmess into the system?
+4. **Injecting stochasticity into Web3 game environments**: this project concerns the dynamics of a specific Web3  game mechanic, the breeding system in [Axie Infinity](https://axieinfinity.com/): what happens if we inject a bit of randomness into the system?
 
 These project ideas can be discused on the [CryptoEconLab Discussion Board](https://github.com/protocol/CryptoEconLab/discussions), and  inquiries about opportunities for grant-supported research can be directed to research-grants@protocol.ai.
 
