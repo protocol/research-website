@@ -30,7 +30,7 @@ CryptoNetlab’s current foci are:
 - **Blockchain infrastructure**: We are working to advance the state of the art of generic blockchain constructions.
 - **Web 3.0 protocol improvements**: Our research contributes improvements to the transaction layer of the Filecoin protocol and its components, including mining, repair, security, and storage. These improvements may be generalized to other Web 3.0 technologies.
 
-Much of CryptoNetLab’s past work is exhibited in the Filecoin Research [website](https://research.filecoin.io/) and [GitHub repo](https://github.com/filecoin-project/research/).
+Much of CryptoNetLab’s past work is exhibited in the Filecoin Research [website](https://research.filecoin.io/) and [GitHub repo](https://github.com/filecoin-project/research/). You can follow our current research activities on our [team Notion page](https://pl-strflt.notion.site/CryptoNetLab-81fd8bb1043643a38472335d73692339).
 
 
 
@@ -39,6 +39,10 @@ Much of CryptoNetLab’s past work is exhibited in the Filecoin Research [websit
 - [Irene Giacomelli](/authors/irene-giacomelli)
 - [Anca Nitulescu](/authors/anca-nitulescu/)
 - [Luca Nizzardo](/authors/luca-nizzardo)
-- [Sarah Azouvi](/authors/sarah-azouvi)
+- [Rosario Gennaro](/authors/rosario-gennaro)
 - [Nicolas Gailly](/authors/nicolas-gailly)
+- Matteo Campanelli
+- Dragan Zurzin
+- Kubuxu
+- Alex North
 
