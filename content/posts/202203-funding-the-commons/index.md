@@ -40,7 +40,7 @@ draft: false
 
 The Network Goods team at Protocol Labs recently held  the second in a continuing series of events bringing together researchers and thought leaders to discuss novel experiments and future directions for funding our collective commons.
 
-The [*_Funding the Commons_*](https://fundingthecommons.io/) series is intended to stimulate and showcase research and discussion about innovative funding methods for critical public goods and open-source networks. Over a two-day virtual summit held March 3-4, participants enjoyed 19 presentations from researchers, inventors, and thought leaders in the network goods funding space, including Jaan Tallinn of  the  [Future of Life Institute](https://futureoflife.org/) & the [Center for the Study of Existential Risk](https://www.cser.ac.uk/), Allison Duettmann of the [Foresight Institute](https://foresight.org/), Scott Moore of [Gitcoin](https://gitcoin.co/),  and Tom Kalil of [Schmidt Futures](https://www.schmidtfutures.com/).
+The [*_Funding the Commons_*](https://fundingthecommons.io/) series is intended to stimulate and showcase research and discussion about innovative funding methods for critical public goods and open-source networks. Over a two-day virtual summit held March 3-4, participants enjoyed presentations from researchers, inventors, and thought leaders in the network goods funding space, including Jaan Tallinn of  the  [Future of Life Institute](https://futureoflife.org/) & the [Center for the Study of Existential Risk](https://www.cser.ac.uk/), Allison Duettmann of the [Foresight Institute](https://foresight.org/), Scott Moore of [Gitcoin](https://gitcoin.co/),  and Tom Kalil of [Schmidt Futures](https://www.schmidtfutures.com/).
 
 
 The themes of the March *Funding the Commons* workshop include:
@@ -49,7 +49,7 @@ The themes of the March *Funding the Commons* workshop include:
 -   new incentives, mechanisms, and markets for funding public goods at scale, and 
 -  new ways of coordinating alignment on ambitious research projects
 
- Presenters also shared updates on public goods funding and network funding experiments started following the  [November 2021](https://www.youtube.com/playlist?list=PLhuBigpl7lqtMdPkejuo3mHdLFX53ftXJ)  *Funding the Commons* workshop.You can watch all of the talks [here](https://www.youtube.com/playlist?list=PLhuBigpl7lqvngC9oNecjfWMqFucr5GvG) on our Youtube channel. 
+ Presenters also shared updates on public goods funding and network funding experiments started following the [November 2021](https://www.youtube.com/playlist?list=PLhuBigpl7lqtMdPkejuo3mHdLFX53ftXJ)  *Funding the Commons* workshop. You can watch all of the talks [here](https://www.youtube.com/playlist?list=PLhuBigpl7lqvngC9oNecjfWMqFucr5GvG) on our Youtube channel. 
  
  This series is part of an ongoing conversation about incentivizing the creation of public goods and building a flourishing digital commons: please join us on the Network Goods Discord server (invite link [here](https://discord.gg/wR679hNxTf)) and follow the Network Research twitter ([@Protoresearch](https://twitter.com/ProtoResearch)) to learn about upcoming events. See you at the Commons!
 
