@@ -4,7 +4,7 @@ title: "Funding the Commons"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-03-24
+date: 2022-03-25
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -51,5 +51,5 @@ The themes of the March *Funding the Commons* workshop include:
 
  Presenters also shared updates on public goods funding and network funding experiments started following the [November 2021](https://www.youtube.com/playlist?list=PLhuBigpl7lqtMdPkejuo3mHdLFX53ftXJ)  *Funding the Commons* workshop. You can watch all of the talks [here](https://www.youtube.com/playlist?list=PLhuBigpl7lqvngC9oNecjfWMqFucr5GvG) on our Youtube channel. 
  
- This series is part of an ongoing conversation about incentivizing the creation of public goods and building a flourishing digital commons: please join us on the Network Goods Discord server (invite link [here](https://discord.gg/wR679hNxTf)) and follow the Network Research twitter ([@Protoresearch](https://twitter.com/ProtoResearch)) to learn about upcoming events. See you at the Commons!
+ This series is part of an ongoing conversation about incentivizing the creation of public goods and building a flourishing digital commons: please join us on the Network Goods Discord server (invite link [here](https://discord.gg/wR679hNxTf)) and follow the Network Research twitter ([@Protoresearch](https://twitter.com/ProtoResearch)) to learn about upcoming events, including our next *Funding the Commons* workshop June 15-17 2022 (in-person, location TBD). See you at the Commons!
 
