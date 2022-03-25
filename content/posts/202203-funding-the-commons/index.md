@@ -38,7 +38,7 @@ draft: false
 
 ---
 
-The Network Goods team at Protocol Labs recently held  the second in a continuing series of events bringing together researchers and thought leaders to discuss novel experiments and future directions for funding our collective commons.
+The Network Goods team at Protocol Labs recently held the second in a continuing series of events bringing together researchers and thought leaders to discuss novel experiments and future directions for funding our collective commons.
 
 The [*_Funding the Commons_*](https://fundingthecommons.io/) series is intended to stimulate and showcase research and discussion about innovative funding methods for critical public goods and open-source networks. Over a two-day virtual summit held March 3-4, participants enjoyed presentations from researchers, inventors, and thought leaders in the network goods funding space, including Jaan Tallinn of  the  [Future of Life Institute](https://futureoflife.org/) & the [Center for the Study of Existential Risk](https://www.cser.ac.uk/), Allison Duettmann of the [Foresight Institute](https://foresight.org/), Scott Moore of [Gitcoin](https://gitcoin.co/),  and Tom Kalil of [Schmidt Futures](https://www.schmidtfutures.com/).
 
