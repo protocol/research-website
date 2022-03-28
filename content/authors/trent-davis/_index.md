@@ -3,11 +3,11 @@
 name: Trent Davis
 
 # Role/position (e.g. Research Scientist)
-role: Research Administrator
+role: Research Marketing Lead
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-  -
+  - network-research
 
 # Avatar (no need to edit)
 resources:
