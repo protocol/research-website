@@ -87,8 +87,8 @@ We invite you to watch our recent Protocol Labs Research Seminar, which goes int
 Then, if you want to go deep on how the system works or would like to take our reference implementation of the protocol for a spin, you might proceed to:
 * Read our [living spec](https://github.com/protocol/ConsensusLab/blob/main/docs/b1.pdf) (updates to the spec are reflected in this address “real-time”)
 * Read the [code](https://github.com/filecoin-project/eudico/) and contribute
-* Follow our [roadmap](https://github.com/protocol/ConsensusLab/issues/4)
-* And join our [discussions](https://github.com/filecoin-project/eudico/discussions) by contributing your ideas, thoughts, or feedback
+* Follow our [roadmap](https://github.com/protocol/ConsensusLab/)
+* And join our [discussions](https://github.com/protocol/ConsensusLab/discussions) by contributing your ideas, thoughts, or feedback
 
 We will continue to expand on this subject in the near future, so be sure to check the blog for new posts.
 
