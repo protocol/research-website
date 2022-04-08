@@ -4,7 +4,7 @@ title: Matteo Campanelli Joins CryptoNetLab as a Research Scientist
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-04-05
+date: 2022-04-08
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
