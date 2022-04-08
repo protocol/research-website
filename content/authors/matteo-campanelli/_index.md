@@ -43,7 +43,7 @@ social:
   - icon: github
     link: https://github.com/matteocam
   - icon: link
-    link: https://binarywhales.com
+    link: http://binarywhales.com
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
