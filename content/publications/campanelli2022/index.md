@@ -31,7 +31,7 @@ publication_types:
   - report
 
 authors:
-  - "Matteo Campanelli"
+  - matteo-campanelli
   - rosario-gennaro
   - "Kelsey Melissaris"
   - luca-nizzardo
