@@ -1,5 +1,5 @@
 ---
-title: "Witness-Authenticated Key Exchange Revisited: Improved Models, Simpler Constructions, Extensions to Groups"
+title: "Witness-authenticated key exchange revisited: Improved models, simpler constructions, extensions to groups"
 
 # Website post date
 date: 2022-03-31
