@@ -41,7 +41,7 @@ draft: false
 [CryptoNetLab](/groups/cryptonetlab/) is pleased to welcome [Matteo Campanelli](/authors/matteo-campanelli) to the team as a research scientist. 
 
 
-Matteo previously worked as a postdoctoral researcher at Aarhus University (with Claudio Orlandi) and at the IMDEA Software Institute (with Dario Fiore). He received his PhD from the City University of New York, where he studied with advisor [Rosario Gennaro](/authors/rosario-gennaro)
+Matteo previously worked as a postdoctoral researcher at Aarhus University (with Claudio Orlandi) and at the IMDEA Software Institute (with Dario Fiore). He received his PhD from the City University of New York, where he studied with advisor [Rosario Gennaro](/authors/rosario-gennaro).
 
 He has already hit the ground running at Protocol Labs: he recently authored [*Witness-Authenticated Key Exchange Revisited: Improved Models, Simpler Constructions, Extensions to Groups*](/publications/campanelli2022) with Kelsey Melissaris and fellow Labbers [Rosario Gennaro](/authors/rosario-gennaro) and [Luca Nizzardo](/authors/luca-nizzardo).
 
