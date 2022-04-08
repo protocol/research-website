@@ -48,7 +48,7 @@ As we close Q1, we’re pleased to ship the first batch of completed projects, a
 We kicked off the B1 project at the end of 2021 with the aim of building an MVP of Hierarchical Consensus (HC), an architectural evolution that aims to overcome the throughput challenges of blockchain consensus by horizontally scaling the network. We are proud to have just completed this first project in the HC workstream and now have:
 
 * An [MVP implementation of HC integrated into Eudico](https://github.com/filecoin-project/eudico/) (our fork of Lotus), with which you can run your own network with HC! You can spawn your own subnets with their own consensus protocols, send messages within a subnet as well as to other subnets, and even run executions using state hosted in multiple subnets with atomicity guarantees.
-* [A paper](https://research.protocol.ai/publications/hierarchical-consensus-a-horizontal-scaling-framework-for-blockchains/) with a description of the architecture of the HC protocol (submitted to [DINPS’22](https://research.protocol.ai/sites/dinps/))
+* [A paper](/publications/hierarchical-consensus-a-horizontal-scaling-framework-for-blockchains/) with a description of the architecture of the HC protocol (submitted to [DINPS’22](/sites/dinps/))
 * [Eudico Garden](https://github.com/filecoin-project/eudico/tree/eudico/eudicogarden), a set of basic scripts to spawn your own deployment of Eudico in AWS
 * [And lots of talks and demos!](https://github.com/protocol/ConsensusLab/issues/4)
 
