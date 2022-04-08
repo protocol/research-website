@@ -2,7 +2,7 @@
 title: "Witness-authenticated key exchange revisited: Improved models, simpler constructions, extensions to groups"
 
 # Website post date
-date: 2022-03-31
+date: 2022-04-08
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
 
