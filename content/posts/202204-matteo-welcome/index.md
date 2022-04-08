@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: Matteo Campanelli Joins CryptoNetLab as a Research Scientist
+title: Matteo Campanelli joins CryptoNetLab as a Research Scientist
 
 # Website post date
 # format YYYY-MM-DD
