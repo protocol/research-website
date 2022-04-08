@@ -41,7 +41,7 @@ Much of CryptoNetLab’s past work is exhibited in the Filecoin Research [websit
 - [Luca Nizzardo](/authors/luca-nizzardo)
 - [Rosario Gennaro](/authors/rosario-gennaro)
 - [Nicolas Gailly](/authors/nicolas-gailly)
-- Matteo Campanelli
+- [Matteo Campanelli](/authors/matteo-campanelli)
 - Dragan Zurzin
 - Kubuxu
 - Alex North
