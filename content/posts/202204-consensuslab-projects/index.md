@@ -57,7 +57,7 @@ We kicked off the B1 project at the end of 2021 with the aim of building an MVP 
 The aim of project Pikachu is to secure any blockchain based on a reusable resource (such as proof-of-space or proof-of-stake) by checkpointing it to the Bitcoin blockchain, thus leveraging the stronger security guarantees afforded by proof-of-work. Our solution leverages the recent Taproot update in Bitcoin and uses threshold multi-signature. We produced:
 
 * [A proof-of-concept](https://github.com/filecoin-project/eudico/tree/B2-with-failure) working on the Eudico blockchain and checkpointing onto the Bitcoin testnet
-* A [research paper](https://www.overleaf.com/read/vxqhmvfzgqkb) detailing the solution, arguing for its security and measuring its performance (to be submitted at [AFT'22](https://aft.acm.org/aft22/index.html))
+* A [research paper](https://www.overleaf.com/read/vxqhmvfzgqkb) detailing the solution, arguing for its security and measuring its performance (to be submitted to [AFT'22](https://aft.acm.org/aft22/index.html))
 * [And lots of talks and demos](https://github.com/protocol/ConsensusLab/issues/5)
 
 #### 🌿 Y5: Tendermint BFT as a subnet consensus PoC
