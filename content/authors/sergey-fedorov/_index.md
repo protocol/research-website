@@ -16,9 +16,9 @@ resources:
 
 # Research interests
 interests:
-  - Distributed and Decentralized Systems
-  - Byzantine Fault Tolerant Replication
-  - Blockchain
+  - Distributed and decentralized systems
+  - Byzantine fault tolerant replication
+  - Blockchains
 
 # Degrees
 education:
@@ -38,8 +38,8 @@ education:
 social:
   # - icon: twitter
   #   link: https://twitter.com/
-  # - icon: google-scholar
-  #   link: https://scholar.google.com/citations?user=PERSON-ID
+  - icon: google-scholar
+    link: https://scholar.google.com/citations?user=ugXwOr0AAAAJ&hl=en&oi=ao
   - icon: github
     link: https://github.com/sergefdrv
   # - icon: orcid
@@ -63,4 +63,4 @@ user_groups:
 
 Sergey Fedorov is a software engineer experienced in blockchain and security technologies, system and low-level software development. Sergey has been working hands-on with blockchain, trusted execution environments, CPU and hardware virtualization, Linux kernel, CPU architectures, embedded systems, and security technologies.
 
-He can never get enough of learning, sharpening and acquiring new skills. He finds the idea of collaboration behind open-source software exciting and makes his contribution whenever possible. He enjoys working in open-minded international environment, and his interest is focussed on blockchain and security technologies. 
+He can never get enough of learning, sharpening and acquiring new skills. He finds the idea of collaboration behind open-source software exciting and makes his contribution whenever possible. He enjoys working in open-minded international environment, and his interest is focussed on blockchain and security technologies.
