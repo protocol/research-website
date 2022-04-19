@@ -45,9 +45,9 @@ social:
   # - icon: orcid
   #   link: https://orcid.org/
   - icon: linkedin
-    link: https://www.linkedin.com/in/sergefdrv/
-  # - icon: researchgate
-  #   link: https://www.researchgate.net/profile/USERNAME
+    link: https://www.linkedin.com/in/sergefdrv/en
+  - icon: researchgate
+    link: https://www.researchgate.net/profile/Sergey-Fedorov-2
   # - icon: link
   #   link: anything
 
