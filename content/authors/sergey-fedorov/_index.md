@@ -16,9 +16,9 @@ resources:
 
 # Research interests
 interests:
-  - tbd
-  - tbd
-  - tbd
+  - Distributed and Decentralized Systems
+  - Byzantine Fault Tolerant Replication
+  - Blockchain
 
 # Degrees
 education:
