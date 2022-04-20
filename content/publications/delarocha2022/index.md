@@ -10,14 +10,14 @@ date: 2022-03-11
 #publishDate: 2022-03-11
 
 # Venue Name
-venue:
+venue: DINPS 22 (to appear)
 
 # Venue Location
-venue_location:
+venue_location: Bologna, Italy
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date:
+venue_date: 2022-07-10
 
 # DOI, if available
 doi:
@@ -25,7 +25,7 @@ doi:
 # Type of publication
 # delete all but one
 publication_types:
-  - report
+  - conference-paper
 
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
