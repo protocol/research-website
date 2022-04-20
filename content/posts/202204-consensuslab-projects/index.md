@@ -69,6 +69,6 @@ Y5 is a project about using a BFT-style consensus protocol in the "Consensus as 
 
 #### What's next?
 
-We have several other ongoing lines of research, including the recently started [project Y3](https://github.com/protocol/consensuslab/issues/9), which will look at implementing [MirBFT](https://github.com/hyperledger-labs/mirbft) in Eudico, enabling its use in subnet consensus.
+We have several other ongoing lines of research, including the recently started [project Y3](https://github.com/protocol/consensuslab/issues/9), which will look at implementing [Mir](https://github.com/filecoin-project/mir) in Eudico, enabling its use in subnet consensus.
 
 If you want to know more about ConsensusLab's work, visit our [GitHub repository](https://github.com/protocol/ConsensusLab/), where you'll find our [roadmap](https://app.zenhub.com/workspaces/consensuslab-60f84a7fa2395a0011e4134c/roadmap?invite=true), [projects](https://github.com/protocol/ConsensusLab/issues?q=is%3Aopen+is%3Aissue+label%3A%22%F0%9F%9A%A7+Project%22), and [discussions](https://github.com/protocol/ConsensusLab/discussions), or come talks to us in #consensus, in the [Filecoin Slack workspace](https://filecoin.io/slack). And remember, [we're hiring](https://boards.greenhouse.io/protocollabs)!
