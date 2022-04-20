@@ -4,7 +4,7 @@ title: The first graduating class of ConsensusLab projects
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-04-08
+date: 2022-04-20
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
