@@ -1,38 +1,36 @@
 ---
 # Publication title
-title: "Hierarchical consensus: A horizontal scaling framework for blockchains"
+title: "State machine replication scalability made simple"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-03-11
+date: 2022-04-20
 
 # Publish from this date (defaults to date)
 #publishDate: 2022-03-11
 
 # Venue Name
-venue: DINPS 22 (to appear)
+venue: "EuroSys '22: Seventeenth European Conference on Computer Systems"
 
 # Venue Location
-venue_location: Bologna, Italy
+venue_location: Rennes, France
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date: 2022-07-10
+venue_date: 2022-04-06
 
 # DOI, if available
-doi:
+doi: 10.1145/3492321.3519579
 
 # Type of publication
 # delete all but one
 publication_types:
   - conference-paper
 
-
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - alfonso-delarocha
-  - "Lefteris Kokoris-Kogias"
-  - jorge-soares
+  - "Chrysoula Stathakopoulou"
+  - matej-pavlovic
   - marko-vukolic
 
 # Zero or more of the areas in content/areas
@@ -70,4 +68,4 @@ unaffiliated: false
 
 ---
 
-We present the Filecoin Hierarchical Consensus framework, which aims to overcome the throughput challenges of blockchain consensus by horizontally scaling the network. Unlike traditional sharding designs, based on partitioning the state of the network, our solution centers on the concept of subnets --which are organized hierarchically-- and can be spawned on-demand to manage new state.  Child subnets are firewalled from parent subnets, have their own specific policies, and run a different consensus algorithm, increasing the network capacity and enabling new applications. Moreover, they benefit from the security of parent subnets by periodically checkpointing state. In this paper, we introduce the overall system architecture, our detailed designs for cross-net transaction handling, and the open questions that we are still exploring.
+Consensus, state machine replication (SMR) and total order broadcast (TOB) protocols are notorious for being poorly scalable with the number of participating nodes. Despite the recent race to reduce overall message complexity of leader-driven SMR/TOB protocols, scalability remains poor and the throughput is typically inversely proportional to the number of nodes. We present Insanely Scalable State Machine Replication, a generic construction to turn leader-driven protocols into scalable multi-leader ones. For our scalable SMR construction we use a novel primitive called Sequenced (Total Order) Broadcast (SB) which we wrap around PBFT, HotStuff and Raft leader-driven protocols to make them scale. Our construction is general enough to accommodate most leader-driven ordering protocols (BFT or CFT) and make them scale. Our implementation improves the peak throughput of PBFT, HotStuff, and Raft by 37x, 56x, and 55x, respectively, at a scale of 128 nodes.
