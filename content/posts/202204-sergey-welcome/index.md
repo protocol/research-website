@@ -4,7 +4,7 @@ title: Sergey Fedorov joins ConsensusLab as a Research Engineer
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-04-19
+date: 2022-05-05
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
