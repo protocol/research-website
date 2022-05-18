@@ -4,7 +4,7 @@ title: "ConsensusDay 22: call for contributions"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-05-17
+date: 2022-05-18
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
