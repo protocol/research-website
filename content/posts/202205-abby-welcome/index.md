@@ -44,12 +44,12 @@ We asked Abby about what brought her to Protocol Labs, the projects she'll be wo
 
 **How did you decide to join Protocol Labs, and what are you working on?**
 
->
+> I was drawn to how focused Protocol Labs is on educating people about web3 as a whole and bettering its environment. Everyone I spoke with seemed so excited about their work and what's to come. Protocol Labs struck me as a place which is not afraid of change or pushing boundaries. I'll be assisting with research collaborations and supporting various research-development goals.
 
 **What research problems are you most interested in exploring?**
 
->
+> I'm most interested in exploring distributed power systems and knowledge engineering.
 
 **What future technology are you most excited about?**
 
-> 
+> Decentralization and all that comes with it!
