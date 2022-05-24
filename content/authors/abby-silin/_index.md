@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Liz Bryson
+name: Abby Silin
 
 # Role/position (e.g. Research Scientist)
 role: Research Administrator
@@ -57,4 +57,4 @@ user_groups:
 # quote: "Experiencing the world through endless second hand information isn't enough. If we want authenticity, we have to initiate it." - Travis Rice
 ---
 
-Liz spent six years investigating diverse research questions at Trinity College Dublin, the University of Edinburgh, and the University of Pennsylvania, among others. While she is most content traversing transgenerational unconscious topologies, she has also promoted open-access, sustainable public policy research with state governments and designed ecological momentary assessment studies to capture toddlers’ psychological development. She is broadly interested in ensuring that the infrastructure of our lives promotes individual and community wellbeing; wresting control of these physical and digital spaces from monopolies; and extending research beyond the boundaries of traditional academic settings and presumptions. On occasion, she writes and edits (and helps others write and edit).
+Add bio here

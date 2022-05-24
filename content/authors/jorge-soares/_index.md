@@ -10,7 +10,7 @@ authors:
 role: Research Program Manager
 
 groups:
-- network-research
+- research-acceleration
 
 resources:
   - name: avatar
