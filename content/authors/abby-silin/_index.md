@@ -21,15 +21,8 @@ interests:
 
 # Degrees
 education:
-  courses:
-  - course: MSc Psychology of Mental Health
-    institution: University of Edinburgh
-    year: 2017
-  - course: MPhil Psychoanalytic Studies
-    institution: Trinity College Dublin
-    year: 2014
-  - course: MA (Hons) History of Art/Literature in a World Context
-    institution: University of Aberdeen
+  - course: BA (Hons) Art, Communication, and the Environment
+    institution: Green Mountain College
     year: 2013
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
