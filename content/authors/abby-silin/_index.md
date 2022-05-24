@@ -21,6 +21,7 @@ interests:
 
 # Degrees
 education:
+  courses:
   - course: BA (Hons) Art, Communication, and the Environment
     institution: Green Mountain College
     year: 2013
