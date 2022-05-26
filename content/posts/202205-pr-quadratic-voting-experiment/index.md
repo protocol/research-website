@@ -47,7 +47,7 @@ summary: "The PL Network Goods team launched a quadratic voting funding experime
 
 The Protocol Labs Network Goods team launched the _Filecoin Community PR_ program as a focused experiment to retroactively reward contributions to public goods within Protocol Labs.  The goal was to test the [quadratic voting mechanism](https://vitalik.ca/general/2019/12/07/quadratic.html) proposed by (Vitalik, Weyl, et al.) and popularized by Gitcoin as a method to assess and allocate public goods funding. This test is part of our broader strategy to formalize [retroactive impact evaluation](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c) (as popularized by Ethereum & Optimism) as a scalable method to fund and incentivize development of public goods in the Protocol Labs ecosystem.
 
-To set up this trial we defined retroactive “impact evaluation” into 3 broad steps:
+To set up this trial, we defined retroactive “impact evaluation” into 3 broad steps:
 
 1. Define a clear scope of historical activities for evaluation
 2. Quantify the total magnitude of impact created for this scope into a FIL-denominated reward
