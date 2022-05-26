@@ -7,10 +7,10 @@ authors:
   - jorge-soares
 
 # Role/position
-role: Research Program Manager
+role: Technical Program Manager
 
 groups:
-- network-research
+- consensuslab
 
 resources:
   - name: avatar

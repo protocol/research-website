@@ -7,7 +7,7 @@ role: Research Marketing Lead
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-  - network-research
+  - "Research Marketing"
 
 # Avatar (no need to edit)
 resources:

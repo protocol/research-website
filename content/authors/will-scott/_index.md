@@ -7,7 +7,6 @@ role: Research Engineer
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-  - IPFS
 
 # Avatar (no need to edit)
 resources:

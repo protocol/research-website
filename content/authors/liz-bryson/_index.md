@@ -7,7 +7,7 @@ role: Research Administrator
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-- network-research
+- "Research Acceleration"
 
 # Avatar (no need to edit)
 resources:
