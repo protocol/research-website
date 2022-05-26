@@ -4,7 +4,7 @@ title: "A Public Goods experiment on Filecoin: Retroactively funding impact with
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-05-26
+date: 2022-05-27
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
