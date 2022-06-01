@@ -100,6 +100,22 @@ html {
 @tailwind utilities;
 
 /* purgecss ignore */
+th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* purgecss ignore */
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+/* purgecss ignore */
 #off-canvas-nav {
   transform: translate3d(100%, 0, 0);
   transition: transform 300ms ease-in-out;
@@ -196,7 +212,7 @@ figcaption {
 }
 
 ul {
-  @apply pl-4 pt-1 pb-4 ml-6 list-disc;
+  @apply pl-4 pt-1 pb-1 ml-6 list-disc;
 }
 
 ul li li {
