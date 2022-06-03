@@ -1,10 +1,10 @@
 ---
 # Blog post title
-title: ConsensusLab welcomes its summer fellows!
+title: ConsensusLab welcomes its 2022 summer fellows!
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-06-04
+date: 2022-06-03
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -35,7 +35,7 @@ The [ConsensusLab](/groups/consensuslab) team is excited to welcome our first su
 
 We asked our summer fellows about their paths to Protocol Labs Research, the projects that interest them most, and their thoughts about future technological developments:
 
-## [Andreii Tonkikh](/authors/andrei-tonkikh/)
+### [Andrei Tonkikh](/authors/andrei-tonkikh/)
 
 **What brought you to PL?**
 > The opportunity to contribute to bridging the theory and practice of distributed computing.
@@ -47,7 +47,7 @@ We asked our summer fellows about their paths to Protocol Labs Research, the pro
 > I look forward to people learning to build societies (from a small company to a country to the whole of humanity) in ways that would be fair, resistant to dictatorship and populism, and would be the most beneficial in a long term. Maybe, one day, the knowledge that we get from studying fault-tolerant distributed systems could be applied to create fault-tolerant societies?
 
 
-## [Xuechao Wang](/authors/xuechao-wang/)
+### [Xuechao Wang](/authors/xuechao-wang/)
 
 **What brought you to PL?**
 > I was honored to be invited to give a talk at PL research seminar. During that time, I found that many of research projects at PL very interesting and exciting. Particularly, a few ongoing projects at ConsensusLab have strong connections to my past research experience. After spending several years in academia, I feel this could be a great opporunity for me to learn the real-world challenges of deploying consensus protocols in practice.
@@ -58,7 +58,7 @@ We asked our summer fellows about their paths to Protocol Labs Research, the pro
 **What future technology are you most excited about?**
 > I am most excited to see how killer apps of the blockchain technology such as decentralized storage and decentralized finance prevail in the next few years.
 
-## [Yann Vonlanthen](/authors/yann-vonlanthen/)
+### [Yann Vonlanthen](/authors/yann-vonlanthen/)
 
 **What brought you to PL?**
 > I watched one of the online talks held by a member of the PL ConsensusLab and was excited to see that we work on very similar topics.
