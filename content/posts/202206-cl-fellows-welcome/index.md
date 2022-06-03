@@ -4,7 +4,7 @@ title: ConsensusLab welcomes its summer fellows!
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-05-24
+date: 2022-06-04
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -38,34 +38,33 @@ We asked our summer fellows about their paths to Protocol Labs Research, the pro
 ## [Andreii Tonkikh](/authors/andrei-tonkikh/)
 
 **What brought you to PL?**
-> todo
+> The opportunity to contribute to bridging the theory and practice of distributed computing.
 
 **What are you working on? What would you like to work on?**
-> todo
+> Recently, I've been working on asynchronous and partially-synchronous consensus protocols, random number generation, and distributed key generation protocols. At Protocol Labs, I will be working on a practical implementation of a scalable structured mempool protocol.
 
 **What future technology are you most excited about?**
-> todo
+> I look forward to people learning to build societies (from a small company to a country to the whole of humanity) in ways that would be fair, resistant to dictatorship and populism, and would be the most beneficial in a long term. Maybe, one day, the knowledge that we get from studying fault-tolerant distributed systems could be applied to create fault-tolerant societies?
 
 
 ## [Xuechao Wang](/authors/xuechao-wang/)
 
 **What brought you to PL?**
-> todo
+> I was honored to be invited to give a talk at PL research seminar. During that time, I found that many of research projects at PL very interesting and exciting. Particularly, a few ongoing projects at ConsensusLab have strong connections to my past research experience. After spending several years in academia, I feel this could be a great opporunity for me to learn the real-world challenges of deploying consensus protocols in practice.
 
 **What are you working on? What would you like to work on?**
-> todo
+> I am trilled to be part of the amazing ConsensusLab at PL. Currently, I am working on the consensus protocol of Filecoin mainnet, including the analysis of Filecoin Expected Consensus and the design and development of improvements and mitigations to any vulnerabilities. I would also like to work on any project that aims to improve Filecoin security and performance. In general, I enjoy designing, attacking and analyzing new consensus protocols.
 
 **What future technology are you most excited about?**
-> todo
-
+> I am most excited to see how killer apps of the blockchain technology such as decentralized storage and decentralized finance prevail in the next few years.
 
 ## [Yann Vonlanthen](/authors/yann-vonlanthen/)
 
 **What brought you to PL?**
-> todo
+> I watched one of the online talks held by a member of the PL ConsensusLab and was excited to see that we work on very similar topics.
 
 **What are you working on? What would you like to work on?**
-> todo
+> I am working on a state-of-the-art survey on concurrency control techniques in distributed systems.
 
 **What future technology are you most excited about?**
-> todo
+> Apart from blockchain and digital democracy, advances in rocketry and quantum computing.
