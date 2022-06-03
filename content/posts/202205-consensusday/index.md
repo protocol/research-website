@@ -39,7 +39,7 @@ draft: false
 
 After a wildly successful 2021 edition, ConsensusDay is back for 2022! The goal remains the same: to provide a forum for the discussion of early-stage but high-impact research with scientific interest and real-world applications and to build a community around it. This time, however, we'll be experimenting with a new format.
 
-We're happy to announce that [ConsensusDay 22](/sites/consensusday22/) has been accepted as a workshop at ACM CCS 2022, a top conference in security. The workshop will take place over a full day (either 7 or 11 November; to be confirmed) in Los Angeles, CA, USA, and will have formal proceedings.
+We're happy to announce that [ConsensusDay 22](/sites/consensusday22/) has been accepted as a workshop at ACM CCS 2022, a top conference in security. The full-day workshop will take place on 11 November in Los Angeles, CA, USA, and will have formal proceedings.
 
 At this time, we invite you to submit your work-in-progress papers, position papers, and demos for presentation at the workshop. Be sure to check out the [call for contributions](/sites/consensusday22/calls/) for full details. The submission deadline is **24 June 2022**. If you have any questions, send us an email or come to #consensus in the [Filecoin slack](https://filecoin.io/slack).
 
