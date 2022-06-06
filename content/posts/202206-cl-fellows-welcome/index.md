@@ -50,7 +50,7 @@ We asked our summer fellows about their paths to Protocol Labs Research, the pro
 ### [Xuechao Wang](/authors/xuechao-wang/)
 
 **What brought you to PL?**
-> I was honored to be invited to give a talk at PL research seminar. During that time, I found that many of research projects at PL very interesting and exciting. Particularly, a few ongoing projects at ConsensusLab have strong connections to my past research experience. After spending several years in academia, I feel this could be a great opporunity for me to learn the real-world challenges of deploying consensus protocols in practice.
+> I was honored to be invited to give a talk at PL research seminar. During that time, I found that many of research projects at PL very interesting and exciting. Particularly, a few ongoing projects at ConsensusLab have strong connections to my past research experience. After spending several years in academia, I feel this could be a great opportunity for me to learn the real-world challenges of deploying consensus protocols in practice.
 
 **What are you working on? What would you like to work on?**
 > I am trilled to be part of the amazing ConsensusLab at PL. Currently, I am working on the consensus protocol of Filecoin mainnet, including the analysis of Filecoin Expected Consensus and the design and development of improvements and mitigations to any vulnerabilities. I would also like to work on any project that aims to improve Filecoin security and performance. In general, I enjoy designing, attacking and analyzing new consensus protocols.
