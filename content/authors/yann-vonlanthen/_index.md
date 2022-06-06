@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Andrei Tonkikh
+name: Yann Vonlanthen
 
 # Role/position (e.g. Research Scientist)
 role: Summer Fellow
