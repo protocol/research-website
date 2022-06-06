@@ -4,7 +4,7 @@ title: "A deep dive into DKG, chain of SNARKs, and arkworks"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-06-01
+date: 2022-06-06
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
