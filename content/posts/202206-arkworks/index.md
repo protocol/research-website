@@ -229,7 +229,7 @@ The scalar multiplication algorithm can be found [here](https://github.com/arkwo
 
 The encryption is stated as:
 $$
-$c_i = \{rG, H(rPK_i) + s_i\} \in (E(F_q),F_r)$
+c_i = \{rG, H(rPK_i) + s_i\} \in (E(F_q),F_r)
 $$
 For the hash function, we use arkworks' [Poseidon implementation](https://github.com/arkworks-rs/sponge). A possible optimization, and one that we implemented, is to reuse the same random element $rG$ in the entire encryption. This avoids one linear operation inside the circuit. Normally, one would never reuse a randomness, but in this case, since the dealer creates the different ciphertexts, it's okay as long as he can extract both ciphertexts. As for recipients, it's highly unlikely to have a collision between two $rPK_i$ and $rPK_j$ given the same $r$ and $PK_i \neq PK_j$.
 
