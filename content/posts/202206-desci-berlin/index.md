@@ -69,7 +69,7 @@ Want to know more?  Dive into the available [Roam JS extension](https://oasis-la
 
 And that’s not all, we were not alone at DeSci Berlin! Our [Bacalhau](https://bacalhau.org) friends were also there, showcasing how Protocol Labs is committed to building the infrastructure to democratize access to science. Bacalhau (Portuguese word for COD, or Compute Over Data) is bringing data storage and computation power closer together on-chain, a network of open compute resources to serve a data processing workload and reinvent science through reproducible data pipelines. Check the [videos](https://www.youtube.com/watch?v=WnTlwXHhbcI&list=PLhuBigpl7lqsg9s4l9TXiIX5vemchi5kz) of the latest Compute over Data summit to learn more details about the project!
 
-![](bacalhau_session.png)
+![](bacallhau_session.png)
 
 That’s it, Protocol Labs mixes research projects with infrastructure development and deployment to give researchers and developers distributed tools to unlock new collaborative ecosystems… and accelerate decentralized science!
 
