@@ -1,12 +1,12 @@
 ---
 # Display name
-name: Yann Vonlanthen
+name: Andrei Tonkikh
 
 # Role/position (e.g. Research Scientist)
 role: Summer Fellow
 
 # Existing research group (use folder name) or free text
-research_groups:
+groups:
   - consensuslab
 
 # Avatar (no need to edit)

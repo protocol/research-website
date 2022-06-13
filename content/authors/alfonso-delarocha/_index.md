@@ -6,7 +6,7 @@ name: Alfonso de la Rocha
 role: Research Engineer
 
 # Existing research group (use folder name) or free text
-research_groups:
+groups:
   - consensuslab
 
 # Avatar (no need to edit)
