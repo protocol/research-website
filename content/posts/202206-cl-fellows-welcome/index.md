@@ -4,7 +4,7 @@ title: ConsensusLab welcomes its 2022 summer fellows!
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-06-03
+date: 2022-06-13
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
