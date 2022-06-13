@@ -24,6 +24,11 @@ For more information on our problems of interest, projects, and other activities
 * [Matej Pavlovic](/authors/matej-pavlovic/) (Research Scientist)
 * [Jorge Soares](/authors/jorge-soares/) (Technical Program Manager)
 
+## Visiting researchers
+* [Andrei Tonkikh](/authors/andrei-tonkikh/) (Summer Fellow)
+* [Yann Vonlanthen](/authors/yann-vonlanthen/) (Summer Fellow)
+* [Xuechao Wang](/authors/xuechao-wang/) (Summer Fellow)
+
 ## Problems of interest
 * [Hierarchical consensus](https://github.com/protocol/ConsensusLab/issues/3)
 * [Consensus protocols](https://github.com/protocol/ConsensusLab/issues/2)
