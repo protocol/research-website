@@ -38,7 +38,7 @@ draft: false
 ---
 __*Understanding public goods and commons, their role in society, and new opportunities made possible by web3*__
 
-*TLDR: Public goods and Commons are an important class of products that are typically under-funded due to shortcomings in existing market mechanics but create tremendous value for individuals and whole ecosystems. Web3 provides an ideal testing ground for mechanisms that solve this investment gap - the next “[Funding the Commons]” event on June 24-25 in NYC will continue bringing together investors, mechanism designers, and builders to drive progress on this goal.*
+*TLDR: Public goods and Commons are an important class of products that are typically under-funded due to shortcomings in existing market mechanics but create tremendous value for individuals and whole ecosystems. Web3 provides an ideal testing ground for mechanisms that solve this investment gap. The next “[Funding the Commons]” event on June 24-25 in NYC will continue bringing together investors, mechanism designers, and builders to drive progress on this goal.*
 
 ## Overview
 
