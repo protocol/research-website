@@ -49,7 +49,7 @@ While the term “public goods” has recently become popularized in web3 and re
 
 | *Characteristic* | **Rivalrous**                                | **Non-rivalrous**                                                                                                           |
 |------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| *Excludable*     | Private goods (homesteads, bathroom cleaner) | Club goods (Sports clubs, movie theaters)                                                                                   |
+| *Excludable*     | Private goods (homesteads, bathroom cleaner) | Club goods (sports clubs, movie theaters)                                                                                   |
 | *Non-excludable* | Common resource goods (fish stocks)          | Public goods: local (fire protection), national (national defense), global (climate mitigation measures), partial (parades) |
 
 [Source: Stanford Encyclopedia of Philosophy]
