@@ -74,7 +74,7 @@ Failures in the existing market paradigm has led to underinvestment; new solutio
 
 ## How are public goods and commons currently supported?
 
-One way to think of public and network goods is the scope by which they create impact and are funded (e.g. nation state, the internet, web3 ecosystems). For simplicity in this discussion we use the term “Network goods” to indicate a public good on the scale of a specific network of interacting individuals and organizations, especially since the distinction between a public good and common good can be unclear in the case of some knowledge and software goods.
+One way to think of public and network goods is the scope by which they create impact and are funded (e.g. nation state, the internet, web3 ecosystems). For simplicity in this discussion we use the term “network goods” to indicate a public good on the scale of a specific network of interacting individuals and organizations, especially since the distinction between a public good and common good can be unclear in the case of some knowledge and software goods.
 
 Existing solutions to the public and commons goods typically take the form of two general categories of mechanisms:
 
