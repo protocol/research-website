@@ -16,7 +16,7 @@ authors:
 
 # If applicable
 categories:
-  -
+  - blog
 
 # If applicable
 tags:
