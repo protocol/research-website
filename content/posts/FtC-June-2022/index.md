@@ -88,7 +88,7 @@ Because of their collective benefits, public goods are understood to be an essen
 
 The dominant funding mechanism in this case has been taxation, whereby a large enough entity (a national government) can capture enough value from public goods to sustainably redirect funding towards goods that could not be funded by any one smaller organization. Community - driven and individual philanthropy has also been a social mechanism to redirect localized excess value captured into public goods and commons.
 
-Government funding is by nature a top-down central entity which often delivers suboptimal local outcomes - this has however led to great innovations that enabled further public goods and commons to flourish such as the internet.
+Government funding is by nature a top-down centralized endeavour which often delivers suboptimal local outcomes - this has, however, led to great innovations that enabled further public goods and commons to flourish such as the internet.
 
 ### Internet public goods and commons
 
