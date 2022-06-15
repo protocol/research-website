@@ -106,7 +106,7 @@ The focus on community, collective intelligence, and resilience in web3 has led 
 
 Web3 is a great testing ground with structures that allow for new economic models to develop rapidly and at scale. Models that are closer to self-assembly are now possible, where decentralized planning and coordination brings together the mechanisms, experts, and funding that are necessary to sustain both public and common goods. In time, they could become a boon to open source development as well as research and science, and quickly scale beyond Web3 to broader society.
 
-Protocol Labs is focused on researching and developing better tools for collaboration and public goods and commons funding. If you’re interested in being a part of this, be sure to join the community for the first in-person [Funding the Commons][1] event at the New York Historical Society on June 24-25. [Registrations are open]. To learn more about Funding the Commons you can watch recordings from [past][] [events].
+Protocol Labs is focused on researching and developing better tools for collaboration and public goods and commons funding. If you’re interested in being a part of this, be sure to join the community for the first in-person [Funding the Commons][1] event at the New York Historical Society on June 24-25. [Registrations are open]. To learn more about Funding the Commons, you can watch recordings from [past] [events].
 
   [Funding the Commons]: http://fundingthecommons.io/
   [Source: Stanford Encyclopedia of Philosophy]: https://plato.stanford.edu/entries/public-goods/
