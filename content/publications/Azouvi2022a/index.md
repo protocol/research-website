@@ -10,7 +10,7 @@ date: 2022-01-26
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: "Financial Cryptography and Data Security 2022 (to appear)"
+venue: "Financial Cryptography and Data Security 2022"
 
 # Venue Location
 venue_location: St. George's, Grenada
