@@ -4,7 +4,7 @@ title: "Network Research and Bacalhau at DeSci Berlin"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-06-13
+date: 2022-06-20
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
