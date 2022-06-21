@@ -351,6 +351,8 @@ We need to hash a point in order to get some "non-native" $F_r$ as an output. Th
 
 Unfortunately, because the circuit interface only exposes a projective point, we can't use the affine form. Thus, we need to hash $(x,y,z)$ entirely, which moderately increases the cost of hashing in the circuit. The change required to get there is actually pretty small (see [PR](https://github.com/arkworks-rs/algebra/pull/407)) so hopefully this will be lifted in future releases.
 
+**Edit**: It is now integrated in the master branch of Arkworks !
+
 ### Public inputs of the inner Groth16
 
 The inner proof, the one that verifies the correct share evaluation, uses the inner curve, and thus **its public inputs are $F_r$ elements**. However, the circuit that verifies this proof **is defined over $F_q$**.
