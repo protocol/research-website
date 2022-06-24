@@ -38,7 +38,7 @@ draft: false
 
 [ConsensusLab](/groups/consensuslab/) are excited to welcome [Akosh Farkash](/authors/akosh-farkash) to the team!
 
-Sergey joins us from IOHK and CasperLabs, where he helped develop robust and performant blockchain systems, mainly working in Scala and Rust.
+Akosh joins us from IOHK and CasperLabs, where he helped develop robust and performant blockchain systems, mainly working in Scala and Rust.
 
 We asked Akosh about his journey and what brought him to Protocol Labs, the projects he'll be working on, and his thoughts on future technological developments:
 
