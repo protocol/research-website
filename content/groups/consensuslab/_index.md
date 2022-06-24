@@ -19,8 +19,10 @@ For more information on our problems of interest, projects, and other activities
 * [Marko Vukolić](/authors/marko-vukolic/) (Lead)
 * [Sarah Azouvi](/authors/sarah-azouvi/) (Research Scientist)
 * [Alfonso de la Rocha](/authors/alfonso-delarocha/) (Research Engineer)
+* [Akosh Farkash](/authors/akosh-farkash/) (Research Engineer)
 * [Sergey Fedorov](/authors/sergey-fedorov/) (Research Engineer)
 * [Denis Kolegov](/authors/denis-kolegov/) (Research Engineer)
+* [Willes Lau]((authors/willes-lau/) (Research Engineer)
 * [Matej Pavlovic](/authors/matej-pavlovic/) (Research Scientist)
 * [Jorge Soares](/authors/jorge-soares/) (Technical Program Manager)
 
