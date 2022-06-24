@@ -37,7 +37,7 @@ groups:
 # Name the cover image featured.jpg
 resources:
   - title: featured-image
-    src: featured.png
+    src: featured.jpg
 
 # Short abstract
 # Describe talk here
