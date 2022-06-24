@@ -48,4 +48,4 @@ Talks included:
 
 The day closed with a panel bringing together some of the speakers and the audience, and appropriately titled "[Decentralized Reflections on Consensus](https://youtu.be/f7g67E5aRFw)". You'll find the [full playlist here](https://www.youtube.com/playlist?list=PLhuBigpl7lqt1u31AXFIVttjYVS8X9fpO), and each talked linked from the list above.
 
-If you can't get enough of consensus, note that the submission deadline for [ConsensusDay 22](/sites/consensusday22/calls/) has been extended to 1 July. There is still time to submit and join us in November at CCS. See you there!
+If you can't get enough of consensus, note that the submission deadline for [ConsensusDay 22](/sites/consensusday22/calls/) has been extended to 1 July. There is still time to submit and join us in November at [ACM CCS 2022](https://www.sigsac.org/ccs/CCS2022/) in Los Angeles. See you there!
