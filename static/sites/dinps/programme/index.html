@@ -65,12 +65,21 @@
         08:45 - 09:45 CEST
       </td>
       <td class="title-special">
-        Keynote: Title TBD
+        Keynote: Towards World-Wide Total Event Ordering
       </td>
     </tr>
     <tr>
       <td class="speaker">
         Robbert van Renesse (Cornell University)
+        
+        Abstract: The shared log abstraction has proved to be an important building block for distributed systems. It underlies 
+        other key abstractions such as state machine replication, atomic transactions, accountability, stream processing, and 
+        deterministic replay. Shared logs can also play a pivotal role in infrastructure control planes and global service management.  
+        Unfortunately, existing shared log implementations make painful and rather extreme trade-offs between desirable features such 
+        as low latency (both average and tail latency), high throughput, fault tolerance, and consistency properties such as total 
+        and causal order. While some trade-offs are unavoidable, we aim to demonstrate that it is possible to create a worldwide log 
+        by weaving together existing logs. The resulting interlog achieves all the desirable properties at the same time.  Some key 
+        insights include separating ordering from storage and ordering events before they happen.
       </td>
     </tr>
   </table>
