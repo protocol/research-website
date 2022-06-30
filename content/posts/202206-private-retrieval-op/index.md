@@ -41,7 +41,7 @@ draft: false
 *tl;dr: We'd like to develop additional protocol-compatible primitives allowing users to interact privately with Web3 content.*
 
 
-Central to the Web3 vision of an open, permissionless, and decentralized internet is the ability of  parties to interact directly and *privately* with each  while retaining ownership of their data. 
+Central to the Web3 vision of an open, permissionless, and decentralized internet is the ability of parties to interact directly and *privately* with each other while retaining ownership of their data. 
 
 We believe that the creation of more viable mechanisms for private communications, as part of a focused research effort on privacy-preserving communication, will lead to better options for reader private access to the content stored in the interplanetary network and content-addressed-data more broadly.
 
