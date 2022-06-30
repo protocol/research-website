@@ -45,7 +45,7 @@ Central to the Web3 vision of an open, permissionless, and decentralized interne
 
 We believe that the creation of more viable mechanisms for private communications, as part of a focused research effort on privacy-preserving communication, will lead to better options for reader private access to the content stored in the interplanetary network and content-addressed-data more broadly.
 
-Right now, the most privacy-preserving method of accessing content stored on IPFS or Filecoin is through a gateway: only the gateway learns the data requestor's IP address, but the entire network can observe many aspects of the request. 
+Right now, the strongest privacy guarantees for accessing content stored on IPFS or Filecoin come through a gateway: only the gateway learns the data requestor's IP address, but the entire network can observe several  aspects of metadata associated with the request. 
 
 We'd like to implement trustless and intermediary-free access to Web3 data where communication is low latency and reader-private, but we are not aware of a present system design that meets all of these criteria.
 
