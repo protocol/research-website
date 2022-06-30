@@ -47,7 +47,7 @@ We believe that the creation of more viable mechanisms for private communication
 
 Right now, the most privacy-preserving method of accessing content stored on IPFS or Filecoin is through a gateway: only the gateway learns the data requestor's IP address, but the entire network can observe many aspects of the request. 
 
-We'd like to fully implement the trustless and intermediary-free vision for Web3 data access by enabling low latency reader-private communication, but we are not aware of a present system that meets all of our design criteria.
+We'd like to implement trustless and intermediary-free access to Web3 data where communication is low latency and reader-private, but we are not aware of a present system design that meets all of these criteria.
 
 So we're posting an [Open Problem](https://github.com/protocol/research) to stimulate research and development of interactive private communication mechanisms -- you can  read the full details in the Open Problem Statement posted in the public PL research github repo. While we haven't found a full solution yet, the Open Problem Statement cites some of the exciting research in this area that we believe will be a useful touchpoint in creating novel designs.
 
