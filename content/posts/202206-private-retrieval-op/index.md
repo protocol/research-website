@@ -43,7 +43,7 @@ draft: false
 
 Central to the Web3 vision of an open, permissionless, and decentralized internet is the ability of  parties to interact directly and *privately* with each  while retaining ownership of their data. 
 
-We believe that the creation of more viable mechanisms for private communications, as part of a focused research effort on privacy-preserving communication, will lead to better options for reader private access to the content stored in the interplanetary network t and  content-addressed-data more broadly.
+We believe that the creation of more viable mechanisms for private communications, as part of a focused research effort on privacy-preserving communication, will lead to better options for reader private access to the content stored in the interplanetary network and content-addressed-data more broadly.
 
 Right now, the most privacy-preserving method of accessing  content stored on IPFS or Filecoin is through a gateway: only the gateway learns the data requestor's IP address, but the entire network can observe many aspects of the request. 
 
