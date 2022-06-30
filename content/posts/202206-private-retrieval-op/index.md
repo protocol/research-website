@@ -51,7 +51,7 @@ We'd like to fully implement the trustless and intermediary-free vision for Web3
 
 So we're posting an [Open Problem](https://github.com/protocol/research) to stimulate research and development of interactive private communication mechanisms -- you can  read the full details in the Open Problem Statement posted in the public PL research github repo. While we haven't found a full solution yet, the Open Problem Statement cites some of the exciting research in this area that we believe will be a useful touchpoint in creating novel designs.
 
-One welcome response to an Open Problem Statement is a *better-formulated problem*: if you have ideas about how to clarify  or refactor the problem or would like to suggest additional designs or projects in the space that we should investigate, please join the [discussion](https://github.com/protocol/research/discussions/63). 
+One welcome response to an Open Problem Statement is a *better-formulated problem*: if you have ideas about how to clarify or refactor the problem or would like to suggest additional designs or projects in the space that we should investigate, please join the [discussion](https://github.com/protocol/research/discussions/63). 
 
 We plan to develop this Open Problem into an RFP and are exited to sponsor research projects within its scope -- stay tuned for more details!
 
