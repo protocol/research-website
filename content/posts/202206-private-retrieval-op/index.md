@@ -49,7 +49,7 @@ Right now, the strongest privacy guarantees for accessing content stored on IPFS
 
 We'd like to implement trustless and intermediary-free access to Web3 data where communication is low latency and reader-private, but we are not aware of a present system design that meets all of these criteria.
 
-So we're posting an [Open Problem](https://github.com/protocol/research) to stimulate research and development of interactive private communication mechanisms -- you can  read the full details in the Open Problem Statement posted in the public PL research github repo. While we haven't found a full solution yet, the Open Problem Statement cites some of the exciting research in this area that we believe will be a useful touchpoint in creating novel designs.
+So we're posting an [Open Problem](https://github.com/protocol/research) to stimulate research and development of interactive private communication mechanisms -- you can read the full details in the open problem statement posted in the public PL research GitHub repo. While we haven't found a full solution yet, the open problem statement cites some of the exciting research in this area that we believe will be a useful touchpoint in creating novel designs.
 
 One welcome response to an Open Problem Statement is a *better-formulated problem*: if you have ideas about how to clarify or refactor the problem or would like to suggest additional designs or projects in the space that we should investigate, please join the [discussion](https://github.com/protocol/research/discussions/63). 
 
