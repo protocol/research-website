@@ -16,9 +16,9 @@ resources:
 
 # Research interests
 interests:
-  - a
-  - b
-  - c
+  - Integrating Lurk into Hierarchical Consensus
+  - Distributed Computation on Private Data
+  - Implementing Programming Languages and DSLs
 
 # Degrees
 education:
@@ -61,4 +61,4 @@ user_groups:
 # quote:
 ---
 
-Akosh is... bio
+Akosh is an adventurer seeking knowledge and understanding, using programming as his weapon of choice to participate in the creative process of building new systems. His path lead him from banking to data mining, to algorithmic trading and spread betting, ending up with blockchain, a technology with the potential to shape the future. He continues to enjoy this field where the pursuit of excellence means learning something new every day.
