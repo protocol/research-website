@@ -10,9 +10,5 @@ resources:
   - src: icon.svg
 ---
 
-## Team
-[Karola Kirsanow](/authors/karola-kirsanow/)
-[Sílvia Bessa](/authors/silvia-bessa/)
-[Barath Raghavan](/authors/barath-raghavan/)
 
 
