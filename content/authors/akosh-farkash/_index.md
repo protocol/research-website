@@ -16,9 +16,9 @@ resources:
 
 # Research interests
 interests:
-  - Integrating Lurk into Hierarchical Consensus
-  - Distributed Computation on Private Data
-  - Implementing Programming Languages and DSLs
+  - Integrating Lurk and hierarchical consensus
+  - Distributed computation on private data
+  - Implementing programming languages and DSLs
 
 # Degrees
 education:
