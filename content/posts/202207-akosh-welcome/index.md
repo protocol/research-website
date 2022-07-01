@@ -4,7 +4,7 @@ title: Akosh Farkash joins ConsensusLab as a Research Engineer
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-06-24
+date: 2022-07-01
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -44,7 +44,7 @@ We asked Akosh about his journey and what brought him to Protocol Labs, the proj
 
 **How did you decide to join Protocol Labs, and what are you working on?**
 
-> Protocol Labs, and in particular Consensus Lab, was recommended to me by my former colleague Dragan Zurzin, who said the size and composition of the team provided ideal circumstances for research and development to flourish.  I listened to Marko's vision on ConsensusDays and found several things that appealed to me: the commitment to open collaboration across the industry, Hierarchical Consensus with subnets, and particularly the idea of deriving security from Bitcoin. Subnets, or the ability to spawn special purpose side chains on-demand came up in my earlier projects as something that could solve a lot of issues, for example running trusted setups for ZK upgrades. I thought adding this general capability to a blockchain is a worthy pursuit. It was also refreshing to hear that rather than trying to displace Bitcoin as old and stale technology, we can build solutions on top of it that make both sides more valuable, and not treat the space as a zero sum game. Initially I will be working on porting Hierarchical Consensus to Rust, but I'm very excited to explore the avenues this opens, especially the integration with Lurk.
+> Protocol Labs, and in particular Consensus Lab, was recommended to me by my former colleague Dragan Zurzin, who said the size and composition of the team provided ideal circumstances for research and development to flourish.  I listened to Marko's vision during ConsensusDays and found several things that appealed to me: the commitment to open collaboration across the industry, Hierarchical Consensus with subnets, and particularly the idea of deriving security from Bitcoin. Subnets, or the ability to spawn special purpose side chains on-demand came up in my earlier projects as something that could solve a lot of issues, for example running trusted setups for ZK upgrades. I thought adding this general capability to a blockchain is a worthy pursuit. It was also refreshing to hear that rather than trying to displace Bitcoin as old and stale technology, we can build solutions on top of it that make both sides more valuable, and not treat the space as a zero sum game. Initially I will be working on porting Hierarchical Consensus to Rust, but I'm very excited to explore the avenues this opens, especially the integration with Lurk.
 
 **What research problems are you most interested in exploring?**
 
