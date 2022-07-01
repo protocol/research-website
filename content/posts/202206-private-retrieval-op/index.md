@@ -53,7 +53,7 @@ So we're posting an [Open Problem](https://github.com/protocol/research) to stim
 
 One welcome response to an Open Problem Statement is a *better-formulated problem*: if you have ideas about how to clarify or refactor the problem or would like to suggest additional designs or projects in the space that we should investigate, please join the [discussion](https://github.com/protocol/research/discussions/63). 
 
-We plan to develop this Open Problem into an RFP and are excited to sponsor research projects within its scope -- stay tuned for more details!
+We plan to develop this open problem into an RFP and are excited to sponsor research projects within its scope -- stay tuned for more details!
 
 
 <br> </br>
