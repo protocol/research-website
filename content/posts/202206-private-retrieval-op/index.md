@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: New Open Problems in Private Data Retrieval 
+title: New open problems in private data retrieval 
 
 # Website post date
 # format YYYY-MM-DD
