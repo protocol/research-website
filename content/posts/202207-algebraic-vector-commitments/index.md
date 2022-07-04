@@ -35,7 +35,7 @@ draft: false
 
 ---
 
-In this post, we discuss a recent result from CryptoNet about the impossibility of succinct vector commitments in groups of known prime order.
+In this post, we discuss a recent result from [CryptoNet](/groups/cryptonetlab/) about the impossibility of succinct vector commitments in groups of known prime order.
 
 Paper: [Catalano, Dario, Dario Fiore, Rosario Gennaro, and Emanuele Giunta. "On the Impossibility of Algebraic Vector Commitments in Pairing-Free Groups." Cryptology ePrint Archive (2022).](/publications/catalano2022/)
 
