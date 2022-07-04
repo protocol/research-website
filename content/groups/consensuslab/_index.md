@@ -23,6 +23,7 @@ For more information on our problems of interest, projects, and other activities
 * [Alfonso de la Rocha](/authors/alfonso-delarocha/) (Research Engineer)
 * [Akosh Farkash](/authors/akosh-farkash/) (Research Engineer)
 * [Sergey Fedorov](/authors/sergey-fedorov/) (Research Engineer)
+* [Guy Goren](/authors/guy-goren/) (Research Scientist)
 * [Denis Kolegov](/authors/denis-kolegov/) (Research Engineer)
 * [Matej Pavlovic](/authors/matej-pavlovic/) (Research Scientist)
 * [Jorge Soares](/authors/jorge-soares/) (Technical Program Manager)
