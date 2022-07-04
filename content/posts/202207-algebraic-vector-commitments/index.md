@@ -37,6 +37,8 @@ draft: false
 
 In this post, we discuss a recent result from [CryptoNet](/groups/cryptonetlab/) about the impossibility of succinct vector commitments in groups of known prime order.
 
+<!--more-->
+
 Paper: [Catalano, D., Fiore, D., Gennaro, R. and Giunta, E., 2022. On the Impossibility of Algebraic Vector Commitments in Pairing-Free Groups. Cryptology ePrint Archive.](/publications/on-the-impossibility-of-algebraic-vector-commitments-in-pairing-free-groups/)
 
 A *[Vector Commitment (VC)](https://eprint.iacr.org/2011/495)* is a commitment scheme to a vector of $n$ elements, such that the following two properties are satisfied:
