@@ -21,39 +21,13 @@
     {{ .Content }}
   </div>
 
-  {{ $recentTalks := where .Pages "Type" "talks"}}
-
-  {{ if $recentTalks }}
-    <div class="mb-12">
-      <div class="flex flex-row items-end justify-between mb-4">
-        <div class="block">
-          <h2 class="text-md font-bold">Related talks</h2>
-          <img class="block" src="/icons/mini-graphic-line.svg">
-        </div>
-
-        <a class="pb-4 flex-shrink-0 block text-sm hover:text-blue" href="/research/talks">
-          <span>View all talks</span>
-          <img class="inline-block pl-2" src="/icons/chevron-pink.svg">
-        </a>
-      </div>
-
-      <div class="flex flex-col md:flex-row md:flex-wrap -mx-4">
-        {{ range $recentTalks }}
-          <div class="w-full md:w-1/2">
-            {{ partial "talk-card" . }}
-          </div>
-        {{ end }}
-      </div>
-    </div>
-  {{ end }}
-
   {{ $recentPublications := where .Pages "Type" "publications"}}
 
   {{ if $recentPublications }}
-    <div class="mb-12">
+    <div id="recentPublications" class="mb-12">
       <div class="flex flex-row items-end justify-between mb-4">
         <div class="block">
-          <h2 class="text-md font-bold">Related publications</h2>
+          <h2 class="text-md font-bold">Publications</h2>
           <img class="block" src="/icons/mini-graphic-line.svg">
         </div>
 
@@ -73,13 +47,39 @@
     </div>
   {{ end }}
 
+  {{ $recentTalks := where .Pages "Type" "talks"}}
+
+  {{ if $recentTalks }}
+    <div id="recentTalks" class="mb-12">
+      <div class="flex flex-row items-end justify-between mb-4">
+        <div class="block">
+          <h2 class="text-md font-bold">Talks</h2>
+          <img class="block" src="/icons/mini-graphic-line.svg">
+        </div>
+
+        <a class="pb-4 flex-shrink-0 block text-sm hover:text-blue" href="/research/talks">
+          <span>View all talks</span>
+          <img class="inline-block pl-2" src="/icons/chevron-pink.svg">
+        </a>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:flex-wrap -mx-4">
+        {{ range $recentTalks }}
+          <div class="w-full md:w-1/2">
+            {{ partial "talk-card" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
   {{ $recentPosts := where .Pages "Type" "posts"}}
 
   {{ if $recentPosts }}
-    <div class="mb-12">
+    <div id="recentPosts" class="mb-12">
       <div class="flex flex-row items-end justify-between mb-4">
         <div class="block">
-          <h2 class="text-md font-bold">Related posts</h2>
+          <h2 class="text-md font-bold">Blog</h2>
           <img class="block" src="/icons/mini-graphic-line.svg">
         </div>
 
