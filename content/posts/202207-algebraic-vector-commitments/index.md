@@ -4,7 +4,7 @@ title: "On algebraic vector commitments"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-07-04
+date: 2022-07-05
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
