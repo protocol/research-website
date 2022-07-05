@@ -36,3 +36,8 @@ For more information on our problems of interest, projects, and other activities
 * [Hierarchical consensus](https://github.com/protocol/ConsensusLab/issues/3)
 * [Consensus protocols](https://github.com/protocol/ConsensusLab/issues/2)
 * [Parallel execution](https://github.com/protocol/ConsensusLab/issues/1)
+
+## Outputs
+* [Publications](#recentPublications)
+* [Talks](#recentTalks)
+* [Blog posts](#recentPosts)
