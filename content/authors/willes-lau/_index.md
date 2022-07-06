@@ -41,7 +41,7 @@ social:
   # - icon: google-scholar
   #   link: https://scholar.google.com/citations?user=ugXwOr0AAAAJ&hl=en&oi=ao
   - icon: github
-    link: https://github.com/willeslau
+    link: https://github.com/cryptoAtWill
   # - icon: orcid
   #   link: https://orcid.org/
   # - icon: linkedin
