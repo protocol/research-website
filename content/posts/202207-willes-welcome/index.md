@@ -4,7 +4,7 @@ title: Willes Lau joins ConsensusLab as a Research Engineer
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-06-24
+date: 2022-07-06
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -38,18 +38,18 @@ draft: false
 
 [ConsensusLab](/groups/consensuslab/) are excited to welcome [Willes Lau](/authors/willes-lau) to the team!
 
-Willes joins us from IOHK and CasperLabs, where he helped develop robust and performant blockchain systems, mainly working in Scala and Rust.
+Willes joins us from KONOMI, where he worked on decentralised lending systems.
 
 We asked Willes about his journey and what brought him to Protocol Labs, the projects he'll be working on, and his thoughts on future technological developments:
 
 **How did you decide to join Protocol Labs, and what are you working on?**
 
-todo
+> todo
 
 **What research problems are you most interested in exploring?**
 
-todo
+> todo
 
 **What future technology are you most excited about?**
 
-todo
+> todo
