@@ -10,20 +10,19 @@ date: 2022-04-08
 # journal:
 
 # Venue Name
-venue: 
+venue:
 
 # Venue Location
 venue_location:
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
-venue_date: 
+venue_date:
 
 # Digital Object Identifier
 doi:
 
 resources:
   - src: campanelli2022.pdf
-  - src: cite.bib
 
 # Taxonomies:
 # delete all but one
