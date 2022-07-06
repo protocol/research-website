@@ -31,8 +31,16 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+outputFormats:
+  md-rss:
+    name: md-rss
+    path: md-rss
+    suffix: xml
+    mediaType: application/rss+xml
 outputs:
   home:
     - html
     - rss
     - json
+    - md-rss
+rssLimit: 50
