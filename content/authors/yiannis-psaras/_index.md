@@ -10,7 +10,7 @@ authors:
 role: Research Scientist
 
 groups:
-  - "ProbeLab"
+  - probelab
 
 resources:
   - name: avatar

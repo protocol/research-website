@@ -14,7 +14,7 @@ date: 2022-01-12
 authors:
   - "João Leitão"
   - yiannis-psaras
-  
+
 
 # If applicable
 categories:
@@ -31,7 +31,7 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - resnetlab
+  - probelab
 
 # Not used
 draft: false
