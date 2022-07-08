@@ -8,5 +8,7 @@ taxonomyName: distributed-power-systems
 
 resources:
   - src: icon.svg
+
+archived: true
 ---
 Our electricity system is undergoing a monumental transition from a centralized design based on fossil fuels to a distributed architecture based on renewable energy. Successfully navigating this requires reconceiving the grid as a distributed system, able to coordinate diverse resources and influence the deployment of capital by setting up appropriate incentive structures. We are collaborating with the [MIT Energy Initiative](https://energy.mit.edu/) to enable this by developing extensible, upgradable and formally verified controls for flexible power systems.
