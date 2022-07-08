@@ -35,7 +35,7 @@ draft: false
 
 ---
 
-In this post, we discuss a recent result from [CryptoNet](/groups/cryptonetlab/) about the impossibility of succinct vector commitments in groups of known prime order.
+In this post, we discuss a recent result from [Cryptonet](/groups/cryptonetlab/) about the impossibility of succinct vector commitments in groups of known prime order.
 
 <!--more-->
 
