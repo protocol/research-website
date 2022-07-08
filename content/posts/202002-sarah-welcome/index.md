@@ -19,7 +19,7 @@ areas:
   - cryptography
 
 groups:
-  - cryptonetlab
+  - cryptonet
 
 draft: false
 

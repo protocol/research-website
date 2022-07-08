@@ -32,7 +32,7 @@ areas:
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
   - abstractionlab
-  - cryptonetlab
+  - cryptonet
   - resnetlab
 
 # Not used

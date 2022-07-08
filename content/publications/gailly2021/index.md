@@ -40,7 +40,7 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - cryptonetlab
+  - cryptonet
 
 # Publications without a PL affiliation can be added to the author's profile without showing up elsewhere
 # If adding one, set this to true *and* do not set an area or group

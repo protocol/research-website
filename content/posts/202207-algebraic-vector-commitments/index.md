@@ -28,7 +28,7 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - cryptonetlab
+  - cryptonet
 
 # Not used
 draft: false

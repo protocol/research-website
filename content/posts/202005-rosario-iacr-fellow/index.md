@@ -23,7 +23,7 @@ areas:
 
 # Zero or more of the groups in content/research/groups (should match author membership)
 groups:
-  - cryptonetlab
+  - cryptonet
   - cryptocomputelab
 
 # Not used

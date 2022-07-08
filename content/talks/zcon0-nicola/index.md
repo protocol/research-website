@@ -20,7 +20,7 @@ authors:
 areas:
   - cryptography
 groups:
-  - cryptonetlab
+  - cryptonet
 
 resources:
   - title: featured-image

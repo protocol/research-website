@@ -48,7 +48,7 @@ areas:
   - distributed-systems
 
 groups:
-  - cryptonetlab
+  - cryptonet
 
 featured: false
 

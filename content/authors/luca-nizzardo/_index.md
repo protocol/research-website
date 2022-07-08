@@ -7,7 +7,7 @@ name: Luca Nizzardo
 role: Research Scientist
 
 groups:
-  - cryptonetlab
+  - cryptonet
 
 resources:
   - name: avatar
