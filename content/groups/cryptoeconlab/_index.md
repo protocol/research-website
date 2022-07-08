@@ -4,7 +4,7 @@ title: CryptoEconLab
 date: 2021-02-02
 
 taxonomyName: CryptoEconLab
-summary: "CryptoEconLab at PL aspires to become a hub for research on economic incentives, coordination games, and novel marketplaces. We aim to develop capacity to design, validate, deploy, and govern large-scale economic systems. CryptoEconLab strives to empower projects in the ecosystem through novel incentives and advance humanity’s understanding of multiagent systems and algorithmic steering of economic networks."
+summary: "CryptoEconLab at PL aspires to become a hub for research on economic incentives, coordination games, and novel marketplaces. We aim to develop capacity to design, validate, deploy, and govern large-scale economic systems."
 resources:
   - src: icon.svg
 ---

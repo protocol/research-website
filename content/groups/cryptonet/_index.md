@@ -3,7 +3,7 @@ title: Cryptonet
 date: 2021-03-21
 
 taxonomyName: cryptonet
-summary: "Cryptonet is a Public Good Cryptography Lab providing technological empowerment by creating secure building blocks for Web 3.0 protocols."
+summary: "Cryptonet is a public good cryptography lab providing technological empowerment by creating secure building blocks for Web3 protocols."
 
 resources:
   - src: icon.svg
