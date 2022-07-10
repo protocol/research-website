@@ -44,12 +44,12 @@ We asked Guy about his journey and what brought him to Protocol Labs, the projec
 
 **How did you decide to join Protocol Labs, and what are you working on?**
 
-> Lorem ipsum
+> Protocol Labs (and in particular ConsensusLab) has a great research team that explores some of the most fundamental inferstructure for Blockchains. This answered exactly what I wanted: working with people that are interested in similar prblems to me but also have different expertise than me, so that we can create new knowledge together. I am currently working on agreement problems (such as Consensus). Specifically, on the Hierarchical Consensus design paradigm, and on abstracting and formalizing the guarantees provided by different Blockchain systems.
 
 **What research problems are you most interested in exploring?**
 
-> Lorem ipsum
+> Mapping the inherent tradeoffs that agrement protocols provide, and designing Pareto optimal solutions that offer better guarantees for practical uses.
 
 **What future technology are you most excited about?**
 
-> Lorem ipsum
+> Hard to say, since I still don't know what will happen in the future... :-)
