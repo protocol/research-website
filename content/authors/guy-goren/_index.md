@@ -16,37 +16,41 @@ resources:
 
 # Research interests
 interests:
-  - tbd
-  - tbd
-  - tbd
+  - Lower bounds for Distributed Computing
+  - Models of faults in DC (Byzantine, omission, hybrid, etc.)
+  - Blockchains
+  - Stochastic coordination in distributed systems
 
 # Degrees
 education:
   courses:
-    - course: PhD in Electrical Engineering
+    - course: PhD in Electrical and Computer Engineering
       institution: Technion
       year: 2022
     - course: BSc in Electrical Engineering
       institution: Technion
-      year: 2016
+      year: 2017
+    - course: MA in Economics and Manegement
+      institution: Technion
+      year: 2017
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 social:
-  - icon: twitter
-    link: https://twitter.com/USERNAME
-  - icon: google-scholar
-    link: https://scholar.google.com/citations?user=PERSON-ID
-  - icon: github
-    link: https://github.com/USERNAME
-  - icon: orcid
-    link: https://orcid.org/0000-0002-1825-0097
+#  - icon: twitter
+#    link: https://twitter.com/USERNAME
+#  - icon: google-scholar
+#    link: https://scholar.google.com/citations?user=PERSON-ID
+#  - icon: github
+#    link: https://github.com/USERNAME
+#  - icon: orcid
+#    link: https://orcid.org/0000-0002-1825-0097
   - icon: linkedin
     link: https://www.linkedin.com/in/guy-goren/
-  - icon: researchgate
-    link: https://www.researchgate.net/profile/USERNAME
-  - icon: link
-    link: https://example.org/
+#  - icon: researchgate
+#    link: https://www.researchgate.net/profile/USERNAME
+#  - icon: link
+#    link: https://example.org/
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
@@ -58,4 +62,6 @@ user_groups:
 # quote:
 ---
 
-Lorem ipsum...
+Guy is a researcher specializing in Distributed Computing. He designs distributed algorithms which focuse on applying abstract concepts, such as knowledge and silence, to provide a better understanding of fundamental problems and the underlying workings of protocols.
+He recieved a PhD in Electrical and Computer Engineering from the Technion (Israel), with Prof. Yoram Moses as his advisor.
+Guy joined Protocol Labs to contribute to the research on Agreement mechnisms (e.g., Consesnsus) and to help bring theory closer to practice.
