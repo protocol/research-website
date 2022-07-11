@@ -17,7 +17,7 @@ resources:
 # Research interests
 interests:
   - Distributed systems
-  - Sociological, political, and psychoanalytic frameworks of online interactions
+  - Sociological frameworks of online interactions
 
 # Degrees
 education:
@@ -28,10 +28,7 @@ education:
   - course: MPhil
     institution:
     year:
-  - course:
-    institution:
-    year:
-
+    
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 # social:
