@@ -3,11 +3,11 @@
 name: Corey James
 
 # Role/position (e.g. Research Scientist)
-role: Research Program Manager
+role: Startup Operator
 
 # Existing research group (use folder name) or free text
 groups:
-- network-research
+- network-funding
 
 # Avatar (no need to edit)
 resources:
@@ -16,8 +16,8 @@ resources:
 
 # Research interests
 interests:
-  - Biological networks
-  - Human genetics
+  - Distributed Systems
+  - Sociological frameworks of online interaction
 
 # Degrees
 education:
