@@ -7,7 +7,7 @@ role: Startup Operator
 
 # Existing research group (use folder name) or free text
 groups:
-- "Network Funding"
+- network-research
 
 # Avatar (no need to edit)
 resources:
