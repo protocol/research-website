@@ -1,13 +1,13 @@
 ---
 # Display name
-name: "Corey James"
+name: Corey James
 
 # Role/position (e.g. Research Scientist)
-role: "Startup Operator"
+role: Startup Operator
 
 # Existing research group (use folder name) or free text
 groups:
-- "Network Funding"
+- network-funding
 
 # Avatar (no need to edit)
 resources:
@@ -16,8 +16,8 @@ resources:
 
 # Research interests
 interests:
-  - "Distributed Systems"
-  - "Sociological frameworks"
+  - Biological networks
+  - Human genetics
 
 # Degrees
 education:
