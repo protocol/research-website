@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Corey James
+name: Bruno Filipe
 
 # Role/position (e.g. Research Scientist)
 role: Startup Operator
