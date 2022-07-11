@@ -12,7 +12,7 @@ groups:
 # Avatar (no need to edit)
 resources:
   - name: avatar
-    src: avatar.jpg
+    src: avatar.png
 
 # Research interests
 interests:
@@ -28,7 +28,7 @@ education:
   - course: MPhil
     institution:
     year:
-    
+
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 # social:
