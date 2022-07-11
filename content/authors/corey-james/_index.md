@@ -7,7 +7,7 @@ role: Startup Operator
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-- network-funding
+  - network-funding
 
 # Avatar (no need to edit)
 resources:
