@@ -3,11 +3,11 @@
 name: Corey James
 
 # Role/position (e.g. Research Scientist)
-role: Startup Operator
+role: Research Program Manager
 
 # Existing research group (use folder name) or free text
 groups:
-- network-funding
+- network-research
 
 # Avatar (no need to edit)
 resources:
