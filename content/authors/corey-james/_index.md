@@ -1,9 +1,9 @@
 ---
 # Display name
-name: Corey James
+name: "Corey James"
 
 # Role/position (e.g. Research Scientist)
-role: Startup Operator
+role: "Startup Operator"
 
 # Existing research group (use folder name) or free text
 groups:
@@ -16,8 +16,8 @@ resources:
 
 # Research interests
 interests:
-  - Distributed Systems
-  - Sociological frameworks of online interaction
+  - "Distributed Systems"
+  - "Sociological frameworks"
 
 # Degrees
 education:
