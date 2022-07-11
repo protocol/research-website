@@ -3,7 +3,7 @@
 name: Corey James
 
 # Role/position (e.g. Research Scientist)
-role: Research Program Manager
+role: Startup Operator
 
 # Existing research group (use folder name) or free text
 groups:
