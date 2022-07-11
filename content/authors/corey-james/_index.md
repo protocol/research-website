@@ -31,13 +31,13 @@ education:
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
-# social:
+social:
 #  - icon: twitter
 #    link:
 #  - icon: google-scholar
 #    link:
-#  - icon: github
-#    link:
+  - icon: github
+    link: https://github.com/protocol/research-website/pull/594
 #  - icon: orcid
 #    link:
 #  - icon: linkedin
