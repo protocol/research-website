@@ -26,8 +26,8 @@ education:
     institution: University
     year: 2017
   - course: MPhil
-    institution:
-    year:
+    institution: University
+    year: 2010
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
