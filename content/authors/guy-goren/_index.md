@@ -16,10 +16,10 @@ resources:
 
 # Research interests
 interests:
-  - Lower bounds for Distributed Computing
-  - Models of faults in DC (Byzantine, omission, hybrid, etc.)
+  - Lower bounds for distributed computing
+  - Faults models
   - Blockchains
-  - Stochastic coordination in distributed systems
+  - Stochastic coordination
 
 # Degrees
 education:
@@ -27,10 +27,10 @@ education:
     - course: PhD in Electrical and Computer Engineering
       institution: Technion
       year: 2022
-    - course: BSc in Electrical Engineering
+    - course: MA in Economics and Management
       institution: Technion
-      year: 2017
-    - course: MA in Economics and Manegement
+      year: 2017      
+    - course: BSc in Electrical Engineering
       institution: Technion
       year: 2017
 
@@ -62,6 +62,4 @@ user_groups:
 # quote:
 ---
 
-Guy is a researcher specializing in Distributed Computing. He designs distributed algorithms which focuse on applying abstract concepts, such as knowledge and silence, to provide a better understanding of fundamental problems and the underlying workings of protocols.
-He recieved a PhD in Electrical and Computer Engineering from the Technion (Israel), with Prof. Yoram Moses as his advisor.
-Guy joined Protocol Labs to contribute to the research on Agreement mechnisms (e.g., Consesnsus) and to help bring theory closer to practice.
+Guy is a researcher who specializes in distributed computing. He designs distributed algorithms that focus on applying abstract concepts, such as knowledge and silence, to provide a better understanding of fundamental problems and the underlying workings of protocols. He received a PhD in Electrical and Computer Engineering from the Technion (Israel), with Prof. Yoram Moses as his advisor. Guy joined Protocol Labs to contribute to the research on agreement mechanisms (e.g. consensus) and to help bring theory closer to practice.

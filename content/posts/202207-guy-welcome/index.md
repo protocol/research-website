@@ -36,7 +36,7 @@ draft: false
 
 ---
 
-[ConsensusLab](/groups/consensuslab/) are excited to welcome [Guy Goren](/authors/guy-goren) to the team!
+[ConsensusLab](/groups/consensuslab/) is excited to welcome [Guy Goren](/authors/guy-goren) to the team!
 
 Guy joins us from Technion, where his PhD research focused on distributed data structures and algorithms, and particularly blockchain protocols.
 
@@ -44,11 +44,11 @@ We asked Guy about his journey and what brought him to Protocol Labs, the projec
 
 **How did you decide to join Protocol Labs, and what are you working on?**
 
-> Protocol Labs (and in particular ConsensusLab) has a great research team that explores some of the most fundamental inferstructure for Blockchains. This answered exactly what I wanted: working with people that are interested in similar prblems to me but also have different expertise than me, so that we can create new knowledge together. I am currently working on agreement problems (such as Consensus). Specifically, on the Hierarchical Consensus design paradigm, and on abstracting and formalizing the guarantees provided by different Blockchain systems.
+> Protocol Labs (and in particular ConsensusLab) has a great research team that explores some of the most fundamental infrastructure for blockchains. This was an exact match for what I was looking for: working with people with similar interests but different expertise, so that we can create new knowledge together. I am currently working on agreement problems, such as consensus, and specifically on the [hierarchical consensus](/blog/2022/scaling-blockchains-with-hierarchical-consensus/) design paradigm, and on abstracting and formalizing the guarantees provided by different blockchain systems.
 
 **What research problems are you most interested in exploring?**
 
-> Mapping the inherent tradeoffs that agrement protocols provide, and designing Pareto optimal solutions that offer better guarantees for practical uses.
+> Mapping the inherent trade-offs that agreement protocols provide, and designing Pareto-optimal solutions that offer better guarantees for practical uses.
 
 **What future technology are you most excited about?**
 
