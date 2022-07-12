@@ -4,7 +4,7 @@ title: Guy Goren joins ConsensusLab as a Research Scientist
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-07-01
+date: 2022-07-13
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
