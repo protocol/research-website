@@ -50,7 +50,7 @@ user_groups:
 # quote:
 ---
 
-Ioannis is a professor at the Department of Computer Science of Aarhus University (since August 2020), where he also serves as the Head of the research group on Computational Complexity and Game Theory. Prior to his current appointment, he was a faculty member at the Department of Computer Engineering and Informatics of the University of Patras (2006-2020).
+Ioannis is a professor at the Department of Computer Science of Aarhus University (since August 2020), where he also serves as the Head of the research group on Computational Complexity and Game Theory. Prior to his current appointment, he was a faculty member at the Department of Computer Engineering and Informatics at the University of Patras (2006-2020).
 
 His research interests include design and analysis of algorithms (including approximation and online algorithms), economics and computation (computational aspects of fair division, voting, matching problems, auctions, and congestion games), and foundations of machine learning and artificial intelligence (including strategic aspects of learning tasks and data processing).
 
