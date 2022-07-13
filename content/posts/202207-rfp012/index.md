@@ -16,7 +16,8 @@ authors:
 
 # If applicable
 categories:
-  - blog
+  - news
+  - grants
 
 # If applicable
 tags:
