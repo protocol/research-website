@@ -48,6 +48,6 @@ However, our prototype solution does not scale to the full Filecoin network, whi
 * Efficient share aggregation mechanisms
 * Sampling mechanisms
 
-Accepted proposals will receive up to $100,000 in funding. The work, as usual, must be released under an open-source license and may find usage in other blockchains or systems. This call will close on on **September 30, 2022** or earlier if awarded.
+Accepted proposals will receive up to $100,000 in funding. The work, as usual, must be released under an open-source license and may find usage in other blockchains or systems. This call will close on **September 30, 2022** or earlier if awarded.
 
 We encourage interested researchers to reach out to us using our [discussion forum](https://github.com/protocol/ConsensusLab/discussions) or by visiting #consensus in the [Filecoin Slack workspace](https://filecoin.io/slack). For formal questions, please email research@protocol.ai. Submit your proposal using our application management system at [grants.protocol.ai](https://grants.protocol.ai/.).
