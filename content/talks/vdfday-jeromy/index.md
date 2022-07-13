@@ -21,7 +21,7 @@ areas:
   - cryptography
   - distributed-systems
 groups:
-  - cryptonetlab
+  - cryptonet
 
 resources:
   - title: featured-image

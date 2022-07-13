@@ -20,7 +20,7 @@ authors:
 areas:
   - distributed-systems
 groups:
-  - cryptonetlab
+  - cryptonet
   - cryptocomputelab
 
 resources:

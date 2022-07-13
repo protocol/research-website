@@ -7,7 +7,7 @@ role: Research Scientist
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-  - cryptonetlab
+  - cryptonet
 
 # Avatar (no need to edit)
 resources:

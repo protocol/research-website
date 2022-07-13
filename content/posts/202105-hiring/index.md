@@ -30,7 +30,7 @@ areas:
 groups:
   - cryptocomputelab
   - cryptoeconlab
-  - cryptonetlab
+  - cryptonet
   - resnetlab
 
 # Not used

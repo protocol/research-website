@@ -11,6 +11,8 @@ resources:
 aliases:
   - /research/groups/filecoin-research
   - /research/groups/cryptocomputelab
+
+archived: true
 ---
 
  ## Mission & Vision

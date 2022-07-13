@@ -11,7 +11,7 @@ publication_types:
 authors:
   - ben-fisch
 groups:
-  - cryptonetlab
+  - cryptonet
   - cryptocomputelab
 categories:
 areas:

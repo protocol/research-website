@@ -11,7 +11,7 @@ publication_types:
 authors:
   - "Protocol Labs"
 groups:
-  - cryptonetlab
+  - cryptonet
   - cryptocomputelab
 categories:
   -

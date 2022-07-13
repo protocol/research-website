@@ -7,6 +7,8 @@ taxonomyName: abstractionlab
 summary: "The AbstractionLab houses several independent research projects directly exploring the future of decentralization and how infrastructure affects technological possibilities."
 resources:
   - src: icon.svg
+
+archived: true
 ---
 
 The AbstractionLab houses several independent research projects directly exploring the future of decentralization and how infrastructure affects technological possibilities.

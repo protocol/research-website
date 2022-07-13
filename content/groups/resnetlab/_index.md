@@ -11,6 +11,8 @@ resources:
 aliases:
   - /research/groups/resnetlab
 
+archived: true
+
 ---
 
 <center>{{< figure src="/images/resnetlab/resnetlab_logo_blue.svg" width="250px" >}}</center>
