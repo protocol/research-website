@@ -4,7 +4,7 @@ title: Ioannis Caragiannis to advise Cryptonet
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-07-13
+date: 2022-07-15
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
