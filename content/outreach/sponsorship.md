@@ -10,20 +10,17 @@ linkUrl: "/outreach/sponsorship"
 
 # What kind of support does Protocol Labs Research provide for events?
 
-Protocol Labs (PL) Research reviews requests for speakers, branding, and sponsorship at research-focused events.
-In addition to financial support, we seek to support these events by providing speakers, sending attendees, and promoting them on our website when appropriate.
-
-**Note: In response to the COVID-19 pandemic, we have suspended sponsoring and attending in-person events until further notice. You may still request sponsorship and speakers for remote events.**
+Protocol Labs (PL) Research reviews requests for sponsorship at research-focused events.
+In addition to financial support, we seek to support these events by providing speakers, sending attendees, and promoting them on our website when appropriate. Note that we do not sponsor pay-to-speak events (discussed in detail below).
 
 # How can I request support for my event?
 
-To request sponsorship for research-oriented events, we ask that you fill out our [sponsorship/speaker request form](https://grants.protocol.ai/prog/sponsorship_speaker_request_form/). Please provide as much information as possible (sponsorship tiers, free non-speaker tickets, branding, a table or other space for swag, inclusion in newsletters, etc.) to minimize the need for back-and-forth communication and help streamline our review process.
-
-If you are seeking to invite a PL Research speaker or speakers, please indicate whether you are requesting speakers only, or speakers and sponsorship. Note that we do not sponsor pay-to-speak events (discussed in detail below), and all speaker requests will be considered independently from sponsorship requests.
+To request sponsorship for research-oriented events, we ask that you fill out our [sponsorship request form](https://protocollabs.smapply.io/prog/event_sponsorship/). Please provide as much information as possible (sponsorship tiers, free non-speaker tickets, branding, a table or other space for swag, inclusion in newsletters, etc.) to minimize the need for back-and-forth communication and help streamline our review process.
 
 We ask that all requests are submitted at least two months prior to the date of your event, so we have sufficient time to review the request, make a decision, and finalize logistics. If you have a question about sponsorship that is not covered by the request form, please email [research@protocol.ai](mailto:research@protocol.ai).
 
 # When will I receive a response to my request?
+
 From the time of your submission to our response, please allow a minimum of two weeks for us to review your application. However, as a rule, we will typically wait until approximately two months before your event before we give you a final answer. If you have a hard timeline for receiving sponsorship commitments that differs from our standard review timeline, please make a note of this in your application.
 
 # How will my request be reviewed?
@@ -47,4 +44,4 @@ We have established a set of criteria by which we evaluate sponsorship requests:
 
 If you accept our sponsorship, we’ll ask for a post-event report summarizing the key outcomes and metrics, e.g. the strengths and weaknesses of the event, the number of participants, notable presentations, video resources, social media presence, etc. The purpose of this follow-up is to help us track the effectiveness of our sponsorships and make decisions for the future. This is also a great way for us to strengthen the relationship between PL and those we sponsor. Hearing about great events gets us excited about supporting similar events in the future.
 
-To submit a request for sponsorship, click [here](https://grants.protocol.ai/prog/sponsorship_speaker_request_form/).
+To submit a request for sponsorship, click [here](https://protocollabs.smapply.io/prog/event_sponsorship/).
