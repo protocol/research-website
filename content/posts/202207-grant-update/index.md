@@ -38,7 +38,7 @@ draft: false
 
 ---
 
-In our ongoing quest to continuously improve the user experience around our [research grants programme](https://github.com/protocol/research-grants), we're announcing today a number of updates to both the framework and the operations that should enable a more streamlined, faster, and easier time for all stakeholders.
+In our ongoing quest to continuously improve the UX around our [research grants programme](https://github.com/protocol/research-grants), we're announcing today a number of updates to both the framework and the operations that should enable a more streamlined, faster, and easier experience for all stakeholders.
 
 These changes are the result of feedback from applicants and reviewers, as well as our own experience in administering the programme over the last year, when we [introduced the open grant spectrum](/blog/2021/introducing-our-new-grant-spectrum/).
 
@@ -46,9 +46,11 @@ These changes are the result of feedback from applicants and reviewers, as well 
 
 We're moving our open grants programme to a quarterly evaluation cadence (vs. the previous twice-yearly cadence). This will enable faster turnaround time for applicants while making the process less spiky for reviewers.
 
-### Simplified grant offering
+### Rationalised grant offering
 
-A year ago, we introduced a number of new grant typologies. Some of these saw significant uptake, whereas others were too complex, too niche, or too hard to administer. For that reason, we're scaling down the offering and focusing on the four grant types that received the most interest: doctoral fellowships, postdoctoral fellowships, summer research grants, and sabbatical awards. We hope this will reduce applicant confusion and enable more standardised backend processing. It certainly makes our [application portal](https://grants.protocol.ai/) look significantly less daunting.
+A year ago, we introduced a number of new grant typologies. Some of these saw significant uptake, whereas others were too complex, too niche, or too hard to administer. For that reason, we're scaling down the offering and focusing on the four grant types that received the most interest: doctoral fellowships, postdoctoral fellowships, summer research grants, and sabbatical awards.
+
+We hope this will reduce applicant confusion and enable more standardised backend processing. It certainly makes our [application portal](https://grants.protocol.ai/) look significantly less daunting.
 
 ### Fixed amounts
 
@@ -58,7 +60,7 @@ With this new update, we're moving our open grants to all-inclusive fixed amount
 
 We're particularly excited about this change, which we think will allow us to improve fairness and diversity in scientific funding, and allow applicants to pick the host institute that better matches their needs.
 
-### Simpler, more flexible application form
+### Flexible application forms
 
 In an attempt to standardise applications, we previously required applicants to input most of their proposal into plaintext fields in our application system. We recognise that this is not the preferred approach for many researchers, and therefore moved to a PDF-centric approach, with minimal forms to fill.
 
@@ -78,4 +80,4 @@ Our [research grants repository](https://github.com/protocol/research-grants) wa
 
 While the text above centres on the open grants, similar process improvements have been made to the RFP framework, the RFP-000 (now RFP-X) programme, and the event sponsorship pipeline.
 
-The newly-formed [Research Acceleration team](/groups/research-acceleration) will keep working to improve our programme, optimising for both applicant experience and outcomes. Please send us your feedback via [research@protocol.ai](mailto:research@protocol.ai).
+The newly-formed [Research Acceleration team](/groups/research-acceleration) will keep working to improve our programme, optimising for both applicant experience and outcomes. Please send any feedback to [research@protocol.ai](mailto:research@protocol.ai).
