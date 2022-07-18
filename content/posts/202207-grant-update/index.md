@@ -58,7 +58,7 @@ Our grant programme is available worldwide and needs to deal with a wide range o
 
 With this new update, we're moving our open grants to all-inclusive fixed amounts. We will allow grant recipients to apportion the funds as appropriate (e.g. between tuition, stipends, materials, and overhead). We will not micromanage this allocation and will not pay overhead and other costs on top of the posted grant amounts.
 
-We're particularly excited about this change, which we think will allow us to improve fairness and diversity in scientific funding, and allow applicants to pick the host institute that better matches their needs.
+We're excited about this change, which will empower candidates and, we believe,  improve fairness and diversity.
 
 ### Flexible application forms
 
