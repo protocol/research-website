@@ -17,7 +17,7 @@ In addition to financial support, we seek to support these events by providing s
 
 To request sponsorship for research-oriented events, we ask that you fill out our [sponsorship request form](https://protocollabs.smapply.io/prog/event_sponsorship/). Please provide as much information as possible (sponsorship tiers, free non-speaker tickets, branding, a table or other space for swag, inclusion in newsletters, etc.) to minimize the need for back-and-forth communication and help streamline our review process.
 
-We ask that all requests are submitted at least two months prior to the date of your event, so we have sufficient time to review the request, make a decision, and finalize logistics. If you have a question about sponsorship that is not covered by the request form, please email [research@protocol.ai](mailto:research@protocol.ai).
+We ask that all requests are submitted at least two months prior to the date of your event, so we have sufficient time to review the request, make a decision, and finalize logistics. If you have a question about sponsorship that is not covered by the request form, please email [research-grants@protocol.ai](mailto:research-grants@protocol.ai).
 
 # When will I receive a response to my request?
 
