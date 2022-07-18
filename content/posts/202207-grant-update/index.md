@@ -64,7 +64,7 @@ We're excited about this change, which will empower candidates and, we believe, 
 
 In an attempt to standardise applications, we previously required applicants to input most of their proposal into plaintext fields in our application system. We recognise that this is not the preferred approach for many researchers, and therefore moved to a PDF-centric approach, with minimal forms to fill.
 
-Our applications remain short (up to 5 pages) and we will provide reference templates. But this change will allow applicants to prepare applications using the tooling of their preference, which has the potential to be both faster and better (e.g. by allowing math notation).
+Our applications remain short (up to 5 pages) and we will provide reference templates. This change will allow applicants to prepare applications using the tooling of their preference, which has the potential to be both faster and better (e.g. by enabling math notation).
 
 ### Improved review process
 
