@@ -80,4 +80,4 @@ Our [research grants repository](https://github.com/protocol/research-grants) wa
 
 While the text above centres on the open grants, similar process improvements have been made to the RFP framework, the RFP-000 (now RFP-X) programme, and the event sponsorship pipeline.
 
-The newly-formed [Research Acceleration team](/groups/research-acceleration) will keep working to improve our programme, optimising for both applicant experience and outcomes. Please send any feedback to [research@protocol.ai](mailto:research@protocol.ai).
+The newly-formed [Research Acceleration team](/groups/research-acceleration) will keep working to improve our programme, optimising for both applicant experience and outcomes. Please send any feedback to [research-grants@protocol.ai](mailto:research-grants@protocol.ai).
