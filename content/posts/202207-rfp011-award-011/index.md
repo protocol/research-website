@@ -4,7 +4,7 @@ title: Announcing the first award for RFP-011,"Changing the Internet"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-07-20
+date: 2022-07-21
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -39,7 +39,7 @@ draft: false
 
 PL Research is  pleased to announce the first research project funded as part of the *Changing the Internet* Initiative: a project by [Scott Shenker](https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html) of ICSI and UC Berkeley, [Arvind Krishnamurthy](https://www.cs.washington.edu/people/faculty/arvind) of the University of Washington, [James McCauley](https://www.mtholyoke.edu/people/james-mccauley) of Mount Holyoke College, and  [Aurojit Panda](https://cs.nyu.edu/~apanda/) of NYU  to improve acess to Web3 services by creating a better client interface and user experience for accessing Web3 content.  This project, which builds on the work of the team’s larger effort to create the [Extensible Internet](https://www.icsi.berkeley.edu/icsi/groups/extensible-internet), addresses the [third challenge](https://github.com/protocol/research-grants/blob/master/RFPs/rfp-011-changing-the-internet.md#problem-statement) of the RFP Problem Statement: architecture for service introduction.
 
-The Extensible Internet (EI) model envisions an interposition layer between L3 (the network layer) and L4 (the transport layer) where new in-network services can be placed, allowing the internet's service model to be continually extended as novel services are developed. The EI architecture is designed to be backwards-compatible and incrementally deployable, reducing the costs associaed with rollout.
+The Extensible Internet (EI) model envisions an interposition layer between L3 (the network layer) and L4 (the transport layer) where new in-network services can be placed, allowing the internet's service model to be continually extended as novel services are developed. The EI architecture is designed to be backwards-compatible and incrementally deployable, reducing the costs associated with rollout.
 
 The  development of the Extensible Internet is motivated by the desire to *maintain  the public internet's role  as an open and neutral platform for innovation* by enhancing its competitiveness vis-à-vis the large private networks that carry a significant fraction of the modern internet's transit traffic. EI is intended to enable the public internet to keep pace with performance-enhancing innovations in private networks, avoiding relegation to merely serving as a carrier for the last mile and incentivizing continued innovation -- and access to innovation -- in a free and open internet.
 
