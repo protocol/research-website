@@ -53,4 +53,4 @@ The open problem statement can be read [here](/content/posts/202206-private-retr
 ---
 
 
-[{{< image "featured.png" >}}](https://www.youtube.com/watch?v=QII1xq9J7NY)
+[{{< image "featured.png" >}}](https://www.youtube.com/watch?v=A0mzqmUtkSE)
