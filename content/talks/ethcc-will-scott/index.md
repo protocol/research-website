@@ -14,7 +14,7 @@ date: 2022-07-21
 venue_date: 2022-07-20
 
 # Venue location
-venue: "EthCC"
+venue: "EthCC 5"
 
 venue_url: "https://ethcc.io"
 
