@@ -35,16 +35,16 @@ groups:
 # Name the cover image featured.jpg
 resources:
   - title: featured-image
-    src: featured.png
+    src: featured.jpeg
 
 # Short abstract
 # Describe talk here
 abstract: "Will Scott talks about the options and opportunities for private access to decentralized data, and announces Protocol Labs private data retrieval fund. 
 Targeted at research and prototyping projects, this funds aims to develop additional protocol-compatible primitives allowing users to interact privately with Web3 content.
 
-The open problem statement can be read [here]([/posts/202206-private-retrieval-op/](https://research.protocol.ai/blog/2022/new-open-problems-in-private-data-retrieval/))."
+The open problem statement can be read [here](https://research.protocol.ai/blog/2022/new-open-problems-in-private-data-retrieval/)."
 
 ---
 
 
-[{{< image "featured.png" >}}](https://www.youtube.com/watch?v=A0mzqmUtkSE)
+[{{< image "featured.jpeg" >}}](https://www.youtube.com/watch?v=A0mzqmUtkSE)
