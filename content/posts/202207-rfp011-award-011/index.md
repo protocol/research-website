@@ -25,6 +25,7 @@ tags:
 # Zero or more of the areas in content/areas
 areas:
   - distributed-systems
+  - networking
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
