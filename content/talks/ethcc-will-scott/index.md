@@ -35,7 +35,7 @@ groups:
 # Name the cover image featured.jpg
 resources:
   - title: featured-image
-    src: featured.jpeg
+    src: featured.jpg
 
 # Short abstract
 # Describe talk here
@@ -47,4 +47,4 @@ The open problem statement can be read [here](https://research.protocol.ai/blog/
 ---
 
 
-[{{< image "featured.jpeg" >}}](https://www.youtube.com/watch?v=A0mzqmUtkSE)
+[{{< image "featured.jpg" >}}](https://www.youtube.com/watch?v=A0mzqmUtkSE)
