@@ -42,7 +42,7 @@ resources:
 abstract: "Will Scott talks about the options and opportunities for private access to decentralized data, and announces Protocol Labs private data retrieval fund. 
 Targeted at research and prototyping projects, this funds aims to develop additional protocol-compatible primitives allowing users to interact privately with Web3 content.
 
-The open problem statement can be read [here](/posts/202206-private-retrieval-op/) and the submission site will be announced shortly."
+The open problem statement can be read [here]([/posts/202206-private-retrieval-op/](https://research.protocol.ai/blog/2022/new-open-problems-in-private-data-retrieval/))."
 
 ---
 
