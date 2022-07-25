@@ -4,7 +4,7 @@ title: Announcing the first award for RFP-011,"Changing the Internet"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-07-21
+date: 2022-07-25
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
