@@ -42,7 +42,7 @@ draft: false
 
 ProbeLab’s mission is summarized in the following quote:
 
-_“You can’t improve what you don’t measure, and you should measure what (you think) you’ve just improved.”_
+> You can’t improve what you don’t measure, and you should measure what (you think) you’ve just improved.”
 
 As was highlighted very accurately in [Juan Benet's recent talk](https://youtu.be/jH9BkLTxhp8) at the Paris P2P Festival, the most successful systems in use today are those for which you can find a lot of benchmarking studies. We believe decentralized networks should have a place in this list and be successful in their mission to promote open platforms, free speech, resilient operations, and high performance.
 
@@ -58,15 +58,13 @@ There isn’t a better time to start this exciting journey! Here are a few reaso
 
 **An exciting list of things to work on:** The IPFS Network Observatory is composed of a lot of items. We split our work in “Requests for Measurements” (RFMs) and we have collected more than 15 distinct items we considered important parts of the observatory. Check out the list in [GitHub](https://github.com/protocol/network-measurements). You are welcome to propose more topics that are important for your project by creating an issue or submitting a PR.
 
-**Funding for RFMs:** The RFMs are open to the community to get involved and contribute their previous knowledge and priceless experience to our mission. For this, there is funding available through the [Radius platform](https://app.radius.space/) and most RFMs will be published there and rewarded. We currently have the following seven grants published, two of which have already received applications:
+**Funding for RFMs:** The RFMs are open to the community to get involved and contribute their previous knowledge and priceless experience to our mission. For this, there is funding available through the [Radius platform](https://app.radius.space/) and most RFMs will be published there and rewarded. We currently have the following grants published:
 
 * [Effectiveness of Bitswap Discovery Process](https://www.dgm.xyz/grants/MQS2icjXKGJ8jy2bqS8W)
-* [IPFS Provider Record Liveness](https://www.dgm.xyz/grants/KUBoJvi8Byos9nt3s2Lt)
 * [Location of IPFS end users and requested content](https://www.dgm.xyz/grants/t7p9MzZNxCkWV171uBzm)
 * [IP address Churn (Roaming) & PeerID distribution for nodes in the IPFS Network](https://www.dgm.xyz/grants/bs6rbWLGJRnICtgjU0LS)
 * [TTFB through different architecture components](https://www.dgm.xyz/grants/g5riWRq4BkhDvl9vsjda)
 * [Distribution of DHT lookup times and Breakdown of Content Routing Latency](https://www.dgm.xyz/grants/cieOsJkIqWSQkk9obsrO)
-* [Uptime and churn of IPFS network nodes](https://www.dgm.xyz/grants/MQS2icjXKGJ8jy2bqS8W)
 
 **A thriving community!** We are collaborating with more than 40 of the brightest academic and industry researchers in more than 10 institutions, including Barcelona Supercomputing Center (ES), HKUST (CH), NOVA ULisbon (PT), QMUL (UK), Stanford (US), Telefonica (ES), Tokyo University of Technology (JP), TUBerlin (DE), TUDarmstadt (DE), TUMunich (DE), UWuppertal (DE), and more! We are meeting virtually on a weekly basis and physically on a quarterly basis. You are more than welcome to get involved and come work with us!
 
@@ -83,7 +81,7 @@ There isn’t a better time to start this exciting journey! Here are a few reaso
 * Apply for our grants at [Radius](https://app.radius.space/) and come work with us!
 * Join the discussion at the [IPFS Discord server](https://discord.gg) at the #probe-lab channel.
 * We’re meeting virtually every week and physically once a quarter (at least) - you’re welcome to join! Join the Discord server to find out more.
-* Contribute your ideas for network measurements on our Github repository: [https://github.com/protocol/network-measurements](https://github.com/protocol/network-measurements).
+* Contribute your ideas for network measurements on our [GitHub repository](https://github.com/protocol/network-measurements).
 * Tell your friends!
 
 See you soon! We’ll be announcing the findings of our work here, so stay tuned!

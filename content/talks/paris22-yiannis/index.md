@@ -41,8 +41,7 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: "We will introduce a set of measurement methodologies that allow us to uncover the characteristics and interactions in the public IPFS network. After a big measurement campaign, we reveal presence of IPFS peers in more than 2700 Autonomous Systems and 152 countries, the majority of which operate outside large central cloud providers like Amazon or Azure. We further evaluate IPFS performance, showing that both publication and retrieval delays are acceptable for a wide range of use cases.
-"
+abstract: "We will introduce a set of measurement methodologies that allow us to uncover the characteristics and interactions in the public IPFS network. After a big measurement campaign, we reveal presence of IPFS peers in more than 2700 Autonomous Systems and 152 countries, the majority of which operate outside large central cloud providers like Amazon or Azure. We further evaluate IPFS performance, showing that both publication and retrieval delays are acceptable for a wide range of use cases."
 
 ---
 
