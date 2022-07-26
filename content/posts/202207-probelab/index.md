@@ -80,7 +80,7 @@ There isn’t a better time to start this exciting journey! Here are a few reaso
   * [Tools for developing distributed applications and protocols](https://www.youtube.com/watch?v=MvyyuMxsKqk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO)
   * [Libp2p DHT: performance, workloads and future directions](https://www.youtube.com/watch?v=RPO1zCqsxY0&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO)
 * Check out all of our ongoing projects and follow announcements at our [Notion page](https://www.notion.so/pl-strflt/ProbeLab-Protocol-Benchmarking-Optimization-a63238fd1b184d6f8fea4bb38d975208)
-* Apply for our grants at: [https://dgm.xyz](https://dgm.xyz) and come work with us!
+* Apply for our grants at [Radius](https://app.radius.space/) and come work with us!
 * Join the discussion at the [IPFS Discord server](https://discord.gg) at the #probe-lab channel.
 * We’re meeting virtually every week and physically once a quarter (at least) - you’re welcome to join! Join the Discord server to find out more.
 * Contribute your ideas for network measurements on our Github repository: [https://github.com/protocol/network-measurements](https://github.com/protocol/network-measurements).
