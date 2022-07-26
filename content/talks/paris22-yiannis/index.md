@@ -1,6 +1,6 @@
 ---
 # Talk title
-title: "IPFS Network Measurements and Improvements Opportunities"
+title: "IPFS network measurements and improvement opportunities"
 
 # Website post date
 # format YYYY-MM-DD
