@@ -28,10 +28,13 @@ For more information on our problems of interest, projects, and other activities
 * [Matej Pavlovic](/authors/matej-pavlovic/) (Research Scientist)
 * [Jorge Soares](/authors/jorge-soares/) (Technical Program Manager)
 
+## Advisors
+* [Vivien Quéma](/authors/vivien-quema/) (Grenoble INP)
+
 ## Visiting researchers
-* [Andrei Tonkikh](/authors/andrei-tonkikh/) (Summer Fellow)
-* [Yann Vonlanthen](/authors/yann-vonlanthen/) (Summer Fellow)
-* [Xuechao Wang](/authors/xuechao-wang/) (Summer Fellow)
+* [Andrei Tonkikh](/authors/andrei-tonkikh/) (Télécom Paris, Summer Fellow)
+* [Yann Vonlanthen](/authors/yann-vonlanthen/) (ETHZ, Summer Fellow)
+* [Xuechao Wang](/authors/xuechao-wang/) (UIUC, Summer Fellow)
 
 ## Problems of interest
 * [Hierarchical consensus](https://github.com/protocol/ConsensusLab/issues/3)
