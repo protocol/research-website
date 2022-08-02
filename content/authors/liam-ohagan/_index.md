@@ -7,12 +7,12 @@ role: Social Media Manager
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-- research-marketing
+- "Research Marketing"
 
 # Avatar (no need to edit)
 resources:
   - name: avatar
-    src: avatar.jpg
+    src: avatar.png
 
 # Research interests
 interests:
@@ -21,7 +21,7 @@ interests:
 # Degrees
 education:
   courses:
-  - course: BA (Hons) Art, Communication, and the Environment
+  - course: Test
     institution: Green Mountain College
     year: 2013
 
