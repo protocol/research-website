@@ -7,7 +7,7 @@ taxonomyName: research-acceleration
 summary: "Research Acceleration seeks to enable faster progress through the design and operation of effective and efficient support and funding mechanisms."
 
 resources:
-  - src: icon.png
+  - src: icon.svg
 ---
 
 Research Acceleration seeks to enable faster progress through the design and operation of effective and efficient support and funding mechanisms for research(ers).
