@@ -47,7 +47,7 @@ We think it is possible to design a scalable system that doesn't sacrifice laten
 
 We know that there has been a lot of exciting work improving securty/privacy tradeoffs that has not yet been translated into working technology, and we believe that there is great potential for further progress.
 
-This RFP solicits proposals to explore and develop viable mechanisms for reader-private communications: we intend to fund both both **research** leading to deployment-ready design sketches for private communication mechanisms as well as **development** activities implementing prototypes from existing  designs.
+This RFP solicits proposals to explore and develop viable mechanisms for reader-private communications: we intend to fund both **research** leading to deployment-ready design sketches for private communication mechanisms as well as **development** activities implementing systems prototypes.
 
 We are interested in funding projects which: 
 
