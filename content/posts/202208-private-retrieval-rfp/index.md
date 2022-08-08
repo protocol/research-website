@@ -43,7 +43,7 @@ Can we speak privately?
 
 Unfortunately, our current options for interactive private communication are limited, hamstrung by their reliance on a single-trusted-origin data publication model, high latencies, and security vulnerabilities.
 
-We think it  is possible to design a scalable system the doesn't sacrifice latency for privacy.
+We think it is possible to design a scalable system that doesn't sacrifice latency for privacy.
 
 We know that there has been a lot of exciting work improving securty/privacy tradeoffs that has not yet been translated into working technology, and we believe that there is great potential for further progress.
 
