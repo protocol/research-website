@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: Announcing the first award for RFP-011,"Changing the Internet"
+title: Announcing the first award for RFP-011, "Changing the Internet"
 
 # Website post date
 # format YYYY-MM-DD
