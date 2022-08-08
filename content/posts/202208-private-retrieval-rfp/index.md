@@ -41,7 +41,7 @@ draft: false
 ---
 Can we speak privately?
 
-Unfortunately, our current options for interactive private communication are limited, hamstrung by their reliance on a single-trusted-origin data publication model, high latencies, and security vulnerabilities.
+Unfortunately, our current options for private communication are limited, hamstrung by their reliance on a single-trusted-origin data publication model, high latencies, and security vulnerabilities.
 
 We think it is possible to design a scalable system that doesn't sacrifice latency for privacy.
 
