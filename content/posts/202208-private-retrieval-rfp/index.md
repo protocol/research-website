@@ -55,4 +55,4 @@ We are interested in funding projects which: 
 
 Accepted proposals will receive up to **$300,000** in funding. All work must be released under an open-source license and may find usage in other systems. The first phase of this call will close on **1 March 2023** or earlier if awarded.
 
-We encourage interested researchers to reach out to us  by visiting #private-retrieval in the [Lodestar discord](https://discord.gg/lodestar-network-goods)  For formal questions, please email [grants@protocol.ai](mailto:grants@protocol.ai). Submit your proposal using our application management system at [grants.protocol.ai](https://grants.protocol.ai/).
+We encourage interested researchers to reach out to us  by visiting #private-retrieval in the [Lodestar discord](https://discord.gg/lodestar-network-goods)  For formal questions, please email [research-grants@protocol.ai](mailto:research-grants@protocol.ai). Submit your proposal using our application management system at [grants.protocol.ai](https://grants.protocol.ai/).
