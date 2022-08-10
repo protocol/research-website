@@ -4,7 +4,7 @@ title: Willes Lau joins ConsensusLab as a Research Engineer
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-07-06
+date: 2022-08-10
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
