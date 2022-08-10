@@ -30,7 +30,7 @@ areas:
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
   - cryptocomputelab
-  - cryptonetlab
+  - cryptonet
 
 # Not used
 draft: false

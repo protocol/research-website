@@ -29,8 +29,8 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  -
-
+  - research-acceleration
+  
 # Not used
 draft: false
 

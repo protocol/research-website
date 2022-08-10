@@ -20,7 +20,7 @@ areas:
   - cryptography
 
 groups:
-  - cryptonetlab
+  - cryptonet
   - cryptocomputelab
 
 venue: Stanford Blockchain Conference

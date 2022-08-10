@@ -14,7 +14,7 @@ authors:
   - juan-benet
 
 groups:
-  - cryptonetlab
+  - cryptonet
 
 categories:
 

@@ -10,14 +10,14 @@ date: 2021-09-21
 # publishDate: 2019-09-03
 
 # Venue Name
-venue:
+venue: PKC 2022
 
 # Venue Location
-venue_location: Espoo, Finland
+venue_location: Virtual
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date: 2021-06-21
+venue_date: 2022-03-08
 
 # DOI, if available
 doi:
@@ -25,7 +25,7 @@ doi:
 # Type of publication
 # delete all but one
 publication_types:
-  - Report
+  - conference-paper
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
@@ -41,7 +41,7 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - cryptonetlab
+  - cryptonet
 
 # Publications without a PL affiliation can be added to the author's profile without showing up elsewhere
 # If adding one, set this to true *and* do not set an area or group

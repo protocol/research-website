@@ -7,7 +7,7 @@ role: Research Scientist
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-  - CryptoNetLab
+  - Cryptonet
 
 # Avatar (no need to edit)
 resources:
@@ -49,14 +49,14 @@ social:
 # Delete what doesn't apply
 user_groups:
   - Researchers
- 
+
 
 # For display at the top of the author details page
 # Not currently used
 # quote:
 ---
 
-Matteo is interested in the science and applications of succinct cryptographic proofs (how can I convince you that I know a potentially huge---and potentially secret---piece of data with a very very tiny proof). 
+Matteo is interested in the science and applications of succinct cryptographic proofs (how can I convince you that I know a potentially huge---and potentially secret---piece of data with a very very tiny proof).
 
 He joined Protocol Labs in 2022. In a previous life, he had the privilege of being a post-doctoral researcher at [Aarhus University](https://www.au.dk/) (with [Claudio Orlandi](https://cs.au.dk/~orlandi/)) and at the  [IMDEA Software Institute](https://software.imdea.org/index.html) (with [Dario Fiore](http://www.dariofiore.it/)). In 2018 his advisor, [Rosario Gennaro](/authors/rosario-gennaro), and the City University of New York made the careless blunder of giving him a PhD.
 
