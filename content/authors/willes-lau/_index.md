@@ -16,40 +16,25 @@ resources:
 
 # Research interests
 interests:
-  - a
-  - b
-  - c
+  - Distributed Systems
+  - Photography
+  - Socialfi
 
 # Degrees
 education:
   courses:
-  # - course: PhD in Electrical and Electronics Engineering
-  #   institution: Universidad Politécnica de Madrid
-  #   year: 2019
-  # - course: MSc in Bank Management
-  #   institution: International Training Center for Bankers
-  #   year: 2009
-  # - course: MSc in Software Engineering
-  #   institution: Budapest University of Technology and Economics
-  #   year: 2007  
+  - course: MSc in Computer Science
+    institution: National University Of Singapore
+    year: 2022
+  - course: BSc in Electronic Engineering
+    institution: National University Of Singapore
+    year: 2017
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 social:
-  # - icon: twitter
-  #   link: https://twitter.com/
-  # - icon: google-scholar
-  #   link: https://scholar.google.com/citations?user=ugXwOr0AAAAJ&hl=en&oi=ao
   - icon: github
     link: https://github.com/cryptoAtWill
-  # - icon: orcid
-  #   link: https://orcid.org/
-  # - icon: linkedin
-  #   link: https://www.linkedin.com/in/akos-farkas-b7393743/
-  # - icon: researchgate
-  #   link: https://www.researchgate.net/profile/Sergey-Fedorov-2
-  # - icon: link
-  #   link: anything
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
@@ -61,4 +46,4 @@ user_groups:
 # quote:
 ---
 
-Willes is... bio
+Willes is busy at the moment. You can try reach out to the cat, if the cat says he is not available, then he is either coding or outside photographing.
