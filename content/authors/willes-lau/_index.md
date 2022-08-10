@@ -46,4 +46,4 @@ user_groups:
 # quote:
 ---
 
-Willes is busy at the moment. You can try reach out to the cat, if the cat says he is not available, then he is either coding or outside photographing.
+Willes is busy at the moment. You can try reach the cat. If the cat says he is not available, then he is either coding or outside photographing.
