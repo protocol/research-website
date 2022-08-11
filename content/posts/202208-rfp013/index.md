@@ -53,6 +53,6 @@ As part of that mission, we're now launching a new funding programme to support 
 - Quantum resistant cryptography
 - Proofs of space
 
-We expect the typical grant to last one year and receive $25,000 in funding, but applications are accepted for amounts up to $35,000. Funds can be used to support graduate students, the summer salaries of university faculty, travel to conferences and meetings, participation in summer schools and Web3 events, or fellowships for graduate students and postdocs.
+We expect the typical grant to last one year and receive \\$25,000 in funding, but applications are accepted for amounts up to \\$35,000. Funds can be used to support graduate students, the summer salaries of university faculty, travel to conferences and meetings, participation in summer schools and Web3 events, or fellowships for graduate students and postdocs.
 
 If you are a researcher working in any of the problems above, we encourage you to [read the details of the funding call](https://github.com/protocol/research-grants/blob/master/RFPs/rfp-013-cryptonet-network-grants.md), submit your application, and become part of Cryptonet's extended community of researchers and collaborator.
