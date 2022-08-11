@@ -4,7 +4,7 @@ title: "Introducing Cryptonet network grants"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-08-09
+date: 2022-08-11
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
