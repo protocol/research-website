@@ -67,6 +67,8 @@ As a whole, it forms the basis for a model of the internet where people own thei
 
 # RFP-011: [Changing the Internet](https://github.com/protocol/research-grants/blob/master/RFPs/rfp-011-changing-the-internet.md)
 
+## Easing Access To Web 3.0 Services
+
 ### Team:
 - [Scott Shenker](https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html), ICSI and UC Berkeley
 - [Arvind Krishnamurthy](https://www.cs.washington.edu/people/faculty/arvind), University of Washington
