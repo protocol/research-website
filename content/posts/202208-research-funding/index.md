@@ -58,16 +58,11 @@ In this project, we aim at providing a comprehensive study on Filecoin’s Expec
 ### Team:
 - [Jacky Zhao](https://jzhao.xyz/), Verses
 
-**Abstract:** In an ideal world, there is data-neutrality. Much like how net neutrality strives to maintain separation of provider and content markets, data neutrality strives to maintain the separation of data and application markets.
-
-Single purpose apps backed by general purpose data.
-
-My main research question is about how we can enable data-neutrality on a web dominated by data moats. If we can create separate markets for data and applications, it creates competition based on service quality rather than on data ownership.
-
-I’m tentatively calling this project Rhizome, a data-persistence and identity layer for the distributed web. It is made up of two major components:
+**Abstract:** In an ideal world, there is data-neutrality. Much like how net neutrality strives to maintain separation of provider and content markets, data neutrality strives to maintain the separation of data and application markets. Single purpose apps backed by general purpose data. My main research question is about how we can enable data-neutrality on a web dominated by data moats. If we can create separate markets for data and applications, it creates competition based on service quality rather than on data ownership. I’m tentatively calling this project Rhizome, a data-persistence and identity layer for the distributed web. It is made up of two major components:
 
 1. A personal data pod that _you_ own. Think iCloud or Dropbox but you have agency over how much storage you want, who has access to it, and what you want to do with it.
 2. A framework for easily developing cohesive peer-to-peer applications on top of data from the previous layer
+
 As a whole, it forms the basis for a model of the internet where people own their own data.
 
 # RFP-011: [Changing the Internet](https://github.com/protocol/research-grants/blob/master/RFPs/rfp-011-changing-the-internet.md)
@@ -99,26 +94,31 @@ As a whole, it forms the basis for a model of the internet where people own thei
 ### Doctoral Fellow: [Abhiram Kothapalli](https://abhiramkothapalli.github.io/), Carnegie Mellon University
 
 - **Advisor:** [Bryan Parno](https://www.andrew.cmu.edu/user/bparno/)
+
 **Abstract:** requested
 
 ### Doctoral Fellow: [Cornelius Ihle](https://gipplab.org/team/cornelius-ihle/), University of Göttingen
 
 - **Advisor:** [Prof. Dr. Bela Gipp](https://www.gipp.com/)
+
 **Abstract:** Peer-to-peer networks and applications must provide sufficient privacy to compete with the established client-server model. This project focuses on advancing anonymity for IPFS/Libp2p to protect user privacy. Time-tested anonymity tools like proxy servers or onion routing provide anonymity and plausible deniability, as long as identities are not unmasked. The project aims to reinforce anonymity by preventing the mapping of specific content to user identities. Providing content in IPFS/Libp2p places a provider record at a peer with an ID close to the content’s CID. Theoretically, the peer ID is a pseudonym, and a peer’s identity is not immediately apparent. In practice, a peer ID can be mapped to revealing information like an IP address or revealing content, especially if personal files are pinned and shared. For a system like IPFS, with exbibytes of data, state-of-the-art private information retrieval solutions are unbearable. Fortunately, the linkability of retrieval operations and identity is weaker than in content providing. Theoretically, a peer could generate a new peer ID for every retrieval operation at the cost of high churn. In this project, such methods, tools, and protocol extensions are devised, evaluated, and applied to find effective and efficient solutions for anonymity in IPFS/Libp2p.
 
 ### Doctoral Fellow: Ioanna Karantaidou, George Mason University 
 
 - **Advisor:** [Foteini Baldimtsi](https://www.baldimtsi.com/)
+
 **Abstract:** requested
 
 ### Doctoral Fellow: [Simona Ramos](https://www.linkedin.com/in/simona-ramos-50834ba6/), Universitat Pompeu Fabra
 
 - **Advisor:** [Vanesa Daza](https://www.upf.edu/web/vanesa-daza)
+
 **Abstract:** With this research we aim to suggest a shift from traditionally centralized markets to a decentralized (blockchain-based) economy of community shared infrastructure and peer-to-peer services for Distributed Power Systems for small to medium size communities. We believe this to be a two-fold solution for mitigating the high socio-economic impact of increasing energy prices and fostering environmental sustainability. Alluding to the concept of ‘social energy’ - as a system run by and for the community, we propose to use a multidisciplinary perspective that merges economic governance theories with the technological affordances of blockchain technology - to model a community that uses a blockchain-based platform to produce, use and govern a decentralized and distributed energy system. To do so, we aim to explore the opportunities and constraints of application of blockchain (as a governance tool) for the migration of traditionally centralized markets into blockchains based horizontal systems while avoiding over-exploitation and/or under-provision of resources. In addition, we aim to apply Commons based economic theories to explore bottom-up economic governance structures across multiagent systems that can foster decentralization of blockchains in the long run. Overall, we hope that our research will facilitate the implementation of new blockchain projects specifically designed to support peer-to-peer production in (commons-oriented) communities, while fostering socio-economic policies in direction towards decentralization.
 
 ### Doctoral Fellow: [Weijie Wang](https://cpsc.yale.edu/people/weijie-wang), Yale University
 
 - **Advisor:** [Charalampos Papamanthou](https://www.cs.yale.edu/homes/cpap/)
+
 **Abstract:** requested
 
 
@@ -127,6 +127,7 @@ As a whole, it forms the basis for a model of the internet where people own thei
 ### Postdoctoral Fellow: [Kelsey Melissaris](https://www.kelseymelissaris.com/), PhD, The City University of New York
 
 - **PI:** [Claudio Orlandi](https://cs.au.dk/~orlandi/), Aarhus University
+
 **Abstract:** requested
 
 
