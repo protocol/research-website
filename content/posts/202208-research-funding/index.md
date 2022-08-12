@@ -119,7 +119,7 @@ As a whole, it forms the basis for a model of the internet where people own thei
 
 - **Advisor:** [Charalampos Papamanthou](https://www.cs.yale.edu/homes/cpap/)
 
-**Abstract:** requested
+**Abstract:** A vector commitment (VC) allows one to commit to a vector of n positions so that later verifiable openings to a particular set of positions can be performed. We propose to construct a new maintainable vector commitment with aggregation algorithms that do not require black-box use of argument systems. Our initial work, supported by Protocol Labs, is a compiler that transforms an existing VC scheme with efficient aggregation to another one that balances update and query costs, while maintaining efficient aggregation. The main challenge of this method is that the update complexity is still large, compared with state-of-the-art maintainable vector commitments. With the help of the fellowship, we plan to work on aggregating maintainable log-size individual proofs such as AMT proofs in order to reduce update costs. We also plan to explore some other log-size aggregated proofs with different structures, such as ones based on lattices.
 
 
 # Postdocctoral Fellowships
