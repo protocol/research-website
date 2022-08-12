@@ -21,7 +21,7 @@ Our work focuses on internal network protocol logic, as well as cross-protocol i
 * Our latest [ACM Sigcomm 2022 paper](https://research.protocol.ai/publications/design-and-evaluation-of-ipfs-a-storage-layer-for-the-decentralized-web/) includes a comprehensive description and internal details of the IPFS architecture, as well as a summary of our latest measurement campaign.
 
 ## Team
-* [Yiannis Psaras](https://research.protocol.ai/authors/yiannis-psaras/) (Lead)
+* [Yiannis Psaras](/authors/yiannis-psaras/) (Lead)
 * Guillaume Michel (Research Engineer)
 * Many wonderful external collaborators which you will find in the Notion page linked above.
 
