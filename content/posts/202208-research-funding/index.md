@@ -80,44 +80,42 @@ As a whole, it forms the basis for a model of the internet where people own thei
 
 # Summer Research Grant
 
-### Team 1:
-- [Matthew Akamatsu](https://www.biology.washington.edu/people/profile/matthew-akamatsu?qt-related_content=0), University of Washington
+### [Matthew Akamatsu](https://www.biology.washington.edu/people/profile/matthew-akamatsu?qt-related_content=0), University of Washington
 
 **Abstract** 
 
-### Team 2:
-- [Yevgeniy Dodis](https://cs.nyu.edu/~dodis/), New York University
+### [Yevgeniy Dodis](https://cs.nyu.edu/~dodis/), New York University
 
 **Abstract:** We live in the age where massive amounts of data need to be stored and manipulated efficiently. In particular, it quickly becomes untenable by organizations to store all this data in-house, and they have to increasingly rely on various cloud solutions for data store and access. Additionally, companies must quickly adapt to new technologies, such as the emerging blockchain technology, to keep up with the competition. This creates unprecedented challenges for privacy, security, integrity and availability. For example, since a lot of this data is very sensitive, it must be stored in an encrypted format. Moreover, data often comes from various untrusted sources, and it is paramount that the data integrity is guaranteed, even if the cloud provider colludes with some of the data sources. Finally, especially in the financial sector, data is often subject to various audits and regulations, making it challenging to perform such audits without revealing unnecessary sensitive information about the data. In this proposal we suggest using tools of modern cryptography and algorithm design to address some of these challenges.
 
 
 # Doctoral Fellowships
 
-### Doctoral Fellow: [Abhiram Kothapalli](https://abhiramkothapalli.github.io/), Carnegie Mellon University
+### [Abhiram Kothapalli](https://abhiramkothapalli.github.io/), Carnegie Mellon University
 
 - **Advisor:** [Bryan Parno](https://www.andrew.cmu.edu/user/bparno/)
 
 **Abstract:** requested
 
-### Doctoral Fellow: [Cornelius Ihle](https://gipplab.org/team/cornelius-ihle/), University of Göttingen
+### [Cornelius Ihle](https://gipplab.org/team/cornelius-ihle/), University of Göttingen
 
 - **Advisor:** [Prof. Dr. Bela Gipp](https://www.gipp.com/)
 
 **Abstract:** Peer-to-peer networks and applications must provide sufficient privacy to compete with the established client-server model. This project focuses on advancing anonymity for IPFS/Libp2p to protect user privacy. Time-tested anonymity tools like proxy servers or onion routing provide anonymity and plausible deniability, as long as identities are not unmasked. The project aims to reinforce anonymity by preventing the mapping of specific content to user identities. Providing content in IPFS/Libp2p places a provider record at a peer with an ID close to the content’s CID. Theoretically, the peer ID is a pseudonym, and a peer’s identity is not immediately apparent. In practice, a peer ID can be mapped to revealing information like an IP address or revealing content, especially if personal files are pinned and shared. For a system like IPFS, with exbibytes of data, state-of-the-art private information retrieval solutions are unbearable. Fortunately, the linkability of retrieval operations and identity is weaker than in content providing. Theoretically, a peer could generate a new peer ID for every retrieval operation at the cost of high churn. In this project, such methods, tools, and protocol extensions are devised, evaluated, and applied to find effective and efficient solutions for anonymity in IPFS/Libp2p.
 
-### Doctoral Fellow: Ioanna Karantaidou, George Mason University 
+### Ioanna Karantaidou, George Mason University 
 
 - **Advisor:** [Foteini Baldimtsi](https://www.baldimtsi.com/)
 
 **Abstract:** requested
 
-### Doctoral Fellow: [Simona Ramos](https://www.linkedin.com/in/simona-ramos-50834ba6/), Universitat Pompeu Fabra
+### [Simona Ramos](https://www.linkedin.com/in/simona-ramos-50834ba6/), Universitat Pompeu Fabra
 
 - **Advisor:** [Vanesa Daza](https://www.upf.edu/web/vanesa-daza)
 
 **Abstract:** With this research we aim to suggest a shift from traditionally centralized markets to a decentralized (blockchain-based) economy of community shared infrastructure and peer-to-peer services for Distributed Power Systems for small to medium size communities. We believe this to be a two-fold solution for mitigating the high socio-economic impact of increasing energy prices and fostering environmental sustainability. Alluding to the concept of ‘social energy’ - as a system run by and for the community, we propose to use a multidisciplinary perspective that merges economic governance theories with the technological affordances of blockchain technology - to model a community that uses a blockchain-based platform to produce, use and govern a decentralized and distributed energy system. To do so, we aim to explore the opportunities and constraints of application of blockchain (as a governance tool) for the migration of traditionally centralized markets into blockchains based horizontal systems while avoiding over-exploitation and/or under-provision of resources. In addition, we aim to apply Commons based economic theories to explore bottom-up economic governance structures across multiagent systems that can foster decentralization of blockchains in the long run. Overall, we hope that our research will facilitate the implementation of new blockchain projects specifically designed to support peer-to-peer production in (commons-oriented) communities, while fostering socio-economic policies in direction towards decentralization.
 
-### Doctoral Fellow: [Weijie Wang](https://cpsc.yale.edu/people/weijie-wang), Yale University
+### [Weijie Wang](https://cpsc.yale.edu/people/weijie-wang), Yale University
 
 - **Advisor:** [Charalampos Papamanthou](https://www.cs.yale.edu/homes/cpap/)
 
@@ -126,7 +124,7 @@ As a whole, it forms the basis for a model of the internet where people own thei
 
 # Postdocctoral Fellowships
 
-### Postdoctoral Fellow: [Kelsey Melissaris](https://www.kelseymelissaris.com/), PhD, The City University of New York
+### [Kelsey Melissaris](https://www.kelseymelissaris.com/), PhD, The City University of New York
 
 - **PI:** [Claudio Orlandi](https://cs.au.dk/~orlandi/), Aarhus University
 
