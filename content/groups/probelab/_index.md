@@ -27,4 +27,4 @@ Our work focuses on internal network protocol logic, as well as cross-protocol i
 
 ## Where to find us
 - We frequent in the #probe-lab channel on the [IPFS Discord Server](https://discord.gg/ipfs)
-- We hold bi-weekly Office Hours, where we discuss items related to network measurements, protocol design and network architecture, primarily focused around IPFS, libp2p and occassionally Filecoin. Reach out to us if you want an invite.
+- We hold bi-weekly Office Hours, where we discuss items related to network measurements, protocol design and network architecture, primarily focused around IPFS, libp2p and occasionally Filecoin. Reach out to us if you want an invite.
