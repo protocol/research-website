@@ -107,7 +107,9 @@ As a whole, it forms the basis for a model of the internet where people own thei
 
 - **Advisor:** [Foteini Baldimtsi](https://www.baldimtsi.com/)
 
-**Abstract:** requested
+**Abstract:** In this project we will explore and develop different approaches to the Proof of Storage problem. The currently proposed approach is roughly as follows: after breaking the file into blocks, one can use a Vector Commitment (VC) and prove possession by providing openings to random positions picked by the verifier. The soundness of this approach is relatively low and depends on the number of blocks. Storage of pre-computed proofs is highly possible, as the total number of proofs equals the number of blocks and hitting one of them by random happens with non-negligible probability. Therefore, multiple positions have to be opened.
+
+We propose an alternative approach. Instead of using a VC, one can commit to blocks using an accumulator and prove membership/non-membership of random blocks picked by the verifier. We believe that this solution can lead to better soundness with less queries. However, as such an approach is expected to be computationally heavy for the prover, as part of this project we will explore solutions with trade-offs between storage and computation that come with rigorous soundness guarantees.
 
 ### [Simona Ramos](https://www.linkedin.com/in/simona-ramos-50834ba6/), Universitat Pompeu Fabra
 
