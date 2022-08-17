@@ -95,7 +95,7 @@ As a whole, it forms the basis for a model of the internet where people own thei
 
 - **Advisor:** [Bryan Parno](https://www.andrew.cmu.edu/user/bparno/)
 
-**Abstract:** requested
+**Abstract:** Zero-knowledge proofs are a powerful cryptographic technique for demonstrating the correctness of computations without revealing any secret inputs. Modern applications are beginning to employ recursive zero-knowledge proofs (proofs that demonstrate the existence of other proofs) due to their distinct ability to handle stateful computation with dynamic control flow. For instance, one can efficiently prove large statements such as "the current state of the blockchain is valid" by proving that "there exists a proof for the previous state of the blockchain and the most recent update is valid". However, new challenges arise when reasoning about the security of recursive proofs, which inductively rely on the security of the proofs underlying them. Traditional theoretical frameworks strain to iron out complications that arise in the recursive regime. As such, we are working to develop better frameworks and security models to help design and reason about recursive proofs.
 
 ### [Cornelius Ihle](https://gipplab.org/team/cornelius-ihle/), University of Göttingen
 
