@@ -17,29 +17,30 @@ resources:
     src: avatar.jpg
 
 interests:
-  - [LIST HERE]
+  - Decentralized Systems
+  - Computer Networking
+  - Content Routing
+  - Cryptography
+  - Privacy
+  - Linux
+  - Open Source
 
 education:
   courses:
-    - course: 
-      institution: 
-      year: 
+    - course: MSc in Computer Science - Cybersecurity 
+      institution: EPFL / ETH Zurich
+      year: 2021
+    - course: BSc in Communication Systems
+      institution: EPFL
+      year: 2018
 
 social:
-  - icon: twitter
-    link:
-  - icon: google-scholar
-    link: 
   - icon: github
     link: https://github.com/guillaumemichel
-  - icon: researchgate
-    link: 
+  - icon: google-scholar
+    link: https://scholar.google.com/citations?user=dUAR6ecAAAAJ
   - icon: linkedin
-    link:
-  - icon: link
-    link: 
-
-email:
+    link: https://linkedin.com/gvmichel
 
 user_groups:
   - Researchers
@@ -48,4 +49,6 @@ user_groups:
 quote:
 ---
 
-[BIO HERE]
+Guillaume is a research engineer specialized in computer systems and networks. He obtained a joint Master's degree in Computer Science - Cybersecurity from EPFL and ETH Zurich. He joined Protocol Labs in 2022. 
+
+Guillaume advocates Internet Decentralization, Privacy and FLOSS (Free/Libre Open Source Software).
