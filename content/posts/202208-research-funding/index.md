@@ -25,11 +25,20 @@ tags:
 
 # Zero or more of the areas in content/areas
 areas:
-  - [TO ADD]
+  - cryptography
+  - distributed-systems
+  - metaresearch
+  - networking
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  -  [TO ADD]
+  - consensuslab
+  - cryptocomputelab
+  - cryptoeconlab
+  - cryptonet
+  - networkresearch
+  - probelab
+  - research-acceleration
   
 
 # Not used
