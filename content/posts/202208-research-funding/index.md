@@ -133,4 +133,6 @@ We propose an alternative approach. Instead of using a VC, one can commit to blo
 **Abstract:** requested
 
 
-# Concluding thoughts
+# Congratulations!
+
+PL Research is excited to support these talented researchers as they continue driving progress in tandem with Protocol Labs. To learn more about our grant offerings visit our [grants repo](https://github.com/protocol/research-grants), and you can apply for funding at https://grants.protocol.ai/. Please reach out to research-grants@protocol.ai with any questions or feedback.
