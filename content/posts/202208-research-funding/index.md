@@ -4,7 +4,7 @@ title: "Protocol Labs research funding recipients 2022"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-08-12
+date: 2022-08-23
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -84,14 +84,10 @@ As a whole, it forms the basis for a model of the internet where people own thei
 - [James McCauley](https://www.mtholyoke.edu/people/james-mccauley), Mount Holyoke College
 - [Aurojit Panda](https://cs.nyu.edu/~apanda/), New York University
 
-**Abstract:** 
-
 
 # Summer Research Grant
 
 ### [Matthew Akamatsu](https://www.biology.washington.edu/people/profile/matthew-akamatsu?qt-related_content=0), University of Washington
-
-**Abstract** 
 
 ### [Yevgeniy Dodis](https://cs.nyu.edu/~dodis/), New York University
 
@@ -138,8 +134,6 @@ We propose an alternative approach. Instead of using a VC, one can commit to blo
 ### [Kelsey Melissaris](https://www.kelseymelissaris.com/), PhD, The City University of New York
 
 - **PI:** [Claudio Orlandi](https://cs.au.dk/~orlandi/), Aarhus University
-
-**Abstract:** requested
 
 
 # Congratulations!
