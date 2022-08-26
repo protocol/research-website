@@ -55,7 +55,7 @@ To be notified of future grants, please [subscribe to our newsletter](https://ma
 
 ## Analyzing and Improving Filecoin's Expected Consensus
 ### Team:
-- [Tong Cao](https://www.researchgate.net/profile/Tong-Cao), Kunyao Academy
+- [Tong Cao](https://wwwen.uni.lu/snt/people/tong_cao), Kunyao Academy
 - Xin Li, Kunyao Academy
 
 **Abstract:** In the past few years, we have witnessed the fast development of blockchains. As more and more communication protocols, voting mechanisms, and cryptographic primitives are involved in building consensus, conducting a formal analysis to evaluate the security and performance of novel consensus is becoming increasingly difficult.
@@ -65,7 +65,7 @@ In this project, we aim at providing a comprehensive study on Filecoin’s Expec
 
 ## Rhizome
 ### Team:
-- [Jacky Zhao](https://jzhao.xyz/), Verses
+- [Jacky Zhao](https://github.com/jackyzha0), Verses
 
 **Abstract:** In an ideal world, there is data-neutrality. Much like how net neutrality strives to maintain separation of provider and content markets, data neutrality strives to maintain the separation of data and application markets. Single purpose apps backed by general purpose data. My main research question is about how we can enable data-neutrality on a web dominated by data moats. If we can create separate markets for data and applications, it creates competition based on service quality rather than on data ownership. I’m tentatively calling this project Rhizome, a data-persistence and identity layer for the distributed web. It is made up of two major components:
 
@@ -96,7 +96,7 @@ As a whole, it forms the basis for a model of the internet where people own thei
 
 # Doctoral Fellowships
 
-### [Abhiram Kothapalli](https://abhiramkothapalli.github.io/), Carnegie Mellon University
+### [Abhiram Kothapalli](https://csd.cmu.edu/people/graduate-student/abhiram-kothapalli), Carnegie Mellon University
 
 - **Advisor:** [Bryan Parno](https://www.andrew.cmu.edu/user/bparno/)
 
@@ -104,13 +104,13 @@ As a whole, it forms the basis for a model of the internet where people own thei
 
 ### [Cornelius Ihle](https://gipplab.org/team/cornelius-ihle/), University of Göttingen
 
-- **Advisor:** [Prof. Dr. Bela Gipp](https://www.gipp.com/)
+- **Advisor:** [Prof. Dr. Bela Gipp](https://gipplab.org/)
 
 **Abstract:** Peer-to-peer networks and applications must provide sufficient privacy to compete with the established client-server model. This project focuses on advancing anonymity for IPFS/Libp2p to protect user privacy. Time-tested anonymity tools like proxy servers or onion routing provide anonymity and plausible deniability, as long as identities are not unmasked. The project aims to reinforce anonymity by preventing the mapping of specific content to user identities. Providing content in IPFS/Libp2p places a provider record at a peer with an ID close to the content’s CID. Theoretically, the peer ID is a pseudonym, and a peer’s identity is not immediately apparent. In practice, a peer ID can be mapped to revealing information like an IP address or revealing content, especially if personal files are pinned and shared. For a system like IPFS, with exbibytes of data, state-of-the-art private information retrieval solutions are unbearable. Fortunately, the linkability of retrieval operations and identity is weaker than in content providing. Theoretically, a peer could generate a new peer ID for every retrieval operation at the cost of high churn. In this project, such methods, tools, and protocol extensions are devised, evaluated, and applied to find effective and efficient solutions for anonymity in IPFS/Libp2p.
 
 ### Ioanna Karantaidou, George Mason University 
 
-- **Advisor:** [Foteini Baldimtsi](https://www.baldimtsi.com/)
+- **Advisor:** [Foteini Baldimtsi](https://volgenau.gmu.edu/profiles/foteini)
 
 **Abstract:** In this project we will explore and develop different approaches to the Proof of Storage problem. The currently proposed approach is roughly as follows: after breaking the file into blocks, one can use a Vector Commitment (VC) and prove possession by providing openings to random positions picked by the verifier. The soundness of this approach is relatively low and depends on the number of blocks. Storage of pre-computed proofs is highly possible, as the total number of proofs equals the number of blocks and hitting one of them by random happens with non-negligible probability. Therefore, multiple positions have to be opened.
 
