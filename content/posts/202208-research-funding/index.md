@@ -42,11 +42,11 @@ groups:
   
 
 # Not used
-draft: true
+draft: false
 
 
 ---
-Protocol Labs Research is thrilled to announce the first research funding recipients of 2022! We fund researchers around the world and have given out 11 awards so far this year. These awards include three **[RFPs](https://github.com/protocol/research-grants/tree/master#requests-for-proposals-rfps)**, two **[Summer Research Grants](https://github.com/protocol/research-grants/tree/master#protocol-labs-summer-research-grant)**, five **[Doctoral fellowships](https://github.com/protocol/research-grants/tree/master#protocol-labs-doctoral-fellowship)**, and one **[Postdoctoral fellowship](https://github.com/protocol/research-grants/tree/master#protocol-labs-postdoctoral-fellowship)**. [Describe grant types]. [Link to previous awardees?]
+Protocol Labs Research is thrilled to announce the first research funding recipients of 2022! We fund researchers around the world and have given out 11 awards so far this year. These awards include three **[RFPs](https://github.com/protocol/research-grants/tree/master#requests-for-proposals-rfps)**, two **[Summer Research Grants](https://github.com/protocol/research-grants/tree/master#protocol-labs-summer-research-grant)**, five **[Doctoral fellowships](https://github.com/protocol/research-grants/tree/master#protocol-labs-doctoral-fellowship)**, and one **[Postdoctoral fellowship](https://github.com/protocol/research-grants/tree/master#protocol-labs-postdoctoral-fellowship)**.
 
 To be notified of future grants, please [subscribe to our newsletter](https://mailchi.mp/protocol/research-newsletter-signup). You can view our current and past grant offerings in our [GitHub repository](https://github.com/protocol/research-grants#protocol-labs-research-grants) or apply for research funding at [grants.protocol.ai](http://grants.protocol.ai).
 
