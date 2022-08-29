@@ -108,7 +108,7 @@ As a whole, it forms the basis for a model of the internet where people own thei
 
 **Abstract:** Peer-to-peer networks and applications must provide sufficient privacy to compete with the established client-server model. This project focuses on advancing anonymity for IPFS/Libp2p to protect user privacy. Time-tested anonymity tools like proxy servers or onion routing provide anonymity and plausible deniability, as long as identities are not unmasked. The project aims to reinforce anonymity by preventing the mapping of specific content to user identities. Providing content in IPFS/Libp2p places a provider record at a peer with an ID close to the content’s CID. Theoretically, the peer ID is a pseudonym, and a peer’s identity is not immediately apparent. In practice, a peer ID can be mapped to revealing information like an IP address or revealing content, especially if personal files are pinned and shared. For a system like IPFS, with exbibytes of data, state-of-the-art private information retrieval solutions are unbearable. Fortunately, the linkability of retrieval operations and identity is weaker than in content providing. Theoretically, a peer could generate a new peer ID for every retrieval operation at the cost of high churn. In this project, such methods, tools, and protocol extensions are devised, evaluated, and applied to find effective and efficient solutions for anonymity in IPFS/Libp2p.
 
-### Ioanna Karantaidou, George Mason University 
+### [Ioanna Karantaidou](https://sites.google.com/view/ioannakarantaidou), George Mason University 
 
 - **Advisor:** [Foteini Baldimtsi](https://volgenau.gmu.edu/profiles/foteini)
 
