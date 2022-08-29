@@ -36,7 +36,7 @@ groups:
   - cryptocomputelab
   - cryptoeconlab
   - cryptonet
-  - networkresearch
+  - network-research
   - probelab
   - research-acceleration
   
