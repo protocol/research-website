@@ -27,7 +27,7 @@ resources:
 # Taxonomies:
 # delete all but one
 publication_types:
-  - report
+  - conference-paper
 
 authors:
   - matteo-campanelli
