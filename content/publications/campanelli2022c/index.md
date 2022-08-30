@@ -7,7 +7,7 @@ date: 2022-08-30
 # publishDate: 2019-09-03
 
 # Publication Name (not used)
-# journal:
+# journal: International Association for Cryptologic Research
 
 # Venue Name
 venue: [Asiacrypt 2022](https://asiacrypt.iacr.org/2022/)
