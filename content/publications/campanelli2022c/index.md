@@ -16,7 +16,7 @@ venue: [Asiacrypt 2022](https://asiacrypt.iacr.org/2022/)
 venue_location: Taipei, Taiwan
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
-venue_date: 2022-12-05 - 2022-12-09
+venue_date: 2022-12-05
 
 # Digital Object Identifier
 doi:
