@@ -10,7 +10,7 @@ date: 2022-08-30
 # journal: International Association for Cryptologic Research
 
 # Venue Name
-venue: [Asiacrypt 2022](https://asiacrypt.iacr.org/2022/)
+venue: Asiacrypt 2022
 
 # Venue Location
 venue_location: Taipei, Taiwan
