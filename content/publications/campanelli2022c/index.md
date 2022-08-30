@@ -40,7 +40,7 @@ tags:
   -
 
 categories:
-  - report
+  - 
 
 areas:
   - cryptography
