@@ -1,5 +1,5 @@
 ---
-title: "Encryption to the Future: A Paradigm for Sending Secret Messages to Future (Anonymous) Committees"
+title: "Encryption to the future: A paradigm for sending secret messages to future (anonymous) committees"
 
 # Website post date
 date: 2022-08-30
