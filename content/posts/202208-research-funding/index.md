@@ -135,6 +135,10 @@ We propose an alternative approach. Instead of using a VC, one can commit to blo
 
 - **PI:** [Claudio Orlandi](https://cs.au.dk/~orlandi/), Aarhus University
 
+**Abstract:** Proxy cryptography provides a method by which one party, the delegator, can securely delegate cryptographic tasks requiring a secret key to another party, the delegatee. A proxy re-encryption scheme enables the delegator to derive a key for a designated third party, the proxy, that can translate any ciphertext encrypted to the delegator into a ciphertext encrypted to the delegatee. Similarly, a proxy re-signature scheme enables the proxy to transform the delegatee’s signature into the delegator’s signature. All parties involved are mutually distrustful so these computations must be securely performed in a way that preserves privacy for each party.
+
+Many proxy protocols have been proposed for both encryption and signature schemes from various assumptions but existing protocols do not enable fully flexible delegation. The proposed research generalizes the existing primitives of proxy re-encryption and re-signatures to the witness-based setting, specifically witness encryption and signatures of knowledge. In this setting NP statements replace public keys and witnesses to those statements function as secret keys. The proposed research will be the most general and flexible method for fine-grained delegation of these tasks and has applications in smart contracts, sharing encrypted outsourced data, updating encryption to comply with changing standards, and distributed signing protocols.
+
 
 # Congratulations!
 
