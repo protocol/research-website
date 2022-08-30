@@ -10,5 +10,10 @@ resources:
   - src: icon.svg
 ---
 
+ Network Research is building a new era of networked science by identifying and using leverage points within science as a system to align researchers and research funders. 
 
+## Team
+* [Karola Kirsanow](/authors/karola-kirsanow/)
+* [Barath Raghavan](/authors/barath-raghavan/)
+* [Sílvia Bessa](/authors/silvia-bessa/)
 
