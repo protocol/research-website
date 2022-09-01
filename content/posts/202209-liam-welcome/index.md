@@ -4,7 +4,7 @@ title: Liam O'Hagan joins the Research Marketing team
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-08-02
+date: 2022-09-01
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
