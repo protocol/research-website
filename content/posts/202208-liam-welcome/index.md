@@ -12,7 +12,7 @@ date: 2022-08-02
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  - jorge-soares
+  - abby-silin
 
 # If applicable
 categories:
@@ -29,7 +29,7 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - "Research Marketing"
+  - 
 
 # Not used
 draft: false
