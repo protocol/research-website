@@ -36,7 +36,9 @@ draft: false
 
 ---
 
-Lorem Ipsum
+We are excited to announce [Liam O'Hagan](/authors/liam-ohagan/) has joined the team as a social media manager.
+
+We asked Liam about his path to PL, what he will be working on, and his thoughts about future technological developments:
 
 **How did you decide to join Protocol Labs, and what are you working on?**
 
