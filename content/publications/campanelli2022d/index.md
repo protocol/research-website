@@ -10,10 +10,10 @@ date: 2022-09-08
 # publishDate: 2019-09-08
 
 # Venue Name
-venue: 
+venue:
 
 # Venue Location
-venue_location: 
+venue_location:
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
@@ -46,7 +46,7 @@ unaffiliated: false
 # Publication pdf, should be in the same folder
 # No need to fill this out; just name the file the same as the folder
 #resources:
-# 
+#
 
 # Not generally used
 # featured: false
