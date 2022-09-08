@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Curve Trees: Practical and Transparent Zero-Knowledge Accumulators"
+title: "Curve trees: Practical and transparent zero-knowledge accumulators"
 
 # Website post date
 # format YYYY-MM-DD
