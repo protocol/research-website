@@ -29,7 +29,8 @@ publication_types:
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - matteo-campanelli, "Mathias Hall-Andersen"
+  - matteo-campanelli
+  - "Mathias Hall-Andersen"
 
 # Zero or more of the areas in content/areas
 areas:
