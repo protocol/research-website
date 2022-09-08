@@ -25,7 +25,7 @@ doi:
 # Type of publication
 # delete all but one
 publication_types:
-  - journal-article
+  - report
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
