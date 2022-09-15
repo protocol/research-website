@@ -39,7 +39,7 @@ draft: false
 
 Consensusday 22 is fast approaching! The workshop, which will be co-located with ACM CCS this year, will take place 7 November in Los Angeles.
 
-The exciting final programme for this edition comprises 15 papers, covering assumptions, PoS security, leader election, performance, and more. Eligible papers will be included in the CCS workshop proceedings and made available in the ACM Digital Library.
+We have another exciting programme for this edition, comprising 15 talks that cover assumptions, PoS security, leader election, performance, and more. Eligible papers will be included in the CCS workshop proceedings and made available in the ACM Digital Library.
 
 The workshop programme is now available on the [ConsensusDay 22 website](/sites/consensusday22/programme/).
 
