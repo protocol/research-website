@@ -39,7 +39,7 @@ draft: false
 
 Consensusday 22 is fast approaching! The workshop, which will be co-located with ACM CCS this year, will take place 7 November in Los Angeles.
 
-For this edition, we received 25 submissions and accepted 15 into the final programme. Eligible papers will be published in the CCS workshop proceedings and made available in the ACM Digital Library.
+For this edition, we received 25 submissions and accepted 15 into an exciting final programme. Eligible papers will be published in the CCS workshop proceedings and made available in the ACM Digital Library.
 
 The workshop programme is now available on the [ConsensusDay 22 website](/sites/consensusday22/programme/).
 
