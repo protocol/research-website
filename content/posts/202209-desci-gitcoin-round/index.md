@@ -4,7 +4,7 @@ title: "Gitcoin Grants Round 15: getting DeSci on the SamePage"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-09-15
+date: 2022-09-16
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -40,7 +40,7 @@ draft: false
 
 Protocol Labs is excited to support the [Decentralized Science](https://gitcoin.co/grants/explorer/?page=1&limit=12&me=false&sort_option=weighted_shuffle&collection_id=false&network=mainnet&state=active&profile=false&round_num=15&customer_name=DeSci&sub_round_slug=gr15-desci&collections_page=1&grant_regions=&grant_types=&grant_tags=&tenants=&idle=true&featured=true&round_type=false&tab=grants) Matching Grant Funding Round in Gitcoin's GR15, now live until 22 September, 2022.
 
-The [Gitcoin Grants Program](https://gitcoin.co/grants/) uses [quadratic funding](https://wtfisqf.com/?grant=&grant=&grant=&grant=&match=1000) to leverage small contributions across a large and diverse network of contributors into large impact – a new Web3-native way of sustainably funding public goods projects.
+The [Gitcoin Grants Program](https://gitcoin.co/grants/) uses [quadratic funding](https://wtfisqf.com/?grant=&grant=&grant=&grant=&match=1000) to leverage small contributions across a large and diverse network of contributors into large impact –- a new Web3-native way of sustainably funding public goods projects.
 
 The DeSci round focuses on accelerating the growth of the decentralized science community and supporting innovative research initiatives enabled by Web3 tools, ideas, and technology. The matching pool currently stands at **$500k USD**, reflecting research funders' enthusiasm for creating both new scientific discoveries and new ways of working in science.
 
