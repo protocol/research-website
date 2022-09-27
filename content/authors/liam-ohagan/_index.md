@@ -33,8 +33,6 @@ social:
     link: https://twitter.com/Liam6LFC
   - icon: github
     link: https://github.com/liam-ohagan
-  - icon: orcid
-    link: https://orcid.org/0000-0002-1825-0097
   - icon: linkedin
     link: https://www.linkedin.com/in/liam-o-hagan/  
 
