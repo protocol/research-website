@@ -22,30 +22,21 @@ interests:
 # Degrees
 education:
   courses:
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
-  - course: Title course 1
-    institution: Name of Institution
+  - course: Bsc(Hons) Sports Therapy
+    institution: Edge Hill University
     year: 2012
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
 social:
   - icon: twitter
-    link: https://twitter.com/USERNAME
-  - icon: google-scholar
-    link: https://scholar.google.com/citations?user=PERSON-ID
+    link: https://twitter.com/Liam6LFC
   - icon: github
-    link: https://github.com/USERNAME
+    link: https://github.com/liam-ohagan
   - icon: orcid
     link: https://orcid.org/0000-0002-1825-0097
   - icon: linkedin
-    link: https://www.linkedin.com/in/USERNAME
-  - icon: researchgate
-    link: https://www.researchgate.net/profile/USERNAME
-  - icon: link
-    link: https://example.org/    
+    link: https://www.linkedin.com/in/liam-o-hagan/  
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
@@ -57,4 +48,8 @@ user_groups:
 # quote:
 ---
 
-Write bio here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Liam originated in the fitness indsutry having gained a Bachelors of Science in Sports Therapy in the UK before moving to the UAE where he ran his own fitness business, using scientific studies as the backing of his practice.
+
+After living in three different countries and being surrounded by, and working with, different diverse backgrounds, he discovered one of his biggest passions is to see and learn how things can be done differently by learning from each other to improve our lives. 
+
+Liam is keen on using his knowledge of marketing to spread the message of his passion of finding better solutions to better humanity with the infrastructure of our lives.
