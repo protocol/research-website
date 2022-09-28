@@ -37,8 +37,6 @@ authors:
 areas:
   - distributed-systems
   - networking
-  - libp2p
-  - NAT Traversal
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
