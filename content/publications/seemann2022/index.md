@@ -4,7 +4,7 @@ title: "Decentralized Hole Punching"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-09-29
+date: 2022-09-28
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
