@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Decentralized Hole Punching"
+title: "Decentralized hole punching"
 
 # Website post date
 # format YYYY-MM-DD
@@ -29,7 +29,7 @@ publication_types:
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - "Marten Seemann"
+  - marten-seemann
   - "Max Inden"
   - "Dimitris Vyzovitis"
 
