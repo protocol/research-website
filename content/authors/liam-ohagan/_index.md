@@ -14,11 +14,6 @@ resources:
   - name: avatar
     src: avatar.png
 
-# Research interests
-interests:
-  - Interest 1
-  - Interest 2
-
 # Degrees
 education:
   courses:
