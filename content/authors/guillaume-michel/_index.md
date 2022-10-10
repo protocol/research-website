@@ -40,7 +40,7 @@ social:
   - icon: google-scholar
     link: https://scholar.google.com/citations?user=dUAR6ecAAAAJ
   - icon: linkedin
-    link: https://linkedin.com/gvmichel
+    link: https://linkedin.com/in/gvmichel
 
 user_groups:
   - Researchers
