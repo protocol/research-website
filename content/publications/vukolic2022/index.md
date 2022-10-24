@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: Mir-BFT: Scalable and robust BFT for decentralized networks
+title: "Mir-BFT: Scalable and robust BFT for decentralized networks"
 
 # Website post date
 # format YYYY-MM-DD
@@ -20,7 +20,7 @@ venue_location:
 venue_date:
 
 # DOI, if available
-doi: 10.5070/SR32159278
+doi: "10.5070/SR32159278"
 
 # Type of publication
 # delete all but one
