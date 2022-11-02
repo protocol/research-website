@@ -1,5 +1,5 @@
 ---
-title: "Ping-Pong: Writing low-level code a distributed protocol using Mir"
+title: "Ping-Pong: Writing low-level code for a distributed protocol"
 
 publishDate: 2020-10-30
 
@@ -9,7 +9,7 @@ layout: module
 
 resources:
   - title: featured-image
-    src: featured.jpg
+    src: featured.png
 
 relevantLinks: [
   ["Slides", "https://docs.google.com/presentation/d/1MER7bW8WI1O50rIUwUg90xGtobRWolvJFwwxquyhaEs/"], ["Mir repository", "https://github.com/filecoin-project/mir"]

@@ -1,5 +1,5 @@
 ---
-title: "Introduction: Principles of Distributed Programming with Mir"
+title: "Principles of distributed programming"
 
 publishDate: 2022-10-31
 
@@ -9,7 +9,7 @@ layout: module
 
 resources:
   - title: featured-image
-    src: featured.jpg
+    src: featured.png
 
 relevantLinks: [
   ["Slides", "https://docs.google.com/presentation/d/175vLKy-iHDhrki7iqQ0tpRWPYb_xt0-UZjgF_RADqmM/"], ["Mir repository", "https://github.com/filecoin-project/mir"]

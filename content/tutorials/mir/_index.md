@@ -1,5 +1,5 @@
 ---
-title: Distributed Programming with Mir
+title: Distributed programming with Mir
 
 date: 2022-11-02
 
