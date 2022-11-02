@@ -35,11 +35,11 @@ authors:
 
 # Zero or more of the areas in content/areas
 areas:
-  -
+  - cryptography
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  -
+  -  cryptonet
 
 # Publications without a PL affiliation can be added to the author's profile without showing up elsewhere
 # If adding one, set this to true *and* do not set an area or group
