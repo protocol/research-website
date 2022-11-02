@@ -17,6 +17,6 @@ relevantLinks: [
 
 ---
 
-This video demonstrates how we can use Mir to implement a distributed algorithm completely from scratch. We will only use the very low-level Mir primitives to express our algorithm, which is tedious and requires substantial amounts of boilerplate code. We purposefully write everything by hand to provide insight into how Mir works in its core.
+This video demonstrates how we can use Mir to implement a distributed algorithm completely from scratch. We purposefully write everything by hand to provide insight into how Mir works in its core.
 
 <!--more-->
