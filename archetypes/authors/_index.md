@@ -22,15 +22,15 @@ interests:
 # Degrees
 education:
   courses:
-  - course: Title course 1
+  - course: Degree 1
     institution: Name of Institution
     year: 2012
-  - course: Title course 1
+  - course: Degree 2
     institution: Name of Institution
     year: 2012
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
-# Delete what doesn't apply
+# Delete or comment out what doesn't apply
 social:
   - icon: twitter
     link: https://twitter.com/USERNAME
