@@ -1,13 +1,13 @@
 ---
 # Display name
-name:
+name: Alejandro Ranchal-Pedrosa
 
 # Role/position (e.g. Research Scientist)
-role:
+role: Research Scientist
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-  -
+  - consensuslab
 
 # Avatar (no need to edit)
 resources:
@@ -22,15 +22,15 @@ interests:
 # Degrees
 education:
   courses:
-  - course: Degree 1
+  - course: Title course 1
     institution: Name of Institution
     year: 2012
-  - course: Degree 2
+  - course: Title course 1
     institution: Name of Institution
     year: 2012
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
-# Delete or comment out what doesn't apply
+# Delete what doesn't apply
 social:
   - icon: twitter
     link: https://twitter.com/USERNAME
@@ -51,9 +51,6 @@ social:
 # Delete what doesn't apply
 user_groups:
   - Researchers
-  - Management and support
-  - Alumni
-  - Advisors
 
 # For display at the top of the author details page
 # Not currently used
