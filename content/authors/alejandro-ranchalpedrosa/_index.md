@@ -16,36 +16,43 @@ resources:
 
 # Research interests
 interests:
-  - Interest 1
-  - Interest 2
+  - Distributed Computing
+  - Game Theory
+  - Applied Cryptography
+  - Tokenomics
 
 # Degrees
 education:
   courses:
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
-  - course: Title course 1
-    institution: Name of Institution
-    year: 2012
+  - course: PhD student in Blockchain Technologies
+    institution: The University of Sydney
+    year: 2019–2022
+  - course: MSc in User-Centric Networking
+    institution: Sorbonne Université
+    year: 2017-2018
+  - course: MSc in Internet Technologies & Architecture
+    institution: Technische Universität Berlin
+    year: 2016-2017
+  - course: Minor in Innovation and Entrepeneurship
+    institution: EIT Digital Master School
+    year: 2016-2018
+  - course: BSc in Mathematics and Computer Science
+    institution: Universidad Politécnica de Madrid
+    year: 2012-2016
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
-# Delete what doesn't apply
+# Delete or comment out what doesn't apply
 social:
-  - icon: twitter
-    link: https://twitter.com/USERNAME
   - icon: google-scholar
-    link: https://scholar.google.com/citations?user=PERSON-ID
+    link: https://scholar.google.com/citations?user=0HfYQjgAAAAJ&hl=en
   - icon: github
-    link: https://github.com/USERNAME
+    link: https://github.com/ranchalp
   - icon: orcid
-    link: https://orcid.org/0000-0002-1825-0097
+    link: https://orcid.org/0000-0003-3919-9638
   - icon: linkedin
-    link: https://www.linkedin.com/in/USERNAME
+    link: https://www.linkedin.com/in/alejandro-ranchalpedrosa/
   - icon: researchgate
-    link: https://www.researchgate.net/profile/USERNAME
-  - icon: link
-    link: https://example.org/    
+    link: https://www.researchgate.net/profile/Alejandro-Ranchal-Pedrosa-2
 
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
@@ -57,4 +64,4 @@ user_groups:
 # quote:
 ---
 
-Write bio here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A PhD in Blockchains with years of experience programming, designing and formally proving protocols.
