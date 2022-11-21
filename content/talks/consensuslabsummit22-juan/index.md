@@ -1,6 +1,6 @@
 ---
 # Talk title
-title: "Applications of IPC"
+title: "Applications of Interplanetary Consensus"
 
 # Website post date
 # format YYYY-MM-DD
