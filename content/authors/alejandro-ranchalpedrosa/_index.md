@@ -61,7 +61,18 @@ user_groups:
 
 # For display at the top of the author details page
 # Not currently used
-# quote:
+# quote: 
 ---
+Alejandro's interests lie in the intersection of Distributed
+Computing, Game Theory, and Applied Cryptography that occurs at the
+Blockchain space. He is currently awaiting the final review of his PhD
+in Blockchain Technologies at The University of Sydney.
 
-A PhD in Blockchains with years of experience programming, designing and formally proving protocols.
+Before Protocol Labs, Alejandro worked at CEA Paris proposing
+protocols for scaling payment channels networks, as well as at IMT
+Paris and UAB Barcelona, where he found two critical attacks common to
+the Lightning Network and all its implementations. During his PhD, he
+worked on scaling Blockchains through subnets, increasing Blockchains'
+security through novel faults and game theoretical models, and
+enhancing Blockchains' decentralization via committee sortition proposing
+novel random beacon protocols.
