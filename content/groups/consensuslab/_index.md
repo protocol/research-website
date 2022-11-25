@@ -27,15 +27,18 @@ For more information on our problems of interest, projects, and other activities
 * [Denis Kolegov](/authors/denis-kolegov/) (Research Engineer)
 * [Willes Lau](/authors/willes-lau/) (Research Engineer)
 * [Matej Pavlovic](/authors/matej-pavlovic/) (Research Scientist)
+* [Alejandro Ranchal-Pedrosa](/authors/alejandro-ranchalpedrosa) (Research Scientist)
 * [Jorge Soares](/authors/jorge-soares/) (Technical Program Manager)
 
 ## Advisors
 * [Vivien Quéma](/authors/vivien-quema/) (Grenoble INP)
 
 ## Visiting researchers
+* [Xuechao Wang](/authors/xuechao-wang/) (UIUC, Summer Fellow)
+
+## Alumni
 * [Andrei Tonkikh](/authors/andrei-tonkikh/) (Télécom Paris, Summer Fellow)
 * [Yann Vonlanthen](/authors/yann-vonlanthen/) (ETHZ, Summer Fellow)
-* [Xuechao Wang](/authors/xuechao-wang/) (UIUC, Summer Fellow)
 
 ## Problems of interest
 * [Hierarchical consensus](https://github.com/protocol/ConsensusLab/issues/3)

@@ -3,7 +3,7 @@
 name: Xuechao Wang
 
 # Role/position (e.g. Research Scientist)
-role: Summer Fellow
+role: Visiting Researcher
 
 # Existing research group (use folder name) or free text
 groups:
@@ -50,7 +50,7 @@ social:
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
 user_groups:
-  - Alumni
+  - Researchers
 
 # For display at the top of the author details page
 # Not currently used
