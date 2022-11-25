@@ -61,4 +61,4 @@ Jorge holds BSc and MSc degrees in Communication Networks Engineering, with an e
 
 While a researcher, he worked on national and European research projects and published in international conferences and journals. He also served as a patent examiner with the [European Patent Office](https://www.epo.org/) (The Hague, The Netherlands), the second largest intergovernmental organisation in Europe, where he focused on human-computer interaction and construction of computers. In his spare time, Jorge volunteers with [IEEE](https://www.ieee.org/), having started as a student branch chair in 2007 and since served in numerous roles at the section, region, and global levels.
 
-His interests include communication protocols, networks, robot navigation, marine technology, and the optimisation of scientific research. Nowadays, he's a TPM on the ConsensusLab team, helping accelerate the group's research and supporting its researchers.
+His interests include communication protocols, networks, robot navigation, marine technology, and the optimisation of scientific research. Nowadays, he's a TPM on the ConsensusLab team, helping accelerate our research on blockchain scalability.
