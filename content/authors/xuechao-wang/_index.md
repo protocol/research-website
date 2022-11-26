@@ -3,7 +3,7 @@
 name: Xuechao Wang
 
 # Role/position (e.g. Research Scientist)
-role: Summer Fellow
+role: Visiting Researcher
 
 # Existing research group (use folder name) or free text
 groups:
