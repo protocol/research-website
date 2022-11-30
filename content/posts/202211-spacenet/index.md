@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "The Filecoin IPC Spacenet goes live"
+title: "The Filecoin Spacenet goes live"
 
 # Website post date
 # format YYYY-MM-DD
