@@ -42,6 +42,6 @@ We are pleased to announce that, as of this week, the first phase of the [Interp
 
 FEVM support is expected in the coming weeks, unleashing the potential for novel applications and use cases that require lower latency than provided by Filecoin mainnet consensus. Subnet support will be added to Spacenet next year, enabling elastic capacity and paving the road for deployment in the main network.
 
-Today, we invite you to visit our newly launched [Scaling Filecoin website](https://fil.space/) and to learn more in the [Spacenet repository](https://github.com/consensus-shipyard/spacenet). You can get funds from the [Spacenet faucet](https://spacenet.consensus.ninja/), in case you want to give it a try, and please [reach out](https://forms.gle/b1bKWonBEsnCS7pv8) if you'd like to get involved. Please come and join us on #spacenet ([Filecoin Slack](https://filecoin.io/slack)).
+Today, we invite you to visit our newly launched [Scaling Filecoin website](https://fil.space/), as well as the [Spacenet repository](https://github.com/consensus-shipyard/spacenet). You can get funds from the [Spacenet faucet](https://spacenet.consensus.ninja/), in case you want to give it a try, and please [reach out](https://forms.gle/b1bKWonBEsnCS7pv8) if you'd like to get involved. Please come and join us on #spacenet ([Filecoin Slack](https://filecoin.io/slack)).
 
 PS: If you'd like to learn more about IPC, Trantor, and the rest of our work, the [recordings from the ConsensusLab Summit](https://www.consensuslabsummit.io/videos) are now available.
