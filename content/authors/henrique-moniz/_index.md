@@ -14,20 +14,18 @@ resources:
   - name: avatar
     src: avatar.png
 
-# Research interests
-interests:
-  - Interest 1
-  - Interest 2
-
 # Degrees
 education:
   courses:
-  - course: Title degree 1
-    institution: Name of Institution
-    year: 2012
-  - course: Title degree 1
-    institution: Name of Institution
-    year: 2012
+  - course: PhD in Computer Science
+    institution: University of Lisbon
+    year: 2010
+  - course: MSc in Computer Science
+    institution: University of Lisbon
+    year: 2006
+  - course: BSc in Computer Science
+    institution: University of Lisbon
+    year: 2004
 
 # The icon must match exactly the icon name in /static/icons/<name>.png
 # Delete what doesn't apply
