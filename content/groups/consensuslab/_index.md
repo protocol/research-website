@@ -26,6 +26,7 @@ For more information on our problems of interest, projects, and other activities
 * [Guy Goren](/authors/guy-goren/) (Research Scientist)
 * [Denis Kolegov](/authors/denis-kolegov/) (Research Engineer)
 * [Willes Lau](/authors/willes-lau/) (Research Engineer)
+* [Henrique Moniz](/authors/henrique-moniz/) (Research Engineer)
 * [Matej Pavlovic](/authors/matej-pavlovic/) (Research Scientist)
 * [Alejandro Ranchal-Pedrosa](/authors/alejandro-ranchalpedrosa) (Research Scientist)
 * [Jorge Soares](/authors/jorge-soares/) (Technical Program Manager)
