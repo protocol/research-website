@@ -1,38 +1,35 @@
 ---
 # Publication title
-title: "Hierarchical consensus: A horizontal scaling framework for blockchains"
+title: "Pikachu: Securing PoS blockchains from long-range attacks by checkpointing into Bitcoin PoW using Taproot"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-03-11
+date: 2022-12-13
 
 # Publish from this date (defaults to date)
-#publishDate: 2022-03-11
+# publishDate: 2019-09-03
 
 # Venue Name
-venue: DINPS 22
+venue: "ConsensusDay 22"
 
 # Venue Location
-venue_location: Bologna, Italy
+venue_location: "Los Angeles, CA, USA"
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date: 2022-07-10
+venue_date: 2022-11-07
 
 # DOI, if available
-doi:
+doi: 10.1145/3560829.3563563
 
 # Type of publication
 # delete all but one
 publication_types:
   - conference-paper
 
-
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - alfonso-delarocha
-  - "Lefteris Kokoris-Kogias"
-  - jorge-soares
+  - sarah-azouvi
   - marko-vukolic
 
 # Zero or more of the areas in content/areas
@@ -50,7 +47,7 @@ unaffiliated: false
 # Publication pdf, should be in the same folder
 # No need to fill this out; just name the file the same as the folder
 #resources:
-#  - src: delarocha2021a.pdf
+#  - src: 119.pdf
 
 # Not generally used
 # featured: false
@@ -70,4 +67,4 @@ unaffiliated: false
 
 ---
 
-We present the Filecoin Hierarchical Consensus framework, which aims to overcome the throughput challenges of blockchain consensus by horizontally scaling the network. Unlike traditional sharding designs, based on partitioning the state of the network, our solution centers on the concept of subnets --which are organized hierarchically-- and can be spawned on-demand to manage new state.  Child subnets are firewalled from parent subnets, have their own specific policies, and run a different consensus algorithm, increasing the network capacity and enabling new applications. Moreover, they benefit from the security of parent subnets by periodically checkpointing state. In this paper, we introduce the overall system architecture, our detailed designs for cross-net transaction handling, and the open questions that we are still exploring.
+Blockchain systems based on a reusable resource, such as proof-of-stake (PoS), provide weaker security guarantees than those based on proof-of-work. Specifically, they are vulnerable to long-range attacks, where an adversary can corrupt prior participants in order to rewrite the full history of the chain. To prevent this attack on a PoS chain, we propose a protocol that checkpoints the state of the PoS chain to a proof-of-work blockchain such as Bitcoin. Our checkpointing protocol hence does not rely on any central authority. Our work uses Schnorr signatures and leverages Bitcoin recent Taproot upgrade, allowing us to create a checkpointing transaction of constant size. We argue for the security of our protocol and present an open-source implementation that was tested on the Bitcoin testnet.

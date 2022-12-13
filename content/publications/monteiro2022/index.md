@@ -1,10 +1,10 @@
 ---
 # Publication title
-title: "Hierarchical consensus: A horizontal scaling framework for blockchains"
+title: "Enriching Kademlia by partitioning"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2022-03-11
+date: 2022-12-13
 
 # Publish from this date (defaults to date)
 #publishDate: 2022-03-11
@@ -30,18 +30,22 @@ publication_types:
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
+  - "João Monteiro"
+  - "Pedro Ákos Costa"
+  - "João Leitão"
   - alfonso-delarocha
-  - "Lefteris Kokoris-Kogias"
-  - jorge-soares
-  - marko-vukolic
+  - yiannis-psaras
+
 
 # Zero or more of the areas in content/areas
 areas:
   - distributed-systems
+  - networking
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
   - consensuslab
+  - probelab
 
 # Publications without a PL affiliation can be added to the author's profile without showing up elsewhere
 # If adding one, set this to true *and* do not set an area or group
@@ -70,4 +74,4 @@ unaffiliated: false
 
 ---
 
-We present the Filecoin Hierarchical Consensus framework, which aims to overcome the throughput challenges of blockchain consensus by horizontally scaling the network. Unlike traditional sharding designs, based on partitioning the state of the network, our solution centers on the concept of subnets --which are organized hierarchically-- and can be spawned on-demand to manage new state.  Child subnets are firewalled from parent subnets, have their own specific policies, and run a different consensus algorithm, increasing the network capacity and enabling new applications. Moreover, they benefit from the security of parent subnets by periodically checkpointing state. In this paper, we introduce the overall system architecture, our detailed designs for cross-net transaction handling, and the open questions that we are still exploring.
+Decentralizing the Web is becoming an increasingly interesting endeavor that aims at improving user security and privacy as well as providing guaranteed ownership of content. One such endeavor that pushes towards this reality, is Protocol Labs' Inter-Planetary File System (IPFS) network, that provides a decentralized large scale file system to support the decentralized Web. To achieve this, the IPFS network leverages the Kademlia DHT to route and store pointers to content stored by network members (i.e., peers). However, due to the large number of network peers, content, and accesses, the DHT routing needs to be efficient and quick to enable a decentralized web that is competitive. In this paper, we present work in progress that aims at improving the Kademlia DHT performance through the manipulation of DHT identifiers by adding prefixes to identifiers. With this, we are able to bias the DHT topological …
