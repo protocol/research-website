@@ -14,6 +14,6 @@ resources:
 
 ## Team
 * [Karola Kirsanow](/authors/karola-kirsanow/)
-* [Barath Raghavan](/authors/barath-raghavan/)
 * [Sílvia Bessa](/authors/silvia-bessa/)
+* [Raymond Cheng](/authors/raymond-cheng/)
 
