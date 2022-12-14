@@ -33,7 +33,7 @@ draft: false
 
 ---
 
-We are pleased to announce that Barath Raghavan will be working with [ResNetLab](/groups/resnetlab/) as an advisor. Barath is a [professor of computer science at USC](https://raghavan.usc.edu/), where he co-leads the [networked systems lab](https://nsl.cs.usc.edu/) and conducts research across the fields of core networked systems, computing for social good and sustainability, and security.
+We are pleased to announce that Barath Raghavan will be working with [ResNetLab](/groups/resnetlab/) as an advisor. Barath is a [professor of computer science at USC](https://raghavan.usc.edu/), where he co-leads the [networked systems lab](https://nsl.usc.edu/) and conducts research across the fields of core networked systems, computing for social good and sustainability, and security.
 
 We asked Barath about his journey to PL, the ResNetLab projects he will be advising, and his thoughts about future technological developments:
 
