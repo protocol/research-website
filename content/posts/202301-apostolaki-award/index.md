@@ -4,7 +4,7 @@ title: Announcing the final award for RFP-011, "Changing the Internet"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2023-01-02
+date: 2023-01-10
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -48,4 +48,4 @@ PL Research is  pleased to announce the final research proposal funded as part o
 If successful our proposal will allow edge networks to make the most out of the public Internet, effectively fighting the industry consolidation and the associated privacy, financial, and political risks.
 
 
-PL Research is excited to support work on new ideas for building the next generation of the internet.  While the [*Changing the Internet* RFP](https://github.com/protocol/research-grants/blob/master/RFPs/rfp-011-changing-the-internet.md#problem-statement) has closed, we encourage interested researchers to check out our open RFPs, particularly [RFP-014, *"Private Retrieval of Data"*](https://grants.protocol.ai/prog/rfp-014_private_retrieval_of_data), and to  reach out to us via email with any questions at [research@protocol.ai](mailto:research@protocol.ai). Submit your proposal using our application management system at [https://grants.protocol.ai/](https://grants.protocol.ai/).
+PL Research is excited to support work on new ideas for building the next generation of the internet.  While the [*Changing the Internet* RFP](https://github.com/protocol/research-grants/blob/master/RFPs/rfp-011-changing-the-internet.md#problem-statement) has closed, we encourage interested researchers to check out our open RFPs, particularly [RFP-014, *"Private Retrieval of Data"*](https://grants.protocol.ai/prog/rfp-014_private_retrieval_of_data), and to  reach out to us via email with any questions at[research-grants@protocol.ai](mailto:research-grants@protocol.ai.). Submit your proposal using our application management system at [https://grants.protocol.ai/](https://grants.protocol.ai/).
