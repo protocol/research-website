@@ -12,14 +12,14 @@ date: 2023-01-12
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  - "Protocol Labs Network Goods"
+  - "Network Goods"
 
 # If applicable
 categories:
   - blog
 
 # If applicable
-tags:
+#tags:
 
 # Zero or more of the areas in content/areas
 areas:
@@ -27,11 +27,11 @@ areas:
   - networking
 
 # Zero or more of the groups in content/groups (should match author membership)
-groups:
-  - network-goods
+#groups:
+
 
 # Not used
-draft: true
+draft: false
 
 
 ---
