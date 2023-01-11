@@ -29,8 +29,7 @@ publication_types:
 
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
-authors:
-  - "Network Goods"
+# authors:
 
 
 # Zero or more of the areas in content/areas
