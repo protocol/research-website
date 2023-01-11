@@ -30,7 +30,7 @@ publication_types:
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - "Protocol Labs Network Goods"
+  - "Network Goods"
 
 
 # Zero or more of the areas in content/areas
@@ -49,7 +49,7 @@ unaffiliated: false
 # Publication pdf, should be in the same folder
 # No need to fill this out; just name the file the same as the folder
 #resources:
-#  - src: plnetworkgoods2023.md
+#  - src: ngwhitepaper2.pdf
 
 # Not generally used
 # featured: false
