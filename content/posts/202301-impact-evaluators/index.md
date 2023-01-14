@@ -35,7 +35,7 @@ draft: false
 
 
 ---
-**TLDR:** _Protocol Labs' Network Funding team is releasing a whitepaper on Impact Evaluators, a funding mechanism designed for nontraditional projects with high uncertainty and high upside. Our goal is to add structure to the ongoing dialogue and share practical implementation advice based on a year of experience. [The paper is available here.](https://research.protocol.ai/publications/generalized-impact-evaluators/)_
+**TLDR:** _Protocol Labs' Network Funding team is releasing a whitepaper on Impact Evaluators, a funding mechanism designed for nontraditional projects with high uncertainty and high upside. Our goal is to add structure to the ongoing dialogue and share practical implementation advice based on a year of experience. [The paper is available here.](/publications/generalized-impact-evaluators/)_
 
 Funding vital public goods is hard, and doing so more effectively has massive economic potential. At Protocol Labs, we recognize this, and we've dedicated our Network Funding team to pushing forward innovation in how public goods and commons are funded, allocated, and sustained.
 This has led us to explore mechanisms we call "Impact Evaluators", a term coined by Juan Benet & Evan Miyazono of Protocol Labs, that builds on concepts from blockchain incentive mechanisms and retroactive funding.
