@@ -40,11 +40,11 @@ areas:
   - research-acceleration
 
 # Not used
-draft: true
+draft: false
 
 
 ---
-Over the past calendar year Protocol Labs Research has received many applications for Open Research Grants, totaling over **$$$ currently being calculated.** We have had the opportunity to collaborate with and support work of numerous researchers and institutions, and we would like to celebrate these successes while also announcing the pausing of our Open Research Grants program. 
+Over the past calendar year Protocol Labs Research has received many applications for Open Research Grants, totaling nearly $1 million USD. We have had the opportunity to collaborate with and support work of numerous researchers and institutions, and we would like to celebrate these successes while also announcing the pausing of our Open Research Grants program. 
 
 The change to our grants program offering is the result of a temporary internal shift from funding academic-forward projects to other highly impactful projects and innovative research groups, which can be seen in our current offering of open Requests for Proposals (RFPs). We realize the current time is a difficult funding environment, and apologize for the unfortunate timing. While the Open Research Grants program is closing, Protocol Labs is still accepting proposals for two RFPs, [RFP-013: Cryptonet network grant](https://github.com/protocol/research-grants/blob/master/RFPs/rfp-013-cryptonet-network-grants.md) and [RFP-014: Private retrieval of data](https://github.com/protocol/research-grants/blob/master/RFPs/rfp-014-private-retrieval-of-data.md), in addition to [RFP-X](https://github.com/protocol/research-grants#rfp-x). 
 
