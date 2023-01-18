@@ -14,7 +14,7 @@ date: 2023-01-18
 authors:
   - evan-miyazono
   - abby-silin
-  - "Britt Yazel"
+  - britt-yazel
 
 # If applicable
 categories:
