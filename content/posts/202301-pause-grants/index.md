@@ -43,7 +43,7 @@ draft: false
 
 
 ---
-Over the 2022 calendar year, Protocol Labs Research received a tremendous amount of participation and submissions for our Open Research Grants program. Having awarded more than $1 million USD for researchers around the globe, we could not be more proud of the success of this program and the quality of our award recepients. Nonetheless, in light of recent changes to our funding roadmap, Protocol Labs Research is announcing the immediate pause of our Open Research Grants program for 2023.
+Over the 2022 calendar year, Protocol Labs Research received a tremendous amount of participation and submissions for our Open Research Grants program. Having awarded more than $1 million USD for researchers around the globe, we could not be more proud of the success of this program and the quality of our award recepients. Nonetheless, in light of recent changes to our funding roadmap, PL Research is announcing the immediate pause of our Open Research Grants program for 2023.
 
 We recognize the difficulty of the current funding environment and apologize for the unfortunate timing. This change to our grant offerings is the result of a temporary internal shift towards targeting support for clearly scoped research projects critical to our work at Protocol Labs. To that end, we are happy to report that Protocol Labs still has two open Requests for Proposals (RFPs), [RFP-013: Cryptonet network grant](https://github.com/protocol/research-grants/blob/master/RFPs/rfp-013-cryptonet-network-grants.md) and [RFP-014: Private retrieval of data](https://github.com/protocol/research-grants/blob/master/RFPs/rfp-014-private-retrieval-of-data.md), in addition to [RFP-X](https://github.com/protocol/research-grants#rfp-x). 
 
