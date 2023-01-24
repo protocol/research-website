@@ -16,5 +16,5 @@ If you've interacted with the [Protocol Labs Research Grants program](https://gr
 
 ## Team
 * [Abby Silin](/authors/abby-silin/)
-* [Jorge Soares](/authors/jorge-soares/)
-* [Liz Bryson](/authors/liz-bryson/)
+* [Britt Yazel](/authors/britt-yazel/)
+
