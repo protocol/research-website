@@ -38,7 +38,7 @@ draft: false
 
 ---
 
-We are excited to welcome [Liz Bryson](/authors/liz-bryson) as a Research Administrator at Protocol Labs.  
+We are excited to welcome Liz Bryson as a Research Administrator at Protocol Labs.  
 
 We asked Liz about what brought her to Protocol Labs, the projects she'll be working on, and her thoughts on future technological developments:
 
