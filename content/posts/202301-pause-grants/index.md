@@ -21,22 +21,22 @@ categories:
   - blog
 
 # If applicable
-#tags:
-  - RFPs
-  - Grants
+# tags:
+#   - RFPs
+#   - Grants
 
 # Zero or more of the areas in content/areas
-areas:
-  - networking
+# areas:
+#   - networking
 
 # Zero or more of the groups in content/groups (should match author membership)
-#groups:
-  - consensuslab
-  - cryptoeconlab
-  - cryptonet
-  - network-research
-  - probelab
-  - research-acceleration
+# groups:
+#   - consensuslab
+#   - cryptoeconlab
+#   - cryptonet
+#   - network-research
+#   - probelab
+#   - research-acceleration
 
 # Not used
 draft: false
