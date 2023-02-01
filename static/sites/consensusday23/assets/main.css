@@ -1,0 +1,156 @@
+/* main.css */
+
+/* These are the colors and fonts used throughout the webpage.
+ * I've listed them here so that a user may easily
+ * do a search-and-replace for these to change the site theme.
+ *   'Roboto',sans-serif; Font for the title text
+ *   'Roboto-Slab',serif; Font for the body text
+ *   #fafafa; Background color of the site
+ *   #505050; Foreground (text) color of the site
+ *   #52739e; Navy, "Template" in the logo, current page in navigation, special titles in the Programme
+ *   #b2132e; Reddish, "Conference" in the logo, hover color for links
+ *   #813c54; Heading color, titles in the Programme
+ *   #115EF7; Dark Goldenrod, color for links
+ */
+
+ @font-face {
+   font-family: SourceSansPro;
+   font-weight: 100;
+   src: url("./fonts/SourceSansPro-Light.ttf") format("truetype");
+ }
+
+ @font-face {
+   font-family: SourceSansPro;
+   font-weight: 400;
+   src: url("./fonts/SourceSansPro-Regular.ttf") format("truetype");
+ }
+
+ @font-face {
+   font-family: SourceSansPro;
+   font-weight: 600;
+   src: url("./fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+ }
+
+ @font-face {
+   font-family: SourceSansPro;
+   font-weight: 700;
+   src: url("./fonts/SourceSansPro-Bold.ttf") format("truetype");
+ }
+
+*{
+    border:0;
+    font:inherit;
+    font-size:1em;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+}
+
+body{
+    background-color: #ffffff;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #131316;
+    text-align:left;
+    font-family:'SourceSansPro';
+    font-size:1em;
+    line-height:1.5em;
+    margin: auto;
+    width: 1000px;
+    padding: 0 10px 0 10px;
+}
+
+a{color: #1982F4; text-decoration:none;}
+a.current{font-weight: bold;}
+a:hover{text-decoration: underline;}
+h1,h2,h3,h4{clear:left; color: #131316; margin:1.5em 0em 1em 0em; font-family:'SourceSansPro',sans-serif}
+h1{font-size:2.67em;}
+h2{font-size:2.00em;}
+h3{font-size:1.67em;}
+h4{font-size:1.33em;}
+p{list-style:none; margin:24px auto 24px auto; padding:0px; text-align:left;}
+li a, p a {text-decoration:underline; text-decoration-color:#115EF7;}
+ul{list-style:disc; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+p + ul{margin-top:-12px}
+ul li{list-style:disc; margin:0px auto 0px auto; padding:0px; text-align:left;}
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+sup{
+    vertical-align: super;
+    font-size: 0.8em;
+    line-height: 0;
+}
+sub{
+    vertical-align: sub;
+    font-size: 0.8em;
+    line-height: 0;
+}
+table{
+    width: 1000px;
+    margin: 12px auto 24px auto;
+    float: center;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+th,td{
+    text-align: left;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+
+/* Website Banner */
+.banner {position: relative; font-family:'SourceSansPro'}
+.banner img {width:1000px; height:340px; object-fit: none;}
+.top-left {font-size:6.33em; color: #505050; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 80px;}
+.bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px;}
+
+/* Conference Title Logo */
+.title{color: #fafafa; font-weight: 400}
+.year{color: #fafafa; font-weight: lighter;}
+
+/* Navigation Links (Home, Registration, etc) */
+table.navigation{width:800px;}
+td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+
+/* Sponsor Images */
+td.sponsor{white-space:nowrap; width:33%; text-align:left; vertical-align:middle; padding:0px 0px 0px 0px;}
+
+/* The Table on the Programme Page */
+td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
+td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
+td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: black; height:32px; font-family:'SourceSansPro'}
+td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; height:32px; font-family:'SourceSansPro';}
+td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
+td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
+td.abstract img{display: block; margin: 4px auto 8px auto}
+table.plenary{margin: 12px auto 24px auto;}
+table.talk{padding-left: 50px; margin: 12px auto 12px auto;}
+table.talk td{padding-top: 0px; padding-bottom: 4px;}
+table.talk td.title{font-size: 1.2em;}
+
+/* Registration and Directions iframes and Images */
+iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1950px; border:none;}
+iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
+img.center{display:block; width:67%; margin:1em auto 2em auto;}
+
+/* Flyer Images */
+table.flyers{width:800px;}
+td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+
+/* The Footer */
+table.footer{font-size:0.875em; margin: 72px auto 12px auto; width:600px;}
+td.footer{width:auto; text-align:center; vertical-align:middle;}
+
+/* My hacky way of making the site mobile-friendly */
+@media only screen and (max-width: 1100px) {
+    h2{font-size:3.00em;}
+    p,ul{font-size:1.5em; line-height:1.5em;}
+    th,td,tr{font-size:1.5em; line-height:1.5em;}
+    td.date{font-size:1em; padding-top:0.5em;}
+    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
+    table.footer{font-size:0.33em;}
+}
+
+* {
+  max-height: 999999px;
+}
