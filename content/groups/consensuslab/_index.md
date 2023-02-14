@@ -19,10 +19,8 @@ For more information on our problems of interest, projects, and other activities
 
 ## Team
 * [Marko Vukolić](/authors/marko-vukolic/) (Lead)
-* [Sarah Azouvi](/authors/sarah-azouvi/) (Research Scientist)
 * [Alfonso de la Rocha](/authors/alfonso-delarocha/) (Research Engineer)
 * [Akosh Farkash](/authors/akosh-farkash/) (Research Engineer)
-* [Sergey Fedorov](/authors/sergey-fedorov/) (Research Engineer)
 * [Guy Goren](/authors/guy-goren/) (Research Scientist)
 * [Denis Kolegov](/authors/denis-kolegov/) (Research Engineer)
 * [Willes Lau](/authors/willes-lau/) (Research Engineer)
@@ -32,14 +30,18 @@ For more information on our problems of interest, projects, and other activities
 * [Jorge Soares](/authors/jorge-soares/) (Technical Program Manager)
 
 ## Advisors
-* [Vivien Quéma](/authors/vivien-quema/) (Grenoble INP)
+* soon
 
 ## Visiting researchers
-* [Xuechao Wang](/authors/xuechao-wang/) (UIUC, Summer Fellow)
+* soon
 
 ## Alumni
+* [Sarah Azouvi](/authors/sarah-azouvi/) (Research Scientist)
+* [Sergey Fedorov](/authors/sergey-fedorov/) (Research Engineer)
+* [Vivien Quéma](/authors/vivien-quema/) (Grenoble INP)
 * [Andrei Tonkikh](/authors/andrei-tonkikh/) (Télécom Paris, Summer Fellow)
 * [Yann Vonlanthen](/authors/yann-vonlanthen/) (ETHZ, Summer Fellow)
+* [Xuechao Wang](/authors/xuechao-wang/) (UIUC, Summer Fellow)
 
 ## Problems of interest
 * [Hierarchical consensus](https://github.com/protocol/ConsensusLab/issues/3)
