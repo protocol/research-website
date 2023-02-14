@@ -37,7 +37,7 @@ draft: false
 
 ---
 
-[ConsensusDay 22](ConsensusDay is back again for 2023)! In our never-ending quest to try out new formats, this year's edition will take place as part of the Belgrade Blockchain Week, on 5 or 6 June 2023 (exact date to be confirmed).
+[ConsensusDay is back again for 2023](/sites/consensusday23/)! In our never-ending quest to try out new formats, this year's edition will take place as part of the Belgrade Blockchain Week, on 5 or 6 June 2023 (exact date to be confirmed).
 
 We invite you to submit your work for oral presentation at the workshop. Going back to 2021's format, we will not be publishing proceedings this year, and welcome both novel contributions and those submitted or published elsewhere in the last 12 months. Be sure to check out the [call for contributions](/sites/consensusday23/calls/) for full details. The submission deadline is **15 March 2023**. If you have any questions, send us an email or come to **#consensus** in the [Filecoin slack](https://filecoin.io/slack).
 
