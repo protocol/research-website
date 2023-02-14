@@ -34,7 +34,7 @@ social:
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
 user_groups:
-  - Management and support
+  - Alumni
 
 # For display at the top of the author details page
 # Not currently used
@@ -43,6 +43,6 @@ user_groups:
 
 Liam originated in the fitness indsutry having gained a Bachelors of Science in Sports Therapy in the UK before moving to the UAE where he ran his own fitness business, using scientific studies as the backing of his practice.
 
-After living in three different countries and being surrounded by, and working with, different diverse backgrounds, he discovered one of his biggest passions is to see and learn how things can be done differently by learning from each other to improve our lives. 
+After living in three different countries and being surrounded by, and working with, different diverse backgrounds, he discovered one of his biggest passions is to see and learn how things can be done differently by learning from each other to improve our lives.
 
 Liam is keen on using his knowledge of marketing to spread the message of his passion of finding better solutions to better humanity with the infrastructure of our lives.
