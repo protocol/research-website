@@ -4,7 +4,7 @@ title: "ConsensusDay 23: call for contributions"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2023-02-14
+date: 2023-02-15
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -37,8 +37,8 @@ draft: false
 
 ---
 
-[ConsensusDay is back again for 2023](/sites/consensusday23/)! In our never-ending quest to try out new formats, this year's edition will take place as part of the [Belgrade Blockchain Week](https://belgradeblockchainweek.com/), on 5 or 6 June 2023 (exact date to be confirmed).
+[ConsensusDay is back](/sites/consensusday23/)! We're going back to our roots and organising a virtual event on 5 June 2023, in the same format as the 2021 edition.
 
-We invite you to submit your work for oral presentation at the workshop. Going back to 2021's format, we will not be publishing proceedings this year, and welcome both novel contributions and those submitted or published elsewhere in the last 12 months. Be sure to check out the [call for contributions](/sites/consensusday23/calls/) for full details. The submission deadline is **15 March 2023**. If you have any questions, send us an email or come to **#consensus** in the [Filecoin slack](https://filecoin.io/slack).
+That means we will not be publishing proceedings this year, and welcome both novel contributions and those under review or published elsewhere in the last 12 months. Be sure to check out the [call for contributions](/sites/consensusday23/calls/) for full details.
 
-Based on the feedback received, we are planning to host the conference in a hybrid format, supporting both in-person and remote attendance. We'll release more details in April, along with the event's programme.
+We invite you to submit your work for presentation at the workshop by the **15 March 2023** deadline. If you have any questions, send us an email or come to **#consensus** in the [Filecoin slack](https://filecoin.io/slack).
