@@ -151,7 +151,8 @@ These pilots should seek to show that discourse graphs are both (a) appealing to
 - number of collaborators per graph
 
 b) Test the claim: “Discourse graphs are more effective than other methods of collaboration”
-- citations per discourse graph node vs final paper (and relative time lag)
+- citations per discourse graph node vs. final paper (and relative time lag)
+
 - subjective evaluation of the rate of progress in subfields where shared notes graphs are used vs other fields
 
 <br />
