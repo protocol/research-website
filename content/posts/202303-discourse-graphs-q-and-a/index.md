@@ -81,7 +81,8 @@ Researchers are generating and sharing[^1] their discourse graphs (most with per
 
 **What do you think are the potential advantages of discourse graphs, relative to the journal article or pre-print**? 
 
-**EM**: A journal article is usually the culmination of 6-24 months of work. The initial idea or result, which would be usable to others in the field, often is generated in the initial months of the project.  **The promise of Discourse Graphs (or any robust, graph-based, notes schema) is that useful progress can be shared sooner**, with sufficient context for collaborators or with the research community at large.  Pre-prints increase the accessibility, but usually do not increase the availability of research to the extent that it could be said to accelerate science[^2].  
+**EM**: A journal article is usually the culmination of 6-24 months of work. The initial idea or result, which would be usable to others in the field, often is generated in the initial months of the project.  **The promise of Discourse Graphs (or any robust, graph-based, notes schema) is that useful progress can be shared sooner**, with sufficient context for collaborators or with the research community at large.  Preprints increase the accessibility, but usually do not increase the availability of research to the extent that it could be said to accelerate science[^2].  
+
 
 DGs provide the opportunity for modular peer review, with clear affordances to ask “does this evidence really support that claim?” or “is this evidence reproducible?” without needing to pass judgment on an entire body of work.
 
