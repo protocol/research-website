@@ -40,7 +40,8 @@ Interview between Tom Kalil (Chief Innovation Officer of [Schmidt Futures](https
 
 Below is a copy of the Q&A conducted over email between me, Evan and Matt.
 
-Individual answers are from Evan Miyazono (EM) and Matt Akamatsu (MA)
+Individual answers are from Evan Miyazono (EM) and Matt Akamatsu (MA).
+
 
 <br />
 
