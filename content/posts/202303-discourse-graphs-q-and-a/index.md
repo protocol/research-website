@@ -33,7 +33,7 @@ draft: false
 
 ---
 
-Interview between Tom Kalil (Chief Innovation Officer of [Schmidt Futures](https://www.schmidtfutures.com/)) [Dr. Evan Miyazono](https://research.protocol.ai/authors/evan-miyazono/), Research Team Lead at Protocol Labs, and [Dr. Matt Akamatsu](https://www.biology.washington.edu/people/profile/matthew-akamatsu), Assistant Professor of Biology at the University of Washington.
+Interview between Tom Kalil (Chief Innovation Officer of [Schmidt Futures](https://www.schmidtfutures.com/)) [Dr. Evan Miyazono](/authors/evan-miyazono/), Research Team Lead at Protocol Labs, and [Dr. Matt Akamatsu](https://www.biology.washington.edu/people/profile/matthew-akamatsu), Assistant Professor of Biology at the University of Washington.
 
 **Tom Kalil**:  I wanted to talk to Evan and Matt because of their pioneering work on discourse graphs – a potentially new way of communicating and sharing scientific arguments.  I think more scientists and funders of science should be aware of these ideas.  I’m also interested in the use of graphs for fostering innovation and commercialization of research, such as work by Deep Science Ventures on [outcomes graphs](https://deepscienceventures.com/content/the-outcomes-graph-2).
 
