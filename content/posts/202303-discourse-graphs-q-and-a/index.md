@@ -33,23 +33,23 @@ draft: false
 
 ---
 
-Interview between Tom Kalil (Chief Innovation Officer of [Schmidt Futures](https://www.schmidtfutures.com/)), [Dr. Evan Miyazono](/authors/evan-miyazono/), Research Team Lead at Protocol Labs, and [Dr. Matt Akamatsu](https://www.biology.washington.edu/people/profile/matthew-akamatsu), Assistant Professor of Biology at the University of Washington.
+Interview between [Tom Kalil](https://www.schmidtfutures.com/person/tom-kalil/), Chief Innovation Officer of [Schmidt Futures](https://www.schmidtfutures.com/), [Dr. Evan Miyazono](/authors/evan-miyazono/), Research Team Lead at Protocol Labs, and [Dr. Matt Akamatsu](https://www.biology.washington.edu/people/profile/matthew-akamatsu), Assistant Professor of Biology at the University of Washington.
 
 
 **Tom Kalil**:  I wanted to talk to Evan and Matt because of their pioneering work on discourse graphs – a potentially new way of communicating and sharing scientific arguments.  I think more scientists and funders of science should be aware of these ideas.  I’m also interested in the use of graphs for fostering innovation and commercialization of research, such as work by Deep Science Ventures on [outcomes graphs](https://deepscienceventures.com/content/the-outcomes-graph-2).
 
-Below is a copy of the Q&A conducted over email between me, Evan and Matt.
+Below is a copy of the Q&A conducted over email between me, Evan, and Matt.
 
-Individual answers are from Evan Miyazono (EM) and Matt Akamatsu (MA).
+_Individual answers are from Evan Miyazono (EM) and Matt Akamatsu (MA)._
 
 
 <br />
 
-**What is a discourse graph, and how are scientists beginning to use them**?
+**What is a discourse graph, and how are scientists beginning to use them?**
 
 **EM**:  A discourse graph is a way of structuring and sharing scientific arguments.  Each brief note is labeled as a *question*, *claim*, or *evidence*.  These notes (nodes) are connected to each other (via edges) in a [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) based on their relationships.
 
-<center>{{< figure src="dg-schema.png" width="850px" caption="Discourse graph schema. Scientific arguments are decomposed into their constituent parts - questions, claims, evidence - and connected into a graph. Evidence can support or oppose a claim.">}}</center>
+<center>{{< figure src="dg-schema.png" width="850px" caption="Discourse graph schema. Scientific arguments are decomposed into their constituent parts -- questions, claims, evidence -- and connected into a graph. Evidence can support or oppose a claim.">}}</center>
 
 
 **MA**: Discourse graphs currently have two use cases:
@@ -73,7 +73,7 @@ Researchers are generating and sharing[^1] their discourse graphs (most with per
 
 <br />
 
-**How did you get interested in them**?
+**How did you get interested in discourse graphs?**
 
 **EM**: My team had invited Prof. Joel Chan to present his research on synthesis of academic literature. He started describing how he’s changed the way he structured his notes based on his research, and when he said “I don’t give new students a stack of papers when they join my lab, I give them access to my notes graph” I formed the immediate conviction that this was the future of scientific collaboration.  It was easy to see this as a tool to achieve the paradigm of collaboration presented in Michael Nielsen’s Reinventing Discovery.
 
@@ -81,7 +81,7 @@ Researchers are generating and sharing[^1] their discourse graphs (most with per
 
 <br />
 
-**What do you think are the potential advantages of discourse graphs, relative to the journal article or preprint**? 
+**What do you think are the potential advantages of discourse graphs, relative to the journal article or preprint?**
 
 
 **EM**: A journal article is usually the culmination of 6-24 months of work. The initial idea or result, which would be usable to others in the field, often is generated in the initial months of the project.  **The promise of Discourse Graphs (or any robust, graph-based, notes schema) is that useful progress can be shared sooner**, with sufficient context for collaborators or with the research community at large.  Preprints increase the accessibility, but usually do not increase the availability of research to the extent that it could be said to accelerate science[^2].  
@@ -92,7 +92,7 @@ DGs provide the opportunity for modular peer review, with clear affordances to a
 Journal articles and preprints are also required to demonstrate a complete scientific narrative, starting from a research question, generating a hypothesis, designing and running an experiment to test the hypothesis, and generating conclusions.  Researchers must perform all steps to receive credit; **discourse graphs could enable specialization of labor within the scientific system**.  While the complete narrative still has clear value, discourse & results graphs enable us to reward efforts both in whole and in part[^3].  Eventually, discourse graphs could also make scientific data more computable (discussed more in later questions).
 
 
-**MA**: In my field, journal articles have ballooned to include dozens of results and authors, taking several years from idea to publication. Collaboration is disincentivized because a single first author claims the majority of credit. Individual researchers collect individual results - why not attribute credit for each research contribution?  Generating a discourse graph cites atomic units of work - a single result or hypothesis - so that researchers have an ongoing, accurate representation of their work and its impact. Journals’ “author contributions” sections have provided limited value because they are added manually *post facto* and do not track individual results or intellectual contributions. 
+**MA**: In my field, journal articles have ballooned to include dozens of results and authors, taking several years from idea to publication. Collaboration is disincentivized because a single first author claims the majority of credit. Individual researchers collect individual results - why not attribute credit for each research contribution?  Generating a discourse graph cites atomic units of work -- a single result or hypothesis -- so that researchers have an ongoing, accurate representation of their work and its impact. Journals’ “author contributions” sections have provided limited value because they are added manually *post facto* and do not track individual results or intellectual contributions. 
 
 While journal articles and preprints center around one or more claims, discourse graphs link to the underlying evidence, which makes it easier for other researchers to make their own claims from the aggregated evidence.
 
@@ -105,7 +105,7 @@ Journal articles tend to select submissions based on perceived novelty of claims
 
 <br />
 
-**What do you view as the primary obstacles to the adoption of discourse graphs, such as the  incentives for scientists to contribute**?
+**What do you view as the primary obstacles to the adoption of discourse graphs, such as the  incentives for scientists to contribute?**
 
 **EM**: One obstacle for researchers is **becoming comfortable sharing results and ideas sooner[^4]**. Hopefully the sharing of progress immediately and continuously is viewed as an extension of the preprint revolution, rather than a new practice. We need the community to respect notes graphs as artifacts in the scientific literature, which means integrating them into existing workflows and allocating credit (i.e. funding, awards, patents, & citations) based on work done in notes graphs. The current culture in many fields is one of secrecy over openness, which needs to be inverted.  This secrecy seems to be driven by zero-sum reputation building, rather than focus on cooperative achievement of shared goals.
 
@@ -121,7 +121,7 @@ Lastly, DGs do not carry universal context. Much of any single working DG will i
 
 <br />
 
-**What role could different types of individuals and organizations play in accelerating the adoption of discourse graphs**?
+**What role could different types of individuals and organizations play in accelerating the adoption of discourse graphs?**
 
 **EM**:  **Funders** could give funding for research contingent on open publishing of structured notes for that research, in support of open science and positive-sum collaborations.  However, the idea becomes more compelling if it’s recognized that funders may eventually be *more* interested in the discourse graph as a research output.  These discourse graphs could be used to inform future funding allocation decisions (e.g. pursuing a specific question raised or searching for additional evidence to back a claim). I expect that some research funders and teams will realize a competitive advantage by using research roadmaps (an extension of the discourse graph schema that we’re developing to describe yet-to-be-completed research) to guide their research plans, expectations, timelines, and decisions.
 
@@ -135,11 +135,11 @@ Lastly, DGs do not carry universal context. Much of any single working DG will i
 
 <br />
 
-**What types of pilots should the research community try?  How might we evaluate the efficacy of these pilots**?
+**What types of pilots should the research community try?  How might we evaluate the efficacy of these pilots?**
 
-**EM**:  A structured program could be developed for any of the above roles.  Examples could include
+**EM**:  A structured program could be developed for any of the above roles.  Examples could include:
 - A funder funds research collaborations that pilot discourse graphs for coordination & synthesis; the individual teams pilot discourse graph use internally to measure if it noticeably results in more cross-pollination of research elements
-- A funder, professional organization, or institution makes a publication community (e.g. pubpub) and, invites teams of researchers; this could be tied to funding opportunities 
+- A funder, professional organization, or institution makes a publication community (e.g. [PubPub](https://www.pubpub.org/)) and, invites teams of researchers; this could be tied to funding opportunities 
 
 These pilots should seek to show that discourse graphs are both (a) appealing to use and (b) more effective than other methods of collaboration.  The following are a few ideas of how these could be measured (not intended to be either exhaustive or particularly robust):
 
@@ -151,9 +151,8 @@ These pilots should seek to show that discourse graphs are both (a) appealing to
 - number of public graphs
 - number of collaborators per graph
 
-b) Test the claim: “Discourse graphs are more effective than other methods of collaboration”
+b) Test the claim: “Discourse graphs are more effective than other methods of collaboration” with 
 - citations per discourse graph node vs. final paper (and relative time lag)
-
 - subjective evaluation of the rate of progress in subfields where shared notes graphs are used vs. other fields
 
 
