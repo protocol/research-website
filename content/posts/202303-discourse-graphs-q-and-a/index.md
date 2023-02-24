@@ -49,25 +49,25 @@ Individual answers are from Evan Miyazono (EM) and Matt Akamatsu (MA).
 
 **EM**:  A discourse graph is a way of structuring and sharing scientific arguments.  Each brief note is labeled as a *question*, *claim*, or *evidence*.  These notes (nodes) are connected to each other (via edges) in a [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) based on their relationships.
 
-<center>{{< figure src="dg-schema.png" width="850px" >}}</center>
-<sup>Discourse graph schema. Scientific arguments are decomposed into their constituent parts - questions, claims, evidence - and connected into a graph. Evidence can support or oppose a claim.</sup>
+<center>{{< figure src="dg-schema.png" width="850px" caption="Discourse graph schema. Scientific arguments are decomposed into their constituent parts - questions, claims, evidence - and connected into a graph. Evidence can support or oppose a claim.">}}</center>
+
 
 **MA**: Discourse graphs currently have two use cases:
 
 1) **Knowledge synthesis and sharing**. A modular, reusable alternative to systematic reviews, discourse graphs capture the current lines of evidence that make up the state of knowledge in a given research subfield. Each *evidence* page contains enough context for the user to assess its validity and relevance, and are used to build novel *claims* that propose to answer a given research *question*. Multiple, opposing *claims* can coexist; since each *claim* is linked to the underlying *evidence*, each reader can assess the validity of each *claim* on its own merit (figure below). Discourse graphs give researchers the means to structure and reuse their literature searches, and importantly [distribute the effort](https://scalingsynthesis.com/Q-What-is-a-decentralized-discourse-graph/) in generating and maintaining the database.
 
-<center>{{< figure src="dg.png" width="850px" >}}</center>
-<sup>Example discourse graph for the question: Are bans an effective way to mitigate antisocial behavior in online forums? (Source: Joel Chan)</sup>
+<center>{{< figure src="dg.png" width="850px" caption="Example discourse graph for the question: Are bans an effective way to mitigate antisocial behavior in online forums? (Source: Joel Chan)" >}}</center>
+
 
 2) **Open-source, modular research communication**. Adapting the question/claim/evidence schema to ongoing research has allowed us to discretize the scientific research process for modular, collaborative research.  At the end of the literature review (above), researchers pose hypotheses (testable claims) which motivate the collection of new data, leading to original results (new evidence) that support evolving claims (figure below). Each unit of new research lives in the discourse graph for context and reuse by other researchers, potential collaborators, science communicators, and funders.  This enables gap analysis and facilitates discoverability of interesting problems within the field.
 
-<center>{{< figure src="dg-evolving-claims.png" width="850px" >}}</center>
-<sup>(Left) Schematic of discourse graph usage for original research. (Right) Illustrative historical example.</sup>
+<center>{{< figure src="dg-evolving-claims.png" width="850px" caption="(Left) Schematic of discourse graph usage for original research. (Right) Illustrative historical example.">}}</center>
+
 
 **MA**: The Akamatsu Lab shares a discourse graph to pose new research questions, get up to speed on the current state of knowledge for that research question, and find an entry point for useful contributions. Lab members share evidence from articles, working hypotheses, requests for new experiments (called issues), and original results such that we can build on each others’ findings.  Contributing to discourse graphs has **accelerated students’ onboarding to our research field** and given them a structured, discretized means of contributing to research. 
 
-<center>{{< figure src="dg-info-sharing.png" width="850px" >}}</center>
-<sup>(Left) Interactive bulletin board for new contributors to the Akamatsu lab discourse graph. Each element on the right column links to a live query within the discourse graph.  (Right) Flow diagram of modular research sharing within the Akamatsu lab discourse graph.</sup>
+<center>{{< figure src="dg-info-sharing.png" width="850px" caption="(Left) Interactive bulletin board for new contributors to the Akamatsu lab discourse graph. Each element on the right column links to a live query within the discourse graph.  (Right) Flow diagram of modular research sharing within the Akamatsu lab discourse graph." >}}</center>
+
 
 Researchers are generating and sharing[^1] their discourse graphs (most with permissioned write, permissionless read access). 
 
@@ -177,17 +177,9 @@ Discourse graphs can identify points of contention within nodes of the knowledge
 
 **EM**:  Discourse graphs should also be able to provide a source of truth to prevent hallucinations of scientific LLMs.  Within my team, we claim that discourse graphs could be effective in reducing hallucinations by LLMs because they leverage LLMs' focus on syntax in a clever way to impart semantic meaning that humans can later extract. 
 
-<br />
 
-<br />
-
-**EM in closing**: If you’d like to support the improvement or adoption of discourse graphs in any way - you can reach me, Matt, and others by emailing [discoursegraphs@protocol.ai](discoursegraphs@protocol.ai).
-
-<br />
-
-<br />
-
-<br />
+<center>{{< figure src="dg-pl-blog.svg" alt="Discourse Graphs" link="https://discoursegraphs.ai" width="300px" >}}</center> 
+<center style=font-size:11pt><i> If you’d like to support the improvement or adoption of discourse graphs in any way - you can reach Evan, Matt, and other members of the Discourse Graph community by emailing <a href="mailto:discoursegraphs@protocol.ai">discoursegraphs@protocol.ai</a> </i></center>
 
 [^1]:Claims are made with implicit reference to some context. **MA**: so far, we've found that our discourse graphs provide sufficient context within teams or groups of collaborators, but we'll need to prepare a subset of the pages so that there will be enough context for a wider community.
 
