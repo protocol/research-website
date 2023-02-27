@@ -4,7 +4,7 @@ title: "Discourse Graphs and the Future of Science"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2023-02-23
+date: 2023-02-27
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
