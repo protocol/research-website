@@ -57,10 +57,8 @@ user_groups:
 quote:
 ---
 
-Jorge is a TPM on the ConsensusLab team, helping accelerate our research on blockchain scalability.
+Jorge is a Technical Program Manager on Protocol Labs’ ConsensusLab team, helping organise and accelerate the our research on blockchain scalability.
 
 He holds BSc and MSc degrees in Communication Networks Engineering, with an emphasis on embedded systems and wireless sensor networks. He received a joint PhD in Robotics, Control, and Intelligent Systems from [École polytechnique fédérale de Lausanne](https://www.epfl.ch/en/) (Lausanne, Switzerland) and in Electrical and Computer Engineering from [Instituto Superior Técnico – Universidade de Lisboa](https://tecnico.ulisboa.pt/en/) (Lisbon, Portugal), on the basis of his research in distributed and underwater robotics.
 
-While a researcher, Jorge worked on national and European research projects and published in international conferences and journals. He also served as a patent examiner with the [European Patent Office](https://www.epo.org/) (The Hague, The Netherlands), the second largest intergovernmental organisation in Europe, where he focused on human-computer interaction and construction of computers. In his spare time, he volunteers with [IEEE](https://www.ieee.org/), having started as a student branch chair in 2007 and since served in numerous roles at the section, region, and global levels.
-
-His interests include distributed systems, communication protocols, networks, robot navigation, marine technology, and the optimisation of scientific research.
+While a researcher, Jorge worked on national and European research projects and published in international conferences and journals. He later served as a patent examiner with the [European Patent Office](https://www.epo.org/) (The Hague, The Netherlands), where he focused on human-computer interaction and the physical aspects of computing devices. He’s a long-serving [IEEE](https://www.ieee.org/) volunteer, having started as a student branch chair in 2007 and having since served in numerous roles at the section, region, and global levels.
