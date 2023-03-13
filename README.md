@@ -1,8 +1,5 @@
 # [research-website](https://research.protocol.ai)
 
-[![](https://img.shields.io/badge/team-research-0f41f4.svg?style=flat-square)](https://github.com/protocol/research)
-[![](https://img.shields.io/badge/team-%F0%9F%94%92%20research-0f41f4.svg?style=flat-square)](https://github.com/protocol/research-private)
-
 This repository contains the source code for the Protocol Labs Research website, available at https://research.protocol.ai
 
 ## Architecture
