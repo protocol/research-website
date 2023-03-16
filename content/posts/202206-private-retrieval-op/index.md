@@ -29,7 +29,7 @@ areas:
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
-  - network-goods
+  - 
 
 # Not used
 draft: false
@@ -59,6 +59,6 @@ We plan to develop this open problem into an RFP and are excited to sponsor rese
 <br> </br>
 <br> </br>
 
-<center>{{< figure src="/images/network-goods/networkgoods_primary_color.png" alt="Network Goods" link="/groups/network-goods/" width="100px" >}}</center>
+<center>{{< figure src="/images/network-goods/networkgoods_primary_color.png" alt="Network Goods" width="100px" >}}</center>
 
 <center style=font-size:11pt><i> Do you want to be part of the conversation? Join us on our Discord <a href="https://discord.gg/lodestar-network-goods">(invite link)</a>, and follow the PL Research Twitter <a href="https://twitter.com/ProtoResearch"> @Protoresearch</a>. Active researchers may also be interested in our <a href="https://github.com/protocol/research-grants"> open RFPs </a> and other<a href="https://grants.protocol.ai"> funding opportunities. </a></i></center>
