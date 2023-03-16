@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "LURK: Lambda, the Ultimate Recursive Knowledge"
+title: "LURK: Lambda, the ultimate recursive knowledge"
 
 # Website post date
 # format YYYY-MM-DD
@@ -47,7 +47,7 @@ groups:
 
 # Publications without a PL affiliation can be added to the author's profile without showing up elsewhere
 # If adding one, set this to true *and* do not set an area or group
-unaffiliated: true
+unaffiliated: false
 
 # Publication pdf, should be in the same folder
 # No need to fill this out; just name the file the same as the folder
