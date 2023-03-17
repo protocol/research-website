@@ -8,6 +8,9 @@ summary: "Research Acceleration seeks to enable faster progress through the desi
 
 resources:
   - src: icon.svg
+
+
+archived: true
 ---
 
 Research Acceleration seeks to enable faster progress through the design and operation of effective and efficient support and funding mechanisms for research(ers).

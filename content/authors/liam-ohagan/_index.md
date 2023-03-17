@@ -7,7 +7,7 @@ role: Social Media Manager
 
 # Zero or one of the groups in content/groups (or free text)
 groups:
-  - network-goods
+  - 
 
 # Avatar (no need to edit)
 resources:
