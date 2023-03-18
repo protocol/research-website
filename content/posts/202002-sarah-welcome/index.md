@@ -8,7 +8,7 @@ date: 2020-02-18
 
 # Taxonomies
 authors:
-  - jorge-soares
+  - 
 
 categories:
   - news

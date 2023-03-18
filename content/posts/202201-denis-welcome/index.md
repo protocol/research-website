@@ -12,7 +12,7 @@ date: 2022-01-24
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  - jorge-soares
+  - 
 
 # If applicable
 categories:

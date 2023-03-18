@@ -11,7 +11,7 @@ date: 2020-04-20
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
-  - jorge-soares
+  - 
 
 # If applicable
 categories:

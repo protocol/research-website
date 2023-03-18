@@ -6,7 +6,7 @@ date: 2020-01-27
 
 # Taxonomies
 authors:
-  - jorge-soares
+  - 
 
 categories:
   - news
