@@ -59,6 +59,6 @@ quote:
 
 Jorge is a Technical Program Manager on the ConsensusLab team, where he helps steer and accelerate Protocol Labs’ research on blockchain scalability.
 
-He holds BSc and MSc degrees in Communication Networks Engineering and received a joint PhD in Robotics, Control, and Intelligent Systems from [EPFL](https://www.epfl.ch/en/) and in Electrical and Computer Engineering from [IST-UL](https://tecnico.ulisboa.pt/en/) for his research in control theory and marine robotics. He's a licensed engineer in Andorra and Portugal.
+He holds BSc and MSc degrees in Communication Networks Engineering and received a joint PhD from [EPFL](https://www.epfl.ch/en/) (in Robotics, Control, and Intelligent Systems) and [IST-UL](https://tecnico.ulisboa.pt/en/) (in Electrical and Computer Engineering) for his research in control theory and marine robotics. He's a licensed engineer in Andorra and Portugal.
 
 Prior to joining Protocol Labs, Jorge worked as a patent examiner with the [European Patent Office](https://www.epo.org/), where he focused on human-computer interaction and the physical aspects of computing devices. He’s a Senior Member of [IEEE](https://www.ieee.org/) and a long-time volunteer, currently serving as Vice-Chair of the European Public Policy Committee.
