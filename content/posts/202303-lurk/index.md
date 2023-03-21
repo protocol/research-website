@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: Lurk (tbd)
+title: "Lurk (tbd)"
 
 # Website post date
 # format YYYY-MM-DD
