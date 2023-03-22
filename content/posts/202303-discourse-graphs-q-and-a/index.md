@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "Discourse Graphs and the Future of Science"
+title: "Discourse graphs and the future of science"
 
 # Website post date
 # format YYYY-MM-DD
@@ -22,7 +22,7 @@ tags:
 
 # Zero or more of the areas in content/areas
 areas:
-  - discourse-graphs
+  - metaresearch
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
