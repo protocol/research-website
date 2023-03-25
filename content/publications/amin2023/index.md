@@ -66,6 +66,10 @@ unaffiliated: false
 #  - name: Google Scholar
 #    url: https://scholar.google.com/scholar?hl=en&as_sdt=0%2C38&q=bing&btnG=
 #    icon: google-scholar
+
+url_source: https://eprint.iacr.org/2023/369
 ---
+
+
 
 We introduce Lurk, a new LISP-based programming language for zk-SNARKs. Traditional approaches to programming over zero-knowledge proofs require compiling the desired computation into a flat circuit, imposing serious constraints on the size and complexity of computations that can be achieved in practice. Lurk programs are instead provided as data to the universal Lurk interpreter circuit, allowing the resulting language to be Turing-complete without compromising the size of the resulting proof artifacts. Our work describes the design and theory behind Lurk, along with detailing how its implementation of content addressing can be used to sidestep many of the usual concerns of programming zero-knowledge proofs.
