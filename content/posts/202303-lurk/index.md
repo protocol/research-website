@@ -37,10 +37,8 @@ summary: "Today is my last day at Protocol Labs, after which I am moving on to b
 
 ---
 
-<font color=purple>
+# <font color=purple>(begin</font>
 
-# (begin
-</font>
 
 In early 2018, I joined the Filecoin team at Protocol Labs as a contractor. I was fascinated by the promise of
 decentralized storage and the possibility of consensus based on storage power. I eagerly devoured the [Filecoin
@@ -59,10 +57,9 @@ This post is several things:
 - <font color=#E69500>A summary of the latest state of the VDF project and a first look at some related research outputs.</font>
 - <font color=purple>The (eponymous) road to Lurk.</font>
 
+## <font color=teal>Filecoin</font>
+
 <font color=teal>
-
-## Filecoin
-
 Much has been written about Filecoin and the [Filecoin Proofs](https://github.com/filecoin-project/rust-fil-proofs) . Here are a few notes about lesser corners of the work that went into arriving where we did.
 
 - One of the earliest abstractions we adopted was embodied in the [`CompoundProof` trait](https://github.com/filecoin-project/rust-fil-proofs/blob/963eb08e55b9700657d8533418bf6332ac77d197/storage-proofs-core/src/compound_proof.rs). I am both proud and horrified that I broke ground on what would become a central part of our proofs implementation while simultaneously learning Rust and the underlying cryptography: research development at its ~~finest~~ fastest. More seriously, though, `CompoundProof` formalized a relationship between 'vanilla' proofs and their zk-SNARK counterparts, initializing a <font color=purple>thread of investigation leading eventually to Lurk</font>.
@@ -74,9 +71,11 @@ Much has been written about Filecoin and the [Filecoin Proofs](https://github.co
     - Sometimes research engineering demands a dose of self-medicated rabbit-holing, and the requisite implementation of [Finite Fields for Futhark](https://github.com/filecoin-project/fut-ff) helped me through those dark days.
 - Along the way, a number of long-running [SNARK engineering research](https://github.com/filecoin-project/research/blob/master/SNARK/SNARK.md) projects allowed us to scout optimal paths,
 - In the end, we managed to launch in 2020 with what soon became the largest and most performant SNARK deployment ever (at least at the time we published [zk-SNARKs for the world!](/sites/snarks/)).
+</font>
 
-## VDF
+## <font color=teal>VDF</font>
 
+<font color=teal>
 After mainnet launch, I transitioned away from maintenance of the Filecoin proofs to focus on accelerating usability of
 verifiable delay functions. There were several potential use cases for VDFs in Filecoin, and my aim was to help make a
 viable implementation available to such downstream applications. As long as it remained a 'someday' technology,
@@ -90,9 +89,11 @@ that success in proving would accrue almost entirely to the underlying proving s
 
 At the same time, this focus on ultimate simplicity in the circuit to be proved exerted a profound influence on the
 work (see below) which would become Lurk.</font>
+</font>
 
-### Computational VDF
+### <font color=teal>Computational VDF</font>
 
+<font color=teal>
 The dominant approach to VDFs involves functions that are slow to compute but fast to verify for computational reasons.
 
 - To that end, in November 2021, I organized a collaboration to build a [Practical SNARK-based VDF](https://zkproof.org/2021/11/24/practical-snark-based-vdf/).
@@ -104,8 +105,11 @@ The dominant approach to VDFs involves functions that are slow to compute but fa
     > Furthermore, in addition to these SW developments, earlier this year we received initial prototypes of the MinRoot ASIC design, manufactured on 12 nm technology. Over the coming months we will integrate the MinRoot ASIC with the Nova proof system and produce an end-to-end implementation of SNARK-based VDFs. Once this is complete we will be sharing this implementation with the community and are excited to see how this new cryptographic primitive can improve the security and scalability of blockchain networks.'
     </font> 
 
-### Fundamental Latency VDF
+</font>    
 
+### <font color=teal>Fundamental Latency VDF</font>
+
+<font color=teal>
 Although computational VDFs are marvelous, they suffer one significant problem. Their performance on the key metric of
 VDFs ($A_{max}$) depends on engineering attempts to implement an evaluator which is as fast as possible. This fails to
 whatever extent an attacker can accelerate the computation. In practice, this means computational VDFs with an $A_{max}$
@@ -149,11 +153,13 @@ using novel models for sequential communication delays and (ordered) multisignat
 results is a randomness beacon that only accesses expensive communication resources in case of cheating.'
   </font>
 
-## Lurk
+</font>
+## <font color=teal>Lurk</font>
 
+<font color=teal>
 Of the potential applications in which VDFs might play a critical role, one of the most interesting was Hierarchical Consensus (which has since been re-branded[^1] as [Interplanetary Consensus](https://ipc.space/)). However, following a worrisome trend, the more I pondered it, the less obvious it became that the application would be straightforward. Whereas the VDF (see above) represented the simplest possible proof statement, it seemed more elaborate statements would need to be proved in order to serve the needs of substantial applications like hierarchical consensus.
 
-I wrote [Hierarchical Consensus with VDFs and/or Turing-Complete SNARKs](https://lurk-lab.notion.so/Hierarchical-Consensus-with-VDFs-and-or-Turing-Complete-SNARKs-f8f674118c024e1197dd99682ec4dab6) before Chat GPT came along, so the concept of LLM hallucination was not yet widespread. Nevertheless, it would not be too far off to view this document and the prompt that is its epigraph to be a fever dream. Please note that it was written in mid-2021 and predated current work on IPC, so nothing about that project should be inferred from its first-principle extrapolations. <font color=purple>As it turns out, the Turing-Complete SNARKs part may indeed provide high value to IPC (or a system like it), even if the VDFs prove dispensable.
+I wrote [Hierarchical Consensus with VDFs and/or Turing-Complete SNARKs](https://lurk-lab.notion.so/Hierarchical-Consensus-with-VDFs-and-or-Turing-Complete-SNARKs-f8f674118c024e1197dd99682ec4dab6) before Chat GPT came along, so the concept of LLM hallucination was not yet widespread. Nevertheless, it would not be too far off to view this document and the prompt that is its epigraph to be a fever dream. Please note that it was written in mid-2021 and predated current work on IPC, so nothing about that project should be inferred from its first-principle extrapolations. </font><font color=purple>As it turns out, the Turing-Complete SNARKs part may indeed provide high value to IPC (or a system like it), even if the VDFs prove dispensable.
 
 Gripped by further self-medication of research development fever, I saw fit to focus on what seemed another missing piece to be forced into existence ahead of its time, leading to the [MetaProof](https://lurk-lab.notion.so/MetaProof-0596cab81ccd457ebf475d62222420a5?pvs=4) project -- described as follows:
 
@@ -175,10 +181,15 @@ PL has partnered with Lurk Lab to bring general-purpose zero-knowledge proofs to
 
 Here's a brief (if imperfect) [Lurk demo](https://www.youtube.com/watch?v=RpCIIiauUP4).
 
+{{< youtube RpCIIiauUP4 >}}
+<br>
+
 This post focused mostly on the intertwined narratives of 'my time at PL' and 'how Lurk came to be'. Frequently, the accomplishments I cite as 'mine' were the result of collaboration. Astute readers will detect that some recurring stylistic mishaps cannot be blamed on others, however.
+</font>
 
-# ) </font>'And death i think is [no parenthesis](https://dailypoetry.me/e-e-cummings/since-feeling-is-first/)'
+# <font color=teal>) 'And death i think is [no parenthesis](https://dailypoetry.me/e-e-cummings/since-feeling-is-first/)'</font>
 
+<font color=teal>
 -- Chhi'mèd Künzang, 24 March 2023
 </font>
 
