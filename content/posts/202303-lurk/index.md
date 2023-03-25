@@ -127,8 +127,8 @@ occurred to me that communication latency *does* indeed allow for uncheatable mi
 famously providing a universal speed limit).
 
 - I wrote up my initial, partially-baked thoughts in a starry-eyed document titled [SpaceVDF](https://docs.google.com/document/d/1hfbCxjGzJ12UtroZvC4ED9TZHLyQWimT-cFFZ0zHkSk/edit#heading=h.1mcarb88lx1h).
-- The ideas were promising enough that I followed up with [Cryptosat](https://www.cryptosat.io/), and after some discussion, we comissioned a system-level trade study.
-- <font color=#E69500>I'm excited to announce publication of the [SpaceVDF White Paper](/publications/spacevdf-verifiable-delay-functions-using-cryptographic-satellites/).
+- The ideas were promising enough that I followed up with [Cryptosat](https://www.cryptosat.io/), and after some discussion, we commissioned a system-level trade study.
+- <font color=#E69500>I'm excited to announce the publication of the [SpaceVDF White Paper](/publications/spacevdf-verifiable-delay-functions-using-cryptographic-satellites/).
   >'In this document we aim to evaluate how VDF algorithms based on physical limits can be implemented in satellites
   and which physical properties / or roles of physics we can utilize to guarantee the passage of time. The goal of
   this study is to perform principal system analysis, identify main issues and risks, propose a path for derisking and
@@ -141,16 +141,16 @@ has a known lower bound given the physical distance between devices: the speed o
 we explore the sequential communication delay that arises when sending a message through a constellation of satellites.
 This has the advantage that distances between protocol participants are guaranteed as positions of satellites are
 observable, so delay lower bounds can be easily computed. At the same time, building cryptographic primitives for this
-setting is challenging due to the constrained resources of satellites and possible corruptions of parties within the
+setting is challenging due to the constrained resources of satellites and possible corruption of parties within the
 constellation.
 
   > We address these challenges by constructing efficient proofs of sequential communication delay to
 convince a verifier that a message has accrued delay by traversing a path among satellites. As part of this
-construction, we propose the first ordered multisignature scheme with security under a version of the the discrete
+construction, we propose the first ordered multisignature scheme with security under a version of the discrete
 logarithm assumption, which enjoys constant-size signatures and, modulo preprocessing, computational complexity
 independent of the number of signers. Building on our proofs of sequential communication delay, we show new
-constructions of Publicly Verifiable TLPs and VDFs whose delay guarantees are rooted on physical communication delay
-lower bounds. Our protocols as well as the ordered multisignature are analysed in the Universal Composability framework
+constructions of Publicly Verifiable TLPs and VDFs whose delay guarantees are rooted in physical communication delay
+lower bounds. Our protocols, as well as the ordered multisignature, are analyzed in the Universal Composability framework
 using novel models for sequential communication delays and (ordered) multisignatures. A direct application of our
 results is a randomness beacon that only accesses expensive communication resources in case of cheating.'
   </font>
