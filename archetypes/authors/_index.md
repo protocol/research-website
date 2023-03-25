@@ -9,7 +9,7 @@ role:
 groups:
   -
 
-# Avatar (no need to edit)
+# Avatar
 resources:
   - name: avatar
     src: avatar.png
