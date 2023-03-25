@@ -104,13 +104,14 @@ The dominant approach to VDFs involves functions that are slow to compute but fa
     > 'Approximately one year ago we [announced a collaboration](https://zkproof.org/2021/11/24/practical-snark-based-vdf/) with the Ethereum Foundation, Filecoin Foundation, Supranational, Microsoft, and the Electric Coin Company to improve the performance of SNARKs, and to make SNARK-based [Verifiable Delay Functions](https://eprint.iacr.org/2018/601.pdf) (VDFs) practical. VDFs have the potential to improve the security, privacy, and scalability of blockchain platforms and are being evaluated by a number of blockchain platforms including Ethereum, Filecoin, Tezos, and Zcash. Over the past year we have collectively made a huge amount of progress towards that goal, including an [ASIC implementation](https://github.com/supranational/minroot_hardware) of the [MinRoot algorithm](https://eprint.iacr.org/2022/1626.pdf), <font color=purple>implementation of a [recursion-enabled proof system](https://github.com/microsoft/Nova) (Nova), and [support for GPU accelerated proof generation](https://github.com/microsoft/Nova/commit/8308c29f948f7a44bb145485920a28bc2cd6755b). While we have laid the groundwork to make SNARK-based VDFs practical, these developments will have much wider ranging implications. For instance, through the development of a performance approach to [incrementally verifiable computation](https://iacr.org/archive/tcc2008/49480001/49480001.pdf), we have made practical novel and powerful use cases such as true zero-knowledge VMs like [Lurk](https://lurk-lang.org/).</font>
     >
     > Furthermore, in addition to these SW developments, earlier this year we received initial prototypes of the MinRoot ASIC design, manufactured on 12 nm technology. Over the coming months we will integrate the MinRoot ASIC with the Nova proof system and produce an end-to-end implementation of SNARK-based VDFs. Once this is complete we will be sharing this implementation with the community and are excited to see how this new cryptographic primitive can improve the security and scalability of blockchain networks.'
-    </font> 
+    </font>
 
-</font>    
+</font>
 
 ### <font color=teal>Fundamental Latency VDF</font>
 
 <font color=teal>
+
 Although computational VDFs are marvelous, they suffer one significant problem. Their performance on the key metric of
 VDFs ($A_{max}$) depends on engineering attempts to implement an evaluator which is as fast as possible. This fails to
 whatever extent an attacker can accelerate the computation. In practice, this means computational VDFs with an $A_{max}$
