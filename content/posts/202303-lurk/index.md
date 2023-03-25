@@ -60,6 +60,7 @@ This post is several things:
 ## <font color=teal>Filecoin</font>
 
 <font color=teal>
+
 Much has been written about Filecoin and the [Filecoin Proofs](https://github.com/filecoin-project/rust-fil-proofs) . Here are a few notes about lesser corners of the work that went into arriving where we did.
 
 - One of the earliest abstractions we adopted was embodied in the [`CompoundProof` trait](https://github.com/filecoin-project/rust-fil-proofs/blob/963eb08e55b9700657d8533418bf6332ac77d197/storage-proofs-core/src/compound_proof.rs). I am both proud and horrified that I broke ground on what would become a central part of our proofs implementation while simultaneously learning Rust and the underlying cryptography: research development at its ~~finest~~ fastest. More seriously, though, `CompoundProof` formalized a relationship between 'vanilla' proofs and their zk-SNARK counterparts, initializing a <font color=purple>thread of investigation leading eventually to Lurk</font>.
