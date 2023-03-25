@@ -154,9 +154,11 @@ results is a randomness beacon that only accesses expensive communication resour
   </font>
 
 </font>
+
 ## <font color=teal>Lurk</font>
 
 <font color=teal>
+
 Of the potential applications in which VDFs might play a critical role, one of the most interesting was Hierarchical Consensus (which has since been re-branded[^1] as [Interplanetary Consensus](https://ipc.space/)). However, following a worrisome trend, the more I pondered it, the less obvious it became that the application would be straightforward. Whereas the VDF (see above) represented the simplest possible proof statement, it seemed more elaborate statements would need to be proved in order to serve the needs of substantial applications like hierarchical consensus.
 
 I wrote [Hierarchical Consensus with VDFs and/or Turing-Complete SNARKs](https://lurk-lab.notion.so/Hierarchical-Consensus-with-VDFs-and-or-Turing-Complete-SNARKs-f8f674118c024e1197dd99682ec4dab6) before Chat GPT came along, so the concept of LLM hallucination was not yet widespread. Nevertheless, it would not be too far off to view this document and the prompt that is its epigraph to be a fever dream. Please note that it was written in mid-2021 and predated current work on IPC, so nothing about that project should be inferred from its first-principle extrapolations. </font><font color=purple>As it turns out, the Turing-Complete SNARKs part may indeed provide high value to IPC (or a system like it), even if the VDFs prove dispensable.
