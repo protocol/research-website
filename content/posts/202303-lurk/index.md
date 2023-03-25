@@ -35,7 +35,10 @@ draft: false
 
 ---
 
+<font color=purple>
+
 # (begin
+</font>
 
 In early 2018, I joined the Filecoin team at Protocol Labs as a contractor. I was fascinated by the promise of
 decentralized storage and the possibility of consensus based on storage power. I eagerly devoured the [Filecoin
@@ -146,7 +149,7 @@ results is a randomness beacon that only accesses expensive communication resour
 
 ## Lurk
 
-Of the potential applications in which VDFs might play a critical role, one of the most interesting was Hierarchical Consensus (which has since been re-branded as [Interplanetary Consensus](https://ipc.space/)). However, following a worrisome trend, the more I pondered it, the less obvious it became that the application would be straightforward. Whereas the VDF (see above) represented the simplest possible proof statement, it seemed more elaborate statements would need to be proved in order to serve the needs of meaty applications like hierarchical consensus.
+Of the potential applications in which VDFs might play a critical role, one of the most interesting was Hierarchical Consensus (which has since been re-branded[^1] as [Interplanetary Consensus](https://ipc.space/)). However, following a worrisome trend, the more I pondered it, the less obvious it became that the application would be straightforward. Whereas the VDF (see above) represented the simplest possible proof statement, it seemed more elaborate statements would need to be proved in order to serve the needs of meaty applications like hierarchical consensus.
 
 I wrote [Hierarchical Consensus with VDFS and/or Turing-Complete SNARKs](https://www.notion.so/lurk-lab/Hierarchical-Consensus-with-VDFs-and-or-Turing-Complete-SNARKs-f8f674118c024e1197dd99682ec4dab6) before Chat GPT came along, so the concept of LLM hallucination was not yet widespread. Nevertheless, it would not be too far off to view this document and the prompt that is its epigraph to be a fever dream. Please note that it was written in mid-2021 and predated current work on IPC, so nothing about that project should be inferred from its first-principle extrapolations. <font color=purple>As it turns out, the Turing-Complete SNARKs part may indeed provide high value to IPC (or a system like it), even if the VDFs prove dispensable.
 
@@ -175,3 +178,6 @@ This post focused mostly on the intertwined narratives of 'my time at PL' and 'h
 # ) </font>'And death i think is [no parenthesis](https://dailypoetry.me/e-e-cummings/since-feeling-is-first/)'
 
 -- Chhi'mèd Künzang, 24 March 2023
+</font>
+
+[^1]: Technically, "brought into the light of the solar system," per [@jsoares](/authors/jorge-soares/).
