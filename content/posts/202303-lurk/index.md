@@ -1,10 +1,10 @@
 ---
 # Blog post title
-title: The Road to Lurk
+title: The road to Lurk
 
 # Website post date
 # format YYYY-MM-DD
-date: 2023-03-17
+date: 2023-03-2436
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
@@ -33,6 +33,8 @@ groups:
 # Not used
 draft: false
 
+summary: "Today is my last day at Protocol Labs, after which I am moving on to be the CTO of [Lurk Lab](https://lurk-lab.com/). The last five years have gone by in the blink of an eye. As is common in transition, I find myself reflecting on how the past became the present and on the future to come. This post is a whirlwind summary of some of the highlights of my research/development work at Protocol Labs."
+
 ---
 
 <font color=purple>
@@ -54,7 +56,7 @@ thread also emerges.
 
 This post is several things:
 - <font color=teal>A retrospective tour of some things I worked on while at PL, providing some insight into how the sausage is made.</font>
-- <font color=orange>A summary of the latest state of the VDF project and a first look at some related research outputs.</font>
+- <font color=#E69500>A summary of the latest state of the VDF project and a first look at some related research outputs.</font>
 - <font color=purple>The (eponymous) road to Lurk.</font>
 
 <font color=teal>
@@ -67,8 +69,8 @@ Much has been written about Filecoin and the [Filecoin Proofs](https://github.co
 - On the way to mainnet, we needed a way to model the many parameters associated with the network and especially candidate proof constructions. Hence was born [Orient](https://github.com/filecoin-project/orient) (<font color=purple>a relational language for expressing systems of bi-directional arithmetic constraints, implemented in Common Lisp</font>).
 - From this, we built the Filecoin [Ubercalc](https://github.com/filecoin-project/orient/blob/master/ubercalc/ubercalc.org). Though crude, it proved powerful and flexible enough to interactively model the characteristics of proposed candidates and their parameterizations in order to make difficult time-critical decisions about what we could deploy on-time, with acceptable performance, and without sacrificing network security.
 - One thing that became clear in the Ubercalc analyses was that none of our then-current candidate hashes struck the right balance of performance inside and outside arithmetic circuits. Whereas several years earlier, we had ruled out [Poseidon](https://www.poseidon-hash.info/) as being 'too new', we decided making <font color=purple>a (hedged) bet on SNARK-friendly hashing</font> was our best option. To that end, I created [Neptune](https://github.com/filecoin-project/neptune), one of the first production implementations of Poseidon, and as far as I know, the first to tackle the [sparse matrix optimizations](https://github.com/lurk-lab/neptune/pull/4) enabling best non-circuit performance for higher arity hashes.
-  - Because we needed to build merkle trees as fast as possible, that included a GPU implementation ([Triton](https://github.com/filecoin-project/neptune-triton)).
-    - Don't get me wrong, the initial GPU implementation was nowhere near as performant as possible -- though [Supranational](https://www.supranational.net/) has more recently done tremendous work to squeeze out best performance. Rather, it was 'fast to build' for someone who didn't know GPU programming. I used [Futhark](https://futhark-lang.org/) -- a purely-functional GPU programming language ([Retrospective on an implementation of the Poseidon hash function in Futhark](https://futhark-lang.org/blog/2020-09-27-poseidon-retrospective.html)).
+  - Because we needed to build Merkle trees as fast as possible, that included a GPU implementation ([Triton](https://github.com/filecoin-project/neptune-triton)).
+    - Don't get me wrong, the initial GPU implementation was nowhere near as performant as possible -- though [Supranational](https://www.supranational.net/) has more recently done tremendous work to squeeze out the best performance. Rather, it was 'fast to build' for someone who didn't know GPU programming. I used [Futhark](https://futhark-lang.org/) -- a purely-functional GPU programming language ([Retrospective on an implementation of the Poseidon hash function in Futhark](https://futhark-lang.org/blog/2020-09-27-poseidon-retrospective.html)).
     - Sometimes research engineering demands a dose of self-medicated rabbit-holing, and the requisite implementation of [Finite Fields for Futhark](https://github.com/filecoin-project/fut-ff) helped me through those dark days.
 - Along the way, a number of long-running [SNARK engineering research](https://github.com/filecoin-project/research/blob/master/SNARK/SNARK.md) projects allowed us to scout optimal paths,
 - In the end, we managed to launch in 2020 with what soon became the largest and most performant SNARK deployment ever (at least at the time we published [zk-SNARKs for the world!](/sites/snarks/)).
@@ -86,7 +88,7 @@ would allow us to push proving system design and implementation forward as rapid
 demand and supporting early adoption. By focusing on an almost trivial computational problem, we incidentally ensured
 that success in proving would accrue almost entirely to the underlying proving system.
 
-At the same time, this focus on ultimately simplicity in the circuit to be proved exerted a profound influence on the
+At the same time, this focus on ultimate simplicity in the circuit to be proved exerted a profound influence on the
 work (see below) which would become Lurk.</font>
 
 ### Computational VDF
@@ -96,7 +98,7 @@ The dominant approach to VDFs involves functions that are slow to compute but fa
 - To that end, in November 2021, I organized a collaboration to build a [Practical SNARK-based VDF](https://zkproof.org/2021/11/24/practical-snark-based-vdf/).
 - I built and maintained an initial prototype of the [VDF prototype](https://github.com/protocol/vdf), allowing iteration on the design and coordination between the hardware, algorithmic, and proof design -- including [explorations of optimal parallelism for min-root](https://github.com/protocol/vdf/blob/3534a193a662203b5c487fe81560057ecfd9632c/src/lib.rs#L15-L23) informing the eventul evaluator ASIC design (see below).
   - In [Open VDF: Accelerating the Nova SNARK-based VDF](https://medium.com/supranational/open-vdf-accelerating-the-nova-snark-based-vdf-2d00737029bd), [Supranational](https://www.supranational.net/) writes:
-    <font color=orange>
+    <font color=#E69500>
     > 'Approximately one year ago we [announced a collaboration](https://zkproof.org/2021/11/24/practical-snark-based-vdf/) with the Ethereum Foundation, Filecoin Foundation, Supranational, Microsoft, and the Electric Coin Company to improve the performance of SNARKs, and to make SNARK-based [Verifiable Delay Functions](https://eprint.iacr.org/2018/601.pdf) (VDFs) practical. VDFs have the potential to improve the security, privacy, and scalability of blockchain platforms and are being evaluated by a number of blockchain platforms including Ethereum, Filecoin, Tezos, and Zcash. Over the past year we have collectively made a huge amount of progress towards that goal, including an [ASIC implementation](https://github.com/supranational/minroot_hardware) of the [MinRoot algorithm](https://eprint.iacr.org/2022/1626.pdf), <font color=purple>implementation of a [recursion-enabled proof system](https://github.com/microsoft/Nova) (Nova), and [support for GPU accelerated proof generation](https://github.com/microsoft/Nova/commit/8308c29f948f7a44bb145485920a28bc2cd6755b). While we have laid the groundwork to make SNARK-based VDFs practical, these developments will have much wider ranging implications. For instance, through the development of a performance approach to [incrementally verifiable computation](https://iacr.org/archive/tcc2008/49480001/49480001.pdf), we have made practical novel and powerful use cases such as true zero-knowledge VMs like [Lurk](https://lurk-lang.org/).</font>
     >
     > Furthermore, in addition to these SW developments, earlier this year we received initial prototypes of the MinRoot ASIC design, manufactured on 12 nm technology. Over the coming months we will integrate the MinRoot ASIC with the Nova proof system and produce an end-to-end implementation of SNARK-based VDFs. Once this is complete we will be sharing this implementation with the community and are excited to see how this new cryptographic primitive can improve the security and scalability of blockchain networks.'
@@ -120,14 +122,14 @@ famously providing a universal speed limit).
 
 - I wrote up my initial, partially-baked thoughts in a starry-eyed document titled [SpaceVDF](https://docs.google.com/document/d/1hfbCxjGzJ12UtroZvC4ED9TZHLyQWimT-cFFZ0zHkSk/edit#heading=h.1mcarb88lx1h).
 - The ideas were promising enough that I followed up with [Cryptosat](https://www.cryptosat.io/), and after some discussion, we comissioned a system-level trade study.
-- <font color=orange>I'm excited to announce publication of the [SpaceVDF White Paper](/publications/spacevdf-verifiable-delay-functions-using-cryptographic-satellites/).
+- <font color=#E69500>I'm excited to announce publication of the [SpaceVDF White Paper](/publications/spacevdf-verifiable-delay-functions-using-cryptographic-satellites/).
   >'In this document we aim to evaluate how VDF algorithms based on physical limits can be implemented in satellites
   and which physical properties / or roles of physics we can utilize to guarantee the passage of time. The goal of
   this study is to perform principal system analysis, identify main issues and risks, propose a path for derisking and
   come up with a budget and timeline for a suitable satellite (or satellite constellation).'
   </font>
 - Just as my seed ideas were only suggestive of the actual engineering that would be required for any real-world deployment of a SpaceVDF, the cryptographic constructs imagined were also vague and incomplete. To that end, I connected with [Bernardo David](https://www.bmdavid.com/), who agreed the core ideas were interesting enough to develop further.
-- <font color=orange>We sponsored Bernardo and his co-authors to put meat on the bone, and the result has just been released as an eprint: [CaSCaDE: (Time-Based) Cryptography from Space Communications DElay](https://eprint.iacr.org/2023/405)
+- <font color=#E69500>We sponsored Bernardo and his co-authors to put meat on the bone, and the result has just been released as an eprint: [CaSCaDE: (Time-Based) Cryptography from Space Communications DElay](https://eprint.iacr.org/2023/405)
   >'In this work, we investigate how to construct time-based cryptographic primitives from communication delay, which
 has a known lower bound given the physical distance between devices: the speed of light. In order to obtain high delays,
 we explore the sequential communication delay that arises when sending a message through a constellation of satellites.
@@ -151,9 +153,9 @@ results is a randomness beacon that only accesses expensive communication resour
 
 Of the potential applications in which VDFs might play a critical role, one of the most interesting was Hierarchical Consensus (which has since been re-branded[^1] as [Interplanetary Consensus](https://ipc.space/)). However, following a worrisome trend, the more I pondered it, the less obvious it became that the application would be straightforward. Whereas the VDF (see above) represented the simplest possible proof statement, it seemed more elaborate statements would need to be proved in order to serve the needs of substantial applications like hierarchical consensus.
 
-I wrote [Hierarchical Consensus with VDFs and/or Turing-Complete SNARKs](https://www.notion.so/lurk-lab/Hierarchical-Consensus-with-VDFs-and-or-Turing-Complete-SNARKs-f8f674118c024e1197dd99682ec4dab6) before Chat GPT came along, so the concept of LLM hallucination was not yet widespread. Nevertheless, it would not be too far off to view this document and the prompt that is its epigraph to be a fever dream. Please note that it was written in mid-2021 and predated current work on IPC, so nothing about that project should be inferred from its first-principle extrapolations. <font color=purple>As it turns out, the Turing-Complete SNARKs part may indeed provide high value to IPC (or a system like it), even if the VDFs prove dispensable.
+I wrote [Hierarchical Consensus with VDFs and/or Turing-Complete SNARKs](https://lurk-lab.notion.so/Hierarchical-Consensus-with-VDFs-and-or-Turing-Complete-SNARKs-f8f674118c024e1197dd99682ec4dab6) before Chat GPT came along, so the concept of LLM hallucination was not yet widespread. Nevertheless, it would not be too far off to view this document and the prompt that is its epigraph to be a fever dream. Please note that it was written in mid-2021 and predated current work on IPC, so nothing about that project should be inferred from its first-principle extrapolations. <font color=purple>As it turns out, the Turing-Complete SNARKs part may indeed provide high value to IPC (or a system like it), even if the VDFs prove dispensable.
 
-Gripped by further self-medication of research development fever, I saw fit to focus on what seemed another missing piece to be forced into existence ahead of its time, leading to the [MetaProof](https://www.notion.so/lurk-lab/MetaProof-0596cab81ccd457ebf475d62222420a5?pvs=4) project -- described as follows:
+Gripped by further self-medication of research development fever, I saw fit to focus on what seemed another missing piece to be forced into existence ahead of its time, leading to the [MetaProof](https://lurk-lab.notion.so/MetaProof-0596cab81ccd457ebf475d62222420a5?pvs=4) project -- described as follows:
 
 >'The first step of the MetaProof project follows the shortest path to Turing complete SNARKs via recursive computation. We design a minimal Lisp-family language using SNARK-friendly hashing for memory access — and implement an arithmetic circuit proving one reduction step of this language's expression evaluator. Combined with any IVC-like construction (including SnarkPack + input aggregation), this will allow succinct proofs of arbitrary computation from a single circuit. In addition to the operational benefits of avoiding the research/development lifecycle associated with new circuits (potentially including trusted setup), this will allow entirely new categories of computations to be proved.'
 
