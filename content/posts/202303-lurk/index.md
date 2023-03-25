@@ -165,7 +165,7 @@ In house style, implementation led articulation, but now we have an articulate e
 >'We introduce Lurk, a new LISP-based programming language for zk-SNARKs. Traditional approaches to programming over zero-knowledge proofs require compiling the desired computation into a flat circuit, imposing serious constraints on the size and complexity of computations that can be achieved in practice. Lurk programs are instead provided as data to the universal Lurk interpreter circuit, allowing the resulting language to be Turing-complete without compromising the size of the resulting proof artifacts. Our work describes the design and theory behind Lurk, along with detailing how its implementation of content addressing can be used to sidestep many of the usual concerns of programming zero-knowledge proofs.
 '
 
-And that brings us up to the verge of the present.
+And that brings us up to the edge of the present.
 
 [Lurk Lab](https://lurk-lab.com/) calls.
 
