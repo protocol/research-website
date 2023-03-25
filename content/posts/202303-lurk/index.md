@@ -107,7 +107,7 @@ The dominant approach to VDFs involves functions that are slow to compute but fa
 Although computational VDFs are marvelous, they suffer one significant problem. Their performance on the key metric of
 VDFs ($A_{max}$) depends on engineering attempts to implement an evaluator which is as fast as possible. This fails to
 whatever extent an attacker can accelerate the computation. In practice, this means computational VDFs with an $A_{max}$
-very close to 1, are not realistic.
+very close to 1 are not realistic.
 
 What this means is that a single VDF computation cannot be used as fine-grained timer for applications which require
 high assurance that no attacker can obtain the result with less delay than an honest party. Some of the motivating
@@ -149,9 +149,9 @@ results is a randomness beacon that only accesses expensive communication resour
 
 ## Lurk
 
-Of the potential applications in which VDFs might play a critical role, one of the most interesting was Hierarchical Consensus (which has since been re-branded[^1] as [Interplanetary Consensus](https://ipc.space/)). However, following a worrisome trend, the more I pondered it, the less obvious it became that the application would be straightforward. Whereas the VDF (see above) represented the simplest possible proof statement, it seemed more elaborate statements would need to be proved in order to serve the needs of meaty applications like hierarchical consensus.
+Of the potential applications in which VDFs might play a critical role, one of the most interesting was Hierarchical Consensus (which has since been re-branded[^1] as [Interplanetary Consensus](https://ipc.space/)). However, following a worrisome trend, the more I pondered it, the less obvious it became that the application would be straightforward. Whereas the VDF (see above) represented the simplest possible proof statement, it seemed more elaborate statements would need to be proved in order to serve the needs of substantial applications like hierarchical consensus.
 
-I wrote [Hierarchical Consensus with VDFS and/or Turing-Complete SNARKs](https://www.notion.so/lurk-lab/Hierarchical-Consensus-with-VDFs-and-or-Turing-Complete-SNARKs-f8f674118c024e1197dd99682ec4dab6) before Chat GPT came along, so the concept of LLM hallucination was not yet widespread. Nevertheless, it would not be too far off to view this document and the prompt that is its epigraph to be a fever dream. Please note that it was written in mid-2021 and predated current work on IPC, so nothing about that project should be inferred from its first-principle extrapolations. <font color=purple>As it turns out, the Turing-Complete SNARKs part may indeed provide high value to IPC (or a system like it), even if the VDFs prove dispensable.
+I wrote [Hierarchical Consensus with VDFs and/or Turing-Complete SNARKs](https://www.notion.so/lurk-lab/Hierarchical-Consensus-with-VDFs-and-or-Turing-Complete-SNARKs-f8f674118c024e1197dd99682ec4dab6) before Chat GPT came along, so the concept of LLM hallucination was not yet widespread. Nevertheless, it would not be too far off to view this document and the prompt that is its epigraph to be a fever dream. Please note that it was written in mid-2021 and predated current work on IPC, so nothing about that project should be inferred from its first-principle extrapolations. <font color=purple>As it turns out, the Turing-Complete SNARKs part may indeed provide high value to IPC (or a system like it), even if the VDFs prove dispensable.
 
 Gripped by further self-medication of research development fever, I saw fit to focus on what seemed another missing piece to be forced into existence ahead of its time, leading to the [MetaProof](https://www.notion.so/lurk-lab/MetaProof-0596cab81ccd457ebf475d62222420a5?pvs=4) project -- described as follows:
 
