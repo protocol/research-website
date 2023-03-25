@@ -23,6 +23,7 @@ Our work focuses on internal network protocol logic, as well as cross-protocol i
 ## Team
 * [Yiannis Psaras](/authors/yiannis-psaras/) (Lead)
 * [Guillaume Michel](/authors/guillaume-michel/) (Research Engineer)
+* [Dennis Trautwein](/authors/dennis-trautwein/) (Research Engineer)
 * Many wonderful external collaborators which you will find in the Notion page linked above.
 
 ## Where to find us
