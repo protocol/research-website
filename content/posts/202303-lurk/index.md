@@ -83,7 +83,7 @@ viable implementation available to such downstream applications. As long as it r
 practical research and development could not assume it.
 
 <font color=purple>As importantly, in targeting this project as a means to drive SNARK research, I identified VDFs as an
-optimal test case for recursive SNARK technology generally. The extreme simplicity of an interative algorithm like a VDF
+optimal test case for recursive SNARK technology generally. The extreme simplicity of an iterative algorithm like a VDF
 would allow us to push proving system design and implementation forward as rapidly as possible -- if only by providing
 demand and supporting early adoption. By focusing on an almost trivial computational problem, we incidentally ensured
 that success in proving would accrue almost entirely to the underlying proving system.
