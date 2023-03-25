@@ -4,7 +4,7 @@ title: The road to Lurk
 
 # Website post date
 # format YYYY-MM-DD
-date: 2023-03-2436
+date: 2023-03-24
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
