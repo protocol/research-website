@@ -38,7 +38,7 @@ As Protocol Lab's footprint in the public goods space has grown, the Network Res
 
 At [Funding the Commons Lisbon](https://fundingthecommons.io/labweek22/), Network Research [described](https://youtu.be/xosvvsojthA) how our public goods primitives -- hypercerts, impact evaluators, discourse graphs, research roadmaps, and network funds -- can be composed into an integrated coordination system. 
 
-We've been working with our fellow researchers and developers to build new infrastructure for discourse graphs, and to make publicly-shared graphs discoverable and citable. The [_Atlas of Synthesized Knowledge_](ask.pubpub.org) is the home for the community of practice around graph-based communication and synthesis protocols. 
+We've been working with our fellow researchers and developers to build new infrastructure for discourse graphs, and to make publicly-shared graphs discoverable and citable. The [_Atlas of Synthesized Knowledge_](https://ask.pubpub.org/) is the home for the community of practice around graph-based communication and synthesis protocols. 
 
 We've also been working with collaborators across various fields to refine, implement, and promulgate our [research roadmapping protocol](https://www.youtube.com/watch?v=OpaDn7uyaBE), creating new tools and methods to align researchers and research funders and plot new courses through the scientific problem space.
 
