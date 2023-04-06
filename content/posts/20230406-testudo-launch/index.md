@@ -12,7 +12,7 @@ date: 2023-04-06
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 # We sort authors alphabetically by last name
 authors:
-  - nicolas-gailly
+  - rosario-gennaro
 
 
 # If applicable
