@@ -26,7 +26,7 @@ tags:
 
 # Zero or more of the areas in content/areas
 areas:
-  - crytpography
+  - cryptography
 
 # Zero or more of the groups in content/groups (should match author membership)
 groups:
