@@ -8,6 +8,8 @@ summary: "Network Research explores new mechanisms for incentivizing and support
 
 resources:
   - src: icon.svg
+
+archived: true
 ---
 
  Network Research is building a new era of networked science by identifying and using leverage points within science as a system to align researchers and research funders. 
