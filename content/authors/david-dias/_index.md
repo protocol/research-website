@@ -42,7 +42,7 @@ social:
 email:
 
 user_groups:
-  - Management and support
+  - Advisors
 
 # For display at the top of the author details page
 quote:
