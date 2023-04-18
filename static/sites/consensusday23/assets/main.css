@@ -100,13 +100,13 @@ th,td{
 
 /* Website Banner */
 .banner {position: relative; font-family:'SourceSansPro'}
-.banner img {width:1000px; height:340px; object-fit: none;}
+.banner img {width:1000px; height:340px; object-fit: scale-down; opacity: 0.6}
 .top-left {font-size:6.33em; color: #505050; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 80px;}
-.bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px;}
+.bottom-right {font-size:2.33em; color: #131316; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px;}
 
 /* Conference Title Logo */
-.title{color: #fafafa; font-weight: 400}
-.year{color: #fafafa; font-weight: lighter;}
+.title{color: #131316; font-weight: 400}
+.year{color: #131316; font-weight: lighter;}
 
 /* Navigation Links (Home, Registration, etc) */
 table.navigation{width:800px;}
