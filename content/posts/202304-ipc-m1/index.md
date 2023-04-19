@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: "IPC subnet support comes to Filecoin Spacenet"
+title: "IPC subnets land on Filecoin Spacenet"
 
 # Website post date
 # format YYYY-MM-DD
