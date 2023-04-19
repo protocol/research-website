@@ -84,7 +84,7 @@ If you’d like to learn more about IPC or its components, proceed to our fresh-
 
 Today’s M1 milestone brings IPC to the final stretch of its road to production. It marks the first time a long-running IPC testnet is available to the public, enabling user, developer, and SP experimentation with subnets and consensus models other than the one the root Filecoin network provides. It is, however, a test deployment, and shouldn’t be used for production applications with value at stake.
 
-Over the coming quarters, we will keep enriching IPC with additional features and increased robustness. As we speak, our partners at Limechain are hard at work translating our actors into** **[user-defined FEVM Solidity actors](https://github.com/LimeChain/filecoin-ipc-actors-fevm), which we will use for the first mainnet deployment. We will work on a regular release cadence, with new features and improvements every few weeks.
+Over the coming quarters, we will keep enriching IPC with additional features and increased robustness. As we speak, our partners at Limechain are hard at work translating our actors into [user-defined FEVM Solidity actors](https://github.com/LimeChain/filecoin-ipc-actors-fevm), which we will use for the first mainnet deployment. We will work on a regular release cadence, with new features and improvements every few weeks.
 
 We are also working with launch customers, particularly the [Saturn](https://strn.network/) team, to ensure we enable their use cases in milestone M2, scheduled to land in June 2023. M2 will bring IPC to the Filecoin mainnet and allow early users to deploy their applications in production. It will be followed by a full release in Q3, complete with developer tooling and documentation.
 
