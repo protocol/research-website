@@ -32,7 +32,7 @@ publication_types:
 authors:
   - nicolas-gailly
   - "Kelsey Melissaris"
-  - yolan-romailler
+  - "Yolan Romailler"
 
 # Zero or more of the areas in content/areas
 areas:
