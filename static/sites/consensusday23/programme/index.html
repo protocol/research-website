@@ -72,7 +72,698 @@
 
   <br>
 
-  <p>We expect to public the programme on or before 28 April 2023.</p>
+
+  <h2 class="date">Day One - 5 June 2023</h2>
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        14:00 UTC
+      </td>
+      <td class="title-special">
+        Welcome and Logistics
+      </td>
+    </tr>
+  </table>
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        14:10 UTC
+      </td>
+      <td class="title-special">
+        Invited Talk: Title TBD
+      </td>
+    </tr>
+    <tr>
+      <td class="speaker">
+        Aggelos Kiayias (IOHK)
+      </td>
+    </tr>
+  </table>
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        14:45 UTC
+      </td>
+      <td class="title-special">
+        Session 1.1 - Consensus Cryptography
+      </td>
+    </tr>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          14:45
+        </td>
+        <td class="title">
+          Practical Asynchronous High-threshold Distributed Key Generation and Distributed Polynomial Sampling
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Sourav Das (University of Illinois at Urbana-Champaign),
+          Zhuolun Xiang (University of Illinois at Urbana-Champaign),
+          Lefteris Kokoris-Kogias (IST Austria),
+          Ling Ren (University of Illinois at Urbana-Champaign)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          Distributed Key Generation (DKG) is a technique to bootstrap threshold cryptosystems without a trusted party. DKG is an essential building block to many decentralized protocols such as randomness beacons, threshold signatures, Byzantine consensus, and multiparty computation. While significant progress has been made recently, existing asynchronous DKG constructions are inefficient when the reconstruction threshold is larger than one-third of the total nodes. In this paper, we present a simple and concretely efficient asynchronous DKG (ADKG) protocol among \(n=3t+1\) nodes that can tolerate up to \(t\) malicious nodes and support any reconstruction threshold \(\ell\ge t\). Our protocol has an expected \(O(\kappa n^3)\) communication cost, where \(\kappa\) is the security parameter, and only assumes the hardness of the Discrete Logarithm. The core ingredient of our ADKG protocol is an asynchronous protocol to secret share a random polynomial of degree \(\ell\ge t\), which has other applications, such as asynchronous proactive secret sharing and asynchronous multiparty computation. We implement our high-threshold ADKG protocol and evaluate it using a network of up to 128 geographically distributed nodes. Our evaluation shows that our high-threshold ADKG protocol reduces the running time by \(90\%\) and bandwidth usage by \(80\%\) over the state-of-the-art.
+        </td>
+      </tr>      
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          15:00
+        </td>
+        <td class="title">
+          Cassiopeia: Practical On-Chain Witness Encryption 	
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Schwinn Saereesitthipitak (Stanford University),
+          Dionysis Zindros (Stanford University)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          Witness Encryption is a holy grail of cryptography that remains elusive. It asks that a secret is only revealed when a particular computational problem is solved. Modern smart contracts and blockchains make assumptions of “honest majority”, which allow for a social implementation of Witness Encryption. The core idea is to make use of a partially trusted committee to carry out the responsibilities mandated by these functionalities - such as keeping the secret private, and then releasing it publicly after a solution to the computational puzzle is presented. We propose Cassiopeia, a smart contract Witness Encryption scheme (with public witness security) and provide an open source composable implementation that can be utilized as an oracle by others within the broader DeFi ecosystem. We devise a cryptoeconomic scheme to incentivize honest participation, and analyze its security under the honest majority and rational majority settings. We conclude by measuring and optimizing gas costs and illustrating the practicality of our scheme.
+        </td>
+      </tr>
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          15:15
+        </td>
+        <td class="title">
+          Eos: Efficient Private Delegation of zkSNARK Provers
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Alessandro Chiesa (UC Berkeley, EPFL),
+          Ryan Lehmkuhl (MIT),
+          Pratyush Mishra (Aleo, UPenn),
+          Yinuo Zhang (UC Berkeley)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          Succinct zero knowledge proofs (i.e. zkSNARKs) are powerful cryptographic tools that enable a prover to convince a verifier that a given statement is true without revealing any additional information. Their attractive privacy properties have led to much academic and industrial interest.Unfortunately, existing systems for generating zkSNARKs are expensive, which limits the applications in which these proofs can be used. One approach is to take advantage of powerful cloud servers to generate the proof. However, existing techniques for this (e.g., DIZK) sacrifice privacy by revealing secret information to the cloud machines. This is problematic for many applications of zkSNARKs, such as decentralized private currency and computation systems. In this work we design and implement privacy-preserving delegation protocols for zkSNARKs with universal setup. Our protocols enable a prover to outsource proof generation to a set of workers, so that if at least one worker does not collude with other workers, no private information is revealed to any worker. Our protocols achieve security against malicious workers without relying on heavyweight cryptographic tools. We implement and evaluate our delegation protocols for a state-of-the-art zkSNARK in a variety of computational and bandwidth settings, and demonstrate that our protocols are concretely efficient. When compared to local proving, using our protocols to delegate proof generation from a recent smartphone (a) reduces end-to-end latency by up to 26×26×, (b) lowers the delegator's active computation time by up to 1447×1447×, and (c) enables proving up to 256×256× larger instances.
+        </td>
+      </tr>      
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          15:30
+        </td>
+        <td class="title">
+          Homomorphic Sortition - Single Secret Leader Election for PoS Blockchains
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Luciano Freitas (LTCI, Telecom Paris, Institut Polytechnique de Paris),
+          Andrei Tonkikh (LTCI, Telecom Paris, Institut Polytechnique de Paris),
+          Adda-Akram Bendoukha (CEA LIST, Université Paris-Saclay),
+          Sara Tucci-Piergiovanni (CEA LIST, Université Paris-Saclay),
+          Renaud Sirdey (CEA LIST, Université Paris-Saclay),
+          Oana Stan (CEA LIST, Université Paris-Saclay),
+          Petr Kuznetsov (LTCI, Telecom Paris, Institut Polytechnique de Paris)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          In a single secret leader election protocol (SSLE), one of the system participants is chosen and, unless it decides to reveal itself, no other participant can identify it. SSLE has great potential in protecting blockchain consensus protocols against denial of service (DoS) attacks. However, all existing solutions either make strong synchrony assumptions or have expiring registration, meaning that they require elected processes to re-register themselves before they can be re-elected again. This, in turn, prohibits the use of these SSLE protocols to elect leaders in partially-synchronous consensus protocols as there may be long periods of network instability when no new blocks are decided and, thus, no new registrations (or re-registrations) are possible. In this paper, we propose Homomorphic Sortition -- the first asynchronous SSLE protocol with non-expiring registration, making it the first solution compatible with partially-synchronous leader-based consensus protocols. Homomorphic Sortition relies on Threshold Fully Homomorphic Encryption (ThFHE) and is tailored to proof-of-stake (PoS) blockchains, with several important optimizations with respect to prior proposals. In particular, unlike most existing SSLE protocols, it works with arbitrary stake distributions and does not require a user with multiple coins to be registered multiple times. Our protocol is highly parallelizable and can be run completely off-chain after setup.Some blockchains require a sequence of rounds to have non-repeating leaders. We define a generalization of SSLE, called Secret Leader Permutation (SLP) in which the application can choose how many non-repeating leaders should be output in a sequence of rounds and we show how Homomorphic Sortition also solves this problem.
+        </td>
+      </tr>      
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          16:45
+        </td>
+        <td class="title">
+          Q&A
+        </td>
+      </tr>
+    </table>
+  </table>
+
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        16:00 UTC
+      </td>
+      <td class="title-special">
+        Break
+      </td>
+    </tr>
+  </table>
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        16:15 UTC
+      </td>
+      <td class="title-special">
+        Session 1.2 - Systems
+      </td>
+    </tr>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          16:15
+        </td>
+        <td class="title">
+          Security Analysis of Filecoin's Expected Consensus in the Byzantine vs Honest Model 
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Xuechao Wang (University of Illinois Urbana-Champaign),
+          Sarah Azouvi (Protocol Labs),
+          Marko Vukolić (Protocol Labs)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          Filecoin is the largest storage-based blockchain, both by storage capacity (>18EiB) and market capitalization. This paper provides the first formal security analysis of Filecoin's consensus protocol, Expected Consensus (EC). Specifically, we show that EC is secure against an arbitrary adversary that controls a fraction $\beta$ of the total storage for \(\beta m< 1- e^{-(1-\beta)m}\), where $m$ is a parameter that corresponds to the expected number of blocks per round, currently $m=5$ in Filecoin. We then present an attack, the $n$-split attack, where an adversary splits the honest miners between multiple chains, and show that it is successful for \(\beta m \ge 1- e^{-(1-\beta)m}\), thus proving that \(\beta m= 1- e^{-(1-\beta)m}\) is the tight security threshold of EC. This corresponds roughly to an adversary with \(20\%\) of the total storage pledged to the chain. Finally, we propose two improvements to Filecoin's security that would increase this threshold. The Filecoin team is currently working on deploying one of these fixes.
+        </td>
+      </tr>      
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          16:30
+        </td>
+        <td class="title">
+          Aquarium: Combining Broadcast and Consensus in a General Purpose Smart-Contract Platform
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          The Mysten Labs Team (Mysten Labs)
+        </td>        
+      </tr>
+      <tr>
+        <td class="abstract">
+          Aquarium is a set of distributed systems safety and liveness protocols combining safely consensusless agreement for low-latency, with a consensus protocol to support traditional functions of a blockchain. It powers the first production-grade smart-contract platform with low latency transactions processing. Unlike prior work, Aquarium use of consensuless agreement does not compromise expressiveness or throughput and is able to run perpetually without restarts by integrating it with a high-throughput consensus protocol. To achieve this, we develop novel algorithms that merge seemlessly the two modes. This feat is especially delicate during reconfiguration events, where we need to preserve safety of the consensusless path without compromising the long-term liveness of potentially misconfigured clients. Aquarium combined with the Move Programming language enables safe execution of smart-contracts that exposes objects as a first-class resource. Using this object-centric focus, Aquarium achieves sub-second latency and harvests workload parallelism during transaction execution.
+        </td>
+      </tr>        
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          16:45
+        </td>
+        <td class="title">
+          FeBFT, an Efficient Open-Source BFT Framework
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Nuno Neto (DCC-FC-UP),
+          João Soares (INEST-Tec / DCC-FC-UP),
+          Rolando Martins (University of Porto)
+        </td>       
+      </tr>
+      <tr>
+        <td class="abstract">
+          Over the last few decades, a large body of research was done covering Byzantine Fault Tolerance (BFT) systems. This research has brought forward new techniques, including but not limited, for ordering operations and state transfer, on networks that suffers from byzantine faults. More recently, the ongoing research on distributed ledgers re-ignited the interest on BFT(-SMR), due to its high throughput when compared to other alternatives of byzan- tine consensus. With this paper, we introduce FeBFT, a Rust-based open-source modular BFT framework that aims to support the research and development of highly efficient BFT protocols, by decoupling traditionally entangled sub-protocols, e.g., consensus primitive from the execution, and deferment of log management to replicated services for state transfer. FeBFT allows to further provide modules that can be used by different BFT approaches, such as deterministic and probabilistic models. Further contributions include: 1) a proof-of-concept implementation of BFT-SMaRt; 2) supported by FeBFT's new parallel/concurrent design; and lastly, 3) a comprehensive evaluation amongst BFT-SMR, namely, FeBFT, BTF-SMaRt and Themis.
+        </td>
+      </tr>         
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          17:00
+        </td>
+        <td class="title">
+          Q&A
+        </td>
+      </tr>
+    </table>
+  </table>
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        17:15 UTC
+      </td>
+      <td class="title-special">
+        Session 1.3 - Decentralisation and Checkpointing
+      </td>
+    </tr>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          17:15
+        </td>
+        <td class="title">
+          TrustBoost: Boosting Trust among Interoperable Blockchains 
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Xuechao Wang (University of Illinois Urbana-Champaign),
+          Peiyao Sheng (University of Illinois at Urbana-Champaign),
+          Sreeram Kannan (University of Washington),
+          Kartik Nayak (Duke University),
+          Pramod Viswanath (Princeton University)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          Currently there exist many blockchains with weak trust guarantees, limiting applications and participation. Existing solutions to boost the trust using a stronger blockchain, e.g., via checkpointing, requires the weaker blockchain to give up sovereignty. In this paper we propose a family of protocols in which multiple blockchains interact to create a combined ledger with boosted trust. We show that even if several of the interacting blockchains cease to provide security guarantees, the combined ledger continues to be secure -- our TrustBoost protocols achieve the optimal threshold of tolerating the insecure blockchains. Furthermore, the protocol simply operates via smart contracts and require no change to the underlying consensus protocols of the participating blockchains, a form of ``consensus on top of consensus". The protocols are lightweight and can be used on specific (e.g., high value) transactions; we demonstrate the practicality by implementing and deploying TrustBoost as cross-chain smart contracts in the Cosmos ecosystem using approximately 3,000 lines of Rust code, made available as open source. Our evaluation shows that using 10 Cosmos chains in a local testnet, TrustBoost has a gas cost of roughly $2 with a latency of 2 minutes per request, which is in line with the cost on a high security chain such as Bitcoin or Ethereum.
+        </td>
+      </tr>        
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          17:30
+        </td>
+        <td class="title">
+          Interchain Timestamping for Mesh Security 	
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Ertem Nusret Tas (Stanford University),
+          David Tse (Stanford University),
+          Fisher Yu (BabylonChain),
+          Runchao Han (BabylonChain),
+          Kamilla Nazirkhanova (Stanford University)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          Fourteen years after the invention of Bitcoin, there has been a proliferation of many permissionless blockchains. Each such chain provides a public ledger that can be written to and read from by anyone. In this multi-chain world, a natural question arises: what is the optimal security an existing blockchain, a consumer chain, can extract by only reading and writing to k other existing blockchains, the producer chains? We show that a simple protocol, called interchain timestamping, where each chain, starting from the consumer chain, timestamps its transactions to the next chain in sequence, can extract the maximum economic security from the parent chains, as quantified by the slashable safety resilience. We observe that interchain timestamps are already provided by light-client based bridges, so interchain timestamping can be readily implemented for Cosmos chains connected by the Inter-Blockchain Communication (IBC) protocol. We compare interchain timestamping with recently proposed security sharing solutions such as Trustboost and cross-staking.
+        </td>
+      </tr>        
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          17:45
+        </td>
+        <td class="title">
+          Proofs of Proof-of-Stake with Sublinear Complexity	
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Shresth Agrawal (Technical University of Munich),
+          Joachim Neu (Stanford University),
+          Ertem Nusret Tas (Stanford University),
+          Dionysis Zindros (Stanford University)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          Popular Ethereum wallets (e.g., MetaMask) entrust centralized infrastructure providers (e.g., Infura) to run the consensus client logic on their behalf. As a result, these wallets are light-weight and high-performant, but come with security risks. A malicious provider can mislead the wallet, e.g., fake payments and balances, or censor transactions. On the other hand, light clients, which are not in popular use today, allow decentralization, but at concretely inefficient and asymptotically linear bootstrapping complexity. This poses a dilemma between decentralization and performance. In this paper, we design, implement, and evaluate a new proof-of-stake (PoS) superlight client with concretely efficient and asymptotically logarithmic bootstrapping complexity. Our proofs of proof-of-stake (PoPoS) take the form of a Merkle tree of PoS epochs. The verifier enrolls the provers in a bisection game, in which the honest prover is destined to win once an adversarial Merkle tree is challenged at sufficient depth. To evaluate our superlight protocol, we provide a client implementation that is compatible with mainnet PoS Ethereum: compared to the state-of-the-art light client construction of PoS Ethereum, our client improves time-to-completion by 9x, communication by 180x, and energy usage by 30x (when bootstrapping after 10 years of consensus execution). We prove that our construction is secure and show how to employ it for other PoS systems such as Cardano (with full adaptivity), Algorand, and Snow White.
+        </td>
+      </tr>        
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          18:00
+        </td>
+        <td class="title">
+          Q&A
+        </td>
+      </tr>
+    </table>
+  </table>
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        18:15 UTC
+      </td>
+      <td class="title-special">
+        Closing Remarks
+      </td>
+    </tr>
+  </table>
+
+  <h2 class="date">Day Two - 6 June 2023</h2>
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        14:00 UTC
+      </td>
+      <td class="title-special">
+        Welcome and Logistics
+      </td>
+    </tr>
+  </table>
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        14:10 UTC
+      </td>
+      <td class="title-special">
+        Invited Talk: Title TBD
+      </td>
+    </tr>
+    <tr>
+      <td class="speaker">
+        Zarko Milosevic (Informal Systems)
+      </td>
+    </tr>
+  </table>
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        14:45 UTC
+      </td>
+      <td class="title-special">
+        Session 2.1 - Layer 2s
+      </td>
+    </tr>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          14:45
+        </td>
+        <td class="title">
+          Information Dispersal with Provable Retrievability for Rollups
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Kamilla Nazirkhanova (Stanford University),
+          Joachim Neu (Stanford University),
+          David Tse (Stanford University)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          The ability to verifiably retrieve transaction or state data stored off-chain is crucial to blockchain scaling techniques such as rollups or sharding. We formalize the problem and design a storage- and communication-efficient protocol using linear erasure-correcting codes and homomorphic vector commitments. Motivated by application requirements for rollups, our solution \emph{Semi-AVID-PR} departs from earlier Verifiable Information Dispersal schemes in that we do not require comprehensive termination properties. Compared to Data Availability Oracles, under no circumstance do we fall back to returning empty blocks. Distributing a file of \(22\,\mathrm{MB}\) among 256 storage nodes, up to 85 of which may be adversarial, requires in total \(\approx70\,\mathrm{MB}\) of communication and storage, and \(\approx41\,\mathrm{s}\) of single-thread runtime (\(< 3\,\mathrm{s}\) on 16 threads) on an AMD Opteron 6378 processor when using the BLS12-381 curve. Our solution requires no modification to on-chain contracts of Validium rollups such as StarkWare's StarkEx. Additionally, it provides privacy of the dispersed data against honest-but-curious storage nodes. We discuss an application of our Semi-AVID-PR scheme to data availability verification schemes based on random sampling.
+        </td>
+      </tr>      
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          15:00
+        </td>
+        <td class="title">
+          Braess Paradox in Layer-2 Blockchain Payment Networks
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Arad Kotzer (Technion),
+          Ori Rottenstreich (Technion)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          Layer-2 is a popular approach to deal with the scalability limitation of blockchain networks. It allows users to execute transactions without committing them to the blockchain by relying on predefined payment channels. Users together with the payment channels form a graph known as the offchain network topology. Transactions between pairs of users without a connecting channel are also supported through a path of multiple channels. Serving such transactions involves fees paid to intermediate users. In this paper, we uncover the potential existence of the Braess paradox in payment networks: Sometimes, establishing a new payment channel can increase the fees paid for serving some fixed transactions. We study conditions for the paradox to appear and provide indications for the appearance of the paradox based on real data of Bitcoin's Lightning, a popular layer-2 network. Last, we discuss methods to mitigate the paradox upon establishing a new payment channel.
+        </td>
+      </tr>
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          15:15
+        </td>
+        <td class="title">
+          TxAllo: Dynamic Transaction Allocation in Sharded Blockchain Systems
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Yuanzhe Zhang (Monash University),
+          Shirui Pan (Griffith University),
+          Jiangshan Yu (Monash University)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          The scalability problem has been one of the most significant barriers limiting the adoption of blockchains. Blockchain sharding is a promising approach to this problem. However, the sharding mechanism introduces a significant number of cross-shard transactions, which are expensive to process. This paper focuses on the transaction allocation problem to reduce the number of cross-shard transactions for better scalability. In particular, we systematically formulate the transaction allocation problem and convert it to the community detection problem on a graph. A deterministic and fast allocation scheme TxAllo is proposed to dynamically infer the allocation of accounts and their associated transactions. It directly optimizes the system throughput, considering both the number of cross-shard transactions and the workload balance among shards. We evaluate the performance of TxAllo on an Ethereum dataset containing over 91 million transactions. Our evaluation results show that for a blockchain with 60 shards, TxAllo reduces the cross-shard transaction ratio from 98% (by using traditional hash-based allocation) to about 12%. In the meantime, the workload balance is well maintained. Compared with other methods, the execution time of TxAllo is almost negligible. For example, when updating the allocation every hour, the execution of TxAllo only takes 0.5 seconds on average, whereas other concurrent works, such as BrokerChain (INFOCOM'22) leveraging the classic METIS method, require 422 seconds.
+        </td>
+      </tr>      
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          15:30
+        </td>
+        <td class="title">
+          BlindHub: Bitcoin-Compatible Privacy-Preserving Payment Channel Hubs Supporting Variable Amounts
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Xianrui Qin (The University of Hong Kong),
+          Shimin Pan (The University of Hong Kong),
+          Arash Mirzaei (Monash University),
+          Zhimei Sui (Monash University), 
+          Oguzhan Ersoy (Radboud University and Delft University of Technology),
+          Amin Sakzad (Monash University),
+          Muhammed F. Esgin (Monash University and CSIRO's Data61),
+          Joseph K. Liu (Monash University),
+          Jiangshan Yu (Monash University),
+          Tsz Hon Yuen (The University of Hong Kong)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          Payment Channel Hubs (PCHs) address scalability issues in first-generation blockchains like Bitcoin by facilitating off-chain payments between a sender and receiver via an intermediary (tumbler). Privacy-preserving PCHs aim for relationship anonymity and value privacy, preventing the tumbler from identifying sender-receiver pairs and payment amounts. Existing Bitcoin-compatible PCHs with relationship anonymity support only fixed payment amounts, making them impractical for varying amounts. In this paper, we propose the first Bitcoin-compatible PCH, achieving relationship anonymity and supporting variable payment amounts. Our technical constructions include BlindChannel, a novel bi-directional payment channel protocol for privacy-preserving payments, and BlindHub, a three-party protocol for private conditional payments, where the tumbler cannot link sender and receiver while allowing variable amounts. We introduce two cryptographic primitives, Blind Adaptor Signature (BAS) and Flexible Blind Conditional (FBCS), as building blocks for BlindHub. BAS is an adaptor signature protocol based on a blind signature scheme, while FBCS enables atomic and privacy-preserving PCHs. We instantiate both BlindChannel and BlindHub protocols, presenting implementation results to demonstrate their practicality.
+        </td>
+      </tr>      
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          16:45
+        </td>
+        <td class="title">
+          Q&A
+        </td>
+      </tr>
+    </table>
+  </table>
+
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        16:00 UTC
+      </td>
+      <td class="title-special">
+        Break
+      </td>
+    </tr>
+  </table>
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        16:15 UTC
+      </td>
+      <td class="title-special">
+        Session 2.2 - Performance and Scalability
+      </td>
+    </tr>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          16:15
+        </td>
+        <td class="title">
+          Bullshark: DAG BFT Protocols Made Practical
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Alexander Spiegelman (Aptos),
+          Neil Giridharan (UC Berkeley),
+          Alberto Sonnino (Mysten Labs & University College London (UCL)),
+          Lefteris Kokoris-Kogias (Mysten Labs & IST Austria)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          We present BullShark, the first directed acyclic graph (DAG) based asynchronous Byzantine Atomic Broadcast protocol that is optimized for the common synchronous case. Like previous DAG-based BFT protocols, BullShark requires no extra communication to achieve consensus on top of building the DAG. That is, parties can totally order the vertices of the DAG by interpreting their local view of the DAG edges. Unlike other asynchronous DAG-based protocols, BullShark provides a practical low latency fast-path that exploits synchronous periods and deprecates the need for notoriously complex view-change mechanisms. BullShark achieves this while maintaining all the desired properties of its predecessor DAG- Rider. Namely, it has optimal amortized communication complexity, it provides fairness and asynchronous liveness, and safety is guaranteed even under a quantum adversary. In order to show the practicality and simplicity of our approach, we also introduce a standalone partially synchronous version of BullShark which we evaluate against the state of the art. The implemented protocol is embarrassingly simple (200 LOC on top of an existing DAG-based mempool implementation). It is highly efficient, achieving for example, 125,000 transaction per second with a 2 seconds latency for a deployment of 50 parties. In the same setting the state of the art pays a steep 50% latency increase as it optimizes for asynchrony.
+        </td>
+      </tr>      
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          16:30
+        </td>
+        <td class="title">
+          Dumbo-NG: Fast Asynchronous BFT Consensus with Throughput-Oblivious Latency 
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Yingzi Gao (Institute of Software Chinese Academy of Sciences),
+          Yuan Lu (Institute of Software Chinese Academy of Sciences),
+          Zhenliang Lu (The University of Sydney),
+          Qiang Tang (The University of Sydney),
+          Jing Xu (Institute of Software Chinese Academy of Sciences),
+          Zhenfeng Zhang (Institute of Software Chinese Academy of Sciences)
+        </td>        
+      </tr>
+      <tr>
+        <td class="abstract">
+          Despite recent progresses of practical asynchronous BFT consensus, the state-of-the-art designs still suffer from suboptimal performance. Particularly, to obtain maximum throughput, existing protocols require each participating node to broadcast a huge batch of transactions, which dramatically sacrifices latency. Worse still, the broadcasts of f slowest nodes might never be agreed to output and thus can be censored (where f is the number of faults). Implementable mitigation to the threat either uses computationally costly threshold encryption or incurs communication blow-up by letting the honest nodes to broadcast redundant transactions, thus causing further efficiency issues. We present Dumbo-NG, a novel practical asynchronous BFT consensus (atomic broadcast) to solve all those remaining practical issues. Its technical core is a non-trivial direct reduction from asynchronous atomic broadcast to multi-valued validated Byzantine agreement (MVBA) with quality property (which is to ensure the output is from honest nodes with at least 1/2 probability). Most interestingly, the new protocol structure empowers completely concurrent execution of transaction dissemination and asynchronous agreement. This brings about two benefits: (i) the throughput-latency tension is resolved to approach peak throughput with minimal increase in latency; (ii) all transactions broadcasted by honest nodes can be agreed to output rapidly, thus conquering the censorship threat with no extra cost. We implement Dumbo-NG with using the current fastest MVBA protocol with quality (GLL+22, NDSS'22) and compare it to state-of-the-art asynchronous BFT including Dumbo (CCS'20) and Speeding-Dumbo (NDSS'22). Along the way, we apply the techniques from Speeding-Dumbo to DispersedLedger (NSDI'22) and obtain sDumbo-DL an improved DispersedLedger variant for comprehensive comparison. Extensive experiments (over up to 64 AWS EC2 nodes across 16 AWS regions) reveal: Dumbo-NG realizes a peak throughput 4-8x over Dumbo, 2-4x over Speeding-Dumbo, and 2-3x over sDumbo-DL (for varying scales); More importantly, Dumbo-NG's latency, which is lowest among all tested protocols, can almost remain stable when throughput grows.
+        </td>
+      </tr>        
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          16:45
+        </td>
+        <td class="title">
+          Does My BFT Protocol Implementation Scale? 
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Christian Berger (University of Passau),
+          Sadok Ben Toumia (University of Passau),
+          Hans P. Reiser (Reykjavik University)
+        </td>       
+      </tr>
+      <tr>
+        <td class="abstract">
+          The novel blockchain generation of Byzantine fault-tolerant (BFT) state machine replication (SMR) protocols focuses on scalability and performance to meet the requirements of distributed ledger technology (DLT), e.g., decentralization and geographic dispersion. Validating the scalability and performance of BFT protocol implementations requires careful evaluation. While experiments with real protocol deployments usually offer the best realism, they are costly and time-consuming. In this paper, we explore the simulation of unmodified BFT protocol implementations as a method for cheap and rapid protocol evaluation: We can accurately forecast the performance of a BFT protocol while experimentally scaling its environment, i.e., by varying the number of nodes or geographic dispersion. Our approach is resource-friendly and preserves application-realism since existing BFT frameworks can be simply plugged into the simulation engine without requiring code modifications or re-implementation.
+        </td>
+      </tr>         
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          17:00
+        </td>
+        <td class="title">
+          Q&A
+        </td>
+      </tr>
+    </table>
+  </table>
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        17:15 UTC
+      </td>
+      <td class="title-special">
+        Session 2.3 - Latency Optimisation
+      </td>
+    </tr>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          17:15
+        </td>
+        <td class="title">
+          BBCA-LEDGER: High Throughput Consensus meets Low Latency
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Chrysoula Stathakopoulou (Chainlink Labs),
+          Michael Wei (Chainlink Labs, VMware Research),
+          Hongbo Zhang (Chainlink Labs, Cornell University),
+          Maofan Yin (Chainlink Labs),
+          Dahlia Malkhi (Chainlink Labs)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          This paper presents BBCA-LEDGER, a Byzantine fault tolerant log replication technology for partially synchronous networks that enables reaching fast consensus on a total order of transactions while allowing parallel, non-blocking transaction dissemination. The core of BBCA-LEDGERis a novel primitive called BBCA, a consistent broadcast enhanced with unique sequence numbering enforcement. In steady state, BBCA ensures that a transaction can be committed with low latency, in just 3 network steps. Under network partitions or faults, a direct acyclic graph (DAG) formed by BBCA is employed as a fallback mechanism, retaining utility of accumulating parallel broadcasts and committing them via the DAG.
+        </td>
+      </tr>        
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          17:30
+        </td>
+        <td class="title">
+          HotStuff-2: Optimal Two-Phase Responsive BFT	
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Dahlia Malkhi (Chainlink Labs),
+          Kartik Nayak (Duke University)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          In this paper, we observe that it is possible to solve partially-synchronous BFT and simultaneously achieves \(O(n^2)\) worst-case communication, optimistically linear communication, a two-phase commit regime within a view, and optimistic responsiveness. Prior work falls short in achieving one or more of these properties, e.g., the most closely related work, HotStuff, requires a three-phase view while achieving all other properties. We demonstrate that these properties are achievable through a two-phase HotStuff variant named HotStuff-2. The quest for two-phase HotStuff variants that achieve all the above desirable properties has been long, producing a series of results that are yet sub-optimal and, at the same time, are based on somewhat heavy hammers. HotStuff-2 demonstrates that none of these are necessary: HotStuff-2 is remarkably simple, adding no substantive complexity to the original HotStuff protocol. The main takeaway is that two phases are enough for BFT after all.
+        </td>
+      </tr>        
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          17:45
+        </td>
+        <td class="title">
+          Beating the Speed of Light: Low-Latency Planetary-Scale Adaptive Byzantine Consensus
+        </td>
+      </tr>
+      <tr>
+        <td class="speaker">
+          Christian Berger (University of Passau),
+          Lívio Rodrigues (LASIGE, DI, Faculty of Sciences, University of Lisbon),
+          Hans P. Reiser (Reykjavik University),
+          Vinicius Cogo (LASIGE, DI, Faculty of Sciences, University of Lisbon),
+          Alysson Bessani (LASIGE, Faculdade de Ciencias, Universidade de Lisboa)
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          Blockchain technology has sparked renewed interest in planetary-scale Byzantine fault-tolerant (BFT) state machine replication (SMR). While recent works have mainly focused on improving throughput, few have addressed latency. We present Faster-Than-Light Consensus, a new approach for optimizing the latency of quorum-based BFT consensus protocols. FTLConsensus uses an adaptive resilience threshold that enables faster transaction ordering when the system contains few faulty replicas. We extend previous work on adaptive weighted replication to automatically assign high voting power to the fastest replicas, forming small quorums that speed up the protocol. Even when using small quorums with a low resilience threshold, our protocol still satisfies the standard SMR safety and liveness guarantees, thanks to the judicious integration of abortable SMR and BFT forensics techniques. Our experiments with 51 replicas show that FTLConsensus can order transactions with finality in less than 0.4s, half the time of a PBFT-like protocol in the same network and less than this protocol running on the theoretically best possible internet links (transmitting at 67% of the speed of light).
+        </td>
+      </tr>        
+    </table>
+    <table class="talk">
+      <tr>
+        <td class="date" rowspan="3">
+          18:00
+        </td>
+        <td class="title">
+          Q&A
+        </td>
+      </tr>
+    </table>
+  </table>
+
+  <table class="plenary">
+    <tr>
+      <td class="date" rowspan="2">
+        18:15 UTC
+      </td>
+      <td class="title-special">
+        Closing Remarks
+      </td>
+    </tr>
+  </table>
+
 
   <table class="footer">
     <tr>
