@@ -16,8 +16,9 @@ resources:
 
 # Research interests
 interests:
-  - Interest 1
-  - Interest 2
+  - Threshold Cryptography
+  - Digital Signatures
+  - Distributed Key Generation
 
 # Degrees
 education:
