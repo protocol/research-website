@@ -4,7 +4,7 @@ title: "ConsensusDays 23 programme and registration"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2023-05-11
+date: 2023-05-10
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
