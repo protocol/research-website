@@ -15,6 +15,7 @@ The Protocol Benchmarking & Optimization Team (ProbeLab) is on a mission to meas
 Our work focuses on internal network protocol logic, as well as cross-protocol interoperation and network architecture. We start from the protocol as an independent entity and dive into its mechanics. We then investigate the exogenous factors that influence the performance of the protocol, as well as the influence that this protocol has on other parts of the system. We specialize and work on network-layer protocols.
 
 ## Resources
+* The ProbeLab website is available at [https://probelab.io/](https://probelab.io/)
 * You can find our Completed, Ongoing and Future projects in [ProbeLab's Notion page](https://www.notion.so/pl-strflt/ProbeLab-Protocol-Benchmarking-Optimization-a63238fd1b184d6f8fea4bb38d975208), where we currently organize our work.
 * Our network measurement work and results lives in this GH repository: [https://github.com/protocol/network-measurements](https://github.com/protocol/network-measurements). You can open issues and submit PRs for items of interest to your project/product.
 * Our latest results are posted on the ["Results" folder](https://github.com/protocol/network-measurements/tree/master/results) of the same repository.
