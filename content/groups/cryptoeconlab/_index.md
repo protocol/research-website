@@ -34,8 +34,4 @@ The lab’s genesis comes from a growing need to enable the design and deploymen
 
 ## Related Links
 
-- [Understanding Filecoin Circulating Supply](https://filecoin.io/blog/filecoin-circulating-supply/)
-- [Filecoin's Cryptoeconomic Constructions](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/)
-- Filecoin Features: [Gas Fees](https://filecoin.io/blog/filecoin-features-gas-fees/)
-- Filecoin Features: [Block Rewards](https://filecoin.io/blog/filecoin-features-block-rewards/)
-- Filecoin Features: [Slashing](https://filecoin.io/blog/posts/filecoin-features-slashing/)
+- [https://cryptoeconlab.io/](https://cryptoeconlab.io/)
