@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: New open problems in private data retrieval 
+title: Private Retrieval Grant 2023 Roundup 
 
 # Website post date
 # format YYYY-MM-DD
