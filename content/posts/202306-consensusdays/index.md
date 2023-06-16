@@ -41,13 +41,13 @@ draft: false
 - 22 talks
 - 35 submissions
 - 231 registrations
-- 347 members in the #consensus channel 
-- 612 members in the ConsensusDays mailing list 
+- 347 members of the #consensus channel 
+- 612 members of the ConsensusDays mailing list 
 - 614 YouTube views of the raw streams
 
 Today, we bring you the final news of the year: the edited talks are now [available on YouTube](https://www.youtube.com/playlist?list=PLxN6L-h3wFfsRKLCj4I8xKeKjy9OL-EY6). The individual videos are also linked from the programme page.
 
-We'd again like to thank our keynote speakers Aggelos Kiayias and Zarko Milosevicll, and all authors for their submissions. Moreover, our gratitude goes to Alberto Sonnino, Alejandro Ranchal-Pedrosa, Alexander Spiegelman, Alysson Bessani, Arthur Gervais, Chrysoula Stathakopoulou, Duc Le, Ertem Nusret Tas, Giuliano Losa, Guy Goren, Henrique Moniz, Jiangshan Yu, Joachim Neu, Josef Widder, Lei Yang, Matej Pavlovic, Nenad Milosevic, Qiang Tang, Rati Gelashvili, Rodrigo Rodrigues, Sergio Mena, and Srivatsan Sridhar for their hard work reviewing the submissions, and [Solaris](https://solaris.agency/) for their support organising the event.
+We'd again like to thank our keynote speakers, Aggelos Kiayias and Zarko Milosevic, as well as all authors and speakers. Our gratitude also goes to Alberto Sonnino, Alejandro Ranchal-Pedrosa, Alexander Spiegelman, Alysson Bessani, Arthur Gervais, Chrysoula Stathakopoulou, Duc Le, Ertem Nusret Tas, Giuliano Losa, Guy Goren, Henrique Moniz, Jiangshan Yu, Joachim Neu, Josef Widder, Lei Yang, Matej Pavlovic, Nenad Milosevic, Qiang Tang, Rati Gelashvili, Rodrigo Rodrigues, Sergio Mena, and Srivatsan Sridhar for their hard work reviewing the submissions, and [Solaris](https://solaris.agency/) for their support organising the event.
 
 We'll start thinking about ConsensusDays 24 soon! To stay in the loop, consider subscribing to the [ConsensusLab YouTube channel](https://www.youtube.com/@ConsensusLab_) and [Twitter account](https://twitter.com/consensuslab_).
 
