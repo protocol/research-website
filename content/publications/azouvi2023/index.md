@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Base Fee Manipulation In Ethereum's EIP-1559 Transaction Fee Mechanism"
+title: "Base fee manipulation in Ethereum's EIP-1559 transaction fee mechanism"
 
 # Website post date
 # format YYYY-MM-DD

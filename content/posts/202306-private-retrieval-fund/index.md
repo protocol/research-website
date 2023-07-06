@@ -1,6 +1,6 @@
 ---
 # Blog post title
-title: Private Retrieval Grant 2023 Roundup 
+title: Private retrieval grant 2023 roundup 
 
 # Website post date
 # format YYYY-MM-DD
