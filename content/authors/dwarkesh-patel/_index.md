@@ -51,4 +51,4 @@ user_groups:
 ---
 
 
-Dwarkesh is a computer science major at UT Austin. He loves learning about economics and philosophy, and hosts a podcast where he interviews well-known intellectuals called [The Lunar Society](https://www.youtube.com/c/DwarkeshPatel). Dwarkesh is interested in distributed systems because they are technically fascinating and because they have the potential to improve how we are able to store and communicate data.
+Dwarkesh hosts a podcast called [The Lunar Society](https://www.youtube.com/c/DwarkeshPatel) where he intellectuals, scientists, historians, economists, and founders about their big ideas. He loves learning about economics and philosophy, and he asks reallly good questions. He had a role as a Associate Research Program Manager at Protocol Labs in 2021, learning about and experimenting with leverage points for science as a system. He graduated from UT Austin with a CS degree in December 2021.
