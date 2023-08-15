@@ -1,6 +1,6 @@
 ---
 # Publication title
-title: "Security Analysis of Filecoin's Expected Consensus in the Byzantine vs Honest Model"
+title: "Security analysis of Filecoin's Expected Consensus in the Byzantine vs honest model"
 
 # Website post date
 # format YYYY-MM-DD
