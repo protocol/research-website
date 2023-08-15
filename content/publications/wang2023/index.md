@@ -1,23 +1,23 @@
 ---
 # Publication title
-title: "Base fee manipulation in Ethereum's EIP-1559 transaction fee mechanism"
+title: "Security Analysis of Filecoin's Expected Consensus in the Byzantine vs Honest Model"
 
 # Website post date
 # format YYYY-MM-DD
-date: 2023-04-22
+date: 2023-08-14
 
 # Publish from this date (defaults to date)
 # publishDate: 2019-09-03
 
 # Venue Name
-venue: DISC 2023
+venue: AFT 2023
 
 # Venue Location
-venue_location: "L'Aquila, Italy"
+venue_location: Princeton, NJ, USA
 
 # Venue Date (useful e.g. for conferences whose date differs from pub; defaults to date)
 # format YYYY-MM-DD
-venue_date: 2023-10-09
+venue_date: 2023-10-23
 
 # DOI, if available
 doi: 
@@ -29,10 +29,9 @@ publication_types:
 
 # For PL authors, use author folder name; for non-PL authors, write name as in paper within ""
 authors:
+  - xuechao-wang
   - sarah-azouvi
-  - guy-goren
-  - "Lioba Heimbach"
-  - "Alexander Hicks"
+  - marko-vukolic
 
 # Zero or more of the areas in content/areas
 areas:
@@ -69,4 +68,4 @@ unaffiliated: false
 
 ---
 
-In 2021 Ethereum adjusted the transaction pricing mechanism by implementing EIP-1559, which introduces the base fee - a fixed network fee per block that is burned and adjusted dynamically in accordance with network demand. The authors of the Ethereum Improvement Proposal (EIP) noted that a miner with more than 50% of the mining power might have an incentive to deviate from the honest mining strategy. Instead, such a miner could propose a series of empty blocks to increase its future rewards. In this paper, we generalize this attack and show that under rational player behavior, deviating from the honest strategy can be profitable for a miner with less than 50% of the mining power. Further, even when miners do not collaborate, it is rational for smaller mining power miners to join the attack.
+Filecoin is the largest storage-based open-source blockchain, both by storage capacity (>11EiB) and market capitalization. This paper provides the first formal security analysis of Filecoin's consensus (ordering) protocol, Expected Consensus (EC). Specifically, we show that EC is secure against an arbitrary adversary that controls a fraction β of the total storage for βm<1−e−(1−β)m, where m is a parameter that corresponds to the expected number of blocks per round, currently m=5 in Filecoin. We then present an attack, the n-split attack, where an adversary splits the honest miners between multiple chains, and show that it is successful for βm≥1−e−(1−β)m, thus proving that βm=1−e−(1−β)m is the tight security threshold of EC. This corresponds roughly to an adversary with 20% of the total storage pledged to the chain. Finally, we propose two improvements to EC security that would increase this threshold. One of these two fixes is being implemented as a Filecoin Improvement Proposal (FIP).
