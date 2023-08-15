@@ -41,7 +41,7 @@ resources:
 
 # Short abstract
 # Describe talk here
-abstract: "Alfonso de la Rocha presents his work on Hierarchical Consensus, whose goal is to develop a framework to enable on-demand horizontal scalability of Filecoin (and other blockchain networks) through an alternative sharding/side-chain scheme that supports heterogeneous consensus algorithms in each subnetwork."
+abstract: "Henrique presents Janus and Granite, a consensus framework and algorithm to bring fast finality to the Filecoin network."
 
 ---
 
