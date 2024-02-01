@@ -43,7 +43,7 @@ social:
     link: https://linkedin.com/in/gvmichel
 
 user_groups:
-  - Researchers
+  - Alumni
 
 # For display at the top of the author details page
 quote:

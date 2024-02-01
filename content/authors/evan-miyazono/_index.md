@@ -41,7 +41,7 @@ social:
 email:
 
 user_groups:
-  - Management and support
+  - Alumni
 
 # For display at the top of the author details page
 quote:

@@ -40,7 +40,7 @@ social:
 # Organizational groups that you belong to (for author list route)
 # Delete what doesn't apply
 user_groups:
-  - Researchers
+  - Alumni
 
 # For display at the top of the author details page
 # Not currently used
