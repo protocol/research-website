@@ -6,29 +6,6 @@
     {{ partial "page-top" . }}
 
     <div class="pt-10 lg:pt-40">
-      <h2 class="text-center text-md font-bold">Researchers</h2>
-
-      <img class="mx-auto mb-8" src="/icons/mini-graphic-line.svg">
-
-      <div class="flex flex-col flex-wrap justify-center items-center mb-16 md:mb-20 md:flex-row md:items-start md:justify-center md:-mx-4">
-        {{ range .Pages.ByParam "name"  }}
-          {{ if in .Params.user_groups "Researchers" }}
-            {{ partial "author-card" . }}
-          {{ end }}
-        {{end}}
-      </div>
-
-      <h2 class="text-center text-md font-bold">Management + Support</h2>
-
-      <img class="mx-auto mb-12" src="/icons/mini-graphic-line.svg">
-
-      <div class="flex flex-col flex-wrap justify-center items-center mb-16 md:mb-20 md:flex-row md:items-start md:justify-center md:-mx-4">
-        {{ range .Pages.ByParam "name"  }}
-          {{ if in .Params.user_groups "Management and support" }}
-            {{ partial "author-card" . }}
-          {{ end }}
-        {{end}}
-      </div>
 
       <h2 class="text-center text-md font-bold">Alumni</h2>
 

@@ -35,26 +35,3 @@ Seeded by the hard problems Filecoin Mainnet presented, our long-term vision is 
 
 ## Minisites
 - [zk-SNARKs for the world](../../sites/snarks/)
-
-## Team
-
-### The Home Team
-
-- **Lab Lead:** Friedel Ziegelmayer
-- Porçu Quine
-- nemo
-- jake
-- Volker Mische
-
-
-### External Collaborators
-
-- [Supranational](https://www.supranational.net/)
-    - GPU and CPU optimizations
-    - BLS signatures
-    - VDFs
-- [Zondax](https://zondax.ch/)
-    - GPU scheduling
-- [Zcash](https://z.cash/)
-    - Halo2
-    - VDFs

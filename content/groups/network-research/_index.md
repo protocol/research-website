@@ -13,9 +13,3 @@ archived: true
 ---
 
  Network Research is building a new era of networked science by identifying and using leverage points within science as a system to align researchers and research funders. 
-
-## Team
-* [Karola Kirsanow](/authors/karola-kirsanow/)
-* [Sílvia Bessa](/authors/silvia-bessa/)
-* [Raymond Cheng](/authors/raymond-cheng/)
-

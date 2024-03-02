@@ -8,6 +8,8 @@ summary: "ProbeLab is on a mission to measure the performance of Web3 network pr
 resources:
   - src: icon.png
 
+archived: true
+
 ---
 
 The Protocol Benchmarking & Optimization Team (ProbeLab) is on a mission to measure the performance of Web3 network protocols, benchmark protocols against target performance milestones, and propose improvements to their core design principles.
@@ -20,12 +22,6 @@ Our work focuses on internal network protocol logic, as well as cross-protocol i
 * Our network measurement work and results lives in this GH repository: [https://github.com/protocol/network-measurements](https://github.com/protocol/network-measurements). You can open issues and submit PRs for items of interest to your project/product.
 * Our latest results are posted on the ["Results" folder](https://github.com/protocol/network-measurements/tree/master/results) of the same repository.
 * Our latest [ACM Sigcomm 2022 paper](/publications/design-and-evaluation-of-ipfs-a-storage-layer-for-the-decentralized-web/) includes a comprehensive description and internal details of the IPFS architecture, as well as a summary of our latest measurement campaign.
-
-## Team
-* [Yiannis Psaras](/authors/yiannis-psaras/) (Lead)
-* [Guillaume Michel](/authors/guillaume-michel/) (Research Engineer)
-* [Dennis Trautwein](/authors/dennis-trautwein/) (Research Engineer)
-* Many wonderful external collaborators which you will find in the Notion page linked above.
 
 ## Where to find us
 - We frequent in the #probe-lab channel on the [IPFS Discord Server](https://discord.gg/ipfs)

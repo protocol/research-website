@@ -12,6 +12,8 @@ aliases:
   - /research/groups/filecoin-research
   - /research/groups/cryptolab
   - /groups/cryptonetlab
+
+archived: true
 ---
 
 Cryptonet is an open distributed research lab working on applied cryptography to improve crypto-networks.
