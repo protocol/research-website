@@ -6,7 +6,7 @@ menu:
     weight: 2
   footer:
     weight: 2
-description: Many have contributed to Protocol Labs Research over the years. This is our alumni list.
+description: Many have contributed to Protocol Labs Research over the years. These are our alumni.
 hasSquigglyLines: true
 url: /people
 aliases: [/authors]

@@ -7,7 +7,7 @@
 
   <div class="lg:w-2/3 md:flex md:flex-row md:flex-wrap">
     {{ range where (where .Site.Pages "Type" "areas") ".Kind" "==" "taxonomy"}}
-      {{ range (where .Pages ".Params.archived" "!=" true) }}
+      {{ range (where .Pages ".Params.archived" "==" true) }}
         <div class="pb-8 md:w-1/2 md:odd:pr-4 md:even:pl-4 md:self-stretch group">
           <div class="block relative bg-white p-4 border-black border-t md:p-8 md:h-full">
             {{ range .Resources.Match "icon.*" }}
