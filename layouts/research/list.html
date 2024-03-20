@@ -12,7 +12,7 @@
     </div>
     <div class="flex flex-col md:flex-row md:flex-wrap md:-mx-8 mb:12">
     {{ range where (where .Site.Pages "Type" "groups") ".Kind" "==" "taxonomy"}}
-      {{ range sort ((where .Pages ".Params.archived" "!=" true)) ".Title" "asc"}}
+      {{ range sort ((where .Pages ".Params.archived" "!=" false)) ".Title" "asc"}}
         {{ partial "research-taxonomy-card-half" .}}
       {{ end }}
     {{ end }}
@@ -28,7 +28,7 @@
     </div>
     <div class="flex flex-col md:flex-row md:flex-wrap md:-mx-8">
     {{ range where (where .Site.Pages "Type" "areas") ".Kind" "==" "taxonomy"}}
-      {{ range sort ((where .Pages ".Params.archived" "!=" true)) ".Title" "asc"}}
+      {{ range sort ((where .Pages ".Params.archived" "!=" false)) ".Title" "asc"}}
         {{ partial "research-taxonomy-card-half" .}}
       {{ end }}
     {{ end }}
