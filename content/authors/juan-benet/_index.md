@@ -39,7 +39,7 @@ social:
 email:
 
 user_groups:
-- Management and support
+- Alumni
 
 quote:
 ---
