@@ -36,4 +36,4 @@ The lab’s genesis comes from a growing need to enable the design and deploymen
 
 ## Related Links
 
-- [https://cryptoeconlab.io/](https://cryptoeconlab.io/)
+- [https://www.cryptoeconlab.com/](https://www.cryptoeconlab.com/)
